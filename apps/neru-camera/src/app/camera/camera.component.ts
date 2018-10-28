@@ -43,7 +43,7 @@ export class CameraComponent implements AfterViewInit {
 
     Promise.all(promises)
       .then(([video, stream]) => {
-        const { nativeElement: canvas } = this.canvas;
+        const canvas = this.canvas.nativeElement as HTMLCanvasElement;
         this.context = canvas.getContext('2d');
         this.video = video;
         this.stream = stream;
@@ -54,6 +54,30 @@ export class CameraComponent implements AfterViewInit {
         });
         requestAnimationFrame(this.draw);
       });
+  }
+
+  public onClick(): void {
+    const canvas = this.canvas.nativeElement as HTMLCanvasElement;
+    const anchor = document.createElement('a');
+
+    let otherTab: Window;
+
+    if (typeof anchor.download !== 'string') {
+      otherTab = window.open('assets/logo.png', '_blank');
+    }
+
+    canvas.toBlob((blob) => {
+      anchor.href = URL.createObjectURL(blob);
+
+      if (!otherTab) {
+        anchor.download = `NeruCamera-${Date.now()}.png`;
+        anchor.target = '_blank';
+
+        anchor.click();
+      } else {
+        otherTab.location.href = anchor.href;
+      }
+    }, 'image/png', 1.0);
   }
 
   private adjustCanvasSize({ height, width }: CanvasSize): void {
