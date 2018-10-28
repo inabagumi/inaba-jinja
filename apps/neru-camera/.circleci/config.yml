@@ -21,7 +21,7 @@ commands:
           name: yarn install
 
       - save_cache:
-          key: v1-node-dependencies-{{ checksum "package-.lock" }}
+          key: v1-node-dependencies-{{ checksum "yarn.lock" }}
           paths:
             - ./node_modules/
 
@@ -47,7 +47,7 @@ jobs:
     steps:
       - checkout
       - yarn_install
-      - run: yarn build --aio --prod
+      - run: yarn build --aot --prod
       - run: npx firebase-tools deploy --token ${FIREBASE_TOKEN}
 
 workflows:
