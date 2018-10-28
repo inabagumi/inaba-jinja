@@ -1,0 +1,16 @@
+.brand {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand img {
+  display: block;
+}
+
+.brand span {
+  display: block;
+  margin-left: 12px;
+}
