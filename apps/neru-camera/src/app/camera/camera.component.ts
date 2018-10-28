@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 interface CanvasSize {
@@ -22,7 +22,7 @@ const constraints: MediaStreamConstraints = {
   templateUrl: './camera.component.html',
   styleUrls: ['./camera.component.css']
 })
-export class CameraComponent implements OnInit {
+export class CameraComponent implements AfterViewInit {
 
   public canvasHeight = 720;
   public canvasWidth = 1280;
@@ -34,14 +34,12 @@ export class CameraComponent implements OnInit {
 
   public constructor() { }
 
-  public ngOnInit(): void { }
-
   public ngAfterViewInit(): void {
     const promises = [
       this.loadVideo(environment.neruVideoURL),
       navigator.mediaDevices.getUserMedia(constraints)
         .then(stream => this.loadVideo(stream))
-    ]
+    ];
 
     Promise.all(promises)
       .then(([video, stream]) => {
@@ -54,7 +52,7 @@ export class CameraComponent implements OnInit {
           height: this.stream.videoHeight,
           width: this.stream.videoWidth
         });
-        requestAnimationFrame(this.draw)
+        requestAnimationFrame(this.draw);
       });
   }
 
@@ -90,7 +88,7 @@ export class CameraComponent implements OnInit {
   }
 
   private draw = (): void => {
-    const video = this.cromaKey(this.video)
+    const video = this.cromaKey(this.video);
 
     this.context.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
     this.context.drawImage(
@@ -106,7 +104,7 @@ export class CameraComponent implements OnInit {
       this.canvasHeight / 2 - video.height / 2,
       video.width,
       video.height
-    )
+    );
 
     requestAnimationFrame(this.draw);
   }
