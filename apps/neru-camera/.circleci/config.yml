@@ -47,7 +47,7 @@ jobs:
     steps:
       - checkout
       - yarn_install
-      - run: yarn build --aot --prod
+      - run: yarn build --aot --prod --progress false
       - run: npx firebase-tools deploy --token ${FIREBASE_TOKEN}
 
 workflows:
