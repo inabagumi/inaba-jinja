@@ -11,6 +11,26 @@
         "source": "**",
         "destination": "/index.html"
       }
+    ],
+    "headers": [
+      {
+        "source": "/**",
+        "headers": [
+          {
+            "key": "Referrer-Policy",
+            "value": "same-origin"
+          }
+        ]
+      },
+      {
+        "source": "/*.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "immutable, max-age=31536000, public"
+          }
+        ]
+      }
     ]
   }
 }
