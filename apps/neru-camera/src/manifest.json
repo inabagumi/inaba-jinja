@@ -1,8 +1,8 @@
 {
-  "name": "neru-camera",
-  "short_name": "neru-camera",
+  "name": "ねるカメラ - ねるちゃん (因幡はねるさん) と一緒に写真が撮れるアプリ",
+  "short_name": "ねるカメラ",
   "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
