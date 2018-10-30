@@ -136,7 +136,7 @@ export class CameraService {
   }
 
   private createRenderer(canvas: HTMLCanvasElement, stream: HTMLVideoElement): WebGLRenderer {
-    const renderer = new WebGLRenderer({ antialias: true, canvas, preserveDrawingBuffer: true });
+    const renderer = new WebGLRenderer({ canvas, preserveDrawingBuffer: true });
     renderer.setSize(stream.videoWidth, stream.videoHeight, false);
 
     return renderer;
