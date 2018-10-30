@@ -370,6 +370,11 @@
   resolved "https://registry.npmjs.org/@types/selenium-webdriver/-/selenium-webdriver-3.0.12.tgz#6affe5aed1ba379175075a889adbe2bc3aa62159"
   integrity sha512-hYn+eoOehVUIdMwp5h34ZsGAO1ydja10GDup4BwyoFCdcH5MQ35nQq+AInSaBMEMopD5hEooFCyKo2Pajbe1ag==
 
+"@types/three@^0.93.5":
+  version "0.93.5"
+  resolved "https://registry.npmjs.org/@types/three/-/three-0.93.5.tgz#460390081296522d99e54c6a8241b13f87fb6bc6"
+  integrity sha512-OTo2ZezU5FkFB0Pdq0WOK+HDl6QobeCspn3tgJrqBt2WSl5GOrzVUU/Zyl5CP4QC9e++3Ni8a6qCaZo7vBS0/A==
+
 "@webassemblyjs/ast@1.7.6":
   version "1.7.6"
   resolved "https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.7.6.tgz#3ef8c45b3e5e943a153a05281317474fef63e21e"
@@ -6671,6 +6676,11 @@ terser@^3.8.1:
     commander "~2.17.1"
     source-map "~0.6.1"
     source-map-support "~0.5.6"
+
+three@^0.97.0:
+  version "0.97.0"
+  resolved "https://registry.npmjs.org/three/-/three-0.97.0.tgz#76141e1b0ace14246fe9198a458fefddc98a4e30"
+  integrity sha512-ctZF79O1R2aMIDnz9cV5GUIONyFnYvfQKg4+EAwEVaEr1mgy99rglstH6hhRdIThu3SOa4Ns5da/Ee5fTbWc9A==
 
 through2@^2.0.0:
   version "2.0.3"
