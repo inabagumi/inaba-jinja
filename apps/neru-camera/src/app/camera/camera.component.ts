@@ -143,9 +143,7 @@ export class CameraComponent implements AfterViewInit {
       video.muted = true;
 
       video.addEventListener('canplaythrough', () => {
-        video.play()
-          .then(() => resolve(video))
-          .catch(reject);
+        resolve(video);
       });
       video.addEventListener('error', reject);
 
