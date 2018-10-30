@@ -1,8 +1,25 @@
 .container {
   margin: 0;
+  position: relative;
 }
 
 canvas {
   height: auto;
   width: 100%;
+}
+
+.camera__loading {
+  align-items: center;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  left: 0;
+  min-height: 50vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.camera__loading--active {
+  display: flex;
 }

@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatProgressSpinnerModule } from '@angular/material';
 
 import { CameraComponent } from './camera.component';
 
@@ -8,6 +9,9 @@ describe('CameraComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        MatProgressSpinnerModule
+      ],
       declarations: [ CameraComponent ]
     })
     .compileComponents();

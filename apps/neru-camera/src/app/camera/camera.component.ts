@@ -7,10 +7,6 @@ interface CanvasSize {
   width: number;
 }
 
-interface ExtendedHTMLVideoElement extends HTMLVideoElement {
-  playsInline: boolean;
-}
-
 const constraints: MediaStreamConstraints = {
   audio: false,
   video: {
@@ -27,6 +23,7 @@ export class CameraComponent implements AfterViewInit {
 
   public canvasHeight = 720;
   public canvasWidth = 1280;
+  public loading = true;
 
   @ViewChild('canvas')
   private canvas: ElementRef<HTMLCanvasElement>;
@@ -48,9 +45,13 @@ export class CameraComponent implements AfterViewInit {
         });
 
         this.cameraService.init(this.canvas.nativeElement, stream, video);
+        this.loading = false;
       })
       .catch((error) => {
         console.error(error);
+      })
+      .finally(() => {
+        this.loading = false;
       });
   }
 

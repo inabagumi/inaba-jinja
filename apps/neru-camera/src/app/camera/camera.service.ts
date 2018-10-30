@@ -27,7 +27,7 @@ void main(void) {
   vec4 smpColor = texture2D(texture, vUv);
   float diff = length(keyColor - smpColor.rgb);
 
-  if (diff < 0.8) {
+  if (diff < 0.78) {
     discard;
   } else {
     gl_FragColor = smpColor;
@@ -63,7 +63,7 @@ export class CameraService {
       video.muted = true;
 
       video.addEventListener('canplaythrough', () => {
-        video.play().then(() => resolve(video)).catch(resolve);
+        video.play().then(() => resolve(video)).catch(reject);
       });
       video.addEventListener('error', reject);
 
@@ -136,7 +136,7 @@ export class CameraService {
   }
 
   private createRenderer(canvas: HTMLCanvasElement, stream: HTMLVideoElement): WebGLRenderer {
-    const renderer = new WebGLRenderer({ canvas, preserveDrawingBuffer: true });
+    const renderer = new WebGLRenderer({ antialias: true, canvas, preserveDrawingBuffer: true });
     renderer.setSize(stream.videoWidth, stream.videoHeight, false);
 
     return renderer;
