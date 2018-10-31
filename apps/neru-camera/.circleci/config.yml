@@ -13,8 +13,8 @@ commands:
     steps:
       - restore_cache:
           keys:
-              - v1-node-dependencies-{{ checksum "yarn.lock" }}
-              - v1-node-dependencies-
+            - v1-node-dependencies-{{ checksum "yarn.lock" }}
+            - v1-node-dependencies-
 
       - run:
           command: yarn install --frozen-lockfile
@@ -59,6 +59,7 @@ workflows:
           requires:
             - build
           filters:
+            tags:
+              only: /^v\d+(?:\.\d+){0,2}
             branches:
-              only:
-                - master
+              ignore: /.*/
