@@ -62,6 +62,9 @@ export class CameraService {
       video.loop = true;
       video.muted = true;
 
+      video.addEventListener('loadeddata', () => {
+        video.play().then(() => resolve(video)).catch(reject);
+      });
       video.addEventListener('loadedmetadata', () => {
         video.play().then(() => resolve(video)).catch(reject);
       });
