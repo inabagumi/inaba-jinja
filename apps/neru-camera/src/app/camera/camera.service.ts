@@ -62,7 +62,7 @@ export class CameraService {
       video.loop = true;
       video.muted = true;
 
-      video.addEventListener('canplaythrough', () => {
+      video.addEventListener('loadedmetadata', () => {
         video.play().then(() => resolve(video)).catch(reject);
       });
       video.addEventListener('error', reject);
