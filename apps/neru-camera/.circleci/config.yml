@@ -37,9 +37,9 @@ jobs:
           command: yarn test --browsers ChromeHeadlessCI --progress false --watch false
           name: yarn test
       - run:
-          command: yarn e2e --protractor-config=./e2e/protractor-ci.conf.js
+          command: yarn e2e --configuration=ci
           name: yarn e2e
-      - run: yarn build
+      - run: yarn build --progress false
 
   deploy:
     executor:
