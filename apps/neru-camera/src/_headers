@@ -1,0 +1,9 @@
+/*
+  Cache-Control: max-age=600, public, s-maxage=60
+  Referrer-Policy: same-origin
+
+/*.js
+  Cache-Control: immutable, max-age=31536000, public
+
+/*.css
+  Cache-Control: immutable, max-age=31536000, public

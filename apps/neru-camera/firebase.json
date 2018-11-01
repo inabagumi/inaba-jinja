@@ -17,6 +17,10 @@
         "source": "/**",
         "headers": [
           {
+            "key": "Cache-Control",
+            "value": "max-age=600, public, s-maxage=60"
+          },
+          {
             "key": "Referrer-Policy",
             "value": "same-origin"
           }
@@ -24,6 +28,15 @@
       },
       {
         "source": "/*.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "immutable, max-age=31536000, public"
+          }
+        ]
+      },
+      {
+        "source": "/*.css",
         "headers": [
           {
             "key": "Cache-Control",
