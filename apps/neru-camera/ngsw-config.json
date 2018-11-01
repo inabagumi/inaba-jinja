@@ -26,6 +26,16 @@
           "https://fonts.gstatic.com/**"
         ]
       }
+    },
+    {
+      "name": "videos",
+      "installMode": "lazy",
+      "updateMode": "lazy",
+      "resources": {
+        "urls": [
+          "https://video.twimg.com/**"
+        ]
+      }
     }
   ]
 }
