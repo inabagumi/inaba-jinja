@@ -26,41 +26,82 @@ commands:
             - ./node_modules/
 
 jobs:
-  build:
+  setup:
     executor:
       name: default
     steps:
       - checkout
       - yarn_install
-      - run: yarn lint
-      - run:
-          command: yarn test --browsers ChromeHeadlessCI --progress false --watch false
-          name: yarn test
-      - run:
-          command: yarn e2e --configuration=ci
-          name: yarn e2e
       - run: yarn build --progress false
+      - persist_to_workspace:
+          paths:
+            - ./*
+          root: .
 
-  deploy:
+  lint:
     executor:
       name: default
     steps:
-      - checkout
-      - yarn_install
-      - run: yarn build --aot --prod --progress false
+      - attach_workspace:
+          at: .
+      - run: yarn lint
+
+  test:
+    executor:
+      name: default
+    steps:
+      - attach_workspace:
+          at: .
+      - run: yarn test --configuration ci
+
+  e2e:
+    executor:
+      name: default
+    steps:
+      - attach_workspace:
+          at: .
+      - run: yarn e2e --configuration ci
+
+  publish:
+    executor:
+      name: default
+    steps:
+      - attach_workspace:
+          at: .
+      - run: yarn build --prod --progress false
       - run: npx firebase-tools deploy --token ${FIREBASE_TOKEN}
 
 workflows:
   version: 2
-  build_and_deploy:
+  workflow:
     jobs:
-      - build:
+      - setup:
           filters:
             tags:
               only: /.*/
-      - deploy:
+      - lint:
           requires:
-            - build
+            - setup
+          filters:
+            tags:
+              only: /.*/
+      - test:
+          requires:
+            - setup
+          filters:
+            tags:
+              only: /.*/
+      - e2e:
+          requires:
+            - setup
+          filters:
+            tags:
+              only: /.*/
+      - publish:
+          requires:
+            - lint
+            - test
+            - e2e
           filters:
             tags:
               only: /^v\d+(?:\.\d+){0,2}$/

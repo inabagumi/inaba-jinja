@@ -1,6 +1,6 @@
 [build]
   base    = "./"
-  command = "NODE_ENV=production yarn build --aot --prod --progress false"
+  command = "yarn build --prod --progress false"
   publish = "./dist/neru-camera/"
 
   [build.environment]

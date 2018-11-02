@@ -97,6 +97,13 @@
               "src/assets",
               "src/manifest.json"
             ]
+          },
+          "configurations": {
+            "ci": {
+              "browsers": "ChromeHeadlessCI",
+              "progress": false,
+              "watch": false
+            }
           }
         },
         "lint": {
