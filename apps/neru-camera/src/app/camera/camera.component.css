@@ -3,7 +3,7 @@
   position: relative;
 }
 
-canvas {
+.camera__canvas {
   height: auto;
   width: 100%;
 }
@@ -22,4 +22,10 @@ canvas {
 
 .camera__loading--active {
   display: flex;
+}
+
+.camera__failed {
+  margin: 1rem auto 2rem;
+  max-width: 960px;
+  padding: 0 1rem;
 }

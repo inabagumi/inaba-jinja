@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 import { environment } from '../../environments/environment';
 import { CameraService } from './camera.service';
 
@@ -23,14 +24,23 @@ export class CameraComponent implements AfterViewInit {
 
   public canvasHeight = 720;
   public canvasWidth = 1280;
+  public failed = false;
   public loading = true;
 
   @ViewChild('canvas')
   private canvas: ElementRef<HTMLCanvasElement>;
 
-  public constructor(private cameraService: CameraService) { }
+  public constructor(private cameraService: CameraService, public snackBar: MatSnackBar) { }
 
   public ngAfterViewInit(): void {
+    if (typeof navigator.mediaDevices === 'undefined') {
+      this.failed = true;
+      this.loading = false;
+      this.snackBar.open('Error...', null, { duration: 1000 });
+
+      return;
+    }
+
     const promises = [
       navigator.mediaDevices.getUserMedia(constraints)
         .then(stream => CameraService.loadVideo(stream)),
@@ -49,7 +59,7 @@ export class CameraComponent implements AfterViewInit {
         this.loading = false;
       })
       .catch((error) => {
-        console.error(error);
+        this.snackBar.open(error.message);
       })
       .finally(() => {
         this.loading = false;
