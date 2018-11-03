@@ -34,8 +34,9 @@ export class CameraComponent implements AfterViewInit {
     const promises = [
       navigator.mediaDevices.getUserMedia(constraints)
         .then(stream => CameraService.loadVideo(stream)),
-      CameraService.loadVideo(environment.neruVideoURL)
-    ];
+      this.downloadVideo(environment.neruVideoURL)
+        .then(url => CameraService.loadVideo(url))
+      ];
 
     Promise.all(promises)
       .then(([stream, video]) => {
@@ -82,5 +83,16 @@ export class CameraComponent implements AfterViewInit {
   private adjustCanvasSize({ height, width }: CanvasSize): void {
     this.canvasHeight = height;
     this.canvasWidth = width;
+  }
+
+  // NOTE: The Service Worker not yet supports a HTTP Range request.
+  // Since the video element uses the Range request in many web browsers,
+  // it fails fetch via the Service Worker.
+  private async downloadVideo(src: string): Promise<string> {
+    const req = new Request(src);
+    const res = await fetch(req);
+    const blob = await res.blob();
+
+    return URL.createObjectURL(blob);
   }
 }

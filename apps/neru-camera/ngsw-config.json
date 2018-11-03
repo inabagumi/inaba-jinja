@@ -26,15 +26,20 @@
           "https://fonts.gstatic.com/**"
         ]
       }
-    },
+    }
+  ],
+  "dataGroups": [
     {
       "name": "videos",
-      "installMode": "lazy",
-      "updateMode": "lazy",
-      "resources": {
-        "urls": [
-          "https://video.twimg.com/**"
-        ]
+      "version": 1,
+      "urls": [
+        "https://video.twimg.com/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 3,
+        "maxAge": "3d",
+        "timeout": "10s",
+        "strategy": "freshness"
       }
     }
   ]

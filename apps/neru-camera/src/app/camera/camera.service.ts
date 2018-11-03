@@ -65,9 +65,6 @@ export class CameraService {
       video.addEventListener('loadeddata', () => {
         video.play().then(() => resolve(video)).catch(reject);
       });
-      video.addEventListener('loadedmetadata', () => {
-        video.play().then(() => resolve(video)).catch(reject);
-      });
       video.addEventListener('error', reject);
 
       if (typeof src === 'string') {
