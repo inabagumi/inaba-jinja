@@ -1,6 +1,6 @@
 [build]
   base    = "./"
-  command = "yarn build --prod --progress false"
+  command = "yarn build --prod --progress false && cp -rf ./src/extra-files/edge/. ./dist/neru-camera/"
   publish = "./dist/neru-camera/"
 
   [build.environment]
