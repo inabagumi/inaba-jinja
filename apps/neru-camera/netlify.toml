@@ -5,4 +5,4 @@
 
   [build.environment]
     NODE_ENV     = "development"
-    NODE_VERSION = "8.12.0"
+    NODE_VERSION = "10.13.0"
