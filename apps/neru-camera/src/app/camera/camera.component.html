@@ -1,4 +1,5 @@
-<div class="container" *ngIf="!failed; then thenBlock; else elseBlock"></div>
+<ng-container *ngIf="!failed; then thenBlock; else elseBlock">
+</ng-container>
 
 <ng-template #thenBlock>
   <canvas
