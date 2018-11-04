@@ -1,12 +1,32 @@
 :host {
+  background-color: #000;
   display: block;
+  height: 100%;
   margin: 0;
+  overflow: hidden;
   position: relative;
 }
 
 .camera__canvas {
   height: auto;
   width: 100%;
+}
+
+.camera__action-buttons {
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  padding: 0 12px 24px;
+  position: fixed;
+  right: 0;
+}
+
+.camera__action-buttons button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
 }
 
 .camera__loading {

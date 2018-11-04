@@ -1,6 +1,14 @@
+:host {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
 .brand {
   align-items: center;
-  color: white;
+  color: #fff;
   display: flex;
   font-weight: 700;
   text-decoration: none;

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import {
-  MatProgressSpinnerModule,
-  MatSnackBarModule,
-  MatToolbarModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -24,6 +24,8 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
     MatToolbarModule,
