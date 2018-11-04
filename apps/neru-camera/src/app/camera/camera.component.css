@@ -46,7 +46,13 @@
 }
 
 .camera__failed {
-  margin: 1rem auto 2rem;
+  background-color: #fff;
+  height: 100%;
+  padding: 2rem 1rem 1rem;
+}
+
+.camera__failed h1,
+.camera__failed p {
+  margin: 0 auto;
   max-width: 960px;
-  padding: 0 1rem;
 }
