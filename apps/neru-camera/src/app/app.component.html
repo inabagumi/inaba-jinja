@@ -1,11 +1,39 @@
 <mat-toolbar color="primary">
-  <a class="brand" routerLink="/">
+  <a
+    class="navbar__brand"
+    (click)="sidenav.close()"
+    routerLink="">
     <img alt="" height="32" src="assets/logo.svg" width="32">
     <span>ねるカメラ</span>
   </a>
+
+  <span class="navbar__spacer"></span>
+
+  <button
+    class="navbar__menu-button"
+    (click)="sidenav.toggle()"
+    mat-icon-button>
+    <mat-icon aria-label="メニュー">menu</mat-icon>
+  </button>
 </mat-toolbar>
 
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <router-outlet></router-outlet>
+
+  <mat-sidenav
+    #sidenav
+    position="end">
+    <mat-list>
+      <a
+        (click)="sidenav.close()"
+        routerLink="about"
+        mat-list-item>
+        ねるカメラについて
+      </a>
+    </mat-list>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+</mat-sidenav-container>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700" rel="stylesheet">

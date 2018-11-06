@@ -6,19 +6,44 @@
   width: 100%;
 }
 
-.brand {
-  align-items: center;
+mat-toolbar.mat-primary {
   color: #fff;
+}
+
+.navbar__brand {
+  align-items: center;
+  color: inherit;
   display: flex;
   font-weight: 700;
+  margin-left: 0.5rem;
   text-decoration: none;
 }
 
-.brand img {
+.navbar__brand img {
   display: block;
 }
 
-.brand span {
+.navbar__brand span {
   display: block;
   margin-left: 12px;
+}
+
+.navbar__spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav-container {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+mat-sidenav {
+  display: block;
+  max-width: 100%;
+  width: 300px;
+}
+
+mat-list a {
+  text-decoration: none;
 }
