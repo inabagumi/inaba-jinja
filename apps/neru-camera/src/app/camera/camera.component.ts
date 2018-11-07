@@ -44,7 +44,7 @@ export class CameraComponent implements AfterViewInit {
     const promises = [
       navigator.mediaDevices.getUserMedia(constraints)
         .then(stream => CameraService.loadVideo(stream)),
-      this.downloadVideo(environment.neruVideoURL)
+      this.downloadVideo(environment.overlay.src)
         .then(url => CameraService.loadVideo(url))
       ];
 
