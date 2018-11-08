@@ -1,7 +1,4 @@
-<ng-container *ngIf="!failed; then thenBlock; else elseBlock">
-</ng-container>
-
-<ng-template #thenBlock>
+<ng-container *ngIf="!failed; else elseBlock">
   <canvas
     #canvas
     class="camera__canvas"
@@ -13,10 +10,7 @@
       <mat-icon aria-label="撮影">photo_camera</mat-icon>
     </button>
   </div>
-  <div class="camera__loading" [class.camera__loading--active]="loading">
-    <mat-spinner></mat-spinner>
-  </div>
-</ng-template>
+</ng-container>
 
 <ng-template #elseBlock>
   <section class="camera__failed mat-typography">
@@ -26,3 +20,7 @@
     <p>また iOS では Safari 以外でカメラの取得ができません。iPhone や iPad を使っている場合は Safari で開き直してください。</p>
   </section>
 </ng-template>
+
+<div class="camera__loading" [class.camera__loading--active]="loading">
+  <mat-spinner></mat-spinner>
+</div>

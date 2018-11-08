@@ -29,6 +29,19 @@
   display: block;
 }
 
+.camera__failed {
+  background-color: #fff;
+  height: 100%;
+  padding: 2rem 1rem 1rem;
+}
+
+.camera__failed h1,
+.camera__failed p {
+  margin-left: auto;
+  margin-right:auto;
+  max-width: 960px;
+}
+
 .camera__loading {
   align-items: center;
   bottom: 0;
@@ -43,17 +56,4 @@
 
 .camera__loading--active {
   display: flex;
-}
-
-.camera__failed {
-  background-color: #fff;
-  height: 100%;
-  padding: 2rem 1rem 1rem;
-}
-
-.camera__failed h1,
-.camera__failed p {
-  margin-left: auto;
-  margin-right:auto;
-  max-width: 960px;
 }
