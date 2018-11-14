@@ -5271,6 +5271,11 @@ pkg-dir@^3.0.0:
   dependencies:
     find-up "^3.0.0"
 
+pointer-tracker@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/pointer-tracker/-/pointer-tracker-2.0.3.tgz#6e66be8330e9f4e83c81d76e1d78e42eb4f89c00"
+  integrity sha512-PURBF4oc45JPECuguX6oPL3pJU5AlF0Nb/4sZdmqzPNAkV4LGL9MJMqb0smWDtmQ0F0KpbxEJn4/Lf5ugN1keQ==
+
 portfinder@1.0.17:
   version "1.0.17"
   resolved "https://registry.npmjs.org/portfinder/-/portfinder-1.0.17.tgz#a8a1691143e46c4735edefcf4fbcccedad26456a"

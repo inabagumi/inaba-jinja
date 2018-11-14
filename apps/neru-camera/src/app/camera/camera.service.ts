@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import PointerTracker from 'pointer-tracker';
 import {
   Color,
   LinearFilter,
@@ -50,6 +51,7 @@ void main(void) {
 export class CameraService {
 
   private camera: OrthographicCamera;
+  private pointerTracker: PointerTracker;
   private renderer: WebGLRenderer;
   private scene: Scene;
 
@@ -103,8 +105,27 @@ export class CameraService {
       vertexShader
     });
     const mesh = new Mesh(geometry, material);
-    mesh.position.z = 100;
     this.scene.add(mesh);
+
+    this.pointerTracker = new PointerTracker(canvas, {
+      start(pointer, event): boolean {
+        event.preventDefault();
+
+        return true;
+      },
+      move(previousPointers, changedPointers): void {
+        for (const pointer of changedPointers) {
+          const previous = previousPointers.find(p => p.id === pointer.id);
+
+          const x = pointer.clientX - previous.clientX;
+          const y = pointer.clientY - previous.clientY;
+
+          mesh.position.x = mesh.position.x + (x / (canvas.clientWidth / canvas.width));
+          mesh.position.y = mesh.position.y - (y / (canvas.clientHeight / canvas.height));
+        }
+      },
+      end(): void { }
+    });
 
     this.render();
   }
