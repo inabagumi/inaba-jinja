@@ -51,7 +51,7 @@ void main(void) {
 export class CameraService {
 
   private camera: OrthographicCamera;
-  private pointerTracker: PointerTracker;
+  private overlay: Mesh;
   private renderer: WebGLRenderer;
   private scene: Scene;
 
@@ -83,48 +83,27 @@ export class CameraService {
     this.renderer = this.createRenderer(canvas, stream);
     this.scene = this.createScene(stream);
     this.camera = this.createCamera(stream);
+    this.overlay = this.createOverlay(video);
 
-    const videoTexture = new VideoTexture(video);
-    videoTexture.minFilter = LinearFilter;
-    videoTexture.magFilter = LinearFilter;
-    videoTexture.format = RGBFormat;
-    const geometry = new PlaneGeometry(video.videoWidth / 2, video.videoHeight / 2, 1, 1);
-    const material = new ShaderMaterial({
-      fragmentShader,
-      transparent: true,
-      uniforms: {
-        keyColor: {
-          type: 'c',
-          value: new Color(0x00ff00)
-        },
-        texture: {
-          type: 't',
-          value: videoTexture
+    this.scene.add(this.overlay);
+
+    const pointerTracker = new PointerTracker(canvas, {
+      start: (_, event): boolean => {
+        if (pointerTracker.currentPointers.length > 0) {
+          return false;
         }
-      },
-      vertexShader
-    });
-    const mesh = new Mesh(geometry, material);
-    this.scene.add(mesh);
 
-    this.pointerTracker = new PointerTracker(canvas, {
-      start(pointer, event): boolean {
         event.preventDefault();
 
         return true;
       },
-      move(previousPointers, changedPointers): void {
-        for (const pointer of changedPointers) {
-          const previous = previousPointers.find(p => p.id === pointer.id);
+      move: ([previous], [pointer]): void => {
+        const x = pointer.clientX - previous.clientX;
+        const y = pointer.clientY - previous.clientY;
 
-          const x = pointer.clientX - previous.clientX;
-          const y = pointer.clientY - previous.clientY;
-
-          mesh.position.x = mesh.position.x + (x / (canvas.clientWidth / canvas.width));
-          mesh.position.y = mesh.position.y - (y / (canvas.clientHeight / canvas.height));
-        }
-      },
-      end(): void { }
+        this.overlay.position.x += (x / (canvas.clientWidth / canvas.width));
+        this.overlay.position.y -= (y / (canvas.clientHeight / canvas.height));
+      }
     });
 
     this.render();
@@ -154,6 +133,32 @@ export class CameraService {
     camera.position.z = 500;
 
     return camera;
+  }
+
+  private createOverlay(video: HTMLVideoElement): Mesh {
+    const videoTexture = new VideoTexture(video);
+    videoTexture.minFilter = LinearFilter;
+    videoTexture.magFilter = LinearFilter;
+    videoTexture.format = RGBFormat;
+    const geometry = new PlaneGeometry(video.videoWidth, video.videoHeight, 1, 1);
+    const material = new ShaderMaterial({
+      fragmentShader,
+      transparent: true,
+      uniforms: {
+        keyColor: {
+          type: 'c',
+          value: new Color(0x00ff00)
+        },
+        texture: {
+          type: 't',
+          value: videoTexture
+        }
+      },
+      vertexShader
+    });
+    const overlay = new Mesh(geometry, material);
+    overlay.scale.x = overlay.scale.y = 0.5;
+    return overlay;
   }
 
   private createRenderer(canvas: HTMLCanvasElement, stream: HTMLVideoElement): WebGLRenderer {
