@@ -45,6 +45,14 @@ module.exports = (_, argv) => {
         path.resolve('static')
       ]),
       new HtmlPlugin({
+        minify: {
+          collapseBooleanAttributes: true,
+          collapseWhitespace: true,
+          minifyCSS: true,
+          minifyJS: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true
+        },
         template: './src/index.html'
       })
     ],

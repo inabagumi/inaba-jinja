@@ -2,13 +2,13 @@ import { LitElement, customElement, html } from '@polymer/lit-element';
 
 declare global {
   interface HTMLElementTagNameMap {
-    'camera-about': CameraAbout;
+    'nc-about': About;
   }
 }
 
 /* todo */
-@customElement('camera-about' as any)
-export default class CameraAbout extends LitElement {
+@customElement('nc-about' as any)
+export default class About extends LitElement {
   render() {
     // tslint:disable:max-line-length
     return html`

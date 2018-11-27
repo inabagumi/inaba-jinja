@@ -2,7 +2,7 @@
   "dependencies": {
     "@polymer/app-layout": "^3.0.1",
     "@polymer/lit-element": "^0.6.3",
-    "@webcomponents/webcomponentsjs": "^2.2.0",
+    "@webcomponents/custom-elements": "^1.2.1",
     "lit-html": "^0.13.0",
     "pinch-zoom-element": "^1.0.2",
     "pointer-tracker": "^2.0.3",

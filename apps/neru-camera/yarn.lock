@@ -227,15 +227,15 @@
     "@webassemblyjs/wast-parser" "1.7.11"
     "@xtuc/long" "4.2.1"
 
+"@webcomponents/custom-elements@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/@webcomponents/custom-elements/-/custom-elements-1.2.1.tgz#0b9c8d06c6d8f059752ff389a6e4418f393338e7"
+  integrity sha512-flmTp4rVbBkcUIF3eBO3LNoAaYvleTdhPZKzdzr6iztWLLrxCctcK+7MAQeC3/SPjc3JDdC3jYLMRF4R6C3f9g==
+
 "@webcomponents/shadycss@^1.5.2":
   version "1.6.0"
   resolved "https://registry.npmjs.org/@webcomponents/shadycss/-/shadycss-1.6.0.tgz#2aeb0703983137a733bdb5c06fff125aa1f8c5c1"
   integrity sha512-iURGZZU6BaiRJtGgjMn208QxPkY11QwT/VmuHNa4Yb+kJxU/WODe4C8b0LDOtnk4KJzJg50hCfwvPRAjePEzbA==
-
-"@webcomponents/webcomponentsjs@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@webcomponents/webcomponentsjs/-/webcomponentsjs-2.2.0.tgz#52f3415a259ef3abc2599ee7520d151bee6037a1"
-  integrity sha512-WYW4VT4lk0Qk6apSS/mU/wRh4CP+DxJ7FeU1pxmXIdon64+GMMSx6llVyW3jLD4cTwENu2sN23+iIxoRJwTtsw==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
