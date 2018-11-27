@@ -16,6 +16,7 @@ export default class App extends LitElement {
     return html`
       <style>
         :host {
+          display: block;
           height: 100%;
           font-family: Roboto, Noto Sans JP, sans-serif;
           width: 100%;
@@ -40,7 +41,7 @@ export default class App extends LitElement {
         }
       </style>
 
-      <app-header-layout fullbleed>
+      <app-header-layout fullbleed has-scrolling-region>
         <app-header slot="header">
           <app-toolbar>
             <div main-title>

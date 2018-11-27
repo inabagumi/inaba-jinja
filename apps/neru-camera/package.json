@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@material/mwc-icon": "^0.3.2",
     "@polymer/app-layout": "^3.0.1",
     "@polymer/lit-element": "^0.6.3",
     "@webcomponents/custom-elements": "^1.2.1",

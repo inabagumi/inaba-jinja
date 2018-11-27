@@ -1,6 +1,6 @@
 import { LitElement, customElement, html, property, query } from '@polymer/lit-element';
-import { default as Renderer } from '../renderer';
 import { default as PinchZoom } from 'pinch-zoom-element';
+import { default as Renderer } from '../renderer';
 
 declare global {
   interface HTMLElementTagNameMap {
@@ -81,6 +81,16 @@ export default class CameraCanvas extends LitElement {
         <div class="dummy"></div>
       </pinch-zoom>
     `;
+  }
+
+  toBlob() {
+    return new Promise<Blob>((resolve, reject) => {
+      try {
+        this.canvas.toBlob(resolve, 'image/png');
+      } catch (error) {
+        reject(error);
+      }
+    });
   }
 
   private changeHandler(event) {

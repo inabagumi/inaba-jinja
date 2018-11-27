@@ -21,6 +21,22 @@
     reflect-metadata "^0.1.12"
     tslib "^1.8.1"
 
+"@material/mwc-base@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/@material/mwc-base/-/mwc-base-0.3.2.tgz#b8948c1ea77bba0863aa0a6985ea012bb626f674"
+  integrity sha512-RSVoiJhWjul07h472QbJ6P4oGGjr+RAg5D7WqIMykxAMXtZYw+CvpUr8M8BIKvYnfT+KOpNzLebT75AtGzMbfQ==
+  dependencies:
+    "@polymer/lit-element" "^0.6.2"
+    lit-html "^0.13.0"
+
+"@material/mwc-icon@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/@material/mwc-icon/-/mwc-icon-0.3.2.tgz#d82bd781323786b4253682632d707e58b47a1de1"
+  integrity sha512-heKmxQ6bWd21uTjL3wNcBVhiYX9ezi9zhyDrnIBSB306Np2dm0X/8j/Aa+f+KDea69JgFhxxDGmiFZ/Md8eMGg==
+  dependencies:
+    "@material/mwc-base" "^0.3.2"
+    "@polymer/lit-element" "^0.6.2"
+
 "@polymer/app-layout@^3.0.1":
   version "3.0.1"
   resolved "https://registry.npmjs.org/@polymer/app-layout/-/app-layout-3.0.1.tgz#41266a4ae358a4f180b83d1d570a260a09570a33"
@@ -60,7 +76,7 @@
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/lit-element@^0.6.3":
+"@polymer/lit-element@^0.6.2", "@polymer/lit-element@^0.6.3":
   version "0.6.3"
   resolved "https://registry.npmjs.org/@polymer/lit-element/-/lit-element-0.6.3.tgz#8ac2b82ae24f6306b5df0f2fa0b6deddd3cc4794"
   integrity sha512-f7MNsgaliRN+g5MFbwKiTWTTWf3GrhYNB/3fAHM7t77TXTSbQ8MXHy2HXfQvPEHwjgen1o2CocaCTSGl/zzJ3g==
