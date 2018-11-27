@@ -6,18 +6,17 @@
     <meta name="theme-color" content="#ff9800">
     <title>ねるカメラ</title>
     <meta content="ねるカメラは有閑喫茶 あにまーれに所属しているバーチャルYouTuberの因幡はねるさん (ねるちゃん) と一緒に写真が撮れるアプリです。ねるちゃんとの幸せなひとときをあなたに。" name="description">
-    <base href="/">
-    <link href="manifest.json" rel="manifest">
-    <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
-    <link href="assets/icons/icon-72x72.png" rel="icon" sizes="72x72" type="image/png">
-    <link href="assets/icons/icon-96x96.png" rel="icon" sizes="96x96" type="image/png">
-    <link href="assets/icons/icon-128x128.png" rel="icon" sizes="128x128" type="image/png">
-    <link href="assets/icons/icon-144x144.png" rel="icon" sizes="144x144" type="image/png">
-    <link href="assets/icons/icon-152x152.png" rel="icon" sizes="152x152" type="image/png">
-    <link href="assets/icons/icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
-    <link href="assets/icons/icon-384x384.png" rel="icon" sizes="384x384" type="image/png">
-    <link href="assets/icons/icon-512x512.png" rel="icon" sizes="512x512" type="image/png">
-    <link href="apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+    <link href="/manifest.json" rel="manifest">
+    <link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+    <link href="/assets/icons/icon-72x72.png" rel="icon" sizes="72x72" type="image/png">
+    <link href="/assets/icons/icon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="/assets/icons/icon-128x128.png" rel="icon" sizes="128x128" type="image/png">
+    <link href="/assets/icons/icon-144x144.png" rel="icon" sizes="144x144" type="image/png">
+    <link href="/assets/icons/icon-152x152.png" rel="icon" sizes="152x152" type="image/png">
+    <link href="/assets/icons/icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="/assets/icons/icon-384x384.png" rel="icon" sizes="384x384" type="image/png">
+    <link href="/assets/icons/icon-512x512.png" rel="icon" sizes="512x512" type="image/png">
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
     <meta content="website" property="og:type">
     <meta content="https://neru.camera/" property="og:url">
     <meta content="ねるカメラ" property="og:title">
@@ -27,9 +26,53 @@
     <meta content="ねるカメラ" name="twitter:title">
     <meta content="ねるカメラは有閑喫茶 あにまーれに所属しているバーチャルYouTuberの因幡はねるさん (ねるちゃん) と一緒に写真が撮れるアプリです。ねるちゃんとの幸せなひとときをあなたに。" name="twitter:description">
     <meta content="https://neru.camera/assets/main-visual.jpg" name="twitter:image">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      body {
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+      }
+
+      #root {
+        height: 100%;
+        width: 100%;
+      }
+
+      app-header-layout {
+        height: 100%;
+      }
+
+      app-header {
+        background-color: #ff9800;
+      }
+
+      app-toolbar {
+        color: #fff;
+        font-weight: 700;
+      }
+
+      [main-title] {
+        align-items: center;
+        display: flex;
+      }
+
+      [main-title] > :not(:first-child) {
+        margin-left: 5px;
+      }
+    </style>
   </head>
   <body>
-    <app-root></app-root>
+    <div id="root"></div>
     <noscript><p>JavaScript を有効にしてください。</p></noscript>
   </body>
 </html>

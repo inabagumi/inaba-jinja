@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "./dist/neru-camera/",
+    "public": "./build/public/",
     "ignore": [
       "firebase.json",
       "**/.*",
