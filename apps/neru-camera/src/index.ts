@@ -12,6 +12,17 @@ async function main() {
     );
   }
 
+  await Promise.all([
+    import(
+      /* webpackChunkName: 'icons' */
+      '@polymer/iron-icons',
+    ),
+    import(
+      /* webpackChunkName: 'icons' */
+      '@polymer/iron-icons/image-icons',
+    ),
+  ]);
+
   init();
 }
 

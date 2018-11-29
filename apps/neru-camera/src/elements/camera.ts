@@ -1,6 +1,6 @@
 import { LitElement, customElement, html, query } from '@polymer/lit-element';
 import { default as CameraCanvas } from './camera-canvas';
-import '@material/mwc-icon';
+import '@polymer/iron-icon';
 
 declare global {
   interface HTMLElementTagNameMap {
@@ -40,7 +40,7 @@ export default class Camera extends LitElement {
           justify-content: space-around;
           left: 0;
           padding: 0 12px 24px;
-          position: fixed;
+          position: absolute;
           right: 0;
         }
 
@@ -65,7 +65,7 @@ export default class Camera extends LitElement {
 
       <div class="action-buttons">
         <button @click="${this.clickHandler}">
-          <mwc-icon aria-label="撮影">photo_camera</mwc-icon>
+          <iron-icon aria-label="撮影" icon="image:photo-camera"></iron-icon>
         </button>
       </div>
     `;
