@@ -1,0 +1,17 @@
+{
+  "compile": "naver",
+  "moduleResolution": "node",
+  "npm": true,
+  "plugins": {
+    "local": {
+      "browserOptions": {
+        "chrome": [
+          "no-sandbox",
+          "headless",
+          "disable-gpu"
+        ]
+      },
+      "browsers": ["chrome"]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width" name="viewport">
+    <title>test for &lt;nc-app&gt;&lt;/nc-app&gt;</title>
+
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../node_modules/wct-mocha/wct-mocha.js"></script>
+  </head>
+  <body>
+    <nc-app id="fixture"></nc-app>
+
+    <script type="module">
+      import App from '../build/out-tsc/elements/app.js';
+
+      suite('<nc-app></nc-app>', () => {
+        test('is App', () => {
+          const element = document.getElementById('fixture');
+
+          chai.assert.instanceOf(element, App);
+        });
+      });
+    </script>
+  </body>
+</html>
