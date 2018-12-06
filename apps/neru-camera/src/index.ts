@@ -1,7 +1,7 @@
 declare module '@webcomponents/custom-elements';
 
 function init() {
-  require('./init-app');
+  require('./elements/app');
 }
 
 async function main() {

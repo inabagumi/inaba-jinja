@@ -18,6 +18,39 @@ export default class Camera extends LitElement {
   private cameraCanvas?: CameraCanvas;
 
   render() {
+    if (!navigator.mediaDevices) {
+      // tslint:disable:max-line-length
+      return html`
+        <style>
+          :host {
+            display: block;
+            padding: 0.5rem;
+          }
+
+          h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+          }
+
+          p {
+            line-height: 1.75;
+            margin: 0;
+          }
+
+          p + p {
+            margin-top: 1rem;
+          }
+        </style>
+
+        <h1>カメラの取得に失敗しました</h1>
+
+        <p>あなたの使っているアプリはカメラの取得に対応していません。PC の場合、Google Chrome と Firefox 最新版以外での動作は保証できません。Android の場合は Play Store からダウンロードできる Chrome を使ってください。</p>
+        <p>また iOS では Safari 以外のアプリからカメラの取得ができません。iPhone や iPad などの iOS 端末を使っている場合は Safari で開き直してください。</p>
+      `;
+      // tslint:enable:max-line-length
+    }
+
     return html`
       <style>
         :host {
