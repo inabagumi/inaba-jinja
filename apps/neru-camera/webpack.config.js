@@ -1,5 +1,6 @@
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
+const ScriptExtHtmlPlugin = require('script-ext-html-webpack-plugin');
 const path = require('path');
 
 module.exports = (_, argv) => {
@@ -13,6 +14,29 @@ module.exports = (_, argv) => {
     mode: isProd ? 'production' : 'development',
     module: {
       rules: [
+        {
+          test: /\.scss$/,
+          use: [
+            'style-loader/useable',
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                fiber: require('fibers'),
+                implementation: require('sass'),
+                includePaths: [
+                  path.resolve('node_modules')
+                ],
+                sourceMap: true
+              }
+            }
+          ]
+        },
         {
           resolve: {
             extensions: ['.mjs', '.js'],
@@ -53,7 +77,10 @@ module.exports = (_, argv) => {
           removeScriptTypeAttributes: true,
           removeStyleLinkTypeAttributes: true
         },
-        template: './src/index.html'
+        template: isProd ? '!!prerender-loader?string!./src/index.html' : './src/index.html'
+      }),
+      new ScriptExtHtmlPlugin({
+        inline: ['main']
       })
     ],
     resolve: {

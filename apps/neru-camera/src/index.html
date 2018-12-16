@@ -26,26 +26,59 @@
     <meta content="ねるカメラ" name="twitter:title">
     <meta content="ねるカメラは有閑喫茶 あにまーれに所属しているバーチャルYouTuberの因幡はねるさん (ねるちゃん) と一緒に写真が撮れるアプリです。ねるちゃんとの幸せなひとときをあなたに。" name="twitter:description">
     <meta content="https://neru.camera/assets/main-visual.jpg" name="twitter:image">
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-      }
-
-      body {
-        bottom: 0;
-        left: 0;
-        margin: 0;
-        position: fixed;
-        right: 0;
-        top: 0;
-      }
-    </style>
   </head>
-  <body>
-    <nc-app></nc-app>
-    <noscript><p>JavaScript を有効にしてください。</p></noscript>
+  <body class="mdc-typography">
+    <aside class="mdc-drawer mdc-drawer--modal">
+      <div class="mdc-drawer__header">
+        <h3 class="mdc-drawer__title">ねるカメラ</h3>
+        <h6 class="mdc-drawer__subtitle">Neru Camera</h6>
+      </div>
+
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list">
+          <a
+            aria-selected="true"
+            class="mdc-list-item"
+            href="https://github.com/ykzts/neru-camera/blob/master/README.md"
+            rel="noopener noreferrer"
+            tabindex="0"
+            target="_blank">ねるカメラについて</a>
+          <a
+            class="mdc-list-item"
+            href="https://github.com/ykzts/neru-camera/releases"
+            rel="noopener noreferrer"
+            tabindex="0"
+            target="_blank">リリースノート</a>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="mdc-drawer-app-content">
+      <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button aria-label="メニューを開く" class="material-icons mdc-top-app-bar__navigation-icon">menu</button>
+            <span class="mdc-top-app-bar__title">
+              <img alt="" height="32" src="/assets/logo.svg" width="32">
+              <span>ねるカメラ</span>
+            </span>
+          </section>
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+          </section>
+        </div>
+      </header>
+
+      <main class="main-content" id="main-content">
+        <div class="mdc-top-app-bar--fixed-adjust">
+          <nc-camera></nc-camera>
+        </div>
+      </main>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </body>
 </html>

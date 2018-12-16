@@ -1,29 +1,16 @@
-declare module '@webcomponents/custom-elements';
-
-function init() {
-  require('./elements/app');
-}
+import * as style from './styles/app.scss';
 
 async function main() {
-  if (!('customElements' in global)) {
-    await import(
-      /* webpackChunkName: 'wc-polyfill' */
-      '@webcomponents/custom-elements',
-    );
+  if (process.env.NODE_ENV !== 'production' || typeof PRERENDER !== 'undefined') {
+    style.use();
   }
 
-  await Promise.all([
-    import(
-      /* webpackChunkName: 'icons' */
-      '@polymer/iron-icons',
-    ),
-    import(
-      /* webpackChunkName: 'icons' */
-      '@polymer/iron-icons/image-icons',
-    ),
-  ]);
+  const { init } = await import(
+    /* webpackChunkName: 'init' */
+    './init-app',
+  );
 
-  init();
+  await init();
 }
 
 main().catch(error => console.error(error));
