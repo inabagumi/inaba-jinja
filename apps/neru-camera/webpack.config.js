@@ -1,5 +1,7 @@
 const CopyPlugin = require('copy-webpack-plugin');
+const CrittersPlugin = require('critters-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ScriptExtHtmlPlugin = require('script-ext-html-webpack-plugin');
 const path = require('path');
 
@@ -17,7 +19,7 @@ module.exports = (_, argv) => {
         {
           test: /\.scss$/,
           use: [
-            'style-loader/useable',
+            isProd ? MiniCssExtractPlugin.loader : 'style-loader',
             {
               loader: 'css-loader',
               options: {
@@ -68,7 +70,12 @@ module.exports = (_, argv) => {
       new CopyPlugin([
         path.resolve('static')
       ]),
+      isProd && new MiniCssExtractPlugin({
+        chunkFilename: '[name].[contenthash:5].css',
+        filename: '[name].[contenthash:5].css'
+      }),
       new HtmlPlugin({
+        cache: false,
         minify: {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
@@ -79,10 +86,15 @@ module.exports = (_, argv) => {
         },
         template: isProd ? '!!prerender-loader?string!./src/index.html' : './src/index.html'
       }),
-      new ScriptExtHtmlPlugin({
-        inline: ['main']
+       new ScriptExtHtmlPlugin({
+        inline: /^main\.[^.]+\.js$/
+      }),
+      isProd && new CrittersPlugin({
+        noscriptFallback: false,
+        preload: 'media',
+        pruneSource: false
       })
-    ],
+    ].filter(Boolean),
     resolve: {
       extensions: ['.js', '.mjs', '.ts']
     }
