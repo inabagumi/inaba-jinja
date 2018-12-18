@@ -1,12 +1,12 @@
-const CopyPlugin = require('copy-webpack-plugin');
-const CrittersPlugin = require('critters-webpack-plugin');
-const HtmlPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const ScriptExtHtmlPlugin = require('script-ext-html-webpack-plugin');
-const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin')
+const CrittersPlugin = require('critters-webpack-plugin')
+const HtmlPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const ScriptExtHtmlPlugin = require('script-ext-html-webpack-plugin')
+const path = require('path')
 
 module.exports = (_, argv) => {
-  const isProd = argv.mode === 'production';
+  const isProd = argv.mode === 'production'
 
   return {
     devtool: 'source-map',
@@ -31,9 +31,7 @@ module.exports = (_, argv) => {
               options: {
                 fiber: require('fibers'),
                 implementation: require('sass'),
-                includePaths: [
-                  path.resolve('node_modules')
-                ],
+                includePaths: [path.resolve('node_modules')],
                 sourceMap: true
               }
             }
@@ -67,13 +65,12 @@ module.exports = (_, argv) => {
       publicPath: '/'
     },
     plugins: [
-      new CopyPlugin([
-        path.resolve('static')
-      ]),
-      isProd && new MiniCssExtractPlugin({
-        chunkFilename: '[name].[contenthash:5].css',
-        filename: '[name].[contenthash:5].css'
-      }),
+      new CopyPlugin([path.resolve('static')]),
+      isProd &&
+        new MiniCssExtractPlugin({
+          chunkFilename: '[name].[contenthash:5].css',
+          filename: '[name].[contenthash:5].css'
+        }),
       new HtmlPlugin({
         cache: false,
         minify: {
@@ -84,19 +81,22 @@ module.exports = (_, argv) => {
           removeScriptTypeAttributes: true,
           removeStyleLinkTypeAttributes: true
         },
-        template: isProd ? '!!prerender-loader?string!./src/index.html' : './src/index.html'
+        template: isProd
+          ? '!!prerender-loader?string!./src/index.html'
+          : './src/index.html'
       }),
-       new ScriptExtHtmlPlugin({
+      new ScriptExtHtmlPlugin({
         inline: /^main\.[^.]+\.js$/
       }),
-      isProd && new CrittersPlugin({
-        noscriptFallback: false,
-        preload: 'media',
-        pruneSource: false
-      })
+      isProd &&
+        new CrittersPlugin({
+          noscriptFallback: false,
+          preload: 'media',
+          pruneSource: false
+        })
     ].filter(Boolean),
     resolve: {
       extensions: ['.js', '.mjs', '.ts']
     }
-  };
+  }
 }

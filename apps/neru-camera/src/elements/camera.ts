@@ -1,26 +1,25 @@
-import { LitElement, customElement, html, query } from '@polymer/lit-element';
-import { default as CameraCanvas } from './camera-canvas';
+import { LitElement, customElement, html, query } from '@polymer/lit-element'
+import { default as CameraCanvas } from './camera-canvas'
 
-import '@material/mwc-icon';
+import '@material/mwc-icon'
 
 declare global {
   interface HTMLElementTagNameMap {
-    'nc-camera': Camera;
+    'nc-camera': Camera
   }
 }
 
 // tslint:disable-next-line:max-line-length
-const neruChan = 'https://video.twimg.com/ext_tw_video/1054770262854389760/pu/vid/592x1280/Iqv1cl0KCIdFJL5p.mp4';
+const neruChan =
+  'https://video.twimg.com/ext_tw_video/1054770262854389760/pu/vid/592x1280/Iqv1cl0KCIdFJL5p.mp4'
 
 @customElement('nc-camera' as any)
 export default class Camera extends LitElement {
-
   @query('camera-canvas')
-  private cameraCanvas?: CameraCanvas;
+  private cameraCanvas?: CameraCanvas
 
   render() {
     if (!navigator.mediaDevices) {
-      // tslint:disable:max-line-length
       return html`
         <style>
           :host {
@@ -46,10 +45,18 @@ export default class Camera extends LitElement {
 
         <h1>カメラの取得に失敗しました</h1>
 
-        <p>あなたの使っているアプリはカメラの取得に対応していません。PC の場合、Google Chrome と Firefox 最新版以外での動作は保証できません。Android の場合は Play Store からダウンロードできる Chrome を使ってください。</p>
-        <p>また iOS では Safari 以外のアプリからカメラの取得ができません。iPhone や iPad などの iOS 端末を使っている場合は Safari で開き直してください。</p>
-      `;
-      // tslint:enable:max-line-length
+        <p>
+          あなたの使っているアプリはカメラの取得に対応していません。PC
+          の場合、Google Chrome と Firefox
+          最新版以外での動作は保証できません。Android の場合は Play Store
+          からダウンロードできる Chrome を使ってください。
+        </p>
+        <p>
+          また iOS では Safari 以外のアプリからカメラの取得ができません。iPhone
+          や iPad などの iOS 端末を使っている場合は Safari
+          で開き直してください。
+        </p>
+      `
     }
 
     return html`
@@ -102,30 +109,29 @@ export default class Camera extends LitElement {
           <mwc-icon>photo_camera</mwc-icon>
         </button>
       </div>
-    `;
+    `
   }
 
   private clickHandler(event: MouseEvent) {
-    event.preventDefault();
+    event.preventDefault()
 
-    const anchor = document.createElement('a');
+    const anchor = document.createElement('a')
 
-    let otherTab: Window;
+    let otherTab: Window
     if (typeof anchor.download !== 'string') {
-      otherTab = window.open('about:blank', '_blank');
+      otherTab = window.open('about:blank', '_blank')
     }
 
-    this.cameraCanvas.toBlob()
-      .then((blob) => {
-        anchor.href = URL.createObjectURL(blob);
+    this.cameraCanvas.toBlob().then(blob => {
+      anchor.href = URL.createObjectURL(blob)
 
-        if (!otherTab) {
-          anchor.download = `NeruCamera-${Date.now()}.png`;
-          anchor.target = '_blank';
-          anchor.click();
-        } else {
-          otherTab.location.href = anchor.href;
-        }
-      });
+      if (!otherTab) {
+        anchor.download = `NeruCamera-${Date.now()}.png`
+        anchor.target = '_blank'
+        anchor.click()
+      } else {
+        otherTab.location.href = anchor.href
+      }
+    })
   }
 }
