@@ -98,7 +98,12 @@ module.exports = (_, argv) => {
       isProd &&
         new WorkboxPlugin.GenerateSW({
           clientsClaim: true,
-          exclude: [/\.(?:ico|jpe?g|png|svg)$/, /\.map$/, /^_headers$/],
+          exclude: [
+            /\.(?:ico|jpe?g|png|svg)$/,
+            /\.map$/,
+            /^_headers$/,
+            /^main\.[^.]+\.js$/
+          ],
           importWorkboxFrom: 'local',
           runtimeCaching: [
             {
