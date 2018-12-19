@@ -108,6 +108,15 @@ module.exports = (_, argv) => {
                   statuses: [0, 200]
                 }
               },
+              urlPattern: /\.(?:ico|jpe?g|png|svg)$/
+            },
+            {
+              handler: 'cacheFirst',
+              options: {
+                cacheableResponse: {
+                  statuses: [0, 200]
+                }
+              },
               urlPattern: /^https:\/\/(?:fonts\.googleapis\.com|fonts\.gstatic\.com)\//i
             },
             {
