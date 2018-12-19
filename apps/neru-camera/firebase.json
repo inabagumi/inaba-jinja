@@ -37,6 +37,15 @@
             "value": "immutable, max-age=31536000, public"
           }
         ]
+      },
+      {
+        "source": "/sw.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          }
+        ]
       }
     ]
   }

@@ -2,8 +2,9 @@ const CopyPlugin = require('copy-webpack-plugin')
 const CrittersPlugin = require('critters-webpack-plugin')
 const HtmlPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const ScriptExtHtmlPlugin = require('script-ext-html-webpack-plugin')
 const path = require('path')
+const ScriptExtHtmlPlugin = require('script-ext-html-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = (_, argv) => {
   const isProd = argv.mode === 'production'
@@ -93,6 +94,34 @@ module.exports = (_, argv) => {
           noscriptFallback: false,
           preload: 'media',
           pruneSource: false
+        }),
+      isProd &&
+        new WorkboxPlugin.GenerateSW({
+          clientsClaim: true,
+          exclude: [/\.(?:ico|jpe?g|png|svg)$/, /\.map$/, /^_headers$/],
+          importWorkboxFrom: 'local',
+          runtimeCaching: [
+            {
+              handler: 'cacheFirst',
+              options: {
+                cacheableResponse: {
+                  statuses: [0, 200]
+                }
+              },
+              urlPattern: /^https:\/\/(?:fonts\.googleapis\.com|fonts\.gstatic\.com)\//i
+            },
+            {
+              handler: 'staleWhileRevalidate',
+              options: {
+                cacheableResponse: {
+                  statuses: [0, 200]
+                }
+              },
+              urlPattern: /^https:\/\/video\.twimg\.com\//i
+            }
+          ],
+          skipWaiting: true,
+          swDest: 'sw.js'
         })
     ].filter(Boolean),
     resolve: {

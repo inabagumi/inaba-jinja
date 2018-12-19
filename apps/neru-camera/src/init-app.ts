@@ -18,6 +18,9 @@ export async function init() {
     drawer.open = !drawer.open
   })
 
-  await import(/* webpackChunkName: 'init' */
-  './elements/camera')
+  await import(/* webpackChunkName: 'init' */ './elements/camera')
+
+  if (process.env.NODE_ENV === 'production' && navigator.serviceWorker) {
+    await navigator.serviceWorker.register('sw.js')
+  }
 }

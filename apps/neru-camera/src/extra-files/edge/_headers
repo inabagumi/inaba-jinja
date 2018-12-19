@@ -7,3 +7,6 @@
 
 /*.css
   Cache-Control: immutable, max-age=31536000, public
+
+/sw.js
+  Cache-Control: max-age=0
