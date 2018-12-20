@@ -1,8 +1,6 @@
 import { LitElement, customElement, html, query } from '@polymer/lit-element'
 import { default as CameraCanvas } from './camera-canvas'
 
-import '@material/mwc-icon'
-
 declare global {
   interface HTMLElementTagNameMap {
     'nc-camera': Camera
@@ -100,13 +98,22 @@ export default class Camera extends LitElement {
         .action-buttons button:focus {
           outline: 0;
         }
+
+        .action-buttons .icon {
+          display: inline-block;
+          font-family: Material Icons;
+          font-size: 24px;
+          line-heigh: 1;
+          -webkit-font-feature-settings: 'liga';
+          -webkit-font-smoothing: antialiased;
+        }
       </style>
 
       <camera-canvas src="${neruChan}"></camera-canvas>
 
       <div class="action-buttons">
         <button aria-label="撮影" @click="${this.clickHandler}">
-          <mwc-icon>photo_camera</mwc-icon>
+          <span class="icon">photo_camera</span>
         </button>
       </div>
     `

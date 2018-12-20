@@ -536,22 +536,6 @@
     "@material/theme" "^0.41.0"
     "@material/typography" "^0.42.0"
 
-"@material/mwc-base@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.npmjs.org/@material/mwc-base/-/mwc-base-0.3.4.tgz#0738e64a7b873e71dfdcf86c1e5d18a10071a8d7"
-  integrity sha512-BDz1xTOjfyWI5lEQ/y1JV2bBn8txM2LOrrEXksChTNlW8Nsgw2jMXMy4niSVF7jBMWbzSnNEhGBXeQo8HMIFXw==
-  dependencies:
-    "@polymer/lit-element" "^0.6.5"
-    lit-html "^1.0.0-rc.1"
-
-"@material/mwc-icon@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.npmjs.org/@material/mwc-icon/-/mwc-icon-0.3.4.tgz#786b748f7c1215fa58f15d254f803b8ceccaf3c3"
-  integrity sha512-qOqZNDYcReNY1Rto0QheYZilEiHT23826SB3sCkqLvScgyoI4t1ckmX89XmhT6mbXbPdNbZOOAbo0/BTHFKWng==
-  dependencies:
-    "@material/mwc-base" "^0.3.4"
-    "@polymer/lit-element" "^0.6.5"
-
 "@material/ripple@^0.42.0":
   version "0.42.0"
   resolved "https://registry.npmjs.org/@material/ripple/-/ripple-0.42.0.tgz#3ff501badfb81c76b1e51e6790217c2f32b57cdc"

@@ -2,7 +2,6 @@
   "dependencies": {
     "@material/drawer": "^0.42.0",
     "@material/list": "^0.42.0",
-    "@material/mwc-icon": "^0.3.4",
     "@material/ripple": "^0.42.0",
     "@material/top-app-bar": "^0.42.0",
     "@material/typography": "^0.42.0",
