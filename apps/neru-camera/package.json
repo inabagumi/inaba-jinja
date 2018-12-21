@@ -49,5 +49,5 @@
     "start": "webpack-dev-server",
     "test": "tsc && wct"
   },
-  "version": "2.3.1"
+  "version": "2.3.2"
 }
