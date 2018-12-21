@@ -77,7 +77,7 @@ export default class CameraCanvas extends LitElement {
         }
       </style>
 
-      <canvas height="${this.height}" width="${this.width}"> </canvas>
+      <canvas height="${this.height}" width="${this.width}"></canvas>
 
       <pinch-zoom @change="${this.changeHandler}">
         <div class="dummy"></div>

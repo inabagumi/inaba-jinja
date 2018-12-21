@@ -31,6 +31,10 @@ body {
   color: #fff;
   display: flex;
 
+  @media (max-width: 599px) {
+    display: none;
+  }
+
   > :not(:first-child) {
     margin-left: 5px;
   }
