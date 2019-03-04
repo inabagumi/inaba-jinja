@@ -61,5 +61,6 @@ export default class extends Vue {
   fill: currentColor;
   height: 100%;
   max-height: 100vh;
+  width: 100%;
 }
 </style>
