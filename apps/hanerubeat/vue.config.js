@@ -6,7 +6,7 @@ module.exports = {
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'default',
     iconPaths: {
-      appleTouchIcon: '',
+      appleTouchIcon: 'img/heart-icon-152x152.png',
       favicon16: 'img/heart-icon-16x16.png',
       favicon32: 'img/heart-icon-32x32.png',
       maskIcon: 'img/heart.svg',
