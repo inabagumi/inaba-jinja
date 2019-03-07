@@ -499,85 +499,97 @@
   resolved "https://registry.npmjs.org/@material/dom/-/dom-0.41.0.tgz#6756865f97bad4c91ee75e69d769d7cdc25398ae"
   integrity sha512-wOJrMwjPddYXpQFZAIaCLWI3TO/6KU1lxESTBzunni8A4FHQVWhokml5Xt85GqZwmPFeIF2s+D0wfbWyrGBuKQ==
 
-"@material/drawer@^0.42.0":
-  version "0.42.0"
-  resolved "https://registry.npmjs.org/@material/drawer/-/drawer-0.42.0.tgz#59c1e877cd0013f9acbdf4da15c63d8eb7bca06e"
-  integrity sha512-9+PPpF7eeSYIYDlqHQJEl0n8JYgxyWcZYBVoymqDLXjcD/YJZ0zFT06U61/dz/7Zxx6bZ7xP/p+IGGJQHvaSYA==
+"@material/drawer@^0.44.0":
+  version "0.44.1"
+  resolved "https://registry.npmjs.org/@material/drawer/-/drawer-0.44.1.tgz#8a225afe8f7fce21244add2206b4b5028e7241c2"
+  integrity sha512-MPPKFVUC5gFeIKAbbU0fb2wcPXBXt85MGkMkv1utyH5iq2dFwYUnk2OliBtDO/5Ds+diymfp1iD+Lz416A36fA==
   dependencies:
     "@material/animation" "^0.41.0"
     "@material/base" "^0.41.0"
-    "@material/elevation" "^0.41.0"
-    "@material/list" "^0.42.0"
-    "@material/ripple" "^0.42.0"
+    "@material/elevation" "^0.44.1"
+    "@material/list" "^0.44.1"
+    "@material/ripple" "^0.44.1"
     "@material/rtl" "^0.42.0"
-    "@material/shape" "^0.42.0"
-    "@material/theme" "^0.41.0"
-    "@material/typography" "^0.42.0"
-    focus-trap "^3.0.0"
+    "@material/shape" "^0.44.1"
+    "@material/theme" "^0.43.0"
+    "@material/typography" "^0.44.1"
+    focus-trap "^4.0.2"
 
-"@material/elevation@^0.41.0":
-  version "0.41.0"
-  resolved "https://registry.npmjs.org/@material/elevation/-/elevation-0.41.0.tgz#db6b75ea43354fe35936cba2d78c55390faf4e9e"
-  integrity sha512-ZtZS8z5ie9c7Cx5PVudgSorGYa0C3lu3dA+Nn6qJdhGUokl01msh54NfNuwk+EZsk65bNRRqw1Td/63TCbKIzg==
+"@material/elevation@^0.44.1":
+  version "0.44.1"
+  resolved "https://registry.npmjs.org/@material/elevation/-/elevation-0.44.1.tgz#19efa293e195b00141711899e3c3fde6a3670454"
+  integrity sha512-Gr2x/FHysM4ty7sctLPT48pw7YItLZvhXsB4ZzXpdhuy7QshxllBW9NGlAMffzrmNu16MTl3ouGzbhArUYz4jw==
   dependencies:
     "@material/animation" "^0.41.0"
-    "@material/theme" "^0.41.0"
+    "@material/feature-targeting" "^0.44.1"
+    "@material/theme" "^0.43.0"
 
-"@material/list@^0.42.0":
-  version "0.42.0"
-  resolved "https://registry.npmjs.org/@material/list/-/list-0.42.0.tgz#7bf19c09f223c31b9bae6969361939e3cf8cea48"
-  integrity sha512-xmF52VRJdX+iwi1fQjlLkbRYJKR04LvqiSLAvrfJINEX5PzdfnCj2du1fP1KcBKQ0+ApX6OWsyHsf8/qHI8L4Q==
+"@material/feature-targeting@^0.44.1":
+  version "0.44.1"
+  resolved "https://registry.npmjs.org/@material/feature-targeting/-/feature-targeting-0.44.1.tgz#afafc80294e5efab94bee31a187273d43d34979a"
+  integrity sha512-90cc7njn4aHbH9UxY8qgZth1W5JgOgcEdWdubH1t7sFkwqFxS5g3zgxSBt46TygFBVIXNZNq35Xmg80wgqO7Pg==
+
+"@material/list@^0.44.0", "@material/list@^0.44.1":
+  version "0.44.1"
+  resolved "https://registry.npmjs.org/@material/list/-/list-0.44.1.tgz#03a71a9287c2bcde2fb0e7982895bc2af19a57ca"
+  integrity sha512-k0I8qCIlcT94efS1tHtNvOxbgUq7W4EAl6QN7Q1cHMPtVW2dan1SzUHMbacQzd3sIYDTtnxRYoM7MeNAwwl8LA==
   dependencies:
     "@material/base" "^0.41.0"
     "@material/dom" "^0.41.0"
-    "@material/ripple" "^0.42.0"
+    "@material/feature-targeting" "^0.44.1"
+    "@material/ripple" "^0.44.1"
     "@material/rtl" "^0.42.0"
-    "@material/shape" "^0.42.0"
-    "@material/theme" "^0.41.0"
-    "@material/typography" "^0.42.0"
+    "@material/shape" "^0.44.1"
+    "@material/theme" "^0.43.0"
+    "@material/typography" "^0.44.1"
 
-"@material/ripple@^0.42.0":
-  version "0.42.0"
-  resolved "https://registry.npmjs.org/@material/ripple/-/ripple-0.42.0.tgz#3ff501badfb81c76b1e51e6790217c2f32b57cdc"
-  integrity sha512-wAVrppOjpvFJAeLL0hlTKRyTR9AJNHo5MzaKGrXqeq9Vt5exSk/ML9y5THE/SHwrJoF0sOWHgP9HEYi7opF6YA==
+"@material/ripple@^0.44.0", "@material/ripple@^0.44.1":
+  version "0.44.1"
+  resolved "https://registry.npmjs.org/@material/ripple/-/ripple-0.44.1.tgz#79cb2ddf1f998498d877d3e3c46b50fed6f13b01"
+  integrity sha512-prJ1p3bR+GvwAtJgtdeIixsnRVApN3bizGnX7upKoqxsqbBDHj84JxaO8EsG9bjruG/LJu8Fb6WKKdIp2oXHTA==
   dependencies:
     "@material/animation" "^0.41.0"
     "@material/base" "^0.41.0"
-    "@material/theme" "^0.41.0"
+    "@material/feature-targeting" "^0.44.1"
+    "@material/theme" "^0.43.0"
 
 "@material/rtl@^0.42.0":
   version "0.42.0"
   resolved "https://registry.npmjs.org/@material/rtl/-/rtl-0.42.0.tgz#1836e78186c2d8b996f6fbf97adab203535335bc"
   integrity sha512-VrnrKJzhmspsN8WXHuxxBZ69yM5IwhCUqWr1t1eNfw3ZEvEj7i1g3P31HGowKThIN1dc1Wh4LE14rCISWCtv5w==
 
-"@material/shape@^0.42.0":
-  version "0.42.0"
-  resolved "https://registry.npmjs.org/@material/shape/-/shape-0.42.0.tgz#784e117401ac5fe5f49411c34c86e62accb0f534"
-  integrity sha512-E38QqeRoGLO38TOJT69rCBLJBnnXQ6Cmm/crjjl3TaLmqD17GiEJgPXzBdJ11lszBStSqR/gUXQX7P97LYruLw==
+"@material/shape@^0.44.1":
+  version "0.44.1"
+  resolved "https://registry.npmjs.org/@material/shape/-/shape-0.44.1.tgz#ff4d5d42b07c5781306677bffee43234b756ea8e"
+  integrity sha512-8mCDQmyTEhDK+HX8Tap2Lc82QlVySlXU8zDCNkWoIn1ge+UnRezSDjE4y4P1ABegN5PrkJZPartuQ1U0ttIYXw==
+  dependencies:
+    "@material/feature-targeting" "^0.44.1"
 
-"@material/theme@^0.41.0":
-  version "0.41.0"
-  resolved "https://registry.npmjs.org/@material/theme/-/theme-0.41.0.tgz#4f8252a872b17845cc661b867cbbf54e51a26759"
-  integrity sha512-ohW2JxObKOWvP34EkIIcrEVtL3g0Gs/T3/MdOsM36euyshY8Jwl1f6fjVUQvVjSpixUtSb30/+ulblF8fTOwBg==
+"@material/theme@^0.43.0":
+  version "0.43.0"
+  resolved "https://registry.npmjs.org/@material/theme/-/theme-0.43.0.tgz#6d9fa113c82e841817882172c152d60d2d203ca6"
+  integrity sha512-/zndZL6EihI18v2mYd4O8xvOBAAXmLeHyHVK28LozSAaJ9okQgD25wq5Ktk95oMTmPIC+rH66KcK6371ivNk8g==
 
-"@material/top-app-bar@^0.42.0":
-  version "0.42.0"
-  resolved "https://registry.npmjs.org/@material/top-app-bar/-/top-app-bar-0.42.0.tgz#fe699bfc07fc465c9860953241ddcbf73d5920b1"
-  integrity sha512-/ifxQpUZLUJu7i0HTahXxqfG3MuA90CR+cwsyNkTdJOHqjoKJSGBA8FnkyN5v7XQ5/ujrONy/P/QO+g8mzVEAw==
+"@material/top-app-bar@^0.44.0":
+  version "0.44.1"
+  resolved "https://registry.npmjs.org/@material/top-app-bar/-/top-app-bar-0.44.1.tgz#016caeb0cbb8cea65290af702ad95956eba5d4af"
+  integrity sha512-RyRfKEO8qoOmrxoFPFgX3msM+TfFKHPgxRPVnaffIcQzi/0ALeB6qFcxGphZxAeK+/8q+kaNtDhBb9ay12VAIA==
   dependencies:
     "@material/animation" "^0.41.0"
     "@material/base" "^0.41.0"
-    "@material/elevation" "^0.41.0"
-    "@material/ripple" "^0.42.0"
+    "@material/elevation" "^0.44.1"
+    "@material/ripple" "^0.44.1"
     "@material/rtl" "^0.42.0"
-    "@material/shape" "^0.42.0"
-    "@material/theme" "^0.41.0"
-    "@material/typography" "^0.42.0"
+    "@material/shape" "^0.44.1"
+    "@material/theme" "^0.43.0"
+    "@material/typography" "^0.44.1"
 
-"@material/typography@^0.42.0":
-  version "0.42.0"
-  resolved "https://registry.npmjs.org/@material/typography/-/typography-0.42.0.tgz#ccb36c18bd1c8911c207872e575fafc845309162"
-  integrity sha512-HgjRfmunrW8qqB0xC6AQNAQVIq19WUeRoimUf8ytf12Rq1oNG///6bnr86OI9+Q1EpeF822efZP4XPLUPb8kJw==
+"@material/typography@^0.44.0", "@material/typography@^0.44.1":
+  version "0.44.1"
+  resolved "https://registry.npmjs.org/@material/typography/-/typography-0.44.1.tgz#a94f01172f9122180bc2ce0aa55658183a35590d"
+  integrity sha512-wMXHusg+Lp5Fdgoj3m0c+Lt6GCeGSh3EPRtQ1TQ2bwdBa0et2FqBaQRgXoq3tVmr0O/7unTfa0DoXlh4nVp1wA==
+  dependencies:
+    "@material/feature-targeting" "^0.44.1"
 
 "@polymer/esm-amd-loader@^1.0.0":
   version "1.0.4"
@@ -4269,12 +4281,12 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
 
-focus-trap@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/focus-trap/-/focus-trap-3.0.0.tgz#4d2ee044ae66bf7eb6ebc6c93bd7a1039481d7dc"
-  integrity sha512-jTFblf0tLWbleGjj2JZsAKbgtZTdL1uC48L8FcmSDl4c2vDoU4NycN1kgV5vJhuq1mxNFkw7uWZ1JAGlINWvyw==
+focus-trap@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/focus-trap/-/focus-trap-4.0.2.tgz#4ee2b96547c9ea0e4252a2d4b2cca68944194663"
+  integrity sha512-HtLjfAK7Hp2qbBtLS6wEznID1mPT+48ZnP2nkHzgjpL4kroYHg0CdqJ5cTXk+UO5znAxF5fRUkhdyfgrhh8Lzw==
   dependencies:
-    tabbable "^3.1.0"
+    tabbable "^3.1.2"
     xtend "^4.0.1"
 
 follow-redirects@^1.0.0:
@@ -9117,10 +9129,10 @@ symbol-tree@^3.2.2:
   resolved "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
   integrity sha1-rifbOPZgp64uHDt9G8KQgZuFGeY=
 
-tabbable@^3.1.0:
-  version "3.1.1"
-  resolved "https://registry.npmjs.org/tabbable/-/tabbable-3.1.1.tgz#db7512f28a9a1ed16e4275bd190131be9d5ad8e9"
-  integrity sha512-583MHIOwictf7+zbxqO/L5fBqMN6Li4SJ1XTKQA9WzHRA7c2BB+D+Ny7Y6kGqU2u+rHK59+oRzrBvMU53aZz+A==
+tabbable@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/tabbable/-/tabbable-3.1.2.tgz#f2d16cccd01f400e38635c7181adfe0ad965a4a2"
+  integrity sha512-wjB6puVXTYO0BSFtCmWQubA/KIn7Xvajw0x0l6eJUudMG/EAiJvIUnyNX6xO4NpGrJ16lbD0eUseB9WxW0vlpQ==
 
 table-layout@^0.4.3:
   version "0.4.4"
