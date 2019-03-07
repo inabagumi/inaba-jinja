@@ -596,12 +596,12 @@
   resolved "https://registry.npmjs.org/@polymer/esm-amd-loader/-/esm-amd-loader-1.0.4.tgz#4e77f2f59b29b01e0ad02aa83d33716cddc5f9f9"
   integrity sha512-h+hqYkL+tQV/y2ESD5gFXMl5z4cC+XY1jTlBeGSBaTcj3VbB5OBEScbvRXm63NcEbBneQQYbHfBAXAkF9i9wIA==
 
-"@polymer/lit-element@^0.6.5":
-  version "0.6.5"
-  resolved "https://registry.npmjs.org/@polymer/lit-element/-/lit-element-0.6.5.tgz#c614b9638a0809883ba52bf43fca5b6ed51b7aa8"
-  integrity sha512-KVjuU/5Ugp6PFob6YEe1/B4GCKjqhEy9Tj954shL6d3DohT2sNAmbX9QfbXvcZ8RhbVELK6dzbN3i2BRA3mOKg==
+"@polymer/lit-element@^0.7.0":
+  version "0.7.1"
+  resolved "https://registry.npmjs.org/@polymer/lit-element/-/lit-element-0.7.1.tgz#cded2d11ff4308f9ce3e4001d893198dabced639"
+  integrity sha512-aYSzVhC19l7xSm73aHI06VPcD/H+GxpFNZrhbJ+zVIpgAveOgGp5Ga7UtTBHQCdHlJbZ0dMlaBXMZ3twgXCokg==
   dependencies:
-    lit-html "^1.0.0-rc.1"
+    lit-html "^1.0.0-rc.2"
 
 "@polymer/sinonjs@^1.14.1":
   version "1.17.1"
@@ -5810,10 +5810,10 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lit-html@^1.0.0-rc.1:
-  version "1.0.0-rc.1"
-  resolved "https://registry.npmjs.org/lit-html/-/lit-html-1.0.0-rc.1.tgz#a83d45ed86fc7c5d4612f3092e83fd095baf1fc3"
-  integrity sha512-Qyu+lHpRtJS3Addw56rK68KgZ5cdxTfRDmYNwd8gRQBImdhkE0uyqIT5usLE9YDezFeYVqgAc2WujOOi8taF1A==
+lit-html@^1.0.0-rc.2:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/lit-html/-/lit-html-1.0.0.tgz#3dc3781a8ca68a9b5c2ff2a61e263662b9b2267b"
+  integrity sha512-oeWlpLmBW3gFl7979Wol2LKITpmKTUFNn7PnFbh6YNynF61W74l6x5WhwItAwPRSATpexaX1egNnRzlN4GOtfQ==
 
 load-json-file@^1.0.0:
   version "1.1.0"

@@ -5,7 +5,7 @@
     "@material/ripple": "^0.44.0",
     "@material/top-app-bar": "^0.44.0",
     "@material/typography": "^0.44.0",
-    "@polymer/lit-element": "^0.6.5",
+    "@polymer/lit-element": "^0.7.0",
     "pinch-zoom-element": "^1.0.2",
     "pointer-tracker": "^2.0.3",
     "three": "^0.99.0"
