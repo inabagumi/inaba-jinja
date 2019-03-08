@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
-    "jsx": "preserve",
-    "lib": ["dom", "es2018"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
-    "sourceMap": true,
-    "target": "esnext"
-  }
+    "baseUrl": ".",
+    "types": ["@nuxt/vue-app", "@types/node"]
+  },
+  "extends": "./node_modules/@nuxt/typescript/tsconfig"
 }

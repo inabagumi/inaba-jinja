@@ -1,13 +1,11 @@
 module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
+    '@nuxtjs',
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
-    'prettier/react'
+    'prettier/standard',
+    'prettier/vue'
   ],
-  root: true,
-  rules: {
-    'react/prop-types': 'off'
-  }
+  root: true
 }
