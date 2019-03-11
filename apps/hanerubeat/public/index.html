@@ -3,24 +3,22 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>heartbeat!</title>
-    <link href="https://heartbeat.haneru.dev/" rel="canonical">
-    <meta content="「heartbeat!」は因幡はねるさんの鼓動を感じるためのアプリです。因幡はねるさんの鼓動を感じて、因幡はねるさんに包まれて眠りましょう。" name="description">
-    <meta content="「heartbeat!」は因幡はねるさんの鼓動を感じるためのアプリです" property="og:description">
-    <meta content="https://heartbeat.haneru.dev/img/main-visual.jpg" property="og:image">
-    <meta content="heartbeat!" property="og:title">
+    <title><%= VUE_APP_TITLE %></title>
+    <link href="<%= VUE_APP_URL %>/" rel="canonical">
+    <meta content="<%= VUE_APP_DESCRIPTION %>" name="description">
+    <meta content="<%= VUE_APP_DESCRIPTION %>" property="og:description">
+    <meta content="<%= VUE_APP_URL %>/img/main-visual.jpg" property="og:image">
+    <meta content="<%= VUE_APP_TITLE %>" property="og:title">
     <meta content="website" property="og:type">
-    <meta content="https://heartbeat.haneru.dev/" property="og:url">
+    <meta content="<%= VUE_APP_URL %>/" property="og:url">
     <meta content="summary_large_image" name="twitter:card">
-    <meta content="「heartbeat!」は因幡はねるさんの鼓動を感じるためのアプリです" name="twitter:description">
-    <meta content="https://heartbeat.haneru.dev/img/main-visual.jpg" name="twitter:image">
-    <meta content="heartbeat!" name="twitter:title">
+    <meta content="<%= VUE_APP_DESCRIPTION %>" name="twitter:description">
+    <meta content="<%= VUE_APP_URL %>/img/main-visual.jpg" name="twitter:image">
+    <meta content="<%= VUE_APP_TITLE %>" name="twitter:title">
   </head>
   <body>
-    <noscript>
-      <p><strong>heartbeat! はJavaScriptが有効になっていない場合は動きません。続行する場合はJavaScriptを有効にしてください。</strong></p>
-    </noscript>
-
     <div id="app"></div>
+
+    <noscript><p><strong>このウェブアプリはJavaScriptが有効になっていない環境では動作しません。お手数ですがJavaScriptを有効にしてください。</strong></p></noscript>
   </body>
 </html>
