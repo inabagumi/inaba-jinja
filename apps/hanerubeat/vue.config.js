@@ -14,6 +14,32 @@ module.exports = {
     },
     msTileColor: '#222',
     name: 'heartbeat!',
-    themeColor: '#fff59d'
+    themeColor: '#fff59d',
+    workboxOptions: {
+      clientsClaim: true,
+      exclude: [/\.(?:ico|jpe?g|png|svg)$/, /\.map$/, /manifest\.json$/],
+      importWorkboxFrom: 'local',
+      runtimeCaching: [
+        {
+          handler: 'cacheFirst',
+          options: {
+            cacheableResponse: {
+              statuses: [0, 200]
+            }
+          },
+          urlPattern: /\.(?:css|ico|jpe?g|js|png|svg)$/
+        },
+        {
+          handler: 'cacheFirst',
+          options: {
+            cacheableResponse: {
+              statuses: [0, 200]
+            }
+          },
+          urlPattern: /^https:\/\/(?:fonts\.googleapis\.com|fonts\.gstatic\.com)\//i
+        }
+      ],
+      skipWaiting: true
+    }
   }
 }
