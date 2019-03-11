@@ -1,7 +1,7 @@
 [build]
   base    = "./"
-  command = "yarn build && cp -rf ./src/extra-files/edge/. ./build/public/"
-  publish = "./build/public/"
+  command = "NODE_ENV=production yarn build && cp -rf ./src/extra-files/edge/. ./dist/"
+  publish = "./dist/"
 
   [build.environment]
     NODE_ENV     = "development"
