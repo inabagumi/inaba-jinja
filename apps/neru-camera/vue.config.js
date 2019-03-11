@@ -1,6 +1,3 @@
-process.env.VUE_APP_URL =
-  process.env.DEPLOY_PRIME_URL || process.env.VUE_APP_URL
-
 module.exports = {
   pwa: {
     appleMobileWebAppCapable: 'yes',
