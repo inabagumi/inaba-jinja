@@ -29,6 +29,7 @@
     <div class="camera__action-buttons">
       <button
         @click="takePhoto"
+        @touchstart="takePhoto"
         class="camera__action-buttons__button"
         :class="{ 'camera__action-buttons__button--active': isShooting }"
         tabindex="-1"
@@ -86,6 +87,8 @@ export default class extends Vue {
   }
 
   private takePhoto(): void {
+    if (this.isShooting) return
+
     const renderer = this.$refs.renderer as any
 
     if (!renderer) return
