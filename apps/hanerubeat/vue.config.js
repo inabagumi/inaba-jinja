@@ -17,7 +17,7 @@ module.exports = {
     themeColor: '#fff59d',
     workboxOptions: {
       clientsClaim: true,
-      exclude: [/\.(?:ico|jpe?g|png|svg)$/, /\.map$/, /manifest\.json$/],
+      exclude: [/\.(?:css|ico|jpe?g|js|mp3|png|ogg|svg)$/, /\.map$/, /manifest\.json$/],
       importWorkboxFrom: 'local',
       runtimeCaching: [
         {
@@ -27,7 +27,7 @@ module.exports = {
               statuses: [0, 200]
             }
           },
-          urlPattern: /\.(?:css|ico|jpe?g|js|png|svg)$/
+          urlPattern: /\.(?:css|ico|jpe?g|js|mp3|png|ogg|svg)$/
         },
         {
           handler: 'cacheFirst',
