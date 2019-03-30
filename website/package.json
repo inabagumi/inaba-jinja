@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@types/node": "^11.12.2",
-    "nuxt-ts": "^2.4.5",
+    "nuxt-ts": "^2.5.1",
     "vue-property-decorator": "^8.0.0"
   },
   "devDependencies": {
