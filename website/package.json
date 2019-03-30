@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@types/node": "^11.12.1",
+    "@types/node": "^11.12.2",
     "nuxt-ts": "^2.4.5",
     "vue-property-decorator": "^8.0.0"
   },
