@@ -3,7 +3,7 @@
   "dependencies": {
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.8",
-    "vue-property-decorator": "^8.0.0"
+    "vue-property-decorator": "^8.1.0"
   },
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
