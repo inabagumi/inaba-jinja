@@ -2,7 +2,7 @@
   "dependencies": {
     "@types/node": "^11.12.2",
     "nuxt-ts": "^2.5.1",
-    "vue-property-decorator": "^8.0.0"
+    "vue-property-decorator": "^8.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
