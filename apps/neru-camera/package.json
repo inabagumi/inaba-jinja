@@ -3,7 +3,7 @@
   "dependencies": {
     "pixi.js": "^5.0.0-rc.2",
     "register-service-worker": "^1.6.2",
-    "vue": "^2.6.8",
+    "vue": "^2.6.10",
     "vue-property-decorator": "^8.1.0"
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
@@ -22,7 +22,7 @@
     "eslint-plugin-vue": "^5.2.2",
     "ts-jest": "^24.0.0",
     "typescript": "~3.4.0",
-    "vue-template-compiler": "^2.6.8"
+    "vue-template-compiler": "^2.6.10"
   },
   "license": "MIT",
   "name": "neru-camera",
