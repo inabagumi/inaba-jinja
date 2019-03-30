@@ -20,7 +20,6 @@
     "@vue/test-utils": "^1.0.0-beta.29",
     "eslint": "^5.15.3",
     "eslint-plugin-vue": "^5.2.2",
-    "standard-version": "^5.0.1",
     "ts-jest": "^24.0.0",
     "typescript": "~3.4.0",
     "vue-template-compiler": "^2.6.8"
@@ -36,7 +35,6 @@
   "scripts": {
     "build": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint",
-    "release": "standard-version",
     "start": "vue-cli-service serve",
     "test": "vue-cli-service test:unit"
   },
