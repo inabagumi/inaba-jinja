@@ -14,7 +14,7 @@
     "@vue/cli-service": "^3.4.1",
     "@vue/eslint-config-prettier": "^4.0.1",
     "@vue/eslint-config-typescript": "^4.0.0",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.2",
     "typescript": "^3.3.3333",
     "vue-template-compiler": "^2.6.8"
