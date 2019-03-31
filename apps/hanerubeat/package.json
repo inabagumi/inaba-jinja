@@ -7,7 +7,7 @@
   },
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.5.3",
+    "@vue/cli-plugin-babel": "^3.5.4",
     "@vue/cli-plugin-eslint": "^3.5.1",
     "@vue/cli-plugin-pwa": "^3.5.1",
     "@vue/cli-plugin-typescript": "^3.5.3",
