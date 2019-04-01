@@ -1,11 +1,12 @@
 {
   "dependencies": {
-    "@types/node": "^11.12.2",
-    "nuxt-ts": "^2.5.1",
+    "nuxt": "^2.5.1",
     "vue-property-decorator": "^8.1.0"
   },
   "devDependencies": {
+    "@nuxt/typescript": "^2.5.1",
     "@nuxtjs/eslint-config": "^0.0.1",
+    "@types/node": "^11.12.2",
     "@typescript-eslint/eslint-plugin": "^1.5.0",
     "@typescript-eslint/parser": "^1.5.0",
     "eslint": "^5.16.0",
@@ -25,11 +26,11 @@
   "name": "@inabagumi/website",
   "private": true,
   "scripts": {
-    "build": "nuxt-ts build",
+    "build": "nuxt build",
     "deploy": "gh-pages -d dist",
-    "dev": "nuxt-ts",
-    "generate": "nuxt-ts generate",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
     "lint": "eslint --ext .js,.ts,.vue --fix .",
-    "start": "nuxt-ts start"
+    "start": "nuxt start"
   }
 }
