@@ -2,6 +2,25 @@
 footer: © 2019 Haneru Developers
 heroImage: /favicon.png
 home: true
+meta:
+  - content: ねるねるアプリの世界へようこそ!
+    property: og:description
+  - content: https://haneru.dev/main-visual.jpg
+    property: og:image
+  - content: Haneru Developers
+    property: og:title
+  - content: website
+    property: og:type
+  - content: https://haneru.dev/
+    property: og:url
+  - content: summary_large_image
+    name: twitter:card
+  - content: ねるねるアプリの世界へようこそ!
+    name: twitter:description
+  - content: https://haneru.dev/main-visual.jpg
+    name: twitter:image
+  - content: Haneru Developers
+    name: twitter:title
 tagline: ねるねるアプリの世界へようこそ
 ---
 

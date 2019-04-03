@@ -4,6 +4,7 @@ module.exports = {
   ],
   locales: {
     '/': {
+      description: 'ねるねるアプリの世界へようこそ!',
       lang: 'ja',
       title: 'Haneru Developers'
     }
