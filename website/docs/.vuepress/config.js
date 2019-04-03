@@ -2,6 +2,15 @@ module.exports = {
   head: [
     ['link', { href: '/favicon.png', rel: 'icon' }]
   ],
+  locales: {
+    '/': {
+      lang: 'ja',
+      title: 'Haneru Developers'
+    }
+  },
+  plugins: [
+    ['@vuepress/back-to-top', true]
+  ],
   theme: '@vuepress/default',
   themeConfig: {
     nav: [
@@ -25,6 +34,5 @@ module.exports = {
     ],
     repo: 'inabagumi/website',
     search: false
-  },
-  title: 'Haneru Developers'
+  }
 }

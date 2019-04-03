@@ -2,7 +2,7 @@
 footer: © 2019 Haneru Developers
 heroImage: /favicon.png
 home: true
-tagline: ねるちゃんアプリの世界へようこそ
+tagline: ねるねるアプリの世界へようこそ
 ---
 
 <div class="products">
@@ -28,3 +28,7 @@ tagline: ねるちゃんアプリの世界へようこそ
     </div>
   </a>
 </div>
+
+## Haneru Developers とは?
+
+Haneru Developers はバーチャル YouTuber の[因幡はねるさん](https://www.youtube.com/channel/UC0Owc36U9lOyi9Gx9Ic-4qg)をテーマとしたアプリやサービスの開発を主として行うコミュニティーです。
