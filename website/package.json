@@ -6,8 +6,8 @@
   "devDependencies": {
     "@nuxt/typescript": "^2.5.1",
     "@types/node": "^11.13.0",
-    "@typescript-eslint/eslint-plugin": "^1.5.0",
-    "@typescript-eslint/parser": "^1.5.0",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "@vue/eslint-config-typescript": "^4.0.0",
     "eslint": "^5.16.0",
