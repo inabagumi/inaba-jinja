@@ -21,32 +21,23 @@ meta:
     name: twitter:image
   - content: Haneru Developers
     name: twitter:title
+products:
+  - description: 因幡はねるさんと一緒に写真が撮れるアプリです。ねるちゃんとの幸せなひとときをあなたに。
+    image: /main-visual/neru-camera.jpg
+    name: ねるカメラ
+    url: https://neru.camera/
+  - description: 好みと推しVTuberを無意識から探るためのアプリです。アナタはどんなオタクタイプ?
+    image: /main-visual/animare-shindan.jpg
+    name: あなたのオタクタイプ診断 by あにまーれ
+    url: https://shindan.animare.cafe/
+  - description: 因幡はねるさんの鼓動を感じるためのアプリです。因幡はねるさんの鼓動を感じて、因幡はねるさんに包まれて眠りましょう。
+    image: /main-visual/heartbeat.jpg
+    name: heartbeat!
+    url: https://heartbeat.haneru.dev/
 tagline: ねるねるアプリの世界へようこそ
 ---
 
-<div class="products">
-  <a class="product" href="https://neru.camera/" rel="noreferrer noopener" target="_blank">
-    <img alt="" class="product__main-visual" height="630" src="./products/neru-camera.jpg" width="1200">
-    <div class="product__body">
-      <h2 class="product__name">ねるカメラ</h2>
-      <p class="product__description">因幡はねるさんと一緒に写真が撮れるアプリです。ねるちゃんとの幸せなひとときをあなたに。</p>
-    </div>
-  </a>
-  <a class="product" href="https://shindan.animare.cafe/" rel="noreferrer noopener" target="_blank">
-    <img alt="" class="product__main-visual" height="630" src="./products/animare-shindan.jpg" width="1200">
-    <div class="product__body">
-      <h2 class="product__name">あなたのオタクタイプ診断 by あにまーれ</h2>
-      <p class="product__description">好みと推しVTuberを無意識から探るためのアプリです。アナタはどんなオタクタイプ?</p>
-    </div>
-  </a>
-  <a class="product" href="https://heartbeat.haneru.dev/" rel="noreferrer noopener" target="_blank">
-    <img alt="" class="product__main-visual" height="630" src="./products/heartbeat.jpg" width="1200">
-    <div class="product__body">
-      <h2 class="product__name">heartbeat!</h2>
-      <p class="product__description">因幡はねるさんの鼓動を感じるためのアプリです。因幡はねるさんの鼓動を感じて、因幡はねるさんに包まれて眠りましょう。</p>
-    </div>
-  </a>
-</div>
+<Products :values="$frontmatter.products" />
 
 ## Haneru Developers とは?
 
