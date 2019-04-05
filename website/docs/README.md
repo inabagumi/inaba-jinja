@@ -1,5 +1,6 @@
 ---
 footer: © 2019 Haneru Developers
+heroAlt: 因
 heroImage: /favicon.png
 home: true
 meta:
