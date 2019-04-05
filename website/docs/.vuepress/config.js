@@ -4,7 +4,7 @@ module.exports = {
   ],
   locales: {
     '/': {
-      description: 'ねるねるアプリの世界へようこそ!',
+      description: 'Haneru Developers はバーチャル YouTuber の因幡はねるさんをテーマとしたアプリやサービスの開発を主として行うコミュニティーです。',
       lang: 'ja',
       title: 'Haneru Developers'
     }
