@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.46",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.47",
     "vuepress": "^1.0.0-alpha.46"
   },
   "devDependencies": {
