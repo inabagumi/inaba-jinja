@@ -16,21 +16,8 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        items: [
-          {
-            link: 'https://neru.camera/',
-            text: 'ねるカメラ'
-          },
-          {
-            link: 'https://shindan.animare.cafe/',
-            text: 'あなたのオタクタイプ診断 by あにまーれ'
-          },
-          {
-            link: 'https://heartbeat.haneru.dev/',
-            text: 'heartbeat!'
-          }
-        ],
-        text: 'プロダクト'
+        link: 'mailto:contact@haneru.dev',
+        text: 'お問い合わせ'
       }
     ],
     repo: 'inabagumi/website',
