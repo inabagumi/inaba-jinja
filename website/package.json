@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.47",
-    "vuepress": "^1.0.0-alpha.47"
+    "vuepress": "^1.0.0-alpha.47",
+    "vuepress-plugin-sitemap": "^2.1.2"
   },
   "devDependencies": {
     "@vue/eslint-config-prettier": "^4.0.1",

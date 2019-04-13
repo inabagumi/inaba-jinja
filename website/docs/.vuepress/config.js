@@ -10,7 +10,13 @@ module.exports = {
     }
   },
   plugins: [
-    ['@vuepress/back-to-top', true]
+    '@vuepress/back-to-top',
+    [
+      'sitemap',
+      {
+        hostname: 'https://haneru.dev'
+      }
+    ]
   ],
   theme: '@vuepress/default',
   themeConfig: {
