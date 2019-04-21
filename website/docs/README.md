@@ -44,4 +44,6 @@ tagline: ねるねるアプリの世界へようこそ
 
 Haneru Developers はバーチャル YouTuber の[因幡はねるさん](https://www.youtube.com/channel/UC0Owc36U9lOyi9Gx9Ic-4qg)をテーマとしたアプリやサービスの開発を主として行うコミュニティーです。因幡はねるさんのことを応援している人たちがメンバーになっています。
 
-開発されたアプリやサービスのソースコードは [GitHub](https://github.com/inabagumi) で特別な事情がない限り [MIT License](https://opensource.org/licenses/MIT) が適用されたオープンソースソフトウェアとして公開されています。基本的に [TypeScript](https://www.typescriptlang.org/) を用いて開発しています。
+開発されたアプリやサービスのソースコードは特別な事情がない限り [MIT License](https://opensource.org/licenses/MIT) が適用されたオープンソースソフトウェアとして [GitHub](https://github.com/inabagumi) で公開されています。[TypeScript](https://www.typescriptlang.org/) を主に用いて開発が行われています。
+
+メンバーになりたい、そのほか問い合わせたいことがある方は [contact@haneru.dev](mailto:contact@haneru.dev) までご連絡ください。
