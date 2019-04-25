@@ -1,5 +1,8 @@
 {
   "extends": [
     "@inabagumi"
+  ],
+  "ignoreDeps": [
+    "pixi.js"
   ]
 }
