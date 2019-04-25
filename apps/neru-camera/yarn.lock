@@ -7504,7 +7504,7 @@ pirates@^4.0.1:
   dependencies:
     node-modules-regexp "^1.0.0"
 
-pixi.js@^5.0.0-rc.2:
+pixi.js@5.0.0-rc.2:
   version "5.0.0-rc.2"
   resolved "https://registry.npmjs.org/pixi.js/-/pixi.js-5.0.0-rc.2.tgz#9dd32d6b6455bb24240aac51fe959980e74c5783"
   integrity sha512-9hKz4S7d9k1imH8a+fyImXUuXEDJR50LtN71HuW7x7eHmfDBoqQYx8Vdn5KA296Lssn6faf5hgM6/JPaZpgiiQ==

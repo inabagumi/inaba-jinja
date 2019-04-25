@@ -1,7 +1,7 @@
 {
   "author": "Yamagishi Kazutoshi <ykzts@desire.sh>",
   "dependencies": {
-    "pixi.js": "^5.0.0-rc.2",
+    "pixi.js": "5.0.0-rc.2",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-property-decorator": "^8.1.0"
