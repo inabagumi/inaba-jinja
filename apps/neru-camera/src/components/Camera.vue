@@ -42,90 +42,119 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import Vue from 'vue'
+import { Component, Prop } from 'vue-property-decorator'
 
-@Component({
-  components: {
-    Renderer: () => import('@/components/Renderer.vue')
+const Renderer = () => import('@/components/Renderer.vue')
+
+const mediaStreamConstraints: MediaStreamConstraints = {
+  audio: false,
+  video: {
+    facingMode: 'environment'
   }
-})
-export default class extends Vue {
-  private cameraStream: MediaStream | null = null
-  private isShooting = false
-  private overlayBlob: Blob | null = null
+}
 
-  @Prop({ required: true, type: String }) src!: string
+type Data = {
+  cameraStream?: MediaStream
+  isShooting: boolean
+  overlayBlob?: Blob
+}
 
-  private get hasSupportedMediaDevices() {
-    return !!navigator.mediaDevices
-  }
+type Methods = {
+  download: (uri: string) => Promise<Blob>
+  takePhoto: () => void
+}
 
-  private get mediaStreamConstraints(): MediaStreamConstraints {
+type Computed = {
+  hasSupportedMediaDevices: boolean
+}
+
+type Props = {
+  src: string
+}
+
+export default Vue.extend<Data, Methods, Computed, Props>({
+  components: { Renderer },
+
+  computed: {
+    hasSupportedMediaDevices: () => !!navigator.mediaDevices
+  },
+
+  data() {
     return {
-      audio: false,
-      video: {
-        facingMode: 'environment'
-      }
+      cameraStream: undefined,
+      isShooting: false,
+      overlayBlob: undefined
     }
-  }
+  },
 
-  protected mounted() {
+  methods: {
+    async download(uri: string) {
+      const response = await fetch(uri)
+
+      return response.blob()
+    },
+
+    takePhoto() {
+      const renderer = this.$refs.renderer as any
+
+      if (this.isShooting || !renderer) return
+
+      this.isShooting = true
+
+      const anchor = document.createElement('a')
+
+      let otherTab: Window | null
+      if (typeof anchor.download !== 'string') {
+        otherTab = window.open('about:blank', '_blank')
+      }
+
+      renderer
+        .toBlob('image')
+        .then((blob: Blob | null) => {
+          if (!blob) {
+            if (otherTab) otherTab.close()
+
+            return
+          }
+
+          anchor.href = URL.createObjectURL(blob)
+
+          if (!otherTab) {
+            anchor.download = `NeruCamera-${Date.now()}.png`
+            anchor.target = '_blank'
+            anchor.click()
+          } else {
+            otherTab.location.href = anchor.href
+          }
+        })
+        .finally(() => {
+          this.isShooting = false
+        })
+    }
+  },
+
+  mounted() {
     if (!this.hasSupportedMediaDevices) return
 
     Promise.all([
-      navigator.mediaDevices.getUserMedia(this.mediaStreamConstraints),
+      navigator.mediaDevices.getUserMedia(mediaStreamConstraints),
       this.download(this.src)
     ]).then(([cameraStream, overlayBlob]) => {
       this.cameraStream = cameraStream
       this.overlayBlob = overlayBlob
     })
-  }
+  },
 
-  private async download(uri: string): Promise<Blob> {
-    const response = await fetch(uri)
-    return response.blob()
-  }
+  name: 'Camera',
 
-  private takePhoto(): void {
-    if (this.isShooting) return
-
-    const renderer = this.$refs.renderer as any
-
-    if (!renderer) return
-
-    this.isShooting = true
-
-    const anchor = document.createElement('a')
-
-    let otherTab: Window | null
-    if (typeof anchor.download !== 'string') {
-      otherTab = window.open('about:blank', '_blank')
+  props: {
+    src: {
+      required: true,
+      type: String
     }
-
-    renderer
-      .toBlob('image')
-      .then((blob: Blob | null) => {
-        if (!blob) {
-          if (otherTab) otherTab.close()
-
-          return
-        }
-
-        anchor.href = URL.createObjectURL(blob)
-
-        if (!otherTab) {
-          anchor.download = `NeruCamera-${Date.now()}.png`
-          anchor.target = '_blank'
-          anchor.click()
-        } else {
-          otherTab.location.href = anchor.href
-        }
-      })
-      .finally(() => {
-        this.isShooting = false
-      })
   }
-}
+})
 </script>
 
 <style scoped>

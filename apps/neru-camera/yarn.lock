@@ -7509,6 +7509,13 @@ pify@^4.0.1:
   resolved "https://registry.npmjs.org/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
+pinch-zoom-element@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/pinch-zoom-element/-/pinch-zoom-element-1.1.1.tgz#ea86eb5fb93b2619bd70843ad012f07400e44c66"
+  integrity sha512-aqgz+Fqw2UgMUUfxWD3UEE9YsgEyHKSma4Y2YQG+PlgX/0sTMafP8X663VlMME6G04OWyU3u2uyG86fbFEajug==
+  dependencies:
+    pointer-tracker "^2.0.3"
+
 pinkie-promise@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/pinkie-promise/-/pinkie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
@@ -7605,6 +7612,11 @@ pn@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
   integrity sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
+
+pointer-tracker@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/pointer-tracker/-/pointer-tracker-2.0.3.tgz#6e66be8330e9f4e83c81d76e1d78e42eb4f89c00"
+  integrity sha512-PURBF4oc45JPECuguX6oPL3pJU5AlF0Nb/4sZdmqzPNAkV4LGL9MJMqb0smWDtmQ0F0KpbxEJn4/Lf5ugN1keQ==
 
 portfinder@^1.0.20:
   version "1.0.20"
