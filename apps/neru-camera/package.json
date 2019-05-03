@@ -39,5 +39,5 @@
     "start": "vue-cli-service serve",
     "test": "vue-cli-service test:unit"
   },
-  "version": "2.3.2"
+  "version": "3.0.0"
 }
