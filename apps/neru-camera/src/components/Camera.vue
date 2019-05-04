@@ -1,6 +1,6 @@
 <template>
   <div class="camera">
-    <div v-if="hasSupportedMediaDevices" class="camera__content">
+    <div class="camera__content">
       <Renderer
         v-if="cameraStream && overlayBlob"
         :camera-stream="cameraStream"
@@ -8,7 +8,21 @@
         ref="renderer"
       />
     </div>
-    <div v-else class="camera__error">
+
+    <div class="camera__action-buttons">
+      <button
+        @click="takePhoto"
+        @touchstart="takePhoto"
+        class="camera__action-buttons__button"
+        :class="{ 'camera__action-buttons__button--active': isShooting }"
+        tabindex="-1"
+        title="Take a photo!"
+      >
+        Take a photo!
+      </button>
+    </div>
+
+    <div v-if="!hasSupportedMediaDevices" class="camera__error">
       <h1 class="camera__error__title">カメラの取得に失敗しました</h1>
 
       <div class="camera__error__body">
@@ -26,17 +40,14 @@
       </div>
     </div>
 
-    <div class="camera__action-buttons">
-      <button
-        @click="takePhoto"
-        @touchstart="takePhoto"
-        class="camera__action-buttons__button"
-        :class="{ 'camera__action-buttons__button--active': isShooting }"
-        tabindex="-1"
-        title="Take a photo!"
-      >
-        Take a photo!
-      </button>
+    <div v-if="hasError" class="camera__error">
+      <h1 class="camera__error__title">カメラの取得に失敗しました</h1>
+
+      <div class="camera__error__body">
+        <p class="camera__error__paragraph">
+          カメラの取得に失敗しました。ねるカメラを利用するにはカメラへのアクセスを許可する必要があります。
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -56,6 +67,7 @@ const mediaStreamConstraints: MediaStreamConstraints = {
 
 type Data = {
   cameraStream?: MediaStream
+  hasError: boolean
   isShooting: boolean
   overlayBlob?: Blob
 }
@@ -83,6 +95,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   data() {
     return {
       cameraStream: undefined,
+      hasError: false,
       isShooting: false,
       overlayBlob: undefined
     }
@@ -140,10 +153,14 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     Promise.all([
       navigator.mediaDevices.getUserMedia(mediaStreamConstraints),
       this.download(this.src)
-    ]).then(([cameraStream, overlayBlob]) => {
-      this.cameraStream = cameraStream
-      this.overlayBlob = overlayBlob
-    })
+    ])
+      .then(([cameraStream, overlayBlob]) => {
+        this.cameraStream = cameraStream
+        this.overlayBlob = overlayBlob
+      })
+      .catch(() => {
+        this.hasError = true
+      })
   },
 
   name: 'Camera',
@@ -219,7 +236,17 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 }
 
 .camera__error {
-  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 .camera__error__title {
@@ -229,8 +256,9 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 }
 
 .camera__error__paragraph {
-  line-height: 1.75;
+  line-height: 2;
   margin: 0;
+  text-align: justify;
 }
 
 .camera__error__paragraph:not(:first-child) {
