@@ -12,12 +12,32 @@ module.exports = {
       maskIcon: 'img/heart.svg',
       msTileImage: 'img/mstile.png'
     },
+    manifestOptions: {
+      background_color: '#222',
+      icons: [
+        {
+          sizes: '192x192',
+          src: '/img/heart-icon-192x192.png',
+          type: 'image/png'
+        },
+        {
+          sizes: '512x512',
+          src: '/img/heart-icon-512x512.png',
+          type: 'image/png'
+        }
+      ],
+      start_url: '/'
+    },
     msTileColor: '#222',
     name: 'heartbeat!',
     themeColor: '#fff59d',
     workboxOptions: {
       clientsClaim: true,
-      exclude: [/\.(?:css|ico|jpe?g|js|mp3|png|ogg|svg)$/, /\.map$/, /manifest\.json$/],
+      exclude: [
+        /\.(?:css|ico|jpe?g|js|mp3|png|ogg|svg)$/,
+        /\.map$/,
+        /manifest\.json$/
+      ],
       importWorkboxFrom: 'local',
       runtimeCaching: [
         {
