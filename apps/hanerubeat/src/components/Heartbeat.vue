@@ -19,39 +19,47 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from 'vue-property-decorator'
+import Vue from 'vue'
 import Heart from '@/components/Heart.vue'
 
-@Component({
-  components: { Heart }
-})
-export default class extends Vue {
-  isLoading = true
-  muted = false
+type Data = {
+  isLoading: boolean
+  muted: boolean
+}
 
-  get audio(): HTMLAudioElement {
-    return this.$refs.audio as HTMLAudioElement
-  }
+type Methods = {
+  toggle: () => void
+}
 
-  @Watch('muted')
-  onMutedChanged(muted: boolean) {
-    if (!this.audio.paused) {
-      this.audio.muted = muted
-    } else {
-      this.isLoading = true
-      this.audio
-        .play()
-        .then(() => {
-          this.muted = muted
-        })
-        .catch(() => {
-          this.muted = true
-        })
-        .finally(() => {
-          this.isLoading = false
-        })
+type Computed = {
+  audio: HTMLAudioElement
+}
+
+type Props = {}
+
+export default Vue.extend<Data, Methods, Computed, Props>({
+  components: { Heart },
+
+  computed: {
+    audio() {
+      return this.$refs.audio as HTMLAudioElement
     }
-  }
+  },
+
+  data() {
+    return {
+      isLoading: true,
+      muted: false
+    }
+  },
+
+  methods: {
+    toggle() {
+      if (this.isLoading) return
+
+      this.muted = !this.muted
+    }
+  },
 
   mounted() {
     const playPromise = this.audio.play()
@@ -65,14 +73,29 @@ export default class extends Vue {
           this.isLoading = false
         })
     }
-  }
+  },
 
-  toggle() {
-    if (this.isLoading) return
-
-    this.muted = !this.muted
+  watch: {
+    muted(muted: boolean) {
+      if (!this.audio.paused) {
+        this.audio.muted = muted
+      } else {
+        this.isLoading = true
+        this.audio
+          .play()
+          .then(() => {
+            this.muted = muted
+          })
+          .catch(() => {
+            this.muted = true
+          })
+          .finally(() => {
+            this.isLoading = false
+          })
+      }
+    }
   }
-}
+})
 </script>
 
 <style scoped>

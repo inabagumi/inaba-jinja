@@ -21,13 +21,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import Vue from 'vue'
 import Heartbeat from '@/components/Heartbeat.vue'
 
-@Component({
+export default Vue.extend({
   components: { Heartbeat }
 })
-export default class App extends Vue {}
 </script>
 
 <style>
