@@ -12,13 +12,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import Vue from 'vue'
 import Camera from '@/components/Camera.vue'
 
-@Component({
+export default Vue.extend({
   components: { Camera }
 })
-export default class extends Vue {}
 </script>
 
 <style scoped>

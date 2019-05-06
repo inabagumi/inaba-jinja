@@ -54,7 +54,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { Component, Prop } from 'vue-property-decorator'
 
 const Renderer = () => import('@/components/Renderer.vue')
 
