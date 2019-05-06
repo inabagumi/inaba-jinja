@@ -9,6 +9,24 @@ module.exports = {
       maskIcon: 'img/icons/mask-icon.svg',
       msTileImage: 'img/icons/mstile.png'
     },
+    manifestOptions: {
+      background_color: '#000',
+      icons: [
+        {
+          src: '/img/icons/favicon-192x192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: '/img/icons/favicon-512x512.png',
+          sizes: '512x512',
+          type: 'image/png'
+        }
+      ],
+      name:
+        'ねるカメラ - ねるちゃん (因幡はねるさん) と一緒に写真が撮れるアプリ',
+      start_url: '/'
+    },
     msTileColor: '#000',
     name: 'ねるカメラ',
     themeColor: '#ff9800',
