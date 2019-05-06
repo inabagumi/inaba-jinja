@@ -1,5 +1,5 @@
 {
-  "author": "Yamagishi Kazutoshi <ykzts@desire.sh>",
+  "author": "Haneru Developers",
   "dependencies": {
     "pinch-zoom-element": "^1.1.1",
     "pixi.js": "^5.0.1",
