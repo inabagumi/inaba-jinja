@@ -917,20 +917,20 @@
   resolved "https://registry.npmjs.org/@pixi/constants/-/constants-5.0.0-rc.3.tgz#0f7236bd5392b68aca7c981608310ca25e481861"
   integrity sha512-PrMmpD6EcQpwx4UkPnYcPuk63oqW3LG2Y+gFMEWVO0nBrkVw0JY/5uwJ9wRz0AiQotFdpd/AmMC3mZl8y1l7jw==
 
-"@pixi/core@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.npmjs.org/@pixi/core/-/core-5.0.1.tgz#ffe2a08d459c067f63c46516af916ab5084a73c1"
-  integrity sha512-eBPE70oQPsEEZAGxkGPv3rzGAS4L899HNlw1Dd7URuwWSBGBewzl/ev/qjouFQr7aAkpIokhatcP9zPnLTOwAA==
+"@pixi/core@5.0.0", "@pixi/core@^5.0.1":
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/@pixi/core/-/core-5.0.0.tgz#7e060be75427f9792101eff00cc460e6858a5e16"
+  integrity sha512-TLWOt5Skmddj8BcAuUBOvy5Io6Y7VcZvqbsKFvCgwVO857g1ZvkNbhuVBErfRuKxzkKqng4DO9uOdvPAuUwfqQ==
   dependencies:
     "@pixi/constants" "^5.0.0-rc.3"
-    "@pixi/display" "^5.0.1"
+    "@pixi/display" "^5.0.0"
     "@pixi/math" "^5.0.0-rc.3"
     "@pixi/runner" "^5.0.0"
-    "@pixi/settings" "^5.0.1"
-    "@pixi/ticker" "^5.0.1"
-    "@pixi/utils" "^5.0.1"
+    "@pixi/settings" "^5.0.0"
+    "@pixi/ticker" "^5.0.0"
+    "@pixi/utils" "^5.0.0"
 
-"@pixi/display@^5.0.1":
+"@pixi/display@^5.0.0", "@pixi/display@^5.0.1":
   version "5.0.1"
   resolved "https://registry.npmjs.org/@pixi/display/-/display-5.0.1.tgz#727d47d2ebcbdb2e2f3bcd68137f74c694861407"
   integrity sha512-TldN/3ksgsZdKwmqhbjnVEVW3YaryyRxB5DD6Q+qNjqdjNsPBsfYcMPOax+J9sjdjz6cAVa2xG3f2b4za0oBJw==
@@ -1115,7 +1115,7 @@
   resolved "https://registry.npmjs.org/@pixi/runner/-/runner-5.0.0.tgz#1457e9f520310ac644c02b1c57c1fe3e0a1feb4f"
   integrity sha512-VytqTmLpNLgyp4m463R4asahtAyrvasuCvFiigX4/rOZsndrujYVCdH9xCO6Yy6RE7PR1Jflmlx/xV2GE9QKaw==
 
-"@pixi/settings@^5.0.1":
+"@pixi/settings@^5.0.0", "@pixi/settings@^5.0.1":
   version "5.0.1"
   resolved "https://registry.npmjs.org/@pixi/settings/-/settings-5.0.1.tgz#a8ab7b0b8d99d8c98f30c35220a9dde42d4ba149"
   integrity sha512-H2uOTOLrwW+ZS07Nc3vEqUKlugKQ/QV9GSTGz33RObwfTS/PidlR/Ucow+n06DwnZHvhqJCvS+z8eieXfHRl6g==
@@ -1189,14 +1189,14 @@
     "@pixi/sprite" "^5.0.1"
     "@pixi/utils" "^5.0.1"
 
-"@pixi/ticker@^5.0.1":
+"@pixi/ticker@^5.0.0", "@pixi/ticker@^5.0.1":
   version "5.0.1"
   resolved "https://registry.npmjs.org/@pixi/ticker/-/ticker-5.0.1.tgz#5d0f96cb98edc9995d2fb38d5bbb4564ade1e60d"
   integrity sha512-T00DKK+l0WFj/c5V6e/3KawBoIIiEHFLKyurPEMtUL/MzF8FDvF0uX+TRbiieBMkqrHO/sSfENTpzhTYV72jdw==
   dependencies:
     "@pixi/settings" "^5.0.1"
 
-"@pixi/utils@^5.0.1":
+"@pixi/utils@^5.0.0", "@pixi/utils@^5.0.1":
   version "5.0.1"
   resolved "https://registry.npmjs.org/@pixi/utils/-/utils-5.0.1.tgz#ddcd5de4604ec0ca1d3155ed8bb6af10aa16cbb4"
   integrity sha512-2cmmDBmJkT0I8E7hEnSXtX1YxmD7nQ6752V4CBu91EzLZ8wYbRFU831gobTxWYvgM7gUeNezwx9snayLEDRFcQ==
