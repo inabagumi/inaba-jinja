@@ -24,7 +24,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --modern",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "now-build": "${npm_execpath} run build"
   },
   "version": "1.0.0"
 }

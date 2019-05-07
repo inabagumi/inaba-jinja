@@ -1,0 +1,33 @@
+{
+  "alias": ["heartbeat.haneru.dev"],
+  "builds": [
+    {
+      "config": {
+        "distDir": "dist"
+      },
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "github": {
+    "silent": true
+  },
+  "name": "heartbeat",
+  "routes": [
+    {
+      "headers": {
+        "cache-control": "max-age=31536000"
+      },
+      "src": "/(?:css|js|media)/.+"
+    },
+    {
+      "headers": {
+        "cache-control": "max-age=600, s-maxage=60"
+      },
+      "src": "/.*"
+    }
+  ],
+  "regions": ["hnd1"],
+  "scope": "inabagumi",
+  "version": 2
+}
