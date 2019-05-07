@@ -2,7 +2,7 @@
   "author": "Haneru Developers",
   "dependencies": {
     "pinch-zoom-element": "^1.1.1",
-    "pixi.js": "^5.0.1",
+    "pixi.js": "^5.0.2",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
@@ -29,9 +29,6 @@
   "license": "MIT",
   "name": "neru-camera",
   "private": true,
-  "resolutions": {
-    "@pixi/core": "5.0.0"
-  },
   "scripts": {
     "build": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint",
