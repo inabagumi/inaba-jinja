@@ -22,7 +22,7 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        link: 'mailto:contact@haneru.dev',
+        link: 'mailto:ykzts@desire.sh',
         text: 'お問い合わせ'
       }
     ],

@@ -46,4 +46,4 @@ Haneru Developers はバーチャル YouTuber の[因幡はねるさん](https:/
 
 開発されたアプリやサービスのソースコードは特別な事情がない限り [MIT License](https://opensource.org/licenses/MIT) が適用されたオープンソースソフトウェアとして [GitHub](https://github.com/inabagumi) で公開されています。[TypeScript](https://www.typescriptlang.org/) を主に用いて開発が行われています。
 
-メンバーになりたい、そのほか問い合わせたいことがある方は [contact@haneru.dev](mailto:contact@haneru.dev) までご連絡ください。
+メンバーになりたい、そのほか問い合わせたいことがある方は [ykzts@desire.sh](mailto:ykzts@desire.sh) までご連絡ください。
