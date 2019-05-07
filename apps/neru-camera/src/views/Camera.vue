@@ -4,6 +4,7 @@
       <Renderer
         v-if="cameraStream && overlayBlob"
         :camera-stream="cameraStream"
+        :key-color="asset.keyColor"
         :overlay-blob="overlayBlob"
         ref="renderer"
       />
@@ -54,6 +55,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapGetters } from 'vuex'
+import { Asset } from '@/store/asset/state'
 
 const Renderer = () => import('@/components/Renderer.vue')
 
@@ -77,17 +80,31 @@ type Methods = {
 }
 
 type Computed = {
+  asset: Asset
+  assetId: number
+  getAssetById: (id: number) => Asset
   hasSupportedMediaDevices: boolean
 }
 
-type Props = {
-  src: string
-}
+type Props = {}
 
 export default Vue.extend<Data, Methods, Computed, Props>({
   components: { Renderer },
 
   computed: {
+    ...(mapGetters('asset', ['getAssetById']) as any),
+
+    asset() {
+      return this.getAssetById(this.assetId)
+    },
+
+    assetId() {
+      const value = this.$route.query.id
+      const id = Array.isArray(value) ? value[0] : value
+
+      return id ? parseInt(id, 10) : 2
+    },
+
     hasSupportedMediaDevices: () => !!navigator.mediaDevices
   },
 
@@ -101,7 +118,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   },
 
   methods: {
-    async download(uri: string) {
+    async download(uri) {
       const response = await fetch(uri)
 
       return response.blob()
@@ -151,32 +168,22 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
     Promise.all([
       navigator.mediaDevices.getUserMedia(mediaStreamConstraints),
-      this.download(this.src)
+      this.download(this.asset.src)
     ])
       .then(([cameraStream, overlayBlob]) => {
-        this.cameraStream = cameraStream
         this.overlayBlob = overlayBlob
+        this.cameraStream = cameraStream
       })
-      .catch(() => {
-        this.hasError = true
-      })
+      .catch(() => (this.hasError = true))
   },
 
-  name: 'Camera',
-
-  props: {
-    src: {
-      required: true,
-      type: String
-    }
-  }
+  name: 'Camera'
 })
 </script>
 
 <style scoped>
 .camera {
   align-items: stretch;
-  background-color: #000;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -192,7 +199,6 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 }
 
 .camera__action-buttons {
-  background-color: #000;
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
@@ -203,10 +209,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 .camera__action-buttons__button {
   align-items: center;
   background-color: transparent;
-  border: 3px solid #fff;
+  border: 3px solid #fafafa;
   border-radius: 50%;
   box-sizing: border-box;
-  color: #fff;
+  color: #fafafa;
   display: block;
   height: 56px;
   overflow: hidden;
@@ -219,8 +225,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 }
 
 .camera__action-buttons__button::before {
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: #fafafa;
+  border: 2px solid #1b1b1b;
   border-radius: 50%;
   box-sizing: border-box;
   content: '';

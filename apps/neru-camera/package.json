@@ -4,7 +4,9 @@
     "pinch-zoom-element": "^1.1.1",
     "pixi.js": "^5.0.1",
     "register-service-worker": "^1.6.2",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.6",
+    "vuex": "^3.1.0"
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
   "devDependencies": {
@@ -33,7 +35,7 @@
   "scripts": {
     "build": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "test": "vue-cli-service test:unit"
   },
   "version": "3.0.1"

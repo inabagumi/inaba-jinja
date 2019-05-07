@@ -29,7 +29,7 @@
 
 <script lang="ts">
 import PinchZoom from 'pinch-zoom-element'
-import { Application, Sprite, interaction, utils } from 'pixi.js'
+import { Application, Sprite, interaction } from 'pixi.js'
 import Vue from 'vue'
 import { ChromaKeyFilter } from '@/filters/ChromaKeyFilter'
 
@@ -50,6 +50,7 @@ type Computed = {
 
 type Props = {
   cameraStream: MediaStream
+  keyColor: number
   overlayBlob: Blob
 }
 
@@ -80,9 +81,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       this.overlay.position.y = height * 0.5 + y * 2
       this.overlay.scale.x = this.overlay.scale.y = scale * 0.5
     },
-    setup() {
-      utils.skipHello()
 
+    setup() {
       const background = Sprite.from(this.$refs.camera as HTMLVideoElement)
       const overlay = Sprite.from(this.$refs.overlay as HTMLVideoElement)
 
@@ -93,7 +93,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
         width: background.width
       })
 
-      overlay.filters = [new ChromaKeyFilter()]
+      overlay.filters = [new ChromaKeyFilter(this.keyColor)]
       overlay.interactive = true
       overlay.buttonMode = true
       overlay.anchor.set(0.5)
@@ -132,6 +132,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     cameraStream: {
       required: true,
       type: MediaStream
+    },
+    keyColor: {
+      default: 0x00ff00,
+      type: Number
     },
     overlayBlob: {
       required: true,
