@@ -1,0 +1,33 @@
+{
+  "alias": ["haneru.dev"],
+  "builds": [
+    {
+      "config": {
+        "distDir": "docs/.vuepress/dist"
+      },
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "github": {
+    "silent": true
+  },
+  "name": "haneru.dev",
+  "routes": [
+    {
+      "headers": {
+        "cache-control": "max-age=31536000"
+      },
+      "src": "/assets/.+"
+    },
+    {
+      "headers": {
+        "cache-control": "max-age=600, s-maxage=60"
+      },
+      "src": "/.*"
+    }
+  ],
+  "regions": ["hnd1"],
+  "scope": "inabagumi",
+  "version": 2
+}

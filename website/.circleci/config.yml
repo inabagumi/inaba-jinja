@@ -40,22 +40,6 @@ jobs:
       - attach_workspace:
           at: .
       - run: yarn build
-      - persist_to_workspace:
-          paths:
-            - ./docs/.vuepress/dist/
-          root: .
-
-  publish:
-    executor:
-      name: default
-    steps:
-      - attach_workspace:
-          at: .
-      - run: |
-          yarn deploy \
-            --repo https://${GITHUB_TOKEN}@github.com/inabagumi/website.git \
-            --user 'Neru bot <bot@haneru.dev>' \
-            > /dev/null
 
 workflows:
   version: 2
@@ -69,10 +53,3 @@ workflows:
       - build:
           requires:
             - lint
-      - publish:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - master

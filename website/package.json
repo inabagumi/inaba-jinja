@@ -15,8 +15,8 @@
   "private": true,
   "scripts": {
     "build": "vuepress build ./docs/",
-    "deploy": "gh-pages -d ./docs/.vuepress/dist/",
     "dev": "vuepress dev ./docs/",
-    "lint": "eslint --ext .js,.vue --fix ."
+    "lint": "eslint --ext .js,.vue --fix .",
+    "now-build": "${npm_execpath} run build"
   }
 }
