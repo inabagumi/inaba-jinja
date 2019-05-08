@@ -17,6 +17,7 @@
       />
       <video
         crossorigin="anonymous"
+        preload="none"
         loop
         muted
         playsinline
@@ -29,7 +30,7 @@
 
 <script lang="ts">
 import PinchZoom from 'pinch-zoom-element'
-import { Application, Sprite, interaction } from 'pixi.js'
+import { Application, Sprite } from 'pixi.js'
 import Vue from 'vue'
 import { ChromaKeyFilter } from '@/filters/ChromaKeyFilter'
 import { Asset } from '@/store/asset/state'
@@ -82,7 +83,6 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
     setup() {
       const background = Sprite.from(this.$refs.camera as HTMLVideoElement)
-      const overlay = Sprite.from(this.$refs.overlay as HTMLVideoElement)
 
       const app = new Application({
         height: background.height,
@@ -91,14 +91,26 @@ export default Vue.extend<Data, Methods, Computed, Props>({
         width: background.width
       })
 
-      overlay.filters = [new ChromaKeyFilter(this.asset.keyColor)]
-      overlay.anchor.set(0.5)
-      overlay.position.set(app.screen.width * 0.5, app.screen.height * 0.5)
-
       app.stage.addChild(background)
-      app.stage.addChild(overlay)
 
-      this.overlay = overlay
+      const overlayElement = this.$refs.overlay as HTMLVideoElement
+      const onLoadedData = () => {
+        overlayElement.removeEventListener('loadeddata', onLoadedData)
+
+        const overlay = Sprite.from(overlayElement)
+
+        overlay.filters = [new ChromaKeyFilter(this.asset.keyColor)]
+        overlay.anchor.set(0.5)
+        overlay.position.set(app.screen.width * 0.5, app.screen.height * 0.5)
+
+        app.stage.addChild(overlay)
+
+        this.overlay = overlay
+      }
+
+      overlayElement.addEventListener('loadeddata', onLoadedData)
+
+      overlayElement.load()
     },
 
     toBlob(type = 'image/png') {
