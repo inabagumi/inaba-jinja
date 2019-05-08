@@ -15,14 +15,6 @@
         ref="camera"
         :src-object.prop="cameraStream"
       />
-      <video
-        crossorigin="anonymous"
-        loop
-        muted
-        playsinline
-        ref="overlay"
-        :src="overlayURI"
-      />
     </div>
   </div>
 </template>
@@ -32,6 +24,7 @@ import PinchZoom from 'pinch-zoom-element'
 import { Application, Sprite, interaction } from 'pixi.js'
 import Vue from 'vue'
 import { ChromaKeyFilter } from '@/filters/ChromaKeyFilter'
+import { Asset } from '@/store/asset/state'
 
 type Data = {
   overlay?: Sprite
@@ -44,21 +37,16 @@ type Methods = {
 }
 
 type Computed = {
-  overlayURI: string | null
   preview: HTMLCanvasElement
 }
 
 type Props = {
+  asset: Asset
   cameraStream: MediaStream
-  keyColor: number
-  overlayBlob: Blob
 }
 
 export default Vue.extend<Data, Methods, Computed, Props>({
   computed: {
-    overlayURI() {
-      return URL.createObjectURL(this.overlayBlob)
-    },
     preview() {
       return this.$refs.preview as HTMLCanvasElement
     }
@@ -84,7 +72,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
     setup() {
       const background = Sprite.from(this.$refs.camera as HTMLVideoElement)
-      const overlay = Sprite.from(this.$refs.overlay as HTMLVideoElement)
+      const overlay = Sprite.from(this.asset.src)
 
       const app = new Application({
         height: background.height,
@@ -93,7 +81,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
         width: background.width
       })
 
-      overlay.filters = [new ChromaKeyFilter(this.keyColor)]
+      overlay.filters = [new ChromaKeyFilter(this.asset.keyColor)]
       overlay.interactive = true
       overlay.buttonMode = true
       overlay.anchor.set(0.5)
@@ -129,17 +117,13 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   },
 
   props: {
+    asset: {
+      required: true,
+      type: Object
+    },
     cameraStream: {
       required: true,
       type: MediaStream
-    },
-    keyColor: {
-      default: 0x00ff00,
-      type: Number
-    },
-    overlayBlob: {
-      required: true,
-      type: Blob
     }
   }
 })

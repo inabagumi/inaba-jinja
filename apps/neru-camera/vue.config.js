@@ -52,15 +52,6 @@ module.exports = {
             }
           },
           urlPattern: /^https:\/\/(?:fonts\.googleapis\.com|fonts\.gstatic\.com)\//i
-        },
-        {
-          handler: 'staleWhileRevalidate',
-          options: {
-            cacheableResponse: {
-              statuses: [0, 200]
-            }
-          },
-          urlPattern: /^https:\/\/video\.twimg\.com\//i
         }
       ],
       skipWaiting: true,

@@ -2,10 +2,9 @@
   <div class="camera">
     <div class="camera__content">
       <Renderer
-        v-if="cameraStream && overlayBlob"
+        v-if="cameraStream"
         :camera-stream="cameraStream"
-        :key-color="asset.keyColor"
-        :overlay-blob="overlayBlob"
+        :asset="asset"
         ref="renderer"
       />
     </div>
@@ -71,11 +70,9 @@ type Data = {
   cameraStream?: MediaStream
   hasError: boolean
   isShooting: boolean
-  overlayBlob?: Blob
 }
 
 type Methods = {
-  download: (uri: string) => Promise<Blob>
   takePhoto: () => void
 }
 
@@ -112,18 +109,11 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     return {
       cameraStream: undefined,
       hasError: false,
-      isShooting: false,
-      overlayBlob: undefined
+      isShooting: false
     }
   },
 
   methods: {
-    async download(uri) {
-      const response = await fetch(uri)
-
-      return response.blob()
-    },
-
     takePhoto() {
       const renderer = this.$refs.renderer as any
 
@@ -166,14 +156,9 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   mounted() {
     if (!this.hasSupportedMediaDevices) return
 
-    Promise.all([
-      navigator.mediaDevices.getUserMedia(mediaStreamConstraints),
-      this.download(this.asset.src)
-    ])
-      .then(([cameraStream, overlayBlob]) => {
-        this.overlayBlob = overlayBlob
-        this.cameraStream = cameraStream
-      })
+    navigator.mediaDevices
+      .getUserMedia(mediaStreamConstraints)
+      .then(cameraStream => (this.cameraStream = cameraStream))
       .catch(() => (this.hasError = true))
   },
 
