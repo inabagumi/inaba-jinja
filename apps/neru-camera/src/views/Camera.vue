@@ -62,7 +62,9 @@ const Renderer = () => import('@/components/Renderer.vue')
 const mediaStreamConstraints: MediaStreamConstraints = {
   audio: false,
   video: {
-    facingMode: 'environment'
+    facingMode: 'environment',
+    height: 960,
+    width: 1280
   }
 }
 

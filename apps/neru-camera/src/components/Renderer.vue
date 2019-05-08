@@ -63,11 +63,13 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       if (!this.overlay) return
 
       const { scale, x, y } = event.target as PinchZoom
-      const { height, width } = this.preview
+      const { clientHeight, clientWidth, height, width } = this.preview
 
-      this.overlay.position.x = width * 0.5 + x * 2
-      this.overlay.position.y = height * 0.5 + y * 2
-      this.overlay.scale.x = this.overlay.scale.y = scale * 0.5
+      this.overlay.position.set(
+        x * (width / clientWidth) + width / 2,
+        y * (height / clientHeight) + height / 2
+      )
+      this.overlay.scale.set(scale)
     },
 
     setup() {
@@ -82,12 +84,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       })
 
       overlay.filters = [new ChromaKeyFilter(this.asset.keyColor)]
-      overlay.interactive = true
-      overlay.buttonMode = true
       overlay.anchor.set(0.5)
-      overlay.scale.set(0.5)
-      overlay.x = app.screen.width / 2
-      overlay.y = app.screen.height / 2
+      overlay.position.set(app.screen.width * 0.5, app.screen.height * 0.5)
 
       app.stage.addChild(background)
       app.stage.addChild(overlay)
