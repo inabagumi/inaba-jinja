@@ -15,6 +15,14 @@
         ref="camera"
         :src-object.prop="cameraStream"
       />
+      <video
+        crossorigin="anonymous"
+        loop
+        muted
+        playsinline
+        ref="overlay"
+        :src="asset.src"
+      />
     </div>
   </div>
 </template>
@@ -74,7 +82,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
     setup() {
       const background = Sprite.from(this.$refs.camera as HTMLVideoElement)
-      const overlay = Sprite.from(this.asset.src)
+      const overlay = Sprite.from(this.$refs.overlay as HTMLVideoElement)
 
       const app = new Application({
         height: background.height,
