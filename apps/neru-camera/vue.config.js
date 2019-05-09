@@ -3,7 +3,7 @@ module.exports = {
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'default',
     iconPaths: {
-      appleTouchIcon: '/apple-touch-icon.png',
+      appleTouchIcon: 'apple-touch-icon.png',
       favicon16: 'img/icons/favicon-16x16.png',
       favicon32: 'img/icons/favicon-32x32.png',
       maskIcon: 'img/icons/mask-icon.svg',
@@ -13,22 +13,20 @@ module.exports = {
       background_color: '#000',
       icons: [
         {
-          src: '/img/icons/favicon-192x192.png',
+          src: './img/icons/favicon-192x192.png',
           sizes: '192x192',
           type: 'image/png'
         },
         {
-          src: '/img/icons/favicon-512x512.png',
+          src: './img/icons/favicon-512x512.png',
           sizes: '512x512',
           type: 'image/png'
         }
       ],
-      name:
-        'ねるカメラ - ねるちゃん (因幡はねるさん) と一緒に写真が撮れるアプリ',
-      start_url: '/'
+      start_url: process.env.BASE_URL
     },
     msTileColor: '#000',
-    name: 'ねるカメラ',
+    name: process.env.VUE_APP_TITLE,
     themeColor: '#ff9800',
     workboxOptions: {
       clientsClaim: true,
