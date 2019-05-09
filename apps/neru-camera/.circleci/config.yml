@@ -59,8 +59,8 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: NODE_ENV=production yarn build
-      - run: npx firebase-tools deploy --token ${FIREBASE_TOKEN}
+      - run: npx now --target production
+      - run: npx now alias edge.neru.camera neru.camera
 
 workflows:
   version: 2
