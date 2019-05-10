@@ -2,13 +2,6 @@
 
 exports[`Camera.vue renders when passed 1`] = `
 "Take a photo!
-     カメラの取得に失敗しました 
-        あなたの使っているアプリはカメラの取得に対応していません。PC
-        の場合、Google Chrome と Firefox
-        最新版以外での動作は保証できません。Android の場合は Play Store
-        からダウンロードできる Chrome を使ってください。
-       
-        また iOS では Safari 以外のアプリからカメラの取得ができません。iPhone
-        や iPad などの iOS 端末を使っている場合は Safari
-        で開き直してください。"
+     読み込みに失敗しました 
+        なんからかの理由で読み込みに失敗しました。"
 `;

@@ -22,7 +22,17 @@
       </button>
     </div>
 
-    <div v-if="!hasSupportedMediaDevices" class="camera__error">
+    <div v-if="!isLoading && !asset" class="camera__error">
+      <h1 class="camera__error__title">読み込みに失敗しました</h1>
+
+      <div class="camera__error__body">
+        <p class="camera__error__paragraph">
+          なんからかの理由で読み込みに失敗しました。
+        </p>
+      </div>
+    </div>
+
+    <div v-else-if="!hasSupportedMediaDevices" class="camera__error">
       <h1 class="camera__error__title">カメラの取得に失敗しました</h1>
 
       <div class="camera__error__body">
@@ -54,7 +64,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapState } from 'vuex'
 import { Asset } from '@/store/asset/state'
 
 const Renderer = () => import('@/components/Renderer.vue')
@@ -83,6 +93,7 @@ type Computed = {
   assetId: number
   getAssetById: (id: number) => Asset | null
   hasSupportedMediaDevices: boolean
+  isLoading: boolean
 }
 
 type Props = {}
@@ -92,6 +103,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
   computed: {
     ...(mapGetters('asset', ['getAssetById']) as any),
+    ...(mapState('asset', ['isLoading']) as any),
 
     asset() {
       return this.getAssetById(this.assetId)
@@ -233,9 +245,9 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   color: #fafafa;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   left: 0;
-  padding: 0.5rem 1rem;
+  padding: 3rem 1rem 0.5rem;
   position: fixed;
   right: 0;
   top: 0;

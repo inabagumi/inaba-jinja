@@ -3,7 +3,8 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const Camera = () => import(/* webpackChunkName: 'camera' */ './views/Camera.vue')
+const Camera = () =>
+  import(/* webpackChunkName: 'camera' */ './views/Camera.vue')
 
 export default new Router({
   base: process.env.BASE_URL,

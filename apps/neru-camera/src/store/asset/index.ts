@@ -1,6 +1,16 @@
-export const namespaced = true
+import { Module } from 'vuex'
+import { RootState } from '../state'
+import actions from './actions'
+import getters from './getters'
+import mutations from './mutations'
+import state, { AssetState } from './state'
 
-export { default as actions } from './actions'
-export { default as getters } from './getters'
-export { default as mutations } from './mutations'
-export { default as state } from './state'
+const mod: Module<AssetState, RootState> = {
+  actions,
+  getters,
+  mutations,
+  namespaced: true,
+  state
+}
+
+export default mod

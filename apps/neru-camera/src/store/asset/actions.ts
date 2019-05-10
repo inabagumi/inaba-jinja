@@ -1,13 +1,28 @@
 import { ActionTree } from 'vuex'
-import { AssetState } from './state'
-import { ASSET_FETCH_LIST } from './types'
+import { RootState } from '../state'
+import { Asset, AssetState } from './state'
+import {
+  ASSETS_FETCH_FAILURE,
+  ASSETS_FETCH_REQUEST,
+  ASSETS_FETCH_SUCCESS
+} from './types'
 
-const actions: ActionTree<AssetState, {}> = {
+const actions: ActionTree<AssetState, RootState> = {
   async fetch({ commit }) {
-    const response = await fetch('/list.json')
-    const assets = await response.json()
+    commit(ASSETS_FETCH_REQUEST)
 
-    commit(ASSET_FETCH_LIST, { assets })
+    let assets: Asset[]
+
+    try {
+      const response = await fetch('/list.json')
+      assets = await response.json()
+    } catch (error) {
+      commit(ASSETS_FETCH_FAILURE, error)
+
+      return
+    }
+
+    commit(ASSETS_FETCH_SUCCESS, assets)
   }
 }
 

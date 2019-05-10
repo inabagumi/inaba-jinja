@@ -6,10 +6,12 @@ export type Asset = {
 
 export type AssetState = {
   assets: Asset[]
+  isLoading: boolean
 }
 
-const state: AssetState = {
-  assets: []
-}
+const state = (): AssetState => ({
+  assets: [],
+  isLoading: false
+})
 
 export default state
