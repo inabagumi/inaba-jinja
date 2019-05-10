@@ -16,9 +16,15 @@
   "routes": [
     {
       "headers": {
+        "cache-control": "max-age=0"
+      },
+      "src": "/sw\\.js"
+    },
+    {
+      "headers": {
         "cache-control": "max-age=31536000"
       },
-      "src": "/(?:css|js)/.+"
+      "src": "/(?:(?:css|js|workbox-[^/]+)/.+|precache-manifest\\.[^.]+\\.js)"
     },
     {
       "dest": "index.html",
