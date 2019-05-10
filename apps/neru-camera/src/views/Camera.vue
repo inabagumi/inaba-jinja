@@ -2,7 +2,7 @@
   <div class="camera">
     <div class="camera__content">
       <Renderer
-        v-if="cameraStream"
+        v-if="cameraStream && asset"
         :camera-stream="cameraStream"
         :asset="asset"
         ref="renderer"
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div v-if="hasError" class="camera__error">
+    <div v-else-if="hasError" class="camera__error">
       <h1 class="camera__error__title">カメラの取得に失敗しました</h1>
 
       <div class="camera__error__body">
@@ -81,7 +81,7 @@ type Methods = {
 type Computed = {
   asset: Asset
   assetId: number
-  getAssetById: (id: number) => Asset
+  getAssetById: (id: number) => Asset | null
   hasSupportedMediaDevices: boolean
 }
 
@@ -98,7 +98,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
 
     assetId() {
-      const value = this.$route.query.id
+      const value = this.$route.params.id
       const id = Array.isArray(value) ? value[0] : value
 
       return id ? parseInt(id, 10) : 2

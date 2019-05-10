@@ -100,6 +100,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
         const overlay = Sprite.from(overlayElement)
 
         overlay.filters = [new ChromaKeyFilter(this.asset.keyColor)]
+
         overlay.anchor.set(0.5)
         overlay.position.set(app.screen.width * 0.5, app.screen.height * 0.5)
 

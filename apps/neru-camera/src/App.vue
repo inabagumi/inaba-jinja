@@ -6,6 +6,10 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400"
+      rel="stylesheet"
+    />
   </div>
 </template>
 
@@ -13,6 +17,10 @@
 import Vue from 'vue'
 
 export default Vue.extend({
+  created() {
+    this.$store.dispatch('asset/fetch')
+  },
+
   name: 'App'
 })
 </script>
@@ -21,7 +29,7 @@ export default Vue.extend({
 #app {
   background-color: #1b1b1b;
   bottom: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Noto Sans JP, Roboto, sans-serif;
   left: 0;
   position: fixed;
   right: 0;

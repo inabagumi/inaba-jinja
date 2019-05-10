@@ -1,8 +1,6 @@
-import assets from './list'
-
 export type Asset = {
   id: number
-  keyColor: number
+  keyColor: string
   src: string
 }
 
@@ -11,7 +9,7 @@ export type AssetState = {
 }
 
 const state: AssetState = {
-  assets
+  assets: []
 }
 
 export default state

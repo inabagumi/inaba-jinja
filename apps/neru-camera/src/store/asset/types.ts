@@ -1,0 +1,1 @@
+export const ASSET_FETCH_LIST = 'ASSET_FETCH_LIST'

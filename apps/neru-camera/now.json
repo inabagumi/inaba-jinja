@@ -21,6 +21,13 @@
       "src": "/(?:css|js)/.+"
     },
     {
+      "dest": "index.html",
+      "headers": {
+        "cache-control": "max-age=600, s-maxage=60"
+      },
+      "src": "/(:?c/\\d+)?"
+    },
+    {
       "headers": {
         "cache-control": "max-age=600, s-maxage=60"
       },
