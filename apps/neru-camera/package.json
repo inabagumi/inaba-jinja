@@ -1,7 +1,9 @@
 {
   "author": "Haneru Developers",
   "babel": {
-    "presets": ["@vue/app"]
+    "presets": [
+      "@vue/app"
+    ]
   },
   "dependencies": {
     "pinch-zoom-element": "^1.1.1",
@@ -39,12 +41,20 @@
     "root": true
   },
   "jest": {
-    "moduleFileExtensions": ["js", "ts", "vue"],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "vue"
+    ],
     "moduleNameMapper": {
       "@/(.*)$": "<rootDir>/src/$1"
     },
-    "snapshotSerializers": ["jest-serializer-vue"],
-    "testMatch": ["**/__tests__/*.ts"],
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "testMatch": [
+      "**/__tests__/*.ts"
+    ],
     "testURL": "https://neru-camera.test/",
     "transform": {
       "\\.ts$": "ts-jest",
@@ -60,6 +70,7 @@
   "private": true,
   "scripts": {
     "build": "vue-cli-service build --modern",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{html,json,md,yml}\"",
     "lint": "vue-cli-service lint --ignore-path .gitignore",
     "now-build": "${npm_execpath} run build",
     "serve": "vue-cli-service serve",
