@@ -1,5 +1,8 @@
 {
   "author": "Haneru Developers",
+  "babel": {
+    "presets": ["@vue/app"]
+  },
   "dependencies": {
     "pinch-zoom-element": "^1.1.1",
     "pixi.js": "^5.0.2",
@@ -26,12 +29,38 @@
     "typescript": "~3.4.5",
     "vue-template-compiler": "^2.6.10"
   },
+  "eslintConfig": {
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/prettier",
+      "@vue/typescript"
+    ],
+    "root": true
+  },
+  "jest": {
+    "moduleFileExtensions": ["js", "ts", "vue"],
+    "moduleNameMapper": {
+      "@/(.*)$": "<rootDir>/src/$1"
+    },
+    "snapshotSerializers": ["jest-serializer-vue"],
+    "testMatch": ["**/__tests__/*.ts"],
+    "testURL": "https://neru-camera.test/",
+    "transform": {
+      "\\.ts$": "ts-jest",
+      "\\.vue$": "vue-jest"
+    }
+  },
   "license": "MIT",
   "name": "neru-camera",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "private": true,
   "scripts": {
     "build": "vue-cli-service build --modern",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint --ignore-path .gitignore",
     "now-build": "${npm_execpath} run build",
     "serve": "vue-cli-service serve",
     "test": "vue-cli-service test:unit"
