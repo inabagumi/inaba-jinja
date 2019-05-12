@@ -34,7 +34,7 @@ module.exports = {
       importWorkboxFrom: 'local',
       runtimeCaching: [
         {
-          handler: 'cacheFirst',
+          handler: 'CacheFirst',
           options: {
             cacheableResponse: {
               statuses: [0, 200]
@@ -43,7 +43,7 @@ module.exports = {
           urlPattern: /\.(?:css|ico|jpe?g|js|png|svg)$/
         },
         {
-          handler: 'cacheFirst',
+          handler: 'CacheFirst',
           options: {
             cacheableResponse: {
               statuses: [0, 200]
