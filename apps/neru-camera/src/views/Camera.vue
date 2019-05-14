@@ -67,7 +67,10 @@ import Vue from 'vue'
 import { mapGetters, mapState } from 'vuex'
 import { Asset } from '@/store/asset/state'
 
-const Renderer = () => import('@/components/Renderer.vue')
+const Renderer = () =>
+  import(
+    /* webpackChunkName: 'components/renderer' */ '@/components/Renderer.vue'
+  )
 
 const mediaStreamConstraints: MediaStreamConstraints = {
   audio: false,
