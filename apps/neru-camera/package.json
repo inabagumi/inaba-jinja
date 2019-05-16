@@ -8,14 +8,15 @@
   "dependencies": {
     "pinch-zoom-element": "^1.1.1",
     "pixi.js": "^5.0.2",
-    "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
-    "vuex": "^3.1.1"
+    "vuex": "^3.1.1",
+    "workbox-window": "^4.3.1"
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
   "devDependencies": {
     "@types/jest": "^24.0.13",
+    "@types/workbox-window": "^4.3.0",
     "@vue/cli-plugin-babel": "^4.0.0-alpha.0",
     "@vue/cli-plugin-eslint": "^4.0.0-alpha.0",
     "@vue/cli-plugin-pwa": "^4.0.0-alpha.0",

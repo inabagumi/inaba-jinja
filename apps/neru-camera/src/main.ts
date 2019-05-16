@@ -1,13 +1,15 @@
 import 'pinch-zoom-element'
 import { utils as pixiUtils } from 'pixi.js'
-import { register } from 'register-service-worker'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
-if (process.env.NODE_ENV === 'production') {
-  register(`${process.env.BASE_URL}sw.js`)
+if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+  import('workbox-window').then(({ Workbox }) => {
+    const wb = new Workbox(`${process.env.BASE_URL}sw.js`)
+    wb.register()
+  })
 }
 
 Vue.config.productionTip = false
