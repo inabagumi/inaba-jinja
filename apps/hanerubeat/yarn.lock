@@ -822,6 +822,11 @@
     "@types/uglify-js" "*"
     source-map "^0.6.0"
 
+"@types/workbox-window@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@types/workbox-window/-/workbox-window-4.3.0.tgz#f806e8bbafec88407d372e76fb3c0fc1ef874c09"
+  integrity sha512-JB653Wsu/z/twRG+i0FtAROH+KEn4QeJg/uBqB7Bwzz6YTwNuRKz6pa1c9w7gH0uU5PXc9IrFNWCdQUi+2X9hQ==
+
 "@typescript-eslint/eslint-plugin@^1.1.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-1.9.0.tgz#29d73006811bf2563b88891ceeff1c5ea9c8d9c6"
@@ -6477,11 +6482,6 @@ regexpu-core@^4.5.4:
     regjsparser "^0.6.0"
     unicode-match-property-ecmascript "^1.0.4"
     unicode-match-property-value-ecmascript "^1.1.0"
-
-register-service-worker@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/register-service-worker/-/register-service-worker-1.6.2.tgz#9297e54c205c371c6e49bfa88f6997e8dd315f4c"
-  integrity sha512-I8L87fX2TK29LDx+wgyOUh2BJ3rDIRC1FtRZEHeP3rivzDv6p1DDZLGGtPucqjEkm45+2crtFIFssEWv56+9Wg==
 
 regjsgen@^0.5.0:
   version "0.5.0"
