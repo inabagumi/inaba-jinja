@@ -1,11 +1,22 @@
 {
   "author": "Yamagishi Kazutoshi",
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "dependencies": {
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10"
   },
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
+    "@inabagumi/prettier-config": "^1.0.0",
     "@vue/cli-plugin-babel": "^4.0.0-alpha.0",
     "@vue/cli-plugin-eslint": "^4.0.0-alpha.0",
     "@vue/cli-plugin-pwa": "^4.0.0-alpha.0",
@@ -15,14 +26,25 @@
     "@vue/eslint-config-typescript": "^4.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.2",
+    "prettier": "^1.17.1",
     "typescript": "^3.4.5",
     "vue-template-compiler": "^2.6.10"
   },
+  "eslintConfig": {
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/prettier",
+      "@vue/typescript"
+    ]
+  },
   "name": "@inabagumi/heartbeat",
+  "prettier": "@inabagumi/prettier-config",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --modern",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{html,json,md}\"",
     "lint": "vue-cli-service lint",
     "now-build": "${npm_execpath} run build"
   },
