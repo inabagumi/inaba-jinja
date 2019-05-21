@@ -22,8 +22,8 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        link: 'mailto:contact@haneru.dev',
-        text: 'お問い合わせ'
+        link: '/about/',
+        text: 'About'
       }
     ],
     repo: 'inabagumi/website',
