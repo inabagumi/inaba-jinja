@@ -25,12 +25,12 @@ Haneru Developers では npm パッケージの公開をしています。複数
 
 ```json
 {
-    "name": "example project",
-    "devDependencies": {
-        "@inabagumi/prettier-config": "latest",
-        "prettier": "latest"
-    },
-    "prettier": "@inabagumi/prettier-config"
+  "name": "example project",
+  "devDependencies": {
+    "@inabagumi/prettier-config": "latest",
+    "prettier": "latest"
+  },
+  "prettier": "@inabagumi/prettier-config"
 }
 ```
 
@@ -42,7 +42,7 @@ Haneru Developers では npm パッケージの公開をしています。複数
 
 ```json
 {
-    "extends": ["@inabagumi"]
+  "extends": ["@inabagumi"]
 }
 ```
 

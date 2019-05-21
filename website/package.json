@@ -5,17 +5,31 @@
     "vuepress-plugin-sitemap": "^2.1.2"
   },
   "devDependencies": {
+    "@inabagumi/prettier-config": "^1.0.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.2.2"
+    "eslint-plugin-vue": "^5.2.2",
+    "prettier": "^1.17.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ]
   },
   "license": "MIT",
   "name": "@inabagumi/website",
+  "prettier": "@inabagumi/prettier-config",
   "private": true,
   "scripts": {
     "build": "vuepress build ./docs/",
     "dev": "vuepress dev ./docs/",
-    "lint": "eslint --ext .js,.vue --fix .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{json,md}\"",
+    "lint": "eslint --ext .js,.vue --fix --ignore-path .gitignore docs/.vuepress",
     "now-build": "${npm_execpath} run build"
   }
 }

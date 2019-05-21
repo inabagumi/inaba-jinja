@@ -1,10 +1,9 @@
 module.exports = {
-  head: [
-    ['link', { href: '/favicon.png', rel: 'icon' }]
-  ],
+  head: [['link', { href: '/favicon.png', rel: 'icon' }]],
   locales: {
     '/': {
-      description: 'Haneru Developers はバーチャル YouTuber の因幡はねるさんをテーマとしたアプリやサービスの開発を主として行うコミュニティーです。',
+      description:
+        'Haneru Developers はバーチャル YouTuber の因幡はねるさんをテーマとしたアプリやサービスの開発を主として行うコミュニティーです。',
       lang: 'ja',
       title: 'Haneru Developers'
     }
@@ -35,9 +34,6 @@ module.exports = {
     ],
     repo: 'inabagumi/website',
     search: false,
-    sidebar: [
-      '/about/',
-      '/products/'
-    ]
+    sidebar: ['/about/', '/products/']
   }
 }
