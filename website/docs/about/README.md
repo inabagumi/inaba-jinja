@@ -4,6 +4,10 @@ Haneru Developers はバーチャル YouTuber の[因幡はねるさん](https:/
 
 開発されたアプリやサービスのソースコードは特別な事情がない限り [MIT License](https://opensource.org/licenses/MIT) が適用されたオープンソースソフトウェアとして [GitHub](https://github.com/inabagumi) で公開されています。[TypeScript](https://www.typescriptlang.org/) を主に用いて開発が行われています。
 
+## 注意
+
+Haneru Developers によって提供されるアプリやサービスは因幡はねるさんや因幡はねるさんが所属する『有閑喫茶 あにまーれ』とは一切関係のない第三者によって開発と運用が行われています。これらのアプリやサービスに対する問い合わせを因幡はねるさんや『有閑喫茶 あにまーれ』に対して行うのはお止めください。
+
 ## お問い合わせ
 
-なにか伝えたいことがある場合はそれぞれのアプリケーションのリポジトリの Issue、もしくは [contact@haneru.dev](mailto:contact@haneru.dev) までご連絡ください。本業の傍らで開発をしているため、返事の保証は致しかねます。
+なんらかの連絡事項がある場合はそれぞれのアプリやサービスのリポジトリの Issue、もしくは [contact@haneru.dev](mailto:contact@haneru.dev) までご連絡ください。本業の傍らで開発をしているため、返事の保証は致しかねます。

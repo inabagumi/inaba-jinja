@@ -3,14 +3,17 @@
 ## ねるカメラ
 
 - [https://neru.camera/](https://neru.camera/)
+- [リポジトリ (inabagumi/neru-camera)](https://github.com/inabagumi/neru-camera)
 
-## あなたのオタクタイプ診断 by あにまーれ
+## あにまーれ診断
 
 - [https://shindan.animare.cafe/](https://shindan.animare.cafe/)
+- [リポジトリ (inabagumi/animare-shindan)](https://github.com/inabagumi/animare-shindan)
 
 ## heartbeat!
 
 - [https://heartbeat.haneru.dev/](https://heartbeat.haneru.dev/)
+- [リポジトリ (inabagumi/heartbeat)](https://github.com/inabagumi/heartbeat)
 
 ## npm パッケージ
 

@@ -31,7 +31,7 @@ products:
     url: https://neru.camera/
   - description: 好みと推しVTuberを無意識から探るためのアプリです。アナタはどんなオタクタイプ?
     image: /main-visual/animare-shindan.jpg
-    name: あなたのオタクタイプ診断 by あにまーれ
+    name: あにまーれ診断
     url: https://shindan.animare.cafe/
   - description: 因幡はねるさんの鼓動を感じるためのアプリです。因幡はねるさんの鼓動を感じて、因幡はねるさんに包まれて眠りましょう。
     image: /main-visual/heartbeat.jpg
