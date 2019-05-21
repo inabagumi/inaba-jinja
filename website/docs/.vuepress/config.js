@@ -27,9 +27,17 @@ module.exports = {
       {
         link: '/about/',
         text: 'About'
+      },
+      {
+        link: '/products/',
+        text: 'プロダクト'
       }
     ],
     repo: 'inabagumi/website',
-    search: false
+    search: false,
+    sidebar: [
+      '/about/',
+      '/products/'
+    ]
   }
 }
