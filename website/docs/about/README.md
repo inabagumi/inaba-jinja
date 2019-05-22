@@ -10,4 +10,4 @@ Haneru Developers によって提供されるアプリやサービスは因幡�
 
 ## お問い合わせ
 
-なんらかの連絡事項がある場合はそれぞれのアプリやサービスのリポジトリの Issue、もしくは [contact@haneru.dev](mailto:contact@haneru.dev) までご連絡ください。本業の傍らで開発をしているため、返事の保証は致しかねます。
+Haneru Developers に対してなんらかの連絡がある場合はそれぞれのアプリやサービスのリポジトリの Issue、もしくは [contact@haneru.dev](mailto:contact@haneru.dev) までご連絡ください。Haneru Developers は本業の傍らで開発をしているため、返事の保証は致しかねます。
