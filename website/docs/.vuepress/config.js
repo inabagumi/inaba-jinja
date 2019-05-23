@@ -34,6 +34,19 @@ module.exports = {
     ],
     repo: 'inabagumi/website',
     search: false,
-    sidebar: ['/about/', '/products/']
+    sidebar: [
+      '/about/',
+      {
+        children: [
+          '/products/neru-camera',
+          '/products/animare-shindan',
+          '/products/heartbeat',
+          '/products/npm-packages'
+        ],
+        collapsable: false,
+        path: '/products/',
+        title: 'プロダクト'
+      }
+    ]
   }
 }
