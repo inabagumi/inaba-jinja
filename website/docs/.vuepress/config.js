@@ -44,7 +44,6 @@ module.exports = {
           '/products/npm-packages'
         ],
         collapsable: false,
-        path: '/products/',
         title: 'プロダクト'
       }
     ]
