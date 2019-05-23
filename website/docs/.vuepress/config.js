@@ -11,6 +11,12 @@ module.exports = {
   plugins: [
     '@vuepress/back-to-top',
     [
+      '@vuepress/google-analytics',
+      {
+        ga: 'UA-140696242-1'
+      }
+    ],
+    [
       'sitemap',
       {
         hostname: 'https://haneru.dev'

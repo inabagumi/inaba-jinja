@@ -1,15 +1,16 @@
 {
-  "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.48",
-    "vuepress": "^1.0.0-alpha.48",
-    "vuepress-plugin-sitemap": "^2.1.2"
-  },
+  "dependencies": {},
+  "description": "We are Haneru Developers!",
   "devDependencies": {
     "@inabagumi/prettier-config": "^1.0.0",
     "@vue/eslint-config-prettier": "^4.0.1",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.48",
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.48",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.2",
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "vuepress": "^1.0.0-alpha.48",
+    "vuepress-plugin-sitemap": "^2.1.2"
   },
   "eslintConfig": {
     "env": {
