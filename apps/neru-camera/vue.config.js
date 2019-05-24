@@ -23,7 +23,7 @@ module.exports = {
           type: 'image/png'
         }
       ],
-      start_url: process.env.BASE_URL
+      start_url: '/'
     },
     msTileColor: '#000',
     name: process.env.VUE_APP_TITLE,
