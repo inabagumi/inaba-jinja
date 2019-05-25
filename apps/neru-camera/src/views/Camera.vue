@@ -67,7 +67,7 @@ import Vue from 'vue'
 import { mapGetters, mapState } from 'vuex'
 import { Asset } from '@/store/asset/state'
 
-const Renderer = () =>
+const AsyncRenderer = () =>
   import(
     /* webpackChunkName: 'components/renderer' */ '@/components/Renderer.vue'
   )
@@ -102,7 +102,7 @@ type Computed = {
 type Props = {}
 
 export default Vue.extend<Data, Methods, Computed, Props>({
-  components: { Renderer },
+  components: { Renderer: AsyncRenderer },
 
   computed: {
     ...(mapGetters('asset', ['getAssetById']) as any),
@@ -132,7 +132,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
   methods: {
     takePhoto() {
-      const renderer = this.$refs.renderer as any
+      const renderer = this.$refs.renderer
 
       if (this.isShooting || !renderer) return
 
@@ -145,8 +145,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
         otherTab = window.open('about:blank', '_blank')
       }
 
-      renderer
-        .toBlob('image')
+      ;(renderer as any)
+        .toBlob('image/jpeg')
         .then((blob: Blob | null) => {
           if (!blob) {
             if (otherTab) otherTab.close()
@@ -157,7 +157,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
           anchor.href = URL.createObjectURL(blob)
 
           if (!otherTab) {
-            anchor.download = `NeruCamera-${Date.now()}.png`
+            anchor.download = `NeruCamera-${Date.now()}.jpg`
             anchor.target = '_blank'
             anchor.click()
           } else {
