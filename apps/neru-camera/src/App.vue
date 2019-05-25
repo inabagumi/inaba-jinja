@@ -3,11 +3,11 @@
     <RouterView />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400"
+      href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto:400"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400"
+      href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Sans+JP:400"
       rel="stylesheet"
     />
   </div>
