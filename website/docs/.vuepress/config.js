@@ -47,6 +47,7 @@ module.exports = {
           '/products/neru-camera',
           '/products/animare-shindan',
           '/products/heartbeat',
+          '/products/animare-search',
           '/products/npm-packages'
         ],
         collapsable: false,
