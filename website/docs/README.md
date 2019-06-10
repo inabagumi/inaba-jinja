@@ -37,6 +37,9 @@ products:
     image: /main-visual/heartbeat.jpg
     name: heartbeat!
     url: https://heartbeat.haneru.dev/
+  - description: 有閑喫茶 あにまーれのメンバーの動画を検索できるウェブサービスです。
+    image: /main-visual/animare-search.png
+    name: あにまーれサーチ
 tagline: ねるねるアプリの世界へようこそ
 ---
 

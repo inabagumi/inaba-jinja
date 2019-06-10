@@ -62,6 +62,10 @@ export default {
   &:hover
     background-color #fafafa
 
+  &:nth-child(n + 4) {
+    margin-top: 1.5rem;
+  }
+
 .product__main-visual
   display block
   height auto
