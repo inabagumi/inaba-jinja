@@ -40,6 +40,7 @@ products:
   - description: 有閑喫茶 あにまーれのメンバーの動画を検索できるウェブサービスです。
     image: /main-visual/animare-search.png
     name: あにまーれサーチ
+    url: https://search.animare.cafe/
 tagline: ねるねるアプリの世界へようこそ
 ---
 
