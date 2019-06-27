@@ -805,10 +805,10 @@
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.13.9.tgz#a67287861c928ebf4159a908d1fb1a2a34d4097a"
   integrity sha512-p8zp5xqkly3g4cCmo2mKOHI9+Z/kObmDj0BmjbDDJQlgDTiEGTbm17MEwTAusV6XceCy+bNw9q/ZHXHyKo3zkg==
 
-"@types/workbox-window@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@types/workbox-window/-/workbox-window-4.3.0.tgz#f806e8bbafec88407d372e76fb3c0fc1ef874c09"
-  integrity sha512-JB653Wsu/z/twRG+i0FtAROH+KEn4QeJg/uBqB7Bwzz6YTwNuRKz6pa1c9w7gH0uU5PXc9IrFNWCdQUi+2X9hQ==
+"@types/workbox-window@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@types/workbox-window/-/workbox-window-4.3.1.tgz#d7b3b1467e4a62706cd1e8e2da52990f597ec7e0"
+  integrity sha512-6xHJhIkDTrnAWbNR5Td6X7/WQje/MLvv0jMAtHPU508hepcX8NdiXOCsyYBhomcVOTyX19B6/xa+br+UfTFE2g==
 
 "@typescript-eslint/eslint-plugin@^1.1.0":
   version "1.11.0"
