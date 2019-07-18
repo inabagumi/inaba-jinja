@@ -1,7 +1,7 @@
 # あにまーれサーチ
 
 - [search.animare.cafe](https://search.animare.cafe/)
-- [リポジトリ (inabagumi/animare-search)](https://github.com/inabagumi/animare-shindan)
+- [リポジトリ (inabagumi/animare-search)](https://github.com/inabagumi/animare-search)
 
 ## 使用技術
 
