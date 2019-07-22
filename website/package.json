@@ -3,11 +3,13 @@
   "description": "We are Haneru Developers!",
   "devDependencies": {
     "@inabagumi/prettier-config": "^1.0.0",
-    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/eslint-config-prettier": "^5.0.0",
     "@vuepress/plugin-back-to-top": "^1.0.2",
     "@vuepress/plugin-google-analytics": "^1.0.2",
     "eslint": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.2.3",
+    "prettier": "^1.18.2",
     "vuepress": "^1.0.2",
     "vuepress-plugin-sitemap": "^2.1.2"
   },
