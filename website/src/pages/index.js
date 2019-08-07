@@ -12,7 +12,10 @@ const Home = () => {
   const { siteConfig = {} } = context
 
   return (
-    <Layout description="Haneru Developers はバーチャル YouTuber の因幡はねるさんをテーマとしたアプリやサービスの開発を主として行うコミュニティです。">
+    <Layout
+      description="Haneru Developers はバーチャル YouTuber の因幡はねるさんをテーマとしたアプリやサービスの開発を主として行うコミュニティです。"
+      permalink="/"
+    >
       <header className="hero hero--dark">
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
