@@ -1,37 +1,78 @@
 {
-  "dependencies": {},
+  "author": "Haneru Developers",
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.24",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.24",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
   "description": "We are Haneru Developers!",
   "devDependencies": {
     "@inabagumi/prettier-config": "^1.0.0",
-    "@vue/eslint-config-prettier": "^5.0.0",
-    "@vuepress/plugin-back-to-top": "^1.0.3",
-    "@vuepress/plugin-google-analytics": "^1.0.3",
+    "babel-eslint": "^10.0.2",
     "eslint": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-vue": "^5.2.3",
-    "prettier": "^1.18.2",
-    "vuepress": "^1.0.3",
-    "vuepress-plugin-sitemap": "^2.1.2"
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "prettier": "^1.18.2"
   },
   "eslintConfig": {
     "env": {
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
       "eslint:recommended",
-      "@vue/prettier"
-    ]
+      "plugin:react/recommended",
+      "plugin:jsx-a11y/recommended",
+      "prettier/react"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "error",
+      "react-hooks/rules-of-hooks": "error"
+    },
+    "settings": {
+      "linkComponents": [
+        {
+          "linkAttribute": "to",
+          "name": "Link"
+        }
+      ],
+      "react": {
+        "version": "detect"
+      }
+    }
   },
   "license": "MIT",
   "name": "@inabagumi/website",
   "prettier": "@inabagumi/prettier-config",
   "private": true,
   "scripts": {
-    "build": "vuepress build ./docs/",
-    "dev": "vuepress dev ./docs/",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{json,md}\"",
-    "lint": "eslint --ext .js,.vue --fix --ignore-path .gitignore docs/.vuepress",
+    "build": "docusaurus build",
+    "deploy": "docusaurus deploy",
+    "dev": "docusaurus start",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,md}\"",
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "swizzle": "docusaurus swizzle",
     "now-build": "${npm_execpath} run build"
-  }
+  },
+  "version": "2.0.0"
 }
