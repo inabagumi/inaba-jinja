@@ -33,6 +33,9 @@ module.exports = {
       ],
       style: 'dark'
     },
+    googleAnalytics: {
+      trackingID: 'UA-140696242-1'
+    },
     image: 'img/haneru-dev.jpg',
     navbar: {
       links: [
