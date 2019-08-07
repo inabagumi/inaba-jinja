@@ -25,7 +25,7 @@
       "headers": {
         "location": "/docs/$1"
       },
-      "src": "/products/(.*)",
+      "src": "/products/(.*)\\.html",
       "status": 301
     },
     {
