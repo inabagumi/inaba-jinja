@@ -2,6 +2,7 @@ module.exports = {
   baseUrl: '/',
   favicon: 'img/favicon.png',
   organizationName: 'inabagumi',
+  plugins: ['@docusaurus/plugin-ideal-image'],
   presets: [
     [
       '@docusaurus/preset-classic',

@@ -1,5 +1,6 @@
 import chunk from 'lodash/chunk'
 import React from 'react'
+import Image from '@theme/IdealImage'
 import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
@@ -35,7 +36,7 @@ const Home = () => {
                   <div className="col col--4" key={product.website}>
                     <div className="card margin-bottom--md">
                       <div className="card__image">
-                        <img alt={product.title} src={product.preview} />
+                        <Image alt={product.title} img={product.preview} />
                       </div>
                       <div className="card__body">
                         <h4>{product.title}</h4>
