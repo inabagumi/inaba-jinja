@@ -30,6 +30,27 @@ module.exports = {
               to: 'docs/introduction'
             }
           ]
+        },
+        {
+          title: 'プロダクト',
+          items: [
+            {
+              label: 'ねるカメラ',
+              to: 'docs/neru-camera'
+            },
+            {
+              label: 'あにまーれ診断',
+              to: 'docs/animare-shindan'
+            },
+            {
+              label: 'heartbeat!',
+              to: 'docs/heartbeat'
+            },
+            {
+              label: 'あにまーれ検索',
+              to: 'docs/animare-search'
+            }
+          ]
         }
       ],
       style: 'dark'
