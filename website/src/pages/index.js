@@ -32,7 +32,7 @@ const Home = () => {
       </header>
       <main>
         {products && products.length && (
-          <section className="container padding--lg">
+          <section className="container margin-top--lg">
             {chunk(products, 3).map((row, i) => (
               <div className="row" key={`row-${i}`}>
                 {row.map(product => (
