@@ -23,44 +23,23 @@
   },
   "description": "We are Haneru Developers!",
   "devDependencies": {
+    "@inabagumi/eslint-config-react": "^1.0.2",
     "@inabagumi/prettier-config": "^1.0.0",
-    "babel-eslint": "^10.0.2",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript": "~3.5.3"
   },
   "eslintConfig": {
-    "env": {
-      "node": true
-    },
     "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:jsx-a11y/recommended",
-      "prettier/react"
-    ],
-    "parser": "babel-eslint",
-    "plugins": [
-      "react-hooks"
-    ],
-    "rules": {
-      "react-hooks/exhaustive-deps": "error",
-      "react-hooks/rules-of-hooks": "error"
-    },
-    "settings": {
-      "linkComponents": [
-        {
-          "linkAttribute": "to",
-          "name": "Link"
-        }
-      ],
-      "react": {
-        "version": "detect"
-      }
-    }
+      "@inabagumi/react"
+    ]
   },
   "license": "MIT",
   "name": "@inabagumi/website",
