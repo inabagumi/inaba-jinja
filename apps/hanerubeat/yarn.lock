@@ -743,6 +743,18 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
+"@inabagumi/eslint-config-vue@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config-vue/-/eslint-config-vue-2.0.1.tgz#738801bf949c4641a9620cbb9a2aa967060e5b03"
+  integrity sha512-eJrdWATee9nD3l+sETYfXO6b0d2c05fv8vxiguQphaUpKojR4Z7U+ETItO3B0Wccm9QG8BUnmmpfWXDugReoMA==
+  dependencies:
+    "@inabagumi/eslint-config" "^2.0.1"
+
+"@inabagumi/eslint-config@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config/-/eslint-config-2.0.1.tgz#63a0e5ef021b95d86c7b89c79a0c67b89f298034"
+  integrity sha512-ZD+ytHrr7KgiWSWtorpf2aNNA1fFElW569uF+R0edXCMBYdG0L87CM1y0zw1BUEecQuDPcoFDXx2Kb/2GooBWA==
+
 "@inabagumi/prettier-config@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-1.0.0.tgz#ac77b1217e0656956621c596f7451c1f858dcd58"
@@ -833,7 +845,7 @@
   resolved "https://registry.yarnpkg.com/@types/workbox-window/-/workbox-window-4.3.2.tgz#700daeaf029918ef1143896c8cbee63d6d357523"
   integrity sha512-q1uvj0T2gYNivUSZjuZmSnmDqX+TzCOQw6Q8Tnk/3RApUIf3phDXBNCDAMhxOODhQnh/ba8s7xTNXPpX6Z3WxQ==
 
-"@typescript-eslint/eslint-plugin@^1.1.0":
+"@typescript-eslint/eslint-plugin@^1.13.0":
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-1.13.0.tgz#22fed9b16ddfeb402fd7bcde56307820f6ebc49f"
   integrity sha512-WQHCozMnuNADiqMtsNzp96FNox5sOVpU8Xt4meaT4em8lOG1SrOv92/mUbEHQVh90sldKSfcOc/I0FOb/14G1g==
@@ -853,7 +865,7 @@
     "@typescript-eslint/typescript-estree" "1.13.0"
     eslint-scope "^4.0.0"
 
-"@typescript-eslint/parser@^1.1.0":
+"@typescript-eslint/parser@^1.13.0":
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-1.13.0.tgz#61ac7811ea52791c47dc9fd4dd4a184fae9ac355"
   integrity sha512-ITMBs52PCPgLb2nGPoeT4iU3HdQZHcPaZVw+7CsFagRJHUhyeTgorEwHXhFf3e7Evzi8oujKNpHc8TONth8AdQ==
@@ -1113,21 +1125,6 @@
     prettier "1.16.3"
     source-map "~0.6.1"
     vue-template-es2015-compiler "^1.9.0"
-
-"@vue/eslint-config-prettier@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@vue/eslint-config-prettier/-/eslint-config-prettier-5.0.0.tgz#ce66c8c4d9e01ad1d4e1a12140ab685bd5ef345a"
-  integrity sha512-OXcH+XWevp3DIdC3BBornC1q6/MNYfca/3HY66awV6aGm+dtkR/hpfBb6fX7nsVjcox13kgG+eSUtUfJ3uxZ8A==
-  dependencies:
-    eslint-config-prettier "^6.0.0"
-
-"@vue/eslint-config-typescript@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@vue/eslint-config-typescript/-/eslint-config-typescript-4.0.0.tgz#a202983598a4a826460cbb8ee43826875b0f6673"
-  integrity sha512-uSMAMgw4xDgVdZQhpbtJRo8nMV4oOy3Ht8olfOo7xvYFYLMF2JZ1tDRKd9/NSusxA72O2Vma+HzmyzDHg9evcQ==
-  dependencies:
-    "@typescript-eslint/eslint-plugin" "^1.1.0"
-    "@typescript-eslint/parser" "^1.1.0"
 
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.1"
@@ -7759,9 +7756,9 @@ tsutils@^2.29.0:
     tslib "^1.8.1"
 
 tsutils@^3.7.0:
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.15.0.tgz#3efabbf2c18a5d7c7496a878be0609eb90897ed6"
-  integrity sha512-or184xKZ6fLE1SrDcvsOs3Wkfb1JgizdKs5Fiag3cp/m9k7C7GWd4E7gs3K5LHAePaIP7K62C20ZZI3JQx8iBQ==
+  version "3.17.1"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.17.1.tgz#ed719917f11ca0dee586272b2ac49e015a2dd759"
+  integrity sha512-kzeQ5B8H3w60nFY2g8cJIuH7JDpsALXySGtwGJ0p2LSjLgay3NdIpqq5SoOBe46bKDW2iq25irHCr8wjomUS2g==
   dependencies:
     tslib "^1.8.1"
 
