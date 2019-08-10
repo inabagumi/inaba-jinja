@@ -953,17 +953,17 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@inabagumi/eslint-config-react@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config-react/-/eslint-config-react-1.0.2.tgz#2ad194c8b2c8928b9438de3d8a7116463c7a5231"
-  integrity sha512-47JiQQb2LUb8d958BqPD169yVjxt+PYqe/c8fCC6FCGkQCAxhWg0K5IpsZI8Z7R9RiiVwSCwcB+6lnYoEofAGQ==
+"@inabagumi/eslint-config-react@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config-react/-/eslint-config-react-2.0.1.tgz#e823b4b48ffaa0c65510c508e306636f433c0765"
+  integrity sha512-KvLqk8irPP82RAGCSBm5DIMM4C3TqCIOReoQ0kEj4ckiOsJrHBIl6sqn1r8nNR0raA4ykNJ+gQ3GY6LPzm4vzg==
   dependencies:
-    "@inabagumi/eslint-config" "^1.0.2"
+    "@inabagumi/eslint-config" "^2.0.1"
 
-"@inabagumi/eslint-config@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config/-/eslint-config-1.0.2.tgz#ccbfc094e1d0e1fe06420473731c7027e1805168"
-  integrity sha512-AvF3w7yv1Fz3XZLCfHdITf8zR8T/6eDIz9YRJnX7pKhFGt0eSHjC5bZoeWSwxYf4a17TCZGswdt8QrsDhOD+wA==
+"@inabagumi/eslint-config@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config/-/eslint-config-2.0.1.tgz#63a0e5ef021b95d86c7b89c79a0c67b89f298034"
+  integrity sha512-ZD+ytHrr7KgiWSWtorpf2aNNA1fFElW569uF+R0edXCMBYdG0L87CM1y0zw1BUEecQuDPcoFDXx2Kb/2GooBWA==
 
 "@inabagumi/prettier-config@^1.0.0":
   version "1.0.0"
