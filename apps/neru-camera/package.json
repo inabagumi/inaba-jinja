@@ -15,19 +15,21 @@
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
   "devDependencies": {
+    "@inabagumi/eslint-config-vue": "^2.0.1",
     "@inabagumi/prettier-config": "^1.0.0",
     "@types/jest": "^24.0.17",
     "@types/workbox-window": "^4.3.2",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
     "@vue/cli-plugin-babel": "^4.0.0-beta.3",
     "@vue/cli-plugin-eslint": "^4.0.0-beta.3",
     "@vue/cli-plugin-pwa": "^4.0.0-beta.3",
     "@vue/cli-plugin-typescript": "^4.0.0-beta.3",
     "@vue/cli-plugin-unit-jest": "^4.0.0-beta.3",
     "@vue/cli-service": "^4.0.0-beta.3",
-    "@vue/eslint-config-prettier": "^5.0.0",
-    "@vue/eslint-config-typescript": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.29",
     "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.2.3",
     "prettier": "^1.18.2",
@@ -37,12 +39,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/prettier",
-      "@vue/typescript"
-    ],
-    "root": true
+      "@inabagumi/vue"
+    ]
   },
   "jest": {
     "moduleFileExtensions": [

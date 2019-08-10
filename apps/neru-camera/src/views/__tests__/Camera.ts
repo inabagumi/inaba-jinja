@@ -12,16 +12,16 @@ const localVue = createLocalVue()
 
 localVue.use(Vuex)
 
-describe('Camera.vue', () => {
+describe('Camera.vue', (): void => {
   let store: Store<RootState>
 
-  beforeEach(() => {
+  beforeEach((): void => {
     store = new Store({
       modules: { asset }
     })
   })
 
-  it('renders when passed', () => {
+  it('renders when passed', (): void => {
     store.commit(`asset/${ASSETS_FETCH_REQUEST}`)
     store.commit(`asset/${ASSETS_FETCH_SUCCESS}`, [
       {

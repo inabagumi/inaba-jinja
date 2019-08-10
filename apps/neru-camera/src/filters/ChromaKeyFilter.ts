@@ -18,20 +18,20 @@ void main(void) {
 `
 
 export class ChromaKeyFilter extends Filter {
-  constructor(keyColor = '#00ff00') {
+  public constructor(keyColor = '#00ff00') {
     super(undefined, fragmentShader)
 
     this.uniforms.keyColor = new Float32Array(3)
     this.keyColor = keyColor
   }
 
-  get keyColor(): string {
+  public get keyColor(): string {
     const hex = utils.rgb2hex(this.uniforms.keyColor)
 
     return utils.hex2string(hex)
   }
 
-  set keyColor(value: string) {
+  public set keyColor(value: string) {
     const hex = utils.string2hex(value)
 
     utils.hex2rgb(hex, this.uniforms.keyColor)

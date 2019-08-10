@@ -1,10 +1,10 @@
-export type Asset = {
+export interface Asset {
   id: number
   keyColor: string
   src: string
 }
 
-export type AssetState = {
+export interface AssetState {
   assets: Asset[]
   isLoading: boolean
 }

@@ -7,15 +7,15 @@ import {
 } from './types'
 
 const mutations: MutationTree<AssetState> = {
-  [ASSETS_FETCH_FAILURE](state) {
+  [ASSETS_FETCH_FAILURE](state): void {
     state.isLoading = false
   },
 
-  [ASSETS_FETCH_REQUEST](state) {
+  [ASSETS_FETCH_REQUEST](state): void {
     state.isLoading = true
   },
 
-  [ASSETS_FETCH_SUCCESS](state, assets: Asset[]) {
+  [ASSETS_FETCH_SUCCESS](state, assets: Asset[]): void {
     state.assets = assets
     state.isLoading = false
   }

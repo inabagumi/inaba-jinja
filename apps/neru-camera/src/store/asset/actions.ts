@@ -8,7 +8,7 @@ import {
 } from './types'
 
 const actions: ActionTree<AssetState, RootState> = {
-  async fetch({ commit }) {
+  async fetch({ commit }): Promise<void> {
     commit(ASSETS_FETCH_REQUEST)
 
     let assets: Asset[]
