@@ -51,6 +51,15 @@ module.exports = {
               to: 'docs/animare-search'
             }
           ]
+        },
+        {
+          title: 'ソーシャル',
+          items: [
+            {
+              href: 'https://github.com/inabagumi',
+              label: 'GitHub'
+            }
+          ]
         }
       ],
       style: 'dark'
