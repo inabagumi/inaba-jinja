@@ -23,6 +23,13 @@
     },
     {
       "headers": {
+        "location": "/docs/eslint-config"
+      },
+      "src": "/(?:products|docs)/npm-packages(?:\\.html)?",
+      "status": 301
+    },
+    {
+      "headers": {
         "location": "/docs/$1"
       },
       "src": "/products/(.*)\\.html",

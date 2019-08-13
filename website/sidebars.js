@@ -5,8 +5,8 @@ module.exports = {
       'neru-camera',
       'animare-shindan',
       'heartbeat',
-      'animare-search',
-      'npm-packages'
-    ]
+      'animare-search'
+    ],
+    'npm パッケージ': ['eslint-config', 'prettier-config', 'renovate-config']
   }
 }
