@@ -941,17 +941,28 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@inabagumi/eslint-config-react@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config-react/-/eslint-config-react-2.1.0.tgz#8ad3875dc6aaae3b3b18f6b3e3693af42c4d20f1"
-  integrity sha512-2XyO/10oLxlNClBuCe6J1DEbkJvRCub8X/tyYh7ICObjX1Vlb1vw6rQ2qxNEGMIgPCBEwUDTvJgvWtxkK+Yntw==
+"@inabagumi/eslint-config-react@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config-react/-/eslint-config-react-3.0.4.tgz#3cec519e4879c9d5c0fc245b4f3b4d7812cf6f38"
+  integrity sha512-/mjmGPCVoUqt7S96xbTbLklLJnVwAMihmhavWg1seBGLT23EV35YMKIhYy0sVR24/PYgW9hv7AbAH+f0nM16sg==
   dependencies:
-    "@inabagumi/eslint-config" "^2.1.0"
+    "@inabagumi/eslint-config" "^3.0.4"
+    "@typescript-eslint/eslint-plugin" "^2.0.0"
+    "@typescript-eslint/parser" "^2.0.0"
+    eslint-config-prettier "^6.1.0"
+    eslint-plugin-jsx-a11y "^6.2.3"
+    eslint-plugin-react "^7.14.3"
+    eslint-plugin-react-hooks "^1.7.0"
 
-"@inabagumi/eslint-config@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config/-/eslint-config-2.1.0.tgz#4930e526bcf93cce9564238bdcdc497be1c999ca"
-  integrity sha512-aJsTaqK5Jvf2X87533eWPZlEaUPNVWivP2dPaBcYaxebcPv/AEHvUFa8iUzu9nZMfnQMxEKt7v4D4lq1g77u6A==
+"@inabagumi/eslint-config@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config/-/eslint-config-3.0.4.tgz#946dcc500203691b716d1edbddb38ca78ef4f1d7"
+  integrity sha512-gFxbfV8s7pPhQVFCinz/k/ocEmKNOLSaylJas1Tng3NJkch6ezZ0MLYkKB6BW6niFgSNDwubH00HG+H2rnF2PQ==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^2.0.0"
+    "@typescript-eslint/parser" "^2.0.0"
+    eslint-config-prettier "^6.1.0"
+    eslint-plugin-prettier "^3.1.0"
 
 "@inabagumi/prettier-config@^1.0.0":
   version "1.0.0"
@@ -3654,14 +3665,7 @@ eslint-scope@^5.0.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-utils@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.0.tgz#e2c3c8dba768425f897cf0f9e51fe2e241485d4c"
-  integrity sha512-7ehnzPaP5IIEh1r1tkjuIrxqhNkzUJa9z3R92tLJdZIVdWaczEhr3EbhGtsMrVxi1KeR8qA7Off6SWc5WNQqyQ==
-  dependencies:
-    eslint-visitor-keys "^1.0.0"
-
-eslint-utils@^1.4.2:
+eslint-utils@^1.4.0, eslint-utils@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.2.tgz#166a5180ef6ab7eb462f162fd0e6f2463d7309ab"
   integrity sha512-eAZS2sEUMlIeCjBeubdj45dmBHQwPHWyBcT1VSYB7o9x9WRRqKxyUoiXlRjyAwzN7YEzHJlYg0NmzDRWx6GP4Q==
