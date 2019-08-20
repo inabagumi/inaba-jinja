@@ -10,11 +10,7 @@ title: "@inabagumi/eslint-config"
 {
   "name": "example project",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
     "@inabagumi/eslint-config": "latest",
-    "eslint-config-prettier": "latest",
-    "eslint-plugin-prettier": "latest",
     "prettier": "latest",
     "typescript": "latest"
   },
@@ -24,4 +20,6 @@ title: "@inabagumi/eslint-config"
 }
 ```
 
-ESLint の設定で `extends` に `@inabagumi` を追加することによって共有の設定が利用できます。
+Prettier と TypeScript と一緒にインストールした上で ESLint の設定の `extends` に `@inabagumi` を追加することによって共有の設定が利用できます。
+
+また React 用に `@inabagumi/eslint-config-react`、Vue 用に `@inabagumi/eslint-config-vue` がそれぞれ用意されています。`@inabagumi/eslint-config` と同様に `"extends": ["@inabagumi/react"]` のように `extends` に `@inabagumi/react` や `@inabagumi/vue` を書き加えることによって利用できます。
