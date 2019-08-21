@@ -17,7 +17,7 @@
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
     "@inabagumi/eslint-config-vue": "^3.0.4",
-    "@inabagumi/prettier-config": "^1.0.0",
+    "@inabagumi/prettier-config": "^1.1.0",
     "@types/workbox-window": "^4.3.2",
     "@vue/cli-plugin-babel": "^4.0.0-rc.0",
     "@vue/cli-plugin-eslint": "^4.0.0-rc.0",
