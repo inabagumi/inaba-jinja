@@ -738,21 +738,19 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@inabagumi/eslint-config-vue@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config-vue/-/eslint-config-vue-4.0.0.tgz#893952e172ce8699ac1c9f31947037d7b3487713"
-  integrity sha512-prvLuuDD3M17a/2qiQZY7UpCgcCFPRTKfyG7/dOsFJpx5tZxNDeXwenmCQSRAeoobiisPjELBV/5cOeMN/4lTA==
+"@inabagumi/eslint-config-vue@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config-vue/-/eslint-config-vue-4.1.1.tgz#79fe4d2e0d8ec83717276b0c6a1f9084cc13ec2b"
+  integrity sha512-4pqn/nC/+owPF5IbD+LTxwkq3+1erdwv84Oe6F9PXgIpRrlLJRVVHNle8OcLJD9L2DdJqDlvlXfJ0IPhAZ9GOw==
   dependencies:
-    "@inabagumi/eslint-config" "^4.0.0"
-    "@typescript-eslint/eslint-plugin" "^2.0.0"
-    "@typescript-eslint/parser" "^2.0.0"
+    "@inabagumi/eslint-config" "^4.1.1"
     eslint-config-prettier "^6.1.0"
     eslint-plugin-vue "^5.2.3"
 
-"@inabagumi/eslint-config@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config/-/eslint-config-4.0.0.tgz#5cdb9ad219ada21b0604644f589dc1aef133228d"
-  integrity sha512-SGd2+d6JBFksp+E78cO1JKSBXh8bGGnda+mLFyGnxQlUNu597IvDVo31gA+ON6nQAZbYzNCCd8iV5O/HyDLrlA==
+"@inabagumi/eslint-config@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config/-/eslint-config-4.1.1.tgz#84aa4d2138950c4845538f6b64a198d7b929534c"
+  integrity sha512-Trjgxkzj+PYiwUCR0OZ5ZkBq6AW5eoC4xFsab2m49mJ0NmkhjJxHFad1z+PyGE7AO44JfP1KAVnB0IE5aQzRBQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.0.0"
     "@typescript-eslint/parser" "^2.0.0"
