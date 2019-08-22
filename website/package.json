@@ -23,7 +23,7 @@
   },
   "description": "We are Haneru Developers!",
   "devDependencies": {
-    "@inabagumi/eslint-config-react": "^4.0.0",
+    "@inabagumi/eslint-config-react": "^4.1.1",
     "@inabagumi/prettier-config": "^1.1.0",
     "eslint": "^6.2.1",
     "prettier": "^1.18.2",

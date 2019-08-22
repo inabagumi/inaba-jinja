@@ -941,23 +941,21 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@inabagumi/eslint-config-react@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config-react/-/eslint-config-react-4.0.0.tgz#16044d9ef642d17a029e2dc57e3239ea89e2b638"
-  integrity sha512-yiMZUJIz30GhzCBgTLcsSnyEVBkOyoOOEZZ4ILTollBee5oOF/pw0h2KiC5f3upDnBb5aBNtta3iKhW6yRrHKQ==
+"@inabagumi/eslint-config-react@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config-react/-/eslint-config-react-4.1.1.tgz#e22b6d87d1e93fd825791d61f3cea1d3f608cad4"
+  integrity sha512-WNSd2WTgwNn0bH4XVyWRV9h1aHMxJdV/hD5G+/CdL1cx0SoyFIwiZGCv0sR45aC9O/4gB5mcl3p7veSzgAbI/Q==
   dependencies:
-    "@inabagumi/eslint-config" "^4.0.0"
-    "@typescript-eslint/eslint-plugin" "^2.0.0"
-    "@typescript-eslint/parser" "^2.0.0"
+    "@inabagumi/eslint-config" "^4.1.1"
     eslint-config-prettier "^6.1.0"
     eslint-plugin-jsx-a11y "^6.2.3"
     eslint-plugin-react "^7.14.3"
     eslint-plugin-react-hooks "^2.0.1"
 
-"@inabagumi/eslint-config@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config/-/eslint-config-4.0.0.tgz#5cdb9ad219ada21b0604644f589dc1aef133228d"
-  integrity sha512-SGd2+d6JBFksp+E78cO1JKSBXh8bGGnda+mLFyGnxQlUNu597IvDVo31gA+ON6nQAZbYzNCCd8iV5O/HyDLrlA==
+"@inabagumi/eslint-config@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@inabagumi/eslint-config/-/eslint-config-4.1.1.tgz#84aa4d2138950c4845538f6b64a198d7b929534c"
+  integrity sha512-Trjgxkzj+PYiwUCR0OZ5ZkBq6AW5eoC4xFsab2m49mJ0NmkhjJxHFad1z+PyGE7AO44JfP1KAVnB0IE5aQzRBQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.0.0"
     "@typescript-eslint/parser" "^2.0.0"
