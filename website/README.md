@@ -2,7 +2,7 @@
 
 [Haneru Developers (haneru.dev)](https://haneru.dev/) のソースファイルです。
 
-[VuePress](https://vuepress.vuejs.org/) を使って構築しています。ビルドされた静的ファイルは [Now](https://zeit.co/now) にデプロイされます。
+[Docusaurus](https://docusaurus.io/) を使って構築され、[Now](https://zeit.co/now) にデプロイされます。
 
 ## セットアップ
 
