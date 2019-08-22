@@ -15,7 +15,7 @@
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
   "devDependencies": {
-    "@inabagumi/eslint-config-vue": "^4.0.0",
+    "@inabagumi/eslint-config-vue": "^4.1.1",
     "@inabagumi/prettier-config": "^1.1.0",
     "@types/jest": "^24.0.18",
     "@types/workbox-window": "^4.3.2",
@@ -35,7 +35,12 @@
   "eslintConfig": {
     "extends": [
       "@inabagumi/vue"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/camelcase": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-explicit-any": "off"
+    }
   },
   "jest": {
     "moduleFileExtensions": [
