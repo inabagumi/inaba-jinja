@@ -45,7 +45,8 @@
     "build": "docusaurus build",
     "deploy": "docusaurus deploy",
     "dev": "docusaurus start",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,md}\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json}\"",
+    "format-check": "prettier --ignore-path .gitignore --check \"**/*.{js,json}\"",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
     "swizzle": "docusaurus swizzle",
     "now-build": "${npm_execpath} run build"
