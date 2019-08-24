@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "pinch-zoom-element": "^1.1.1",
-    "pixi.js": "^5.1.1",
+    "pixi.js": "^5.1.2",
     "vue": "^2.6.10",
     "vue-router": "^3.1.2",
     "vuex": "^3.1.1",
