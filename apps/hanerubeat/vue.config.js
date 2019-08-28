@@ -29,7 +29,7 @@ module.exports = {
       start_url: '/'
     },
     msTileColor: '#222',
-    name: 'heartbeat!',
+    name: 'Haneru Beat!',
     themeColor: '#fff59d',
     workboxOptions: {
       clientsClaim: true,

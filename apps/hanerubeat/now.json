@@ -1,5 +1,5 @@
 {
-  "alias": ["hanerubeat.app", "heartbeat.haneru.dev"],
+  "alias": ["hanerubeat.app"],
   "builds": [
     {
       "config": {
@@ -12,7 +12,7 @@
   "github": {
     "silent": true
   },
-  "name": "heartbeat",
+  "name": "hanerubeat",
   "routes": [
     {
       "headers": {

@@ -34,7 +34,8 @@
       "@inabagumi/vue"
     ]
   },
-  "name": "@inabagumi/heartbeat",
+  "homepage": "https://hanerubeat.app/",
+  "name": "@inabagumi/hanerubeat",
   "prettier": "@inabagumi/prettier-config",
   "private": true,
   "scripts": {
