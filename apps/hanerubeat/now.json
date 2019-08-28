@@ -1,5 +1,5 @@
 {
-  "alias": ["heartbeat.haneru.dev"],
+  "alias": ["hanerubeat.app", "heartbeat.haneru.dev"],
   "builds": [
     {
       "config": {
