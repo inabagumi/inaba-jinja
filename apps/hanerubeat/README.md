@@ -1,4 +1,4 @@
-# heartbeat!
+# Haneru Beat!
 
 Feel the life of Neru-chan!
 
@@ -12,8 +12,8 @@ Feel the life of Neru-chan!
 ### Install
 
 ```console
-$ git clone https://github.com/inabagumi/heartbeat.git
-$ cd heartbeat
+$ git clone https://github.com/inabagumi/hanerubeat.git
+$ cd hanerubeat
 $ yarn install
 ```
 
