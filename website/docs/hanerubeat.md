@@ -1,9 +1,9 @@
 ---
-title: heartbeat!
+title: Haneru Beat!
 ---
 
-- [heartbeat.haneru.dev](https://heartbeat.haneru.dev/)
-- [リポジトリ (inabagumi/heartbeat)](https://github.com/inabagumi/heartbeat)
+- [hanerubeat.app](https://hanerubeat.app/)
+- [リポジトリ (inabagumi/hanerubeat)](https://github.com/inabagumi/hanerubeat)
 
 ## 使用技術
 

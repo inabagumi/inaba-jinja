@@ -18,10 +18,10 @@ const products = [
   {
     description:
       '因幡はねるさんの鼓動を感じるためのアプリです。因幡はねるさんの鼓動を感じて、因幡はねるさんに包まれて眠りましょう。',
-    learnMore: 'docs/heartbeat',
-    preview: require('./showcase/heartbeat.jpg'),
-    title: 'heartbeat!',
-    website: 'https://heartbeat.haneru.dev/'
+    learnMore: 'docs/hanerubeat',
+    preview: require('./showcase/hanerubeat.jpg'),
+    title: 'Haneru Beat!',
+    website: 'https://hanerubeat.app/'
   },
   {
     description:

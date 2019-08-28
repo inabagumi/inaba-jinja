@@ -4,7 +4,7 @@ module.exports = {
     プロダクト: [
       'neru-camera',
       'animare-shindan',
-      'heartbeat',
+      'hanerubeat',
       'animare-search'
     ],
     'npm パッケージ': ['eslint-config', 'prettier-config', 'renovate-config']

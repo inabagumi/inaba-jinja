@@ -43,8 +43,8 @@ module.exports = {
               to: 'docs/animare-shindan'
             },
             {
-              label: 'heartbeat!',
-              to: 'docs/heartbeat'
+              label: 'Haneru Beat!',
+              to: 'docs/hanerubeat'
             },
             {
               label: 'あにまーれ検索',

@@ -23,6 +23,13 @@
     },
     {
       "headers": {
+        "location": "/docs/hanerubeat"
+      },
+      "src": "/docs/heartbeat",
+      "status": 301
+    },
+    {
+      "headers": {
         "location": "/docs/eslint-config"
       },
       "src": "/(?:products|docs)/npm-packages(?:\\.html)?",
