@@ -2,6 +2,10 @@
 title: ねるカメラ
 ---
 
+import Image from '@theme/IdealImage'
+
+<Image alt="ねるカメラ" img={require('../src/data/showcase/neru-camera.jpg')} />
+
 - [neru.camera](https://neru.camera/)
 - [リポジトリ (inabagumi/neru-camera)](https://github.com/inabagumi/neru-camera)
 

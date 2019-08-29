@@ -2,6 +2,10 @@
 title: あにまーれサーチ
 ---
 
+import Image from '@theme/IdealImage'
+
+<Image alt="あにまーれサーチ" img={require('../src/data/showcase/animare-search.png')} />
+
 - [search.animare.cafe](https://search.animare.cafe/)
 - [リポジトリ (inabagumi/animare-search)](https://github.com/inabagumi/animare-search)
 

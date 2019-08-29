@@ -2,6 +2,10 @@
 title: Haneru Beat!
 ---
 
+import Image from '@theme/IdealImage'
+
+<Image alt="Haneru Beat!" img={require('../src/data/showcase/hanerubeat.jpg')} />
+
 - [hanerubeat.app](https://hanerubeat.app/)
 - [リポジトリ (inabagumi/hanerubeat)](https://github.com/inabagumi/hanerubeat)
 

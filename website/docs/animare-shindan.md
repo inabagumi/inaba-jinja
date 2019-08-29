@@ -2,6 +2,10 @@
 title: あにまーれ診断
 ---
 
+import Image from '@theme/IdealImage'
+
+<Image alt="あにまーれ診断" img={require('../src/data/showcase/animare-shindan.jpg')} />
+
 - [shindan.animare.cafe](https://shindan.animare.cafe/)
 - [リポジトリ (inabagumi/animare-shindan)](https://github.com/inabagumi/animare-shindan)
 
