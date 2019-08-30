@@ -34,7 +34,7 @@ module.exports = {
     workboxOptions: {
       clientsClaim: true,
       exclude: [
-        /\.(?:css|ico|jpe?g|js|mp3|png|ogg|svg)$/,
+        /\.(?:ico|jpe?g|json|mp3|png|ogg|svg)$/,
         /\.map$/,
         /manifest\.json$/
       ],
@@ -47,7 +47,7 @@ module.exports = {
               statuses: [0, 200]
             }
           },
-          urlPattern: /\.(?:css|ico|jpe?g|js|mp3|png|ogg|svg)$/
+          urlPattern: /\.(?:ico|jpe?g|json|mp3|png|ogg|svg)$/
         },
         {
           handler: 'cacheFirst',
