@@ -1,37 +1,28 @@
 {
-  "author": "Yamagishi Kazutoshi",
-  "babel": {
-    "presets": [
-      "@vue/app"
-    ]
-  },
+  "author": "Haneru Developers",
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
+    "defaults"
   ],
   "dependencies": {
-    "vue": "^2.6.10",
-    "workbox-window": "^4.3.1"
+    "@emotion/core": "^10.0.16",
+    "@emotion/styled": "^10.0.15",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
-    "@inabagumi/eslint-config-vue": "^4.1.1",
+    "@inabagumi/eslint-config-react": "^4.1.1",
     "@inabagumi/prettier-config": "^1.1.0",
-    "@types/workbox-window": "^4.3.2",
-    "@vue/cli-plugin-babel": "^4.0.0-rc.0",
-    "@vue/cli-plugin-eslint": "^4.0.0-rc.0",
-    "@vue/cli-plugin-pwa": "^4.0.0-rc.0",
-    "@vue/cli-plugin-typescript": "^4.0.0-rc.0",
-    "@vue/cli-service": "^4.0.0-rc.0",
-    "eslint": "^6.2.2",
+    "@types/node": "^12.7.3",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
     "prettier": "^1.18.2",
-    "typescript": "^3.5.3",
-    "vue-template-compiler": "^2.6.10"
+    "react-scripts": "^3.1.1",
+    "typescript": "^3.5.3"
   },
   "eslintConfig": {
     "extends": [
-      "@inabagumi/vue"
+      "@inabagumi/react"
     ]
   },
   "homepage": "https://hanerubeat.app/",
@@ -39,11 +30,11 @@
   "prettier": "@inabagumi/prettier-config",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --modern",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{html,json,md}\"",
-    "lint": "vue-cli-service lint",
+    "build": "react-scripts build",
+    "dev": "react-scripts start",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{html,js,json,ts,tsx}\"",
+    "format-check": "prettier --ignore-path .gitignore --check \"**/*.{html,js,json,ts,tsx}\"",
     "now-build": "${npm_execpath} run build"
   },
-  "version": "1.0.0"
+  "version": "2.0.0"
 }

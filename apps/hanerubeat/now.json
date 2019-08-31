@@ -3,7 +3,7 @@
   "builds": [
     {
       "config": {
-        "distDir": "dist"
+        "distDir": "build"
       },
       "src": "package.json",
       "use": "@now/static-build"
@@ -18,7 +18,7 @@
       "headers": {
         "cache-control": "max-age=31536000"
       },
-      "src": "/(?:css|js|media)/.+"
+      "src": "/static/(?:js|media)/.+"
     },
     {
       "headers": {

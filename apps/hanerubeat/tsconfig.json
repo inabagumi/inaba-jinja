@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react",
     "lib": ["esnext", "dom", "dom.iterable"],
     "module": "esnext",
     "moduleResolution": "node",
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "sourceMap": true,
-    "strict": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
     "target": "esnext",
-    "types": ["webpack-env"]
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true
   },
   "include": ["src/**/*", "tests/**/*"]
 }
