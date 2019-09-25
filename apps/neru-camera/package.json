@@ -19,12 +19,12 @@
     "@inabagumi/prettier-config": "^1.1.0",
     "@types/jest": "^24.0.18",
     "@types/workbox-window": "^4.3.2",
-    "@vue/cli-plugin-babel": "^4.0.0-rc.3",
-    "@vue/cli-plugin-eslint": "^4.0.0-rc.3",
-    "@vue/cli-plugin-pwa": "^4.0.0-rc.3",
-    "@vue/cli-plugin-typescript": "^4.0.0-rc.3",
-    "@vue/cli-plugin-unit-jest": "^4.0.0-rc.3",
-    "@vue/cli-service": "^4.0.0-rc.3",
+    "@vue/cli-plugin-babel": "^4.0.0-rc.4",
+    "@vue/cli-plugin-eslint": "^4.0.0-rc.4",
+    "@vue/cli-plugin-pwa": "^4.0.0-rc.4",
+    "@vue/cli-plugin-typescript": "^4.0.0-rc.4",
+    "@vue/cli-plugin-unit-jest": "^4.0.0-rc.4",
+    "@vue/cli-service": "^4.0.0-rc.4",
     "@vue/test-utils": "^1.0.0-beta.29",
     "eslint": "^6.4.0",
     "prettier": "^1.18.2",
@@ -43,25 +43,7 @@
     }
   },
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "ts",
-      "vue"
-    ],
-    "moduleNameMapper": {
-      "@/(.*)$": "<rootDir>/src/$1"
-    },
-    "snapshotSerializers": [
-      "jest-serializer-vue"
-    ],
-    "testMatch": [
-      "**/__tests__/*.ts"
-    ],
-    "testURL": "https://neru-camera.test/",
-    "transform": {
-      "\\.ts$": "ts-jest",
-      "\\.vue$": "vue-jest"
-    }
+    "preset": "@vue/cli-plugin-unit-jest/presets/typescript"
   },
   "license": "MIT",
   "name": "neru-camera",
