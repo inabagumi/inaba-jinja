@@ -6,8 +6,8 @@
   "dependencies": {
     "@emotion/core": "^10.0.20",
     "@emotion/styled": "^10.0.17",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
