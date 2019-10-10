@@ -1,5 +1,5 @@
 {
-  "alias": ["edge.neru.camera"],
+  "alias": ["neru.camera"],
   "builds": [
     {
       "config": {
@@ -10,6 +10,7 @@
     }
   ],
   "github": {
+    "autoAlias": false,
     "silent": true
   },
   "name": "neru-camera",
