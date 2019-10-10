@@ -27,7 +27,7 @@
     "@inabagumi/prettier-config": "^1.1.0",
     "eslint": "^6.5.1",
     "prettier": "^1.18.2",
-    "typescript": "~3.6.3"
+    "typescript": "~3.6.4"
   },
   "eslintConfig": {
     "extends": [
