@@ -18,7 +18,7 @@
     "@types/react-dom": "^16.9.1",
     "prettier": "^1.18.2",
     "react-scripts": "^3.2.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.4"
   },
   "eslintConfig": {
     "extends": [
