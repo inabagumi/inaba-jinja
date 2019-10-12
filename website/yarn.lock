@@ -743,16 +743,16 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@docusaurus/core@^2.0.0-alpha.25":
-  version "2.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-2.0.0-alpha.25.tgz#a6f359750326042a7e0af3e5391dd4dc07769c86"
-  integrity sha512-Z/3bPZF939uKpf2ZVW+KhmF6mDWQ06xaw3hKC3lvuwI4g5Ib8OxNHO6CmI3SICWreKslKyBPsMoQsFuxdbMBZg==
+"@docusaurus/core@^2.0.0-alpha.26":
+  version "2.0.0-alpha.26"
+  resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-2.0.0-alpha.26.tgz#8d38c163429e16d88bb9d7585acab95c721b4d82"
+  integrity sha512-yBQgBe5fbQgfBm/RZT00s6cLzvzu/wSpe3TlIbmxH6EexhzY1ENxwqCKzjYKpKpPVSdM0YIPjFtDowBQeIlh5g==
   dependencies:
     "@babel/core" "^7.6.2"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
     "@babel/preset-env" "^7.6.2"
     "@babel/preset-react" "^7.0.0"
-    "@docusaurus/utils" "^2.0.0-alpha.25"
+    "@docusaurus/utils" "^2.0.0-alpha.26"
     babel-loader "^8.0.6"
     babel-plugin-dynamic-import-node "^2.3.0"
     cache-loader "^4.1.0"
@@ -768,7 +768,7 @@
     fs-extra "^8.1.0"
     globby "^10.0.1"
     html-webpack-plugin "^4.0.0-beta.8"
-    import-fresh "^3.0.0"
+    import-fresh "^3.1.0"
     lodash "^4.17.15"
     mini-css-extract-plugin "^0.8.0"
     nprogress "^0.2.0"
@@ -914,6 +914,16 @@
   version "2.0.0-alpha.25"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-alpha.25.tgz#8c1170c7dcf405ea3b32ab2fca9cddbd0df28ef4"
   integrity sha512-+lU/VxTS56bODNqmK6dqUNJqfqAOErSWkyNgHHq0Ph5zJHe72z3ZWIIgxwZuhXsFUFDvTYm9nP3GAs+2t0rTwQ==
+  dependencies:
+    escape-string-regexp "^2.0.0"
+    fs-extra "^8.1.0"
+    gray-matter "^4.0.2"
+    lodash "^4.17.15"
+
+"@docusaurus/utils@^2.0.0-alpha.26":
+  version "2.0.0-alpha.26"
+  resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-alpha.26.tgz#023a974b97a83d21c119ff620eb6b72327d6c584"
+  integrity sha512-oCFF4ZLb8Zs6pPZ6xaqPqEyLldJP+XYcPI1RqpmR35EHKMhPSsObke2oNlreWJbnqIDW5/3z/BKSFVIg1uOSKQ==
   dependencies:
     escape-string-regexp "^2.0.0"
     fs-extra "^8.1.0"
@@ -5003,7 +5013,7 @@ import-fresh@^2.0.0:
     caller-path "^2.0.0"
     resolve-from "^3.0.0"
 
-import-fresh@^3.0.0:
+import-fresh@^3.0.0, import-fresh@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.1.0.tgz#6d33fa1dcef6df930fae003446f33415af905118"
   integrity sha512-PpuksHKGt8rXfWEr9m9EHIpgyyaltBy8+eF6GJM0QCAxMgxCfucMF3mjecK2QsJr0amJW7gTqh5/wht0z2UhEQ==
