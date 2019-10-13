@@ -59,8 +59,7 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: npx now -t ${NOW_TOKEN}
-      - run: npx now -t ${NOW_TOKEN} alias neru.camera
+      - run: npx now -t ${NOW_TOKEN} --prod
 
 workflows:
   version: 2

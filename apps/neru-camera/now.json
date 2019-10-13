@@ -3,10 +3,10 @@
   "builds": [
     {
       "config": {
-        "distDir": "dist"
+        "maxLambdaSize": "50mb"
       },
       "src": "package.json",
-      "use": "@now/static-build"
+      "use": "@now/next"
     }
   ],
   "github": {
@@ -14,34 +14,26 @@
     "silent": true
   },
   "name": "neru-camera",
+  "regions": ["hnd1"],
   "routes": [
     {
+      "continue": true,
+      "headers": {
+        "cache-control": "max-age=600, s-maxage=60"
+      },
+      "src": ".*"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "dest": "/_error",
       "headers": {
         "cache-control": "max-age=0"
       },
-      "src": "/sw\\.js"
-    },
-    {
-      "headers": {
-        "cache-control": "max-age=31536000"
-      },
-      "src": "/(?:(?:css|js|workbox-[^/]+)/.+|precache-manifest\\.[^.]+\\.js)"
-    },
-    {
-      "dest": "index.html",
-      "headers": {
-        "cache-control": "max-age=600, s-maxage=60"
-      },
-      "src": "/(:?c/\\d+)?"
-    },
-    {
-      "headers": {
-        "cache-control": "max-age=600, s-maxage=60"
-      },
-      "src": "/.*"
+      "src": ".*"
     }
   ],
-  "regions": ["hnd1"],
   "scope": "inabagumi",
   "version": 2
 }

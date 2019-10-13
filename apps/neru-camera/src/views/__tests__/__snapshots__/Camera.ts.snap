@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Camera.vue renders when passed 1`] = `
-"Take a photo!
-     読み込みに失敗しました 
-        なんからかの理由で読み込みに失敗しました。"
-`;
