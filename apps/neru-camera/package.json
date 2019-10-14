@@ -12,7 +12,7 @@
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
   "devDependencies": {
-    "@inabagumi/eslint-config-react": "^4.2.0",
+    "@inabagumi/eslint-config-react": "^4.3.0",
     "@inabagumi/prettier-config": "^1.1.0",
     "@types/classnames": "^2.2.9",
     "@types/node": "^12.7.12",
