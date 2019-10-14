@@ -38,5 +38,5 @@
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "serve": "next start"
   },
-  "version": "4.1.2"
+  "version": "5.0.0"
 }
