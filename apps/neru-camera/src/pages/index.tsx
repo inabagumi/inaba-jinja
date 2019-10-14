@@ -1,23 +1,14 @@
 import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
-import React, { ReactElement, useState, useEffect } from 'react'
-import Asset from '../interfaces/asset'
+import React, { ReactElement } from 'react'
 
 const Camera = dynamic(() => import('../components/camera'), { ssr: false })
 
 const Index: NextPage = (): ReactElement => {
-  const [asset, setAsset] = useState<Asset>()
-
-  useEffect(() => {
-    fetch('/list.json')
-      .then(res => res.json())
-      .then((assets: Asset[]) => setAsset(assets[0]))
-  }, [])
-
   return (
     <>
       <main className="container">
-        <Camera asset={asset} />
+        <Camera />
       </main>
 
       <style jsx>{`

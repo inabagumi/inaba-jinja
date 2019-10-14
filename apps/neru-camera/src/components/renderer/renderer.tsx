@@ -94,7 +94,7 @@ const Renderer = forwardRef<RefObject, Props>(
 
     useImperativeHandle(ref, () => ({
       toBlob: (type = 'image/png', quality = 1.0): Promise<Blob> =>
-        new Promise((resolve, reject) => {
+        new Promise((resolve, reject): void => {
           if (!previewRef.current) {
             reject(new TypeError('Canvas is not mounted.'))
             return

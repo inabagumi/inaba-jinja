@@ -1,13 +1,14 @@
 import App from 'next/app'
 import Head from 'next/head'
 import React, { ReactElement } from 'react'
+import { AssetProvider } from '../context/asset-context'
 
 export default class extends App {
   public render(): ReactElement {
     const { Component, pageProps } = this.props
 
     return (
-      <>
+      <AssetProvider>
         <Head>
           <title>ねるカメラ</title>
           <link
@@ -42,7 +43,7 @@ export default class extends App {
             margin: 0;
           }
         `}</style>
-      </>
+      </AssetProvider>
     )
   }
 }

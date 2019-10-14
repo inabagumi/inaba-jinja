@@ -3,11 +3,12 @@ import React, {
   FC,
   ReactElement,
   useCallback,
+  useContext,
   useEffect,
   useRef,
   useState
 } from 'react'
-import Asset from '../../interfaces/asset'
+import { AssetContext } from '../../context/asset-context'
 import Renderer from '../renderer'
 import { RefObject } from '../renderer/renderer'
 
@@ -20,11 +21,8 @@ const mediaStreamConstraints: MediaStreamConstraints = {
   }
 }
 
-type Props = {
-  asset?: Asset
-}
-
-const Camera: FC<Props> = ({ asset }): ReactElement => {
+const Camera: FC = (): ReactElement => {
+  const { asset } = useContext(AssetContext)
   const [isShooting, setIsShooting] = useState<boolean>(false)
   const [hasError, setHasError] = useState<boolean>(false)
   const [cameraStream, setCameraStream] = useState<MediaStream>()
