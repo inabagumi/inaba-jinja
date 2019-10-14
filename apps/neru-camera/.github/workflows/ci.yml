@@ -23,4 +23,6 @@ jobs:
       - run: yarn format-check
       - run: yarn lint
       - if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
         run: npx now -t ${NOW_TOKEN} --prod
