@@ -31,6 +31,8 @@ export default class extends App<Props> {
         <Head>
           <title>{title}</title>
 
+          <link href="/manifest.json" rel="manifest" />
+
           <meta content={description} name="description" />
 
           <meta content="website" property="og:type" />
