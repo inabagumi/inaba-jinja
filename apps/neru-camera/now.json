@@ -1,5 +1,12 @@
 {
   "alias": ["neru.camera"],
+  "build": {
+    "env": {
+      "NERU_CAMERA_BASE_URL": "https://neru.camera",
+      "NERU_CAMERA_DESCRIPTION": "ねるカメラは有閑喫茶 あにまーれに所属しているバーチャルYouTuberの因幡はねるさん (ねるちゃん) と一緒に写真が撮れるアプリです。ねるちゃんとの幸せなひとときをあなたに。",
+      "NERU_CAMERA_TITLE": "ねるカメラ"
+    }
+  },
   "builds": [
     {
       "config": {
