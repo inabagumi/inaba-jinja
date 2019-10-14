@@ -36,8 +36,7 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,ts,tsx}\"",
     "format-check": "prettier --ignore-path .gitignore --check \"**/*.{js,json,ts,tsx}\"",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
-    "serve": "next start",
-    "test": "echo todo"
+    "serve": "next start"
   },
   "version": "4.1.2"
 }
