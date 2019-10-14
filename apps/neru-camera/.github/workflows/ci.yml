@@ -1,0 +1,26 @@
+name: Node.js CI
+
+on:
+  pull_request:
+    branches:
+    - master
+  push:
+    branches:
+    - master
+    tags:
+    - 'v*'
+
+jobs:
+  tests_and_publish:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - run: yarn install --frozen-lockfile
+      - run: yarn format-check
+      - run: yarn lint
+      - if: startsWith(github.ref, 'refs/tags/v')
+        run: npx now -t ${NOW_TOKEN} --prod
