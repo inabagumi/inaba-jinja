@@ -1,20 +1,26 @@
 import React, { FC, createContext, useState, useEffect } from 'react'
-import Asset from '../interfaces/asset'
 
-export const initialValues = {
-  isLoading: true
+export type Asset = {
+  id: number
+  keyColor: string
+  src: string
 }
 
 type Values = {
-  asset?: Asset
+  asset: Asset | null
   isLoading: boolean
 }
 
-export const AssetContext = createContext<Values>(initialValues)
+const defaultValues: Values = {
+  asset: null,
+  isLoading: false
+}
+
+export const AssetContext = createContext(defaultValues)
 
 export const AssetProvider: FC = ({ children }) => {
-  const [asset, setAsset] = useState<Asset>()
-  const [isLoading, setIsLoading] = useState<boolean>(true)
+  const [asset, setAsset] = useState(defaultValues.asset)
+  const [isLoading, setIsLoading] = useState(defaultValues.isLoading)
 
   useEffect(() => {
     fetch('/list.json')

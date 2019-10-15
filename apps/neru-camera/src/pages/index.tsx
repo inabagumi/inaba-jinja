@@ -1,12 +1,15 @@
 import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
 import React, { ReactElement } from 'react'
+import Meta from '../components/meta'
 
 const Camera = dynamic(() => import('../components/camera'), { ssr: false })
 
 const Index: NextPage = (): ReactElement => {
   return (
     <>
+      <Meta />
+
       <main className="container">
         <Camera />
       </main>

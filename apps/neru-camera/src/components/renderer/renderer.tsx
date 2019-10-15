@@ -10,8 +10,8 @@ import React, {
   useRef,
   useState
 } from 'react'
+import { Asset } from '../../context/asset-context'
 import { ChromaKeyFilter } from '../../filters/ChromaKeyFilter'
-import Asset from '../../interfaces/asset'
 
 export type RefObject = {
   toBlob: (type: string, quality: number) => Promise<Blob>
