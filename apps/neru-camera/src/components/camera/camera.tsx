@@ -1,4 +1,11 @@
-import classNames from 'classnames'
+import Button from '@material-ui/core/Button'
+import Dialog from '@material-ui/core/Dialog'
+import DialogActions from '@material-ui/core/DialogActions'
+import DialogContent from '@material-ui/core/DialogContent'
+import DialogContentText from '@material-ui/core/DialogContentText'
+import DialogTitle from '@material-ui/core/DialogTitle'
+import { makeStyles } from '@material-ui/core/styles'
+import clsx from 'clsx'
 import React, {
   FC,
   ReactElement,
@@ -9,6 +16,7 @@ import React, {
   useState
 } from 'react'
 import { AssetContext } from '../../context/asset-context'
+import download from '../../lib/download'
 import Renderer from '../renderer'
 import { RefObject } from '../renderer/renderer'
 
@@ -21,11 +29,65 @@ const mediaStreamConstraints: MediaStreamConstraints = {
   }
 }
 
+const useStyles = makeStyles({
+  actionButton: {
+    alignItems: 'center',
+    backgroundColor: 'transparent',
+    border: '3px solid #fafafa',
+    borderRadius: '50%',
+    color: '#fafafa',
+    display: 'block',
+    height: '56px',
+    overflow: 'hidden',
+    padding: 0,
+    width: '56px',
+
+    '&:focus': {
+      outline: 0
+    },
+
+    '&::before': {
+      backgroundColor: '#fafafa',
+      border: '2px solid #1b1b1b',
+      borderRadius: '50%',
+      content: '""',
+      display: 'block',
+      height: '100%',
+      transition: 'border-width 0.2s linear',
+      width: '100%'
+    }
+  },
+  actionButtonActive: {
+    borderWidth: '4px'
+  },
+  actionButtons: {
+    display: 'flex',
+    justifyContent: 'space-around',
+    padding: '5px 12px 24px',
+    width: '100%'
+  },
+  container: {
+    alignItems: 'stretch',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    justifyContent: 'flex-end',
+    margin: 0
+  },
+  content: {
+    alignItems: 'center',
+    display: 'flex',
+    flexGrow: 1,
+    overflow: 'hidden'
+  }
+})
+
 const Camera: FC = (): ReactElement => {
   const { asset } = useContext(AssetContext)
   const [isShooting, setIsShooting] = useState<boolean>(false)
   const [hasError, setHasError] = useState<boolean>(false)
   const [cameraStream, setCameraStream] = useState<MediaStream>()
+  const classes = useStyles()
 
   const rendererRef = useRef<RefObject>(null)
 
@@ -37,17 +99,16 @@ const Camera: FC = (): ReactElement => {
     rendererRef.current
       .toBlob('image/jpeg', 0.8)
       .then(blob => {
-        const anchor = document.createElement('a')
-
-        anchor.href = URL.createObjectURL(blob)
-        anchor.download = `NeruCamera-${Date.now()}.jpg`
-        anchor.target = '_blank'
-        anchor.click()
+        download(blob)
       })
       .finally(() => {
         setIsShooting(false)
       })
   }, [isShooting])
+
+  const refreshError = useCallback(() => {
+    setHasError(false)
+  }, [])
 
   useEffect(() => {
     if (navigator.mediaDevices) {
@@ -61,138 +122,51 @@ const Camera: FC = (): ReactElement => {
   }, [])
 
   return (
-    <>
-      <div className="camera">
-        <div className="camera__content">
-          {asset && cameraStream && (
-            <Renderer
-              asset={asset}
-              cameraStream={cameraStream}
-              ref={rendererRef}
-            />
-          )}
-        </div>
-
-        {hasError && (
-          <div className="camera__error">
-            <h2>カメラの取得に失敗しました</h2>
-
-            <p>
-              カメラの取得に失敗しました。ねるカメラを利用するにはカメラへのアクセスを許可する必要があります。
-            </p>
-            <p>
-              もしくはあなたの使っているアプリはカメラの取得に対応していません。PC
-              の場合、Google Chrome と Firefox
-              最新版以外での動作は保証できません。Android の場合は Play Store
-              からダウンロードできる Chrome を使ってください。
-            </p>
-            <p>
-              また iOS では Safari
-              以外のアプリからカメラの取得ができません。iPhone や iPad などの
-              iOS 端末を使っている場合は Safari で開き直してください。
-            </p>
-          </div>
+    <div className={classes.container}>
+      <div className={classes.content}>
+        {asset && cameraStream && (
+          <Renderer
+            asset={asset}
+            cameraStream={cameraStream}
+            ref={rendererRef}
+          />
         )}
-
-        <div className="action-buttons">
-          <button
-            className={classNames('action-button', {
-              'action-button--active': isShooting
-            })}
-            onClick={takePhoto}
-            tabIndex={-1}
-          >
-            Take a photo!
-          </button>
-        </div>
       </div>
 
-      <style jsx>{`
-        .camera {
-          align-items: stretch;
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          justify-content: flex-end;
-          margin: 0;
-        }
+      <div className={classes.actionButtons}>
+        <button
+          className={clsx(classes.actionButton, {
+            [classes.actionButtonActive]: isShooting
+          })}
+          disabled={isShooting}
+          onClick={takePhoto}
+          tabIndex={-1}
+        >
+          Take a photo!
+        </button>
+      </div>
 
-        .camera__content {
-          align-items: center;
-          display: flex;
-          flex-grow: 1;
-          overflow: hidden;
-        }
+      <Dialog
+        aria-describedby="alert-dialog-description"
+        aria-labelledby="alert-dialog-title"
+        onClose={refreshError}
+        open={hasError}
+      >
+        <DialogTitle id="alert-dialog-title">エラー</DialogTitle>
 
-        .camera__error {
-          background-color: rgba(0, 0, 0, 0.8);
-          bottom: 0;
-          color: #fafafa;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          left: 0;
-          padding: 3rem 1rem 0.5rem;
-          position: fixed;
-          right: 0;
-          top: 0;
-        }
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            カメラの取得に失敗しました。
+          </DialogContentText>
+        </DialogContent>
 
-        .camera__error h2 {
-          font-size: 1.25rem;
-          font-weight: 700;
-          margin: 0 0 0.5rem 0;
-        }
-
-        .camera__error p {
-          line-height: 2;
-          margin: 0;
-          text-align: justify;
-        }
-
-        .action-buttons {
-          box-sizing: border-box;
-          display: flex;
-          justify-content: space-around;
-          padding: 5px 12px 24px;
-          width: 100%;
-        }
-
-        .action-button {
-          align-items: center;
-          background-color: transparent;
-          border: 3px solid #fafafa;
-          border-radius: 50%;
-          box-sizing: border-box;
-          color: #fafafa;
-          display: block;
-          height: 56px;
-          overflow: hidden;
-          padding: 0;
-          width: 56px;
-        }
-
-        .action-button:focus {
-          outline: 0;
-        }
-
-        .action-button::before {
-          background-color: #fafafa;
-          border: 2px solid #1b1b1b;
-          border-radius: 50%;
-          box-sizing: border-box;
-          content: '';
-          display: block;
-          height: 100%;
-          transition: border-width 0.2s linear;
-          width: 100%;
-        }
-
-        .action-button--active::before {
-          border-width: 4px;
-        }
-      `}</style>
-    </>
+        <DialogActions>
+          <Button color="primary" onClick={refreshError}>
+            閉じる
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </div>
   )
 }
 

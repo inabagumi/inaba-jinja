@@ -1,3 +1,4 @@
+import { makeStyles } from '@material-ui/core/styles'
 import { Application, Sprite } from 'pixi.js'
 import { Viewport } from 'pixi-viewport'
 import React, {
@@ -13,6 +14,21 @@ import React, {
 import { Asset } from '../../context/asset-context'
 import { ChromaKeyFilter } from '../../filters/ChromaKeyFilter'
 
+const useStyles = makeStyles({
+  container: {
+    position: 'relative',
+    width: '100%'
+  },
+  preloaded: {
+    display: 'none'
+  },
+  preview: {
+    display: 'block',
+    height: 'auto',
+    width: '100%'
+  }
+})
+
 export type RefObject = {
   toBlob: (type: string, quality: number) => Promise<Blob>
 }
@@ -25,6 +41,7 @@ export type Props = {
 const Renderer = forwardRef<RefObject, Props>(
   ({ asset, cameraStream }, ref): ReactElement => {
     const [viewport, setViewport] = useState<Viewport>()
+    const classes = useStyles()
 
     const previewRef = useRef<HTMLCanvasElement>(null)
     const cameraRef = useRef<HTMLVideoElement>(null)
@@ -132,49 +149,30 @@ const Renderer = forwardRef<RefObject, Props>(
     }))
 
     return (
-      <>
-        <div className="renderer">
-          <canvas className="renderer__preview" ref={previewRef} />
+      <div className={classes.container}>
+        <canvas className={classes.preview} ref={previewRef} />
 
-          <video
-            className="renderer__preloaded"
-            crossOrigin="anonymouse"
-            muted
-            onLoadedData={setup}
-            playsInline
-            ref={cameraRef}
-          />
-          <video
-            className="renderer__preloaded"
-            crossOrigin="anonymouse"
-            data-key-color={asset.keyColor}
-            loop
-            muted
-            onLoadedData={handleLoadedData}
-            playsInline
-            preload="none"
-            ref={overlayRef}
-            src={asset.src}
-          />
-        </div>
-
-        <style jsx>{`
-          .renderer {
-            position: relative;
-            width: 100%;
-          }
-
-          .renderer__preview {
-            display: block;
-            height: auto;
-            width: 100%;
-          }
-
-          .renderer__preloaded {
-            display: none;
-          }
-        `}</style>
-      </>
+        <video
+          className={classes.preloaded}
+          crossOrigin="anonymouse"
+          muted
+          onLoadedData={setup}
+          playsInline
+          ref={cameraRef}
+        />
+        <video
+          className={classes.preloaded}
+          crossOrigin="anonymouse"
+          data-key-color={asset.keyColor}
+          loop
+          muted
+          onLoadedData={handleLoadedData}
+          playsInline
+          preload="none"
+          ref={overlayRef}
+          src={asset.src}
+        />
+      </div>
     )
   }
 )

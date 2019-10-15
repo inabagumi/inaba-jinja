@@ -1,3 +1,5 @@
+import grey from '@material-ui/core/colors/grey'
+import { makeStyles } from '@material-ui/core/styles'
 import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
 import React, { ReactElement } from 'react'
@@ -5,25 +7,27 @@ import Meta from '../components/meta'
 
 const Camera = dynamic(() => import('../components/camera'), { ssr: false })
 
+const useStyles = makeStyles({
+  container: {
+    backgroundColor: grey[900],
+    bottom: 0,
+    left: 0,
+    position: 'fixed',
+    right: 0,
+    top: 0
+  }
+})
+
 const Index: NextPage = (): ReactElement => {
+  const classes = useStyles()
+
   return (
     <>
       <Meta />
 
-      <main className="container">
+      <main className={classes.container}>
         <Camera />
       </main>
-
-      <style jsx>{`
-        .container {
-          background-color: #1b1b1b;
-          bottom: 0;
-          left: 0;
-          position: fixed;
-          right: 0;
-          top: 0;
-        }
-      `}</style>
     </>
   )
 }

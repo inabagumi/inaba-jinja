@@ -1,7 +1,35 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document'
+import { ServerStyleSheets } from '@material-ui/core/styles'
+import Document, {
+  DocumentContext,
+  DocumentInitialProps,
+  Head,
+  Html,
+  Main,
+  NextScript
+} from 'next/document'
 import React, { ReactElement } from 'react'
 
 export default class extends Document {
+  public static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
+    const sheets = new ServerStyleSheets()
+
+    const initialProps = await super.getInitialProps({
+      ...ctx,
+      renderPage: () =>
+        ctx.renderPage({
+          enhanceApp: App => (props): ReactElement =>
+            sheets.collect(<App {...props} />)
+        })
+    })
+
+    return {
+      ...initialProps,
+      styles: [initialProps.styles, sheets.getStyleElement()]
+    }
+  }
+
   public render(): ReactElement {
     return (
       <Html lang="ja">
