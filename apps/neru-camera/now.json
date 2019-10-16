@@ -31,13 +31,6 @@
       "src": ".*"
     },
     {
-      "headers": {
-        "location": "/service-worker.js"
-      },
-      "src": "/sw\\.js",
-      "status": 301
-    },
-    {
       "dest": "/_next/static/service-worker.js",
       "headers": {
         "cache-control": "max-age=0"
