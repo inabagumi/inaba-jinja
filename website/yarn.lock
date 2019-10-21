@@ -852,10 +852,10 @@
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-google-gtag/-/plugin-google-gtag-2.0.0-alpha.28.tgz#21606237486e5be4f6b49fb52f30ccb60c517c05"
   integrity sha512-/yyXmjJz5pmZTs33oPl/Sw0O1D6EujIi/spMAHIJAISHFcQEAgvZac07Sres8t7ryvnXHuSUdMAWaIV3RQFN9Q==
 
-"@docusaurus/plugin-ideal-image@^2.0.0-alpha.28":
-  version "2.0.0-alpha.28"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.28.tgz#c2f39d44708689f6709de9cc8202cb450b781c3e"
-  integrity sha512-7iGsTsPeAkJ0Aqe7PcyccGXcyExuiCgXIRaUkmyUvFAK05MgkuOUzr2h+55ZX9FhScxpWVi7x8FnCW8VHQK92A==
+"@docusaurus/plugin-ideal-image@^2.0.0-alpha.29":
+  version "2.0.0-alpha.29"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.29.tgz#b88195b26445131ec95a4defb944860f11569696"
+  integrity sha512-qHV0l72zLFU+O+EVqRik8YA0STXrkf/qlcm11aqjmt3V/IcasdsmIguwQw2A1J8zbqGgdLnwg5eLxlZFnyv2Nw==
   dependencies:
     "@endiliey/lqip-loader" "^3.0.0"
     "@endiliey/responsive-loader" "^1.3.1"
