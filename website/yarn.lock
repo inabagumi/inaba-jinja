@@ -735,16 +735,16 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@docusaurus/core@^2.0.0-alpha.30":
-  version "2.0.0-alpha.30"
-  resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-2.0.0-alpha.30.tgz#3f1db3b985b5dfa92fd4fcfd5ea5ae9938bd0102"
-  integrity sha512-MGQD+HS39zYQYPM2gDq4ED67rM5wD12+5t4nQojPTihm6Kko2I93qUfr8X1M+Q4mElGJu9R8R1Y/iTNjWdaLEw==
+"@docusaurus/core@^2.0.0-alpha.31":
+  version "2.0.0-alpha.31"
+  resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-2.0.0-alpha.31.tgz#50e3c07ff93b669623324b01f58e5e5e68231828"
+  integrity sha512-A1Wro5wNRb6b5zzebvzq6P5KsPZ6nzDhghPog3RjwtKXf7JK+c8XcFBlEmQRxNUftpiVgJW3cThfcFOURjWXLw==
   dependencies:
     "@babel/core" "^7.6.4"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
     "@babel/preset-env" "^7.6.3"
     "@babel/preset-react" "^7.6.3"
-    "@docusaurus/utils" "^2.0.0-alpha.30"
+    "@docusaurus/utils" "^2.0.0-alpha.31"
     babel-loader "^8.0.6"
     babel-plugin-dynamic-import-node "^2.3.0"
     cache-loader "^4.1.0"
@@ -919,6 +919,16 @@
   version "2.0.0-alpha.30"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-alpha.30.tgz#5c6be6637e777c5fd9dfcd635521a825a4e315f3"
   integrity sha512-QzUJKRz91ouWmjYViXKowoYong3KefVqVI47/APhrag3d8FX4H4U3MHz+pdNeIkdAhznwVh2xK1AZjOm7naRqQ==
+  dependencies:
+    escape-string-regexp "^2.0.0"
+    fs-extra "^8.1.0"
+    gray-matter "^4.0.2"
+    lodash "^4.17.15"
+
+"@docusaurus/utils@^2.0.0-alpha.31":
+  version "2.0.0-alpha.31"
+  resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-alpha.31.tgz#ff6ea2a175af6586c90a915d5f84d0842b007908"
+  integrity sha512-nO5CByRyvrYqxPxFF0YIMGxXhCKuSrONv1o1InNgcAu5fRkCpAg5HokI5+as+4JudGLtGoPoSMGj4xh8R2bHCQ==
   dependencies:
     escape-string-regexp "^2.0.0"
     fs-extra "^8.1.0"
