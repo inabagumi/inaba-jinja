@@ -20,7 +20,7 @@
     "@types/react": "^16.9.11",
     "eslint": "^6.6.0",
     "prettier": "^1.19.1",
-    "standard-version": "^7.0.0",
+    "standard-version": "^7.0.1",
     "typescript": "~3.7.2"
   },
   "eslintConfig": {
