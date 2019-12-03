@@ -1,0 +1,12 @@
+{
+  "env": {
+    "NODE_ICU_DATA": "node_modules/full-icu"
+  },
+  "github": {
+    "silent": true
+  },
+  "name": "inaba-jinja",
+  "regions": ["hnd1"],
+  "scope": "inabagumi",
+  "version": 2
+}
