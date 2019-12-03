@@ -1,4 +1,13 @@
 {
+  "author": {
+    "email": "contact@haneru.dev",
+    "name": "Haneru Developers",
+    "url": "https://haneru.dev/"
+  },
+  "bugs": {
+    "email": "contact@haneru.dev",
+    "url": "https://github.com/inabagumi/inaba-jinja/issues"
+  },
   "dependencies": {
     "@material-ui/core": "^4.7.1",
     "@material-ui/icons": "^4.5.1",
@@ -17,10 +26,19 @@
     "prettier": "^1.19.1",
     "typescript": "^3.7.2"
   },
-  "name": "@inabagumi/inaba-jinja",
+  "engines": {
+    "node": "12.x"
+  },
+  "homepage": "https://github.com/inabagumi/inaba-jinja",
   "license": "MIT",
+  "main": "n/a",
+  "name": "@inabagumi/inaba-jinja",
   "prettier": "@inabagumi/prettier-config",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inabagumi/inaba-jinja.git"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next",
