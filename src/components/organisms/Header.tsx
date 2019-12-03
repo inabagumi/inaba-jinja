@@ -3,15 +3,26 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import React, { FC } from 'react'
-import { FormattedMessage } from 'react-intl'
+import { defineMessages, useIntl } from 'react-intl'
+import Logo from '../atoms/Logo'
 
 const useStyles = makeStyles({
   title: {
-    flexGrow: 1
+    display: 'flex',
+    flexGrow: 1,
+    justifyContent: 'center'
+  }
+})
+
+const messages = defineMessages({
+  title: {
+    defaultMessage: 'Haneru Jinja',
+    id: 'app.title'
   }
 })
 
 const Header: FC = (): JSX.Element => {
+  const intl = useIntl()
   const classes = useStyles({})
 
   return (
@@ -24,7 +35,10 @@ const Header: FC = (): JSX.Element => {
           noWrap
           variant="h6"
         >
-          <FormattedMessage defaultMessage="Inaba Jinja" id="app.title" />
+          <Logo
+            aria-label={intl.formatMessage(messages.title)}
+            height="30"
+          />
         </Typography>
       </Toolbar>
     </AppBar>
