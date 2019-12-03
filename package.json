@@ -24,7 +24,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier --ignore-path .gitignore --write '**/*.{js,ts,tsx}'",
+    "format": "prettier --write '**/*.{js,ts,tsx}'",
+    "format-check": "prettier -c '**/*.{js,ts,tsx}'",
     "start": "next start"
   },
   "version": "0.1.0"

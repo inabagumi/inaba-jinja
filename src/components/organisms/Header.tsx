@@ -35,10 +35,7 @@ const Header: FC = (): JSX.Element => {
           noWrap
           variant="h6"
         >
-          <Logo
-            aria-label={intl.formatMessage(messages.title)}
-            height="30"
-          />
+          <Logo aria-label={intl.formatMessage(messages.title)} height="30" />
         </Typography>
       </Toolbar>
     </AppBar>
