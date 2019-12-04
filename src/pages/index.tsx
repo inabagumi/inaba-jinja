@@ -2,8 +2,9 @@ import Container from '@material-ui/core/Container'
 import Zoom from '@material-ui/core/Zoom'
 import Typography from '@material-ui/core/Typography'
 import { createStyles, makeStyles } from '@material-ui/core/styles'
+import { NextPage } from 'next'
 import Head from 'next/head'
-import React, { FC } from 'react'
+import React from 'react'
 import { defineMessages, useIntl } from 'react-intl'
 import Logo from '../components/atoms/Logo'
 import Page from '../layouts/Main'
@@ -54,7 +55,7 @@ const useStyles = makeStyles(() => {
   })
 })
 
-const Home: FC = () => {
+const Home: NextPage = () => {
   const intl = useIntl()
   const classes = useStyles({})
 
