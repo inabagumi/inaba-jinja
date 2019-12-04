@@ -76,7 +76,7 @@ const Home: FC = () => {
           </div>
         </div>
 
-        <Container maxWidth="md">
+        <Container component="main" maxWidth="md">
           <Typography variant="body1">home</Typography>
         </Container>
       </Page>

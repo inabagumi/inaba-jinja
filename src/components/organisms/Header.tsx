@@ -1,9 +1,11 @@
 import AppBar from '@material-ui/core/AppBar'
 import IconButton from '@material-ui/core/IconButton'
 import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
 import MenuIcon from '@material-ui/icons/Menu'
+import { createStyles, makeStyles } from '@material-ui/core/styles'
 import React, { FC } from 'react'
-import { defineMessages, useIntl } from 'react-intl'
+import { FormattedMessage, defineMessages, useIntl } from 'react-intl'
 
 const messages = defineMessages({
   openDrawer: {
@@ -12,18 +14,35 @@ const messages = defineMessages({
   }
 })
 
+const useStyles = makeStyles(theme =>
+  createStyles({
+    menuButton: {
+      marginRight: theme.spacing(2)
+    },
+    title: {
+      flexGrow: 1
+    }
+  })
+)
+
 const Header: FC = () => {
   const intl = useIntl()
+  const classes = useStyles({})
 
   return (
     <AppBar color="default" elevation={0} position="static">
       <Toolbar>
         <IconButton
           aria-label={intl.formatMessage(messages.openDrawer)}
+          className={classes.menuButton}
           color="inherit"
         >
           <MenuIcon />
         </IconButton>
+
+        <Typography className={classes.title} noWrap variant="h6">
+          <FormattedMessage defaultMessage="Inaba Jinja" id="app.title" />
+        </Typography>
       </Toolbar>
     </AppBar>
   )
