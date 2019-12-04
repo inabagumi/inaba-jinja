@@ -20,6 +20,7 @@
   },
   "description": "",
   "devDependencies": {
+    "@formatjs/cli": "^1.1.12",
     "@inabagumi/eslint-config-react": "^5.0.0",
     "@inabagumi/prettier-config": "^1.1.0",
     "@types/node": "^12.12.14",
@@ -52,7 +53,8 @@
     "format": "prettier --write '**/*.{js,ts,tsx}'",
     "format-check": "prettier -c '**/*.{js,ts,tsx}'",
     "lint": "eslint --ext .js,.ts,.tsx .",
-    "start": "next start"
+    "start": "next start",
+    "translations": "formatjs extract --out-file src/locales/en.json $(find src -name '*.ts' -o -name '*.tsx')"
   },
   "version": "0.1.0"
 }
