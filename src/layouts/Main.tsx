@@ -1,6 +1,6 @@
 import CssBaseline from '@material-ui/core/CssBaseline'
 import React, { FC } from 'react'
-import Header from '../organisms/Header'
+import Header from '../components/organisms/Header'
 
 const Layout: FC = ({ children }) => {
   return (
