@@ -1,5 +1,5 @@
 import deepOrange from '@material-ui/core/colors/deepOrange'
-import yellow from '@material-ui/core/colors/yellow'
+import orange from '@material-ui/core/colors/orange'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { AppProps } from 'next/app'
 import React, { FC } from 'react'
@@ -9,7 +9,7 @@ import messages from '../locales/ja.json'
 const theme = createMuiTheme({
   palette: {
     primary: deepOrange,
-    secondary: yellow,
+    secondary: orange,
     type: 'light'
   }
 })
