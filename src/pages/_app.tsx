@@ -14,7 +14,7 @@ const theme = createMuiTheme({
   }
 })
 
-const MyApp: FC<AppProps> = ({ Component, pageProps }): JSX.Element => {
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <IntlProvider locale="ja" messages={messages}>
       <ThemeProvider theme={theme}>
