@@ -20,14 +20,21 @@
   },
   "description": "",
   "devDependencies": {
+    "@inabagumi/eslint-config-react": "^5.0.0",
     "@inabagumi/prettier-config": "^1.1.0",
     "@types/node": "^12.12.14",
     "@types/react": "^16.9.14",
+    "eslint": "^6.7.2",
     "prettier": "^1.19.1",
     "typescript": "^3.7.3"
   },
   "engines": {
     "node": "12.x"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@inabagumi/react"
+    ]
   },
   "homepage": "https://github.com/inabagumi/inaba-jinja",
   "license": "MIT",
@@ -44,6 +51,7 @@
     "dev": "next",
     "format": "prettier --write '**/*.{js,ts,tsx}'",
     "format-check": "prettier -c '**/*.{js,ts,tsx}'",
+    "lint": "eslint --ext .js,.ts,.tsx .",
     "start": "next start"
   },
   "version": "0.1.0"

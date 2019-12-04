@@ -21,7 +21,7 @@ const messages = defineMessages({
   }
 })
 
-const Header: FC = (): JSX.Element => {
+const Header: FC = () => {
   const intl = useIntl()
   const classes = useStyles({})
 

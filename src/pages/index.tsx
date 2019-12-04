@@ -1,7 +1,7 @@
 import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
 import Head from 'next/head'
-import React from 'react'
+import React, { FC } from 'react'
 import { defineMessages, useIntl } from 'react-intl'
 import Page from '../layouts/Main'
 
@@ -12,7 +12,7 @@ const messages = defineMessages({
   }
 })
 
-export default () => {
+const Home: FC = () => {
   const intl = useIntl()
 
   return (
@@ -29,3 +29,5 @@ export default () => {
     </>
   )
 }
+
+export default Home
