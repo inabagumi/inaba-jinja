@@ -1,16 +1,32 @@
-import CssBaseline from '@material-ui/core/CssBaseline'
+import { createStyles, makeStyles } from '@material-ui/core/styles'
 import React, { FC } from 'react'
+import Footer from '../components/organisms/Footer'
 import Header from '../components/organisms/Header'
 
-const Layout: FC = ({ children }) => {
-  return (
-    <>
-      <CssBaseline />
+const useStyles = makeStyles(() =>
+  createStyles({
+    content: {
+      flexGrow: 1
+    },
+    root: {
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh'
+    }
+  })
+)
 
+const Layout: FC = ({ children }) => {
+  const classes = useStyles({})
+
+  return (
+    <div className={classes.root}>
       <Header />
 
-      {children}
-    </>
+      <div className={classes.content}>{children}</div>
+
+      <Footer />
+    </div>
   )
 }
 

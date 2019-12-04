@@ -1,3 +1,4 @@
+import CssBaseline from '@material-ui/core/CssBaseline'
 import deepOrange from '@material-ui/core/colors/deepOrange'
 import orange from '@material-ui/core/colors/orange'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
@@ -38,6 +39,8 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
             sizes="152x152"
           />
         </Head>
+
+        <CssBaseline />
 
         <Component {...pageProps} />
       </ThemeProvider>
