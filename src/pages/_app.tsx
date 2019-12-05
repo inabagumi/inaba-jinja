@@ -13,6 +13,21 @@ const theme = createMuiTheme({
     primary: deepOrange,
     secondary: orange,
     type: 'light'
+  },
+  typography: {
+    body1: {
+      lineHeight: 2
+    },
+    body2: {
+      lineHeight: 2
+    },
+    fontFamily: [
+      'Roboto',
+      'Helvetica',
+      'Arial',
+      'Noto Sans JP',
+      'sans-serif'
+    ].join(',')
   }
 })
 
@@ -37,6 +52,14 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
             href="/apple-touch-icon.png"
             rel="apple-touch-icon"
             sizes="152x152"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Sans+JP:300,400,500,700"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Serif+JP:300,400,500,700"
+            rel="stylesheet"
           />
         </Head>
 

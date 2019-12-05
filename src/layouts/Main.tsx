@@ -16,12 +16,16 @@ const useStyles = makeStyles(() =>
   })
 )
 
-const Layout: FC = ({ children }) => {
+type Props = {
+  withHeader?: boolean
+}
+
+const Layout: FC<Props> = ({ children, withHeader = false }) => {
   const classes = useStyles({})
 
   return (
     <div className={classes.root}>
-      <Header />
+      {withHeader && <Header />}
 
       <div className={classes.content}>{children}</div>
 

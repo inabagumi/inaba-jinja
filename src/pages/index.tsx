@@ -5,7 +5,7 @@ import { createStyles, makeStyles } from '@material-ui/core/styles'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
-import { defineMessages, useIntl } from 'react-intl'
+import { FormattedMessage, defineMessages, useIntl } from 'react-intl'
 import Logo from '../components/atoms/Logo'
 import Page from '../layouts/Main'
 
@@ -16,10 +16,18 @@ const messages = defineMessages({
   }
 })
 
-const useStyles = makeStyles(() => {
+const useStyles = makeStyles(theme => {
   const backgroundColor = 'rgba(0, 0, 0, 0.54)'
 
   return createStyles({
+    firstSection: {
+      backgroundColor: theme.palette.secondary[100],
+      color: theme.palette.getContrastText(theme.palette.secondary[100]),
+      padding: theme.spacing(10, 0)
+    },
+    firstSectionParagraph: {
+      fontFamily: 'Roboto, Helvetica, Arial, Noto Serif JP, serif'
+    },
     hero: {
       alignItems: 'center',
       backgroundColor,
@@ -30,7 +38,7 @@ const useStyles = makeStyles(() => {
       display: 'flex',
       height: '100%',
       justifyContent: 'center',
-      minHeight: '500px',
+      minHeight: '100vh',
       position: 'relative',
       '&::before': {
         bottom: 0,
@@ -77,9 +85,18 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <Container component="main" maxWidth="md">
-          <Typography variant="body1">home</Typography>
-        </Container>
+        <main>
+          <section className={classes.firstSection}>
+            <Container maxWidth="md">
+              <Typography
+                className={classes.firstSectionParagraph}
+                color="inherit"
+              >
+                <FormattedMessage defaultMessage="" id="home.description" />
+              </Typography>
+            </Container>
+          </section>
+        </main>
       </Page>
     </>
   )

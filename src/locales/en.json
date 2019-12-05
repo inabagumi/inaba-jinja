@@ -6,5 +6,8 @@
   {
     "id": "app.title",
     "defaultMessage": "Inaba Jinja"
+  },
+  {
+    "id": "home.description"
   }
 ]
