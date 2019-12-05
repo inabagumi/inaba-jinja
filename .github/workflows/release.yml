@@ -1,18 +1,18 @@
-name: Node CI
+name: Release
 
 on:
   pull_request:
     branches:
-    - master
+    - '!*'
   push:
     branches:
-    - master
+    - '!*'
     tags:
-    - '!v*'
+    - 'v*'
 
 jobs:
-  build:
-
+  release:
+    name: Release
     runs-on: ubuntu-latest
 
     steps:
@@ -24,9 +24,7 @@ jobs:
         node-version: 12.x
     - name: Install dependencies
       run: yarn install --frozen-lockfile
-    - name: Format check
-      run: yarn format-check
-    - name: Lint
-      run: yarn lint
-    - name: Build
-      run: yarn build
+    - name: Create release
+      run: yarn conventional-github-releaser -p angular
+      env:
+        CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
