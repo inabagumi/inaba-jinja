@@ -7,7 +7,7 @@ import React, { FC } from 'react'
 const useStyles = makeStyles(theme =>
   createStyles({
     root: {
-      backgroundColor: theme.palette.grey[900]
+      backgroundColor: theme.palette.grey[300]
     }
   })
 )
