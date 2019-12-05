@@ -7,6 +7,22 @@
   },
   "name": "inaba-jinja",
   "regions": ["hnd1"],
+  "routes": [
+    {
+      "continue": true,
+      "headers": {
+        "cache-control": "max-age=600, s-maxage=120"
+      },
+      "src": "/.*"
+    },
+    {
+      "continue": true,
+      "headers": {
+        "cache-control": "immutable, max-age=31536000"
+      },
+      "src": "/_next/.+"
+    }
+  ],
   "scope": "inabagumi",
   "version": 2
 }
