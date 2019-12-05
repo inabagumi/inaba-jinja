@@ -3,6 +3,7 @@
     "NODE_ICU_DATA": "node_modules/full-icu"
   },
   "github": {
+    "autoAlias": false,
     "silent": true
   },
   "name": "inaba-jinja",
