@@ -48,9 +48,9 @@ const useStyles = makeStyles(() => {
     },
     logo: {
       color: 'rgba(255, 255, 255, 0.87)',
-      height: 'auto',
-      maxWidth: '100%',
-      width: '400px'
+      height: '250px',
+      maxWidth: '80vh',
+      width: 'auto'
     }
   })
 })
