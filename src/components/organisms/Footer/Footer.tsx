@@ -19,7 +19,7 @@ const Footer: FC = () => {
   return (
     <footer className={classes.root}>
       <Container maxWidth="lg">
-        <Typography variant="body2" color="textSecondary">
+        <Typography align="center" color="textSecondary" variant="body2">
           {'Copyright © 2019 '}
           <Link
             color="inherit"
