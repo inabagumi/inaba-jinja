@@ -7,7 +7,8 @@ import React, { FC } from 'react'
 const useStyles = makeStyles(theme =>
   createStyles({
     root: {
-      padding: theme.spacing(3, 2)
+      backgroundColor: theme.palette.grey[300],
+      padding: theme.spacing(3, 0)
     }
   })
 )
