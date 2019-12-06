@@ -34,16 +34,10 @@
   "engines": {
     "node": "12.x"
   },
-  "eslintConfig": {
-    "extends": [
-      "@inabagumi/react"
-    ]
-  },
   "homepage": "https://github.com/inabagumi/inaba-jinja",
   "license": "MIT",
   "main": "n/a",
   "name": "@inabagumi/inaba-jinja",
-  "prettier": "@inabagumi/prettier-config",
   "private": true,
   "repository": {
     "type": "git",
