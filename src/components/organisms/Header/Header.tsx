@@ -1,4 +1,5 @@
 import AppBar from '@material-ui/core/AppBar'
+import Collapse from '@material-ui/core/Collapse'
 import IconButton from '@material-ui/core/IconButton'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
@@ -25,26 +26,33 @@ const useStyles = makeStyles(theme =>
   })
 )
 
-const Header: FC = () => {
+type Props = {
+  hide?: boolean
+}
+
+const Header: FC<Props> = ({ hide = false }) => {
   const intl = useIntl()
   const classes = useStyles({})
 
   return (
-    <AppBar color="default" elevation={0} position="static">
-      <Toolbar>
-        <IconButton
-          aria-label={intl.formatMessage(messages.openDrawer)}
-          className={classes.menuButton}
-          color="inherit"
-        >
-          <MenuIcon />
-        </IconButton>
+    <Collapse in={!hide}>
+      <AppBar color="default" elevation={0} position="fixed">
+        <Toolbar>
+          <IconButton
+            aria-label={intl.formatMessage(messages.openDrawer)}
+            className={classes.menuButton}
+            color="inherit"
+          >
+            <MenuIcon />
+          </IconButton>
 
-        <Typography className={classes.title} noWrap variant="h6">
-          <FormattedMessage defaultMessage="Inaba Jinja" id="app.title" />
-        </Typography>
-      </Toolbar>
-    </AppBar>
+          <Typography className={classes.title} noWrap variant="h6">
+            <FormattedMessage defaultMessage="Inaba Jinja" id="app.title" />
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Toolbar />
+    </Collapse>
   )
 }
 
