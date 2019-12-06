@@ -53,5 +53,5 @@
     "start": "next start",
     "translations": "formatjs extract --out-file src/locales/en.json $(find src -name '*.ts' -o -name '*.tsx')"
   },
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

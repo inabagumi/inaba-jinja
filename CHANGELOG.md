@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/inabagumi/inaba-jinja/compare/v0.1.0...v0.1.1) (2019-12-06)
+
+
+### Features
+
+* add description ([#52](https://github.com/inabagumi/inaba-jinja/issues/52)) ([7cf9cee](https://github.com/inabagumi/inaba-jinja/commit/7cf9ceea6fb1e7645e81b3ffe03c0c5f49da7606))
+* change location to tokyo ([#54](https://github.com/inabagumi/inaba-jinja/issues/54)) ([3ed31bd](https://github.com/inabagumi/inaba-jinja/commit/3ed31bd08e5680cb3d3d50b7a67ef44148d2b085))
+
 ## 0.1.0 (2019-12-05)
 
 
