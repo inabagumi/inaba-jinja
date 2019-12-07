@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/inabagumi/inaba-jinja/compare/v0.1.1...v0.2.0) (2019-12-07)
+
+
+### Features
+
+* add progress bar ([#58](https://github.com/inabagumi/inaba-jinja/issues/58)) ([54eada3](https://github.com/inabagumi/inaba-jinja/commit/54eada3ca0c2a8ecce22c49454ecefa80e61bbf4))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @material-ui/core to ^4.7.2 ([#56](https://github.com/inabagumi/inaba-jinja/issues/56)) ([d3c378e](https://github.com/inabagumi/inaba-jinja/commit/d3c378e774e874a5a28c13ff55b9816a7002f99c))
+
 ### [0.1.1](https://github.com/inabagumi/inaba-jinja/compare/v0.1.0...v0.1.1) (2019-12-06)
 
 
