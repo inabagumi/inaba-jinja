@@ -15,7 +15,13 @@ const App: FC = ({ children }) => (
 
 describe('Footer', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Footer />).toJSON()
+    const tree = renderer
+      .create(
+        <App>
+          <Footer />
+        </App>
+      )
+      .toJSON()
 
     expect(tree).toMatchSnapshot()
   })

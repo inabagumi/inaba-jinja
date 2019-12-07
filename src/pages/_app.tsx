@@ -4,6 +4,7 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import React, { FC } from 'react'
 import { IntlProvider } from 'react-intl'
+import ProgressBar from '../components/atoms/ProgressBar'
 import messages from '../locales/ja.json'
 import theme from '../theme'
 
@@ -46,6 +47,8 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         <CssBaseline />
 
         <Component {...pageProps} />
+
+        <ProgressBar />
       </ThemeProvider>
     </IntlProvider>
   )
