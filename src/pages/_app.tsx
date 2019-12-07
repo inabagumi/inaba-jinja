@@ -1,35 +1,11 @@
 import CssBaseline from '@material-ui/core/CssBaseline'
-import deepOrange from '@material-ui/core/colors/deepOrange'
-import orange from '@material-ui/core/colors/orange'
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { ThemeProvider } from '@material-ui/core/styles'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import React, { FC } from 'react'
 import { IntlProvider } from 'react-intl'
 import messages from '../locales/ja.json'
-
-const theme = createMuiTheme({
-  palette: {
-    primary: deepOrange,
-    secondary: orange,
-    type: 'light'
-  },
-  typography: {
-    body1: {
-      lineHeight: 2
-    },
-    body2: {
-      lineHeight: 2
-    },
-    fontFamily: [
-      'Roboto',
-      'Helvetica',
-      'Arial',
-      'Noto Sans JP',
-      'sans-serif'
-    ].join(',')
-  }
-})
+import theme from '../theme'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
