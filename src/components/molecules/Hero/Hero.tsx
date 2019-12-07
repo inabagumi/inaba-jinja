@@ -1,4 +1,3 @@
-import Zoom from '@material-ui/core/Zoom'
 import { createStyles, makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 import React, { DetailedHTMLProps, FC, HTMLAttributes } from 'react'
@@ -52,12 +51,10 @@ const Hero: FC<Props> = ({ className }) => {
 
   return (
     <div className={clsx(classes.hero, className)}>
-      <Zoom in>
-        <Logo
-          aria-label={intl.formatMessage(messages.title)}
-          className={classes.logo}
-        />
-      </Zoom>
+      <Logo
+        aria-label={intl.formatMessage(messages.title)}
+        className={classes.logo}
+      />
     </div>
   )
 }
