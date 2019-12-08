@@ -18,8 +18,8 @@ const nextConfig = {
                 options: {
                   limit: 8192,
                   name: dev
-                    ? '[path][name].[ext]?[contenthash:8]'
-                    : '[path][name].[contenthash:8].[ext]',
+                    ? '[name].[ext]?[contenthash:8]'
+                    : '[name].[contenthash:8].[ext]',
                   outputPath: 'static/images',
                   publicPath: '/_next/static/images'
                 }
