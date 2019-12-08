@@ -9,6 +9,10 @@ module.exports = {
       }
     }
   },
+  moduleNameMapper: {
+    '\\.jpe?g$': '<rootDir>/__mocks__/fileMock.js',
+    '\\.svg$': '<rootDir>/__mocks__/svgMock.js'
+  },
   transform: {
     '^.+\\.tsx?$': 'ts-jest'
   }
