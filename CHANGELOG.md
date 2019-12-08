@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/inabagumi/inaba-jinja/compare/v0.2.0...v0.2.1) (2019-12-08)
+
+
+### Features
+
+* add lqip for hero image ([#59](https://github.com/inabagumi/inaba-jinja/issues/59)) ([fe662ed](https://github.com/inabagumi/inaba-jinja/commit/fe662ed8f2974c8e2543601b4058badd7a226432))
+* improve critical rendering path ([#60](https://github.com/inabagumi/inaba-jinja/issues/60)) ([eabb962](https://github.com/inabagumi/inaba-jinja/commit/eabb962c8aef09cfbb9eae796df3f61e4c038715))
+
+
+### Bug Fixes
+
+* remove path from static images ([#61](https://github.com/inabagumi/inaba-jinja/issues/61)) ([8cf850d](https://github.com/inabagumi/inaba-jinja/commit/8cf850dc7287a6854d79d8c3d589c4d3562ae179))
+
 ## [0.2.0](https://github.com/inabagumi/inaba-jinja/compare/v0.1.1...v0.2.0) (2019-12-07)
 
 
