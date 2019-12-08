@@ -22,6 +22,14 @@
         "cache-control": "immutable, max-age=31536000"
       },
       "src": "/_next/.+"
+    },
+    {
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "max-age=0",
+        "service-Worker-allowed": "/"
+      },
+      "src": "/service-worker\\.js"
     }
   ],
   "scope": "inabagumi",

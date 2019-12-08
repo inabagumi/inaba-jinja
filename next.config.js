@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
+const withOffline = require('next-offline')
 const merge = require('webpack-merge')
 
 const nextConfig = {
@@ -36,7 +37,28 @@ const nextConfig = {
           }
         ]
       }
-    })
+    }),
+  workboxOpts: {
+    clientsClaim: true,
+    manifestTransforms: [
+      originalManifest => {
+        const warnings = []
+
+        const manifest = originalManifest
+          .map(entry => {
+            if (/\/pages\/(?!_).+\.js$/.test(entry.url)) return null
+            if (/\.jpe?g$/i.test(entry.url)) return null
+
+            return entry
+          })
+          .filter(Boolean)
+
+        return { manifest, warnings }
+      }
+    ],
+    skipWaiting: true,
+    swDest: 'static/service-worker.js'
+  }
 }
 
-module.exports = nextConfig
+module.exports = withOffline(nextConfig)
