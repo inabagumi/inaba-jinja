@@ -20,7 +20,8 @@ const useStyles = makeStyles(theme => {
       backgroundColor,
       backgroundImage: [
         `linear-gradient(${backgroundColor}, ${backgroundColor})`,
-        'url("/images/hero.jpg")'
+        'url("/images/hero.jpg")',
+        'url("data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAAYACgMBIgACEQEDEQH/xAAUAAEAAAAAAAAAAAAAAAAAAAAF/9oACAEBAAAAAEhv/8QAFAEBAAAAAAAAAAAAAAAAAAAABf/aAAgBAhAAAAA3/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAxAAAAB//8QAIBAAAwABAgcAAAAAAAAAAAAAAQIDBQASBAYhIiNRkf/aAAgBAQABPwDDQzCcOKytBC67pt1LpuHsjT8156TtPwdhK/Nf/8QAGREAAwADAAAAAAAAAAAAAAAAAQIDABIi/9oACAECAQE/ABWibhXI6z//xAAZEQEAAgMAAAAAAAAAAAAAAAADAAESIjL/2gAIAQMBAT8AUjxLSuZ//9k=")' // url("/images/hero@lqip.jpg")
       ].join(','),
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
