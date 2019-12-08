@@ -67,5 +67,5 @@
     "test": "jest",
     "translations": "formatjs extract --out-file src/locales/en.json $(find src -name '*.ts' -o -name '*.tsx')"
   },
-  "version": "0.2.2"
+  "version": "0.3.0"
 }

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/inabagumi/inaba-jinja/compare/v0.2.2...v0.3.0) (2019-12-08)
+
+
+### Features
+
+* add offline mode ([#65](https://github.com/inabagumi/inaba-jinja/issues/65)) ([34fb324](https://github.com/inabagumi/inaba-jinja/commit/34fb324af9587d77fc0a0d99358af25a6d5eeaea))
+
 ### [0.2.2](https://github.com/inabagumi/inaba-jinja/compare/v0.2.1...v0.2.2) (2019-12-08)
 
 
