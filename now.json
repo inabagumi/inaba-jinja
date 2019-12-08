@@ -7,7 +7,7 @@
     "silent": true
   },
   "name": "inaba-jinja",
-  "regions": ["hnd1"],
+  "regions": ["hnd1", "sfo1"],
   "routes": [
     {
       "continue": true,
