@@ -1,4 +1,4 @@
-# 因幡神社 (仮称)
+# 因幡神社
 
 [![](https://github.com/inabagumi/inaba-jinja/workflows/Node%20CI/badge.svg)](https://github.com/inabagumi/inaba-jinja/actions?query=workflow%3A%22Node+CI%22)
 
