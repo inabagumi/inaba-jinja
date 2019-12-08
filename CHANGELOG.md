@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/inabagumi/inaba-jinja/compare/v0.2.1...v0.2.2) (2019-12-08)
+
+
+### Bug Fixes
+
+* remove xmlns attr ([#62](https://github.com/inabagumi/inaba-jinja/issues/62)) ([4ac73a3](https://github.com/inabagumi/inaba-jinja/commit/4ac73a3fc44b8db10fe2c035d63367b2fad9b9f8))
+
 ### [0.2.1](https://github.com/inabagumi/inaba-jinja/compare/v0.2.0...v0.2.1) (2019-12-08)
 
 
