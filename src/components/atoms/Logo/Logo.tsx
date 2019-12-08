@@ -20,6 +20,7 @@ const Logo: FC<Props> = ({ className, ...props }) => {
       className={clsx(classes.root, className)}
       focusable="false"
       role="img"
+      xmlns={undefined}
       {...props}
     />
   )
