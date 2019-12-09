@@ -11,7 +11,7 @@
   "dependencies": {
     "@material-ui/core": "^4.7.2",
     "@material-ui/icons": "^4.5.1",
-    "@next/plugin-material-ui": "^9.1.4",
+    "@next/plugin-material-ui": "^9.1.5",
     "clsx": "^1.0.4",
     "next": "^9.1.4",
     "next-offline": "^5.0.0-beta.11",
