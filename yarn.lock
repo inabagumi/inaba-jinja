@@ -1419,10 +1419,10 @@
     prop-types "^15.7.2"
     react-is "^16.8.0"
 
-"@next/plugin-material-ui@^9.1.4":
-  version "9.1.4"
-  resolved "https://registry.yarnpkg.com/@next/plugin-material-ui/-/plugin-material-ui-9.1.4.tgz#926b464090177f8d3eda96bd3fa80ec8ea23b1e3"
-  integrity sha512-eNESCFCD+w6l9fI/tXf4sHk6/WGL0ovRHpg2ynjV+3Sw6m4SVKocwGfwETf8jOliKCke6xLg3Co5LrYhXXxEvw==
+"@next/plugin-material-ui@^9.1.5":
+  version "9.1.5"
+  resolved "https://registry.yarnpkg.com/@next/plugin-material-ui/-/plugin-material-ui-9.1.5.tgz#ecbefbf1950b34e906455aa3ada1c6b86163f27c"
+  integrity sha512-KFOGDoFNNhX+b6UMsqXx4+AKu655H2y6m6/VmD/nrt6tVlKifKkGV/5WkLTpwAxAq84PtyLilMNPbFXajFVgGg==
 
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
