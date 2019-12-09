@@ -5,6 +5,7 @@ const merge = require('webpack-merge')
 
 const nextConfig = {
   experimental: {
+    modern: true,
     plugins: true
   },
   webpack: (config, { dev }) =>
@@ -46,8 +47,13 @@ const nextConfig = {
 
         const manifest = originalManifest
           .map(entry => {
-            if (/\/pages\/(?!_).+\.js$/.test(entry.url)) return null
-            if (/\.jpe?g$/i.test(entry.url)) return null
+            if (
+              (entry.url.endsWith('.js') && !/\.module\.js$/.test(entry.url)) ||
+              /\/pages\/(?!_).+\.js$/.test(entry.url) ||
+              /\.jpe?g$/i.test(entry.url)
+            ) {
+              return null
+            }
 
             return entry
           })
