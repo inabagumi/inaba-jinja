@@ -26,7 +26,7 @@
     "@inabagumi/eslint-config-react": "^5.0.0",
     "@inabagumi/prettier-config": "^1.1.0",
     "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.14",
+    "@types/node": "^12.12.15",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^16.9.16",
     "@types/react-test-renderer": "^16.9.1",
