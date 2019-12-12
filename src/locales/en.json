@@ -4,8 +4,19 @@
     "defaultMessage": "Inaba Jinja"
   },
   {
-    "id": "app.open_drawer",
-    "defaultMessage": "Open drawer"
+    "id": "error.message"
+  },
+  {
+    "id": "error.title",
+    "defaultMessage": "Error!"
+  },
+  {
+    "id": "not_found.message",
+    "defaultMessage": "..."
+  },
+  {
+    "id": "not_found.title",
+    "defaultMessage": "Page Not Found"
   },
   {
     "id": "home.description"

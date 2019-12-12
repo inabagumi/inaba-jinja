@@ -21,45 +21,24 @@ exports[`Header renders correctly 1`] = `
         <div
           className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
         >
-          <button
-            aria-label="Open drawer"
-            className="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-1 MuiIconButton-colorInherit"
-            disabled={false}
-            onBlur={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex={0}
-            type="button"
+          <div
+            className="MuiContainer-root MuiContainer-maxWidthLg"
           >
-            <span
-              className="MuiIconButton-label"
+            <h6
+              className="MuiTypography-root makeStyles-title-2 MuiTypography-h6 MuiTypography-noWrap"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <a
+                className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                href="/"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
               >
-                <path
-                  d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                />
-              </svg>
-            </span>
-          </button>
-          <h6
-            className="MuiTypography-root makeStyles-title-2 MuiTypography-h6 MuiTypography-noWrap"
-          >
-            Inaba Jinja
-          </h6>
+                Inaba Jinja
+              </a>
+            </h6>
+          </div>
         </div>
       </header>
       <div
