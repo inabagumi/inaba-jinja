@@ -12,6 +12,13 @@
     {
       "continue": true,
       "headers": {
+        "content-type": "application/manifest+json"
+      },
+      "src": ".*\\.webmanifest"
+    },
+    {
+      "continue": true,
+      "headers": {
         "cache-control": "max-age=600, s-maxage=120"
       },
       "src": "/.*"

@@ -9,6 +9,10 @@ import Hero from '../components/molecules/Hero'
 import Page from '../layouts/Main'
 
 const messages = defineMessages({
+  description: {
+    defaultMessage: '',
+    id: 'home.description'
+  },
   title: {
     defaultMessage: 'Inaba Jinja',
     id: 'app.title'
@@ -36,6 +40,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>{intl.formatMessage(messages.title)}</title>
+        <meta
+          content={intl.formatMessage(messages.description)}
+          name="description"
+        />
       </Head>
 
       <Page hideHeader>

@@ -13,6 +13,8 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
     <IntlProvider locale="ja" messages={messages}>
       <ThemeProvider theme={theme}>
         <Head>
+          <meta content="#ff5722" name="theme-color" />
+          <link href="/manifest.webmanifest" rel="manifest" />
           <link
             href="/images/favicon-192x192.png"
             rel="icon"
