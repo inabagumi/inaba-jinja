@@ -30,10 +30,7 @@ const useStyles = makeStyles(theme => {
       backgroundSize: 'cover',
       display: 'flex',
       justifyContent: 'center',
-      minHeight: '500px',
-      [theme.breakpoints.up('md')]: {
-        minHeight: '100vh'
-      }
+      minHeight: '100vh'
     },
     logo: {
       color: 'rgba(255, 255, 255, 0.87)',
