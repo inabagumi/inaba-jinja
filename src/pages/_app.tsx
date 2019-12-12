@@ -14,6 +14,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
       <ThemeProvider theme={theme}>
         <Head>
           <meta content="#ff5722" name="theme-color" />
+
           <link href="/manifest.webmanifest" rel="manifest" />
           <link
             href="/images/favicon-192x192.png"
@@ -32,21 +33,6 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
             rel="apple-touch-icon"
             sizes="152x152"
           />
-          <link
-            as="style"
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto+Slab:300,400,500,700"
-            rel="preload"
-          />
-          <link
-            as="style"
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Sans+JP:300,400,500,700"
-            rel="preload"
-          />
-          <link
-            as="style"
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Serif+JP:300,400,500,700"
-            rel="preload"
-          />
         </Head>
 
         <CssBaseline />
@@ -54,19 +40,6 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         <Component {...pageProps} />
 
         <ProgressBar />
-
-        <link
-          href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto+Slab:300,400,500,700"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Sans+JP:300,400,500,700"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Serif+JP:300,400,500,700"
-          rel="stylesheet"
-        />
       </ThemeProvider>
     </IntlProvider>
   )
