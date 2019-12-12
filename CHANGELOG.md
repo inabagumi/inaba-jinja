@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/inabagumi/inaba-jinja/compare/v0.3.0...v0.3.1) (2019-12-12)
+
+
+### Features
+
+* add region for sfo1 ([#67](https://github.com/inabagumi/inaba-jinja/issues/67)) ([7c49e2b](https://github.com/inabagumi/inaba-jinja/commit/7c49e2b8dca8b7066b5ff559f3002ac0e66dd795))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @next/plugin-material-ui to ^9.1.5 ([#72](https://github.com/inabagumi/inaba-jinja/issues/72)) ([71ca145](https://github.com/inabagumi/inaba-jinja/commit/71ca1456d705ca7fc7e42f05c069036ecc9237e5))
+* **deps:** update dependency next to ^9.1.5 ([#73](https://github.com/inabagumi/inaba-jinja/issues/73)) ([1944c14](https://github.com/inabagumi/inaba-jinja/commit/1944c1485d79e8276542b6a5a00cedd0f20b4a45))
+* **deps:** update dependency react-intl to ^3.9.2 ([#76](https://github.com/inabagumi/inaba-jinja/issues/76)) ([c112500](https://github.com/inabagumi/inaba-jinja/commit/c112500e24e93d424d7501e67a27927abc79ffbd))
+
 ## [0.3.0](https://github.com/inabagumi/inaba-jinja/compare/v0.2.2...v0.3.0) (2019-12-08)
 
 
