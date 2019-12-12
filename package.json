@@ -47,7 +47,7 @@
   "engines": {
     "node": "12.x"
   },
-  "homepage": "https://github.com/inabagumi/inaba-jinja",
+  "homepage": "https://inaba-jinja.com",
   "license": "MIT",
   "main": "n/a",
   "name": "@inabagumi/inaba-jinja",
