@@ -1,5 +1,6 @@
 import { createStyles, makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
+import Head from 'next/head'
 import React, { DetailedHTMLProps, FC, HTMLAttributes } from 'react'
 import { defineMessages, useIntl } from 'react-intl'
 import Logo from '../../atoms/Logo'
@@ -50,12 +51,18 @@ const Hero: FC<Props> = ({ className }) => {
   const classes = useStyles({})
 
   return (
-    <div className={clsx(classes.hero, className)}>
-      <Logo
-        aria-label={intl.formatMessage(messages.title)}
-        className={classes.logo}
-      />
-    </div>
+    <>
+      <Head>
+        <link as="image" href={mainVisual} rel="preload" />
+      </Head>
+
+      <div className={clsx(classes.hero, className)}>
+        <Logo
+          aria-label={intl.formatMessage(messages.title)}
+          className={classes.logo}
+        />
+      </div>
+    </>
   )
 }
 
