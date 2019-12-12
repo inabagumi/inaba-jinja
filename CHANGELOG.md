@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/inabagumi/inaba-jinja/compare/v0.3.1...v0.4.0) (2019-12-12)
+
+
+### Features
+
+* add csp header ([#91](https://github.com/inabagumi/inaba-jinja/issues/91)) ([87c7d59](https://github.com/inabagumi/inaba-jinja/commit/87c7d590e0ad36dedd081328190ad179d947ce94))
+* add error page ([#88](https://github.com/inabagumi/inaba-jinja/issues/88)) ([716febb](https://github.com/inabagumi/inaba-jinja/commit/716febbd6a4b3507a8f74d8b1b434fe170f66843))
+* add webmanifest ([#81](https://github.com/inabagumi/inaba-jinja/issues/81)) ([67fdc3e](https://github.com/inabagumi/inaba-jinja/commit/67fdc3e5935ac7cdf8498f16bafc37b9b1e2276b))
+* always 100vh ([#84](https://github.com/inabagumi/inaba-jinja/issues/84)) ([8ccd17d](https://github.com/inabagumi/inaba-jinja/commit/8ccd17d381f00f63f246a1cf09e0c61c8675002f))
+* disable etag ([#92](https://github.com/inabagumi/inaba-jinja/issues/92)) ([b74325f](https://github.com/inabagumi/inaba-jinja/commit/b74325fecac74217b96d7bff1d4a08a96ce1f887))
+* preconnect web fonts ([#85](https://github.com/inabagumi/inaba-jinja/issues/85)) ([8b80c9c](https://github.com/inabagumi/inaba-jinja/commit/8b80c9c4e720e50b0858f528a878cc5e50013793))
+* preloads main visual ([#86](https://github.com/inabagumi/inaba-jinja/issues/86)) ([285d798](https://github.com/inabagumi/inaba-jinja/commit/285d798334b07088a3d9b4982655acc965dec292))
+
 ### 0.3.2 (2019-12-12)
 
 
