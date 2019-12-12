@@ -8,6 +8,7 @@ const nextConfig = {
     modern: true,
     plugins: true
   },
+  generateEtags: false,
   webpack: (config, { dev }) =>
     merge(config, {
       module: {
