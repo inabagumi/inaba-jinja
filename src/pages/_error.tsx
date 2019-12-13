@@ -8,23 +8,24 @@ import Page from '../layouts/Main'
 
 const messages = defineMessages({
   errorMessage: {
-    defaultMessage: '',
+    defaultMessage: 'なにかエラーが発生しました。',
     id: 'error.message'
   },
   errorTitle: {
-    defaultMessage: 'Error!',
+    defaultMessage: 'エラー！',
     id: 'error.title'
   },
   notFoundMessage: {
-    defaultMessage: '...',
+    defaultMessage:
+      '申し訳ありませんがお探しのページを見つけられませんでした。',
     id: 'not_found.message'
   },
   notFoundTitle: {
-    defaultMessage: 'Page Not Found',
+    defaultMessage: 'ページが見つかりません',
     id: 'not_found.title'
   },
   title: {
-    defaultMessage: 'Haneru Jinja',
+    defaultMessage: '因幡神社',
     id: 'app.title'
   }
 })

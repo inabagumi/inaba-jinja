@@ -35,7 +35,7 @@ exports[`Header renders correctly 1`] = `
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
               >
-                Inaba Jinja
+                因幡神社
               </a>
             </h6>
           </div>

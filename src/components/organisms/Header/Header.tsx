@@ -35,10 +35,7 @@ const Header: FC<Props> = ({ hide = false }) => {
             <Typography className={classes.title} noWrap variant="h6">
               <NextLink href="/" passHref prefetch={false}>
                 <Link color="inherit" underline="none">
-                  <FormattedMessage
-                    defaultMessage="Inaba Jinja"
-                    id="app.title"
-                  />
+                  <FormattedMessage defaultMessage="因幡神社" id="app.title" />
                 </Link>
               </NextLink>
             </Typography>
