@@ -9,7 +9,7 @@ import lqipMainVisual from './main-visual@lqip.jpg'
 
 const messages = defineMessages({
   title: {
-    defaultMessage: 'Inaba Jinja',
+    defaultMessage: '因幡神社',
     id: 'app.title'
   }
 })

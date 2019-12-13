@@ -10,11 +10,12 @@ import Page from '../layouts/Main'
 
 const messages = defineMessages({
   description: {
-    defaultMessage: '',
+    defaultMessage:
+      '因幡神社は東京都北区赤羽のどこかにある神社です。因幡はねる様をご祭神としてお祀りしています。',
     id: 'home.description'
   },
   title: {
-    defaultMessage: 'Inaba Jinja',
+    defaultMessage: '因幡神社',
     id: 'app.title'
   }
 })
@@ -53,7 +54,10 @@ const Home: NextPage = () => {
           <section className={classes.firstSection}>
             <Container maxWidth="md">
               <Typography className={classes.fontSerif} color="inherit">
-                <FormattedMessage defaultMessage="" id="home.description" />
+                <FormattedMessage
+                  defaultMessage="因幡神社は東京都北区赤羽のどこかにある神社です。因幡はねる様をご祭神としてお祀りしています。"
+                  id="home.description"
+                />
               </Typography>
             </Container>
           </section>

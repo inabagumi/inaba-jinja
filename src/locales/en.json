@@ -1,24 +1,8 @@
-[
-  {
-    "id": "app.title",
-    "defaultMessage": "Inaba Jinja"
-  },
-  {
-    "id": "error.message"
-  },
-  {
-    "id": "error.title",
-    "defaultMessage": "Error!"
-  },
-  {
-    "id": "not_found.message",
-    "defaultMessage": "..."
-  },
-  {
-    "id": "not_found.title",
-    "defaultMessage": "Page Not Found"
-  },
-  {
-    "id": "home.description"
-  }
-]
+{
+  "app.title": "Inaba Jinja",
+  "error.message": "なにかエラーが発生しました。",
+  "error.title": "Error!",
+  "home.description": "因幡神社は東京都北区赤羽のどこかにある神社です。因幡はねる様をご祭神としてお祀りしています。",
+  "not_found.message": "申し訳ありませんがお探しのページを見つけられませんでした。",
+  "not_found.title": "Page Not Found"
+}
