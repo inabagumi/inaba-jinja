@@ -23,7 +23,7 @@ exports[`Header renders correctly 1`] = `
         >
           <SvgMock
             aria-label="Inaba Jinja"
-            className="makeStyles-root-88 makeStyles-logo-2"
+            className="makeStyles-root-89 makeStyles-logo-2"
             focusable="false"
             role="img"
           />
