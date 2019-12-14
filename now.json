@@ -1,5 +1,6 @@
 {
   "env": {
+    "GA_TRACKING_ID": "@inaba-jinja-ga-tracking-id",
     "NODE_ICU_DATA": "node_modules/full-icu"
   },
   "github": {
