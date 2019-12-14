@@ -1609,6 +1609,11 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@next/plugin-google-analytics@^9.1.5":
+  version "9.1.5"
+  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.1.5.tgz#c63784db8051524f4c23ee6f482268cee9f8752f"
+  integrity sha512-8aZ8qQxwosOY145EydMB0bKr3HlMqXxjB1xB6W/ble9qwqxuodTScRr10QXuYMcgbXAH3pVOJoDrvZwLxBuXxQ==
+
 "@next/plugin-material-ui@^9.1.5":
   version "9.1.5"
   resolved "https://registry.yarnpkg.com/@next/plugin-material-ui/-/plugin-material-ui-9.1.5.tgz#ecbefbf1950b34e906455aa3ada1c6b86163f27c"

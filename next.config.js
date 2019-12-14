@@ -4,6 +4,9 @@ const withOffline = require('next-offline')
 const merge = require('webpack-merge')
 
 const nextConfig = {
+  env: {
+    GA_TRACKING_ID: process.env.GA_TRACKING_ID || ''
+  },
   experimental: {
     modern: true,
     plugins: true
