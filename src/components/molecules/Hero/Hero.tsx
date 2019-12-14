@@ -1,25 +1,21 @@
 import { createStyles, makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 import Head from 'next/head'
-import React, { DetailedHTMLProps, FC, HTMLAttributes } from 'react'
-import { defineMessages, useIntl } from 'react-intl'
-import Logo from '../../atoms/Logo'
+import React, {
+  DetailedHTMLProps,
+  HTMLAttributes,
+  RefForwardingComponent,
+  forwardRef
+} from 'react'
 import mainVisual from './main-visual.jpg'
 import lqipMainVisual from './main-visual@lqip.jpg'
-
-const messages = defineMessages({
-  title: {
-    defaultMessage: '因幡神社',
-    id: 'app.title'
-  }
-})
 
 const useStyles = makeStyles(theme => {
   const backgroundColor = 'rgba(0, 0, 0, 0.54)'
 
   return createStyles({
-    hero: {
-      alignItems: 'center',
+    root: {
+      backgroundAttachment: 'fixed',
       backgroundColor,
       backgroundImage: [
         `linear-gradient(${backgroundColor}, ${backgroundColor})`,
@@ -29,25 +25,20 @@ const useStyles = makeStyles(theme => {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
+      color: theme.palette.getContrastText(backgroundColor),
       display: 'flex',
-      justifyContent: 'center',
+      flexDirection: 'column',
       minHeight: '100vh'
-    },
-    logo: {
-      color: 'rgba(255, 255, 255, 0.87)',
-      height: '200px',
-      width: 'auto',
-      [theme.breakpoints.up('md')]: {
-        height: '250px'
-      }
     }
   })
 })
 
 type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
-const Hero: FC<Props> = ({ className }) => {
-  const intl = useIntl()
+const Hero: RefForwardingComponent<HTMLDivElement, Props> = (
+  { children, className, ...props },
+  ref
+) => {
   const classes = useStyles({})
 
   return (
@@ -56,14 +47,11 @@ const Hero: FC<Props> = ({ className }) => {
         <link as="image" href={mainVisual} rel="preload" />
       </Head>
 
-      <div className={clsx(classes.hero, className)}>
-        <Logo
-          aria-label={intl.formatMessage(messages.title)}
-          className={classes.logo}
-        />
+      <div className={clsx(classes.root, className)} ref={ref} {...props}>
+        {children}
       </div>
     </>
   )
 }
 
-export default Hero
+export default forwardRef(Hero)

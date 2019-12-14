@@ -1,10 +1,11 @@
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/core/styles'
-import App, { AppContext } from 'next/app'
+import App, { AppContext, AppInitialProps } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
 import { IntlProvider } from 'react-intl'
 import ProgressBar from '../components/atoms/ProgressBar'
+import Page from '../layouts/Main'
 import theme from '../theme'
 
 type Props = {
@@ -13,10 +14,12 @@ type Props = {
 }
 
 class MyApp extends App<Props> {
-  static async getInitialProps(appContext: AppContext) {
+  static async getInitialProps(
+    appContext: AppContext
+  ): Promise<AppInitialProps & Props> {
     const appProps = await super.getInitialProps(appContext)
     const locale = 'ja'
-    const messages = await import(
+    const messages: Record<string, string> = await import(
       /* webpackExclude: /whitelist_.+\.json$/ */
       /* webpackChunkName: 'locales/[request]' */
       `../locales/${locale}`
@@ -29,7 +32,7 @@ class MyApp extends App<Props> {
     }
   }
 
-  render() {
+  render(): JSX.Element {
     const { Component, locale, messages, pageProps } = this.props
 
     return (
@@ -60,7 +63,9 @@ class MyApp extends App<Props> {
 
           <CssBaseline />
 
-          <Component {...pageProps} />
+          <Page>
+            <Component {...pageProps} />
+          </Page>
 
           <ProgressBar />
         </ThemeProvider>

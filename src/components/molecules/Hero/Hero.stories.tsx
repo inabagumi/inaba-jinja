@@ -6,4 +6,4 @@ export default {
   title: 'Hero'
 }
 
-export const hero = () => <Hero />
+export const hero = (): JSX.Element => <Hero />

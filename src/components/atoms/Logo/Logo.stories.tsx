@@ -6,4 +6,4 @@ export default {
   title: 'Logo'
 }
 
-export const logo = () => <Logo height="250" width="70" />
+export const logo = (): JSX.Element => <Logo height="70" width="250" />

@@ -6,7 +6,8 @@ import RawLogo from './Logo.svg'
 const useStyles = makeStyles({
   root: {
     display: 'inline-block',
-    fill: 'currentColor'
+    fill: 'currentColor',
+    verticalAlign: 'middle'
   }
 })
 

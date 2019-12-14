@@ -6,4 +6,4 @@ export default {
   title: 'Footer'
 }
 
-export const footer = () => <Footer />
+export const footer = (): JSX.Element => <Footer />

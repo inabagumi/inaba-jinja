@@ -6,4 +6,4 @@ export default {
   title: 'Header'
 }
 
-export const header = () => <Header />
+export const header = (): JSX.Element => <Header />

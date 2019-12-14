@@ -19,7 +19,8 @@
     "nprogress": "^0.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-intl": "^3.9.2"
+    "react-intl": "^3.9.2",
+    "react-scroll": "^1.7.14"
   },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
@@ -35,6 +36,7 @@
     "@types/node": "^12.12.17",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^16.9.16",
+    "@types/react-scroll": "^1.5.4",
     "@types/react-test-renderer": "^16.9.1",
     "@types/webpack-env": "^1.14.1",
     "babel-jest": "^24.9.0",

@@ -1,7 +1,6 @@
 import { createStyles, makeStyles } from '@material-ui/core/styles'
 import React, { FC } from 'react'
 import Footer from '../components/organisms/Footer'
-import Header from '../components/organisms/Header'
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -16,17 +15,11 @@ const useStyles = makeStyles(() =>
   })
 )
 
-type Props = {
-  hideHeader?: boolean
-}
-
-const Layout: FC<Props> = ({ children, hideHeader = false }) => {
+const Layout: FC = ({ children }) => {
   const classes = useStyles({})
 
   return (
     <div className={classes.root}>
-      <Header hide={hideHeader} />
-
       <div className={classes.content}>{children}</div>
 
       <Footer />

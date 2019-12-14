@@ -2,13 +2,6 @@
 
 exports[`Hero renders correctly 1`] = `
 <div
-  className="makeStyles-hero-1"
->
-  <SvgMock
-    aria-label="因幡神社"
-    className="makeStyles-root-3 makeStyles-logo-2"
-    focusable="false"
-    role="img"
-  />
-</div>
+  className="makeStyles-root-1"
+/>
 `;
