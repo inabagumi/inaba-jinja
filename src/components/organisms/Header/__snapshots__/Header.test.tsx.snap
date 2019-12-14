@@ -1,50 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<div
-  className="MuiCollapse-container MuiCollapse-entered"
-  style={
-    Object {
-      "minHeight": "0px",
-    }
-  }
+<header
+  className="MuiPaper-root MuiPaper-elevation0 MuiAppBar-root MuiAppBar-positionFixed makeStyles-root-1 MuiAppBar-colorDefault mui-fixed"
 >
   <div
-    className="MuiCollapse-wrapper"
+    className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
   >
     <div
-      className="MuiCollapse-wrapperInner"
+      className="MuiContainer-root MuiContainer-maxWidthLg"
     >
-      <header
-        className="MuiPaper-root MuiPaper-elevation0 MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault mui-fixed"
+      <h6
+        className="MuiTypography-root makeStyles-title-4 MuiTypography-h6 MuiTypography-noWrap"
       >
-        <div
-          className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+          href="/"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
         >
-          <div
-            className="MuiContainer-root MuiContainer-maxWidthLg"
-          >
-            <h6
-              className="MuiTypography-root makeStyles-title-2 MuiTypography-h6 MuiTypography-noWrap"
-            >
-              <a
-                className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-                href="/"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-              >
-                因幡神社
-              </a>
-            </h6>
-          </div>
-        </div>
-      </header>
-      <div
-        className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
-      />
+          <SvgMock
+            aria-label="Inaba Jinja"
+            className="makeStyles-root-88 makeStyles-logo-2"
+            focusable="false"
+            role="img"
+          />
+        </a>
+      </h6>
     </div>
   </div>
-</div>
+</header>
 `;
