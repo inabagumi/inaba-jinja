@@ -6,4 +6,4 @@ export default {
   title: 'Logo'
 }
 
-export const logo = () => <Logo />
+export const logo = () => <Logo height="250" width="70" />
