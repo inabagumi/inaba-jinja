@@ -4,9 +4,16 @@ import Typography from '@material-ui/core/Typography'
 import { createStyles, makeStyles } from '@material-ui/core/styles'
 import KeyboadArrowDown from '@material-ui/icons/KeyboardArrowDown'
 import React, { FC } from 'react'
-import { FormattedMessage } from 'react-intl'
+import { FormattedMessage, defineMessages, useIntl } from 'react-intl'
 import { Element as ScrollElement, Link as ScrollLink } from 'react-scroll'
 import Hero from '../../molecules/Hero'
+
+const messages = defineMessages({
+  scrollDown: {
+    defaultMessage: 'コンテンツまでスクロール',
+    id: 'home.scroll_down'
+  }
+})
 
 const useStyles = makeStyles(theme =>
   createStyles({
@@ -39,6 +46,7 @@ const useStyles = makeStyles(theme =>
 )
 
 const Home: FC = () => {
+  const intl = useIntl()
   const classes = useStyles({})
 
   return (
@@ -67,7 +75,10 @@ const Home: FC = () => {
             smooth
             to="contents"
           >
-            <KeyboadArrowDown fontSize="large" />
+            <KeyboadArrowDown
+              aria-label={intl.formatMessage(messages.scrollDown)}
+              fontSize="large"
+            />
           </Link>
         </Container>
       </Hero>
