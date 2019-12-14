@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/inabagumi/inaba-jinja/compare/v0.4.0...v0.5.0) (2019-12-14)
+
+
+### Features
+
+* add google analytics tracking code ([#104](https://github.com/inabagumi/inaba-jinja/issues/104)) ([ad692df](https://github.com/inabagumi/inaba-jinja/commit/ad692dfcb5c55526167cae86eb2167462547432e))
+* improve locale handling ([#95](https://github.com/inabagumi/inaba-jinja/issues/95)) ([eecbb41](https://github.com/inabagumi/inaba-jinja/commit/eecbb41a4ee01d112e2361488461991246f1db22))
+* replace main visual ([#96](https://github.com/inabagumi/inaba-jinja/issues/96)) ([36802bd](https://github.com/inabagumi/inaba-jinja/commit/36802bd5a63f6e2beac338260cf21b579644b4c2))
+* use stale-while-revalidate ([#99](https://github.com/inabagumi/inaba-jinja/issues/99)) ([f29f3b0](https://github.com/inabagumi/inaba-jinja/commit/f29f3b03a9481cd1dd84bc19c11edd65936f4636))
+
+
+### Bug Fixes
+
+* add full-icu ([#98](https://github.com/inabagumi/inaba-jinja/issues/98)) ([d26ebc9](https://github.com/inabagumi/inaba-jinja/commit/d26ebc905ab25391174420bf50cad97eb01d4c2a))
+* change file path ([#103](https://github.com/inabagumi/inaba-jinja/issues/103)) ([18ac0c0](https://github.com/inabagumi/inaba-jinja/commit/18ac0c01ee74c12f7b375911935bed55ab9dfc9f))
+* disable deploy to now on gh-pages ([#102](https://github.com/inabagumi/inaba-jinja/issues/102)) ([400039a](https://github.com/inabagumi/inaba-jinja/commit/400039ae45a0eba1945d11893d502bfae0085033))
+* remove width and height from svg ([#108](https://github.com/inabagumi/inaba-jinja/issues/108)) ([0345417](https://github.com/inabagumi/inaba-jinja/commit/0345417626973dbc04a647d22f0b3c43e5bdcd79))
+* support csp for ga ([#109](https://github.com/inabagumi/inaba-jinja/issues/109)) ([3810991](https://github.com/inabagumi/inaba-jinja/commit/3810991af3245523ba68096c66e41a435940fa62))
+
 ## [0.4.0](https://github.com/inabagumi/inaba-jinja/compare/v0.3.1...v0.4.0) (2019-12-12)
 
 
