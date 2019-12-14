@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.2](https://github.com/inabagumi/inaba-jinja/compare/v0.5.1...v0.5.2) (2019-12-14)
+
+
+### Features
+
+* add meta tags for ogp ([#118](https://github.com/inabagumi/inaba-jinja/issues/118)) ([3935a1b](https://github.com/inabagumi/inaba-jinja/commit/3935a1b8a96b4e9f6b1fe4dbd13959655b5bd207))
+
+
+### Bug Fixes
+
+* `background-attachment: fixed` only lg ([#120](https://github.com/inabagumi/inaba-jinja/issues/120)) ([35f4ee0](https://github.com/inabagumi/inaba-jinja/commit/35f4ee0b79f06662464dab466a3989e5c2ca48c3))
+* add label to scroll down ([#119](https://github.com/inabagumi/inaba-jinja/issues/119)) ([ecc8076](https://github.com/inabagumi/inaba-jinja/commit/ecc8076c2e7825f61e568e29b647eb9987fad8de))
+* **deps:** update dependency @material-ui/core to ^4.8.0 ([#117](https://github.com/inabagumi/inaba-jinja/issues/117)) ([1f75ed8](https://github.com/inabagumi/inaba-jinja/commit/1f75ed80036a9b8781259a0c46f1dbd9cf39948e))
+
 ### [0.5.1](https://github.com/inabagumi/inaba-jinja/compare/v0.5.0...v0.5.1) (2019-12-14)
 
 
