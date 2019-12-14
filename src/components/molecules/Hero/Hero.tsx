@@ -15,7 +15,6 @@ const useStyles = makeStyles(theme => {
 
   return createStyles({
     root: {
-      backgroundAttachment: 'fixed',
       backgroundColor,
       backgroundImage: [
         `linear-gradient(${backgroundColor}, ${backgroundColor})`,
@@ -28,7 +27,11 @@ const useStyles = makeStyles(theme => {
       color: theme.palette.getContrastText(backgroundColor),
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+
+      [theme.breakpoints.up('lg')]: {
+        backgroundAttachment: 'fixed'
+      }
     }
   })
 })
