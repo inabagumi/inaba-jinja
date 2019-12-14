@@ -33,7 +33,7 @@ jobs:
       run: yarn build-storybook
     - name: Disable Now
       run: |
-        echo '{ "github": { "enabled": false } }' > now.json
+        echo '{ "github": { "enabled": false } }' > storybook-static/now.json
     - name: Deploy Storybook
       run: yarn deploy-storybook -e storybook-static --ci
       env:
