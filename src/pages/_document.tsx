@@ -7,6 +7,8 @@ class MyDocument extends Document {
       <Html lang="ja">
         <Head>
           <link href="https://fonts.gstatic.com" rel="preconnect" />
+          <link href="https://www.google-analytics.com" rel="preconnect" />
+          <link href="https://www.googletagmanager.com" rel="preconnect" />
           <link
             as="style"
             href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto+Slab:300,400,500,700"
