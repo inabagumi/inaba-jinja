@@ -19,7 +19,7 @@
     {
       "continue": true,
       "headers": {
-        "cache-control": "max-age=600, s-maxage=120",
+        "cache-control": "max-age=600, public, s-maxage=120, stale-if-error=600, stale-while-revalidate=300",
         "content-security-policy": "base-uri 'none'; connect-src 'self' https:; default-src 'none'; form-action 'none'; font-src https://fonts.gstatic.com; frame-ancestors 'none'; img-src 'self' data:; manifest-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; worker-src 'self'",
         "referrer-policy": "same-origin, strict-origin-when-cross-origin"
       },
@@ -28,7 +28,7 @@
     {
       "continue": true,
       "headers": {
-        "cache-control": "immutable, max-age=31536000"
+        "cache-control": "immutable, public, max-age=31536000"
       },
       "src": "/_next/.+"
     },
