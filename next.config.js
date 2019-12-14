@@ -14,7 +14,7 @@ const nextConfig = {
       module: {
         rules: [
           {
-            test: /\.jpe?g$/i,
+            test: /\.jpe?g$/,
             use: [
               {
                 loader: 'url-loader',
@@ -30,7 +30,7 @@ const nextConfig = {
             ]
           },
           {
-            test: /\.svg$/i,
+            test: /\.svg$/,
             use: [
               {
                 loader: 'react-svg-loader'
