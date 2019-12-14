@@ -32,6 +32,11 @@ class MyApp extends App<Props> {
     }
   }
 
+  componentDidMount(): void {
+    const jssStyles = document.getElementById('jss-server-side')
+    if (jssStyles) jssStyles.parentNode.removeChild(jssStyles)
+  }
+
   render(): JSX.Element {
     const { Component, locale, messages, pageProps } = this.props
 
