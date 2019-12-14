@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/inabagumi/inaba-jinja/compare/v0.5.0...v0.5.1) (2019-12-14)
+
+
+### Features
+
+* add favicon.ico ([#112](https://github.com/inabagumi/inaba-jinja/issues/112)) ([a8c4346](https://github.com/inabagumi/inaba-jinja/commit/a8c4346127975b3efe7b091aec93b12e8255f832))
+* improve hero ([#111](https://github.com/inabagumi/inaba-jinja/issues/111)) ([185250a](https://github.com/inabagumi/inaba-jinja/commit/185250a8f5638c11f81d98ba2fd4db72bd8ac985))
+* uninstall @next/plugin-material-ui ([#113](https://github.com/inabagumi/inaba-jinja/issues/113)) ([91a1529](https://github.com/inabagumi/inaba-jinja/commit/91a1529cfaefcd4e3285cc2e22e20bad9b5095db))
+
 ## [0.5.0](https://github.com/inabagumi/inaba-jinja/compare/v0.4.0...v0.5.0) (2019-12-14)
 
 
