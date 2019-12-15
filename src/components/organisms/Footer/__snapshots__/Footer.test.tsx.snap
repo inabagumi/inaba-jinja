@@ -1,28 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer renders correctly 1`] = `
-<footer
-  className="makeStyles-root-1"
->
-  <div
+Array [
+  <hr
+    className="MuiDivider-root"
+  />,
+  <footer
     className="MuiContainer-root MuiContainer-maxWidthLg"
   >
-    <p
-      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
     >
-      Copyright © 2019 
-      <a
-        className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
-        href="https://haneru.dev/"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        rel="noreferrer noopener"
-        target="_blank"
+      <div
+        className="MuiGrid-root makeStyles-logoGrid-2 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
       >
-        Haneru Developers
-      </a>
-      .
-    </p>
-  </div>
-</footer>
+        <SvgMock
+          aria-label="因幡神社"
+          className="makeStyles-root-121 makeStyles-logo-1"
+          focusable="false"
+          role="img"
+        />
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+      >
+        <nav
+          className="makeStyles-navLinks-3"
+        >
+          <ul>
+            <li>
+              <a
+                className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorTextSecondary"
+                href="https://haneru.dev/"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Haneru Developers
+              </a>
+            </li>
+            <li>
+              <a
+                className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorTextSecondary"
+                href="/privacy"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+              >
+                プライバシーポリシー
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>,
+]
 `;
