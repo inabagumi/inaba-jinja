@@ -68,6 +68,7 @@ const Home: FC = () => {
           </div>
 
           <Link
+            aria-label={intl.formatMessage(messages.scrollDown)}
             className={classes.scrollDown}
             color="inherit"
             component={ScrollLink}
@@ -75,10 +76,7 @@ const Home: FC = () => {
             smooth
             to="contents"
           >
-            <KeyboadArrowDown
-              aria-label={intl.formatMessage(messages.scrollDown)}
-              fontSize="large"
-            />
+            <KeyboadArrowDown fontSize="large" />
           </Link>
         </Container>
       </Hero>
