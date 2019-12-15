@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.3](https://github.com/inabagumi/inaba-jinja/compare/v0.5.2...v0.5.3) (2019-12-15)
+
+
+### Features
+
+* improve footer ([#121](https://github.com/inabagumi/inaba-jinja/issues/121)) ([9f1a595](https://github.com/inabagumi/inaba-jinja/commit/9f1a595c7f6e405b3ced20381f1c67274c5a2acb))
+
+
+### Bug Fixes
+
+* move aria-label to anchor ([#122](https://github.com/inabagumi/inaba-jinja/issues/122)) ([9e1831b](https://github.com/inabagumi/inaba-jinja/commit/9e1831b8c37dacea7d6a9e67acefbfaa56f7c611))
+
 ### [0.5.2](https://github.com/inabagumi/inaba-jinja/compare/v0.5.1...v0.5.2) (2019-12-14)
 
 
