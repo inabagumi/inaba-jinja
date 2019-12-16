@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.5](https://github.com/inabagumi/inaba-jinja/compare/v0.5.4...v0.5.5) (2019-12-16)
+
+
+### Features
+
+* single link element ([#134](https://github.com/inabagumi/inaba-jinja/issues/134)) ([d37212e](https://github.com/inabagumi/inaba-jinja/commit/d37212e25b46a53e489d599622ef7295ec08665b))
+
+
+### Bug Fixes
+
+* use window.innerHeight ([#135](https://github.com/inabagumi/inaba-jinja/issues/135)) ([0213f9c](https://github.com/inabagumi/inaba-jinja/commit/0213f9c3b8b13adecff8e4f16701deb8efc673f2))
+
 ### [0.5.4](https://github.com/inabagumi/inaba-jinja/compare/v0.5.3...v0.5.4) (2019-12-16)
 
 
