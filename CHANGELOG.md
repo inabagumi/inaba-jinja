@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/inabagumi/inaba-jinja/compare/v0.5.4...v0.6.0) (2019-12-16)
+
+
+### Features
+
+* **perf:** use webp ([#138](https://github.com/inabagumi/inaba-jinja/issues/138)) ([f1645c5](https://github.com/inabagumi/inaba-jinja/commit/f1645c5e7fc9be5ea402861a13b5877cc73f0d4e))
+* single link element ([#134](https://github.com/inabagumi/inaba-jinja/issues/134)) ([d37212e](https://github.com/inabagumi/inaba-jinja/commit/d37212e25b46a53e489d599622ef7295ec08665b))
+
+
+### Bug Fixes
+
+* **hero:** change height to 100% ([#136](https://github.com/inabagumi/inaba-jinja/issues/136)) ([192d6b6](https://github.com/inabagumi/inaba-jinja/commit/192d6b6a3969bd819244f3029505b04c42cddbbc))
+* **storybook:** add support webp ([#141](https://github.com/inabagumi/inaba-jinja/issues/141)) ([0b696a8](https://github.com/inabagumi/inaba-jinja/commit/0b696a808de202c1aa09ad286ebea84bf77b9457))
+* use window.innerHeight ([#135](https://github.com/inabagumi/inaba-jinja/issues/135)) ([0213f9c](https://github.com/inabagumi/inaba-jinja/commit/0213f9c3b8b13adecff8e4f16701deb8efc673f2))
+
 ### [0.5.6](https://github.com/inabagumi/inaba-jinja/compare/v0.5.5...v0.5.6) (2019-12-16)
 
 
