@@ -19,9 +19,9 @@ const useStyles = makeStyles(theme =>
   createStyles({
     description: {
       fontFamily: ['Roboto Slab', 'Noto Serif JP', 'serif'].join(','),
-      height: '30em',
       letterSpacing: '0.2em',
       margin: theme.spacing(0),
+      maxHeight: '30em',
       padding: theme.spacing(0),
       writingMode: 'vertical-rl'
     },
@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme =>
     },
     scrollDown: {
       display: 'block',
-      marginBottom: theme.spacing(5)
+      marginBottom: theme.spacing(10)
     }
   })
 )
