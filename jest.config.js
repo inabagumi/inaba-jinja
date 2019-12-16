@@ -10,7 +10,7 @@ module.exports = {
     }
   },
   moduleNameMapper: {
-    '\\.jpe?g$': '<rootDir>/__mocks__/fileMock.ts',
+    '\\.(?:jpe?g|webp)$': '<rootDir>/__mocks__/fileMock.ts',
     '\\.svg$': '<rootDir>/__mocks__/svgMock.ts'
   }
 }

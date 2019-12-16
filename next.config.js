@@ -23,7 +23,7 @@ const nextConfig = {
       module: {
         rules: [
           {
-            test: /\.jpe?g$/,
+            test: /\.(?:jpe?g|webp)$/,
             use: [
               {
                 loader: 'url-loader',
