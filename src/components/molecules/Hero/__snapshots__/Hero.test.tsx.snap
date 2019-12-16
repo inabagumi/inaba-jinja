@@ -2,6 +2,27 @@
 
 exports[`Hero renders correctly 1`] = `
 <div
-  className="makeStyles-root-1"
-/>
+  className="makeStyles-root-3"
+>
+  <div
+    className="makeStyles-cover-2"
+  >
+    <picture>
+      <source
+        srcSet="test-file-stub"
+        type="image/webp"
+      />
+      <img
+        alt=""
+        height="600"
+        role="presentation"
+        src="test-file-stub"
+        width="800"
+      />
+    </picture>
+  </div>
+  <div
+    className="makeStyles-content-1"
+  />
+</div>
 `;
