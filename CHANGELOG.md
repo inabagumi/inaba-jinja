@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.6](https://github.com/inabagumi/inaba-jinja/compare/v0.5.5...v0.5.6) (2019-12-16)
+
+
+### Bug Fixes
+
+* **hero:** change height to 100% ([#136](https://github.com/inabagumi/inaba-jinja/issues/136)) ([192d6b6](https://github.com/inabagumi/inaba-jinja/commit/192d6b6a3969bd819244f3029505b04c42cddbbc))
+
 ### [0.5.5](https://github.com/inabagumi/inaba-jinja/compare/v0.5.4...v0.5.5) (2019-12-16)
 
 
