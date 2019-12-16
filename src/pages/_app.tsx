@@ -5,7 +5,6 @@ import Head from 'next/head'
 import React from 'react'
 import { IntlProvider } from 'react-intl'
 import ProgressBar from '../components/atoms/ProgressBar'
-import Page from '../layouts/Main'
 import theme from '../theme'
 
 type Props = {
@@ -68,9 +67,7 @@ class MyApp extends App<Props> {
 
           <CssBaseline />
 
-          <Page>
-            <Component {...pageProps} />
-          </Page>
+          <Component {...pageProps} />
 
           <ProgressBar />
         </ThemeProvider>
