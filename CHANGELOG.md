@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.4](https://github.com/inabagumi/inaba-jinja/compare/v0.5.3...v0.5.4) (2019-12-16)
+
+
+### Bug Fixes
+
+* increase margin-bottom of scroll button ([#131](https://github.com/inabagumi/inaba-jinja/issues/131)) ([17b5d20](https://github.com/inabagumi/inaba-jinja/commit/17b5d201ba975e58d55837da84ac8a9c95812783))
+
 ### [0.5.3](https://github.com/inabagumi/inaba-jinja/compare/v0.5.2...v0.5.3) (2019-12-15)
 
 
