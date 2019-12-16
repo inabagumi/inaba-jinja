@@ -38,10 +38,10 @@
       "src": "/_next/.+"
     },
     {
-      "dest": "/_next/static/service-worker.js",
+      "continue": true,
       "headers": {
         "cache-control": "max-age=0",
-        "service-Worker-allowed": "/"
+        "service-worker-allowed": "/"
       },
       "src": "/service-worker\\.js"
     }

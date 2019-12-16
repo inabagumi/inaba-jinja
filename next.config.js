@@ -9,7 +9,13 @@ const nextConfig = {
   },
   experimental: {
     modern: true,
-    plugins: true
+    plugins: true,
+    rewrites: () => [
+      {
+        destination: '/_next/static/service-worker.js',
+        source: '/service-worker.js'
+      }
+    ]
   },
   generateEtags: false,
   webpack: (config, { dev }) =>
