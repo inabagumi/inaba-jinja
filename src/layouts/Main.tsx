@@ -1,6 +1,8 @@
+import Toolbar from '@material-ui/core/Toolbar'
 import { createStyles, makeStyles } from '@material-ui/core/styles'
 import React, { FC } from 'react'
 import Footer from '../components/organisms/Footer'
+import Header from '../components/organisms/Header'
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -20,6 +22,9 @@ const Layout: FC = ({ children }) => {
 
   return (
     <div className={classes.root}>
+      <Header />
+      <Toolbar />
+
       <div className={classes.content}>{children}</div>
 
       <Footer />

@@ -5,8 +5,9 @@ import { createStyles, makeStyles } from '@material-ui/core/styles'
 import KeyboadArrowDown from '@material-ui/icons/KeyboardArrowDown'
 import React, { FC } from 'react'
 import { FormattedMessage, defineMessages, useIntl } from 'react-intl'
-import { Element as ScrollElement, Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll'
 import Hero from '../../molecules/Hero'
+import Footer from '../../organisms/Footer'
 
 const messages = defineMessages({
   scrollDown: {
@@ -17,12 +18,17 @@ const messages = defineMessages({
 
 const useStyles = makeStyles(theme =>
   createStyles({
+    '@global': {
+      'html, body, #__next': {
+        height: '100%'
+      }
+    },
     description: {
       fontFamily: ['Roboto Slab', 'Noto Serif JP', 'serif'].join(','),
       letterSpacing: '0.2em',
       margin: theme.spacing(0),
       maxHeight: '30em',
-      padding: theme.spacing(0),
+      padding: theme.spacing(2, 0),
       writingMode: 'vertical-rl'
     },
     heroContent: {
@@ -40,7 +46,11 @@ const useStyles = makeStyles(theme =>
     },
     scrollDown: {
       display: 'block',
-      marginBottom: theme.spacing(10)
+      marginBottom: theme.spacing(5),
+
+      [theme.breakpoints.up('md')]: {
+        marginBottom: theme.spacing(10)
+      }
     }
   })
 )
@@ -81,9 +91,9 @@ const Home: FC = () => {
         </Container>
       </Hero>
 
-      <ScrollElement name="contents">
-        <main id="contents" style={{ minHeight: '100vh' }} />
-      </ScrollElement>
+      <main id="contents" style={{ minHeight: '100vh' }} />
+
+      <Footer />
     </>
   )
 }
