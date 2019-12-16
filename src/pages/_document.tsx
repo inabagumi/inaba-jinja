@@ -50,22 +50,7 @@ class MyDocument extends Document {
           <link href="https://www.googletagmanager.com" rel="preconnect" />
           <link
             as="style"
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto:300,400,500,700"
-            rel="preload"
-          />
-          <link
-            as="style"
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto+Slab:300,400,500,700"
-            rel="preload"
-          />
-          <link
-            as="style"
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Sans+JP:300,400,500,700"
-            rel="preload"
-          />
-          <link
-            as="style"
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Serif+JP:300,400,500,700"
+            href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto:300,400,500,700|Roboto+Slab:300,400,500,700|Noto+Sans+JP:300,400,500,700|Noto+Serif+JP:300,400,500,700"
             rel="preload"
           />
         </Head>
@@ -75,19 +60,7 @@ class MyDocument extends Document {
           <NextScript />
 
           <link
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto:300,400,500,700"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto+Slab:300,400,500,700"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Sans+JP:300,400,500,700"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?display=swap&amp;family=Noto+Serif+JP:300,400,500,700"
+            href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto:300,400,500,700|Roboto+Slab:300,400,500,700|Noto+Sans+JP:300,400,500,700|Noto+Serif+JP:300,400,500,700"
             rel="stylesheet"
           />
         </body>
