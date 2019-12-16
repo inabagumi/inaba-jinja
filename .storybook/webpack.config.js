@@ -15,7 +15,7 @@ module.exports = ({ config }) => {
           ]
         },
         {
-          test: /\.jpe?g$/,
+          test: /\.(?:jpe?g|webp)$/,
           use: [
             {
               loader: 'url-loader',
