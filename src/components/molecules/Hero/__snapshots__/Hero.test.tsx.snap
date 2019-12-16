@@ -3,5 +3,10 @@
 exports[`Hero renders correctly 1`] = `
 <div
   className="makeStyles-root-1"
+  style={
+    Object {
+      "minHeight": undefined,
+    }
+  }
 />
 `;

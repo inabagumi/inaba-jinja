@@ -5,7 +5,9 @@ import React, {
   DetailedHTMLProps,
   HTMLAttributes,
   RefForwardingComponent,
-  forwardRef
+  forwardRef,
+  useEffect,
+  useState
 } from 'react'
 import mainVisual from './main-visual.jpg'
 import lqipMainVisual from './main-visual@lqip.jpg'
@@ -28,6 +30,7 @@ const useStyles = makeStyles(theme => {
       display: 'flex',
       flexDirection: 'column',
       minHeight: '100vh',
+      transition: 'min-height 0.2s linear',
 
       [theme.breakpoints.up('lg')]: {
         backgroundAttachment: 'fixed'
@@ -42,7 +45,12 @@ const Hero: RefForwardingComponent<HTMLDivElement, Props> = (
   { children, className, ...props },
   ref
 ) => {
+  const [height, setHeight] = useState<number>()
   const classes = useStyles({})
+
+  useEffect(() => {
+    setHeight(window.innerHeight)
+  }, [])
 
   return (
     <>
@@ -50,7 +58,12 @@ const Hero: RefForwardingComponent<HTMLDivElement, Props> = (
         <link as="image" href={mainVisual} rel="preload" />
       </Head>
 
-      <div className={clsx(classes.root, className)} ref={ref} {...props}>
+      <div
+        className={clsx(classes.root, className)}
+        ref={ref}
+        style={{ minHeight: height }}
+        {...props}
+      >
         {children}
       </div>
     </>
