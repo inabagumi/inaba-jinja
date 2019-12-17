@@ -18,11 +18,6 @@ const messages = defineMessages({
 
 const useStyles = makeStyles(theme =>
   createStyles({
-    '@global': {
-      'html, body, #__next': {
-        height: '100%'
-      }
-    },
     description: {
       fontFamily: ['Roboto Slab', 'Noto Serif JP', 'serif'].join(','),
       letterSpacing: '0.2em',
@@ -45,11 +40,11 @@ const useStyles = makeStyles(theme =>
       justifyContent: 'center'
     },
     scrollDown: {
-      display: 'block',
-      marginBottom: theme.spacing(5),
+      display: 'none',
+      marginBottom: theme.spacing(10),
 
       [theme.breakpoints.up('md')]: {
-        marginBottom: theme.spacing(10)
+        display: 'block'
       }
     }
   })
