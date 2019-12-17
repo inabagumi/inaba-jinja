@@ -11,7 +11,7 @@
   "dependencies": {
     "@material-ui/core": "^4.8.0",
     "@material-ui/icons": "^4.5.1",
-    "@next/plugin-google-analytics": "^9.1.5",
+    "@next/plugin-google-analytics": "^9.1.6",
     "clean-css": "^4.2.1",
     "clsx": "^1.0.4",
     "next": "^9.1.5",
