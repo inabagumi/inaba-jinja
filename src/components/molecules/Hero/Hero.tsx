@@ -64,8 +64,12 @@ const useStyles = makeStyles(theme => {
     root: {
       backgroundColor,
       color: theme.palette.getContrastText(backgroundColor),
-      minHeight: '100%',
-      position: 'relative'
+      minHeight: '80vh',
+      position: 'relative',
+
+      [theme.breakpoints.up('md')]: {
+        minHeight: '100vh'
+      }
     }
   })
 })
