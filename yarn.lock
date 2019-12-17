@@ -1583,10 +1583,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@next/plugin-google-analytics@^9.1.5":
-  version "9.1.5"
-  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.1.5.tgz#c63784db8051524f4c23ee6f482268cee9f8752f"
-  integrity sha512-8aZ8qQxwosOY145EydMB0bKr3HlMqXxjB1xB6W/ble9qwqxuodTScRr10QXuYMcgbXAH3pVOJoDrvZwLxBuXxQ==
+"@next/plugin-google-analytics@^9.1.6":
+  version "9.1.6"
+  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.1.6.tgz#e1a069d9d9a1b030995a55141c49974186969421"
+  integrity sha512-6qWAlOUmSmcaJg9RkIzN1KtUWrKaDx6HF8zD54F8084k7lSYTRDcv21PeVdD7Q4dEeHN9SXcNPfgGucuwZimPg==
 
 "@nodelib/fs.stat@^1.1.2":
   version "1.1.3"
