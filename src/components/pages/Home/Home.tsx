@@ -83,6 +83,7 @@ const Home: FC = () => {
             color="inherit"
             component={ScrollLink}
             href="#content"
+            role="button"
             smooth
             to="contents"
           >
