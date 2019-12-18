@@ -1,9 +1,8 @@
-import Container from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
 import { defineMessages, useIntl } from 'react-intl'
+import Container from '../components/atoms/Container'
 import Page from '../layouts/Main'
 
 const messages = defineMessages({
@@ -56,11 +55,22 @@ const Error: NextPage<Props> = ({ statusCode }) => {
 
       <Page>
         <Container>
-          <Typography variant="h5">{title}</Typography>
+          <h1 className="title">{title}</h1>
 
-          <Typography paragraph>{message}</Typography>
+          <p className="error-message">{message}</p>
         </Container>
       </Page>
+
+      <style jsx>{`
+        .title {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+
+        .error-message {
+          margin: 1rem 0 0;
+        }
+      `}</style>
     </>
   )
 }

@@ -1,12 +1,8 @@
-import Container from '@material-ui/core/Container'
-import Link from '@material-ui/core/Link'
-import Typography from '@material-ui/core/Typography'
-import { createStyles, makeStyles } from '@material-ui/core/styles'
-import KeyboadArrowDown from '@material-ui/icons/KeyboardArrowDown'
 import React, { FC } from 'react'
 import { FormattedMessage, defineMessages, useIntl } from 'react-intl'
 import { Link as ScrollLink } from 'react-scroll'
-import Hero from '../../molecules/Hero'
+import KeyboardArrowDown from '../../../images/icons/keyboard_arrow_down.svg'
+import MainVisual from '../../molecules/MainVisual'
 import Footer from '../../organisms/Footer'
 
 const messages = defineMessages({
@@ -16,80 +12,91 @@ const messages = defineMessages({
   }
 })
 
-const useStyles = makeStyles(theme =>
-  createStyles({
-    description: {
-      fontFamily: ['Roboto Slab', 'Noto Serif JP', 'serif'].join(','),
-      letterSpacing: '0.2em',
-      margin: theme.spacing(0),
-      maxHeight: '30em',
-      padding: theme.spacing(2, 0),
-      writingMode: 'vertical-rl'
-    },
-    heroContent: {
-      alignItems: 'center',
-      display: 'flex',
-      flexDirection: 'column',
-      flexGrow: 1,
-      justifyContent: 'flex-end'
-    },
-    heroText: {
-      alignItems: 'center',
-      display: 'flex',
-      flexGrow: 1,
-      justifyContent: 'center'
-    },
-    scrollDown: {
-      display: 'none',
-      marginBottom: theme.spacing(10),
-
-      [theme.breakpoints.up('md')]: {
-        display: 'block'
-      }
-    }
-  })
-)
-
 const Home: FC = () => {
   const intl = useIntl()
-  const classes = useStyles({})
 
   return (
     <>
-      <Hero>
-        <Container className={classes.heroContent} maxWidth="lg">
-          <div className={classes.heroText}>
-            <Typography
-              className={classes.description}
-              color="inherit"
-              paragraph
-              variant="body1"
-            >
-              <FormattedMessage
-                defaultMessage="因幡神社は東京都北区赤羽のどこかにある神社です。有閑喫茶 あにまーれの因幡はねる様をご祭神としてお祀りしています。"
-                id="home.description"
-              />
-            </Typography>
-          </div>
+      <MainVisual>
+        <div className="main-visual__text">
+          <p className="main-visual__description">
+            <FormattedMessage
+              defaultMessage="因幡神社は東京都北区赤羽のどこかにある神社です。有閑喫茶 あにまーれの因幡はねる様をご祭神としてお祀りしています。"
+              id="home.description"
+            />
+          </p>
+        </div>
 
-          <Link
+        <div className="scroll-down">
+          <ScrollLink
             aria-label={intl.formatMessage(messages.scrollDown)}
-            className={classes.scrollDown}
-            color="inherit"
-            component={ScrollLink}
+            className="scroll-down__button"
             href="#content"
             role="button"
             smooth
-            to="contents"
+            to="content"
           >
-            <KeyboadArrowDown fontSize="large" />
-          </Link>
-        </Container>
-      </Hero>
+            <KeyboardArrowDown xmlns={undefined} />
+          </ScrollLink>
+        </div>
+      </MainVisual>
 
-      <main id="contents" style={{ minHeight: '100vh' }} />
+      <main id="content" className="content">
+        stub
+      </main>
 
       <Footer />
+
+      <style jsx>{`
+        .content {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          font-size: 10rem;
+          font-weight: 900;
+          justify-content: center;
+          min-height: 100vh;
+        }
+
+        .main-visual__description {
+          font-family: Roboto Slab, Noto Serif JP, serif;
+          font-size: 1rem;
+          letter-spacing: 0.2rem;
+          margin: 0;
+          height: 30em;
+          padding: 1em 0;
+          writing-mode: vertical-rl;
+        }
+
+        .main-visual__text {
+          align-items: center;
+          display: flex;
+          flex-grow: 1;
+          justify-content: center;
+        }
+
+        .scroll-down :global(.scroll-down__button) {
+          color: inherit;
+          display: none;
+          margin-bottom: 3rem;
+          text-decoration: none;
+        }
+
+        @media (min-width: 960px) {
+          .scroll-down :global(.scroll-down__button) {
+            display: block;
+          }
+        }
+
+        .scroll-down :global(svg) {
+          display: inline-block;
+          fill: currentColor;
+          font-size: 3rem;
+          height: 1em;
+          vertical-align: middle;
+          width: 1em;
+        }
+      `}</style>
     </>
   )
 }

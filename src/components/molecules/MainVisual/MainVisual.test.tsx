@@ -1,24 +1,18 @@
-/* eslint-env jest */
-
-import { ThemeProvider } from '@material-ui/core/styles'
 import React, { FC } from 'react'
 import { IntlProvider } from 'react-intl'
 import renderer from 'react-test-renderer'
-import theme from '../../../theme'
-import Hero from './Hero'
+import MainVisual from './MainVisual'
 
 const App: FC = ({ children }) => (
-  <IntlProvider locale="en">
-    <ThemeProvider theme={theme}>{children}</ThemeProvider>
-  </IntlProvider>
+  <IntlProvider locale="en">{children}</IntlProvider>
 )
 
-describe('Hero', () => {
+describe('MainVisual', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(
         <App>
-          <Hero />
+          <MainVisual />
         </App>
       )
       .toJSON()

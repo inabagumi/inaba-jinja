@@ -2,7 +2,7 @@
 
 exports[`Logo renders correctly 1`] = `
 <SvgMock
-  className="makeStyles-root-1"
+  className="jsx-1961443691"
   focusable="false"
   role="img"
 />

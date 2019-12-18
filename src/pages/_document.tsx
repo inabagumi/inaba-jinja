@@ -1,46 +1,7 @@
-import { ServerStyleSheets } from '@material-ui/core/styles'
-import CleanCSS from 'clean-css'
-import Document, {
-  DocumentContext,
-  DocumentInitialProps,
-  Head,
-  Html,
-  Main,
-  NextScript
-} from 'next/document'
-import React, { Children } from 'react'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
+import React from 'react'
 
 class MyDocument extends Document {
-  static async getInitialProps(
-    ctx: DocumentContext
-  ): Promise<DocumentInitialProps> {
-    const sheets = new ServerStyleSheets()
-
-    const initialProps = await super.getInitialProps({
-      ...ctx,
-      renderPage: () =>
-        ctx.renderPage({
-          enhanceApp: App => (props): JSX.Element =>
-            sheets.collect(<App {...props} />)
-        })
-    })
-
-    const cleanCSS = new CleanCSS()
-    const { styles } = cleanCSS.minify(sheets.toString())
-
-    return {
-      ...initialProps,
-      styles: [
-        ...Children.toArray(initialProps.styles),
-        <style
-          dangerouslySetInnerHTML={{ __html: styles }}
-          id="jss-server-side"
-          key="jss-server-side"
-        />
-      ]
-    }
-  }
-
   render(): JSX.Element {
     return (
       <Html lang="ja">

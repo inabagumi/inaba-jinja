@@ -1,19 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hero renders correctly 1`] = `
+exports[`MainVisual renders correctly 1`] = `
 <div
-  className="makeStyles-root-3"
+  className="jsx-4256674884 hero"
 >
   <div
-    className="makeStyles-cover-2"
+    className="jsx-4256674884 cover"
   >
-    <picture>
+    <picture
+      className="jsx-4256674884"
+    >
       <source
+        className="jsx-4256674884"
         srcSet="test-file-stub"
         type="image/webp"
       />
       <img
         alt=""
+        className="jsx-4256674884 cover__image"
         height="600"
         role="presentation"
         src="test-file-stub"
@@ -22,7 +26,7 @@ exports[`Hero renders correctly 1`] = `
     </picture>
   </div>
   <div
-    className="makeStyles-content-1"
+    className="jsx-4256674884 hero__content"
   />
 </div>
 `;
