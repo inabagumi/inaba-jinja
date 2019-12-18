@@ -1,11 +1,8 @@
-import CssBaseline from '@material-ui/core/CssBaseline'
-import { ThemeProvider } from '@material-ui/core/styles'
 import App, { AppContext, AppInitialProps } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
 import { IntlProvider } from 'react-intl'
 import ProgressBar from '../components/atoms/ProgressBar'
-import theme from '../theme'
 
 type Props = {
   locale: string
@@ -40,8 +37,8 @@ class MyApp extends App<Props> {
     const { Component, locale, messages, pageProps } = this.props
 
     return (
-      <IntlProvider defaultLocale="ja" locale={locale} messages={messages}>
-        <ThemeProvider theme={theme}>
+      <>
+        <IntlProvider defaultLocale="ja" locale={locale} messages={messages}>
           <Head>
             <meta content="#ff5722" name="theme-color" />
 
@@ -65,13 +62,31 @@ class MyApp extends App<Props> {
             />
           </Head>
 
-          <CssBaseline />
-
           <Component {...pageProps} />
 
           <ProgressBar />
-        </ThemeProvider>
-      </IntlProvider>
+        </IntlProvider>
+
+        <style global jsx>{`
+          html {
+            box-sizing: border-box;
+            font-family: Roboto, Helvetica, Arial, Noto Sans JP, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+
+          body {
+            margin: 0;
+            line-height: 2;
+          }
+
+          *,
+          *::before,
+          *::after {
+            box-sizing: inherit;
+          }
+        `}</style>
+      </>
     )
   }
 }

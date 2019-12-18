@@ -2,34 +2,24 @@
 
 exports[`Header renders correctly 1`] = `
 <header
-  className="MuiPaper-root MuiPaper-elevation0 MuiAppBar-root MuiAppBar-positionFixed makeStyles-root-1 MuiAppBar-colorDefault mui-fixed"
+  className="jsx-856715302 header"
 >
   <div
-    className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    className="jsx-3982792815 container header__content"
   >
-    <div
-      className="MuiContainer-root MuiContainer-maxWidthLg"
+    <a
+      className="jsx-856715302 header__brand"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
     >
-      <h6
-        className="MuiTypography-root makeStyles-title-4 MuiTypography-h6 MuiTypography-noWrap"
-      >
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-          href="/"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-        >
-          <SvgMock
-            aria-label="Inaba Jinja"
-            className="makeStyles-root-89 makeStyles-logo-2"
-            focusable="false"
-            role="img"
-          />
-        </a>
-      </h6>
-    </div>
+      <SvgMock
+        aria-label="Inaba Jinja"
+        className="jsx-1961443691 header__logo"
+        focusable="false"
+        role="img"
+      />
+    </a>
   </div>
 </header>
 `;

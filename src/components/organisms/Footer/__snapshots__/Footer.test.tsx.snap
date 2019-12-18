@@ -1,61 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer renders correctly 1`] = `
-Array [
-  <hr
-    className="MuiDivider-root"
-  />,
-  <footer
-    className="MuiContainer-root MuiContainer-maxWidthLg"
+<footer
+  className="jsx-1012071016 footer"
+>
+  <div
+    className="jsx-3982792815 container footer__content"
   >
-    <div
-      className="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+    <p
+      className="jsx-1012071016 copyright"
     >
-      <div
-        className="MuiGrid-root makeStyles-logoGrid-2 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+      Copyright © 2020 
+      <a
+        className="jsx-1012071016 copyright__link"
+        href="https://haneru.dev/"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        <SvgMock
-          aria-label="因幡神社"
-          className="makeStyles-root-121 makeStyles-logo-1"
-          focusable="false"
-          role="img"
-        />
-      </div>
-      <div
-        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+        Haneru Developers
+      </a>
+      .
+    </p>
+    <nav
+      className="jsx-1012071016 footer__links"
+    >
+      <ul
+        className="jsx-1012071016"
       >
-        <nav
-          className="makeStyles-navLinks-3"
+        <li
+          className="jsx-1012071016"
         >
-          <ul>
-            <li>
-              <a
-                className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorTextSecondary"
-                href="https://haneru.dev/"
-                onBlur={[Function]}
-                onFocus={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Haneru Developers
-              </a>
-            </li>
-            <li>
-              <a
-                className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorTextSecondary"
-                href="/privacy"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-              >
-                プライバシーポリシー
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </footer>,
-]
+          <a
+            className="jsx-1012071016"
+            href="/privacy"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            プライバシーポリシー
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
 `;

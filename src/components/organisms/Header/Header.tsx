@@ -1,12 +1,7 @@
-import AppBar from '@material-ui/core/AppBar'
-import Container from '@material-ui/core/Container'
-import Link from '@material-ui/core/Link'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
-import { createStyles, makeStyles } from '@material-ui/core/styles'
-import NextLink from 'next/link'
+import Link from 'next/link'
 import React, { FC } from 'react'
 import { defineMessages, useIntl } from 'react-intl'
+import Container from '../../atoms/Container'
 import Logo from '../../atoms/Logo'
 
 const messages = defineMessages({
@@ -16,50 +11,46 @@ const messages = defineMessages({
   }
 })
 
-const useStyles = makeStyles(theme =>
-  createStyles({
-    root: {},
-    logo: {
-      height: 36,
-      width: 'auto'
-    },
-    menuButton: {
-      marginRight: theme.spacing(2)
-    },
-    title: {
-      flexGrow: 1
-    }
-  })
-)
-
-type Props = {}
-
-const Header: FC<Props> = () => {
+const Header: FC = () => {
   const intl = useIntl()
-  const classes = useStyles({})
 
   return (
-    <AppBar
-      className={classes.root}
-      color="default"
-      elevation={0}
-      position="fixed"
-    >
-      <Toolbar>
-        <Container maxWidth="lg">
-          <Typography className={classes.title} noWrap variant="h6">
-            <NextLink href="/" passHref prefetch={false}>
-              <Link color="inherit" underline="none">
-                <Logo
-                  aria-label={intl.formatMessage(messages.title)}
-                  className={classes.logo}
-                />
-              </Link>
-            </NextLink>
-          </Typography>
+    <>
+      <header className="header">
+        <Container className="header__content">
+          <Link href="/" prefetch={false}>
+            <a className="header__brand" href="/">
+              <Logo
+                aria-label={intl.formatMessage(messages.title)}
+                className="header__logo"
+              />
+            </a>
+          </Link>
         </Container>
-      </Toolbar>
-    </AppBar>
+      </header>
+
+      <style jsx>{`
+        .header {
+          background-color: #f5f5f5;
+        }
+
+        .header__brand {
+          color: inherit;
+          display: block;
+        }
+
+        .header :global(.header__content) {
+          padding-bottom: 0.5rem;
+          padding-top: 0.5rem;
+        }
+
+        .header :global(.header__logo) {
+          height: 36px;
+          max-height: 100%;
+          width: auto;
+        }
+      `}</style>
+    </>
   )
 }
 
