@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/inabagumi/inaba-jinja/compare/v0.6.0...v0.7.0) (2019-12-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* Stop using Google Font.
+* **deps:** The dependency on Material UI has been removed.
+
+### Features
+
+* disable web fonts ([#156](https://github.com/inabagumi/inaba-jinja/issues/156)) ([9a316d3](https://github.com/inabagumi/inaba-jinja/commit/9a316d3b491ca707ebf936f4a6358b60a1334853))
+* **deps:** replace to styled-jsx from material-ui ([#155](https://github.com/inabagumi/inaba-jinja/issues/155)) ([26848b8](https://github.com/inabagumi/inaba-jinja/commit/26848b8ad05ef79cb283e572f3a45c075aa3cf23))
+* add role="button" to scroll down link ([#152](https://github.com/inabagumi/inaba-jinja/issues/152)) ([aaa34ca](https://github.com/inabagumi/inaba-jinja/commit/aaa34ca35b96269a1cd977fc0c7418e441ce9ffb))
+* hide scroll down link ([#151](https://github.com/inabagumi/inaba-jinja/issues/151)) ([ae7e43b](https://github.com/inabagumi/inaba-jinja/commit/ae7e43b20dfcbcf05235aa06f06a63b2edddbfd1))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @next/plugin-google-analytics to ^9.1.6 ([#149](https://github.com/inabagumi/inaba-jinja/issues/149)) ([50d63e5](https://github.com/inabagumi/inaba-jinja/commit/50d63e55a8def890cfc63f30ea126109ebe1c7df))
+* **deps:** update dependency next to ^9.1.6 ([#150](https://github.com/inabagumi/inaba-jinja/issues/150)) ([0836866](https://github.com/inabagumi/inaba-jinja/commit/08368660ca3ea9d1a78d42624ceb028c3c6588e0))
+
 ## [0.6.0](https://github.com/inabagumi/inaba-jinja/compare/v0.5.4...v0.6.0) (2019-12-16)
 
 
