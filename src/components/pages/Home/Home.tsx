@@ -59,7 +59,7 @@ const Home: FC = () => {
         }
 
         .main-visual__description {
-          font-family: Roboto Slab, Noto Serif JP, serif;
+          font-family: var(--ij-serif-font-family);
           font-size: 1rem;
           letter-spacing: 0.2rem;
           margin: 0;

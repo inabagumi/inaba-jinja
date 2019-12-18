@@ -68,9 +68,16 @@ class MyApp extends App<Props> {
         </IntlProvider>
 
         <style global jsx>{`
+          :root {
+            --ij-default-font-family: -apple-system, BlinkMacSystemFont,
+              Helvetica Neue, Helvetica, Arial, YuGothic, Yu Gothic, sans-serif;
+            --ij-serif-font-family: Garamond, Times New Roman, YuMincho,
+              Yu Mincho, serif;
+          }
+
           html {
             box-sizing: border-box;
-            font-family: Roboto, Helvetica, Arial, Noto Sans JP, sans-serif;
+            font-family: var(--ij-default-font-family);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
           }
