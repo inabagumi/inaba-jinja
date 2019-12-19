@@ -22,7 +22,7 @@
   },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
-    "@babel/core": "^7.7.5",
+    "@babel/core": "^7.7.7",
     "@inabagumi/eslint-config-react": "^5.0.0",
     "@inabagumi/prettier-config": "^1.1.0",
     "@storybook/addon-actions": "^5.2.8",
