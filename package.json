@@ -31,7 +31,7 @@
     "@types/jest": "^24.0.24",
     "@types/node": "^12.12.21",
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^16.9.16",
+    "@types/react": "^16.9.17",
     "@types/react-scroll": "^1.5.4",
     "@types/react-test-renderer": "^16.9.1",
     "@types/styled-jsx": "^2.2.8",
