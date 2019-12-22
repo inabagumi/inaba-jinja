@@ -1,29 +1,26 @@
-import { NextPage } from 'next'
-import React from 'react'
-import { defineMessages, useIntl } from 'react-intl'
+import { graphql } from 'gatsby'
+import React, { FC } from 'react'
 import Meta from '../components/atoms/Meta'
 import Home from '../components/pages/Home'
+import SiteMedatada from '../types/SiteMetadata'
 
-const messages = defineMessages({
-  description: {
-    defaultMessage:
-      '因幡神社は東京都北区赤羽のどこかにある神社です。有閑喫茶 あにまーれの因幡はねる様をご祭神としてお祀りしています。',
-    id: 'home.description'
-  },
-  title: {
-    defaultMessage: '因幡神社',
-    id: 'app.title'
+type Props = {
+  data: {
+    site: {
+      siteMetadata: SiteMedatada
+    }
   }
-})
+}
 
-const Index: NextPage = () => {
-  const intl = useIntl()
+const Index: FC<Props> = ({ data }) => {
+  const { siteMetadata } = data.site
 
   return (
     <>
       <Meta
-        description={intl.formatMessage(messages.description)}
-        title={intl.formatMessage(messages.title)}
+        description={siteMetadata.description}
+        pathname="/"
+        title={siteMetadata.title}
       />
 
       <Home />
@@ -32,3 +29,14 @@ const Index: NextPage = () => {
 }
 
 export default Index
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        description
+        title
+      }
+    }
+  }
+`

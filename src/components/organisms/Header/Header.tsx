@@ -1,56 +1,62 @@
-import Link from 'next/link'
+import styled from '@emotion/styled'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import React, { FC } from 'react'
-import { defineMessages, useIntl } from 'react-intl'
+import SiteMetadata from '../../../types/SiteMetadata'
 import Container from '../../atoms/Container'
 import Logo from '../../atoms/Logo'
 
-const messages = defineMessages({
-  title: {
-    defaultMessages: '因幡神社',
-    id: 'app.title'
+const AppBar = styled('header')`
+  background-color: #f5f5f5;
+`
+
+const BrandLink = styled(Link)`
+  color: inherit;
+  display: block;
+`
+
+const BrandLogo = styled(Logo)`
+  height: 36px;
+  max-height: 100%;
+  width: auto;
+`
+
+const Content = styled(Container)`
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+`
+
+type TData = {
+  site: {
+    siteMetadata: SiteMetadata
   }
-})
+}
 
 const Header: FC = () => {
-  const intl = useIntl()
+  const { site } = useStaticQuery<TData>(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  )
 
   return (
-    <>
-      <header className="header">
-        <Container className="header__content">
-          <Link href="/" prefetch={false}>
-            <a className="header__brand" href="/">
-              <Logo
-                aria-label={intl.formatMessage(messages.title)}
-                className="header__logo"
-              />
-            </a>
-          </Link>
-        </Container>
-      </header>
-
-      <style jsx>{`
-        .header {
-          background-color: #f5f5f5;
-        }
-
-        .header__brand {
-          color: inherit;
-          display: block;
-        }
-
-        .header :global(.header__content) {
-          padding-bottom: 0.5rem;
-          padding-top: 0.5rem;
-        }
-
-        .header :global(.header__logo) {
-          height: 36px;
-          max-height: 100%;
-          width: auto;
-        }
-      `}</style>
-    </>
+    <AppBar>
+      <Content>
+        <BrandLink to="/">
+          <BrandLogo
+            aria-label={site.siteMetadata.title}
+            focusable="false"
+            role="img"
+            xmlns={undefined}
+          />
+        </BrandLink>
+      </Content>
+    </AppBar>
   )
 }
 
