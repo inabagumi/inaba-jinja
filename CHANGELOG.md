@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/inabagumi/inaba-jinja/compare/v0.7.0...v0.8.0) (2019-12-22)
+
+
+### Features
+
+* add title to privacy page ([#161](https://github.com/inabagumi/inaba-jinja/issues/161)) ([c8f2ab0](https://github.com/inabagumi/inaba-jinja/commit/c8f2ab0147bcab101229fca6ab16519bceb8213c))
+* replace to gatsby ([#170](https://github.com/inabagumi/inaba-jinja/issues/170)) ([b8290a7](https://github.com/inabagumi/inaba-jinja/commit/b8290a7d7a9ac1887426fe47bdf1b10fc70f8556))
+
 ## [0.7.0](https://github.com/inabagumi/inaba-jinja/compare/v0.6.0...v0.7.0) (2019-12-18)
 
 
