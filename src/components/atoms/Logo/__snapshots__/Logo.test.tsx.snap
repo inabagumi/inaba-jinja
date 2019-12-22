@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Logo renders correctly 1`] = `
-<SvgMock
-  className="jsx-1961443691"
-  focusable="false"
-  role="img"
-/>
-`;

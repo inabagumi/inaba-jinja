@@ -1,8 +1,13 @@
 import React, { FC } from 'react'
-import Page from '../../../layouts/Main'
+import Header from '../../organisms/Header'
+import Layout from '../../templates/Layout'
 
 const Privacy: FC = () => {
-  return <Page />
+  return (
+    <Layout>
+      <Header />
+    </Layout>
+  )
 }
 
 export default Privacy

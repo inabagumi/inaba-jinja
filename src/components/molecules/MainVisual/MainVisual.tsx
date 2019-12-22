@@ -1,29 +1,92 @@
-import clsx from 'clsx'
-import Head from 'next/head'
+import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import mainVisual from '../../../images/main-visual.jpg'
-import webpMainVisual from '../../../images/main-visual.webp'
-import lqipMainVisual from '../../../images/main-visual@lqip.jpg'
+import { Helmet } from 'react-helmet'
+import mainVisual from '../../../assets/main-visual.jpg'
+import webpMainVisual from '../../../assets/main-visual.webp'
+import lqipMainVisual from '../../../assets/main-visual@lqip.jpg'
+import Container from '../../atoms/Container'
 
-type Props = {
-  className?: string
-}
+const Content = styled(Container)`
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding: 0 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+`
 
-const Hero: FC<Props> = ({ children, className }) => {
+const Cover = styled('div')`
+  background-color: transparent;
+  background-image: url("${lqipMainVisual}");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &::after {
+    background-color: var(--hero-overlay-color);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+`
+
+const CoverImage = styled('picture')`
+  img {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+`
+
+const Root = styled('div')`
+  --hero-overlay-color: rgba(0, 0, 0, 0.54);
+
+  background-color: var(--hero-overlay-color);
+  color: #fff;
+  min-height: 80vh;
+  position: relative;
+
+  @media (min-width: 960px) {
+    & {
+      min-height: 100vh;
+    }
+  }
+`
+
+const Hero: FC = ({ children }) => {
   return (
     <>
-      <Head>
+      <Helmet>
         <link
           as="image"
           href={webpMainVisual}
           rel="preload"
           type="image/webp"
         />
-      </Head>
+      </Helmet>
 
-      <div className={clsx('hero', className)}>
-        <div className="cover">
-          <picture>
+      <Root>
+        <Cover>
+          <CoverImage>
             <source srcSet={webpMainVisual} type="image/webp" />
 
             <img
@@ -34,79 +97,11 @@ const Hero: FC<Props> = ({ children, className }) => {
               src={mainVisual}
               width="800"
             />
-          </picture>
-        </div>
+          </CoverImage>
+        </Cover>
 
-        <div className="hero__content">{children}</div>
-      </div>
-
-      <style jsx>{`
-        .cover {
-          background-color: transparent;
-          background-image: url("${lqipMainVisual}");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          bottom: 0;
-          left: 0;
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-
-        .cover::after {
-          background-color: var(--hero-overlay-color);
-          bottom: 0;
-          content: '';
-          display: block;
-          left: 0;
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-
-        .cover__image {
-          bottom: 0;
-          display: block;
-          height: 100%;
-          left: 0;
-          object-fit: cover;
-          position: absolute;
-          right: 0;
-          top: 0;
-          width: 100%;
-        }
-
-        .hero {
-          --hero-overlay-color: rgba(0, 0, 0, 0.54);
-
-          background-color:  var(--hero-overlay-color);
-          color: #fff;
-          min-height: 80vh;
-          position: relative;
-        }
-
-        @media (min-width: 960px) {
-          .hero {
-            min-height: 100vh;
-          }
-        }
-
-        .hero__content {
-          align-items: center;
-          bottom: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          left: 0;
-          margin: 0 auto;
-          max-width: 1280px;
-          padding: 0 1rem;
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-      `}</style>
+        <Content>{children}</Content>
+      </Root>
     </>
   )
 }

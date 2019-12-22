@@ -1,5 +1,4 @@
-/.next/
-/build/
+/.cache/
+/public/
 /node_modules/
-/storybook-static/
 /yarn-error.log

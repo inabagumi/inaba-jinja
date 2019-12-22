@@ -38,7 +38,3 @@ jobs:
       run: yarn lint
     - name: Build
       run: yarn build
-    - name: Build Storybook
-      run: yarn build-storybook
-    - name: Test
-      run: yarn test

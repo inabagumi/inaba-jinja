@@ -1,26 +1,11 @@
-import clsx from 'clsx'
-import React, { DetailedHTMLProps, FC, HTMLAttributes } from 'react'
+import styled from '@emotion/styled'
 
-type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
-
-const Container: FC<Props> = ({ children, className, ...props }) => {
-  return (
-    <>
-      <div className={clsx('container', className)} {...props}>
-        {children}
-      </div>
-
-      <style jsx>{`
-        .container {
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 1280px;
-          padding-left: 2rem;
-          padding-right: 2rem;
-        }
-      `}</style>
-    </>
-  )
-}
+const Container = styled('div')`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+`
 
 export default Container
