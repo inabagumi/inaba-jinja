@@ -9,6 +9,7 @@ const Content = styled(Container)`
 `
 
 const Copyright = styled('p')`
+  font-size: 0.9rem;
   margin: 0 1rem 0;
   text-align: center;
 `
@@ -26,6 +27,7 @@ const FooterLinks = styled('nav')`
   & ul {
     align-items: center;
     display: flex;
+    font-size: 0.9rem;
     justify-content: center;
     list-style: none;
     margin: 0.5rem 0 0;

@@ -11,7 +11,7 @@ const Content = styled('main')`
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 10rem;
+  font-size: 7rem;
   font-weight: 900;
   justify-content: center;
   min-height: 100vh;
