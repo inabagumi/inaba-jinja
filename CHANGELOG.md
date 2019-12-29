@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.2](https://github.com/inabagumi/inaba-jinja/compare/v0.8.1...v0.8.2) (2019-12-29)
+
+
+### Features
+
+* add horizontal main visual ([#179](https://github.com/inabagumi/inaba-jinja/issues/179)) ([c7aedf8](https://github.com/inabagumi/inaba-jinja/commit/c7aedf812a41de7d384f56c9479c13fd603deb27))
+* replace main visual ([#178](https://github.com/inabagumi/inaba-jinja/issues/178)) ([089f78b](https://github.com/inabagumi/inaba-jinja/commit/089f78bf3bbfbf77c917a3b64203f3ed6cc88863))
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby to ^2.18.17 ([#174](https://github.com/inabagumi/inaba-jinja/issues/174)) ([28b140b](https://github.com/inabagumi/inaba-jinja/commit/28b140b3eb04a19328953e173e0b93e2ae05f5c2))
+* **deps:** update dependency react-scroll to ^1.7.15 ([#176](https://github.com/inabagumi/inaba-jinja/issues/176)) ([5b4f5fa](https://github.com/inabagumi/inaba-jinja/commit/5b4f5fa421084b29330a197cd0644c14ac05b2bb))
+* **deps:** update emotion monorepo to ^10.0.27 ([#172](https://github.com/inabagumi/inaba-jinja/issues/172)) ([6a73c78](https://github.com/inabagumi/inaba-jinja/commit/6a73c78a56c1561cd695c8e80421edaad664f22b))
+
 ### [0.8.1](https://github.com/inabagumi/inaba-jinja/compare/v0.8.0...v0.8.1) (2019-12-22)
 
 
