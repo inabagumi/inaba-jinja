@@ -1,10 +1,15 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
+import lqipMainVisual from '../../../assets/main-visual@lqip.jpg'
+import horizontalLqipMainVisual from '../../../assets/horizontal-main-visual@lqip.jpg'
+import horizontalMainVisual from '../../../assets/horizontal-main-visual.jpg'
+import horizontalMainVisual2x from '../../../assets/horizontal-main-visual@2x.jpg'
+import horizontalWebpMainVisual from '../../../assets/horizontal-main-visual.webp'
+import horizontalWebpMainVisual2x from '../../../assets/horizontal-main-visual@2x.webp'
 import mainVisual from '../../../assets/main-visual.jpg'
 import mainVisual2x from '../../../assets/main-visual@2x.jpg'
 import webpMainVisual from '../../../assets/main-visual.webp'
 import webpMainVisual2x from '../../../assets/main-visual@2x.webp'
-import lqipMainVisual from '../../../assets/main-visual@lqip.jpg'
 import Container from '../../atoms/Container'
 
 const Content = styled(Container)`
@@ -31,6 +36,10 @@ const Cover = styled('div')`
   position: absolute;
   right: 0;
   top: 0;
+
+  @media (orientation: portrait) {
+    background-image: url("${horizontalLqipMainVisual}");
+  }
 
   &::after {
     background-color: var(--hero-overlay-color);
@@ -79,8 +88,18 @@ const Hero: FC = ({ children }) => {
       <Cover>
         <CoverImage>
           <source
+            srcSet={`${horizontalWebpMainVisual} 1x, ${horizontalWebpMainVisual2x} 2x`}
+            media="(orientation: portrait)"
+            type="image/webp"
+          />
+          <source
             srcSet={`${webpMainVisual} 1x, ${webpMainVisual2x} 2x`}
             type="image/webp"
+          />
+          <source
+            media="(orientation: portrait)"
+            src={`${horizontalMainVisual} 1x, ${horizontalMainVisual2x} 2x`}
+            type="image/png"
           />
 
           <img
