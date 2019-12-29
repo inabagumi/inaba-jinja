@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import { Helmet } from 'react-helmet'
 import mainVisual from '../../../assets/main-visual.jpg'
+import mainVisual2x from '../../../assets/main-visual@2x.jpg'
 import webpMainVisual from '../../../assets/main-visual.webp'
+import webpMainVisual2x from '../../../assets/main-visual@2x.webp'
 import lqipMainVisual from '../../../assets/main-visual@lqip.jpg'
 import Container from '../../atoms/Container'
 
@@ -74,35 +75,28 @@ const Root = styled('div')`
 
 const Hero: FC = ({ children }) => {
   return (
-    <>
-      <Helmet>
-        <link
-          as="image"
-          href={webpMainVisual}
-          rel="preload"
-          type="image/webp"
-        />
-      </Helmet>
+    <Root>
+      <Cover>
+        <CoverImage>
+          <source
+            srcSet={`${webpMainVisual} 1x, ${webpMainVisual2x} 2x`}
+            type="image/webp"
+          />
 
-      <Root>
-        <Cover>
-          <CoverImage>
-            <source srcSet={webpMainVisual} type="image/webp" />
+          <img
+            alt=""
+            className="cover__image"
+            height="600"
+            role="presentation"
+            src={mainVisual}
+            srcSet={`${mainVisual} 1x, ${mainVisual2x} 2x`}
+            width="800"
+          />
+        </CoverImage>
+      </Cover>
 
-            <img
-              alt=""
-              className="cover__image"
-              height="600"
-              role="presentation"
-              src={mainVisual}
-              width="800"
-            />
-          </CoverImage>
-        </Cover>
-
-        <Content>{children}</Content>
-      </Root>
-    </>
+      <Content>{children}</Content>
+    </Root>
   )
 }
 
