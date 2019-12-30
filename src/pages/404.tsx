@@ -2,7 +2,6 @@ import styled from '@emotion/styled'
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
 import Container from '../components/atoms/Container'
-import Header from '../components/organisms/Header'
 import Layout from '../components/templates/Layout'
 
 const Message = styled('p')`
@@ -22,8 +21,6 @@ const Error: FC = () => {
       </Helmet>
 
       <Layout>
-        <Header />
-
         <Container>
           <Title>ページが見つかりません</Title>
 
