@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.3](https://github.com/inabagumi/inaba-jinja/compare/v0.8.2...v0.8.3) (2019-12-30)
+
+
+### Features
+
+* re-design ([#182](https://github.com/inabagumi/inaba-jinja/issues/182)) ([41fed6c](https://github.com/inabagumi/inaba-jinja/commit/41fed6cdd64b41051b233380b3ba60ced8297b05))
+
+
+### Bug Fixes
+
+* remove translations script ([#180](https://github.com/inabagumi/inaba-jinja/issues/180)) ([1d4a028](https://github.com/inabagumi/inaba-jinja/commit/1d4a028635160813013f4a6aeb5026f6f483ad79))
+
 ### [0.8.2](https://github.com/inabagumi/inaba-jinja/compare/v0.8.1...v0.8.2) (2019-12-29)
 
 
