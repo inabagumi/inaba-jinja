@@ -72,19 +72,18 @@ const Root = styled('div')`
 
   background-color: var(--hero-overlay-color);
   color: #fff;
-  min-height: 80vh;
+  height: 100%;
   position: relative;
-
-  @media (min-width: 960px) {
-    & {
-      min-height: 100vh;
-    }
-  }
+  width: 100%;
 `
 
-const Hero: FC = ({ children }) => {
+type Props = {
+  className?: string
+}
+
+const Background: FC<Props> = ({ children, className }) => {
   return (
-    <Root>
+    <Root className={className}>
       <Cover>
         <CoverImage>
           <source
@@ -119,4 +118,4 @@ const Hero: FC = ({ children }) => {
   )
 }
 
-export default Hero
+export default Background

@@ -1,83 +1,62 @@
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import React, { FC } from 'react'
-import Container from '../../atoms/Container'
-
-const Content = styled(Container)`
-  padding-bottom: 2rem;
-  padding-top: 2em;
-`
 
 const Copyright = styled('p')`
-  font-size: 0.9rem;
-  margin: 0 1rem 0;
-  text-align: center;
-`
+  margin: 0;
 
-const CopyrightLink = styled('a')`
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`
-
-const FooterLinks = styled('nav')`
-  & ul {
-    align-items: center;
-    display: flex;
-    font-size: 0.9rem;
-    justify-content: center;
-    list-style: none;
-    margin: 0.5rem 0 0;
-    padding: 0;
-  }
-
-  & li {
-    margin: 0;
-    padding: 0;
-  }
-
-  & a {
-    color: #ff9800;
+  a {
+    color: inherit;
     text-decoration: none;
   }
 
-  & a:hover {
+  a:hover {
     text-decoration: underline;
   }
 `
 
-const Wrapper = styled('footer')`
-  color: #fff;
-  background-color: #424242;
+const Navigation = styled('nav')`
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+`
+
+const Root = styled('footer')`
+  align-items: flex-start;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  justify-content: space-between;
+  padding: 2rem 1rem 0.5rem;
+
+  @media (min-width: 960px) {
+    & {
+      flex-direction: row;
+    }
+  }
 `
 
 const Footer: FC = () => {
   return (
-    <Wrapper>
-      <Content>
-        <Copyright>
-          {'Copyright © 2020 '}
-          <CopyrightLink
-            href="https://haneru.dev/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Haneru Developers
-          </CopyrightLink>
-          {'.'}
-        </Copyright>
-        <FooterLinks>
-          <ul>
-            <li>
-              <Link to="/privacy">プライバシーポリシー</Link>
-            </li>
-          </ul>
-        </FooterLinks>
-      </Content>
-    </Wrapper>
+    <Root>
+      <Copyright>
+        &copy; 2020{' '}
+        <a href="https://haneru.dev/" rel="noopener noreferrer" target="_blank">
+          Haneru Developers
+        </a>
+      </Copyright>
+
+      <Navigation>
+        <ul>
+          <li>
+            <Link to="/privacy">プライバシーポリシー</Link>
+          </li>
+        </ul>
+      </Navigation>
+    </Root>
   )
 }
 

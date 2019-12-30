@@ -2,6 +2,7 @@ import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
+import BaseBackground from '../../molecules/Background'
 import Footer from '../../organisms/Footer'
 
 const globalStyles = css`
@@ -17,9 +18,12 @@ const globalStyles = css`
     font-family: var(--ij-default-font-family);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
   }
 
   body {
+    background-color: #424242;
+    color: #fafafa;
     margin: 0;
     line-height: 2;
   }
@@ -29,6 +33,28 @@ const globalStyles = css`
   *::after {
     box-sizing: inherit;
   }
+
+  body,
+  html,
+  #___gatsby,
+  #gatsby-focus-wrapper {
+    height: 100%;
+  }
+
+  a {
+    color: #f57f17;
+  }
+
+  a:hover {
+    color: #ff6f00;
+  }
+`
+
+const Background = styled(BaseBackground)`
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: -1;
 `
 
 const Content = styled('div')`
@@ -38,18 +64,15 @@ const Content = styled('div')`
 const Wrapper = styled('div')`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  z-index: 0;
 `
 
 const Layout: FC = ({ children }) => {
   return (
     <>
-      <Helmet>
-        <html lang="ja" />
-
-        <link href="https://www.google-analytics.com" rel="preconnect" />
-        <link href="https://www.googletagmanager.com" rel="preconnect" />
-      </Helmet>
+      <Helmet async={false} htmlAttributes={{ lang: 'ja' }} />
 
       <Global styles={globalStyles} />
 
@@ -58,6 +81,8 @@ const Layout: FC = ({ children }) => {
 
         <Footer />
       </Wrapper>
+
+      <Background />
     </>
   )
 }

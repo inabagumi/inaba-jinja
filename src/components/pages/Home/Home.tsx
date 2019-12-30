@@ -1,61 +1,45 @@
 import styled from '@emotion/styled'
 import { graphql, useStaticQuery } from 'gatsby'
 import React, { FC } from 'react'
-import { Link as ScrollLink } from 'react-scroll'
-import KeyboardArrowDown from '../../../assets/icons/keyboard_arrow_down.svg'
 import SiteMetadata from '../../../types/SiteMetadata'
-import MainVisual from '../../molecules/MainVisual'
+import BaseLogo from '../../atoms/Logo'
 import Layout from '../../templates/Layout'
 
-const Content = styled('main')`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 7rem;
-  font-weight: 900;
-  justify-content: center;
-  min-height: 100vh;
-`
+const Content = styled('main')``
 
 const Description = styled('p')`
   font-family: var(--ij-serif-font-family);
-  font-size: 1rem;
-  letter-spacing: 0.2rem;
-  margin: 0;
-  height: 30em;
-  padding: 1em 0;
-  writing-mode: vertical-rl;
+  font-size: 0.95rem;
+  letter-spacing: 0.3rem;
+  margin: 1rem 0 0;
+  padding: 0;
 `
 
-const ScrollDown = styled('div')`
-  margin-bottom: 3rem;
-`
-
-const ScrollDownButton = styled(ScrollLink)`
-  color: inherit;
-  display: none;
-  text-decoration: none;
-
-  @media (min-width: 960px) {
-    & {
-      display: block;
-    }
-  }
-`
-
-const ScrollDownIcon = styled(KeyboardArrowDown)`
-  display: inline-block;
-  fill: currentColor;
-  font-size: 3rem;
-  height: 1em;
-  vertical-align: middle;
-  width: 1em;
-`
-
-const TextBox = styled('div')`
+const Header = styled('header')`
   align-items: center;
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  max-width: 620px;
+`
+
+const Logo = styled(BaseLogo)`
+  height: auto;
+  width: 4rem;
+`
+
+const Title = styled('h1')`
+  margin: 0;
+  padding: 0;
+`
+
+const Wrapper = styled('div')`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   justify-content: center;
 `
 
@@ -80,25 +64,17 @@ const Home: FC = () => {
 
   return (
     <Layout>
-      <MainVisual>
-        <TextBox>
+      <Wrapper>
+        <Header>
+          <Title>
+            <Logo aria-label="因幡神社" />
+          </Title>
+
           <Description>{site.siteMetadata.description}</Description>
-        </TextBox>
+        </Header>
 
-        <ScrollDown>
-          <ScrollDownButton
-            aria-label="コンテンツまでスクロール"
-            href="#content"
-            role="button"
-            smooth
-            to="content"
-          >
-            <ScrollDownIcon xmlns={undefined} />
-          </ScrollDownButton>
-        </ScrollDown>
-      </MainVisual>
-
-      <Content id="content">stub</Content>
+        <Content />
+      </Wrapper>
     </Layout>
   )
 }
