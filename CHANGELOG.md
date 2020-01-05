@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/inabagumi/inaba-jinja/compare/v0.9.1...v1.0.0) (2020-01-05)
+
+
+### Features
+
+* add ogp to home ([#194](https://github.com/inabagumi/inaba-jinja/issues/194)) ([3ce3710](https://github.com/inabagumi/inaba-jinja/commit/3ce37105d3f7db5c30497199193514184422d8d2))
+
+
+### Bug Fixes
+
+* disable cache ([#195](https://github.com/inabagumi/inaba-jinja/issues/195)) ([5780679](https://github.com/inabagumi/inaba-jinja/commit/5780679b11b5d86ead8dcb71c5d0a1568a2ec4bc))
+
 ### [0.9.1](https://github.com/inabagumi/inaba-jinja/compare/v0.9.0...v0.9.1) (2020-01-05)
 
 
