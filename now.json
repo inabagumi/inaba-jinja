@@ -1,6 +1,8 @@
 {
   "build": {
     "env": {
+      "CONTENTFUL_ACCESS_TOKEN": "@inaba-jinja-contentful-access-token",
+      "CONTENTFUL_SPACE_ID": "@inaba-jinja-contentful-space-id",
       "GA_TRACKING_ID": "@inaba-jinja-ga-tracking-id"
     }
   },
