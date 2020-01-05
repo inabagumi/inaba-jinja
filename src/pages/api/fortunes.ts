@@ -26,6 +26,7 @@ export default (_: NextApiRequest, res: NextApiResponse): void => {
       const fortunes = entries.items.map(entry => entry.sys.id)
       const id = fortunes[Math.floor(Math.random() * fortunes.length)]
 
+      res.setHeader('Cache-Control', 'max-age=0, private')
       res.json({ id })
     })
     .catch(error => {
