@@ -1,19 +1,27 @@
 import Head from 'next/head'
 import React, { FC } from 'react'
-import Layout from '../components/templates/Layout'
+import SingleDoc from '../components/templates/SingleDoc'
 
 const Error: FC = () => {
+  const title = 'ページが見つかりません'
+
   return (
     <>
       <Head>
-        <title>ページが見つかりません</title>
+        <title>{title}</title>
       </Head>
 
-      <Layout>
-        <h1>ページが見つかりません</h1>
+      <SingleDoc title={title}>
+        <p className="message">
+          申し訳ありませんがお探しのページを見つけられませんでした。
+        </p>
+      </SingleDoc>
 
-        <p>申し訳ありませんがお探しのページを見つけられませんでした。</p>
-      </Layout>
+      <style jsx>{`
+        .message {
+          margin: 0;
+        }
+      `}</style>
     </>
   )
 }

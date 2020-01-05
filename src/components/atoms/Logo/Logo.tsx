@@ -1,24 +1,45 @@
-import React, { FC } from 'react'
+import clsx from 'clsx'
+import React, { FC, SVGProps } from 'react'
 import css from 'styled-jsx/css'
-import RawLogo from './Logo.svg'
+import HorizontalLogo from './horizontal.svg'
+import VerticalLogo from './vertical.svg'
 
 const { className, styles } = css.resolve`
-  svg {
+  .logo {
     display: inline-block;
     fill: currentColor;
-    height: auto;
+    height: 1em;
     line-height: 1;
     vertical-align: middle;
+    width: auto;
+  }
+
+  .logo--vertical {
+    height: auto;
     width: 1em;
   }
 `
 
-const Logo: FC = () => (
-  <>
-    <RawLogo className={className} xmlns={undefined} />
+type Props = {
+  vertical?: boolean
+} & SVGProps<SVGSVGElement>
 
-    {styles}
-  </>
-)
+const Logo: FC<Props> = ({ vertical = false, ...props }) => {
+  const RawLogo = vertical ? VerticalLogo : HorizontalLogo
+
+  return (
+    <>
+      <RawLogo
+        {...props}
+        className={clsx('logo', className, props.className, {
+          'logo--vertical': vertical
+        })}
+        xmlns={undefined}
+      />
+
+      {styles}
+    </>
+  )
+}
 
 export default Logo
