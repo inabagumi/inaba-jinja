@@ -5,7 +5,9 @@ const merge = require('webpack-merge')
 
 const nextConfig = {
   env: {
-    GA_TRACKING_ID: process.env.GA_TRACKING_ID || ''
+    CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN || '',
+    CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID || '',
+    GA_TRACKING_ID: process.env.GA_TRACKING_ID
   },
   experimental: {
     modern: true,
