@@ -2,6 +2,7 @@ import * as contentful from 'contentful'
 import { NextPage } from 'next'
 import React from 'react'
 import Meta from '../../components/atoms/Meta'
+import Fortune from '../../components/pages/Fortune'
 import FortuneFields from '../../types/FortuneFields'
 import Error from '../_error'
 
@@ -15,11 +16,13 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
   return (
     <>
       <Meta
-        description={`${fortune.fields.blessing} - ${fortune.fields.description}`}
+        description={fortune.fields.description}
         image={fortune.fields.card.fields.file.url}
         pathname={`/kuji/${fortune.sys.id}`}
         title={`${fortune.fields.blessing} - 因幡はねるくじ`}
       />
+
+      <Fortune fortune={fortune} />
     </>
   )
 }
