@@ -1,15 +1,15 @@
 import React, { FC } from 'react'
 import Meta from '../components/atoms/Meta'
-import ActualPrivacy from '../components/pages/Privacy'
+import Privacy from '../components/pages/Privacy'
 
-const Privacy: FC = () => {
+const PrivacyPage: FC = () => {
   return (
     <>
       <Meta pathname="/privacy" title="プライバシーポリシー" />
 
-      <ActualPrivacy />
+      <Privacy />
     </>
   )
 }
 
-export default Privacy
+export default PrivacyPage
