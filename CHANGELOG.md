@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.9.0](https://github.com/inabagumi/inaba-jinja/compare/v0.8.3...v0.9.0) (2020-01-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Replace to Next.js from GatsbyJS.
+
+### Features
+
+* replace to next.js ([#189](https://github.com/inabagumi/inaba-jinja/issues/189)) ([54950b9](https://github.com/inabagumi/inaba-jinja/commit/54950b988932abc7b451a1cf035af99357b77d3a))
+
+
+### Bug Fixes
+
+* **deps:** remove react-scroll ([#183](https://github.com/inabagumi/inaba-jinja/issues/183)) ([79a1bb0](https://github.com/inabagumi/inaba-jinja/commit/79a1bb052c254d3c1aba4cff6b950c6edf0e861c))
+
 ### [0.8.3](https://github.com/inabagumi/inaba-jinja/compare/v0.8.2...v0.8.3) (2019-12-30)
 
 
