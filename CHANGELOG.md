@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.1](https://github.com/inabagumi/inaba-jinja/compare/v0.9.0...v0.9.1) (2020-01-05)
+
+
+### Features
+
+* configure contentful ([#190](https://github.com/inabagumi/inaba-jinja/issues/190)) ([443c821](https://github.com/inabagumi/inaba-jinja/commit/443c821206f7ca7de9c019ef2a870477323acb22))
+* kuji! ([#191](https://github.com/inabagumi/inaba-jinja/issues/191)) ([6fa5e45](https://github.com/inabagumi/inaba-jinja/commit/6fa5e4573a2f3f95bfe4894a2964d02cdbb4ba23))
+
 ## [0.9.0](https://github.com/inabagumi/inaba-jinja/compare/v0.8.3...v0.9.0) (2020-01-05)
 
 
