@@ -32,7 +32,7 @@
       "headers": {
         "cache-control": "immutable, public, max-age=31536000"
       },
-      "src": "/(?:static/.+|.+\\.js)"
+      "src": "/_next/.+"
     },
     {
       "continue": true,
@@ -40,7 +40,7 @@
         "cache-control": "max-age=0",
         "service-worker-allowed": "/"
       },
-      "src": "/sw\\.js"
+      "src": "/service-worker\\.js"
     }
   ],
   "scope": "inabagumi",

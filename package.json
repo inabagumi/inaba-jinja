@@ -9,34 +9,30 @@
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.27",
-    "@emotion/styled": "^10.0.27",
-    "gatsby": "^2.18.17",
-    "gatsby-plugin-emotion": "^4.1.18",
-    "gatsby-plugin-google-analytics": "^2.1.31",
-    "gatsby-plugin-manifest": "^2.2.34",
-    "gatsby-plugin-nprogress": "^2.1.17",
-    "gatsby-plugin-offline": "^3.0.30",
-    "gatsby-plugin-react-helmet": "^3.1.18",
-    "gatsby-plugin-react-svg": "^2.1.2",
-    "gatsby-plugin-remove-trailing-slashes": "^2.1.17",
-    "gatsby-plugin-typescript": "^2.1.23",
+    "clsx": "^1.0.4",
+    "next": "^9.1.7",
+    "next-offline": "^5.0.0-beta.11",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-dom": "^16.12.0"
   },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
     "@inabagumi/eslint-config-react": "^5.0.0",
     "@inabagumi/prettier-config": "^1.1.0",
+    "@types/gtag.js": "^0.0.3",
     "@types/node": "^12.12.24",
     "@types/react": "^16.9.17",
-    "@types/react-helmet": "^5.0.15",
+    "@types/styled-jsx": "^2.2.8",
+    "@types/webpack-env": "^1.15.0",
     "conventional-github-releaser": "^3.1.3",
     "eslint": "^6.8.0",
+    "file-loader": "^5.0.2",
     "prettier": "^1.19.1",
+    "react-svg-loader": "^3.0.3",
     "standard-version": "^7.0.1",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "url-loader": "^3.0.0",
+    "webpack-merge": "^4.2.2"
   },
   "engines": {
     "node": "12.x"
@@ -51,8 +47,8 @@
     "url": "https://github.com/inabagumi/inaba-jinja.git"
   },
   "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
+    "build": "next build",
+    "dev": "next",
     "format": "prettier --write '**/*.{js,ts,tsx}'",
     "format-check": "prettier -c '**/*.{js,ts,tsx}'",
     "lint": "eslint --ext .js,.ts,.tsx .",

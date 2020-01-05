@@ -1,7 +1,6 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import Head from 'next/head'
 import React, { FC } from 'react'
-import Helmet from 'react-helmet'
-import SiteMetadata from '../../../types/SiteMetadata'
+import { homepage as siteUrl } from '../../../../package.json'
 
 type Props = {
   description?: string
@@ -10,30 +9,12 @@ type Props = {
   title?: string
 }
 
-type TData = {
-  site: {
-    siteMetadata: SiteMetadata
-  }
-}
-
 const Meta: FC<Props> = ({ description, image, pathname, title }) => {
-  const { site } = useStaticQuery<TData>(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            siteUrl
-          }
-        }
-      }
-    `
-  )
-
-  const url = new URL(pathname, site.siteMetadata.siteUrl).toString()
-  const imageUrl = image && new URL(image, site.siteMetadata.siteUrl).toString()
+  const url = new URL(pathname, siteUrl).toString()
+  const imageUrl = image && new URL(image, siteUrl).toString()
 
   return (
-    <Helmet>
+    <Head>
       <title>{title}</title>
       {description && <meta content={description} name="description" />}
 
@@ -49,7 +30,7 @@ const Meta: FC<Props> = ({ description, image, pathname, title }) => {
       />
 
       <link href={url} rel="canonical" />
-    </Helmet>
+    </Head>
   )
 }
 
