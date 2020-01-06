@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/inabagumi/inaba-jinja/compare/v1.0.0...v1.0.1) (2020-01-06)
+
+
+### Bug Fixes
+
+* add default loader for svg ([#205](https://github.com/inabagumi/inaba-jinja/issues/205)) ([9366ece](https://github.com/inabagumi/inaba-jinja/commit/9366ecedc65cec92577d1ead8fb9d6e000f9f8f2))
+
 ## [1.0.0](https://github.com/inabagumi/inaba-jinja/compare/v0.9.1...v1.0.0) (2020-01-05)
 
 
