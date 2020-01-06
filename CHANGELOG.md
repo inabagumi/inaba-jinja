@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/inabagumi/inaba-jinja/compare/v1.0.1...v1.0.2) (2020-01-06)
+
+
+### Bug Fixes
+
+* add description to home ([#210](https://github.com/inabagumi/inaba-jinja/issues/210)) ([4fe8b4f](https://github.com/inabagumi/inaba-jinja/commit/4fe8b4f66ba28b360809d36aa65a79f639fefaaa))
+* use raf ran gtag ([#211](https://github.com/inabagumi/inaba-jinja/issues/211)) ([52883aa](https://github.com/inabagumi/inaba-jinja/commit/52883aad9d3c0f908f7b22d3798d16e4e15c607d))
+* **deps:** update dependency contentful to ^7.11.4 ([#208](https://github.com/inabagumi/inaba-jinja/issues/208)) ([d0c1f38](https://github.com/inabagumi/inaba-jinja/commit/d0c1f38ce48ad11c34fa8779e898cdab9790cf26))
+
 ### [1.0.1](https://github.com/inabagumi/inaba-jinja/compare/v1.0.0...v1.0.1) (2020-01-06)
 
 
