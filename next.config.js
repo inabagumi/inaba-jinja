@@ -19,7 +19,7 @@ const nextConfig = {
     ]
   },
   generateEtags: false,
-  webpack: (config, { dev }) =>
+  webpack: (config, { defaultLoaders, dev }) =>
     merge(config, {
       module: {
         rules: [
@@ -42,6 +42,7 @@ const nextConfig = {
           {
             test: /\.svg$/,
             use: [
+              defaultLoaders.babel,
               {
                 loader: 'react-svg-loader',
                 options: {
