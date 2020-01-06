@@ -6,14 +6,16 @@ import React, { FC, useEffect } from 'react'
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
     const handleRouteChangeComplete = (url: string): void => {
-      if (!process.env.GA_TRACKING_ID) return
+      requestAnimationFrame(() => {
+        if (!process.env.GA_TRACKING_ID) return
 
-      /* eslint-disable @typescript-eslint/camelcase */
-      window.gtag('config', process.env.GA_TRACKING_ID, {
-        page_location: url,
-        page_title: document.title
+        /* eslint-disable @typescript-eslint/camelcase */
+        window.gtag('config', process.env.GA_TRACKING_ID, {
+          page_location: url,
+          page_title: document.title
+        })
+        /* eslint-enable @typescript-eslint/camelcase */
       })
-      /* eslint-enable @typescript-eslint/camelcase */
     }
 
     Router.events.on('routeChangeComplete', handleRouteChangeComplete)
