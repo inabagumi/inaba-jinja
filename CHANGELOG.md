@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/inabagumi/inaba-jinja/compare/v1.0.2...v1.0.3) (2020-01-07)
+
+
+### Features
+
+* configure sentry ([#214](https://github.com/inabagumi/inaba-jinja/issues/214)) ([405cc82](https://github.com/inabagumi/inaba-jinja/commit/405cc823905fcecbb4f488ff6055d5fec61bea84))
+
+
+### Bug Fixes
+
+* disable prefetch from layout ([#216](https://github.com/inabagumi/inaba-jinja/issues/216)) ([9da1dc6](https://github.com/inabagumi/inaba-jinja/commit/9da1dc63706c943e500b23d9f4ba79f20967cff3))
+
 ### [1.0.2](https://github.com/inabagumi/inaba-jinja/compare/v1.0.1...v1.0.2) (2020-01-06)
 
 
