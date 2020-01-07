@@ -19,7 +19,7 @@ const Footer: FC = () => {
         <nav className="footer__navigation">
           <ul>
             <li>
-              <Link href="/privacy">
+              <Link href="/privacy" prefetch={false}>
                 <a href="/privacy">プライバシーポリシー</a>
               </Link>
             </li>

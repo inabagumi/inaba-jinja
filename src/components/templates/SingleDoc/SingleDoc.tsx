@@ -12,7 +12,7 @@ const SingleDoc: FC<Props> = ({ children, title }) => (
     <Layout>
       <div className="wrapper">
         <header className="header">
-          <Link href="/">
+          <Link href="/" prefetch={false}>
             <a className="brand" href="/">
               <Logo aria-label="因幡神社" />
             </a>

@@ -19,7 +19,7 @@ const Home: FC = () => {
             </p>
           </header>
 
-          <Link href="/lottery" prefetch={false}>
+          <Link href="/lottery">
             <a className="lottery-button" href="/lottery" role="button">
               おみくじを引く
             </a>
