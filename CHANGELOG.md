@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/inabagumi/inaba-jinja/compare/v1.1.0...v1.1.1) (2020-01-07)
+
+
+### Bug Fixes
+
+* cleanup footer nav ([#233](https://github.com/inabagumi/inaba-jinja/issues/233)) ([6d5d96b](https://github.com/inabagumi/inaba-jinja/commit/6d5d96be5b791bbf0428dc7da27ff08307a3c0a5))
+
 ## [1.1.0](https://github.com/inabagumi/inaba-jinja/compare/v1.0.2...v1.1.0) (2020-01-07)
 
 
