@@ -1,7 +1,7 @@
 {
   "background_color": "#fafafa",
   "description": "因幡神社は因幡はねる様をご祭神としてお祀りする東京都北区赤羽のどこかにある神社です。",
-  "display": "minimal-ui",
+  "display": "standalone",
   "icons": [
     {
       "sizes": "192x192",
