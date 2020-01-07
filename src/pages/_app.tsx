@@ -2,6 +2,11 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import React, { FC, useEffect } from 'react'
+import * as Sentry from '../sentry'
+
+Sentry.init({
+  dsn: process.env.SENTRY_DSN
+})
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {

@@ -1,8 +1,11 @@
+import { NextPage } from 'next'
+import Error, { ErrorProps } from 'next/error'
 import Head from 'next/head'
-import React, { FC } from 'react'
+import React from 'react'
 import SingleDoc from '../components/templates/SingleDoc'
+import * as Sentry from '../sentry'
 
-const Error: FC = () => {
+const MyError: NextPage<ErrorProps> = () => {
   const title = 'ページが見つかりません'
 
   return (
@@ -26,4 +29,16 @@ const Error: FC = () => {
   )
 }
 
-export default Error
+MyError.getInitialProps = async ({
+  err,
+  res,
+  ...props
+}): Promise<ErrorProps> => {
+  if (res?.statusCode === 404) return { statusCode: 404 }
+
+  if (err) Sentry.captureException(err)
+
+  return Error.getInitialProps({ err, res, ...props })
+}
+
+export default MyError

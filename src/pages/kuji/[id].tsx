@@ -11,7 +11,7 @@ type Props = {
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
-  if (!fortune) return <Error />
+  if (!fortune) return <Error statusCode={404} />
 
   return (
     <>
