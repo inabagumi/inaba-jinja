@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
+const withSourceMaps = require('@zeit/next-source-maps')
 const withOffline = require('next-offline')
 const merge = require('webpack-merge')
 
@@ -7,7 +8,8 @@ const nextConfig = {
   env: {
     CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN || '',
     CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID || '',
-    GA_TRACKING_ID: process.env.GA_TRACKING_ID
+    GA_TRACKING_ID: process.env.GA_TRACKING_ID,
+    SENTRY_DSN: process.env.SENTRY_DSN
   },
   experimental: {
     modern: true,
@@ -26,6 +28,7 @@ const nextConfig = {
           {
             test: /\.(?:jpe?g|png|webp)$/,
             use: [
+              defaultLoaders.babel,
               {
                 loader: 'url-loader',
                 options: {
@@ -78,4 +81,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withOffline(nextConfig)
+module.exports = withSourceMaps()(withOffline(nextConfig))
