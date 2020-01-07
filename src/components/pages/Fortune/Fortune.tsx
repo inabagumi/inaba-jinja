@@ -7,7 +7,7 @@ const half = (number: number | undefined): number | undefined =>
   number && number / 2
 
 const getTweetLink = (fortune: FortuneEntry): string => {
-  const text = `わたしの運勢は『${fortune.fields.blessing}』でした！ あなたも挑戦してみてね`
+  const text = `わたしの運勢は『${fortune.fields.blessing}』でした！ あなたもおみくじを引いてみてね`
   const url = new URL('https://twitter.com/intent/tweet')
   url.searchParams.append('hashtags', 'ねるくじ')
   url.searchParams.append('related', 'Haneru_Inaba')
