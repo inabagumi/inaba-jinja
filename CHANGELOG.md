@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/inabagumi/inaba-jinja/compare/v1.0.2...v1.1.0) (2020-01-07)
+
+
+### Features
+
+* add owner information ([#226](https://github.com/inabagumi/inaba-jinja/issues/226)) ([2c5d806](https://github.com/inabagumi/inaba-jinja/commit/2c5d806f761a7154ac4c1d217c639f3abcf55662))
+* add release setting to sentry initializer ([#228](https://github.com/inabagumi/inaba-jinja/issues/228)) ([08c1e53](https://github.com/inabagumi/inaba-jinja/commit/08c1e537d3691ff6e70b644fc57649103bf1e569))
+* add sentry information to privacy policy ([#227](https://github.com/inabagumi/inaba-jinja/issues/227)) ([262aac9](https://github.com/inabagumi/inaba-jinja/commit/262aac926b066b4e40a620d53953d3da99271299))
+* change share text ([#229](https://github.com/inabagumi/inaba-jinja/issues/229)) ([47d2a0a](https://github.com/inabagumi/inaba-jinja/commit/47d2a0a29d930b6e2b24f5c157f467b9e76b9b84))
+* configure sentry ([#214](https://github.com/inabagumi/inaba-jinja/issues/214)) ([405cc82](https://github.com/inabagumi/inaba-jinja/commit/405cc823905fcecbb4f488ff6055d5fec61bea84))
+
+
+### Bug Fixes
+
+* change display mode to standalone ([#225](https://github.com/inabagumi/inaba-jinja/issues/225)) ([715f1b0](https://github.com/inabagumi/inaba-jinja/commit/715f1b08228d21226b87169c465358a0be4d62fc))
+* **deps:** update dependency contentful to ^7.12.0 ([#220](https://github.com/inabagumi/inaba-jinja/issues/220)) ([a051f82](https://github.com/inabagumi/inaba-jinja/commit/a051f8276f0565eaaa2adcd9f1b07e8d79e60f7e))
+* disable prefetch from layout ([#216](https://github.com/inabagumi/inaba-jinja/issues/216)) ([9da1dc6](https://github.com/inabagumi/inaba-jinja/commit/9da1dc63706c943e500b23d9f4ba79f20967cff3))
+
 ### [1.0.3](https://github.com/inabagumi/inaba-jinja/compare/v1.0.2...v1.0.3) (2020-01-07)
 
 
