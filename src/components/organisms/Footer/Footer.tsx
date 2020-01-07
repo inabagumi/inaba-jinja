@@ -5,19 +5,19 @@ const Footer: FC = () => {
   return (
     <>
       <footer className="footer">
-        <p className="copyright">
-          &copy; 2020{' '}
-          <a
-            href="https://haneru.dev/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Haneru Developers
-          </a>
-        </p>
+        <p className="copyright">&copy; 2020 Haneru Developers</p>
 
         <nav className="footer__navigation">
           <ul>
+            <li>
+              <a
+                href="https://haneru.dev/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                運営者情報
+              </a>
+            </li>
             <li>
               <Link href="/privacy" prefetch={false}>
                 <a href="/privacy">プライバシーポリシー</a>
