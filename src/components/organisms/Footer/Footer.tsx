@@ -32,15 +32,6 @@ const Footer: FC = () => {
           margin: 0;
         }
 
-        .copyright a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .copyright a:hover {
-          text-decoration: underline;
-        }
-
         .footer {
           align-items: flex-start;
           color: #eee;
@@ -58,9 +49,14 @@ const Footer: FC = () => {
         }
 
         .footer__navigation ul {
+          display: flex;
           list-style: none;
           margin: 0;
           padding: 0;
+        }
+
+        .footer__navigation li:not(:first-child) {
+          margin-left: 0.5em;
         }
       `}</style>
     </>
