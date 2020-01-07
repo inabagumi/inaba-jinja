@@ -44,7 +44,7 @@
   "homepage": "https://inaba-jinja.com",
   "license": "MIT",
   "main": "n/a",
-  "name": "@inabagumi/inaba-jinja",
+  "name": "inaba-jinja",
   "private": true,
   "repository": {
     "type": "git",
