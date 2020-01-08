@@ -24,12 +24,18 @@ const products = [
     website: 'https://hanerubeat.app/'
   },
   {
-    description:
-      '有閑喫茶 あにまーれのメンバーの動画を検索できるウェブサービスです。',
-    learnMore: 'docs/animare-search',
-    preview: require('./showcase/animare-search.png'),
-    title: 'あにまーれサーチ',
-    website: 'https://search.animare.cafe/'
+    description: '774 inc. 所属タレントの動画を検索できるウェブサービスです。',
+    learnMore: 'docs/shinju-date',
+    preview: require('./showcase/shinju-date.png'),
+    title: 'SHINJU DATE',
+    website: 'https://shinju.date/'
+  },
+  {
+    description: '因幡神社は東京都北区赤羽のどこかにある神社です。',
+    learnMore: 'docs/inaba-jinja',
+    preview: require('./showcase/inaba-jinja.jpg'),
+    title: '因幡神社',
+    website: 'https://inaba-jinja.com/'
   }
 ]
 

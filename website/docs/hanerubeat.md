@@ -13,8 +13,8 @@ import Image from '@theme/IdealImage'
 
 - [Node.js](https://nodejs.org/ja/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Vue.js](https://jp.vuejs.org/)
-- [Vue CLI](https://cli.vuejs.org/)
+- [React](https://ja.reactjs.org/)
+- [Create React App](https://create-react-app.dev/)
 
 ## 公開日
 

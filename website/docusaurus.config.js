@@ -47,8 +47,8 @@ module.exports = {
               to: 'docs/hanerubeat'
             },
             {
-              label: 'あにまーれ検索',
-              to: 'docs/animare-search'
+              label: 'SHINJU DATE',
+              to: 'docs/shinju-date'
             }
           ]
         },

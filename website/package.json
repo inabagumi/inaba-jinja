@@ -29,6 +29,9 @@
     "prettier": "^1.19.1",
     "typescript": "~3.7.4"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "eslintConfig": {
     "extends": [
       "@inabagumi/react"

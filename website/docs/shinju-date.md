@@ -1,13 +1,13 @@
 ---
-title: あにまーれサーチ
+title: SHINJU DATE
 ---
 
 import Image from '@theme/IdealImage'
 
-<Image alt="あにまーれサーチ" img={require('../src/data/showcase/animare-search.png')} />
+<Image alt="SHINJU DATE" img={require('../src/data/showcase/shinju-date.png')} />
 
-- [search.animare.cafe](https://search.animare.cafe/)
-- [リポジトリ (inabagumi/animare-search)](https://github.com/inabagumi/animare-search)
+- [shinju.date](https://shinju.date/)
+- [リポジトリ (inabagumi/shinju-date)](https://github.com/inabagumi/shinju-date)
 
 ## 使用技術
 
