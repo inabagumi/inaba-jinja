@@ -8,6 +8,7 @@ import Image from '@theme/IdealImage'
 
 - [shinju.date](https://shinju.date/)
 - [リポジトリ (inabagumi/shinju-date)](https://github.com/inabagumi/shinju-date)
+- [リポジトリ (inabagumi/pinkie)](https://github.com/inabagumi/pinkie)
 
 ## 使用技術
 
@@ -15,6 +16,8 @@ import Image from '@theme/IdealImage'
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
+- [Go](https://golang.org/)
+- [YouTube Data API](https://developers.google.com/youtube/v3/getting-started?hl=ja)
 
 ## 公開日
 
