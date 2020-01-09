@@ -31,6 +31,13 @@ const products = [
     website: 'https://shinju.date/'
   },
   {
+    description: 'Twitter ',
+    learnMore: 'docs/graph',
+    preview: require('./showcase/graph.jpg'),
+    title: 'graph.haneru.dev',
+    website: 'https://graph.haneru.dev/'
+  },
+  {
     description: '因幡神社は東京都北区赤羽のどこかにある神社です。',
     learnMore: 'docs/inaba-jinja',
     preview: require('./showcase/inaba-jinja.jpg'),

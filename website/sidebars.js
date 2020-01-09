@@ -6,6 +6,7 @@ module.exports = {
       'animare-shindan',
       'hanerubeat',
       'shinju-date',
+      'graph',
       'inaba-jinja'
     ],
     'npm パッケージ': ['eslint-config', 'prettier-config', 'renovate-config']

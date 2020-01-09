@@ -49,6 +49,14 @@ module.exports = {
             {
               label: 'SHINJU DATE',
               to: 'docs/shinju-date'
+            },
+            {
+              label: 'graph.haneru.dev',
+              to: 'docs/graph'
+            },
+            {
+              label: '因幡神社',
+              to: 'docs/inaba-jinja'
             }
           ]
         },
