@@ -25,7 +25,7 @@
       "continue": true,
       "headers": {
         "cache-control": "max-age=600, public, s-maxage=120, stale-if-error=600, stale-while-revalidate=300",
-        "content-security-policy": "base-uri 'none'; connect-src 'self' https:; default-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://images.ctfassets.net data:; manifest-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com; style-src 'unsafe-inline'; worker-src 'self'",
+        "content-security-policy": "base-uri 'none'; connect-src 'self' https:; default-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self' https: data:; manifest-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com; style-src 'unsafe-inline'; worker-src 'self'",
         "referrer-policy": "same-origin, strict-origin-when-cross-origin"
       },
       "src": "/.*"
