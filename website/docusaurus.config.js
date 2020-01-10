@@ -66,6 +66,10 @@ module.exports = {
             {
               href: 'https://github.com/inabagumi',
               label: 'GitHub'
+            },
+            {
+              href: 'https://discord.gg/d9V3PSj',
+              label: 'Discord'
             }
           ]
         }
