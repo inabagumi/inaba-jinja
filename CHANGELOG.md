@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/inabagumi/inaba-jinja/compare/v1.0.3...v1.1.2) (2020-01-10)
+
+
+### Features
+
+* add owner information ([#226](https://github.com/inabagumi/inaba-jinja/issues/226)) ([2c5d806](https://github.com/inabagumi/inaba-jinja/commit/2c5d806f761a7154ac4c1d217c639f3abcf55662))
+* add release setting to sentry initializer ([#228](https://github.com/inabagumi/inaba-jinja/issues/228)) ([08c1e53](https://github.com/inabagumi/inaba-jinja/commit/08c1e537d3691ff6e70b644fc57649103bf1e569))
+* add sentry information to privacy policy ([#227](https://github.com/inabagumi/inaba-jinja/issues/227)) ([262aac9](https://github.com/inabagumi/inaba-jinja/commit/262aac926b066b4e40a620d53953d3da99271299))
+* change share text ([#229](https://github.com/inabagumi/inaba-jinja/issues/229)) ([47d2a0a](https://github.com/inabagumi/inaba-jinja/commit/47d2a0a29d930b6e2b24f5c157f467b9e76b9b84))
+
+
+### Bug Fixes
+
+* **csp:** always pass https images ([#241](https://github.com/inabagumi/inaba-jinja/issues/241)) ([26ff49f](https://github.com/inabagumi/inaba-jinja/commit/26ff49f24fc0592a27652f9e1bfb56cec6157bb8))
+* **deps:** update dependency contentful to ^7.12.0 ([#220](https://github.com/inabagumi/inaba-jinja/issues/220)) ([a051f82](https://github.com/inabagumi/inaba-jinja/commit/a051f8276f0565eaaa2adcd9f1b07e8d79e60f7e))
+* **deps:** update dependency contentful to ^7.12.1 ([#238](https://github.com/inabagumi/inaba-jinja/issues/238)) ([e2eadc0](https://github.com/inabagumi/inaba-jinja/commit/e2eadc0a0ecff7a4dcf2bbce4059b6f0739a5317))
+* **deps:** update dependency contentful to ^7.13.0 ([#239](https://github.com/inabagumi/inaba-jinja/issues/239)) ([74d50d1](https://github.com/inabagumi/inaba-jinja/commit/74d50d103bd918e7960a968f96bcd42b6bfc2656))
+* **deps:** update sentry monorepo to ^5.11.0 ([#237](https://github.com/inabagumi/inaba-jinja/issues/237)) ([46c7e0f](https://github.com/inabagumi/inaba-jinja/commit/46c7e0f2c2310a76bb511e273630071adeff8029))
+* change display mode to standalone ([#225](https://github.com/inabagumi/inaba-jinja/issues/225)) ([715f1b0](https://github.com/inabagumi/inaba-jinja/commit/715f1b08228d21226b87169c465358a0be4d62fc))
+* cleanup footer nav ([#233](https://github.com/inabagumi/inaba-jinja/issues/233)) ([6d5d96b](https://github.com/inabagumi/inaba-jinja/commit/6d5d96be5b791bbf0428dc7da27ff08307a3c0a5))
+
 ### [1.1.1](https://github.com/inabagumi/inaba-jinja/compare/v1.1.0...v1.1.1) (2020-01-07)
 
 
