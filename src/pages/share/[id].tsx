@@ -1,15 +1,14 @@
-import * as contentful from 'contentful'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import Meta from '../../components/atoms/Meta'
-import FortuneFields from '../../types/FortuneFields'
+import FortuneEntry from '../../types/FortuneEntry'
 import KujiPage from '../kuji/[id]'
 import { homepage as siteUrl } from '../../../package.json'
 
 type Props = {
-  fortune?: contentful.Entry<FortuneFields>
+  fortune?: FortuneEntry
 }
 
 const SharePage: NextPage<Props> = ({ fortune }) => {
