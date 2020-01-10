@@ -3,11 +3,12 @@ import { NextPage } from 'next'
 import React from 'react'
 import Meta from '../../components/atoms/Meta'
 import Fortune from '../../components/pages/Fortune'
+import FortuneEntry from '../../types/FortuneEntry'
 import FortuneFields from '../../types/FortuneFields'
 import Error from '../_error'
 
 type Props = {
-  fortune?: contentful.Entry<FortuneFields>
+  fortune?: FortuneEntry
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {

@@ -1,6 +1,6 @@
-import * as contentful from 'contentful'
+import { Entry } from 'contentful'
 import FortuneFields from './FortuneFields'
 
-type FortuneEntry = contentful.Entry<FortuneFields>
+type FortuneEntry = Entry<FortuneFields>
 
 export default FortuneEntry
