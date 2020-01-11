@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/inabagumi/inaba-jinja/compare/v1.1.1...v1.2.0) (2020-01-11)
+
+
+### Features
+
+* **perf:** change kuji image for each dpi ([#260](https://github.com/inabagumi/inaba-jinja/issues/260)) ([3dc88e2](https://github.com/inabagumi/inaba-jinja/commit/3dc88e23de2e64eca5527ca0e692572751db87f9))
+* add disclaimer ([#255](https://github.com/inabagumi/inaba-jinja/issues/255)) ([35245e1](https://github.com/inabagumi/inaba-jinja/commit/35245e17cd3a3b53cff1b851e5963f64902503fe))
+* improve error handling ([#257](https://github.com/inabagumi/inaba-jinja/issues/257)) ([d356a2e](https://github.com/inabagumi/inaba-jinja/commit/d356a2e5179f71e715f8a9cf56ee42a5953622b3))
+
+
+### Bug Fixes
+
+* **disclaimer:** add missing files ([#258](https://github.com/inabagumi/inaba-jinja/issues/258)) ([4bc07a9](https://github.com/inabagumi/inaba-jinja/commit/4bc07a9105d38645b73d189c4e4d0fe8d25cf2de))
+* more padding-bottom to footer ([#253](https://github.com/inabagumi/inaba-jinja/issues/253)) ([bbe6d61](https://github.com/inabagumi/inaba-jinja/commit/bbe6d616c93da703fdc12c691a3ca1e86ad7892d))
+* **csp:** always pass https images ([#241](https://github.com/inabagumi/inaba-jinja/issues/241)) ([26ff49f](https://github.com/inabagumi/inaba-jinja/commit/26ff49f24fc0592a27652f9e1bfb56cec6157bb8))
+* **deps:** update dependency contentful to ^7.12.1 ([#238](https://github.com/inabagumi/inaba-jinja/issues/238)) ([e2eadc0](https://github.com/inabagumi/inaba-jinja/commit/e2eadc0a0ecff7a4dcf2bbce4059b6f0739a5317))
+* **deps:** update dependency contentful to ^7.13.0 ([#239](https://github.com/inabagumi/inaba-jinja/issues/239)) ([74d50d1](https://github.com/inabagumi/inaba-jinja/commit/74d50d103bd918e7960a968f96bcd42b6bfc2656))
+* **deps:** update sentry monorepo to ^5.11.0 ([#237](https://github.com/inabagumi/inaba-jinja/issues/237)) ([46c7e0f](https://github.com/inabagumi/inaba-jinja/commit/46c7e0f2c2310a76bb511e273630071adeff8029))
+
 ### [1.1.2](https://github.com/inabagumi/inaba-jinja/compare/v1.0.3...v1.1.2) (2020-01-10)
 
 
