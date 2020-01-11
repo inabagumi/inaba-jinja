@@ -1,13 +1,15 @@
 import * as contentful from 'contentful'
 import { NextApiRequest, NextApiResponse } from 'next'
+import * as Sentry from '../../sentry'
 
 export default (_: NextApiRequest, res: NextApiResponse): void => {
+  res.setHeader('Cache-Control', 'max-age=0, private')
+
   if (
     !process.env.CONTENTFUL_ACCESS_TOKEN ||
     !process.env.CONTENTFUL_SPACE_ID
   ) {
-    res.writeHead(500)
-    res.json({ error: 'Internal Server Error' })
+    res.status(500).json({ error: 'Internal Server Error' })
     return
   }
 
@@ -26,11 +28,11 @@ export default (_: NextApiRequest, res: NextApiResponse): void => {
       const fortunes = entries.items.map(entry => entry.sys.id)
       const id = fortunes[Math.floor(Math.random() * fortunes.length)]
 
-      res.setHeader('Cache-Control', 'max-age=0, private')
       res.json({ id })
     })
     .catch(error => {
-      res.writeHead(500)
-      res.json({ error: error.message })
+      Sentry.captureException(error)
+
+      res.status(500).json({ error: error.message })
     })
 }

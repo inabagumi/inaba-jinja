@@ -5,8 +5,12 @@ import React from 'react'
 import SingleDoc from '../components/templates/SingleDoc'
 import * as Sentry from '../sentry'
 
-const MyError: NextPage<ErrorProps> = () => {
-  const title = 'ページが見つかりません'
+const MyError: NextPage<ErrorProps> = ({ statusCode }) => {
+  const title = statusCode === 404 ? 'ページが見つかりません' : '内部エラー'
+  const message =
+    statusCode === 404
+      ? '申し訳ありませんがお探しのページを見つけられませんでした。'
+      : '内部的になんらかのエラーが発生したためページを表示することができません。しばらく時間を開けてから再度お越しください。'
 
   return (
     <>
@@ -15,9 +19,7 @@ const MyError: NextPage<ErrorProps> = () => {
       </Head>
 
       <SingleDoc title={title}>
-        <p className="message">
-          申し訳ありませんがお探しのページを見つけられませんでした。
-        </p>
+        <p className="message">{message}</p>
       </SingleDoc>
 
       <style jsx>{`
