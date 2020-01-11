@@ -45,6 +45,7 @@ const Footer: FC = () => {
         @media (min-width: 960px) {
           .footer {
             flex-direction: row;
+            padding-bottom: 0.5rem;
           }
         }
 
