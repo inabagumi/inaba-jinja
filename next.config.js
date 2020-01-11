@@ -47,15 +47,10 @@ const nextConfig = {
             use: [
               defaultLoaders.babel,
               {
-                loader: 'react-svg-loader',
+                loader: '@svgr/webpack',
                 options: {
-                  svgo: {
-                    plugins: [
-                      {
-                        removeViewBox: false
-                      }
-                    ]
-                  }
+                  babel: false,
+                  dimensions: false
                 }
               }
             ]
