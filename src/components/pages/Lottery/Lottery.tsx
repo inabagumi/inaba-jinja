@@ -33,6 +33,7 @@ const Lottery: FC = () => {
           return fortune.id
         })
     ])
+      .then(values => values[1])
       .then(id => {
         router.replace('/kuji/[id]', `/kuji/${id}`)
       })
