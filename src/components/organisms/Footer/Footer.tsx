@@ -39,7 +39,7 @@ const Footer: FC = () => {
           flex-direction: column;
           font-size: 0.85rem;
           justify-content: space-between;
-          padding: 2rem 1rem 0.5rem;
+          padding: 2rem 1rem 1.5rem;
         }
 
         @media (min-width: 960px) {
