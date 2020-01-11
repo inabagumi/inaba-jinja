@@ -19,6 +19,11 @@ const Footer: FC = () => {
               </a>
             </li>
             <li>
+              <Link href="/disclaimer" prefetch={false}>
+                <a href="/disclaimer">免責事項</a>
+              </Link>
+            </li>
+            <li>
               <Link href="/privacy" prefetch={false}>
                 <a href="/privacy">プライバシーポリシー</a>
               </Link>
