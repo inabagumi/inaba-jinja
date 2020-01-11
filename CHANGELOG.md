@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/inabagumi/inaba-jinja/compare/v1.2.0...v1.2.1) (2020-01-11)
+
+
+### Bug Fixes
+
+* lottery bug ([#261](https://github.com/inabagumi/inaba-jinja/issues/261)) ([6d80806](https://github.com/inabagumi/inaba-jinja/commit/6d808062c40b75a5dbfb6f29c706ab23b268c5d7))
+
 ## [1.2.0](https://github.com/inabagumi/inaba-jinja/compare/v1.1.1...v1.2.0) (2020-01-11)
 
 
