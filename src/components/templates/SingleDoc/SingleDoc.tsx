@@ -41,7 +41,7 @@ const SingleDoc: FC<Props> = ({ children, title }) => (
         background-color: rgba(38, 50, 56, 0.7);
         border-radius: 1rem;
         margin: 1rem auto;
-        min-height: 20rem;
+        min-height: 70vh;
         max-width: 100%;
         padding: 1rem 1rem 2rem;
         width: 800px;
