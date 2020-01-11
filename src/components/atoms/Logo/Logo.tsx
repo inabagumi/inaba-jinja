@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import React, { FC, SVGProps } from 'react'
 import css from 'styled-jsx/css'
-import HorizontalLogo from './horizontal.svg'
-import VerticalLogo from './vertical.svg'
+import HorizontalLogo from '../../../assets/logo.svg'
+import VerticalLogo from '../../../assets/vertical-logo.svg'
 
 const { className, styles } = css.resolve`
   .logo {
@@ -34,7 +34,6 @@ const Logo: FC<Props> = ({ vertical = false, ...props }) => {
         className={clsx('logo', className, props.className, {
           'logo--vertical': vertical
         })}
-        xmlns={undefined}
       />
 
       {styles}
