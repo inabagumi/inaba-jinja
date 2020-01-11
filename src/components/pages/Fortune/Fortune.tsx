@@ -22,18 +22,31 @@ type Props = {
 }
 
 const Fortune: FC<Props> = ({ fortune }) => {
+  const imageDetails = fortune.fields.paper.fields.file.details.image
+  const imageWidth = half(imageDetails?.width)
+  const imageHeight = half(imageDetails?.height)
+  const imageURL = `https:${fortune.fields.paper.fields.file.url}`
+
   return (
     <>
       <SingleDoc
         title={`第${fortune.fields.number}番 ${fortune.fields.blessing}`}
       >
-        <img
-          alt={`${fortune.fields.blessing} - ${fortune.fields.description}`}
-          className="fortune-paper"
-          height={half(fortune.fields.paper.fields.file.details.image?.height)}
-          src={`https:${fortune.fields.paper.fields.file.url}`}
-          width={half(fortune.fields.paper.fields.file.details.image?.width)}
-        />
+        <picture>
+          <source
+            srcSet={`${imageURL}?fm=webp&w=254 1x, ${imageURL}?fm=webp 2x`}
+            type="image/webp"
+          />
+
+          <img
+            alt={`${fortune.fields.blessing} - ${fortune.fields.description}`}
+            className="fortune-paper"
+            height={imageHeight}
+            src={`${imageURL}w=${imageWidth}`}
+            srcSet={`${imageURL}?w=254 1x, ${imageURL} 2x`}
+            width={imageWidth}
+          />
+        </picture>
 
         <nav className="share-links">
           <ul>
