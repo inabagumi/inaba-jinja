@@ -79,13 +79,23 @@ const Fortune: FC<Props> = ({ fortune }) => {
           border-radius: 1rem;
           color: #fff;
           display: inline-block;
+          font-size: 0.95rem;
+          font-weight: 700;
+          letter-spacing: 0.025em;
           line-height: 1;
           padding: 0.5rem 1.5rem;
           text-decoration: none;
         }
 
         .share-button--twitter {
-          background-color: #00aced;
+          background-color: #1da1f2;
+          border-color: #1da1f2;
+          transition: background-color ease 0.3s, border-color ease 0.3s;
+        }
+
+        .share-button--twitter:hover {
+          background-color: #005fd1;
+          border-color: #005fd1;
         }
 
         .share-links {
