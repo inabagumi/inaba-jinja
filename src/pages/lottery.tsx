@@ -7,7 +7,7 @@ const LotteryPage: NextPage = () => (
   <>
     <Head>
       <meta content="noarchive, noindex" name="robots" />
-      <title>くじを引く - 因幡神社</title>
+      <title>おみくじを引いています...</title>
     </Head>
 
     <Lottery />

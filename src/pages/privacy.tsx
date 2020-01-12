@@ -5,7 +5,7 @@ import Privacy from '../components/pages/Privacy'
 const PrivacyPage: FC = () => {
   return (
     <>
-      <Meta pathname="/privacy" title="プライバシーポリシー" />
+      <Meta pathname="/privacy" title="プライバシーポリシー - 因幡神社" />
 
       <Privacy />
     </>
