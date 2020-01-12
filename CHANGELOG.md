@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/inabagumi/inaba-jinja/compare/v1.2.1...v1.2.2) (2020-01-12)
+
+
+### Bug Fixes
+
+* **kuji:** more contrast for tweet button ([#264](https://github.com/inabagumi/inaba-jinja/issues/264)) ([79c258c](https://github.com/inabagumi/inaba-jinja/commit/79c258c44424f998d8ee960d055262d215068ec2))
+* **lottery:** improve title ([#265](https://github.com/inabagumi/inaba-jinja/issues/265)) ([09ca7dd](https://github.com/inabagumi/inaba-jinja/commit/09ca7dd0ef044e3b22afa8ee037b68b96f45a9c2))
+
 ### [1.2.1](https://github.com/inabagumi/inaba-jinja/compare/v1.2.0...v1.2.1) (2020-01-11)
 
 
