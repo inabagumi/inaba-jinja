@@ -53,9 +53,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier --write '**/*.{js,ts,tsx}'",
-    "format-check": "prettier -c '**/*.{js,ts,tsx}'",
-    "lint": "eslint --ext .js,.ts,.tsx .",
+    "format": "prettier --ignore-path .gitignore --write '**/*.{js,ts,tsx}'",
+    "format-check": "prettier -c --ignore-path .gitignore '**/*.{js,ts,tsx}'",
+    "lint": "eslint --ext .js,.ts,.tsx --ignore-path .gitignore .",
     "release": "standard-version",
     "start": "next start"
   },
