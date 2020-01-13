@@ -9,7 +9,6 @@
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
   "dependencies": {
-    "@inabagumi/next-svg": "^2.1.1",
     "@sentry/browser": "^5.11.0",
     "@sentry/node": "^5.11.0",
     "clsx": "^1.0.4",
@@ -22,6 +21,7 @@
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
     "@inabagumi/eslint-config-react": "^5.0.0",
+    "@inabagumi/next-svg": "^2.1.1",
     "@inabagumi/prettier-config": "^1.1.0",
     "@types/gtag.js": "^0.0.3",
     "@types/node": "^12.12.24",
@@ -41,10 +41,15 @@
   "engines": {
     "node": "12.x"
   },
+  "eslintConfig": {
+    "extends": ["@inabagumi/react"],
+    "root": true
+  },
   "homepage": "https://inaba-jinja.com",
   "license": "MIT",
   "main": "n/a",
   "name": "inaba-jinja",
+  "prettier": "@inabagumi/prettier-config",
   "private": true,
   "repository": {
     "type": "git",
