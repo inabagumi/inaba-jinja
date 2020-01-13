@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
+const { default: withSvg } = require('@inabagumi/next-svg')
 const withSourceMaps = require('@zeit/next-source-maps')
 const withOffline = require('next-offline')
 const merge = require('webpack-merge')
@@ -21,6 +22,9 @@ const nextConfig = {
     ]
   },
   generateEtags: false,
+  svgrOptions: {
+    dimensions: false
+  },
   webpack: (config, { defaultLoaders, dev }) =>
     merge(config, {
       module: {
@@ -38,19 +42,6 @@ const nextConfig = {
                     : '[name].[contenthash:8].[ext]',
                   outputPath: 'static/images',
                   publicPath: '/_next/static/images'
-                }
-              }
-            ]
-          },
-          {
-            test: /\.svg$/,
-            use: [
-              defaultLoaders.babel,
-              {
-                loader: '@svgr/webpack',
-                options: {
-                  babel: false,
-                  dimensions: false
                 }
               }
             ]
@@ -76,4 +67,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withSourceMaps()(withOffline(nextConfig))
+module.exports = withSourceMaps()(withSvg(withOffline(nextConfig)))
