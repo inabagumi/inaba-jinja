@@ -23,6 +23,9 @@
     "standard-version": "^7.0.1",
     "typescript": "~3.7.4"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "eslintConfig": {
     "extends": [
       "@inabagumi/react"
