@@ -1,0 +1,13 @@
+.logo {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  line-height: 1;
+  vertical-align: middle;
+  width: auto;
+}
+
+.logoVertical {
+  height: auto;
+  width: 1em;
+}

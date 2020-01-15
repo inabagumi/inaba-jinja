@@ -1,0 +1,44 @@
+.paper {
+  background-color: #fff;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.shareButton {
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 1;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+.shareButtonTwitter {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+  transition: background-color ease 0.3s, border-color ease 0.3s;
+}
+
+.shareButtonTwitter:hover {
+  background-color: #005fd1;
+  border-color: #005fd1;
+}
+
+.shareLinks {
+  margin-top: 3rem;
+}
+
+.shareLinks ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

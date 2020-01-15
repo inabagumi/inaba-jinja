@@ -2,6 +2,8 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import React, { FC, useEffect } from 'react'
+import Layout from '../components/templates/Layout'
+import '../styles.css'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -50,7 +52,9 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         />
       </Head>
 
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }

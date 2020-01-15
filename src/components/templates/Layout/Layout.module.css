@@ -1,0 +1,11 @@
+.content {
+  flex-grow: 1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
