@@ -1,6 +1,5 @@
 .cover {
   background-color: transparent;
-  background-image: url("../../../assets/main-visual@lqip.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,12 +8,6 @@
   position: absolute;
   right: 0;
   top: 0;
-}
-
-@media (orientation: portrait) {
-  .cover {
-    background-image: url("../../../assets/vertical-main-visual@lqip.jpg");
-  }
 }
 
 .cover::after {

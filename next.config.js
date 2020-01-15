@@ -3,7 +3,6 @@
 const { default: withSvg } = require('@inabagumi/next-svg')
 const withSourceMaps = require('@zeit/next-source-maps')
 const withOffline = require('next-offline')
-const merge = require('webpack-merge')
 const { name: packageName, version } = require('./package.json')
 
 const nextConfig = {
@@ -28,30 +27,27 @@ const nextConfig = {
   svgrOptions: {
     dimensions: false
   },
-  webpack: (config, { defaultLoaders, dev }) =>
-    merge(config, {
-      module: {
-        rules: [
-          {
-            test: /\.(?:jpe?g|png|webp)$/,
-            use: [
-              defaultLoaders.babel,
-              {
-                loader: 'url-loader',
-                options: {
-                  limit: 8192,
-                  name: dev
-                    ? '[name].[ext]?[contenthash:8]'
-                    : '[name].[contenthash:8].[ext]',
-                  outputPath: 'static/images',
-                  publicPath: '/_next/static/images'
-                }
-              }
-            ]
+  webpack: (config, { defaultLoaders, dev }) => {
+    config.module.rules.push({
+      test: /\.(?:jpe?g|png|webp)$/,
+      use: [
+        defaultLoaders.babel,
+        {
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
+            name: dev
+              ? '[name].[ext]?[contenthash:8]'
+              : '[name].[contenthash:8].[ext]',
+            outputPath: 'static/images',
+            publicPath: '/_next/static/images'
           }
-        ]
-      }
-    }),
+        }
+      ]
+    })
+
+    return config
+  },
   workboxOpts: {
     clientsClaim: true,
     manifestTransforms: [
