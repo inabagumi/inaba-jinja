@@ -3,6 +3,7 @@ import React, { FC, useEffect, useState } from 'react'
 import kujiImage from '../../../assets/kuji.png'
 import Error from '../../../pages/_error'
 import SingleDoc from '../../templates/SingleDoc'
+import styles from './Lottery.module.css'
 
 const sleep = (seconds: number): Promise<void> =>
   new Promise(resolve => {
@@ -45,42 +46,17 @@ const Lottery: FC = () => {
   if (hasError) return <Error statusCode={500} />
 
   return (
-    <>
-      <SingleDoc>
-        <p>
-          <img
-            alt="くじ引き中..."
-            className="lot-image"
-            height="290"
-            src={kujiImage}
-            width="225"
-          />
-        </p>
-      </SingleDoc>
-
-      <style jsx>{`
-        @keyframes shake {
-          0% {
-            transform: translateY(0) rotate(180deg);
-          }
-
-          50% {
-            transform: translateY(20px) rotate(170deg);
-          }
-
-          0% {
-            transform: translateY(0) rotate(180deg);
-          }
-        }
-
-        .lot-image {
-          animation: shake 0.5s infinite;
-          display: block;
-          margin: 0 auto;
-          transform: translateY(0) rotate(180deg);
-        }
-      `}</style>
-    </>
+    <SingleDoc>
+      <p>
+        <img
+          alt="くじ引き中..."
+          className={styles.image}
+          height="290"
+          src={kujiImage}
+          width="225"
+        />
+      </p>
+    </SingleDoc>
   )
 }
 

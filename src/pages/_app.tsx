@@ -3,7 +3,9 @@ import Head from 'next/head'
 import Router from 'next/router'
 import React, { FC, useEffect } from 'react'
 import { name as packageName, version } from '../../package.json'
+import Layout from '../components/templates/Layout'
 import * as Sentry from '../sentry'
+import '../styles.css'
 
 Sentry.init({
   dsn: process.env.SENTRY_DSN,
@@ -57,7 +59,9 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         />
       </Head>
 
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }

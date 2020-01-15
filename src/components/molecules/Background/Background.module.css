@@ -1,0 +1,54 @@
+.cover {
+  background-color: transparent;
+  background-image: url("../../../assets/main-visual@lqip.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (orientation: portrait) {
+  .cover {
+    background-image: url("../../../assets/vertical-main-visual@lqip.jpg");
+  }
+}
+
+.cover::after {
+  background-color: var(--hero-overlay-color);
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cover__image {
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.root {
+  --hero-overlay-color: rgba(0, 0, 0, 0.54);
+
+  background-color: var(--hero-overlay-color);
+  color: #fff;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
