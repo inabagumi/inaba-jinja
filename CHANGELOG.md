@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/inabagumi/inaba-jinja/compare/v1.2.2...v1.2.3) (2020-01-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency contentful to ^7.13.1 ([#271](https://github.com/inabagumi/inaba-jinja/issues/271)) ([934cb25](https://github.com/inabagumi/inaba-jinja/commit/934cb25acf5e0a9ca2a62750e58ab836b6e74d5d))
+* **deps:** update dependency next to ^9.2.0 ([#273](https://github.com/inabagumi/inaba-jinja/issues/273)) ([16710a8](https://github.com/inabagumi/inaba-jinja/commit/16710a8b95299314389ba63c824ae4bbe9bf3e29))
+* **deps:** update sentry monorepo to ^5.11.1 ([#272](https://github.com/inabagumi/inaba-jinja/issues/272)) ([b39b413](https://github.com/inabagumi/inaba-jinja/commit/b39b4132f1f01e7a6d897cbb9cca243d08be5d56))
+
 ### [1.2.2](https://github.com/inabagumi/inaba-jinja/compare/v1.2.1...v1.2.2) (2020-01-12)
 
 
