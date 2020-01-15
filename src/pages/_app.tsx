@@ -2,15 +2,8 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import React, { FC, useEffect } from 'react'
-import { name as packageName, version } from '../../package.json'
 import Layout from '../components/templates/Layout'
-import * as Sentry from '../sentry'
 import '../styles.css'
-
-Sentry.init({
-  dsn: process.env.SENTRY_DSN,
-  release: `${packageName}@${version}`
-})
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
