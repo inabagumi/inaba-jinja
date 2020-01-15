@@ -3,7 +3,6 @@ import Error, { ErrorProps } from 'next/error'
 import Head from 'next/head'
 import React from 'react'
 import SingleDoc from '../components/templates/SingleDoc'
-import * as Sentry from '../sentry'
 
 const MyError: NextPage<ErrorProps> = ({ statusCode }) => {
   const title = statusCode === 404 ? 'ページが見つかりません' : '内部エラー'
@@ -37,8 +36,6 @@ MyError.getInitialProps = async ({
   ...props
 }): Promise<ErrorProps> => {
   if (res?.statusCode === 404) return { statusCode: 404 }
-
-  if (err) Sentry.captureException(err)
 
   return Error.getInitialProps({ err, res, ...props })
 }

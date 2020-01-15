@@ -1,6 +1,6 @@
 import * as contentful from 'contentful'
 import { NextApiRequest, NextApiResponse } from 'next'
-import * as Sentry from '../../sentry'
+import * as Sentry from '@sentry/node'
 
 export default (_: NextApiRequest, res: NextApiResponse): void => {
   res.setHeader('Cache-Control', 'max-age=0, private')
