@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.4](https://github.com/inabagumi/inaba-jinja/compare/v1.2.3...v1.2.4) (2020-01-15)
+
+
+### Bug Fixes
+
+* add self to style-src ([#277](https://github.com/inabagumi/inaba-jinja/issues/277)) ([46fddb4](https://github.com/inabagumi/inaba-jinja/commit/46fddb4feddd5e24a5990dee5b77e64ae1591dab))
+
 ### [1.2.3](https://github.com/inabagumi/inaba-jinja/compare/v1.2.2...v1.2.3) (2020-01-15)
 
 
