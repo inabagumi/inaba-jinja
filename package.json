@@ -9,8 +9,7 @@
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
   "dependencies": {
-    "@sentry/browser": "^5.11.1",
-    "@sentry/node": "^5.11.1",
+    "@next/plugin-sentry": "^9.2.0",
     "clsx": "^1.0.4",
     "contentful": "^7.13.1",
     "next": "^9.2.0",
@@ -42,7 +41,9 @@
     "node": "12.x"
   },
   "eslintConfig": {
-    "extends": ["@inabagumi/react"],
+    "extends": [
+      "@inabagumi/react"
+    ],
     "root": true
   },
   "homepage": "https://inaba-jinja.com",
