@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/inabagumi/inaba-jinja/compare/v1.2.4...v1.2.5) (2020-01-16)
+
+
+### Bug Fixes
+
+* use lqip image ([#278](https://github.com/inabagumi/inaba-jinja/issues/278)) ([38d3fab](https://github.com/inabagumi/inaba-jinja/commit/38d3fabfa64605fef6520e83a7e12cf23d94c021))
+
 ### [1.2.4](https://github.com/inabagumi/inaba-jinja/compare/v1.2.3...v1.2.4) (2020-01-15)
 
 
