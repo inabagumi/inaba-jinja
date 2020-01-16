@@ -18,14 +18,8 @@ const MyError: NextPage<ErrorProps> = ({ statusCode }) => {
       </Head>
 
       <SingleDoc title={title}>
-        <p className="message">{message}</p>
+        <p>{message}</p>
       </SingleDoc>
-
-      <style jsx>{`
-        .message {
-          margin: 0;
-        }
-      `}</style>
     </>
   )
 }

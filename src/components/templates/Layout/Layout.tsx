@@ -1,16 +1,28 @@
+import styled from '@emotion/styled'
 import React, { FC } from 'react'
 import Background from '../../molecules/Background'
 import Footer from '../../organisms/Footer'
-import styles from './Layout.module.css'
+
+const Content = styled.div`
+  flex-grow: 1;
+`
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+`
 
 const Layout: FC = ({ children }) => {
   return (
     <>
-      <div className={styles.wrapper}>
-        <div className={styles.content}>{children}</div>
+      <Wrapper>
+        <Content>{children}</Content>
 
         <Footer />
-      </div>
+      </Wrapper>
 
       <Background />
     </>

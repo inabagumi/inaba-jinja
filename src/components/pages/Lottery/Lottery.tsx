@@ -1,9 +1,27 @@
+import { keyframes } from '@emotion/core'
+import styled from '@emotion/styled'
 import { useRouter } from 'next/router'
 import React, { FC, useEffect, useState } from 'react'
 import kujiImage from '../../../assets/kuji.png'
 import Error from '../../../pages/_error'
 import SingleDoc from '../../templates/SingleDoc'
-import styles from './Lottery.module.css'
+
+const shake = keyframes`
+  0% {
+    transform: translateY(0) rotate(180deg);
+  }
+
+  100% {
+    transform: translateY(20px) rotate(170deg);
+  }
+`
+
+const LotteryBox = styled.img`
+  animation: ${shake} 0.3s infinite alternate linear;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(0) rotate(180deg);
+`
 
 const sleep = (seconds: number): Promise<void> =>
   new Promise(resolve => {
@@ -48,9 +66,8 @@ const Lottery: FC = () => {
   return (
     <SingleDoc>
       <p>
-        <img
+        <LotteryBox
           alt="くじ引き中..."
-          className={styles.image}
           height="290"
           src={kujiImage}
           width="225"
