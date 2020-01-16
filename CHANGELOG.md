@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.6](https://github.com/inabagumi/inaba-jinja/compare/v1.2.5...v1.2.6) (2020-01-16)
+
+
+### Bug Fixes
+
+* disable change color of lottery button ([#281](https://github.com/inabagumi/inaba-jinja/issues/281)) ([6bb4fa2](https://github.com/inabagumi/inaba-jinja/commit/6bb4fa22b92d8d57033fbdf9271a252c61f86415))
+
 ### [1.2.5](https://github.com/inabagumi/inaba-jinja/compare/v1.2.4...v1.2.5) (2020-01-16)
 
 
