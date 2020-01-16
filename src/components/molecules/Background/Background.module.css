@@ -1,27 +1,5 @@
-.cover {
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.cover::after {
-  background-color: var(--hero-overlay-color);
-  bottom: 0;
-  content: '';
-  display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.cover__image {
+.image,
+.placeholder {
   bottom: 0;
   display: block;
   height: 100%;
@@ -44,4 +22,15 @@
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+.root::after {
+  background-color: var(--hero-overlay-color);
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
