@@ -1,13 +1,47 @@
+import styled from '@emotion/styled'
 import Link from 'next/link'
 import React, { FC } from 'react'
-import styles from './Footer.module.css'
+
+const Copyright = styled.p`
+  margin: 0;
+`
+
+const Navigation = styled.nav`
+  li:not(:first-child) {
+    margin-left: 0.5em;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+`
+
+const Root = styled.footer`
+  align-items: flex-start;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  justify-content: space-between;
+  padding: 2rem 1rem 1.5rem;
+
+  @media (min-width: 960px) {
+    & {
+      flex-direction: row;
+      padding-bottom: 0.5rem;
+    }
+  }
+`
 
 const Footer: FC = () => {
   return (
-    <footer className={styles.root}>
-      <p className={styles.copyright}>&copy; 2020 Haneru Developers</p>
+    <Root>
+      <Copyright>&copy; 2020 Haneru Developers</Copyright>
 
-      <nav className={styles.navigation}>
+      <Navigation>
         <ul>
           <li>
             <a
@@ -29,8 +63,8 @@ const Footer: FC = () => {
             </Link>
           </li>
         </ul>
-      </nav>
-    </footer>
+      </Navigation>
+    </Root>
   )
 }
 

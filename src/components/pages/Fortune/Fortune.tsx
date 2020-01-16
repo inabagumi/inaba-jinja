@@ -1,12 +1,50 @@
-import clsx from 'clsx'
+import styled from '@emotion/styled'
 import React, { FC } from 'react'
 import FortuneEntry from '../../../types/FortuneEntry'
+import Image from '../../atoms/Image'
 import SingleDoc from '../../templates/SingleDoc'
 import { homepage as siteUrl } from '../../../../package.json'
-import styles from './Fortune.module.css'
 
-const half = (number: number | undefined): number | undefined =>
-  number && number / 2
+const Paper = styled(Image)`
+  background-color: #fff;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+`
+
+const ShareButton = styled.a`
+  background-color: #1da1f2;
+  border: 1px solid #1da1f2;
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 1;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #005fd1;
+    border-color: #005fd1;
+    color: #fff;
+  }
+`
+
+const ShareLinks = styled.nav`
+  margin-top: 3rem;
+
+  ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+`
 
 const getTweetLink = (fortune: FortuneEntry): string => {
   const text = `わたしの運勢は『${fortune.fields.blessing}』でした！ あなたもおみくじを引いてみてね`
@@ -25,45 +63,33 @@ type Props = {
 
 const Fortune: FC<Props> = ({ fortune }) => {
   const imageDetails = fortune.fields.paper.fields.file.details.image
-  const imageWidth = half(imageDetails?.width)
-  const imageHeight = half(imageDetails?.height)
   const imageURL = `https:${fortune.fields.paper.fields.file.url}`
 
   return (
     <SingleDoc
       title={`第${fortune.fields.number}番 ${fortune.fields.blessing}`}
     >
-      <picture>
-        <source
-          srcSet={`${imageURL}?fm=webp&w=254 1x, ${imageURL}?fm=webp 2x`}
-          type="image/webp"
-        />
+      <Paper
+        alt={`${fortune.fields.blessing} - ${fortune.fields.description}`}
+        height={imageDetails?.height || 0}
+        src={imageURL}
+        width={imageDetails?.width || 0}
+      />
 
-        <img
-          alt={`${fortune.fields.blessing} - ${fortune.fields.description}`}
-          className={styles.paper}
-          height={imageHeight}
-          src={`${imageURL}w=${imageWidth}`}
-          srcSet={`${imageURL}?w=254 1x, ${imageURL} 2x`}
-          width={imageWidth}
-        />
-      </picture>
-
-      <nav className={styles.shareLinks}>
+      <ShareLinks>
         <ul>
           <li>
-            <a
-              className={clsx(styles.shareButton, styles.shareButtonTwitter)}
+            <ShareButton
               href={getTweetLink(fortune)}
               rel="noopener noreferrer"
               role="button"
               target="_blank"
             >
               Twitterに共有する
-            </a>
+            </ShareButton>
           </li>
         </ul>
-      </nav>
+      </ShareLinks>
     </SingleDoc>
   )
 }

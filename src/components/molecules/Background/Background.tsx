@@ -1,3 +1,4 @@
+import styled from '@emotion/styled'
 import React, { FC } from 'react'
 import lqipMainVisual from '../../../assets/main-visual@lqip.jpg'
 import verticalLqipMainVisual from '../../../assets/vertical-main-visual@lqip.jpg'
@@ -9,20 +10,66 @@ import mainVisual from '../../../assets/main-visual.jpg'
 import mainVisual2x from '../../../assets/main-visual@2x.jpg'
 import webpMainVisual from '../../../assets/main-visual.webp'
 import webpMainVisual2x from '../../../assets/main-visual@2x.webp'
-import styles from './Background.module.css'
+
+const Cover = styled.picture`
+  background-color: transparent;
+  background-image: url("${lqipMainVisual}");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @media (orientation: portrait) {
+    & {
+      background-image: url("${verticalLqipMainVisual}");
+    }
+  }
+
+  img {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+`
+
+const Root = styled.div`
+  --hero-overlay-color: rgba(0, 0, 0, 0.54);
+
+  background-color: var(--hero-overlay-color);
+  color: #fff;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
+  &::after {
+    background-color: var(--hero-overlay-color);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+`
 
 const Background: FC = () => {
   return (
-    <div className={styles.root}>
-      <picture>
-        <source
-          srcSet={verticalLqipMainVisual}
-          media="(orientation: portrait)"
-        />
-        <img alt="" className={styles.placeholder} src={lqipMainVisual} />
-      </picture>
-
-      <picture>
+    <Root>
+      <Cover>
         <source
           srcSet={`${verticalWebpMainVisual} 1x, ${verticalWebpMainVisual2x} 2x`}
           media="(orientation: portrait)"
@@ -40,15 +87,14 @@ const Background: FC = () => {
 
         <img
           alt=""
-          className={styles.image}
           height="600"
           role="presentation"
           src={mainVisual}
           srcSet={`${mainVisual} 1x, ${mainVisual2x} 2x`}
           width="800"
         />
-      </picture>
-    </div>
+      </Cover>
+    </Root>
   )
 }
 

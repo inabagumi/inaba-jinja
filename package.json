@@ -9,6 +9,8 @@
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
     "@next/plugin-sentry": "^9.2.0",
     "clsx": "^1.0.4",
     "contentful": "^7.13.1",
