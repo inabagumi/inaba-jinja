@@ -1,9 +1,58 @@
+import { Global, css } from '@emotion/core'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import React, { FC, useEffect } from 'react'
 import Layout from '../components/templates/Layout'
-import '../styles.css'
+
+const globalStyles = css`
+  :root {
+    --ij-default-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
+      Helvetica, Arial, YuGothic, Yu Gothic, sans-serif;
+    --ij-serif-font-family: Garamond, Times New Roman, YuMincho, Yu Mincho,
+      serif;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-family: var(--ij-default-font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+  }
+
+  body {
+    background-color: #424242;
+    color: #fafafa;
+    margin: 0;
+    line-height: 2;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body,
+  html,
+  #__next {
+    height: 100%;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #f57f17;
+  }
+
+  a:hover {
+    color: #ff6f00;
+  }
+`
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -51,6 +100,8 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
           sizes="152x152"
         />
       </Head>
+
+      <Global styles={globalStyles} />
 
       <Layout>
         <Component {...pageProps} />
