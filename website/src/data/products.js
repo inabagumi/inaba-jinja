@@ -31,7 +31,8 @@ const products = [
     website: 'https://shinju.date/'
   },
   {
-    description: 'Twitter ',
+    description:
+      '774 inc. 所属タレントのTwitterの情報を収集してグラフ化しているウェブサービスです',
     learnMore: 'docs/graph',
     preview: require('./showcase/graph.jpg'),
     title: 'graph.haneru.dev',
