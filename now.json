@@ -44,6 +44,13 @@
         "service-worker-allowed": "/"
       },
       "src": "/service-worker\\.js"
+    },
+    {
+      "continue": true,
+      "headers": {
+        "cache-control": "max-age=0, private"
+      },
+      "src": "/lottery/?"
     }
   ],
   "scope": "inabagumi",

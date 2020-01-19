@@ -1,14 +1,38 @@
-import * as contentful from 'contentful'
 import { NextPage } from 'next'
 import React from 'react'
 import Meta from '../../components/atoms/Meta'
 import Fortune from '../../components/pages/Fortune'
+import getFortune from '../../contentful/getFortune'
+import getFortunes from '../../contentful/getFortunes'
 import FortuneEntry from '../../types/FortuneEntry'
-import FortuneFields from '../../types/FortuneFields'
 import Error from '../_error'
 
 type Props = {
   fortune?: FortuneEntry
+}
+
+type StaticParams = {
+  params: {
+    id: string
+  }
+}
+
+type StaticProps = {
+  props: Props
+}
+
+export async function unstable_getStaticProps({
+  params
+}: StaticParams): Promise<StaticProps> {
+  const fortune = await getFortune(params.id).catch(() => undefined)
+
+  return { props: { fortune } }
+}
+
+export async function unstable_getStaticPaths(): Promise<string[]> {
+  const ids = await getFortunes().catch((): string[] => [])
+
+  return ids.map(id => `/kuji/${id}`)
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
@@ -26,26 +50,6 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
       <Fortune fortune={fortune} />
     </>
   )
-}
-
-KujiPage.getInitialProps = async ({ query }): Promise<Props> => {
-  if (
-    !process.env.CONTENTFUL_ACCESS_TOKEN ||
-    !process.env.CONTENTFUL_SPACE_ID
-  ) {
-    return {}
-  }
-
-  const id = Array.isArray(query.id) ? query.id[0] : query.id
-  const client = contentful.createClient({
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    space: process.env.CONTENTFUL_SPACE_ID
-  })
-  const fortune = await client
-    .getEntry<FortuneFields>(id)
-    .catch(() => undefined)
-
-  return { fortune }
 }
 
 export default KujiPage

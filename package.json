@@ -44,7 +44,10 @@
     "extends": [
       "@inabagumi/react"
     ],
-    "root": true
+    "root": true,
+    "rules": {
+      "@typescript-eslint/camelcase": "off"
+    }
   },
   "homepage": "https://inaba-jinja.com",
   "license": "MIT",
