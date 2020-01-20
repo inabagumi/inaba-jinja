@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/inabagumi/inaba-jinja/compare/v1.2.8...v1.3.0) (2020-01-20)
+
+
+### Features
+
+* **perf:** improve ssg ([#289](https://github.com/inabagumi/inaba-jinja/issues/289)) ([99ff03f](https://github.com/inabagumi/inaba-jinja/commit/99ff03fd5916943c6e6ab62f135631430ba4f8a8))
+
 ### [1.2.8](https://github.com/inabagumi/inaba-jinja/compare/v1.2.7...v1.2.8) (2020-01-17)
 
 
