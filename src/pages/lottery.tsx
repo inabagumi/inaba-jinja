@@ -1,16 +1,33 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import React from 'react'
+import { useRouter } from 'next/router'
+import React, { useEffect } from 'react'
 import { homepage as siteUrl } from '../../package.json'
 import Lottery from '../components/pages/Lottery'
 import getFortunes from '../contentful/getFortunes'
 import Error from './_error'
+
+const DELAY_SECONDS = 2
 
 type Props = {
   id?: string
 }
 
 const LotteryPage: NextPage<Props> = ({ id }) => {
+  const router = useRouter()
+
+  useEffect(() => {
+    if (!id) return
+
+    const timeoutId = setTimeout(() => {
+      router.replace('/kuji/[id]', `/kuji/${id}`)
+    }, 1000 * DELAY_SECONDS)
+
+    return (): void => {
+      clearTimeout(timeoutId)
+    }
+  }, [id, router])
+
   if (!id) return <Error statusCode={500} />
 
   return (
@@ -20,11 +37,14 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
         <title>おみくじを引いています...</title>
 
         <noscript>
-          <meta content={`2;URL=${siteUrl}/kuji/${id}`} httpEquiv="refresh" />
+          <meta
+            content={`${DELAY_SECONDS};URL=${siteUrl}/kuji/${id}`}
+            httpEquiv="refresh"
+          />
         </noscript>
       </Head>
 
-      <Lottery id={id} />
+      <Lottery />
     </>
   )
 }
