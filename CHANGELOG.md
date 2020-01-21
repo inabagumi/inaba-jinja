@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/inabagumi/inaba-jinja/compare/v1.3.1...v1.3.2) (2020-01-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @emotion/react to ^11.0.0-next.11 ([#295](https://github.com/inabagumi/inaba-jinja/issues/295)) ([79c2088](https://github.com/inabagumi/inaba-jinja/commit/79c2088a633b63a8fb48480c0761ffaf8e56cc33))
+
 ### [1.3.1](https://github.com/inabagumi/inaba-jinja/compare/v1.3.0...v1.3.1) (2020-01-21)
 
 
