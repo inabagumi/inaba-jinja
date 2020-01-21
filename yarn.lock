@@ -1099,14 +1099,14 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
   integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
 
-"@emotion/react@^11.0.0-next.10":
-  version "11.0.0-next.10"
-  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.0.0-next.10.tgz#84166db2b98ba518d767efa360fb986cd5c4a628"
-  integrity sha512-OgsMiAKDQgugzOkV33+3jPICPEJ7FdyDcf/IJgup3TKxHrVlvT+S7WdxHcStcrq/xcwDx8Qf3EUmx1D+pGz9Kw==
+"@emotion/react@^11.0.0-next.11":
+  version "11.0.0-next.11"
+  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.0.0-next.11.tgz#0e8b5722fe491cb391d22649c4f05459e92741cc"
+  integrity sha512-B7sFkJNEBV2QfVfEImZDhrYMtxj8Sg/fq2QRdAHs8Y58NtdATqa0X74WQAldTOoJ43TlDvzUsR1ONb5RLtlbDg==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@emotion/cache" "^11.0.0-next.10"
-    "@emotion/serialize" "^0.12.0-next.3"
+    "@emotion/serialize" "^0.11.15-next.4"
     "@emotion/sheet" "0.10.0-next.1"
     "@emotion/utils" "0.11.2"
     "@emotion/weak-memoize" "0.2.4"
@@ -1122,17 +1122,6 @@
     "@emotion/unitless" "0.7.5"
     "@emotion/utils" "0.11.3"
     csstype "^2.5.7"
-
-"@emotion/serialize@^0.12.0-next.3":
-  version "0.12.0-next.3"
-  resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-0.12.0-next.3.tgz#edb277d358bbdb3f4c089c584bd79e71e3ad6893"
-  integrity sha512-/bznLGIry2OZ5hcbWaV79DcpBko3z27ifRU1cQNf5WClBvNg9ps/HTobAIlxiVfE/AFMumtGP+fW8RFwnW7zvg==
-  dependencies:
-    "@emotion/hash" "0.7.3"
-    "@emotion/memoize" "0.7.3"
-    "@emotion/unitless" "0.7.4"
-    "@emotion/utils" "0.11.2"
-    csstype "^2.6.7"
 
 "@emotion/server@^11.0.0-next.10":
   version "11.0.0-next.10"
@@ -1164,11 +1153,6 @@
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/@emotion/stylis/-/stylis-0.8.4.tgz#6c51afdf1dd0d73666ba09d2eb6c25c220d6fe4c"
   integrity sha512-TLmkCVm8f8gH0oLv+HWKiu7e8xmBIaokhxcEKPh1m8pXiV/akCiq50FvYgOwY42rjejck8nsdQxZlXZ7pmyBUQ==
-
-"@emotion/unitless@0.7.4":
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.4.tgz#a87b4b04e5ae14a88d48ebef15015f6b7d1f5677"
-  integrity sha512-kBa+cDHOR9jpRJ+kcGMsysrls0leukrm68DmFQoMIWQcXdr2cZvyvypWuGYT7U+9kAExUE7+T7r6G3C3A6L8MQ==
 
 "@emotion/unitless@0.7.5":
   version "0.7.5"
@@ -3275,7 +3259,7 @@ csso@^4.0.2:
   dependencies:
     css-tree "1.0.0-alpha.37"
 
-csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.7:
+csstype@^2.2.0, csstype@^2.5.7:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.8.tgz#0fb6fc2417ffd2816a418c9336da74d7f07db431"
   integrity sha512-msVS9qTuMT5zwAGCVm4mxfrZ18BNc6Csd0oJAtiFMZ1FAx1CCvy2+5MDmYoix63LM/6NDbNtodCiGYGmFgO0dA==
