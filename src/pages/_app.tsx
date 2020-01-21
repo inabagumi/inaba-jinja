@@ -1,4 +1,5 @@
-import { Global, css } from '@emotion/core'
+import { cache } from '@emotion/css'
+import { CacheProvider, Global, css } from '@emotion/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
@@ -101,11 +102,13 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         />
       </Head>
 
-      <Global styles={globalStyles} />
+      <CacheProvider value={cache}>
+        <Global styles={globalStyles} />
 
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </CacheProvider>
     </>
   )
 }
