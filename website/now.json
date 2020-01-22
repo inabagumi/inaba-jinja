@@ -37,6 +37,13 @@
     },
     {
       "headers": {
+        "location": "/docs/21g"
+      },
+      "src": "/docs/graph",
+      "status": 301
+    },
+    {
+      "headers": {
         "location": "/docs/eslint-config"
       },
       "src": "/(?:products|docs)/npm-packages(?:\\.html)?",

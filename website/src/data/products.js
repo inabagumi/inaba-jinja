@@ -33,10 +33,10 @@ const products = [
   {
     description:
       '774 inc. 所属タレントのTwitterの情報を収集してグラフ化しているウェブサービスです',
-    learnMore: 'docs/graph',
-    preview: require('./showcase/graph.jpg'),
-    title: 'graph.haneru.dev',
-    website: 'https://graph.haneru.dev/'
+    learnMore: 'docs/21g',
+    preview: require('./showcase/21g.jpg'),
+    title: '21g',
+    website: 'https://21g.social/'
   },
   {
     description: '因幡神社は東京都北区赤羽のどこかにある神社です。',
