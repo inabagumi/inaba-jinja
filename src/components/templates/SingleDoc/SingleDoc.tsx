@@ -1,16 +1,6 @@
 import styled from '@emotion/styled'
-import Link from 'next/link'
 import React, { FC } from 'react'
-import Logo from '../../atoms/Logo'
-
-const Brand = styled.a`
-  color: inherit;
-  font-size: 2rem;
-
-  &:hover {
-    color: inherit;
-  }
-`
+import Header from '../../organisms/Header'
 
 const Content = styled.div`
   background-color: rgba(38, 50, 56, 0.7);
@@ -19,12 +9,6 @@ const Content = styled.div`
   min-height: 70vh;
   max-width: 100%;
   padding: 1rem 1rem 2rem;
-  width: 800px;
-`
-
-const Header = styled.header`
-  margin: 0 auto;
-  max-width: 100%;
   width: 800px;
 `
 
@@ -45,13 +29,7 @@ type Props = {
 
 const SingleDoc: FC<Props> = ({ children, title }) => (
   <Wrapper>
-    <Header>
-      <Link href="/" passHref prefetch={false}>
-        <Brand>
-          <Logo aria-label="因幡神社" />
-        </Brand>
-      </Link>
-    </Header>
+    <Header />
 
     <Content>
       {title && <Title>{title}</Title>}
