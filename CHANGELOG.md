@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.3](https://github.com/inabagumi/inaba-jinja/compare/v1.3.2...v1.3.3) (2020-01-22)
+
+
+### Bug Fixes
+
+* **perf:** add preload ([#302](https://github.com/inabagumi/inaba-jinja/issues/302)) ([91c630d](https://github.com/inabagumi/inaba-jinja/commit/91c630da44932f1632ea7fa8fe0a04ea54a0a8f6))
+
 ### [1.3.2](https://github.com/inabagumi/inaba-jinja/compare/v1.3.1...v1.3.2) (2020-01-21)
 
 
