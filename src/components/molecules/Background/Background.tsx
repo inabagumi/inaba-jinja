@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import Head from 'next/head'
 import React, { FC } from 'react'
 import lqipMainVisual from '../../../assets/main-visual@lqip.jpg'
 import verticalLqipMainVisual from '../../../assets/vertical-main-visual@lqip.jpg'
@@ -68,33 +69,66 @@ const Root = styled.div`
 
 const Background: FC = () => {
   return (
-    <Root>
-      <Cover>
-        <source
-          srcSet={`${verticalWebpMainVisual} 1x, ${verticalWebpMainVisual2x} 2x`}
-          media="(orientation: portrait)"
+    <>
+      <Head>
+        <link
+          as="image"
+          href={verticalWebpMainVisual2x}
+          media="(orientation: portrait) and (min-resolution: 1.1dppx)"
+          rel="preload"
           type="image/webp"
         />
-        <source
-          srcSet={`${webpMainVisual} 1x, ${webpMainVisual2x} 2x`}
+        <link
+          as="image"
+          href={verticalWebpMainVisual}
+          media="(orientation: portrait) and (max-resolution: 1dppx)"
+          rel="preload"
           type="image/webp"
         />
-        <source
-          media="(orientation: portrait)"
-          src={`${verticalMainVisual} 1x, ${verticalMainVisual2x} 2x`}
-          type="image/png"
+        <link
+          as="image"
+          href={webpMainVisual2x}
+          media="(orientation: landscape) and (min-resolution: 1.1dppx)"
+          rel="preload"
+          type="image/webp"
         />
+        <link
+          as="image"
+          href={webpMainVisual}
+          media="(orientation: landscape) and (max-resolution: 1dppx)"
+          rel="preload"
+          type="image/webp"
+        />
+      </Head>
 
-        <img
-          alt=""
-          height="600"
-          role="presentation"
-          src={mainVisual}
-          srcSet={`${mainVisual} 1x, ${mainVisual2x} 2x`}
-          width="800"
-        />
-      </Cover>
-    </Root>
+      <Root>
+        <Cover>
+          <source
+            srcSet={`${verticalWebpMainVisual} 1x, ${verticalWebpMainVisual2x} 2x`}
+            media="(orientation: portrait)"
+            type="image/webp"
+          />
+          <source
+            srcSet={`${webpMainVisual} 1x, ${webpMainVisual2x} 2x`}
+            type="image/webp"
+          />
+          <source
+            media="(orientation: portrait)"
+            src={`${verticalMainVisual} 1x, ${verticalMainVisual2x} 2x`}
+            type="image/png"
+          />
+
+          <img
+            alt=""
+            height="600"
+            role="presentation"
+            src={mainVisual}
+            srcSet={`${mainVisual} 1x, ${mainVisual2x} 2x`}
+            width="800"
+          />
+        </Cover>
+      </Root>
+    </>
   )
 }
 
