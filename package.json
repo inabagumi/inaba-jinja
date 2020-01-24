@@ -13,7 +13,7 @@
     "@emotion/react": "^11.0.0-next.11",
     "@emotion/server": "^11.0.0-next.10",
     "@emotion/styled": "^11.0.0-next.11",
-    "@next/plugin-sentry": "^9.2.0",
+    "@next/plugin-sentry": "^9.2.1",
     "clsx": "^1.0.4",
     "contentful": "^7.13.1",
     "next": "^9.2.0",

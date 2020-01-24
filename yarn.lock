@@ -1239,10 +1239,10 @@
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-1.1.0.tgz#aee2ae562788457b2bc561921f3338f494dab8ad"
   integrity sha512-hKJneSahAPPnKRdHDItPBKlUFngEMmjhZuJ4a7Pt9b6aUFFUHUOR5qXAT2KXbJwFjwvTnkUlalFKyc2kiilgUA==
 
-"@next/plugin-sentry@^9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.2.0.tgz#402434e7bc345c759dda0f9f3ca4729d27e2e8fb"
-  integrity sha512-I2On2SfnbJ7s1aKTJ+3hpzXhnWokPc1l0Uvt1CV40xFG75AWZrwZUM0VHUitZDX1RFAh2g1oY85yI4MEQPZWZQ==
+"@next/plugin-sentry@^9.2.1":
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.2.1.tgz#ffb43a0fbac210123a4d66b0e9f3040f33946a7e"
+  integrity sha512-GGzZH2vUxhfLGyEaPTwOncbBM23fsU8nfTOS14HE0k5MHyHx0EM63exmXEKjh4NEu6rkI3sMt5+isFLTP4cpog==
   dependencies:
     "@sentry/browser" "5.7.1"
     "@sentry/node" "5.7.1"
