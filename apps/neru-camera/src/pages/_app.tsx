@@ -1,28 +1,30 @@
 import CssBaseline from '@material-ui/core/CssBaseline'
-import App from 'next/app'
-import React, { ReactElement } from 'react'
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { AppProps } from 'next/app'
+import React, { FC } from 'react'
 import { AssetProvider } from '../context/asset-context'
 import { SiteProvider } from '../context/site-context'
 
-export default class extends App {
-  public componentDidMount(): void {
-    const jssStyles = document.getElementById('jss-server-side')
-
-    if (jssStyles && jssStyles.parentNode)
-      jssStyles.parentNode.removeChild(jssStyles)
+const theme = createMuiTheme({
+  palette: {
+    type: 'dark'
   }
+})
 
-  public render(): ReactElement {
-    const { Component, pageProps } = this.props
+const Provider: FC = ({ children }) => (
+  <ThemeProvider theme={theme}>
+    <SiteProvider>
+      <AssetProvider>{children}</AssetProvider>
+    </SiteProvider>
+  </ThemeProvider>
+)
 
-    return (
-      <SiteProvider>
-        <AssetProvider>
-          <CssBaseline />
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
+  <Provider>
+    <CssBaseline />
 
-          <Component {...pageProps} />
-        </AssetProvider>
-      </SiteProvider>
-    )
-  }
-}
+    <Component {...pageProps} />
+  </Provider>
+)
+
+export default MyApp

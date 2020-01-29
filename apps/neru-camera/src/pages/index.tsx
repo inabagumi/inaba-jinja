@@ -1,4 +1,3 @@
-import grey from '@material-ui/core/colors/grey'
 import { makeStyles } from '@material-ui/core/styles'
 import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
@@ -9,7 +8,6 @@ const Camera = dynamic(() => import('../components/camera'), { ssr: false })
 
 const useStyles = makeStyles({
   container: {
-    backgroundColor: grey[900],
     bottom: 0,
     left: 0,
     position: 'fixed',

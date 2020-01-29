@@ -1,4 +1,10 @@
-import React, { FC, createContext, useState, useEffect } from 'react'
+import React, {
+  FC,
+  createContext,
+  useContext,
+  useState,
+  useEffect
+} from 'react'
 
 export type Asset = {
   id: number
@@ -16,7 +22,7 @@ const defaultValues: Values = {
   isLoading: false
 }
 
-export const AssetContext = createContext(defaultValues)
+const AssetContext = createContext(defaultValues)
 
 export const AssetProvider: FC = ({ children }) => {
   const [asset, setAsset] = useState(defaultValues.asset)
@@ -39,3 +45,11 @@ export const AssetProvider: FC = ({ children }) => {
     </AssetContext.Provider>
   )
 }
+
+export const useAsset = (): Asset | null => {
+  const { asset } = useContext(AssetContext)
+
+  return asset
+}
+
+export default AssetContext

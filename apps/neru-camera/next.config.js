@@ -7,6 +7,9 @@ const nextConfig = {
     NERU_CAMERA_DESCRIPTION: process.env.NERU_CAMERA_DESCRIPTION,
     NERU_CAMERA_TITLE: process.env.NERU_CAMERA_TITLE
   },
+  experimental: {
+    plugins: true
+  },
   target: 'serverless',
   workboxOpts: {
     clientsClaim: true,

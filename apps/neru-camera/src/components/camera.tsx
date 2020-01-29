@@ -1,4 +1,6 @@
+import { Sprite, Stage } from '@inlet/react-pixi'
 import Button from '@material-ui/core/Button'
+import Container from '@material-ui/core/Container'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
@@ -6,19 +8,13 @@ import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
-import React, {
-  FC,
-  ReactElement,
-  useCallback,
-  useContext,
-  useEffect,
-  useRef,
-  useState
-} from 'react'
-import { AssetContext } from '../../context/asset-context'
-import download from '../../lib/download'
-import Renderer from '../renderer'
-import { RefObject } from '../renderer/renderer'
+import { Application } from 'pixi.js'
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react'
+import { useAsset } from '../context/asset-context'
+import useVideoTexture from '../hooks/use-video-texture'
+import download from '../lib/download'
+import processing from '../lib/processing'
+import Overlay from './overlay'
 
 const mediaStreamConstraints: MediaStreamConstraints = {
   audio: false,
@@ -67,69 +63,80 @@ const useStyles = makeStyles({
     width: '100%'
   },
   container: {
-    alignItems: 'stretch',
     display: 'flex',
     flexDirection: 'column',
-    height: '100%',
-    justifyContent: 'flex-end',
-    margin: 0
+    height: '100%'
   },
-  content: {
+  preview: {
     alignItems: 'center',
     display: 'flex',
     flexGrow: 1,
+    justifyContent: 'center',
     overflow: 'hidden'
+  },
+  stage: {
+    display: 'block',
+    heigh: 'auto',
+    width: '100%'
   }
 })
 
-const Camera: FC = (): ReactElement => {
-  const { asset } = useContext(AssetContext)
-  const [isShooting, setIsShooting] = useState<boolean>(false)
-  const [hasError, setHasError] = useState<boolean>(false)
+const Camera: FC = () => {
+  const pixiStage = useRef<Stage>(null)
   const [cameraStream, setCameraStream] = useState<MediaStream>()
+  const [isShooting, setIsShooting] = useState(false)
+  const [hasError, setHasError] = useState(false)
+  const asset = useAsset()
+  const texture = useVideoTexture({ srcObject: cameraStream })
   const classes = useStyles()
 
-  const rendererRef = useRef<RefObject>(null)
-
   const takePhoto = useCallback(() => {
-    if (isShooting || !rendererRef.current) return
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
+    const app: Application | undefined = pixiStage.current?.app
+    const pixiView = app?.view
+
+    if (isShooting || !pixiView) return
 
     setIsShooting(true)
 
-    rendererRef.current
-      .toBlob('image/jpeg', 0.8)
-      .then(blob => {
-        download(blob)
-      })
-      .finally(() => {
-        setIsShooting(false)
-      })
-  }, [isShooting])
+    processing(pixiView, 'image/jpeg', 0.8)
+      .then(blob => download(blob))
+      .finally(() => setIsShooting(false))
+  }, [pixiStage, isShooting])
 
-  const refreshError = useCallback(() => {
-    setHasError(false)
-  }, [])
+  const refreshError = useCallback(() => setHasError(false), [])
 
   useEffect(() => {
-    if (navigator.mediaDevices) {
-      navigator.mediaDevices
-        .getUserMedia(mediaStreamConstraints)
-        .then(cameraStream => setCameraStream(cameraStream))
-        .catch(() => setHasError(true))
-    } else {
+    if (!navigator.mediaDevices) {
       setHasError(true)
+
+      return
     }
+
+    navigator.mediaDevices
+      .getUserMedia(mediaStreamConstraints)
+      .then(cameraStream => setCameraStream(cameraStream))
+      .catch(() => setHasError(true))
   }, [])
 
   return (
-    <div className={classes.container}>
-      <div className={classes.content}>
-        {asset && cameraStream && (
-          <Renderer
-            asset={asset}
-            cameraStream={cameraStream}
-            ref={rendererRef}
-          />
+    <Container className={classes.container} disableGutters maxWidth={false}>
+      <div className={classes.preview}>
+        {texture && (
+          <Stage
+            className={classes.stage}
+            height={texture.height}
+            options={{
+              preserveDrawingBuffer: true
+            }}
+            ref={pixiStage}
+            width={texture.width}
+          >
+            <Sprite texture={texture} />
+
+            {asset && <Overlay asset={asset} />}
+          </Stage>
         )}
       </div>
 
@@ -166,7 +173,7 @@ const Camera: FC = (): ReactElement => {
           </Button>
         </DialogActions>
       </Dialog>
-    </div>
+    </Container>
   )
 }
 
