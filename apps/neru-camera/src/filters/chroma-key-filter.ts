@@ -17,7 +17,7 @@ void main(void) {
 }
 `
 
-export class ChromaKeyFilter extends Filter {
+export default class ChromaKeyFilter extends Filter {
   public constructor(keyColor = '#00ff00') {
     super(undefined, fragmentShader)
 

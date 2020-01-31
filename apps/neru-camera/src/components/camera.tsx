@@ -1,5 +1,6 @@
 import { Sprite, Stage } from '@inlet/react-pixi'
 import Button from '@material-ui/core/Button'
+import CircularProgress from '@material-ui/core/CircularProgress'
 import Container from '@material-ui/core/Container'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
@@ -9,7 +10,7 @@ import DialogTitle from '@material-ui/core/DialogTitle'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 import { Application } from 'pixi.js'
-import React, { FC, useCallback, useEffect, useRef, useState } from 'react'
+import React, { FC, useCallback, useEffect, useState } from 'react'
 import { useAsset } from '../context/asset-context'
 import useVideoTexture from '../hooks/use-video-texture'
 import download from '../lib/download'
@@ -82,7 +83,7 @@ const useStyles = makeStyles({
 })
 
 const Camera: FC = () => {
-  const pixiStage = useRef<Stage>(null)
+  const [pixiView, setPixiView] = useState<HTMLCanvasElement>()
   const [cameraStream, setCameraStream] = useState<MediaStream>()
   const [isShooting, setIsShooting] = useState(false)
   const [hasError, setHasError] = useState(false)
@@ -90,12 +91,14 @@ const Camera: FC = () => {
   const texture = useVideoTexture({ srcObject: cameraStream })
   const classes = useStyles()
 
-  const takePhoto = useCallback(() => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-    // @ts-ignore
-    const app: Application | undefined = pixiStage.current?.app
-    const pixiView = app?.view
+  const handleMount = useCallback(
+    (app: Application) => setPixiView(app.view),
+    []
+  )
 
+  const handleUnmount = useCallback(() => setPixiView(undefined), [])
+
+  const takePhoto = useCallback(() => {
     if (isShooting || !pixiView) return
 
     setIsShooting(true)
@@ -103,7 +106,7 @@ const Camera: FC = () => {
     processing(pixiView, 'image/jpeg', 0.8)
       .then(blob => download(blob))
       .finally(() => setIsShooting(false))
-  }, [pixiStage, isShooting])
+  }, [pixiView, isShooting])
 
   const refreshError = useCallback(() => setHasError(false), [])
 
@@ -123,20 +126,23 @@ const Camera: FC = () => {
   return (
     <Container className={classes.container} disableGutters maxWidth={false}>
       <div className={classes.preview}>
-        {texture && (
+        {texture ? (
           <Stage
             className={classes.stage}
             height={texture.height}
             options={{
               preserveDrawingBuffer: true
             }}
-            ref={pixiStage}
+            onMount={handleMount}
+            onUnmount={handleUnmount}
             width={texture.width}
           >
             <Sprite texture={texture} />
 
             {asset && <Overlay asset={asset} />}
           </Stage>
+        ) : (
+          <CircularProgress color="secondary" />
         )}
       </div>
 

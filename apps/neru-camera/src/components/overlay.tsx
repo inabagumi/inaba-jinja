@@ -1,8 +1,8 @@
 import { Sprite, useApp } from '@inlet/react-pixi'
-import { Point } from 'pixi.js'
-import React, { FC } from 'react'
+import { Filter, Point } from 'pixi.js'
+import React, { FC, useMemo } from 'react'
 import { Asset } from '../context/asset-context'
-import { ChromaKeyFilter } from '../filters/ChromaKeyFilter'
+import ChromaKeyFilter from '../filters/chroma-key-filter'
 import useVideoTexture from '../hooks/use-video-texture'
 import Viewport from './viewport'
 
@@ -13,6 +13,10 @@ type Props = {
 const Overlay: FC<Props> = ({ asset }) => {
   const app = useApp()
   const texture = useVideoTexture({ src: asset.src })
+  const filters = useMemo<Filter[]>(
+    () => [new ChromaKeyFilter(asset.keyColor)],
+    [asset.keyColor]
+  )
 
   const anchor = 0.5
   const position = new Point(
@@ -32,7 +36,7 @@ const Overlay: FC<Props> = ({ asset }) => {
         {texture && (
           <Sprite
             anchor={anchor}
-            filters={[new ChromaKeyFilter(asset.keyColor)]}
+            filters={filters}
             position={position}
             texture={texture}
           />
