@@ -9,15 +9,6 @@
       "NERU_CAMERA_TITLE": "ねるカメラ"
     }
   },
-  "builds": [
-    {
-      "config": {
-        "maxLambdaSize": "50mb"
-      },
-      "src": "package.json",
-      "use": "@now/next"
-    }
-  ],
   "github": {
     "autoAlias": false,
     "silent": true
@@ -33,21 +24,10 @@
       "src": ".*"
     },
     {
-      "dest": "/_next/static/service-worker.js",
       "headers": {
         "cache-control": "max-age=0"
       },
       "src": "/service-worker\\.js"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "dest": "/_error",
-      "headers": {
-        "cache-control": "max-age=0"
-      },
-      "src": ".*"
     }
   ],
   "scope": "inabagumi",

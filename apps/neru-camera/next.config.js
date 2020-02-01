@@ -10,7 +10,13 @@ const nextConfig = {
     NERU_CAMERA_TITLE: process.env.NERU_CAMERA_TITLE
   },
   experimental: {
-    plugins: true
+    plugins: true,
+    rewrites: () => [
+      {
+        destination: '/_next/static/service-worker.js',
+        source: '/service-worker.js'
+      }
+    ]
   },
   target: 'serverless',
   workboxOpts: {
