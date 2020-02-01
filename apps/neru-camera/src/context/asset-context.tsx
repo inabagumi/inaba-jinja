@@ -17,7 +17,7 @@ export const AssetProvider: FC<Props> = ({ assets, children }) => (
 
 export const useAsset = (id?: string): OverlayEntry | undefined => {
   const { assets } = useContext(AssetContext)
-  const asset = id ? assets[0] : assets.find(entry => entry.sys.id === id)
+  const asset = id ? assets.find(entry => entry.sys.id === id) : assets[0]
 
   return asset
 }
