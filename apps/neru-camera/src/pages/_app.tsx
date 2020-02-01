@@ -41,8 +41,10 @@ MyApp.getInitialProps = async (
     .getEntries<OverlayFields>({
       content_type: 'overlay', // eslint-disable-line @typescript-eslint/camelcase
       limit: 100,
-      order: 'sys.createdAt',
-      select: 'sys.id,fields.keyColor,fields.media'
+      order: '-sys.createdAt',
+      select: ['sys.id', 'fields.keyColor', 'fields.media', 'fields.name'].join(
+        ','
+      )
     })
     .catch(() => null)
   const assets = entries?.items || []

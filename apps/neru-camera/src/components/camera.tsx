@@ -91,8 +91,8 @@ const Camera: FC<Props> = ({ asset }) => {
   const [cameraStream, setCameraStream] = useState<MediaStream>()
   const [isShooting, setIsShooting] = useState(false)
   const [hasError, setHasError] = useState(false)
-  const texture = useVideoTexture({ srcObject: cameraStream })
   const classes = useStyles()
+  const texture = useVideoTexture({ srcObject: cameraStream })
 
   const handleMount = useCallback(
     (app: Application) => setPixiView(app.view),
