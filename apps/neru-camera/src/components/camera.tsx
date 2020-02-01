@@ -11,10 +11,10 @@ import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 import { Application } from 'pixi.js'
 import React, { FC, useCallback, useEffect, useState } from 'react'
-import { useAsset } from '../context/asset-context'
 import useVideoTexture from '../hooks/use-video-texture'
 import download from '../lib/download'
 import processing from '../lib/processing'
+import { OverlayEntry } from '../types/Overlay'
 import Overlay from './overlay'
 
 const mediaStreamConstraints: MediaStreamConstraints = {
@@ -82,12 +82,15 @@ const useStyles = makeStyles({
   }
 })
 
-const Camera: FC = () => {
+type Props = {
+  asset?: OverlayEntry
+}
+
+const Camera: FC<Props> = ({ asset }) => {
   const [pixiView, setPixiView] = useState<HTMLCanvasElement>()
   const [cameraStream, setCameraStream] = useState<MediaStream>()
   const [isShooting, setIsShooting] = useState(false)
   const [hasError, setHasError] = useState(false)
-  const asset = useAsset()
   const texture = useVideoTexture({ srcObject: cameraStream })
   const classes = useStyles()
 

@@ -1,8 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles'
 import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
-import React, { ReactElement } from 'react'
+import React from 'react'
 import Meta from '../components/meta'
+import { useAsset } from '../context/asset-context'
 
 const Camera = dynamic(() => import('../components/camera'), { ssr: false })
 
@@ -16,15 +17,16 @@ const useStyles = makeStyles({
   }
 })
 
-const Index: NextPage = (): ReactElement => {
+const Index: NextPage = () => {
   const classes = useStyles()
+  const asset = useAsset()
 
   return (
     <>
       <Meta />
 
       <main className={classes.container}>
-        <Camera />
+        <Camera asset={asset} />
       </main>
     </>
   )

@@ -1,53 +1,23 @@
-import React, {
-  FC,
-  createContext,
-  useContext,
-  useState,
-  useEffect
-} from 'react'
-
-export type Asset = {
-  id: number
-  keyColor: string
-  src: string
-}
+import React, { FC, createContext, useContext } from 'react'
+import { OverlayEntry } from '../types/Overlay'
 
 type Values = {
-  asset: Asset | null
-  isLoading: boolean
+  assets: OverlayEntry[]
 }
 
-const defaultValues: Values = {
-  asset: null,
-  isLoading: false
+const AssetContext = createContext<Values>({ assets: [] })
+
+type Props = {
+  assets: OverlayEntry[]
 }
 
-const AssetContext = createContext(defaultValues)
+export const AssetProvider: FC<Props> = ({ assets, children }) => (
+  <AssetContext.Provider value={{ assets }}>{children}</AssetContext.Provider>
+)
 
-export const AssetProvider: FC = ({ children }) => {
-  const [asset, setAsset] = useState(defaultValues.asset)
-  const [isLoading, setIsLoading] = useState(defaultValues.isLoading)
-
-  useEffect(() => {
-    fetch('/list.json')
-      .then(res => res.json())
-      .then((assets: Asset[]) => {
-        setAsset(assets[0])
-      })
-      .finally(() => {
-        setIsLoading(false)
-      })
-  }, [])
-
-  return (
-    <AssetContext.Provider value={{ asset, isLoading }}>
-      {children}
-    </AssetContext.Provider>
-  )
-}
-
-export const useAsset = (): Asset | null => {
-  const { asset } = useContext(AssetContext)
+export const useAsset = (id?: string): OverlayEntry | undefined => {
+  const { assets } = useContext(AssetContext)
+  const asset = id ? assets[0] : assets.find(entry => entry.sys.id === id)
 
   return asset
 }

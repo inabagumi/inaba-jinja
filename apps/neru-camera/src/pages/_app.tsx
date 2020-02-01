@@ -1,9 +1,11 @@
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import { AppProps } from 'next/app'
+import App, { AppContext, AppInitialProps, AppProps } from 'next/app'
 import React, { FC } from 'react'
+import contentfulClient from '../contentfulClient'
 import { AssetProvider } from '../context/asset-context'
 import { SiteProvider } from '../context/site-context'
+import { OverlayEntry, OverlayFields } from '../types/Overlay'
 
 const theme = createMuiTheme({
   palette: {
@@ -11,20 +13,44 @@ const theme = createMuiTheme({
   }
 })
 
-const Provider: FC = ({ children }) => (
+type Props = {
+  assets: OverlayEntry[]
+}
+
+const MyApp = ({
+  Component,
+  assets,
+  pageProps
+}: AppProps & Props): JSX.Element => (
   <ThemeProvider theme={theme}>
     <SiteProvider>
-      <AssetProvider>{children}</AssetProvider>
+      <AssetProvider assets={assets}>
+        <CssBaseline />
+
+        <Component {...pageProps} />
+      </AssetProvider>
     </SiteProvider>
   </ThemeProvider>
 )
 
-const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
-  <Provider>
-    <CssBaseline />
+MyApp.getInitialProps = async (
+  ctx: AppContext
+): Promise<AppInitialProps & Props> => {
+  const initialProps = await App.getInitialProps(ctx)
+  const entries = await contentfulClient
+    .getEntries<OverlayFields>({
+      content_type: 'overlay', // eslint-disable-line @typescript-eslint/camelcase
+      limit: 100,
+      order: 'sys.createdAt',
+      select: 'sys.id,fields.keyColor,fields.media'
+    })
+    .catch(() => null)
+  const assets = entries?.items || []
 
-    <Component {...pageProps} />
-  </Provider>
-)
+  return {
+    ...initialProps,
+    assets
+  }
+}
 
 export default MyApp
