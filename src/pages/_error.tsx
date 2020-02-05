@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Error, { ErrorProps } from 'next/error'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import React from 'react'
 import SingleDoc from '../components/templates/SingleDoc'
 
@@ -13,9 +13,7 @@ const MyError: NextPage<ErrorProps> = ({ statusCode }) => {
 
   return (
     <>
-      <Head>
-        <title>{title}</title>
-      </Head>
+      <NextSeo title={title} />
 
       <SingleDoc title={title}>
         <p>{message}</p>

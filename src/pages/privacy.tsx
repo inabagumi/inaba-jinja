@@ -1,11 +1,15 @@
+import { NextSeo } from 'next-seo'
 import React, { FC } from 'react'
-import Meta from '../components/atoms/Meta'
+import { homepage as siteUrl } from '../../package.json'
 import Privacy from '../components/pages/Privacy'
 
 const PrivacyPage: FC = () => {
   return (
     <>
-      <Meta pathname="/privacy" title="プライバシーポリシー - 因幡神社" />
+      <NextSeo
+        canonical={new URL('/privacy', siteUrl).toString()}
+        title="プライバシーポリシー"
+      />
 
       <Privacy />
     </>

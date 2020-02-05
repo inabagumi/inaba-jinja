@@ -1,11 +1,15 @@
+import { NextSeo } from 'next-seo'
 import React, { FC } from 'react'
-import Meta from '../components/atoms/Meta'
+import { homepage as siteUrl } from '../../package.json'
 import Disclaimer from '../components/pages/Disclaimer'
 
 const DisclaimerPage: FC = () => {
   return (
     <>
-      <Meta pathname="/disclaimer" title="免責事項 - 因幡神社" />
+      <NextSeo
+        canonical={new URL('/disclaimer', siteUrl).toString()}
+        title="免責事項"
+      />
 
       <Disclaimer />
     </>

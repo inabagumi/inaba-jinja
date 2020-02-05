@@ -1,9 +1,9 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
 import { homepage as siteUrl } from '../../../package.json'
-import Meta from '../../components/atoms/Meta'
 import getFortune from '../../contentful/getFortune'
 import getFortunes from '../../contentful/getFortunes'
 import FortuneEntry from '../../types/FortuneEntry'
@@ -49,18 +49,28 @@ const SharePage: NextPage<Props> = ({ fortune }) => {
 
   return (
     <>
+      <NextSeo
+        canonical={new URL(`/kuji/${fortune.sys.id}`, siteUrl).toString()}
+        description={fortune.fields.description}
+        openGraph={{
+          images: [
+            {
+              url: new URL(
+                fortune.fields.card.fields.file.url,
+                siteUrl
+              ).toString()
+            }
+          ]
+        }}
+        title={`${fortune.fields.blessing} - 因幡はねるくじ`}
+        titleTemplate={undefined}
+      />
+
       <Head>
         <noscript>
           <meta content={`0;URL=${siteUrl}/`} httpEquiv="refresh" />
         </noscript>
       </Head>
-
-      <Meta
-        description={fortune.fields.description}
-        image={fortune.fields.card.fields.file.url}
-        pathname={`/kuji/${fortune.sys.id}`}
-        title={`${fortune.fields.blessing} - 因幡はねるくじ`}
-      />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import { NextPage } from 'next'
+import { NextSeo } from 'next-seo'
 import React from 'react'
-import Meta from '../../components/atoms/Meta'
+import { homepage as siteUrl } from '../../../package.json'
 import Fortune from '../../components/pages/Fortune'
 import getFortune from '../../contentful/getFortune'
 import getFortunes from '../../contentful/getFortunes'
@@ -40,11 +41,21 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
 
   return (
     <>
-      <Meta
+      <NextSeo
+        canonical={new URL(`/kuji/${fortune.sys.id}`, siteUrl).toString()}
         description={fortune.fields.description}
-        image={fortune.fields.card.fields.file.url}
-        pathname={`/kuji/${fortune.sys.id}`}
+        openGraph={{
+          images: [
+            {
+              url: new URL(
+                fortune.fields.card.fields.file.url,
+                siteUrl
+              ).toString()
+            }
+          ]
+        }}
         title={`${fortune.fields.blessing} - 因幡はねるくじ`}
+        titleTemplate={undefined}
       />
 
       <Fortune fortune={fortune} />
