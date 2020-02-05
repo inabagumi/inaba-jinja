@@ -1,6 +1,7 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
 import { homepage as siteUrl } from '../../package.json'
 import Lottery from '../components/pages/Lottery'
@@ -32,10 +33,9 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
 
   return (
     <>
-      <Head>
-        <meta content="noarchive, noindex" name="robots" />
-        <title>おみくじを引いています...</title>
+      <NextSeo noindex title="おみくじを引いています..." />
 
+      <Head>
         <noscript>
           <meta
             content={`${DELAY_SECONDS};URL=${siteUrl}/kuji/${id}`}

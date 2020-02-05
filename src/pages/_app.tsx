@@ -3,7 +3,9 @@ import { CacheProvider, Global, css } from '@emotion/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
+import { DefaultSeo } from 'next-seo'
 import React, { FC, useEffect } from 'react'
+import SEO from '../../next-seo.config'
 import Layout from '../components/templates/Layout'
 
 const globalStyles = css`
@@ -79,6 +81,8 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
+      <DefaultSeo {...SEO} />
+
       <Head>
         <meta content="#ff5722" name="theme-color" />
 
