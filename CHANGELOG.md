@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/inabagumi/inaba-jinja/compare/v1.3.3...v1.4.0) (2020-02-05)
+
+
+### Features
+
+* configure next-seo ([#312](https://github.com/inabagumi/inaba-jinja/issues/312)) ([21f1558](https://github.com/inabagumi/inaba-jinja/commit/21f155827892c68aacce2c91a0cc63219c9a9f9b))
+
+
+### Bug Fixes
+
+* improve share title ([#314](https://github.com/inabagumi/inaba-jinja/issues/314)) ([3c068ac](https://github.com/inabagumi/inaba-jinja/commit/3c068ac068236245a0810eadf0d58e5b4ccad4be))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.1 ([#303](https://github.com/inabagumi/inaba-jinja/issues/303)) ([bd8f1b0](https://github.com/inabagumi/inaba-jinja/commit/bd8f1b0f2f771071369494151809a73ee14133e5))
+* **deps:** update dependency clsx to ^1.1.0 ([#311](https://github.com/inabagumi/inaba-jinja/issues/311)) ([a13532a](https://github.com/inabagumi/inaba-jinja/commit/a13532a2a9343b35270ab5439b70b87289b75fec))
+* **deps:** update dependency next to ^9.2.1 ([#304](https://github.com/inabagumi/inaba-jinja/issues/304)) ([c8fa81f](https://github.com/inabagumi/inaba-jinja/commit/c8fa81ffceeb87b8ebeaadb9c58e481697be43ab))
+* **deps:** update dependency next-offline to ^5.0.0 ([#308](https://github.com/inabagumi/inaba-jinja/issues/308)) ([aeae1c5](https://github.com/inabagumi/inaba-jinja/commit/aeae1c59dedc1e32398042401f6b84cf640be20a))
+
 ### [1.3.3](https://github.com/inabagumi/inaba-jinja/compare/v1.3.2...v1.3.3) (2020-01-22)
 
 
