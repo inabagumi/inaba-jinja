@@ -39,7 +39,7 @@ export async function unstable_getStaticPaths(): Promise<string[]> {
 const KujiPage: NextPage<Props> = ({ fortune }) => {
   if (!fortune) return <Error statusCode={404} />
 
-  const title = `因幡はねるくじ 第${fortune.fields.number}番 『${fortune.fields.blessing}』`
+  const title = `因幡はねるくじ 第${fortune.fields.number}番『${fortune.fields.blessing}』`
 
   return (
     <>
