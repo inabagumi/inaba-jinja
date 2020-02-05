@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/inabagumi/inaba-jinja/compare/v1.4.0...v1.4.1) (2020-02-05)
+
+
+### Bug Fixes
+
+* **kuji:** remove whitespace from title ([#315](https://github.com/inabagumi/inaba-jinja/issues/315)) ([f142fa3](https://github.com/inabagumi/inaba-jinja/commit/f142fa320399f6efc7519b5d521f4eaebe2f958c))
+
 ## [1.4.0](https://github.com/inabagumi/inaba-jinja/compare/v1.3.3...v1.4.0) (2020-02-05)
 
 
