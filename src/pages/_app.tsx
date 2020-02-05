@@ -2,9 +2,8 @@ import { cache } from '@emotion/css'
 import { CacheProvider, Global, css } from '@emotion/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import Router from 'next/router'
 import { DefaultSeo } from 'next-seo'
-import React, { FC, useEffect } from 'react'
+import React, { FC } from 'react'
 import SEO from '../../next-seo.config'
 import Layout from '../components/templates/Layout'
 
@@ -57,64 +56,41 @@ const globalStyles = css`
   }
 `
 
-const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
-  useEffect(() => {
-    const handleRouteChangeComplete = (url: string): void => {
-      requestAnimationFrame(() => {
-        if (!process.env.GA_TRACKING_ID) return
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
+  <>
+    <DefaultSeo {...SEO} />
 
-        /* eslint-disable @typescript-eslint/camelcase */
-        window.gtag('config', process.env.GA_TRACKING_ID, {
-          page_location: url,
-          page_title: document.title
-        })
-        /* eslint-enable @typescript-eslint/camelcase */
-      })
-    }
+    <Head>
+      <meta content="#ff5722" name="theme-color" />
 
-    Router.events.on('routeChangeComplete', handleRouteChangeComplete)
+      <link href="/manifest.webmanifest" rel="manifest" />
+      <link
+        href="/images/favicon-192x192.png"
+        rel="icon"
+        sizes="192x192"
+        type="image/png"
+      />
+      <link
+        href="/images/favicon-512x512.png"
+        rel="icon"
+        sizes="512x512"
+        type="image/png"
+      />
+      <link
+        href="/apple-touch-icon.png"
+        rel="apple-touch-icon"
+        sizes="152x152"
+      />
+    </Head>
 
-    return (): void => {
-      Router.events.off('routeChangeComplete', handleRouteChangeComplete)
-    }
-  }, [])
+    <CacheProvider value={cache}>
+      <Global styles={globalStyles} />
 
-  return (
-    <>
-      <DefaultSeo {...SEO} />
-
-      <Head>
-        <meta content="#ff5722" name="theme-color" />
-
-        <link href="/manifest.webmanifest" rel="manifest" />
-        <link
-          href="/images/favicon-192x192.png"
-          rel="icon"
-          sizes="192x192"
-          type="image/png"
-        />
-        <link
-          href="/images/favicon-512x512.png"
-          rel="icon"
-          sizes="512x512"
-          type="image/png"
-        />
-        <link
-          href="/apple-touch-icon.png"
-          rel="apple-touch-icon"
-          sizes="152x152"
-        />
-      </Head>
-
-      <CacheProvider value={cache}>
-        <Global styles={globalStyles} />
-
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </CacheProvider>
-    </>
-  )
-}
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </CacheProvider>
+  </>
+)
 
 export default MyApp
