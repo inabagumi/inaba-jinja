@@ -47,7 +47,7 @@ const SharePage: NextPage<Props> = ({ fortune }) => {
 
   if (!fortune) return null
 
-  const title = `因幡はねるくじ 第${fortune.fields.number}番 『${fortune.fields.blessing}』`
+  const title = `因幡はねるくじ 第${fortune.fields.number}番『${fortune.fields.blessing}』`
 
   return (
     <>
