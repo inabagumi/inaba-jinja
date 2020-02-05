@@ -3,9 +3,9 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
-import { homepage as siteUrl } from '../../package.json'
 import Lottery from '../components/pages/Lottery'
 import getFortunes from '../contentful/getFortunes'
+import fullPath from '../helpers/fullPath'
 import Error from './_error'
 
 const DELAY_SECONDS = 2
@@ -38,7 +38,7 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
       <Head>
         <noscript>
           <meta
-            content={`${DELAY_SECONDS};URL=${siteUrl}/kuji/${id}`}
+            content={`${DELAY_SECONDS};URL=${fullPath(`/kuji/${id}`)}`}
             httpEquiv="refresh"
           />
         </noscript>
