@@ -1,9 +1,9 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
+import fullPath from '../../../helpers/fullPath'
 import FortuneEntry from '../../../types/FortuneEntry'
 import Image from '../../atoms/Image'
 import SingleDoc from '../../templates/SingleDoc'
-import { homepage as siteUrl } from '../../../../package.json'
 
 const Paper = styled(Image)`
   background-color: #fff;
@@ -52,7 +52,7 @@ const getTweetLink = (fortune: FortuneEntry): string => {
   url.searchParams.append('hashtags', 'ねるくじ')
   url.searchParams.append('related', 'Haneru_Inaba')
   url.searchParams.append('text', text)
-  url.searchParams.append('url', `${siteUrl}/share/${fortune.sys.id}`)
+  url.searchParams.append('url', fullPath(`/share/${fortune.sys.id}`))
 
   return url.toString()
 }

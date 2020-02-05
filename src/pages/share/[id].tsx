@@ -3,9 +3,9 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
-import { homepage as siteUrl } from '../../../package.json'
 import getFortune from '../../contentful/getFortune'
 import getFortunes from '../../contentful/getFortunes'
+import fullPath from '../../helpers/fullPath'
 import FortuneEntry from '../../types/FortuneEntry'
 
 type Props = {
@@ -47,28 +47,27 @@ const SharePage: NextPage<Props> = ({ fortune }) => {
 
   if (!fortune) return null
 
+  const title = `因幡はねるくじ 第${fortune.fields.number}番 『${fortune.fields.blessing}』`
+
   return (
     <>
       <NextSeo
-        canonical={new URL(`/kuji/${fortune.sys.id}`, siteUrl).toString()}
+        canonical={fullPath(`/kuji/${fortune.sys.id}`)}
         description={fortune.fields.description}
         openGraph={{
           images: [
             {
-              url: new URL(
-                fortune.fields.card.fields.file.url,
-                siteUrl
-              ).toString()
+              url: fullPath(fortune.fields.card.fields.file.url)
             }
-          ]
+          ],
+          title
         }}
-        title={`${fortune.fields.blessing} - 因幡はねるくじ`}
-        titleTemplate={undefined}
+        title={title}
       />
 
       <Head>
         <noscript>
-          <meta content={`0;URL=${siteUrl}/`} httpEquiv="refresh" />
+          <meta content={`0;URL=${fullPath('/')}`} httpEquiv="refresh" />
         </noscript>
       </Head>
     </>
