@@ -1227,12 +1227,14 @@
     eslint-config-prettier "^6.7.0"
     eslint-plugin-prettier "^3.1.1"
 
-"@inabagumi/next-svg@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@inabagumi/next-svg/-/next-svg-2.1.1.tgz#3cd0421434fc90cbeb1f0e670883070b5003a072"
-  integrity sha512-reZO6QHkC8z+16xBVcKh4HIHe5ZK6vHco/9gtFYZHH+hFz76tr5ZfBeiG1s5SHy7vuN0WrJ98OtgLkmLNWPAsg==
+"@inabagumi/next-images@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@inabagumi/next-images/-/next-images-1.0.0.tgz#bcaa2987bf3d22888f1c28f19fb7b9eef0f2ba1b"
+  integrity sha512-ccsQRoItWSYp5zeFattcEaf5xi9zZVugJpE2vjIXyKIJWA7n9ZRxN3zrBWLyZbFSb3b7bZ++0c4JDiDtRT7aEQ==
   dependencies:
-    "@svgr/webpack" "^5.0.1"
+    "@svgr/webpack" "^5.1.0"
+    file-loader "^5.0.2"
+    url-loader "^3.0.0"
 
 "@inabagumi/prettier-config@^1.1.0":
   version "1.1.0"
@@ -1420,7 +1422,7 @@
     merge-deep "^3.0.2"
     svgo "^1.2.2"
 
-"@svgr/webpack@^5.0.1":
+"@svgr/webpack@^5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@svgr/webpack/-/webpack-5.1.0.tgz#1a417739656829b42b830e9b9d4548ca9b202553"
   integrity sha512-Ww7PHynN6oHtdKbVB5WcgMV44v8INGVK78ydToB3JFW8ZhIyLxc7gnUq4UQjvsvqC4bTbUV0kZt0Wh30BwhSrA==
@@ -1448,11 +1450,6 @@
   version "0.0.42"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.42.tgz#8d0c1f480339efedb3e46070e22dd63e0430dd11"
   integrity sha512-K1DPVvnBCPxzD+G51/cxVIoc2X8uUVl1zpJeE6iKcgHMj4+tbat5Xu4TjV7v2QSDbIeAfLi2hIk+u2+s0MlpUQ==
-
-"@types/gtag.js@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.3.tgz#bbc414030b2143fc7874260ab825aac82c42928e"
-  integrity sha512-iRF/4Q3G1t0OTNMjK52tpGSQPgEsYzWQL1IdVXt9BywK6MUK3ypB7LaoEQa8sW9gPXENoU1xAyCxqJhMkB2rCA==
 
 "@types/json-schema@^7.0.3":
   version "7.0.4"
