@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
-const { default: withSvg } = require('@inabagumi/next-svg')
+const withImages = require('@inabagumi/next-images')
 const withSourceMaps = require('@zeit/next-source-maps')
 const withOffline = require('next-offline')
 const { name: packageName, version } = require('./package.json')
@@ -66,4 +66,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withSourceMaps()(withSvg(withOffline(nextConfig)))
+module.exports = withSourceMaps()(withImages(withOffline(nextConfig)))
