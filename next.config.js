@@ -27,27 +27,6 @@ const nextConfig = {
   svgrOptions: {
     dimensions: false
   },
-  webpack: (config, { defaultLoaders, dev }) => {
-    config.module.rules.push({
-      test: /\.(?:jpe?g|png|webp)$/,
-      use: [
-        defaultLoaders.babel,
-        {
-          loader: 'url-loader',
-          options: {
-            limit: 8192,
-            name: dev
-              ? '[name].[ext]?[contenthash:8]'
-              : '[name].[contenthash:8].[ext]',
-            outputPath: 'static/images',
-            publicPath: '/_next/static/images'
-          }
-        }
-      ]
-    })
-
-    return config
-  },
   workboxOpts: {
     clientsClaim: true,
     manifestTransforms: [
