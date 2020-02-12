@@ -26,7 +26,7 @@ const Image: FC<Props> = ({ alt, className, height, src, width }) => {
         alt={alt}
         className={className}
         height={clientHeight}
-        src={`${src}w=${clientWidth}`}
+        src={`${src}?w=${clientWidth}`}
         srcSet={`${src}?w=${clientWidth} 1x, ${src}?w=${width} 2x`}
         width={clientWidth}
       />
