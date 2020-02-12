@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.3](https://github.com/inabagumi/inaba-jinja/compare/v1.4.2...v1.4.3) (2020-02-12)
+
+
+### Bug Fixes
+
+* **kuji:** add missing ? ([#320](https://github.com/inabagumi/inaba-jinja/issues/320)) ([caa86e0](https://github.com/inabagumi/inaba-jinja/commit/caa86e0a1c1d152630d3c81f1b08781df691b930))
+
 ### [1.4.2](https://github.com/inabagumi/inaba-jinja/compare/v1.4.1...v1.4.2) (2020-02-12)
 
 
