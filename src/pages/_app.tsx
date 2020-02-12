@@ -4,7 +4,6 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import React, { FC } from 'react'
-import SEO from '../../next-seo.config'
 import Layout from '../components/templates/Layout'
 
 const globalStyles = css`
@@ -58,7 +57,16 @@ const globalStyles = css`
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
   <>
-    <DefaultSeo {...SEO} />
+    <DefaultSeo
+      openGraph={{
+        type: 'article'
+      }}
+      twitter={{
+        cardType: 'summary_large_image',
+        site: '@Inaba_Jinja'
+      }}
+      titleTemplate="%s - 因幡神社"
+    />
 
     <Head>
       <meta content="#ff5722" name="theme-color" />
