@@ -28,7 +28,7 @@ class MyDocument extends Document<EmotionCritical> {
 
     return (
       <Html lang="ja">
-        <Head>
+        <Head prefix="og: http://ogp.me/ns#">
           <link href="https://www.google-analytics.com" rel="preconnect" />
           <link href="https://www.googletagmanager.com" rel="preconnect" />
           <style

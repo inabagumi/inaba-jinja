@@ -53,6 +53,7 @@ const getTweetLink = (fortune: FortuneEntry): string => {
   url.searchParams.append('related', 'Haneru_Inaba')
   url.searchParams.append('text', text)
   url.searchParams.append('url', fullPath(`/share/${fortune.sys.id}`))
+  url.searchParams.append('via', 'Inaba_Jinja')
 
   return url.toString()
 }

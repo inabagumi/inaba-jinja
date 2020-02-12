@@ -11,7 +11,6 @@
     "autoAlias": false,
     "silent": true
   },
-  "name": "inaba-jinja",
   "regions": ["hnd1", "sfo1"],
   "routes": [
     {
