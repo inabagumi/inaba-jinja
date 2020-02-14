@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
-import Link from 'next/link'
 import React, { FC } from 'react'
+import Link from '../../atoms/Link'
 
 const Copyright = styled.p`
   margin: 0;
@@ -44,22 +44,16 @@ const Footer: FC = () => {
       <Navigation>
         <ul>
           <li>
-            <a
-              href="https://haneru.dev/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              運営者情報
-            </a>
+            <Link href="https://haneru.dev/">運営者情報</Link>
           </li>
           <li>
             <Link href="/disclaimer" prefetch={false}>
-              <a href="/disclaimer">免責事項</a>
+              免責事項
             </Link>
           </li>
           <li>
             <Link href="/privacy" prefetch={false}>
-              <a href="/privacy">プライバシーポリシー</a>
+              プライバシーポリシー
             </Link>
           </li>
         </ul>

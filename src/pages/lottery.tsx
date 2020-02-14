@@ -6,7 +6,6 @@ import React, { useEffect } from 'react'
 import Lottery from '../components/pages/Lottery'
 import getFortunes from '../contentful/getFortunes'
 import fullPath from '../helpers/fullPath'
-import Error from './_error'
 
 const DELAY_SECONDS = 2
 
@@ -18,18 +17,18 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
   const router = useRouter()
 
   useEffect(() => {
-    if (!id) return
-
     const timeoutId = setTimeout(() => {
-      router.replace('/kuji/[id]', `/kuji/${id}`)
+      if (id) {
+        router.replace('/kuji/[id]', `/kuji/${id}`)
+      } else {
+        router.replace('/')
+      }
     }, 1000 * DELAY_SECONDS)
 
     return (): void => {
       clearTimeout(timeoutId)
     }
   }, [id, router])
-
-  if (!id) return <Error statusCode={500} />
 
   return (
     <>

@@ -30,10 +30,16 @@ export async function unstable_getStaticProps({
   return { props: { fortune } }
 }
 
-export async function unstable_getStaticPaths(): Promise<string[]> {
+type StaticPaths = {
+  paths: string[]
+}
+
+export async function unstable_getStaticPaths(): Promise<StaticPaths> {
   const ids = await getFortunes().catch((): string[] => [])
 
-  return ids.map(id => `/share/${id}`)
+  return {
+    paths: ids.map(id => `/share/${id}`)
+  }
 }
 
 const SharePage: NextPage<Props> = ({ fortune }) => {

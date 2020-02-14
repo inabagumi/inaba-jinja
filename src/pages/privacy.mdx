@@ -1,0 +1,21 @@
+import { NextSeo } from 'next-seo'
+import SingleDoc from '../components/templates/SingleDoc'
+import fullPath from '../helpers/fullPath'
+
+export const title = 'プライバシーポリシー'
+export default ({ children, title }) => (
+  <>
+    <NextSeo canonical={fullPath('/privacy')} title={title} />
+    <SingleDoc title={title}>{children}</SingleDoc>
+  </>
+)
+
+当ウェブサービスでは[Google アナリティクス](https://developers.google.com/analytics/?hl=ja)を利用してトラフィックデータを収集しています。
+収集されたトラフィックデータは匿名化され、あなたの個人が特定されることはありません。
+Google アナリティクスの詳細は[Google アナリティクス利用規約](https://marketingplatform.google.com/about/analytics/terms/jp/)を参照してください。
+
+また[Sentry](https://sentry.io/welcome/)を利用してエラーログの収集しています。
+収集されたエラーログには個人が特定されるような情報は省略されています。
+
+
+これらの情報の取得はCookieやJavaScriptを無効にすることによって拒否できます。

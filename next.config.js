@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
 const withImages = require('@inabagumi/next-images')
+const withMDX = require('@next/mdx')
 const withSourceMaps = require('@zeit/next-source-maps')
 const withOffline = require('next-offline')
 const { name: packageName, version } = require('./package.json')
@@ -15,6 +16,7 @@ const nextConfig = {
   },
   experimental: {
     modern: true,
+    pages404: true,
     plugins: true,
     rewrites: () => [
       {
@@ -24,6 +26,7 @@ const nextConfig = {
     ]
   },
   generateEtags: false,
+  pageExtensions: ['mdx', 'tsx'],
   svgrOptions: {
     dimensions: false
   },
@@ -45,4 +48,7 @@ const nextConfig = {
   }
 }
 
-module.exports = withSourceMaps()(withImages(withOffline(nextConfig)))
+module.exports = [withSourceMaps(), withMDX(), withImages, withOffline].reduce(
+  (config, plugin) => plugin(config),
+  nextConfig
+)
