@@ -6,7 +6,7 @@ import getFortune from '../../contentful/getFortune'
 import getFortunes from '../../contentful/getFortunes'
 import fullPath from '../../helpers/fullPath'
 import FortuneEntry from '../../types/FortuneEntry'
-import Error from '../_error'
+import Error from '../404.mdx'
 
 type Props = {
   fortune?: FortuneEntry
@@ -30,14 +30,20 @@ export async function unstable_getStaticProps({
   return { props: { fortune } }
 }
 
-export async function unstable_getStaticPaths(): Promise<string[]> {
+type StaticPaths = {
+  paths: string[]
+}
+
+export async function unstable_getStaticPaths(): Promise<StaticPaths> {
   const ids = await getFortunes().catch((): string[] => [])
 
-  return ids.map(id => `/kuji/${id}`)
+  return {
+    paths: ids.map(id => `/kuji/${id}`)
+  }
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
-  if (!fortune) return <Error statusCode={404} />
+  if (!fortune) return <Error />
 
   const title = `因幡はねるくじ 第${fortune.fields.number}番『${fortune.fields.blessing}』`
 

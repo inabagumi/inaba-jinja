@@ -1,9 +1,11 @@
 import { cache } from '@emotion/css'
 import { CacheProvider, Global, css } from '@emotion/react'
+import { MDXProvider } from '@mdx-js/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import React, { FC } from 'react'
+import Link from '../components/atoms/Link'
 import Layout from '../components/templates/Layout'
 
 const globalStyles = css`
@@ -55,6 +57,10 @@ const globalStyles = css`
   }
 `
 
+const MDXComponents = {
+  a: Link
+}
+
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
   <>
     <DefaultSeo
@@ -92,11 +98,13 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
     </Head>
 
     <CacheProvider value={cache}>
-      <Global styles={globalStyles} />
+      <MDXProvider components={MDXComponents}>
+        <Global styles={globalStyles} />
 
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </MDXProvider>
     </CacheProvider>
   </>
 )

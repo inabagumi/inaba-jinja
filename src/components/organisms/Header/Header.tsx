@@ -1,9 +1,9 @@
 import styled from '@emotion/styled'
-import Link from 'next/link'
 import React, { FC } from 'react'
+import Link from '../../atoms/Link'
 import Logo from '../../atoms/Logo'
 
-const Brand = styled.a`
+const Brand = styled(Link)`
   color: inherit;
   font-size: 2rem;
 
@@ -20,11 +20,9 @@ const Root = styled.header`
 
 const Header: FC = () => (
   <Root>
-    <Link href="/" passHref prefetch={false}>
-      <Brand>
-        <Logo aria-label="因幡神社" />
-      </Brand>
-    </Link>
+    <Brand href="/" prefetch={false}>
+      <Logo aria-label="因幡神社" />
+    </Brand>
   </Root>
 )
 
