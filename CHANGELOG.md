@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/inabagumi/inaba-jinja/compare/v1.4.3...v1.5.0) (2020-02-14)
+
+
+### Features
+
+* **kuji:** add placeholder to kuji ([#325](https://github.com/inabagumi/inaba-jinja/issues/325)) ([371c677](https://github.com/inabagumi/inaba-jinja/commit/371c67776ef2fd97a4304dda2aa7b6b237928f39))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.2-canary.20 ([#322](https://github.com/inabagumi/inaba-jinja/issues/322)) ([3f1710e](https://github.com/inabagumi/inaba-jinja/commit/3f1710eb1f242df1ff023c08eb729098a6a8a434))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.2-canary.20 ([#323](https://github.com/inabagumi/inaba-jinja/issues/323)) ([a7cc28d](https://github.com/inabagumi/inaba-jinja/commit/a7cc28d66673fe50170376f64bcfc76690d0b4fc))
+* **deps:** update nextjs monorepo to ^9.2.2-canary.20 ([#324](https://github.com/inabagumi/inaba-jinja/issues/324)) ([dcbe073](https://github.com/inabagumi/inaba-jinja/commit/dcbe0730ca32aaa1e6cf71da960373451f861861))
+
 ### [1.4.3](https://github.com/inabagumi/inaba-jinja/compare/v1.4.2...v1.4.3) (2020-02-12)
 
 
