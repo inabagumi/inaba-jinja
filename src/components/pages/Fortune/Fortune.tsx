@@ -7,6 +7,9 @@ import SingleDoc from '../../templates/SingleDoc'
 
 const Paper = styled(Image)`
   background-color: #fff;
+  background-image: url("${({ src }): string => src}?w=10");
+  background-position: center;
+  background-size: contain;
   display: block;
   height: auto;
   margin: 0 auto;
