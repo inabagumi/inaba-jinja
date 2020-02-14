@@ -19,7 +19,6 @@
     "@next/plugin-google-analytics": "^9.2.2-canary.19",
     "@next/plugin-sentry": "^9.2.2-canary.19",
     "@zeit/next-source-maps": "^0.0.4-canary.1",
-    "clsx": "^1.1.0",
     "contentful": "^7.13.1",
     "next": "^9.2.2-canary.19",
     "next-offline": "^5.0.0",
