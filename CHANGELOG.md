@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/inabagumi/inaba-jinja/compare/v1.5.0...v1.5.1) (2020-02-14)
+
+
+### Bug Fixes
+
+* **workflow:** add confirm args to now cli ([#326](https://github.com/inabagumi/inaba-jinja/issues/326)) ([2124db7](https://github.com/inabagumi/inaba-jinja/commit/2124db79eb2ac38cf20e97c12575539eb5b33771))
+
 ## [1.5.0](https://github.com/inabagumi/inaba-jinja/compare/v1.4.3...v1.5.0) (2020-02-14)
 
 
