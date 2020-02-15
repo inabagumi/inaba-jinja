@@ -31,14 +31,14 @@ export async function unstable_getStaticProps({
 }
 
 type StaticPaths = {
-  paths: string[]
+  paths: StaticParams[]
 }
 
 export async function unstable_getStaticPaths(): Promise<StaticPaths> {
   const ids = await getFortunes().catch((): string[] => [])
 
   return {
-    paths: ids.map(id => `/kuji/${id}`)
+    paths: ids.map(id => ({ params: { id } }))
   }
 }
 

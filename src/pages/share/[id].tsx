@@ -3,44 +3,16 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
-import getFortune from '../../contentful/getFortune'
-import getFortunes from '../../contentful/getFortunes'
 import fullPath from '../../helpers/fullPath'
 import FortuneEntry from '../../types/FortuneEntry'
+import * as Kuji from '../kuji/[id]'
 
 type Props = {
   fortune?: FortuneEntry
 }
 
-type StaticParams = {
-  params: {
-    id: string
-  }
-}
-
-type StaticProps = {
-  props: Props
-}
-
-export async function unstable_getStaticProps({
-  params
-}: StaticParams): Promise<StaticProps> {
-  const fortune = await getFortune(params.id).catch(() => undefined)
-
-  return { props: { fortune } }
-}
-
-type StaticPaths = {
-  paths: string[]
-}
-
-export async function unstable_getStaticPaths(): Promise<StaticPaths> {
-  const ids = await getFortunes().catch((): string[] => [])
-
-  return {
-    paths: ids.map(id => `/share/${id}`)
-  }
-}
+export const unstable_getStaticProps = Kuji.unstable_getStaticProps
+export const unstable_getStaticPaths = Kuji.unstable_getStaticPaths
 
 const SharePage: NextPage<Props> = ({ fortune }) => {
   const router = useRouter()
