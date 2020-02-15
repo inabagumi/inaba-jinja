@@ -10,7 +10,7 @@ import fullPath from '../helpers/fullPath'
 const DELAY_SECONDS = 2
 
 type Props = {
-  id?: string
+  id: string
 }
 
 const LotteryPage: NextPage<Props> = ({ id }) => {
@@ -18,11 +18,7 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      if (id) {
-        router.replace('/kuji/[id]', `/kuji/${id}`)
-      } else {
-        router.replace('/')
-      }
+      router.replace('/kuji/[id]', `/kuji/${id}`)
     }, 1000 * DELAY_SECONDS)
 
     return (): void => {
@@ -51,6 +47,8 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
 LotteryPage.getInitialProps = async (): Promise<Props> => {
   const ids = await getFortunes().catch((): string[] => [])
   const id = ids[Math.floor(Math.random() * ids.length)]
+
+  if (!id) throw new TypeError("Fortune doesn't exist.")
 
   return { id }
 }
