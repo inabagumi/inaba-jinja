@@ -13,6 +13,25 @@ type Props = {
   id: string
 }
 
+type ServerProps = {
+  props: Props
+}
+
+export async function unstable_getServerProps({
+  res
+}: NextPageContext): Promise<ServerProps> {
+  res?.setHeader('cache-control', 'max-age=0, private')
+
+  const ids = await getFortunes().catch((): string[] => [])
+  const id = ids[Math.floor(Math.random() * ids.length)]
+
+  if (!id) throw new TypeError("Fortune doesn't exist.")
+
+  return {
+    props: { id }
+  }
+}
+
 const LotteryPage: NextPage<Props> = ({ id }) => {
   const router = useRouter()
 
@@ -42,19 +61,6 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
       <Lottery />
     </>
   )
-}
-
-LotteryPage.getInitialProps = async ({
-  res
-}: NextPageContext): Promise<Props> => {
-  const ids = await getFortunes().catch((): string[] => [])
-  const id = ids[Math.floor(Math.random() * ids.length)]
-
-  if (!id) throw new TypeError("Fortune doesn't exist.")
-
-  res?.setHeader('cache-control', 'max-age=0, private')
-
-  return { id }
 }
 
 export default LotteryPage
