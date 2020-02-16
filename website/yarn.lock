@@ -968,10 +968,10 @@
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-google-gtag/-/plugin-google-gtag-2.0.0-alpha.40.tgz#9f6e372c39175615a70f53cdd4d4bb91fbbb07ac"
   integrity sha512-2cBdCAsgLGg2uqSFf85GfUxsuqlmBIpmJhQrA/4Bc+ECc9mPxVq4UdD3C8YafUbiUzgNB2GTRv1igMBM4d7hEQ==
 
-"@docusaurus/plugin-ideal-image@^2.0.0-alpha.40":
-  version "2.0.0-alpha.40"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.40.tgz#0599ccfc91189a0af11c5a6c9265461595a496a6"
-  integrity sha512-Yav5ejlEBSFMveVYpa7azEEYJ21vRTYaTfHFdqa6P8ytixUgXMU4mAlqofahFIXUfLXjLhaNF4YsKL76zfLPnA==
+"@docusaurus/plugin-ideal-image@^2.0.0-alpha.41":
+  version "2.0.0-alpha.41"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.41.tgz#2d95c5cedb0b1154bdf3b2526be357b90c70a4ec"
+  integrity sha512-PvkO2yAzqWE/DbCaF8ahO7goamag0ost78cpsjU19/CuDwAZHch+eswUbmqaXZmPMf4ADZz1p+6gsMNuY0aV1w==
   dependencies:
     "@endiliey/lqip-loader" "^3.0.2"
     "@endiliey/react-ideal-image" "^0.0.11"
