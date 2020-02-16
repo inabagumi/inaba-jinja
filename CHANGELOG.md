@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/inabagumi/inaba-jinja/compare/v1.5.1...v1.5.2) (2020-02-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.2-canary.21 ([#329](https://github.com/inabagumi/inaba-jinja/issues/329)) ([16ea6a5](https://github.com/inabagumi/inaba-jinja/commit/16ea6a5e8e32bd787a23a5f58dfbef9232717fa1))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.2-canary.21 ([#330](https://github.com/inabagumi/inaba-jinja/issues/330)) ([2ef2083](https://github.com/inabagumi/inaba-jinja/commit/2ef2083576cb58fc092693be15c3b0d82f7a8f56))
+* **deps:** update nextjs monorepo to ^9.2.2-canary.21 ([#328](https://github.com/inabagumi/inaba-jinja/issues/328)) ([716908b](https://github.com/inabagumi/inaba-jinja/commit/716908b96df9a5e8fbcdc41089c75fd7a9076420))
+
 ### [1.5.1](https://github.com/inabagumi/inaba-jinja/compare/v1.5.0...v1.5.1) (2020-02-14)
 
 
