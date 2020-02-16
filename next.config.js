@@ -15,6 +15,67 @@ const nextConfig = {
     SENTRY_RELEASE: `${packageName}@${version}`
   },
   experimental: {
+    headers: () => [
+      {
+        headers: [
+          {
+            key: 'cache-control',
+            value:
+              'max-age=600, public, s-maxage=120, stale-if-error=600, stale-while-revalidate=300'
+          },
+          {
+            key: 'content-security-policy',
+            value:
+              "base-uri 'none'; connect-src 'self' https:; default-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self' https: data:; manifest-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; worker-src 'self'"
+          },
+          {
+            key: 'referrer-policy',
+            value: 'same-origin, strict-origin-when-cross-origin'
+          }
+        ],
+        source: '/(.*)'
+      },
+      {
+        headers: [
+          {
+            key: 'cache-control',
+            value: 'immutable, public, max-age=31536000'
+          }
+        ],
+        source: '/_next/static/images/(.*)'
+      },
+      {
+        headers: [
+          {
+            key: 'cache-control',
+            value: 'max-age=0'
+          },
+          {
+            key: 'service-worker-allowed',
+            value: '/'
+          }
+        ],
+        source: '/service-worker.js'
+      },
+      {
+        headers: [
+          {
+            key: 'content-type',
+            value: 'application/manifest+json'
+          }
+        ],
+        source: '/manifest.webmanifest'
+      },
+      {
+        headers: [
+          {
+            key: 'cache-control',
+            value: 'max-age=0, public'
+          }
+        ],
+        source: '/lottery{/}?'
+      }
+    ],
     modern: true,
     pages404: true,
     plugins: true,
@@ -22,6 +83,10 @@ const nextConfig = {
       {
         destination: '/_next/static/service-worker.js',
         source: '/service-worker.js'
+      },
+      {
+        destination: '/_next/static/service-worker.js.map',
+        source: '/service-worker.js.map'
       }
     ]
   },
