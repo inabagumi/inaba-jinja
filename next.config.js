@@ -39,7 +39,7 @@ const nextConfig = {
         headers: [
           {
             key: 'cache-control',
-            value: 'immutable, maxage=31536000, public'
+            value: 'immutable, max-age=31536000, public'
           }
         ],
         source: '/_next/data/:build_id/(kuji|share)/:id.json'
