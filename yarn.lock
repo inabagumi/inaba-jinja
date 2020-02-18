@@ -1352,10 +1352,10 @@
   resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.2.2-canary.22.tgz#2266d05e28cf781e3edd817ae5a22547de9aa07d"
   integrity sha512-d3bA4WtUK8/osXvZo1V9KX/AHqA23C8F+iuX7TYl97kERPjPsuwgcEVCM7Eca5irTeUmSKUuBsxUZquPtfzjmg==
 
-"@next/plugin-sentry@^9.2.2-canary.21":
-  version "9.2.2-canary.21"
-  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.2.2-canary.21.tgz#ef42ffc613eae2b545a6cc72e44ec860886d65ca"
-  integrity sha512-XJ3ThdhGCYaEpJdgMsorB195KiA7UAbjDOhvEyKS0zvOVfRwCp9R1QDci/YsPyOAR0XOWijk0IULLNiBFZ7f+g==
+"@next/plugin-sentry@^9.2.2-canary.22":
+  version "9.2.2-canary.22"
+  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.2.2-canary.22.tgz#de13868b13d26ac6cc3961c0d74bea0d8dfe352c"
+  integrity sha512-93hqoJSCyPJzfzEPBskH3Ep83TVzar32Mqi58Ly1vBqM97xmrIMxixYGnJ0oBeuwT1EhkqnaU56fWlDCIgUb4A==
   dependencies:
     "@sentry/browser" "5.7.1"
     "@sentry/node" "5.7.1"
