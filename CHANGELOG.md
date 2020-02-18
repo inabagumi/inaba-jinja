@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.4](https://github.com/inabagumi/inaba-jinja/compare/v1.5.3...v1.5.4) (2020-02-18)
+
+
+### Bug Fixes
+
+* replace to max-age from maxage ([#351](https://github.com/inabagumi/inaba-jinja/issues/351)) ([67290cf](https://github.com/inabagumi/inaba-jinja/commit/67290cf435cfb4fb5b4493fe6f76d0f886959a85))
+
 ### [1.5.3](https://github.com/inabagumi/inaba-jinja/compare/v1.5.2...v1.5.3) (2020-02-18)
 
 
