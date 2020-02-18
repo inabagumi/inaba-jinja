@@ -33,16 +33,7 @@ const nextConfig = {
             value: 'same-origin, strict-origin-when-cross-origin'
           }
         ],
-        source: '/(.*)'
-      },
-      {
-        headers: [
-          {
-            key: 'cache-control',
-            value: 'immutable, public, max-age=31536000'
-          }
-        ],
-        source: '/_next/static/images/(.*)'
+        source: '/((?!_next).*)'
       },
       {
         headers: [
