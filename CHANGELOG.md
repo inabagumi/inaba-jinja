@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.3](https://github.com/inabagumi/inaba-jinja/compare/v1.5.2...v1.5.3) (2020-02-18)
+
+
+### Bug Fixes
+
+* add cache-control to data json ([#349](https://github.com/inabagumi/inaba-jinja/issues/349)) ([d6376b9](https://github.com/inabagumi/inaba-jinja/commit/d6376b9554fa70d3a15617f79ffadbd0fb81ddaf))
+* **deps:** update dependency @inabagumi/next-images to ^1.1.0 ([#342](https://github.com/inabagumi/inaba-jinja/issues/342)) ([5927fe5](https://github.com/inabagumi/inaba-jinja/commit/5927fe524fda45babd4082701a453645b6819c77))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.2 ([#347](https://github.com/inabagumi/inaba-jinja/issues/347)) ([87cd409](https://github.com/inabagumi/inaba-jinja/commit/87cd40923ffefce943e8afc023402fbc4079f7ff))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.2-canary.22 ([#338](https://github.com/inabagumi/inaba-jinja/issues/338)) ([9021d1a](https://github.com/inabagumi/inaba-jinja/commit/9021d1a51f910205e7d1fb7c040b07b04ca6d4c7))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.2-canary.23 ([#344](https://github.com/inabagumi/inaba-jinja/issues/344)) ([290ab36](https://github.com/inabagumi/inaba-jinja/commit/290ab366db25fe4c698a27a4684e0b470475b1bb))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.2 ([#346](https://github.com/inabagumi/inaba-jinja/issues/346)) ([7640b71](https://github.com/inabagumi/inaba-jinja/commit/7640b7122d127ec175752d83ed2531cd171986fb))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.2-canary.22 ([#339](https://github.com/inabagumi/inaba-jinja/issues/339)) ([866a81c](https://github.com/inabagumi/inaba-jinja/commit/866a81c96f92e46f6435606c82e0102ae78f96b2))
+* **deps:** update nextjs monorepo to ^9.2.2 ([#343](https://github.com/inabagumi/inaba-jinja/issues/343)) ([5be6ddb](https://github.com/inabagumi/inaba-jinja/commit/5be6ddb23163efdcfca4f5e1902652dbf735a7a9))
+* **deps:** update nextjs monorepo to ^9.2.2-canary.22 ([#340](https://github.com/inabagumi/inaba-jinja/issues/340)) ([d53bdd5](https://github.com/inabagumi/inaba-jinja/commit/d53bdd5f59af573001b6d4abfc61933230929b1b))
+* **kuji:** set revalidate ([#345](https://github.com/inabagumi/inaba-jinja/issues/345)) ([7fba64a](https://github.com/inabagumi/inaba-jinja/commit/7fba64a658780a6c764d3062f5eb9b87c54e0cde))
+
 ### [1.5.2](https://github.com/inabagumi/inaba-jinja/compare/v1.5.1...v1.5.2) (2020-02-16)
 
 
