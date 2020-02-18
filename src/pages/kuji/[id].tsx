@@ -20,7 +20,7 @@ type StaticParams = {
 
 type StaticProps = {
   props: Props
-  revalidate?: number
+  revalidate?: number | boolean
 }
 
 export async function unstable_getStaticProps({
@@ -32,7 +32,7 @@ export async function unstable_getStaticProps({
     props: {
       fortune
     },
-    revalidate: fortune ? 120 : 0
+    revalidate: fortune ? false : 30
   }
 }
 

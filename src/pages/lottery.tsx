@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import { NextPage, NextPageContext } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
@@ -44,11 +44,15 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
   )
 }
 
-LotteryPage.getInitialProps = async (): Promise<Props> => {
+LotteryPage.getInitialProps = async ({
+  res
+}: NextPageContext): Promise<Props> => {
   const ids = await getFortunes().catch((): string[] => [])
   const id = ids[Math.floor(Math.random() * ids.length)]
 
   if (!id) throw new TypeError("Fortune doesn't exist.")
+
+  res?.setHeader('cache-control', 'max-age=0, private')
 
   return { id }
 }
