@@ -20,6 +20,7 @@ type StaticParams = {
 
 type StaticProps = {
   props: Props
+  revalidate?: number
 }
 
 export async function unstable_getStaticProps({
@@ -27,7 +28,12 @@ export async function unstable_getStaticProps({
 }: StaticParams): Promise<StaticProps> {
   const fortune = await getFortune(params.id).catch(() => undefined)
 
-  return { props: { fortune } }
+  return {
+    props: {
+      fortune
+    },
+    revalidate: fortune ? 120 : 0
+  }
 }
 
 type StaticPaths = {
