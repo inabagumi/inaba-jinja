@@ -1285,10 +1285,10 @@
     eslint-config-prettier "^6.7.0"
     eslint-plugin-prettier "^3.1.1"
 
-"@inabagumi/next-images@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@inabagumi/next-images/-/next-images-1.0.0.tgz#bcaa2987bf3d22888f1c28f19fb7b9eef0f2ba1b"
-  integrity sha512-ccsQRoItWSYp5zeFattcEaf5xi9zZVugJpE2vjIXyKIJWA7n9ZRxN3zrBWLyZbFSb3b7bZ++0c4JDiDtRT7aEQ==
+"@inabagumi/next-images@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@inabagumi/next-images/-/next-images-1.1.0.tgz#b040cca9ee54406d72c0531c9c9b1eab89cabf7b"
+  integrity sha512-Dxc1vN/suG5XjNpLpG0Lz/GrOIFZT9jjCRvFUisj+YeA9Le45G4+IdtG/H4jaEEiGtAVA/h1ipXWSR2vjNo4kw==
   dependencies:
     "@svgr/webpack" "^5.1.0"
     file-loader "^5.0.2"
