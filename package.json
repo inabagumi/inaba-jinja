@@ -16,7 +16,7 @@
     "@inabagumi/next-images": "^1.1.0",
     "@mdx-js/loader": "^1.5.5",
     "@next/mdx": "^9.2.2",
-    "@next/plugin-google-analytics": "^9.2.2-canary.23",
+    "@next/plugin-google-analytics": "^9.2.2",
     "@next/plugin-sentry": "^9.2.2",
     "@zeit/next-source-maps": "^0.0.4-canary.1",
     "contentful": "^7.13.1",
