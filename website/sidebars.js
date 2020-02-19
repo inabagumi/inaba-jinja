@@ -1,14 +1,13 @@
 module.exports = {
   docs: {
     'Haneru Developers': ['introduction'],
-    プロダクト: [
+    ねるねるアプリ: [
       'neru-camera',
       'animare-shindan',
       'hanerubeat',
-      'shinju-date',
-      '21g',
       'inaba-jinja'
     ],
+    プロダクト: ['shinju-date', '21g'],
     'npm パッケージ': ['eslint-config', 'prettier-config', 'renovate-config']
   }
 }
