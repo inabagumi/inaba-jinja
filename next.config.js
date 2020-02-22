@@ -70,6 +70,7 @@ const nextConfig = {
     modern: true,
     pages404: true,
     plugins: true,
+    polyfillsOptimization: true,
     rewrites: () => [
       {
         destination: '/_next/static/service-worker.js',
