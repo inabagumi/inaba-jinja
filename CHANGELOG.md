@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.5](https://github.com/inabagumi/inaba-jinja/compare/v1.5.4...v1.5.5) (2020-02-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @mdx-js/loader to ^1.5.6 ([#355](https://github.com/inabagumi/inaba-jinja/issues/355)) ([6a86138](https://github.com/inabagumi/inaba-jinja/commit/6a861384fab08ea6250d74bcd0f52f713ff71cd5))
+* **deps:** update dependency @mdx-js/loader to ^1.5.7 ([#360](https://github.com/inabagumi/inaba-jinja/issues/360)) ([e6e2404](https://github.com/inabagumi/inaba-jinja/commit/e6e240481111a4071c9788bf337a4a29cd75aff6))
+* **deps:** update dependency contentful to ^7.14.0 ([#357](https://github.com/inabagumi/inaba-jinja/issues/357)) ([c8ef8fa](https://github.com/inabagumi/inaba-jinja/commit/c8ef8fa218efd24ea70d8dc22c8190bda0cf62dd))
+* **deps:** update dependency next-seo to ^4.3.0 ([#359](https://github.com/inabagumi/inaba-jinja/issues/359)) ([2954a91](https://github.com/inabagumi/inaba-jinja/commit/2954a91301af5ecd67efbed21116f90e1121b2dd))
+
 ### [1.5.4](https://github.com/inabagumi/inaba-jinja/compare/v1.5.3...v1.5.4) (2020-02-18)
 
 
