@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.6](https://github.com/inabagumi/inaba-jinja/compare/v1.5.5...v1.5.6) (2020-02-24)
+
+
+### Bug Fixes
+
+* **logo:** disable dynamic import ([#365](https://github.com/inabagumi/inaba-jinja/issues/365)) ([402a8f6](https://github.com/inabagumi/inaba-jinja/commit/402a8f62c2c97501d3b1190aa912a6a142ae9648))
+
 ### [1.5.5](https://github.com/inabagumi/inaba-jinja/compare/v1.5.4...v1.5.5) (2020-02-23)
 
 
