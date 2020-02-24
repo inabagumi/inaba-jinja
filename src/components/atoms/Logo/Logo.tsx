@@ -1,9 +1,8 @@
 import styled from '@emotion/styled'
 import dynamic from 'next/dynamic'
 import React, { FC, SVGProps } from 'react'
-
-const HorizontalLogo = dynamic(() => import('../../../assets/logo.svg'))
-const VerticalLogo = dynamic(() => import('../../../assets/vertical-logo.svg'))
+import HorizontalLogo from '../../../assets/logo.svg'
+import VerticalLogo from '../../../assets/vertical-logo.svg'
 
 type Props = {
   vertical?: boolean
