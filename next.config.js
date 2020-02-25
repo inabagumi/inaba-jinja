@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
 const withImages = require('@inabagumi/next-images')
-const withMDX = require('@next/mdx')
-const withSourceMaps = require('@zeit/next-source-maps')
+const withMDX = require('@next/mdx')()
+const withSourceMaps = require('@zeit/next-source-maps')()
 const withOffline = require('next-offline')
 const { name: packageName, version } = require('./package.json')
 
@@ -105,7 +105,7 @@ const nextConfig = {
   }
 }
 
-module.exports = [withSourceMaps(), withMDX(), withImages, withOffline].reduce(
+module.exports = [withSourceMaps, withMDX, withImages, withOffline].reduce(
   (config, plugin) => plugin(config),
   nextConfig
 )
