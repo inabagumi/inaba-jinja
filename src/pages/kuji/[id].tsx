@@ -37,6 +37,7 @@ export async function unstable_getStaticProps({
 }
 
 type StaticPaths = {
+  fallback: boolean
   paths: StaticParams[]
 }
 
@@ -44,6 +45,7 @@ export async function unstable_getStaticPaths(): Promise<StaticPaths> {
   const ids = await getFortunes().catch((): string[] => [])
 
   return {
+    fallback: false,
     paths: ids.map(id => ({ params: { id } }))
   }
 }
