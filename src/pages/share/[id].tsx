@@ -7,12 +7,12 @@ import fullPath from '../../helpers/fullPath'
 import FortuneEntry from '../../types/FortuneEntry'
 import * as Kuji from '../kuji/[id]'
 
+export const getStaticProps = Kuji.getStaticProps
+export const getStaticPaths = Kuji.getStaticPaths
+
 type Props = {
   fortune?: FortuneEntry
 }
-
-export const getStaticProps = Kuji.getStaticProps
-export const getStaticPaths = Kuji.getStaticPaths
 
 const SharePage: NextPage<Props> = ({ fortune }) => {
   const router = useRouter()
