@@ -11,8 +11,8 @@ type Props = {
   fortune?: FortuneEntry
 }
 
-export const unstable_getStaticProps = Kuji.unstable_getStaticProps
-export const unstable_getStaticPaths = Kuji.unstable_getStaticPaths
+export const getStaticProps = Kuji.getStaticProps
+export const getStaticPaths = Kuji.getStaticPaths
 
 const SharePage: NextPage<Props> = ({ fortune }) => {
   const router = useRouter()

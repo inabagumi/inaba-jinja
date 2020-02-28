@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import React from 'react'
 import Fortune from '../../components/pages/Fortune'
@@ -8,25 +8,11 @@ import fullPath from '../../helpers/fullPath'
 import FortuneEntry from '../../types/FortuneEntry'
 import Error from '../404.mdx'
 
-type Props = {
-  fortune?: FortuneEntry
-}
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  if (!params?.id) throw new TypeError('ID is required.')
 
-type StaticParams = {
-  params: {
-    id: string
-  }
-}
-
-type StaticProps = {
-  props: Props
-  revalidate?: number | boolean
-}
-
-export async function unstable_getStaticProps({
-  params
-}: StaticParams): Promise<StaticProps> {
-  const fortune = await getFortune(params.id).catch(() => undefined)
+  const id = Array.isArray(params.id) ? params.id[0] : params.id
+  const fortune = await getFortune(id).catch(() => undefined)
 
   return {
     props: {
@@ -36,18 +22,22 @@ export async function unstable_getStaticProps({
   }
 }
 
-type StaticPaths = {
-  fallback: boolean
-  paths: StaticParams[]
-}
-
-export async function unstable_getStaticPaths(): Promise<StaticPaths> {
+export const getStaticPaths: GetStaticPaths = async () => {
   const ids = await getFortunes().catch((): string[] => [])
+  const paths = ids.map(id => ({
+    params: {
+      id
+    }
+  }))
 
   return {
     fallback: false,
-    paths: ids.map(id => ({ params: { id } }))
+    paths
   }
+}
+
+type Props = {
+  fortune?: FortuneEntry
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
