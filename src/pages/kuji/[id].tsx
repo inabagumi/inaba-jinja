@@ -18,7 +18,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       fortune
     },
-    revalidate: fortune ? false : 30
+    revalidate: fortune ? 31536000 : 30
   }
 }
 
