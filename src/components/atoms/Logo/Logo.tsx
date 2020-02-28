@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import dynamic from 'next/dynamic'
 import React, { FC, SVGProps } from 'react'
 import HorizontalLogo from '../../../assets/logo.svg'
 import VerticalLogo from '../../../assets/vertical-logo.svg'

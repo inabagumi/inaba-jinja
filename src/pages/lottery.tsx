@@ -1,4 +1,4 @@
-import { NextPage, NextPageContext } from 'next'
+import { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
@@ -9,18 +9,8 @@ import fullPath from '../helpers/fullPath'
 
 const DELAY_SECONDS = 2
 
-type Props = {
-  id: string
-}
-
-type ServerProps = {
-  props: Props
-}
-
-export async function unstable_getServerProps({
-  res
-}: NextPageContext): Promise<ServerProps> {
-  res?.setHeader('cache-control', 'max-age=0, private')
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
+  res.setHeader('cache-control', 'max-age=0, private')
 
   const ids = await getFortunes().catch((): string[] => [])
   const id = ids[Math.floor(Math.random() * ids.length)]
@@ -28,8 +18,14 @@ export async function unstable_getServerProps({
   if (!id) throw new TypeError("Fortune doesn't exist.")
 
   return {
-    props: { id }
+    props: {
+      id
+    }
   }
+}
+
+type Props = {
+  id: string
 }
 
 const LotteryPage: NextPage<Props> = ({ id }) => {
