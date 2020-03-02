@@ -1323,10 +1323,10 @@
   resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.2.3-canary.20.tgz#7491e396db94f98e3c93bc12cdbfb2fc6e6318ad"
   integrity sha512-815zXo8gs+y1zgzhuy5J3/ZaNB2tbD3HRHmgvGOjK4ypLL4uz/G1f54pv7E8tqKtn7hasM0AScw3E6FdaOHEdA==
 
-"@next/plugin-google-analytics@^9.2.3-canary.19":
-  version "9.2.3-canary.19"
-  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.2.3-canary.19.tgz#ef6dcf380567ef9b41f2175086cdef447e69e56a"
-  integrity sha512-5jawyF4CljAXAV1vA+34xbOei54uDxQp135y1tSLjLf47BB9BS1q2d3s222YGl1GfLmHpquolN79movbnc1e9Q==
+"@next/plugin-google-analytics@^9.2.3-canary.20":
+  version "9.2.3-canary.20"
+  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.2.3-canary.20.tgz#dc7524ba9fabbca0898b2268c55d0b6bde21e412"
+  integrity sha512-qGQMLH3pkJpspu1VkfIZ/7+46MuSd0wNZ839l9MY+PfCIyWU+irerACcYAwOClI1aiRVeeEB07pohahc8vpp+Q==
 
 "@next/plugin-sentry@^9.2.3-canary.19":
   version "9.2.3-canary.19"
