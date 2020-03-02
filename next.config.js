@@ -83,10 +83,23 @@ const nextConfig = {
         const warnings = []
 
         const manifest = originalManifest.filter(entry =>
-          /\/pages\/_.+\.module\.js$/.test(entry.url)
+          /\/pages\/(?:_[^.]+|index)\.module\.js$/.test(entry.url)
+        )
+        const indexScript = manifest.find(entry =>
+          entry.url.endsWith('/pages/index.module.js')
         )
 
-        return { manifest, warnings }
+        if (indexScript) {
+          manifest.unshift({
+            revision: indexScript.revision,
+            url: '/'
+          })
+        }
+
+        return {
+          manifest,
+          warnings
+        }
       }
     ],
     skipWaiting: true,
