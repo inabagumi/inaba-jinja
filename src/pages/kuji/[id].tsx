@@ -6,7 +6,7 @@ import getFortune from '../../contentful/getFortune'
 import getFortunes from '../../contentful/getFortunes'
 import fullPath from '../../helpers/fullPath'
 import FortuneEntry from '../../types/FortuneEntry'
-import Error from '../404.mdx'
+import NotFound from '../404.mdx'
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (!params?.id) throw new TypeError('ID is required.')
@@ -41,7 +41,7 @@ type Props = {
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
-  if (!fortune) return <Error />
+  if (!fortune) return <NotFound />
 
   const title = `因幡はねるくじ 第${fortune.fields.number}番『${fortune.fields.blessing}』`
 
