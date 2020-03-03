@@ -1543,10 +1543,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
   integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
 
-"@types/mdx-js__react@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@types/mdx-js__react/-/mdx-js__react-1.5.0.tgz#b429bb82d37332810756dd463c440df7f9f2b48e"
-  integrity sha512-bkxx9ebCyE4jm3+10y0xpop1E0pq1NNoO4CkAeO/Gbbt0Wgc3tbtEgNaGT3P+0ixIbhqu3qN7SS10qXCjd8rAQ==
+"@types/mdx-js__react@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@types/mdx-js__react/-/mdx-js__react-1.5.1.tgz#3fbd03c083c34564520416202f24447a6197cb6d"
+  integrity sha512-CTt1SJxp5+bh+F3FNlmh7ZQCI4TH+Y68AvknWwo0IfevtN6OT0gkQEoNz4eUZzuNG0mr+21hSvvN38VJ3+GtPw==
   dependencies:
     "@types/react" "*"
 
