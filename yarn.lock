@@ -1318,10 +1318,10 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.5.7.tgz#335358feb2d511bfdb3aa46e31752a10aa51270a"
   integrity sha512-SV+V8A+Y33pmVT/LWk/2y51ixIyA/QH1XL+nrWAhoqre1rFtxOEZ4jr0W+bKZpeahOvkn/BQTheK+dRty9o/ig==
 
-"@next/mdx@^9.2.3-canary.24":
-  version "9.2.3-canary.24"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.2.3-canary.24.tgz#46ce4b7dea5544327a59760800cdd203141ffcbc"
-  integrity sha512-Y1FtAR7t5+rK+EjGjNAmOc8+MBwadOV2KrWTi0D3aE2AWoQWH944DPXczK5/Tb3URJWnpJRWroCGbOgrE6VFLg==
+"@next/mdx@^9.2.3-canary.25":
+  version "9.2.3-canary.25"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.2.3-canary.25.tgz#7fc2e6c7d8ac96b43859aa2e4597f000f104b565"
+  integrity sha512-6rq/aDpMypRooANGJT1nTYpzYeigIUzsqif6yNMYgBl8S50YqeQ75/z6bMmFmksxHXU9NPqelqasJ1GU/nQmSQ==
 
 "@next/plugin-google-analytics@^9.2.3-canary.24":
   version "9.2.3-canary.24"
@@ -1336,10 +1336,10 @@
     "@sentry/browser" "5.7.1"
     "@sentry/node" "5.7.1"
 
-"@next/polyfill-nomodule@9.2.3-canary.24":
-  version "9.2.3-canary.24"
-  resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.2.3-canary.24.tgz#9bd827f7626e12b61a46d0df072d5c2f2f8ed590"
-  integrity sha512-hTMtV10uFC14fj6o+NyebpWJZXTgHE/4VTQkVt8xV2FXmS71BygnC6sW598F76dk4lF1t2m4JqshExiYhMb2PQ==
+"@next/polyfill-nomodule@9.2.3-canary.25":
+  version "9.2.3-canary.25"
+  resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.2.3-canary.25.tgz#eaafc29b72fe32c3d55c80ea609977fb5b101e46"
+  integrity sha512-lSkejD/Tsh/6vLxnXle27UuZVwj/vDX8f6hWUoIO4vDuEO27PT6qYbCSKtEHq6FIWIrfzCsuVvRnAjUcT1x75Q==
 
 "@sentry/browser@5.7.1":
   version "5.7.1"
@@ -6537,10 +6537,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next@^9.2.3-canary.24:
-  version "9.2.3-canary.24"
-  resolved "https://registry.yarnpkg.com/next/-/next-9.2.3-canary.24.tgz#bc3ff38407364fc355236d38b2818df69e2f7093"
-  integrity sha512-3lUYeOgqWkHUK4jVYB6Bm2pU9j2I5jF4frkd626gxv3565vSewQji5a1Squ9xBlvu0DieQgNX+pKGWweLPWBZw==
+next@^9.2.3-canary.25:
+  version "9.2.3-canary.25"
+  resolved "https://registry.yarnpkg.com/next/-/next-9.2.3-canary.25.tgz#cf9062ec89786bbb625ad08a854a3fd6854f60ab"
+  integrity sha512-zzbihP+xawCqHBmVZZnOIUvptw3gbDe7f6GaYS5wnjy9vDJleKPbda5Yo0eC6JV0DTOZQKKKfNHw5m71epEEWg==
   dependencies:
     "@ampproject/toolbox-optimizer" "2.0.0"
     "@babel/core" "7.7.2"
@@ -6558,7 +6558,7 @@ next@^9.2.3-canary.24:
     "@babel/preset-typescript" "7.7.2"
     "@babel/runtime" "7.7.2"
     "@babel/types" "7.7.4"
-    "@next/polyfill-nomodule" "9.2.3-canary.24"
+    "@next/polyfill-nomodule" "9.2.3-canary.25"
     amphtml-validator "1.0.30"
     async-retry "1.2.3"
     async-sema "3.0.0"
