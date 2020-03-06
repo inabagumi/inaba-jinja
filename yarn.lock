@@ -1323,10 +1323,10 @@
   resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.2.3-canary.25.tgz#7fc2e6c7d8ac96b43859aa2e4597f000f104b565"
   integrity sha512-6rq/aDpMypRooANGJT1nTYpzYeigIUzsqif6yNMYgBl8S50YqeQ75/z6bMmFmksxHXU9NPqelqasJ1GU/nQmSQ==
 
-"@next/plugin-google-analytics@^9.2.3-canary.24":
-  version "9.2.3-canary.24"
-  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.2.3-canary.24.tgz#bb60f254245945d40dad4c5945b2a0dc87192ce4"
-  integrity sha512-cYdbXh5Ccfk1AES0QUuaSujsZS1FKv2Gb2SlW8GJcNzO78Fnzp4LthvfXE8VdVg3cFzQZDUwyfq0zaCKIgUVUw==
+"@next/plugin-google-analytics@^9.2.3-canary.25":
+  version "9.2.3-canary.25"
+  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.2.3-canary.25.tgz#9eee06165ff1f8f6fc5271bb74d9e0b5d3e6895d"
+  integrity sha512-rJGTz3nz3FNDT2BtqxMncVSDTnFWL175V5AmFabG3nopz5/JZJw9iVJnHFn/VocLqedWoJvzSwcS+yiFpIO1MA==
 
 "@next/plugin-sentry@^9.2.3-canary.25":
   version "9.2.3-canary.25"
