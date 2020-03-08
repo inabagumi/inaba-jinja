@@ -13,11 +13,13 @@
     ]
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.43",
+    "@babel/preset-typescript": "^7.8.3",
+    "@docusaurus/core": "^2.0.0-alpha.44",
     "@docusaurus/plugin-ideal-image": "^2.0.0-alpha.44",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.43",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.44",
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
+    "prismjs": "^1.19.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
