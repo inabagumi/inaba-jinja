@@ -1,2 +1,0 @@
-// workaround
-export default () => null
