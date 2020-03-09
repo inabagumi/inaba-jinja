@@ -2,6 +2,61 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/inabagumi/inaba-jinja/compare/v1.5.6...v1.6.0) (2020-03-09)
+
+
+### Features
+
+* **perf:** add / to manifest ([#390](https://github.com/inabagumi/inaba-jinja/issues/390)) ([41241a1](https://github.com/inabagumi/inaba-jinja/commit/41241a1213d01b2484b533dd1d66a1502072d83c))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @next/mdx to ^9.2.3-canary.14 ([#372](https://github.com/inabagumi/inaba-jinja/issues/372)) ([acd62d0](https://github.com/inabagumi/inaba-jinja/commit/acd62d08cb65ae9d502087f36f05a8e564f6a112))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.14 ([#373](https://github.com/inabagumi/inaba-jinja/issues/373)) ([bd78932](https://github.com/inabagumi/inaba-jinja/commit/bd7893250875d8eb2e38e46f522a53375a17cf62))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.14 ([#373](https://github.com/inabagumi/inaba-jinja/issues/373)) ([fc828e9](https://github.com/inabagumi/inaba-jinja/commit/fc828e975737621f293a5c51df4ab72f56d17652))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.17 ([#381](https://github.com/inabagumi/inaba-jinja/issues/381)) ([9c3a1d6](https://github.com/inabagumi/inaba-jinja/commit/9c3a1d6f755891f4068fe01055f3495f80755eb9))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.18 ([#386](https://github.com/inabagumi/inaba-jinja/issues/386)) ([719fda6](https://github.com/inabagumi/inaba-jinja/commit/719fda61689188180dbdbd880afb709e7cfc8dff))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.19 ([#393](https://github.com/inabagumi/inaba-jinja/issues/393)) ([d6ef023](https://github.com/inabagumi/inaba-jinja/commit/d6ef0230206f40faa8ed5e62b562c5d3c2715911))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.20 ([#397](https://github.com/inabagumi/inaba-jinja/issues/397)) ([6e204d7](https://github.com/inabagumi/inaba-jinja/commit/6e204d75bed43aeba6894d1e094ee68396b31a29))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.21 ([#399](https://github.com/inabagumi/inaba-jinja/issues/399)) ([e68b900](https://github.com/inabagumi/inaba-jinja/commit/e68b900e6023c195e423a94f0199239a975820fe))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.22 ([#401](https://github.com/inabagumi/inaba-jinja/issues/401)) ([f6b66a8](https://github.com/inabagumi/inaba-jinja/commit/f6b66a80a3744ab568dade4b5fe604c0812f5769))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.23 ([#405](https://github.com/inabagumi/inaba-jinja/issues/405)) ([abc3717](https://github.com/inabagumi/inaba-jinja/commit/abc371784d43275bd769d59d97027bf47848d533))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.24 ([#409](https://github.com/inabagumi/inaba-jinja/issues/409)) ([06f1dbb](https://github.com/inabagumi/inaba-jinja/commit/06f1dbb5972b0742e868ae26f67667570eeddf9f))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.25 ([#411](https://github.com/inabagumi/inaba-jinja/issues/411)) ([208d346](https://github.com/inabagumi/inaba-jinja/commit/208d346edbd61921db849c504212d0998de9483f))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.26 ([#415](https://github.com/inabagumi/inaba-jinja/issues/415)) ([306c1a1](https://github.com/inabagumi/inaba-jinja/commit/306c1a133595a9172c0632f09c50f7da20c313f8))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.2.3-canary.28 ([#418](https://github.com/inabagumi/inaba-jinja/issues/418)) ([a83b603](https://github.com/inabagumi/inaba-jinja/commit/a83b6036c9f85a7f7a7f8d1ccbf7c5723435fe7d))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.3.0 ([#421](https://github.com/inabagumi/inaba-jinja/issues/421)) ([946c87e](https://github.com/inabagumi/inaba-jinja/commit/946c87e8980f3cbc2969f9a770ec879784d363d8))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.17 ([#382](https://github.com/inabagumi/inaba-jinja/issues/382)) ([581822f](https://github.com/inabagumi/inaba-jinja/commit/581822f4b0f7c40022463eeb32eac4ae8421fee4))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.18 ([#387](https://github.com/inabagumi/inaba-jinja/issues/387)) ([85aa233](https://github.com/inabagumi/inaba-jinja/commit/85aa233f475f3453deca75a8e5bf0f6f41b220ab))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.19 ([#394](https://github.com/inabagumi/inaba-jinja/issues/394)) ([581d0f3](https://github.com/inabagumi/inaba-jinja/commit/581d0f3588006001eb19f33f3a6cebca9e92d502))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.22 ([#400](https://github.com/inabagumi/inaba-jinja/issues/400)) ([50b1e9f](https://github.com/inabagumi/inaba-jinja/commit/50b1e9f283aa97c5bad8a842434a18362d380eba))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.23 ([#406](https://github.com/inabagumi/inaba-jinja/issues/406)) ([3e922b3](https://github.com/inabagumi/inaba-jinja/commit/3e922b37f6ec062f4cd65b2f84e6ee557b581f4f))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.24 ([#410](https://github.com/inabagumi/inaba-jinja/issues/410)) ([d6c44e0](https://github.com/inabagumi/inaba-jinja/commit/d6c44e0c7dfcf69ccb50a692ccb262b5ea7efb7c))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.25 ([#412](https://github.com/inabagumi/inaba-jinja/issues/412)) ([180d39c](https://github.com/inabagumi/inaba-jinja/commit/180d39c81e0d0daad758e082fedaaf3ff72a66b2))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.26 ([#416](https://github.com/inabagumi/inaba-jinja/issues/416)) ([beb4d63](https://github.com/inabagumi/inaba-jinja/commit/beb4d636171def397aad3a23302647338d258cb8))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.28 ([#419](https://github.com/inabagumi/inaba-jinja/issues/419)) ([51c7300](https://github.com/inabagumi/inaba-jinja/commit/51c7300ecaafd4bc08757e098be06d6e39925e14))
+* **deps:** update dependency @next/plugin-sentry to ^9.2.3-canary.29 ([#422](https://github.com/inabagumi/inaba-jinja/issues/422)) ([13ac218](https://github.com/inabagumi/inaba-jinja/commit/13ac2186ce4c2642c61add33390902c5576d5880))
+* **deps:** update dependency @next/plugin-sentry to ^9.3.0 ([#423](https://github.com/inabagumi/inaba-jinja/issues/423)) ([b1cb30a](https://github.com/inabagumi/inaba-jinja/commit/b1cb30a97f1a3e82738205cc1ab57960e0efaae1))
+* **deps:** update dependency next to ^9.2.3-canary.14 ([#374](https://github.com/inabagumi/inaba-jinja/issues/374)) ([63bf3f9](https://github.com/inabagumi/inaba-jinja/commit/63bf3f99a1f2549de58dc5d5f6c123421f2e37e3))
+* **deps:** update dependency next-seo to ^4.4.0 ([#366](https://github.com/inabagumi/inaba-jinja/issues/366)) ([f676ad0](https://github.com/inabagumi/inaba-jinja/commit/f676ad031396c086fec3875659a42053be067ef3))
+* **deps:** update next to v9.2.3-canary.16 ([#378](https://github.com/inabagumi/inaba-jinja/issues/378)) ([f89eda9](https://github.com/inabagumi/inaba-jinja/commit/f89eda9bbbf5b647079a512954537478ad466883))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.13 ([#371](https://github.com/inabagumi/inaba-jinja/issues/371)) ([b8d7b53](https://github.com/inabagumi/inaba-jinja/commit/b8d7b53755de400bec31b326a9821139544c5484))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.17 ([#383](https://github.com/inabagumi/inaba-jinja/issues/383)) ([bb30182](https://github.com/inabagumi/inaba-jinja/commit/bb30182dfd2bbddf12e4b7a147d5ab9cd8b1bee6))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.18 ([#388](https://github.com/inabagumi/inaba-jinja/issues/388)) ([6b8a878](https://github.com/inabagumi/inaba-jinja/commit/6b8a87893f395d192d6bbbd4b1399e27ce513242))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.19 ([#395](https://github.com/inabagumi/inaba-jinja/issues/395)) ([e3d98fc](https://github.com/inabagumi/inaba-jinja/commit/e3d98fcbf09fc136334e5313fefb9d17a047ef08))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.20 ([#396](https://github.com/inabagumi/inaba-jinja/issues/396)) ([b1be058](https://github.com/inabagumi/inaba-jinja/commit/b1be0581f91de45fa0ca66b58573307c6123a3e0))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.22 ([#398](https://github.com/inabagumi/inaba-jinja/issues/398)) ([e13f869](https://github.com/inabagumi/inaba-jinja/commit/e13f869a2936ae3df203def59880388838c96924))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.23 ([#407](https://github.com/inabagumi/inaba-jinja/issues/407)) ([c66358b](https://github.com/inabagumi/inaba-jinja/commit/c66358b5f6f7ecdb17efce5a96ee381df1fcc812))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.24 ([#408](https://github.com/inabagumi/inaba-jinja/issues/408)) ([fad43ee](https://github.com/inabagumi/inaba-jinja/commit/fad43ee0cdb8fdb7f3b9e95d012c0ad36b1dc002))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.25 ([#413](https://github.com/inabagumi/inaba-jinja/issues/413)) ([ce1d9c1](https://github.com/inabagumi/inaba-jinja/commit/ce1d9c1e50fec2d90e0e25696387d619ef50a085))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.26 ([#414](https://github.com/inabagumi/inaba-jinja/issues/414)) ([af94518](https://github.com/inabagumi/inaba-jinja/commit/af9451828958b65331e33202b6052d562efaf66e))
+* **deps:** update nextjs monorepo to ^9.2.3-canary.28 ([#420](https://github.com/inabagumi/inaba-jinja/issues/420)) ([6e7c602](https://github.com/inabagumi/inaba-jinja/commit/6e7c6020a19bf109aa6905f89cec2f792ecabb2a))
+* **deps:** update nextjs monorepo to ^9.3.0 ([#424](https://github.com/inabagumi/inaba-jinja/issues/424)) ([b7f38b2](https://github.com/inabagumi/inaba-jinja/commit/b7f38b226cec272ba91055a027be63667c76cea1))
+* **deps:** update react monorepo to ^16.13.0 ([#370](https://github.com/inabagumi/inaba-jinja/issues/370)) ([6b53559](https://github.com/inabagumi/inaba-jinja/commit/6b535595a48298e85625c8c3e618842710f33f65))
+* **ssg:** change revalidate ([#380](https://github.com/inabagumi/inaba-jinja/issues/380)) ([4e81c1a](https://github.com/inabagumi/inaba-jinja/commit/4e81c1a5706c8d651898f138c855d06c22d04474))
+* **ssg:** change revalidate value to 1 year ([#379](https://github.com/inabagumi/inaba-jinja/issues/379)) ([addd57c](https://github.com/inabagumi/inaba-jinja/commit/addd57c26df51b7bb8d7f598ab876ad49d44443c))
+
 ### [1.5.6](https://github.com/inabagumi/inaba-jinja/compare/v1.5.5...v1.5.6) (2020-02-24)
 
 
