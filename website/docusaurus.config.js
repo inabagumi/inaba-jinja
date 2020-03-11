@@ -77,8 +77,14 @@ module.exports = {
     },
     image: 'img/haneru-dev.jpg',
     navbar: {
+      hideOnScroll: true,
       links: [
-        { to: 'docs/introduction', label: 'ドキュメント', position: 'left' },
+        {
+          activeBasePath: 'docs',
+          to: 'docs/introduction',
+          label: 'ドキュメント',
+          position: 'left'
+        },
         {
           href: 'https://github.com/inabagumi',
           label: 'GitHub',
