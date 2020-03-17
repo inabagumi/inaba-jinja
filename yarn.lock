@@ -1326,10 +1326,10 @@
   resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.3.1.tgz#828b52481b7451318c4570860ee28ed652823846"
   integrity sha512-M53F0ZutoO1HhN+6PlbW9co5MKSOE7PDgMnndA8fQyR5wBduTxIuc7WDSAF2bCUOPFoia0Y3/OIEa2Pev+vIaA==
 
-"@next/plugin-sentry@^9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.0.tgz#9a772631fc4dd7937f81b3f5a5ccc27b4f69b665"
-  integrity sha512-l6NaZb5dUeIlCQ5qucfn6pRwFfi6OkAzWLYQtAcS4/QSsh+Nmb0kPHJhd9sLutyvOUAsAZGIPRitdK4pFLQi8g==
+"@next/plugin-sentry@^9.3.1":
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.1.tgz#0752478df7cd09d25fcc522c66a31affd46aaeef"
+  integrity sha512-td5IsU9oq3BjAQWbgulKAIpI6Aeb/8ikrxcyW9Sg95LbGzG7xOQfLsnO3XEqSM4n4mU1Uyy86BQrkWgcPAF1Bg==
   dependencies:
     "@sentry/browser" "5.7.1"
     "@sentry/node" "5.7.1"
