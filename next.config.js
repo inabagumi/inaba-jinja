@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
-const withImages = require('@inabagumi/next-images')
 const withMDX = require('@next/mdx')()
 const withSourceMaps = require('@zeit/next-source-maps')()
 const withOffline = require('next-offline')
@@ -76,6 +75,41 @@ const nextConfig = {
   svgrOptions: {
     dimensions: false
   },
+  webpack(config, { defaultLoaders, dev }) {
+    config.module.rules.push({
+      test: /\.(?:jpe?g|png|webp)$/,
+      use: [
+        defaultLoaders.babel,
+        {
+          loader: 'url-loader',
+          options: {
+            esModule: true,
+            limit: 8192,
+            name: dev
+              ? '[name].[ext]?[contenthash:8]'
+              : '[name].[contenthash:8].[ext]',
+            outputPath: 'static/media',
+            publicPath: '/_next/static/media'
+          }
+        }
+      ]
+    })
+
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [
+        defaultLoaders.babel,
+        {
+          loader: '@svgr/webpack',
+          options: {
+            babel: false
+          }
+        }
+      ]
+    })
+
+    return config
+  },
   workboxOpts: {
     clientsClaim: true,
     manifestTransforms: [
@@ -107,7 +141,7 @@ const nextConfig = {
   }
 }
 
-module.exports = [withSourceMaps, withMDX, withImages, withOffline].reduce(
+module.exports = [withSourceMaps, withMDX, withOffline].reduce(
   (config, plugin) => plugin(config),
   nextConfig
 )
