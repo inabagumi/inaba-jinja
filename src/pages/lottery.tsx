@@ -9,9 +9,11 @@ import fullPath from '../helpers/fullPath'
 
 const DELAY_SECONDS = 2
 
-export const getServerSideProps: GetServerSideProps = async ({ res }) => {
-  res.setHeader('cache-control', 'max-age=0, private')
+type Props = {
+  id: string
+}
 
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const ids = await getFortunes().catch((): string[] => [])
   const id = ids[Math.floor(Math.random() * ids.length)]
 
@@ -22,10 +24,6 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
       id
     }
   }
-}
-
-type Props = {
-  id: string
 }
 
 const LotteryPage: NextPage<Props> = ({ id }) => {

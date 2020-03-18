@@ -4,17 +4,11 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
 import fullPath from '../../helpers/fullPath'
-import FortuneEntry from '../../types/FortuneEntry'
-import * as Kuji from '../kuji/[id]'
+import { Props as KujiProps } from '../kuji/[id]'
 
-export const getStaticProps = Kuji.getStaticProps
-export const getStaticPaths = Kuji.getStaticPaths
+export { getStaticPaths, getStaticProps } from '../kuji/[id]'
 
-type Props = {
-  fortune?: FortuneEntry
-}
-
-const SharePage: NextPage<Props> = ({ fortune }) => {
+const SharePage: NextPage<KujiProps> = ({ fortune }) => {
   const router = useRouter()
 
   useEffect(() => {
