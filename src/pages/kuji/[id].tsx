@@ -8,7 +8,11 @@ import fullPath from '../../helpers/fullPath'
 import FortuneEntry from '../../types/FortuneEntry'
 import NotFound from '../404.mdx'
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export type Props = {
+  fortune?: FortuneEntry
+}
+
+export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   if (!params?.id) throw new TypeError('ID is required.')
 
   const id = Array.isArray(params.id) ? params.id[0] : params.id
@@ -34,10 +38,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: false,
     paths
   }
-}
-
-type Props = {
-  fortune?: FortuneEntry
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
