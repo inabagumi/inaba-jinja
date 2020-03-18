@@ -140,7 +140,7 @@ const Camera: FC<Props> = ({ asset }) => {
             onUnmount={handleUnmount}
             width={texture.width}
           >
-            <Sprite texture={texture} />
+            <Sprite {...({ texture } as any)} />
 
             {asset && <Overlay asset={asset} />}
           </Stage>

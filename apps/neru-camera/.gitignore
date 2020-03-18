@@ -1,4 +1,5 @@
 /.next/
+/.now/
 /dist/
 /node_modules/
 /.env.build

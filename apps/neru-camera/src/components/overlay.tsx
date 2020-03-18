@@ -1,20 +1,20 @@
-import { Sprite, useApp } from '@inlet/react-pixi'
-import { Filter, Point } from 'pixi.js'
-import React, { FC, useMemo } from 'react'
+import { Sprite, useApp, withFilters } from '@inlet/react-pixi'
+import { Point } from 'pixi.js'
+import React, { FC } from 'react'
 import ChromaKeyFilter from '../filters/chroma-key-filter'
 import useVideoTexture from '../hooks/use-video-texture'
 import { OverlayEntry } from '../types/Overlay'
 import Viewport from './viewport'
+
+const Filters = withFilters(Sprite, {
+  chorma: ChromaKeyFilter
+})
 
 type Props = {
   asset: OverlayEntry
 }
 
 const Overlay: FC<Props> = ({ asset }) => {
-  const filters = useMemo<Filter[]>(
-    () => [new ChromaKeyFilter(asset.fields.keyColor)],
-    [asset.fields.keyColor]
-  )
   const app = useApp()
   const texture = useVideoTexture({
     src: asset.fields.media.fields.file.url
@@ -36,11 +36,11 @@ const Overlay: FC<Props> = ({ asset }) => {
         worldWidth={app.screen.width}
       >
         {texture && (
-          <Sprite
+          <Filters
             anchor={anchor}
-            filters={filters}
+            chorma={{ keyColor: asset.fields.keyColor }}
             position={position}
-            texture={texture}
+            {...({ texture } as any)}
           />
         )}
       </Viewport>
