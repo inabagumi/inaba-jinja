@@ -72,9 +72,6 @@ const nextConfig = {
   },
   generateEtags: false,
   pageExtensions: ['mdx', 'tsx'],
-  svgrOptions: {
-    dimensions: false
-  },
   webpack(config, { defaultLoaders, dev }) {
     config.module.rules.push({
       test: /\.(?:jpe?g|png|webp)$/,
@@ -102,7 +99,8 @@ const nextConfig = {
         {
           loader: '@svgr/webpack',
           options: {
-            babel: false
+            babel: false,
+            dimensions: false
           }
         }
       ]
