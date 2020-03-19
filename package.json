@@ -22,8 +22,8 @@
     "next": "^9.3.1",
     "next-offline": "^5.0.0",
     "next-seo": "^4.4.0",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
