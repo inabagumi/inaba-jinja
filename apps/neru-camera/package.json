@@ -11,8 +11,8 @@
     "next-offline": "^5.0.0",
     "pixi-viewport": "^4.10.0",
     "pixi.js": "^5.2.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
   "devDependencies": {
