@@ -1,14 +1,4 @@
 {
-  "alias": ["haneru.dev"],
-  "builds": [
-    {
-      "config": {
-        "distDir": "build"
-      },
-      "src": "package.json",
-      "use": "@now/static-build"
-    }
-  ],
   "github": {
     "silent": true
   },
@@ -78,6 +68,5 @@
     }
   ],
   "regions": ["hnd1"],
-  "scope": "inabagumi",
   "version": 2
 }
