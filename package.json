@@ -70,8 +70,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier --ignore-path .gitignore --write '**/*.{js,ts,tsx}'",
-    "format-check": "prettier -c --ignore-path .gitignore '**/*.{js,ts,tsx}'",
+    "format": "prettier --write .",
+    "format-check": "prettier -c .gitignore .",
     "lint": "eslint --ext .js,.ts,.tsx --ignore-path .gitignore .",
     "release": "standard-version",
     "start": "next start"

@@ -1,0 +1,7 @@
+/.next/
+/.now/
+/node_modules/
+
+*.md
+*.mdx
+*.yml
