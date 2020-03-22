@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const ids = await getFortunes().catch((): string[] => [])
-  const paths = ids.map(id => ({
+  const paths = ids.map((id) => ({
     params: {
       id
     }
