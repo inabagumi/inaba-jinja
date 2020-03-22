@@ -37,7 +37,7 @@ const Home = () => {
           <section className="container margin-top--lg">
             {chunk(products, 3).map((row, i) => (
               <div className="row" key={`row-${i}`}>
-                {row.map(product => (
+                {row.map((product) => (
                   <div className="col col--4" key={product.website}>
                     <div className="card margin-bottom--md">
                       <div className="card__image">
