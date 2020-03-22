@@ -107,7 +107,7 @@ const Camera: FC<Props> = ({ asset }) => {
     setIsShooting(true)
 
     processing(pixiView, 'image/jpeg', 0.8)
-      .then(blob => download(blob))
+      .then((blob) => download(blob))
       .finally(() => setIsShooting(false))
   }, [pixiView, isShooting])
 
@@ -122,7 +122,7 @@ const Camera: FC<Props> = ({ asset }) => {
 
     navigator.mediaDevices
       .getUserMedia(mediaStreamConstraints)
-      .then(cameraStream => setCameraStream(cameraStream))
+      .then((cameraStream) => setCameraStream(cameraStream))
       .catch(() => setHasError(true))
   }, [])
 

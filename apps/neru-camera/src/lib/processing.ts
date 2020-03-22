@@ -18,7 +18,7 @@ export default (
     try {
       context.drawImage(pixiView, 0, 0)
       canvas.toBlob(
-        blob =>
+        (blob) =>
           blob ? resolve(blob) : reject(new TypeError('Blob does not exists.')),
         type,
         quality

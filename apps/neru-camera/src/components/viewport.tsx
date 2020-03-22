@@ -5,11 +5,7 @@ export default PixiComponent<ViewportOptions, Viewport>('Viewport', {
   create: (props: ViewportOptions) => {
     const viewport = new Viewport(props)
 
-    viewport
-      .drag()
-      .pinch()
-      .wheel()
-      .decelerate()
+    viewport.drag().pinch().wheel().decelerate()
 
     return viewport
   }
