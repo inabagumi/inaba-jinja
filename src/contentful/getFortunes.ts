@@ -15,5 +15,5 @@ export default async function getFortunes(): Promise<string[]> {
     select: 'sys.id'
   })
 
-  return entries.items.map(item => item.sys.id)
+  return entries.items.map((item) => item.sys.id)
 }

@@ -111,13 +111,13 @@ const nextConfig = {
   workboxOpts: {
     clientsClaim: true,
     manifestTransforms: [
-      originalManifest => {
+      (originalManifest) => {
         const warnings = []
 
-        const manifest = originalManifest.filter(entry =>
+        const manifest = originalManifest.filter((entry) =>
           /\/pages\/(?:_[^.]+|index)\.module\.js$/.test(entry.url)
         )
-        const indexScript = manifest.find(entry =>
+        const indexScript = manifest.find((entry) =>
           entry.url.endsWith('/pages/index.module.js')
         )
 
