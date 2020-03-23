@@ -37,10 +37,10 @@ const Overlay: FC<Props> = ({ asset }) => {
       >
         {texture && (
           <Filters
-            anchor={anchor}
+            anchor={new Point(anchor, anchor)}
             chorma={{ keyColor: asset.fields.keyColor }}
             position={position}
-            {...({ texture } as any)}
+            texture={texture}
           />
         )}
       </Viewport>

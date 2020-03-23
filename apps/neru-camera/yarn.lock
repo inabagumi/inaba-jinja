@@ -1143,10 +1143,10 @@
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-1.1.2.tgz#6cc1a41e99acb36bd1ed9ed81f69b64258fc4a94"
   integrity sha512-bUFu1+UuIwFIwGx1W1HCTYqw6Ga7s/66H0d7mSj3iWuY7Es8vxWXGgxZVCtjBvDanoibAevJbtUV/7rtzfU5PQ==
 
-"@inlet/react-pixi@^1.2.6":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-1.2.6.tgz#3931da3f73f2e8594c7d2f9a9b7e857f5970bfa1"
-  integrity sha512-1LYkHO41Es1DFtBiC8raTRRojO1UxcH2OvsJcvdVoh2kV/fSFAEH9QxuAhwZ+kxQ+K9G7nDdh43W0Q3f5gK7lQ==
+"@inlet/react-pixi@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-1.2.7.tgz#895976425e7ce46c207d5481a8d3bfa6a7a4176f"
+  integrity sha512-9n3kw1fV7wF4UCYIa2qwtt6KsviF0jxkIz3Z2DUJzsvQoDrLOGBD8Z5OsOf3gayTGJe2ENwo2HmITwH5tEwqsw==
   dependencies:
     "@testing-library/react" "8.0.5"
     fbjs "^1.0.0"
@@ -2632,9 +2632,9 @@ camelcase@^4.1.0:
   integrity sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=
 
 caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001017, caniuse-lite@^1.0.30001020, caniuse-lite@^1.0.30001035:
-  version "1.0.30001035"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001035.tgz#2bb53b8aa4716b2ed08e088d4dc816a5fe089a1e"
-  integrity sha512-C1ZxgkuA4/bUEdMbU5WrGY4+UhMFFiXrgNAfxiMIqWgFTWfv/xsZCS2xEHT2LMq7xAZfuAnu6mcqyDl0ZR6wLQ==
+  version "1.0.30001036"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001036.tgz#930ea5272010d8bf190d859159d757c0b398caf0"
+  integrity sha512-jU8CIFIj2oR7r4W+5AKcsvWNVIb6Q6OZE3UsrXrZBHFtreT4YgTeOJtTucp+zSedEpTi3L5wASSP0LYIE3if6w==
 
 chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
@@ -4419,7 +4419,6 @@ fsevents@^1.2.7:
   dependencies:
     bindings "^1.5.0"
     nan "^2.12.1"
-    node-pre-gyp "*"
 
 fsevents@~2.1.2:
   version "2.1.2"
