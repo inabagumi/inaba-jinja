@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import Link from '../../atoms/Link'
-import Logo from '../../atoms/Logo'
+import Link from 'components/atoms/Link'
+import Logo from 'components/atoms/Logo'
 
 const Brand = styled(Link)`
   color: inherit;

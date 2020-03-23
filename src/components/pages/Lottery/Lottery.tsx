@@ -1,8 +1,8 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import kujiImage from '../../../assets/kuji.png'
-import shake from '../../../styles/shake'
-import SingleDoc from '../../templates/SingleDoc'
+import kujiImage from 'assets/kuji.png'
+import SingleDoc from 'components/templates/SingleDoc'
+import shake from 'styles/shake'
 
 const LotteryBox = styled.img`
   animation: ${shake} 0.3s infinite alternate linear;

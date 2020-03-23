@@ -1,9 +1,9 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import fullPath from '../../../helpers/fullPath'
-import FortuneEntry from '../../../types/FortuneEntry'
-import Image from '../../atoms/Image'
-import SingleDoc from '../../templates/SingleDoc'
+import Image from 'components/atoms/Image'
+import SingleDoc from 'components/templates/SingleDoc'
+import fullPath from 'helpers/fullPath'
+import FortuneEntry from 'types/FortuneEntry'
 
 const Paper = styled(Image)`
   background-color: #fff;

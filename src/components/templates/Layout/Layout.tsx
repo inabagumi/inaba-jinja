@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import Background from '../../molecules/Background'
-import Footer from '../../organisms/Footer'
+import Background from 'components/molecules/Background'
+import Footer from 'components/organisms/Footer'
 
 const Content = styled.div`
   flex-grow: 1;
