@@ -3,10 +3,10 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
-import fullPath from '../../helpers/fullPath'
-import { Props as KujiProps } from '../kuji/[id]'
+import fullPath from 'helpers/fullPath'
+import { Props as KujiProps } from 'pages/kuji/[id]'
 
-export { getStaticPaths, getStaticProps } from '../kuji/[id]'
+export { getStaticPaths, getStaticProps } from 'pages/kuji/[id]'
 
 const SharePage: NextPage<KujiProps> = ({ fortune }) => {
   const router = useRouter()

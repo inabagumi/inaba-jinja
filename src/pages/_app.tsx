@@ -5,8 +5,8 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import React, { FC } from 'react'
-import Link from '../components/atoms/Link'
-import Layout from '../components/templates/Layout'
+import Link from 'components/atoms/Link'
+import Layout from 'components/templates/Layout'
 
 const globalStyles = css`
   :root {

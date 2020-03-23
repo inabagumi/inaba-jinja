@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import Link from '../../atoms/Link'
+import Link from 'components/atoms/Link'
 
 const Copyright = styled.p`
   margin: 0;

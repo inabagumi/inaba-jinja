@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import React, { FC } from 'react'
-import Logo from '../../atoms/Logo'
+import Logo from 'components/atoms/Logo'
 
 const Description = styled.p`
   font-family: var(--ij-serif-font-family, sans-serif);

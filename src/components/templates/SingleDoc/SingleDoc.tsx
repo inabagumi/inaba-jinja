@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import Header from '../../organisms/Header'
+import Header from 'components/organisms/Header'
 
 const Content = styled.div`
   background-color: rgba(38, 50, 56, 0.7);

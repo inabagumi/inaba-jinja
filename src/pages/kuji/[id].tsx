@@ -1,12 +1,12 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import React from 'react'
-import Fortune from '../../components/pages/Fortune'
-import getFortune from '../../contentful/getFortune'
-import getFortunes from '../../contentful/getFortunes'
-import fullPath from '../../helpers/fullPath'
-import FortuneEntry from '../../types/FortuneEntry'
-import NotFound from '../404.mdx'
+import Fortune from 'components/pages/Fortune'
+import getFortune from 'contentful/getFortune'
+import getFortunes from 'contentful/getFortunes'
+import fullPath from 'helpers/fullPath'
+import NotFound from 'pages/404.mdx'
+import FortuneEntry from 'types/FortuneEntry'
 
 export type Props = {
   fortune?: FortuneEntry
