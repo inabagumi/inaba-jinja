@@ -57,14 +57,6 @@
         "cache-control": "max-age=600, s-maxage=60"
       },
       "src": "/.*"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "dest": "/404.html",
-      "src": "/.*",
-      "status": 404
     }
   ],
   "regions": ["hnd1"],
