@@ -1417,28 +1417,28 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.5.7.tgz#335358feb2d511bfdb3aa46e31752a10aa51270a"
   integrity sha512-SV+V8A+Y33pmVT/LWk/2y51ixIyA/QH1XL+nrWAhoqre1rFtxOEZ4jr0W+bKZpeahOvkn/BQTheK+dRty9o/ig==
 
-"@next/mdx@^9.3.2-canary.4":
-  version "9.3.2-canary.4"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.2-canary.4.tgz#5395de73358995f49ccffa74255b7548d2a7d503"
-  integrity sha512-Jc2i356/uHg/HZy/31SEQFKI0KyXBF0O0BA/l8erEGvWWTcoPGCmi/kSyATww4N3zmoiM+sRllzPhm5xwLs30A==
+"@next/mdx@^9.3.2-canary.5":
+  version "9.3.2-canary.5"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.2-canary.5.tgz#40e40d324a6ca332d4b54f4dbbf5d1fd9d367e50"
+  integrity sha512-YZc7L1CL/IIwWfM9ymKW82MANX6P6REBI1HsGVUbRO2DTW62CyN11hJXypY2vl/9yyrpom/+U2N/IFCEKcwmbw==
 
-"@next/plugin-google-analytics@^9.3.2-canary.4":
-  version "9.3.2-canary.4"
-  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.3.2-canary.4.tgz#24303668b08b525cd6beb71d6a6f1540055c3c56"
-  integrity sha512-tENBIw9vZPBjCCRSU/P7dTsML53ia/Tz9e1uARhZe/MVAFmsqdbEl2pj4APax5n2o0A8zv+h6ZUbFocAOe3rUw==
+"@next/plugin-google-analytics@^9.3.2-canary.5":
+  version "9.3.2-canary.5"
+  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.3.2-canary.5.tgz#8902a91b5ff1271b6860d4930969d7d29bac6ae7"
+  integrity sha512-lt69DQU7g8KDTr/BGr0cAtqBXPaVjWNV4zTq92JHMthJuIA2n9bo6MezaSL1yZDPhLlO1pYYepaAft8Tjot9rQ==
 
-"@next/plugin-sentry@^9.3.2-canary.4":
-  version "9.3.2-canary.4"
-  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.2-canary.4.tgz#742b9890e998028b72866ca528a933e948ba5fc4"
-  integrity sha512-hXPFmLvOTYY2XmGfGqJZegG4EI0R/JO52K8sSbHAf7+lxPtVVYuVu8s3nVOHhTNo6UrpILubQw1hq5cTRY6DJQ==
+"@next/plugin-sentry@^9.3.2-canary.5":
+  version "9.3.2-canary.5"
+  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.2-canary.5.tgz#5c25e189d29476de5f66002fd1e7724c232dfab3"
+  integrity sha512-2YHdHaNjbrGow09cCvBXgKKxI7cpdGfaec/egWppMR4HhjRYkQoKAky7Dl3qNSEFSEVVfTDMJoiaLzdJrYvJVw==
   dependencies:
     "@sentry/browser" "5.7.1"
     "@sentry/node" "5.7.1"
 
-"@next/polyfill-nomodule@9.3.2-canary.4":
-  version "9.3.2-canary.4"
-  resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.3.2-canary.4.tgz#976a872d7b0808587e1dbd5f7552cbd98c526284"
-  integrity sha512-LGcaiPoXRGpDH5KiafagNwTBJ8NlZAsdn75SyKIkWeg5c/yEjek6FRGroGQznWTyrTRJeWqO83YlT1H1hmRJ2Q==
+"@next/polyfill-nomodule@9.3.2-canary.5":
+  version "9.3.2-canary.5"
+  resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.3.2-canary.5.tgz#6d0b37542f02f782830159716c362425a30e5a8c"
+  integrity sha512-4PCTMral3WPD4nc6sGN2XfzpVoLX917i8wIh2diIRzSJ42RLpb2gZIGZcKd11nyXTlDX00C/iTlTgqSuONWY5A==
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.1"
@@ -5945,6 +5945,15 @@ loader-utils@1.2.3:
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
+loader-utils@2.0.0, loader-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
+  integrity sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^2.1.2"
+
 loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.4.0.tgz#c579b5e34cb34b1a74edc6c1fb36bfa371d5a613"
@@ -5953,15 +5962,6 @@ loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^1.0.1"
-
-loader-utils@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
-  integrity sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
-  dependencies:
-    big.js "^5.2.2"
-    emojis-list "^3.0.0"
-    json5 "^2.1.2"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -6551,10 +6551,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next@^9.3.2-canary.4:
-  version "9.3.2-canary.4"
-  resolved "https://registry.yarnpkg.com/next/-/next-9.3.2-canary.4.tgz#7567e5d313296226eb9314a06bc0378239b08b29"
-  integrity sha512-N5ERvhmGmg4YO4qQ+eE9aBNvAdbHNe9nDfgXdtxqsT7qCOxfndR1o1ZMBpAlpFDG7/2gVJ377hMAOYPv78Lcnw==
+next@^9.3.2-canary.5:
+  version "9.3.2-canary.5"
+  resolved "https://registry.yarnpkg.com/next/-/next-9.3.2-canary.5.tgz#0047cad70b9a8857933eac678c62b2b31b6eed39"
+  integrity sha512-lwe1vF6lM/gtMfIWDe7JHrdnxgXs7ZvyhLGD6d1TcAjTeNgmTNiR+mq6yCRGaIIo4yIxEYFCjbAf99hNtdUu5g==
   dependencies:
     "@ampproject/toolbox-optimizer" "2.0.1"
     "@babel/core" "7.7.2"
@@ -6573,7 +6573,7 @@ next@^9.3.2-canary.4:
     "@babel/preset-typescript" "7.7.2"
     "@babel/runtime" "7.7.2"
     "@babel/types" "7.7.4"
-    "@next/polyfill-nomodule" "9.3.2-canary.4"
+    "@next/polyfill-nomodule" "9.3.2-canary.5"
     amphtml-validator "1.0.30"
     async-retry "1.2.3"
     async-sema "3.0.0"
@@ -6610,7 +6610,7 @@ next@^9.3.2-canary.4:
     json5 "2.1.1"
     jsonwebtoken "8.5.1"
     launch-editor "2.2.1"
-    loader-utils "1.2.3"
+    loader-utils "2.0.0"
     lodash.curry "4.1.1"
     lru-cache "5.1.1"
     mini-css-extract-plugin "0.8.0"
