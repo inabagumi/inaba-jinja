@@ -1417,28 +1417,28 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.5.7.tgz#335358feb2d511bfdb3aa46e31752a10aa51270a"
   integrity sha512-SV+V8A+Y33pmVT/LWk/2y51ixIyA/QH1XL+nrWAhoqre1rFtxOEZ4jr0W+bKZpeahOvkn/BQTheK+dRty9o/ig==
 
-"@next/mdx@^9.3.2-canary.5":
-  version "9.3.2-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.2-canary.5.tgz#40e40d324a6ca332d4b54f4dbbf5d1fd9d367e50"
-  integrity sha512-YZc7L1CL/IIwWfM9ymKW82MANX6P6REBI1HsGVUbRO2DTW62CyN11hJXypY2vl/9yyrpom/+U2N/IFCEKcwmbw==
+"@next/mdx@^9.3.2-canary.6":
+  version "9.3.2-canary.6"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.2-canary.6.tgz#3e7ec0f48c68c6f9fe5d2cb8eead940dd8e6b85a"
+  integrity sha512-AJjCKqROpF+i1IIISnspW08NarCdRvyiVtXzHdtBCfp1wV8nfUQS1Qe0I3UEiF55YHZWPqcKkx82p7J5GOxnOA==
 
-"@next/plugin-google-analytics@^9.3.2-canary.5":
-  version "9.3.2-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.3.2-canary.5.tgz#8902a91b5ff1271b6860d4930969d7d29bac6ae7"
-  integrity sha512-lt69DQU7g8KDTr/BGr0cAtqBXPaVjWNV4zTq92JHMthJuIA2n9bo6MezaSL1yZDPhLlO1pYYepaAft8Tjot9rQ==
+"@next/plugin-google-analytics@^9.3.2-canary.6":
+  version "9.3.2-canary.6"
+  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.3.2-canary.6.tgz#0033a60839baa3e9470790e1ca04f08d6f5d3b54"
+  integrity sha512-Elwjco59xB/sElBjurhrQ4EzsT9x0S6yVe9fdNf5MFDaMceJnKmod+jSUpch0l1GnW/QZFX9/lgWgBoFAb6s+Q==
 
-"@next/plugin-sentry@^9.3.2-canary.5":
-  version "9.3.2-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.2-canary.5.tgz#5c25e189d29476de5f66002fd1e7724c232dfab3"
-  integrity sha512-2YHdHaNjbrGow09cCvBXgKKxI7cpdGfaec/egWppMR4HhjRYkQoKAky7Dl3qNSEFSEVVfTDMJoiaLzdJrYvJVw==
+"@next/plugin-sentry@^9.3.2-canary.6":
+  version "9.3.2-canary.6"
+  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.2-canary.6.tgz#c6adc82fa6adc5cf75039be7542f8274de9b68de"
+  integrity sha512-lRuQ4z4x0S48Gukrs1EwMOiMlJCEgGNeB9KL9l+Qm5ZGLrtKfxqwlQJscnwjyJOfXY4slfzJviyRAKPGibpM1Q==
   dependencies:
     "@sentry/browser" "5.7.1"
     "@sentry/node" "5.7.1"
 
-"@next/polyfill-nomodule@9.3.2-canary.5":
-  version "9.3.2-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.3.2-canary.5.tgz#6d0b37542f02f782830159716c362425a30e5a8c"
-  integrity sha512-4PCTMral3WPD4nc6sGN2XfzpVoLX917i8wIh2diIRzSJ42RLpb2gZIGZcKd11nyXTlDX00C/iTlTgqSuONWY5A==
+"@next/polyfill-nomodule@9.3.2-canary.6":
+  version "9.3.2-canary.6"
+  resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.3.2-canary.6.tgz#687163b0c298005324b2d11d5bc92fa7aa6dcbd2"
+  integrity sha512-D5cCemnjD2eVdLODgzd+KZZDz9HuUqvloquMoUGPkWWKkEmIwlFWCcShR9AqcEHub2VtfRw6x9EpVgGqmQJCAQ==
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.1"
@@ -6551,10 +6551,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next@^9.3.2-canary.5:
-  version "9.3.2-canary.5"
-  resolved "https://registry.yarnpkg.com/next/-/next-9.3.2-canary.5.tgz#0047cad70b9a8857933eac678c62b2b31b6eed39"
-  integrity sha512-lwe1vF6lM/gtMfIWDe7JHrdnxgXs7ZvyhLGD6d1TcAjTeNgmTNiR+mq6yCRGaIIo4yIxEYFCjbAf99hNtdUu5g==
+next@^9.3.2-canary.6:
+  version "9.3.2-canary.6"
+  resolved "https://registry.yarnpkg.com/next/-/next-9.3.2-canary.6.tgz#7ed214c3a0dee5731b5fa844450b5595cde933ed"
+  integrity sha512-ErZC9RQffC+6JKI0/I//j8HUjNnhUJFdBImyOgpyC9QysYSE2qgXa1swQ0A1GQQR0vZyDX3WViYzqR/eMbj6lQ==
   dependencies:
     "@ampproject/toolbox-optimizer" "2.0.1"
     "@babel/core" "7.7.2"
@@ -6573,7 +6573,7 @@ next@^9.3.2-canary.5:
     "@babel/preset-typescript" "7.7.2"
     "@babel/runtime" "7.7.2"
     "@babel/types" "7.7.4"
-    "@next/polyfill-nomodule" "9.3.2-canary.5"
+    "@next/polyfill-nomodule" "9.3.2-canary.6"
     amphtml-validator "1.0.30"
     async-retry "1.2.3"
     async-sema "3.0.0"
