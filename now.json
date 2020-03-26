@@ -12,6 +12,5 @@
     "silent": true
   },
   "regions": ["hnd1", "sfo1"],
-  "scope": "inabagumi",
   "version": 2
 }
