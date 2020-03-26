@@ -24,8 +24,19 @@ const nextConfig = {
           },
           {
             key: 'content-security-policy',
-            value:
-              "base-uri 'none'; connect-src 'self' https:; default-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self' https: data:; manifest-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; worker-src 'self'"
+            value: [
+              "base-uri 'none'",
+              "connect-src 'self' https://images.ctfassets.net https://www.google-analytics.com",
+              "default-src 'self'",
+              "form-action 'none'",
+              "frame-ancestors 'none'",
+              "img-src 'self' data: https://images.ctfassets.net https://www.google-analytics.com",
+              "manifest-src 'self'",
+              "object-src 'none'",
+              "script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com",
+              "style-src 'self' 'unsafe-inline'",
+              "worker-src 'self'"
+            ].join('; ')
           },
           {
             key: 'referrer-policy',
@@ -111,6 +122,19 @@ const nextConfig = {
   },
   workboxOpts: {
     clientsClaim: true,
+    manifestTransforms: [
+      (originalManifest) => {
+        const warnings = []
+        const manifest = originalManifest.filter((entry) =>
+          /\/pages\/(?:_[^.]+)\.module\.js$/.test(entry.url)
+        )
+
+        return {
+          manifest,
+          warnings
+        }
+      }
+    ],
     runtimeCaching: [
       {
         handler: 'NetworkFirst',
@@ -128,19 +152,6 @@ const nextConfig = {
           }
         },
         urlPattern: /^https:\/\/images\.ctfassets\.net\//i
-      }
-    ],
-    manifestTransforms: [
-      (originalManifest) => {
-        const warnings = []
-        const manifest = originalManifest.filter((entry) =>
-          /\/pages\/(?:_[^.]+)\.module\.js$/.test(entry.url)
-        )
-
-        return {
-          manifest,
-          warnings
-        }
       }
     ],
     skipWaiting: true,
