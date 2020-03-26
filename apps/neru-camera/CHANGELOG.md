@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.4.1](https://github.com/inabagumi/neru-camera/compare/v5.4.0...v5.4.1) (2020-03-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @inlet/react-pixi to ^1.2.1 ([#465](https://github.com/inabagumi/neru-camera/issues/465)) ([b0c7a4e](https://github.com/inabagumi/neru-camera/commit/b0c7a4eedad9b032632f8081bb78f7ebaaccf51e))
+* **deps:** update dependency @inlet/react-pixi to ^1.2.2 ([#467](https://github.com/inabagumi/neru-camera/issues/467)) ([736c631](https://github.com/inabagumi/neru-camera/commit/736c6312a8b2793f640fa9be6d886dd53c560c90))
+* **deps:** update dependency @inlet/react-pixi to ^1.2.3 ([#473](https://github.com/inabagumi/neru-camera/issues/473)) ([31872c6](https://github.com/inabagumi/neru-camera/commit/31872c6ce0a94f0a502b4c2f82fe42d10a785b1e))
+* **deps:** update dependency @inlet/react-pixi to ^1.2.4 ([#475](https://github.com/inabagumi/neru-camera/issues/475)) ([8fb87bc](https://github.com/inabagumi/neru-camera/commit/8fb87bc4ce954725486c77b92943dc93ba3cba0d))
+* **deps:** update dependency @inlet/react-pixi to ^1.2.5 ([#478](https://github.com/inabagumi/neru-camera/issues/478)) ([5abed44](https://github.com/inabagumi/neru-camera/commit/5abed444cf3b303789603cbd93ba93fb66020f66))
+* **deps:** update dependency @inlet/react-pixi to ^1.2.6 ([#480](https://github.com/inabagumi/neru-camera/issues/480)) ([a9c1fcf](https://github.com/inabagumi/neru-camera/commit/a9c1fcf1151e087bb4b7a783d3ed3783646d5ac3))
+* **deps:** update dependency @material-ui/core to ^4.9.2 ([#445](https://github.com/inabagumi/neru-camera/issues/445)) ([b30361b](https://github.com/inabagumi/neru-camera/commit/b30361bf1b21e6f88710d9f57e5a587c91d0372a))
+* **deps:** update dependency @material-ui/core to ^4.9.3 ([#451](https://github.com/inabagumi/neru-camera/issues/451)) ([7fb52c4](https://github.com/inabagumi/neru-camera/commit/7fb52c45b16b894156ea51427181f1b64c6ea8a5))
+* **deps:** update dependency @material-ui/core to ^4.9.4 ([#462](https://github.com/inabagumi/neru-camera/issues/462)) ([3908d44](https://github.com/inabagumi/neru-camera/commit/3908d44447833c4be6f0a9aea47f785ea607c349))
+* **deps:** update dependency @material-ui/core to ^4.9.5 ([#471](https://github.com/inabagumi/neru-camera/issues/471)) ([9f1b8cb](https://github.com/inabagumi/neru-camera/commit/9f1b8cb4afca6c246eede7cc57ad2215c4d3a190))
+* **deps:** update dependency @material-ui/core to ^4.9.7 ([#484](https://github.com/inabagumi/neru-camera/issues/484)) ([a809942](https://github.com/inabagumi/neru-camera/commit/a809942ce19aed81d1ecd00621f3f8bab7d65dd8))
+* **deps:** update dependency @next/plugin-material-ui to ^9.2.2 ([#455](https://github.com/inabagumi/neru-camera/issues/455)) ([6e15d1a](https://github.com/inabagumi/neru-camera/commit/6e15d1abe8c19639dc092c039600e470ce0fc32a))
+* **deps:** update dependency @next/plugin-material-ui to ^9.3.0 ([#476](https://github.com/inabagumi/neru-camera/issues/476)) ([e042136](https://github.com/inabagumi/neru-camera/commit/e04213678858ea8fc4faeb6b681242461c9d05f7))
+* **deps:** update dependency @next/plugin-material-ui to ^9.3.1 ([#482](https://github.com/inabagumi/neru-camera/issues/482)) ([b8bfb46](https://github.com/inabagumi/neru-camera/commit/b8bfb461cb744a91fa2f36b8e6a9cbffadba1b61))
+* **deps:** update dependency clsx to ^1.1.0 ([#441](https://github.com/inabagumi/neru-camera/issues/441)) ([e78bc34](https://github.com/inabagumi/neru-camera/commit/e78bc342e765097b7792f85648241e8563cdca5f))
+* **deps:** update dependency contentful to ^7.14.0 ([#460](https://github.com/inabagumi/neru-camera/issues/460)) ([0e83bf0](https://github.com/inabagumi/neru-camera/commit/0e83bf041fb118a991cd2464d3496973f98658fb))
+* **deps:** update dependency next to ^9.2.2 ([#456](https://github.com/inabagumi/neru-camera/issues/456)) ([f3946cb](https://github.com/inabagumi/neru-camera/commit/f3946cb9b39ad53f24e370217118272a0e444b2f))
+* **deps:** update dependency next to ^9.3.0 ([#477](https://github.com/inabagumi/neru-camera/issues/477)) ([5b4cb86](https://github.com/inabagumi/neru-camera/commit/5b4cb86e5ba42e38679e6d3b0c6c3fe87115d503))
+* **deps:** update dependency next to ^9.3.1 ([#483](https://github.com/inabagumi/neru-camera/issues/483)) ([3e23c0d](https://github.com/inabagumi/neru-camera/commit/3e23c0dd76e55fa3a5b2f7d0583dea5752ab7311))
+* **deps:** update dependency pixi-viewport to ^4.10.0 ([#450](https://github.com/inabagumi/neru-camera/issues/450)) ([c9aaa97](https://github.com/inabagumi/neru-camera/commit/c9aaa9752cb79c31730abbb6fbb01b87d5917683))
+* **deps:** update dependency pixi-viewport to ^4.8.0 ([#442](https://github.com/inabagumi/neru-camera/issues/442)) ([50e08cc](https://github.com/inabagumi/neru-camera/commit/50e08ccc8974161a9a303f1fd8cad05a20087afa))
+* **deps:** update dependency pixi-viewport to ^4.8.1 ([#443](https://github.com/inabagumi/neru-camera/issues/443)) ([2c0fae5](https://github.com/inabagumi/neru-camera/commit/2c0fae5cce1274c09c1ac836e49efb6cdcf393fa))
+* **deps:** update dependency pixi-viewport to ^4.8.2 ([#444](https://github.com/inabagumi/neru-camera/issues/444)) ([df2c37e](https://github.com/inabagumi/neru-camera/commit/df2c37ef9cb5a91c60c67f37f63952d813cdf8e3))
+* **deps:** update dependency pixi-viewport to ^4.9.1 ([#447](https://github.com/inabagumi/neru-camera/issues/447)) ([d6066e8](https://github.com/inabagumi/neru-camera/commit/d6066e8aa7aaf4b6085ef371b75769011b86d13c))
+* **deps:** update dependency pixi-viewport to ^4.9.2 ([#448](https://github.com/inabagumi/neru-camera/issues/448)) ([19a0af6](https://github.com/inabagumi/neru-camera/commit/19a0af6a98204c75e54d38b3962a8940e098521c))
+* **deps:** update mui monorepo to ^4.9.1 ([#438](https://github.com/inabagumi/neru-camera/issues/438)) ([dae806d](https://github.com/inabagumi/neru-camera/commit/dae806df05bf208d0f6e7bf4d4cc75abb546bfc5))
+* **deps:** update react monorepo to ^16.13.0 ([#468](https://github.com/inabagumi/neru-camera/issues/468)) ([ff1abc5](https://github.com/inabagumi/neru-camera/commit/ff1abc55ecaa2fd040c9412f355a14830feda7fd))
+
 ## [5.4.0](https://github.com/inabagumi/neru-camera/compare/v5.3.0...v5.4.0) (2020-02-01)
 
 
