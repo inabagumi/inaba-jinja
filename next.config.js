@@ -111,23 +111,31 @@ const nextConfig = {
   },
   workboxOpts: {
     clientsClaim: true,
+    runtimeCaching: [
+      {
+        handler: 'NetworkFirst',
+        urlPattern: /\/(?:disclaimer|kuji\/\w|lottery|privacy|share\/\w+)?$/
+      },
+      {
+        handler: 'NetworkFirst',
+        urlPattern: /\.(?:ico|jpe?g|js|json|png|webp)$/i
+      },
+      {
+        handler: 'CacheFirst',
+        options: {
+          cacheableResponse: {
+            statuses: [0, 200]
+          }
+        },
+        urlPattern: /^https:\/\/images\.ctfassets\.net\//i
+      }
+    ],
     manifestTransforms: [
       (originalManifest) => {
         const warnings = []
-
         const manifest = originalManifest.filter((entry) =>
-          /\/pages\/(?:_[^.]+|index)\.module\.js$/.test(entry.url)
+          /\/pages\/(?:_[^.]+)\.module\.js$/.test(entry.url)
         )
-        const indexScript = manifest.find((entry) =>
-          entry.url.endsWith('/pages/index.module.js')
-        )
-
-        if (indexScript) {
-          manifest.unshift({
-            revision: indexScript.revision,
-            url: '/'
-          })
-        }
 
         return {
           manifest,
