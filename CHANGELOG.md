@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/inabagumi/inaba-jinja/compare/v1.6.0...v1.6.1) (2020-03-26)
+
+
+### Bug Fixes
+
+* move svgr options ([#434](https://github.com/inabagumi/inaba-jinja/issues/434)) ([7970189](https://github.com/inabagumi/inaba-jinja/commit/797018975213a19d68c9ac4442b3cb96c17fdfa9))
+* **deps:** update dependency @next/plugin-google-analytics to ^9.3.1 ([#428](https://github.com/inabagumi/inaba-jinja/issues/428)) ([987f322](https://github.com/inabagumi/inaba-jinja/commit/987f3221280e5479906e337aa912302542c9c207))
+* **deps:** update dependency @next/plugin-sentry to ^9.3.1 ([#429](https://github.com/inabagumi/inaba-jinja/issues/429)) ([0dbfc8b](https://github.com/inabagumi/inaba-jinja/commit/0dbfc8ba3b0975659fb8ac61610db261949ba961))
+* **deps:** update emotion monorepo to ^11.0.0-next.12 ([#427](https://github.com/inabagumi/inaba-jinja/issues/427)) ([6964fc3](https://github.com/inabagumi/inaba-jinja/commit/6964fc3c3755a12711e38e5c493d48910e731870))
+* **deps:** update nextjs monorepo to ^9.3.1 ([#430](https://github.com/inabagumi/inaba-jinja/issues/430)) ([90e698b](https://github.com/inabagumi/inaba-jinja/commit/90e698b394313badb3a94236f3dadc70065bf2a0))
+
 ## [1.6.0](https://github.com/inabagumi/inaba-jinja/compare/v1.5.6...v1.6.0) (2020-03-09)
 
 
