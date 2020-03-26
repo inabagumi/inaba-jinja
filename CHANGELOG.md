@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.2](https://github.com/inabagumi/inaba-jinja/compare/v1.6.1...v1.6.2) (2020-03-26)
+
+
+### Bug Fixes
+
+* **now:** add scope to now.json ([#461](https://github.com/inabagumi/inaba-jinja/issues/461)) ([fb29f81](https://github.com/inabagumi/inaba-jinja/commit/fb29f81fc513a1ff99b610303083f332899d4190))
+
 ### [1.6.1](https://github.com/inabagumi/inaba-jinja/compare/v1.6.0...v1.6.1) (2020-03-26)
 
 
