@@ -58,6 +58,7 @@ const nextConfig = {
       }
     ],
     modern: true,
+    pageEnv: true,
     plugins: true,
     rewrites: () => [
       {

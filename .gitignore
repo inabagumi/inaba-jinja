@@ -1,5 +1,5 @@
 /.next/
 /.now/
 /node_modules/
-/.env.build
+/.env
 /yarn-error.log
