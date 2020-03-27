@@ -141,7 +141,7 @@ const nextConfig = {
         urlPattern: /\/(?:disclaimer|kuji\/\w|lottery|privacy|share\/\w+)?$/
       },
       {
-        handler: 'NetworkFirst',
+        handler: 'CacheFirst',
         urlPattern: /\.(?:ico|jpe?g|js|json|png|webp)$/i
       },
       {
