@@ -30,7 +30,7 @@ const nextConfig = {
               "default-src 'self'",
               "form-action 'none'",
               "frame-ancestors 'none'",
-              "img-src 'self' data: https://images.ctfassets.net https://www.google-analytics.com",
+              "img-src 'self' data: https://stats.g.doubleclick.net https://images.ctfassets.net https://www.google.co.jp https://www.google.com https://www.google-analytics.com",
               "manifest-src 'self'",
               "object-src 'none'",
               "script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com",
