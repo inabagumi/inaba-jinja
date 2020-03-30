@@ -13,7 +13,13 @@ const HomePage: FC = () => (
       canonical={fullPath('/')}
       description={description}
       openGraph={{
-        images: [{ url: fullPath(cardImage) }],
+        images: [
+          {
+            height: 630,
+            url: fullPath(cardImage),
+            width: 1200
+          }
+        ],
         type: 'website'
       }}
       title="因幡神社"

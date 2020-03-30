@@ -53,7 +53,9 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
         openGraph={{
           images: [
             {
-              url: fullPath(fortune.fields.card.fields.file.url)
+              height: 630,
+              url: fullPath(fortune.fields.card.fields.file.url),
+              width: 1200
             }
           ],
           title
