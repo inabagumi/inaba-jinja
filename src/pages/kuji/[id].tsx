@@ -8,11 +8,17 @@ import fullPath from 'helpers/fullPath'
 import NotFound from 'pages/404.mdx'
 import FortuneEntry from 'types/FortuneEntry'
 
+export type Params = {
+  id: string
+}
+
 export type Props = {
   fortune?: FortuneEntry
 }
 
-export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<Props, Params> = async ({
+  params
+}) => {
   if (!params?.id) throw new TypeError('ID is required.')
 
   const id = Array.isArray(params.id) ? params.id[0] : params.id
@@ -26,7 +32,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   }
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths<Params> = async () => {
   const ids = await getFortunes().catch((): string[] => [])
   const paths = ids.map((id) => ({
     params: {
