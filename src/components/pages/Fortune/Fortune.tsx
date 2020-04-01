@@ -1,17 +1,11 @@
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import Image from 'components/atoms/Image'
+import IdealImage from '@endiliey/react-ideal-image'
 import SingleDoc from 'components/templates/SingleDoc'
 import fullPath from 'helpers/fullPath'
 import FortuneEntry from 'types/FortuneEntry'
 
-const Paper = styled(Image)`
-  background-color: #fff;
-  background-image: url("${({ src }): string => src}?w=10");
-  background-position: center;
-  background-size: contain;
-  display: block;
-  height: auto;
+const Paper = styled.div`
   margin: 0 auto;
   max-width: 100%;
 `
@@ -67,18 +61,43 @@ type Props = {
 
 const Fortune: FC<Props> = ({ fortune }) => {
   const imageDetails = fortune.fields.paper.fields.file.details.image
+  const imageWidth = imageDetails?.width ?? 0
+  const imageHeight = imageDetails?.height ?? 0
   const imageURL = `https:${fortune.fields.paper.fields.file.url}`
 
   return (
     <SingleDoc
       title={`第${fortune.fields.number}番 ${fortune.fields.blessing}`}
     >
-      <Paper
-        alt={`${fortune.fields.blessing} - ${fortune.fields.description}`}
-        height={imageDetails?.height || 0}
-        src={imageURL}
-        width={imageDetails?.width || 0}
-      />
+      <Paper style={{ width: imageWidth / 2 }}>
+        <IdealImage
+          alt={`${fortune.fields.blessing} - ${fortune.fields.description}`}
+          height={imageHeight / 2}
+          loader="image"
+          placeholder={{ lqip: `${imageURL}?fm=jpg&w=10` }}
+          srcSet={[
+            {
+              format: 'webp',
+              src: `${imageURL}?fm=webp&w=${imageWidth}`,
+              width: imageWidth
+            },
+            {
+              format: 'webp',
+              src: `${imageURL}?fm=webp&w=${imageWidth / 2}`,
+              width: imageWidth / 2
+            },
+            {
+              src: `${imageURL}?w=${imageWidth}`,
+              width: imageWidth
+            },
+            {
+              src: `${imageURL}?w=${imageWidth / 2}`,
+              width: imageWidth / 2
+            }
+          ]}
+          width={imageWidth / 2}
+        />
+      </Paper>
 
       <ShareLinks>
         <ul>
