@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/inabagumi/inaba-jinja/compare/v1.6.2...v1.7.0) (2020-04-01)
+
+
+### Features
+
+* **csp:** improve csp values ([#463](https://github.com/inabagumi/inaba-jinja/issues/463)) ([a9e7291](https://github.com/inabagumi/inaba-jinja/commit/a9e72913d93d17a84d0b508f8116146d07cc0246))
+* add runtimeCaching settings ([#462](https://github.com/inabagumi/inaba-jinja/issues/462)) ([b2e5b27](https://github.com/inabagumi/inaba-jinja/commit/b2e5b2722ac3dc20a3582b455ada68f1d97b2b34))
+
+
+### Bug Fixes
+
+* change handler to cache-first ([#465](https://github.com/inabagumi/inaba-jinja/issues/465)) ([3db60cd](https://github.com/inabagumi/inaba-jinja/commit/3db60cd6fcbab208e0671cae6b2a7f953ce81dcb))
+* **csp:** add ga tracking tags ([#464](https://github.com/inabagumi/inaba-jinja/issues/464)) ([9c01c5a](https://github.com/inabagumi/inaba-jinja/commit/9c01c5a0bf92600492e7af3a047d0b93f97b51b6))
+
 ### [1.6.2](https://github.com/inabagumi/inaba-jinja/compare/v1.6.1...v1.6.2) (2020-03-26)
 
 
