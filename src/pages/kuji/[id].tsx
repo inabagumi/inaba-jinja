@@ -27,8 +27,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({
   return {
     props: {
       fortune
-    },
-    revalidate: fortune ? false : 30
+    }
   }
 }
 
