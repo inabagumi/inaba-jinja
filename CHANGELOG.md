@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/inabagumi/inaba-jinja/compare/v1.7.0...v1.7.1) (2020-04-04)
+
+
+### Bug Fixes
+
+* **csp:** add doubleclick to connect-src ([#481](https://github.com/inabagumi/inaba-jinja/issues/481)) ([d34e2d5](https://github.com/inabagumi/inaba-jinja/commit/d34e2d594c0e5d42b4c19613adaf3e1861d03651))
+* **sw:** change cache strategy for data JSON ([#484](https://github.com/inabagumi/inaba-jinja/issues/484)) ([dc5ca58](https://github.com/inabagumi/inaba-jinja/commit/dc5ca5809ef662cee2c484fd025580c9e852be2c))
+
 ## [1.7.0](https://github.com/inabagumi/inaba-jinja/compare/v1.6.2...v1.7.0) (2020-04-01)
 
 
