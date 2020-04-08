@@ -40,7 +40,7 @@
     "prettier": "^2.0.4",
     "standard-version": "^7.1.0",
     "typescript": "^3.8.3",
-    "url-loader": "^4.0.0"
+    "url-loader": "^4.1.0"
   },
   "engines": {
     "node": "12.x"
