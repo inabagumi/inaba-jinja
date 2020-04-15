@@ -3,41 +3,40 @@ name: Node CI
 on:
   pull_request:
     branches:
-    - master
+      - master
   push:
     branches:
-    - master
+      - master
     tags:
-    - '!v*'
+      - '!v*'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-    - name: Use Node.js 12.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-    - name: Get yarn cache
-      id: yarn-cache
-      run: echo "::set-output name=dir::$(yarn cache dir)"
-    - uses: actions/cache@v1
-      with:
-        path: ${{ steps.yarn-cache.outputs.dir }}
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: ${{ runner.os }}-yarn-
-    - name: Install dependencies
-      run: yarn install --frozen-lockfile
-    - name: Format check
-      run: yarn format-check
-    - name: Lint
-      run: yarn lint
-    - name: Build
-      run: yarn build
-      env:
-        GA_TRACKING_ID: UA-XXXXX-1
-        SENTRY_DSN: https://sentry.example.com/17800
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Format check
+        run: yarn format-check
+      - name: Lint
+        run: yarn lint
+      - name: Build
+        run: yarn build
+        env:
+          GA_TRACKING_ID: UA-XXXXX-1
+          SENTRY_DSN: https://sentry.example.com/17800
