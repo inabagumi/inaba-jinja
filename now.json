@@ -1,17 +1,8 @@
 {
-  "build": {
-    "env": {
-      "CONTENTFUL_ACCESS_TOKEN": "@inaba-jinja-contentful-access-token",
-      "CONTENTFUL_SPACE_ID": "@inaba-jinja-contentful-space-id",
-      "GA_TRACKING_ID": "@inaba-jinja-ga-tracking-id",
-      "SENTRY_DSN": "@inaba-jinja-sentry-dsn"
-    }
-  },
   "github": {
     "autoAlias": false,
     "silent": true
   },
   "regions": ["hnd1", "sfo1"],
-  "scope": "inabagumi",
   "version": 2
 }
