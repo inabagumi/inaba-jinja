@@ -1,7 +1,4 @@
 /.next/
 /.now/
 /node_modules/
-
-*.md
-*.mdx
-*.yml
+/CHANGELOG.md
