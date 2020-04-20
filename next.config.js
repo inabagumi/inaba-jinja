@@ -26,7 +26,7 @@ const nextConfig = {
             key: 'content-security-policy',
             value: [
               "base-uri 'none'",
-              "connect-src 'self' https://images.ctfassets.net https://stats.g.doubleclick.net https://www.google-analytics.com",
+              "connect-src 'self' https://images.ctfassets.net https://stats.g.doubleclick.net https://www.google-analytics.com https://*.ingest.sentry.io",
               "default-src 'self'",
               "form-action 'none'",
               "frame-ancestors 'none'",
