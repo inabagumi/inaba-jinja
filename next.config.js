@@ -33,10 +33,14 @@ const nextConfig = {
               "img-src 'self' data: https://images.ctfassets.net https://stats.g.doubleclick.net https://www.google.co.jp https://www.google.com https://www.google-analytics.com",
               "manifest-src 'self'",
               "object-src 'none'",
+              process.env.CSP_REPORT_URL &&
+                `report-uri ${process.env.CSP_REPORT_URL}`,
               "script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com",
               "style-src 'self' 'unsafe-inline'",
               "worker-src 'self'"
-            ].join('; ')
+            ]
+              .filter(Boolean)
+              .join('; ')
           },
           {
             key: 'referrer-policy',
