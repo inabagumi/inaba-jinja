@@ -38,7 +38,7 @@ const nextConfig = {
               "object-src 'none'",
               process.env.CSP_REPORT_URL &&
                 `report-uri ${process.env.CSP_REPORT_URL}`,
-              "script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com",
               "style-src 'self' 'unsafe-inline'",
               "worker-src 'self'"
             ]
