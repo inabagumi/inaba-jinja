@@ -33,8 +33,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Deploy to Now
-        run: npx now -c -t ${NOW_TOKEN} --prod
+        run: npx now -S ${NOW_SCOPE} -c -t ${NOW_TOKEN} --prod
         env:
+          NOW_SCOPE: ${{ secrets.NOW_SCOPE }}
           NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
       - name: Create GitHub Release
         run: yarn conventional-github-releaser -p angular
