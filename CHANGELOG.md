@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.3](https://github.com/inabagumi/inaba-jinja/compare/v1.8.2...v1.8.3) (2020-04-21)
+
+
+### Bug Fixes
+
+* **build:** disable @sentry/webpack-plugin ([#519](https://github.com/inabagumi/inaba-jinja/issues/519)) ([870b3bf](https://github.com/inabagumi/inaba-jinja/commit/870b3bf2a224bc47b8dd1708e22ee08695678681))
+
 ### [1.8.2](https://github.com/inabagumi/inaba-jinja/compare/v1.8.1...v1.8.2) (2020-04-21)
 
 
