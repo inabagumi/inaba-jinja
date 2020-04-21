@@ -32,12 +32,12 @@ jobs:
           restore-keys: ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - name: Create GitHub Release
+        run: yarn conventional-github-releaser -p angular
+        env:
+          CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy to Now
         run: npx now -S ${NOW_SCOPE} -c -t ${NOW_TOKEN} --prod
         env:
           NOW_SCOPE: ${{ secrets.NOW_SCOPE }}
           NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
-      - name: Create GitHub Release
-        run: yarn conventional-github-releaser -p angular
-        env:
-          CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
