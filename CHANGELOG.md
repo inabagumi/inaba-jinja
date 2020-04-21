@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/inabagumi/inaba-jinja/compare/v1.7.1...v1.8.0) (2020-04-21)
+
+
+### Features
+
+* **csp:** enable csp report ([#511](https://github.com/inabagumi/inaba-jinja/issues/511)) ([31bcc84](https://github.com/inabagumi/inaba-jinja/commit/31bcc8443284b1213ad70b06ffb80d82ec257926))
+
+
+### Bug Fixes
+
+* **ci:** fix invalid dsn ([#509](https://github.com/inabagumi/inaba-jinja/issues/509)) ([1670bb6](https://github.com/inabagumi/inaba-jinja/commit/1670bb65ce38def305e8591428798d45ac57643f))
+* **csp:** add 'unsafe-eval' to script-src ([#515](https://github.com/inabagumi/inaba-jinja/issues/515)) ([ebf5251](https://github.com/inabagumi/inaba-jinja/commit/ebf5251d144d1d675c1530c544ae97e15fad419a))
+* **csp:** add *.ingest.sentry.io ([#510](https://github.com/inabagumi/inaba-jinja/issues/510)) ([5eec53e](https://github.com/inabagumi/inaba-jinja/commit/5eec53ea9579c8c3455308100145a3626ce12fb0))
+* **kuji:** remove revalidate property ([#486](https://github.com/inabagumi/inaba-jinja/issues/486)) ([d840f40](https://github.com/inabagumi/inaba-jinja/commit/d840f404d44aa3fb813e42a6197c9fce2c275d1e))
+* **type:** remove unused reference ([47f1025](https://github.com/inabagumi/inaba-jinja/commit/47f10257a8395a29abdd0b9edead50577310a046))
+
 ### [1.7.1](https://github.com/inabagumi/inaba-jinja/compare/v1.7.0...v1.7.1) (2020-04-04)
 
 
