@@ -146,18 +146,10 @@ const nextConfig = {
   },
   workboxOpts: {
     clientsClaim: true,
-    manifestTransforms: [
-      (originalManifest) => {
-        const warnings = []
-        const manifest = originalManifest.filter((entry) =>
-          /\/pages\/(?:_[^.]+)\.module\.js$/.test(entry.url)
-        )
-
-        return {
-          manifest,
-          warnings
-        }
-      }
+    include: [
+      /\/pages\/(?:_[^.]+)\.module\.js$/,
+      /\/runtime\/(?:webpack|main)-[0-9a-f]{20}\.module\.js$/,
+      /\/chunks\/(?:commons|framework)-[0-9a-f]{20}\.module\.js$/
     ],
     runtimeCaching: [
       {
