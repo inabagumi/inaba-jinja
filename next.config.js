@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
 const withMDX = require('@next/mdx')()
+const SentryWebpackPlugin = require('@sentry/webpack-plugin')
 const withSourceMaps = require('@zeit/next-source-maps')()
 const withOffline = require('next-offline')
-const { name: packageName, version } = require('./package.json')
 
 const nextConfig = {
   env: {
@@ -11,7 +11,10 @@ const nextConfig = {
     CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
     SENTRY_DSN: process.env.SENTRY_DSN,
-    SENTRY_RELEASE: `${packageName}@${version}`
+    SENTRY_RELEASE: [
+      process.env.npm_package_name,
+      process.env.NOW_GITHUB_COMMIT_SHA || process.env.npm_package_version
+    ].join('@')
   },
   experimental: {
     headers: () => [
@@ -121,6 +124,20 @@ const nextConfig = {
         }
       ]
     })
+
+    if (
+      process.env.SENTRY_DSN &&
+      process.env.SENTRY_ORG &&
+      process.env.SENTRY_PROJECT
+    ) {
+      config.plugins.push(
+        new SentryWebpackPlugin({
+          ignore: ['node_modules'],
+          include: '.next',
+          urlPrefix: '~/_next'
+        })
+      )
+    }
 
     return config
   },
