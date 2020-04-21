@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.4](https://github.com/inabagumi/inaba-jinja/compare/v1.8.3...v1.8.4) (2020-04-21)
+
+
+### Bug Fixes
+
+* **build:** stop using inefficient manifestTransforms ([#523](https://github.com/inabagumi/inaba-jinja/issues/523)) ([ead6ad3](https://github.com/inabagumi/inaba-jinja/commit/ead6ad35bfd34458822c45d8c23f4562110ac499))
+* **csp:** add google.co.kr to img-src ([#524](https://github.com/inabagumi/inaba-jinja/issues/524)) ([72c8cd1](https://github.com/inabagumi/inaba-jinja/commit/72c8cd1aa0a9a662992ba4f9aa14dc2ca44556f1))
+
 ### [1.8.3](https://github.com/inabagumi/inaba-jinja/compare/v1.8.2...v1.8.3) (2020-04-21)
 
 
