@@ -128,7 +128,7 @@ const nextConfig = {
     })
 
     if (
-      process.env.SENTRY_DSN &&
+      process.env.SENTRY_AUTH_TOKEN &&
       process.env.SENTRY_ORG &&
       process.env.SENTRY_PROJECT
     ) {
