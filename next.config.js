@@ -35,7 +35,7 @@ const nextConfig = {
               "default-src 'self'",
               "form-action 'none'",
               "frame-ancestors 'none'",
-              "img-src 'self' data: https://images.ctfassets.net https://stats.g.doubleclick.net https://www.google.co.jp https://www.google.com https://www.google-analytics.com",
+              "img-src 'self' data: https://images.ctfassets.net https://stats.g.doubleclick.net https://www.google.co.jp https://www.google.co.kr https://www.google.com https://www.google-analytics.com",
               "manifest-src 'self'",
               "object-src 'none'",
               process.env.CSP_REPORT_URL &&
