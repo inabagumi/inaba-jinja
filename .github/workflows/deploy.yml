@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  pull_request:
+    branches:
+      - '!*'
+  push:
+    branches:
+      - '!*'
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Deploy to Now
+        run: now -S ${NOW_SCOPE} -c -t ${NOW_TOKEN} --prod
+        env:
+          NOW_SCOPE: ${{ secrets.NOW_SCOPE }}
+          NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
