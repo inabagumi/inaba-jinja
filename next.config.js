@@ -149,7 +149,7 @@ const nextConfig = {
     include: [
       /\/pages\/(?:_[^.]+)\.module\.js$/,
       /\/runtime\/(?:webpack|main)-[0-9a-f]{20}\.module\.js$/,
-      /\/chunks\/(?:commons|framework)-[0-9a-f]{20}\.module\.js$/
+      /\/chunks\/(?:commons|framework)\.[0-9a-f]{20}\.module\.js$/
     ],
     runtimeCaching: [
       {
