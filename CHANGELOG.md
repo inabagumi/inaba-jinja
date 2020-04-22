@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.5](https://github.com/inabagumi/inaba-jinja/compare/v1.8.4...v1.8.5) (2020-04-22)
+
+
+### Bug Fixes
+
+* **build:** fix regexp for chunk filename ([#530](https://github.com/inabagumi/inaba-jinja/issues/530)) ([05eb3db](https://github.com/inabagumi/inaba-jinja/commit/05eb3db220ff816a39c13c9d5032def90c09a8b4))
+
 ### [1.8.4](https://github.com/inabagumi/inaba-jinja/compare/v1.8.3...v1.8.4) (2020-04-21)
 
 
