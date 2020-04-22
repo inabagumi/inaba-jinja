@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
-const withMDX = require('@next/mdx')()
 const SentryWebpackPlugin = require('@sentry/webpack-plugin')
+const cspBuilder = require('content-security-policy-builder')
+
+const withMDX = require('@next/mdx')()
 const withSourceMaps = require('@zeit/next-source-maps')()
 const withOffline = require('next-offline')
 
@@ -29,23 +31,49 @@ const nextConfig = {
           },
           {
             key: 'content-security-policy',
-            value: [
-              "base-uri 'none'",
-              "connect-src 'self' https://images.ctfassets.net https://stats.g.doubleclick.net https://www.google-analytics.com https://*.ingest.sentry.io",
-              "default-src 'self'",
-              "form-action 'none'",
-              "frame-ancestors 'none'",
-              "img-src 'self' data: https://images.ctfassets.net https://stats.g.doubleclick.net https://www.google.co.jp https://www.google.co.kr https://www.google.com https://www.google-analytics.com",
-              "manifest-src 'self'",
-              "object-src 'none'",
-              process.env.CSP_REPORT_URL &&
-                `report-uri ${process.env.CSP_REPORT_URL}`,
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ssl.google-analytics.com https://www.google-analytics.com https://www.googletagmanager.com",
-              "style-src 'self' 'unsafe-inline'",
-              "worker-src 'self'"
-            ]
-              .filter(Boolean)
-              .join('; ')
+            value: cspBuilder({
+              directives: {
+                baseUri: ["'none'"],
+                connectSrc: [
+                  "'self'",
+                  'https://images.ctfassets.net',
+                  'https://stats.g.doubleclick.net',
+                  'https://www.google-analytics.com',
+                  'https://*.ingest.sentry.io'
+                ],
+                defaultSrc: ["'self'"],
+                fontSrc: ["'none'"],
+                formAction: ["'none'"],
+                frameAncestors: ["'none'"],
+                imgSrc: [
+                  "'self'",
+                  'data:',
+                  'https://images.ctfassets.net',
+                  'https://stats.g.doubleclick.net',
+                  'https://www.google.co.jp',
+                  'https://www.google.co.kr',
+                  'https://www.google.com',
+                  'https://www.google-analytics.com'
+                ],
+                manifestSrc: ["'self'"],
+                objectSrc: ["'none'"],
+                ...(process.env.CSP_REPORT_URL
+                  ? {
+                      reportUri: process.env.CSP_REPORT_URL
+                    }
+                  : {}),
+                scriptSrc: [
+                  "'self'",
+                  "'unsafe-inline'",
+                  "'unsafe-eval'",
+                  'https://ssl.google-analytics.com',
+                  'https://www.google-analytics.com',
+                  'https://www.googletagmanager.com'
+                ],
+                styleSrc: ["'self'", "'unsafe-inline'"],
+                workerSrc: ["'self'"]
+              }
+            })
           },
           {
             key: 'referrer-policy',
