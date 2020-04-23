@@ -53,7 +53,8 @@ const nextConfig = {
                   'https://www.google.co.jp',
                   'https://www.google.co.kr',
                   'https://www.google.com',
-                  'https://www.google-analytics.com'
+                  'https://www.google-analytics.com',
+                  'https://www.googletagmanager.com'
                 ],
                 manifestSrc: ["'self'"],
                 objectSrc: ["'none'"],
