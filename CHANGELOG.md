@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.6](https://github.com/inabagumi/inaba-jinja/compare/v1.8.5...v1.8.6) (2020-04-23)
+
+
+### Bug Fixes
+
+* **csp:** add google tag manager to img-src ([#538](https://github.com/inabagumi/inaba-jinja/issues/538)) ([471d2e3](https://github.com/inabagumi/inaba-jinja/commit/471d2e3d121c4cec69a853ce222b57bf276634e5))
+
 ### [1.8.5](https://github.com/inabagumi/inaba-jinja/compare/v1.8.4...v1.8.5) (2020-04-22)
 
 
