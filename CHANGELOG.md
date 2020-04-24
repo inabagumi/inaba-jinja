@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.7](https://github.com/inabagumi/inaba-jinja/compare/v1.8.6...v1.8.7) (2020-04-24)
+
+
+### Features
+
+* add robots.txt ([#544](https://github.com/inabagumi/inaba-jinja/issues/544)) ([3609b25](https://github.com/inabagumi/inaba-jinja/commit/3609b2522142cb3f28f3355be6abebd073a1ee33))
+
+
+### Bug Fixes
+
+* **csp:** add more google domains ([#545](https://github.com/inabagumi/inaba-jinja/issues/545)) ([b3fe23d](https://github.com/inabagumi/inaba-jinja/commit/b3fe23dc9f7671a9e214b56fb4314cde482d1371))
+
 ### [1.8.6](https://github.com/inabagumi/inaba-jinja/compare/v1.8.5...v1.8.6) (2020-04-23)
 
 
