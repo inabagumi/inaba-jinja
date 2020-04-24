@@ -52,7 +52,12 @@ const nextConfig = {
                   'https://stats.g.doubleclick.net',
                   'https://www.google.co.jp',
                   'https://www.google.co.kr',
+                  'https://www.google.co.uk',
                   'https://www.google.com',
+                  'https://www.google.com.au',
+                  'https://www.google.com.hk',
+                  'https://www.google.com.my',
+                  'https://www.google.com.tw',
                   'https://www.google-analytics.com',
                   'https://www.googletagmanager.com'
                 ],
