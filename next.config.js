@@ -51,6 +51,7 @@ const nextConfig = {
                   'data:',
                   'https://images.ctfassets.net',
                   'https://stats.g.doubleclick.net',
+                  'https://www.google.ca',
                   'https://www.google.co.jp',
                   'https://www.google.co.kr',
                   'https://www.google.co.uk',
