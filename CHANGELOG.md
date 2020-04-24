@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.8](https://github.com/inabagumi/inaba-jinja/compare/v1.8.7...v1.8.8) (2020-04-24)
+
+
+### Features
+
+* **csp:** add block-all-mixed-content ([#546](https://github.com/inabagumi/inaba-jinja/issues/546)) ([9bd5989](https://github.com/inabagumi/inaba-jinja/commit/9bd5989e4a4acd9b6151d7933989e3bf02583671))
+
+
+### Bug Fixes
+
+* **csp:** add google.ca to img-src ([#547](https://github.com/inabagumi/inaba-jinja/issues/547)) ([d3a677f](https://github.com/inabagumi/inaba-jinja/commit/d3a677f4c6fa9f977a89f627f947e7a99648a552))
+
 ### [1.8.7](https://github.com/inabagumi/inaba-jinja/compare/v1.8.6...v1.8.7) (2020-04-24)
 
 
