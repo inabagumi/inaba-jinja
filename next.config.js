@@ -34,6 +34,7 @@ const nextConfig = {
             value: cspBuilder({
               directives: {
                 baseUri: ["'none'"],
+                blockAllMixedContent: true,
                 connectSrc: [
                   "'self'",
                   'https://images.ctfassets.net',
