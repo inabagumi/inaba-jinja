@@ -17,6 +17,7 @@ const nextConfig = {
     CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
     CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
+    INABA_JINJA_MAIN_VISUAL_URL: process.env.INABA_JINJA_MAIN_VISUAL_URL,
     SENTRY_DSN: process.env.SENTRY_DSN,
     SENTRY_RELEASE: release
   },
@@ -40,6 +41,7 @@ const nextConfig = {
                   'https://images.ctfassets.net',
                   'https://stats.g.doubleclick.net',
                   'https://www.google-analytics.com',
+                  'https://*.imgix.net',
                   'https://*.ingest.sentry.io'
                 ],
                 defaultSrc: ["'self'"],
@@ -88,7 +90,7 @@ const nextConfig = {
             value: 'same-origin, strict-origin-when-cross-origin'
           }
         ],
-        source: '/((?!_next).*)'
+        source: '/a((?!_next).*)'
       },
       {
         headers: [
@@ -207,7 +209,7 @@ const nextConfig = {
             statuses: [0, 200]
           }
         },
-        urlPattern: /^https:\/\/images\.ctfassets\.net\//i
+        urlPattern: /^https:\/\/(?:[^.]+\.imgix\.net|images\.ctfassets\.net)\//i
       }
     ],
     skipWaiting: true,
