@@ -62,6 +62,7 @@ const nextConfig = {
                   'https://www.google.com.hk',
                   'https://www.google.com.my',
                   'https://www.google.com.tw',
+                  'https://www.google.com.vn',
                   'https://www.google-analytics.com',
                   'https://www.googletagmanager.com'
                 ],
