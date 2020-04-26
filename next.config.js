@@ -41,7 +41,6 @@ const nextConfig = {
                   'https://images.ctfassets.net',
                   'https://stats.g.doubleclick.net',
                   'https://www.google-analytics.com',
-                  'https://*.imgix.net',
                   'https://*.ingest.sentry.io'
                 ],
                 defaultSrc: ["'self'"],
@@ -64,7 +63,8 @@ const nextConfig = {
                   'https://www.google.com.tw',
                   'https://www.google.com.vn',
                   'https://www.google-analytics.com',
-                  'https://www.googletagmanager.com'
+                  'https://www.googletagmanager.com',
+                  'https://*.imgix.net'
                 ],
                 manifestSrc: ["'self'"],
                 objectSrc: ["'none'"],
