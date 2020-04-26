@@ -25,8 +25,6 @@ const globalStyles = css`
   }
 
   body {
-    background-color: #424242;
-    color: #fafafa;
     margin: 0;
     line-height: 2;
   }
@@ -46,14 +44,6 @@ const globalStyles = css`
   p {
     margin: 0;
     padding: 0;
-  }
-
-  a {
-    color: #f57f17;
-  }
-
-  a:hover {
-    color: #ff6f00;
   }
 `
 
