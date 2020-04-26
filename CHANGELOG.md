@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.9](https://github.com/inabagumi/inaba-jinja/compare/v1.8.8...v1.8.9) (2020-04-26)
+
+
+### Bug Fixes
+
+* **csp:** add www.google.com.vn to img-src ([#551](https://github.com/inabagumi/inaba-jinja/issues/551)) ([09b4e52](https://github.com/inabagumi/inaba-jinja/commit/09b4e52139ce9911d21d5af8e157aed4b5979479))
+* **csp:** move *.imgix.net to img-src ([#552](https://github.com/inabagumi/inaba-jinja/issues/552)) ([46dfcbb](https://github.com/inabagumi/inaba-jinja/commit/46dfcbb67b797639a76e44f4a9fa401b40817b9a))
+* **csp:** remove unnecessary word ([#550](https://github.com/inabagumi/inaba-jinja/issues/550)) ([ecb6862](https://github.com/inabagumi/inaba-jinja/commit/ecb68622b3fc32688d0a239136c2717dd0515fb9))
+
 ### [1.8.8](https://github.com/inabagumi/inaba-jinja/compare/v1.8.7...v1.8.8) (2020-04-24)
 
 
