@@ -41,6 +41,7 @@ const nextConfig = {
                   'https://images.ctfassets.net',
                   'https://stats.g.doubleclick.net',
                   'https://www.google-analytics.com',
+                  'https://*.imgix.net',
                   'https://*.ingest.sentry.io'
                 ],
                 defaultSrc: ["'self'"],
