@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.10](https://github.com/inabagumi/inaba-jinja/compare/v1.8.9...v1.8.10) (2020-04-27)
+
+
+### Bug Fixes
+
+* **csp:** add *.imgix.net to connect-src ([#554](https://github.com/inabagumi/inaba-jinja/issues/554)) ([c5786a2](https://github.com/inabagumi/inaba-jinja/commit/c5786a2161128d04610bb4023d998129791c1829))
+
 ### [1.8.9](https://github.com/inabagumi/inaba-jinja/compare/v1.8.8...v1.8.9) (2020-04-26)
 
 
