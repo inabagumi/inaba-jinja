@@ -1,4 +1,4 @@
-name: Release
+name: Deploy
 
 on:
   pull_request:
@@ -11,7 +11,7 @@ on:
       - 'v*'
 
 jobs:
-  release:
+  deploy:
     name: Deploy
     runs-on: ubuntu-latest
 
