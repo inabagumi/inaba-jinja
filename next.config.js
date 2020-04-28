@@ -39,7 +39,6 @@ const nextConfig = {
                 connectSrc: [
                   "'self'",
                   'https://images.ctfassets.net',
-                  'https://stats.g.doubleclick.net',
                   'https://www.google-analytics.com',
                   'https://*.imgix.net',
                   'https://*.ingest.sentry.io'
@@ -52,17 +51,6 @@ const nextConfig = {
                   "'self'",
                   'data:',
                   'https://images.ctfassets.net',
-                  'https://stats.g.doubleclick.net',
-                  'https://www.google.ca',
-                  'https://www.google.co.jp',
-                  'https://www.google.co.kr',
-                  'https://www.google.co.uk',
-                  'https://www.google.com',
-                  'https://www.google.com.au',
-                  'https://www.google.com.hk',
-                  'https://www.google.com.my',
-                  'https://www.google.com.tw',
-                  'https://www.google.com.vn',
                   'https://www.google-analytics.com',
                   'https://www.googletagmanager.com',
                   'https://*.imgix.net'
@@ -78,7 +66,6 @@ const nextConfig = {
                   "'self'",
                   "'unsafe-inline'",
                   "'unsafe-eval'",
-                  'https://ssl.google-analytics.com',
                   'https://www.google-analytics.com',
                   'https://www.googletagmanager.com'
                 ],
