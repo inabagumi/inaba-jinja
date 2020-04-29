@@ -79,7 +79,7 @@ const nextConfig = {
             value: 'same-origin, strict-origin-when-cross-origin'
           }
         ],
-        source: '/((?!_next).*)'
+        source: '/a((?!_next).*)'
       },
       {
         headers: [
@@ -121,23 +121,37 @@ const nextConfig = {
   generateEtags: false,
   pageExtensions: ['mdx', 'tsx'],
   webpack(config, { defaultLoaders, dev }) {
+    const urlLoader = {
+      loader: 'url-loader',
+      options: {
+        esModule: false,
+        limit: 8192,
+        name: dev
+          ? '[name].[ext]?[contenthash:8]'
+          : '[name].[contenthash:8].[ext]',
+        outputPath: 'static/media',
+        publicPath: '/_next/static/media'
+      }
+    }
+
     config.module.rules.push({
-      test: /\.(?:jpe?g|png|webp)$/,
+      test: /\.jpg$/,
       use: [
         defaultLoaders.babel,
         {
-          loader: 'url-loader',
+          loader: '@docusaurus/lqip-loader',
           options: {
-            esModule: true,
-            limit: 8192,
-            name: dev
-              ? '[name].[ext]?[contenthash:8]'
-              : '[name].[contenthash:8].[ext]',
-            outputPath: 'static/media',
-            publicPath: '/_next/static/media'
+            base64: true,
+            pallete: false
           }
-        }
+        },
+        urlLoader
       ]
+    })
+
+    config.module.rules.push({
+      test: /\.png$/,
+      use: [defaultLoaders.babel, urlLoader]
     })
 
     config.module.rules.push({

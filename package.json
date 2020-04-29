@@ -9,6 +9,7 @@
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
   "dependencies": {
+    "@docusaurus/lqip-loader": "^2.0.0-alpha.51",
     "@emotion/css": "^11.0.0-next.12",
     "@emotion/react": "^11.0.0-next.12",
     "@emotion/server": "^11.0.0-next.12",
@@ -28,6 +29,7 @@
     "next-seo": "^4.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "sharp": "^0.25.2",
     "url-loader": "^4.1.0"
   },
   "description": "The source code for the Inaba Jinja.",
