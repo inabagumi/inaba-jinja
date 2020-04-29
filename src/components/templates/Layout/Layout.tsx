@@ -9,6 +9,7 @@ const mainVisual = process.env.INABA_JINJA_MAIN_VISUAL_URL ?? '/main-visual.jpg'
 
 const globalStyles = css`
   html {
+    background-attachment: fixed;
     background-color: #757575;
     background-image:
       linear-gradient(
