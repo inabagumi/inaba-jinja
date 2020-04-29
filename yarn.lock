@@ -1649,13 +1649,6 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@types/react-imgix@^9.0.3":
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/@types/react-imgix/-/react-imgix-9.0.3.tgz#e0e5639e23383372129fa03e7b3afdee5ec705f2"
-  integrity sha512-vc6kKoLEESwzjOrXJMPTyu2V2QZ0LNcSCOWcYQr3p/M5qErbhO9wzXbZB/lAhvf5w9pGLxYxA+Tio7HtzWp2KA==
-  dependencies:
-    "@types/react" "*"
-
 "@types/react@*", "@types/react@^16.9.34":
   version "16.9.34"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.34.tgz#f7d5e331c468f53affed17a8a4d488cd44ea9349"
@@ -4465,7 +4458,6 @@ fsevents@^1.2.7:
   dependencies:
     bindings "^1.5.0"
     nan "^2.12.1"
-    node-pre-gyp "*"
 
 fsevents@~2.1.2:
   version "2.1.3"

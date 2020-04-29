@@ -37,7 +37,6 @@
     "@types/mdx-js__react": "^1.5.1",
     "@types/node": "^12.12.37",
     "@types/react": "^16.9.34",
-    "@types/react-imgix": "^9.0.3",
     "@types/webpack-env": "^1.15.2",
     "conventional-github-releaser": "^3.1.3",
     "eslint": "^6.8.0",
