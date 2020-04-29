@@ -1,10 +1,11 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
 
-declare module '*.jpg'
-declare module '*.jpeg'
+declare module '*.jpg' {
+  export const preSrc: string
+  export const src: string
+}
 declare module '*.png'
-declare module '*.webp'
 
 declare module '*.svg' {
   import { FC, ReactSVGElement, SVGProps } from 'react'

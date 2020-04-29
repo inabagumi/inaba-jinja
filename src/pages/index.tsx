@@ -16,7 +16,7 @@ const HomePage: FC = () => (
         images: [
           {
             height: 630,
-            url: fullPath(cardImage),
+            url: fullPath(cardImage.src),
             width: 1200
           }
         ],

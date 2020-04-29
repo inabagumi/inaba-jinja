@@ -2,10 +2,13 @@ import { Global, css } from '@emotion/react'
 import styled from '@emotion/styled'
 import Head from 'next/head'
 import React, { FC } from 'react'
+import {
+  preSrc as placeholder,
+  src as defaultMainVisual
+} from 'assets/main-visual.jpg'
 import Footer from 'components/organisms/Footer'
-import placeholder from './placeholder.jpg'
 
-const mainVisual = process.env.INABA_JINJA_MAIN_VISUAL_URL ?? '/main-visual.jpg'
+const mainVisual = process.env.INABA_JINJA_MAIN_VISUAL_URL ?? defaultMainVisual
 
 const globalStyles = css`
   html {
