@@ -24,7 +24,7 @@
     "contentful": "^7.14.4",
     "file-loader": "^6.0.0",
     "next": "^9.3.6",
-    "next-offline": "^5.0.1",
+    "next-offline": "^5.0.2",
     "next-seo": "^4.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
