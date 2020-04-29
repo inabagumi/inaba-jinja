@@ -1096,10 +1096,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@docusaurus/lqip-loader@^2.0.0-alpha.51":
-  version "2.0.0-alpha.51"
-  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.51.tgz#62e0ef115cf42576e541913da564782504df7f98"
-  integrity sha512-P+p5yxAI6djhjilIn9M4cSjQfIXx/G2o2eW4iDRMKx5W9HRO9mG+NLtTE9c7B1EhPbmEC0OyZi+23gnoXy1ZPA==
+"@docusaurus/lqip-loader@^2.0.0-alpha.54":
+  version "2.0.0-alpha.54"
+  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.54.tgz#678fe215107e49d4a25f91a73f3f810cf08ced40"
+  integrity sha512-0/B6buEbkevvVkdLTvm5yF4I2W7m32wnRY28aHGLbKyJmYVirZkUNW37mXZ9oXn6mKWMKhhvOIYrGzYU75cNlQ==
   dependencies:
     loader-utils "^1.2.3"
     lodash.sortby "^4.7.0"
