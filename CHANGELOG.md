@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.3](https://github.com/inabagumi/inaba-jinja/compare/v1.9.2...v1.9.3) (2020-04-29)
+
+
+### Bug Fixes
+
+* **assets:** change file mode ([#571](https://github.com/inabagumi/inaba-jinja/issues/571)) ([c8a5945](https://github.com/inabagumi/inaba-jinja/commit/c8a5945e82bb12b4753bce0304c62bea55eb2788))
+* **assets:** replace apple-touch-icon.png ([#570](https://github.com/inabagumi/inaba-jinja/issues/570)) ([cd0f1a3](https://github.com/inabagumi/inaba-jinja/commit/cd0f1a35d1fe90f66df2ac6b5fe7e307a464811f))
+
 ### [1.9.2](https://github.com/inabagumi/inaba-jinja/compare/v1.9.1...v1.9.2) (2020-04-29)
 
 
