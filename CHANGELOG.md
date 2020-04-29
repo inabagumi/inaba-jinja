@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/inabagumi/inaba-jinja/compare/v1.8.10...v1.9.0) (2020-04-29)
+
+
+### Bug Fixes
+
+* add background-attachment: fixed to root element ([#565](https://github.com/inabagumi/inaba-jinja/issues/565)) ([585a244](https://github.com/inabagumi/inaba-jinja/commit/585a24413ef4afc920b2b46700a3de9d99aa102d))
+
 ### [1.8.10](https://github.com/inabagumi/inaba-jinja/compare/v1.8.9...v1.8.10) (2020-04-27)
 
 
