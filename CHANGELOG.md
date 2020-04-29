@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.2](https://github.com/inabagumi/inaba-jinja/compare/v1.9.1...v1.9.2) (2020-04-29)
+
+
+### Bug Fixes
+
+* **assets:** improve favicon ([#569](https://github.com/inabagumi/inaba-jinja/issues/569)) ([18baf00](https://github.com/inabagumi/inaba-jinja/commit/18baf007479654b8dcf5a5f82f57fa8fe88b237e))
+
 ### [1.9.1](https://github.com/inabagumi/inaba-jinja/compare/v1.9.0...v1.9.1) (2020-04-29)
 
 
