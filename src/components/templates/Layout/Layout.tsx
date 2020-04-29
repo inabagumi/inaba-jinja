@@ -9,8 +9,11 @@ const mainVisual = process.env.INABA_JINJA_MAIN_VISUAL_URL ?? '/main-visual.jpg'
 
 const globalStyles = css`
   html {
-    background-attachment: fixed;
     background-color: #757575;
+    color: #fafafa;
+  }
+
+  body::before {
     background-image:
       linear-gradient(
         rgba(0, 0, 0, 0.54),
@@ -31,11 +34,18 @@ const globalStyles = css`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fafafa;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
   }
 
   @media (orientation: portrait) {
-    html {
+    body::before {
       background-image:
         linear-gradient(
           rgba(0, 0, 0, 0.54),
