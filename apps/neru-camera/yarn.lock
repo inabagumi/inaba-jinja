@@ -1131,10 +1131,10 @@
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-1.1.2.tgz#6cc1a41e99acb36bd1ed9ed81f69b64258fc4a94"
   integrity sha512-bUFu1+UuIwFIwGx1W1HCTYqw6Ga7s/66H0d7mSj3iWuY7Es8vxWXGgxZVCtjBvDanoibAevJbtUV/7rtzfU5PQ==
 
-"@inlet/react-pixi@^1.2.12":
-  version "1.2.12"
-  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-1.2.12.tgz#2475d1acb99c7f32c134c8a0ef79c4e689fb3ecc"
-  integrity sha512-514Z7DqIgcZGrHy3HfUN9qCHiJ5ul2P1GSGeUye89T47Vc8Xn0DhDeKW5Ruya4aAeVTcuKWU2pYaJfiguZ1J8g==
+"@inlet/react-pixi@^1.2.19":
+  version "1.2.19"
+  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-1.2.19.tgz#6151823b9ab7fec121765b2ea4abb08b0b555555"
+  integrity sha512-O6EiKUWkl4r+o1JKRNoonIP3uR3bwZB6NNR/a53zR63EuWTpC04lxkas7v7N5wLKTvwOoVIZU5tqKkJWUBXL2A==
   dependencies:
     "@testing-library/react" "8.0.5"
     fbjs "^1.0.0"

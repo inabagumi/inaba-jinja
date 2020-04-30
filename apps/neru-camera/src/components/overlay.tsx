@@ -1,4 +1,4 @@
-import { Sprite, useApp, withFilters } from '@inlet/react-pixi'
+import { Container, Sprite, useApp, withFilters } from '@inlet/react-pixi'
 import { Point } from 'pixi.js'
 import React, { FC } from 'react'
 import ChromaKeyFilter from '../filters/chroma-key-filter'
@@ -6,7 +6,7 @@ import useVideoTexture from '../hooks/use-video-texture'
 import { OverlayEntry } from '../types/Overlay'
 import Viewport from './viewport'
 
-const Filters = withFilters(Sprite, {
+const Filters = withFilters(Container, {
   chorma: ChromaKeyFilter
 })
 
@@ -36,12 +36,13 @@ const Overlay: FC<Props> = ({ asset }) => {
         worldWidth={app.screen.width}
       >
         {texture && (
-          <Filters
-            anchor={new Point(anchor, anchor)}
-            chorma={{ keyColor: asset.fields.keyColor }}
-            position={position}
-            texture={texture}
-          />
+          <Filters chorma={{ keyColor: asset.fields.keyColor }}>
+            <Sprite
+              anchor={new Point(anchor, anchor)}
+              position={position}
+              texture={texture}
+            />
+          </Filters>
         )}
       </Viewport>
     </>
