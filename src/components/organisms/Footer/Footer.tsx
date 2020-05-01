@@ -2,10 +2,6 @@ import styled from '@emotion/styled'
 import React, { FC } from 'react'
 import Link from 'components/atoms/Link'
 
-const Copyright = styled.p`
-  margin: 0;
-`
-
 const Navigation = styled.nav`
   li:not(:first-child) {
     margin-left: 0.5em;
@@ -39,8 +35,6 @@ const Root = styled.footer`
 const Footer: FC = () => {
   return (
     <Root>
-      <Copyright>&copy; 2020 Haneru Developers</Copyright>
-
       <Navigation>
         <ul>
           <li>
