@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
-import { NextSeo } from 'next-seo'
+import { BreadcrumbJsonLd, NextSeo } from 'next-seo'
 import React from 'react'
 import Fortune from 'components/pages/Fortune'
 import getFortune from 'contentful/getFortune'
@@ -48,7 +48,8 @@ export const getStaticPaths: GetStaticPaths<Params> = async () => {
 const KujiPage: NextPage<Props> = ({ fortune }) => {
   if (!fortune) return <NotFound />
 
-  const title = `因幡はねるくじ 第${fortune.fields.number}番『${fortune.fields.blessing}』`
+  const name = `第${fortune.fields.number}番『${fortune.fields.blessing}』`
+  const title = `因幡はねるくじ ${name}`
 
   return (
     <>
@@ -66,6 +67,21 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
           title
         }}
         title={title}
+      />
+
+      <BreadcrumbJsonLd
+        itemListElements={[
+          {
+            item: fullPath('/lottery'),
+            name: 'ねるくじ',
+            position: 1
+          },
+          {
+            item: fullPath(`/kuji/${fortune.sys.id}`),
+            name,
+            position: 2
+          }
+        ]}
       />
 
       <Fortune fortune={fortune} />

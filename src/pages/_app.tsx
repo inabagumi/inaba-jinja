@@ -3,10 +3,11 @@ import { CacheProvider, Global, css } from '@emotion/react'
 import { MDXProvider } from '@mdx-js/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { DefaultSeo } from 'next-seo'
+import { DefaultSeo, LogoJsonLd } from 'next-seo'
 import React, { FC } from 'react'
 import Link from 'components/atoms/Link'
 import Layout from 'components/templates/Layout'
+import fullPath from 'helpers/fullPath'
 
 const globalStyles = css`
   :root {
@@ -62,6 +63,11 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
         site: '@Inaba_Jinja'
       }}
       titleTemplate="%s - 因幡神社"
+    />
+
+    <LogoJsonLd
+      logo={fullPath('/images/favicon-192x192.png')}
+      url={fullPath('/')}
     />
 
     <Head>
