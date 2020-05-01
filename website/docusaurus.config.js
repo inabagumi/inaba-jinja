@@ -75,7 +75,7 @@ module.exports = {
     googleAnalytics: {
       trackingID: 'UA-140696242-1'
     },
-    image: 'img/haneru-dev.jpg',
+    image: 'https://haneru.dev/img/haneru-dev.jpg',
     navbar: {
       hideOnScroll: true,
       links: [
