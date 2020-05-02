@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/inabagumi/inaba-jinja/compare/v1.9.4...v1.10.0) (2020-05-02)
+
+
+### Features
+
+* introduce json-ld ([#582](https://github.com/inabagumi/inaba-jinja/issues/582)) ([18cf26c](https://github.com/inabagumi/inaba-jinja/commit/18cf26c9af63229fd98f315c694432dd9ea3a092))
+* introduce nprogress ([#586](https://github.com/inabagumi/inaba-jinja/issues/586)) ([59c036d](https://github.com/inabagumi/inaba-jinja/commit/59c036de317d5bb137fb93e5759296b462a55a2d))
+
+
+### Bug Fixes
+
+* **kuji:** fix share button color ([#595](https://github.com/inabagumi/inaba-jinja/issues/595)) ([3432034](https://github.com/inabagumi/inaba-jinja/commit/3432034a21a03c488386f93837adb6229d04dc82))
+* replace useRouter to Router object ([#594](https://github.com/inabagumi/inaba-jinja/issues/594)) ([857548d](https://github.com/inabagumi/inaba-jinja/commit/857548d39c7389456179b291e01170327fb0ea5e))
+* **layout:** change color on footer link ([#592](https://github.com/inabagumi/inaba-jinja/issues/592)) ([7921799](https://github.com/inabagumi/inaba-jinja/commit/792179954920d9014108af73ea6867bbd5a4ca2a))
+* remove copyright ([#583](https://github.com/inabagumi/inaba-jinja/issues/583)) ([9105e9e](https://github.com/inabagumi/inaba-jinja/commit/9105e9ee8b7185230bed6718e261244a9f8b140d))
+
 ### [1.9.4](https://github.com/inabagumi/inaba-jinja/compare/v1.9.3...v1.9.4) (2020-04-30)
 
 
