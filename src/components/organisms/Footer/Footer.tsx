@@ -17,7 +17,6 @@ const Navigation = styled.nav`
 
 const Root = styled.footer`
   align-items: flex-start;
-  color: #eee;
   display: flex;
   flex-direction: column;
   font-size: 0.85rem;
