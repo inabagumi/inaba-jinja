@@ -1,7 +1,6 @@
 {
   "github": {
-    "autoAlias": false,
-    "silent": true
+    "autoAlias": false
   },
   "regions": ["hnd1", "sfo1"],
   "version": 2
