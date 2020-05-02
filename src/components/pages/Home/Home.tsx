@@ -22,9 +22,9 @@ const Header = styled.header`
 `
 
 const LotteryButton = styled.a`
-  color: #fff;
+  color: inherit;
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   border-radius: 5px;
   display: inline-block;
   font-size: 0.9rem;
@@ -35,7 +35,8 @@ const LotteryButton = styled.a`
 
   :hover {
     background-color: rgba(255, 255, 255, 0.15);
-    color: #fff;
+    color: inherit;
+    text-decoration: none;
   }
 `
 

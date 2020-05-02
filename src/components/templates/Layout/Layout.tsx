@@ -13,7 +13,7 @@ const mainVisual = process.env.INABA_JINJA_MAIN_VISUAL_URL ?? defaultMainVisual
 const globalStyles = css`
   html {
     background-color: #757575;
-    color: #fafafa;
+    color: #fff;
   }
 
   body::before {
@@ -70,11 +70,13 @@ const globalStyles = css`
   }
 
   a {
-    color: #f57f17;
+    color: inherit;
+    text-decoration: none;
   }
 
   a:hover {
-    color: #ff6f00;
+    color: inherit;
+    text-decoration: underline;
   }
 `
 
