@@ -10,14 +10,6 @@ const Content = styled.div`
   max-width: 100%;
   padding: 1rem 1rem 2rem;
   width: 800px;
-
-  a {
-    color: #f57f17;
-  }
-
-  a:hover {
-    color: #ff6f00;
-  }
 `
 
 const Title = styled.h1`

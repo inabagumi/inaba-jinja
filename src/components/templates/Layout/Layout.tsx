@@ -70,13 +70,11 @@ const globalStyles = css`
   }
 
   a {
-    color: inherit;
-    text-decoration: none;
+    color: #f57f17;
   }
 
   a:hover {
-    color: inherit;
-    text-decoration: underline;
+    color: #ff6f00;
   }
 `
 

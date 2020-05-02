@@ -2,6 +2,16 @@ import styled from '@emotion/styled'
 import React, { FC } from 'react'
 import Link from 'components/atoms/Link'
 
+const FooterLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+
+  :hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+`
+
 const Navigation = styled.nav`
   li:not(:first-child) {
     margin-left: 0.5em;
@@ -37,17 +47,17 @@ const Footer: FC = () => {
       <Navigation>
         <ul>
           <li>
-            <Link href="https://haneru.dev/">運営者情報</Link>
+            <FooterLink href="https://haneru.dev/">運営者情報</FooterLink>
           </li>
           <li>
-            <Link href="/disclaimer" prefetch={false}>
+            <FooterLink href="/disclaimer" prefetch={false}>
               免責事項
-            </Link>
+            </FooterLink>
           </li>
           <li>
-            <Link href="/privacy" prefetch={false}>
+            <FooterLink href="/privacy" prefetch={false}>
               プライバシーポリシー
-            </Link>
+            </FooterLink>
           </li>
         </ul>
       </Navigation>
