@@ -2,43 +2,43 @@
 # yarn lockfile v1
 
 
-"@ampproject/toolbox-core@^2.2.0", "@ampproject/toolbox-core@^2.3.0":
+"@ampproject/toolbox-core@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@ampproject/toolbox-core/-/toolbox-core-2.3.0.tgz#f27bd17e01fdc6725c440aefa844f63466c0f37e"
   integrity sha512-NT+kVR5Rm2cxp12h40IXgPRWmq0cpUdmcgZmgdelplp/q//4aWkt2+llGHR2foQJkwICxMVVlb/XidsHz0Rh9g==
   dependencies:
     cross-fetch "3.0.4"
 
-"@ampproject/toolbox-optimizer@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@ampproject/toolbox-optimizer/-/toolbox-optimizer-2.2.0.tgz#2438d7102beb1a74bae8d20926e038c5f724a8ae"
-  integrity sha512-lEujArv6jyl/mEab0uBZ25oMkf+kf8cpTuHPcy8k3+jtomNyVtd94lbSWbQtomsEnYQ0MA9MvLvCJXsJz1fQcg==
+"@ampproject/toolbox-optimizer@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@ampproject/toolbox-optimizer/-/toolbox-optimizer-2.3.0.tgz#504341aa75f81b42d17406d323a71b961e5fa062"
+  integrity sha512-g2I7qNK6G1UWGFgw7BaHy9fUW8866vyieZeZbiKyuVNvxandxgrB0P8ujhSDC0XbKpBSi5F5Ei+GNRdO3PzU9g==
   dependencies:
-    "@ampproject/toolbox-core" "^2.2.0"
-    "@ampproject/toolbox-runtime-version" "^2.2.0"
-    "@ampproject/toolbox-script-csp" "^2.2.0"
-    "@ampproject/toolbox-validator-rules" "^2.2.0"
+    "@ampproject/toolbox-core" "^2.3.0"
+    "@ampproject/toolbox-runtime-version" "^2.3.0"
+    "@ampproject/toolbox-script-csp" "^2.3.0"
+    "@ampproject/toolbox-validator-rules" "^2.3.0"
     cssnano "4.1.10"
     domhandler "3.0.0"
     domutils "2.0.0"
     htmlparser2 "4.1.0"
     normalize-html-whitespace "1.0.0"
     postcss-safe-parser "4.0.2"
-    terser "4.6.8"
+    terser "4.6.11"
 
-"@ampproject/toolbox-runtime-version@^2.2.0":
+"@ampproject/toolbox-runtime-version@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@ampproject/toolbox-runtime-version/-/toolbox-runtime-version-2.3.0.tgz#01a72db8fb069d64d341fb4cc4ffee2be6c8ca12"
   integrity sha512-sos2hmnAqp+KLYMLe+gF71BAElDmY04V4M9BvYRj3LEvwu3sCbvo2UPwcWZBgcWBV/cnh3JDHW+FaKfB5LtRrw==
   dependencies:
     "@ampproject/toolbox-core" "^2.3.0"
 
-"@ampproject/toolbox-script-csp@^2.2.0":
+"@ampproject/toolbox-script-csp@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@ampproject/toolbox-script-csp/-/toolbox-script-csp-2.3.0.tgz#374cd0bf69bfdd0f1784064d0de69162722c89af"
   integrity sha512-Qba53ohvCH79sYl5O8K5GMSo/372OjuyxNc+XySG26sAsG26WpBKJEE0HTr8rsa//CD3Fc92FieT1gK5U/jK4Q==
 
-"@ampproject/toolbox-validator-rules@^2.2.0":
+"@ampproject/toolbox-validator-rules@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@ampproject/toolbox-validator-rules/-/toolbox-validator-rules-2.3.0.tgz#047d8a8106ba777f1df308c19f1c1c41ffea4054"
   integrity sha512-S10YIyOKettoRDWoyRymRyjzWZD4/qW7YfHNhHAS13QVneabRcU5MF7vEwkG6dHWx/UdufT5GbqYnvpQRMNt3Q==
@@ -1444,28 +1444,28 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.1.tgz#c1e8480844dfaeecde8b827d0e4bbf8793274659"
   integrity sha512-A3TBBjg5iVo8S4TTG0VrW8G9YNLob4+M6rALKjY8Sxr9zPExWQ7iTPUSvJVE7YhF9E08EQMubx1vRal3jtpJ9Q==
 
-"@next/mdx@^9.3.7-canary.5":
-  version "9.3.7-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.7-canary.5.tgz#48329765454178dc42ebd2f85eddc212d4e9bc10"
-  integrity sha512-GvB6du7uEK9fAbCra7w/DlL0jkLynhzhOj2vMFdQq0Yt8RoMckLMjysAWbWcghTam+3b7hub3mbBK2ci4+Tfdw==
+"@next/mdx@^9.3.7-canary.6":
+  version "9.3.7-canary.6"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.7-canary.6.tgz#dbb1569c4249bddfc4d60e7f29eebc6e0eff58eb"
+  integrity sha512-A3sZaG61z3TfBBDme7rdrO2+EfKCRDE0+J8Cj2QNMkOdEaBJNZK7pLhIKjuk16BAWgiax+epnrc02WY+X9nalA==
 
-"@next/plugin-google-analytics@^9.3.7-canary.5":
-  version "9.3.7-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.3.7-canary.5.tgz#2763e18a5ac5bc205b654f712218fe5ec96cc3b6"
-  integrity sha512-J14pVcFe1dTvop6q8b55SpmU3LUjq0ft6+OfrdJ6SAjrSQVRS1IZ3JRnfH9ZZM0hvtWCBCW16MnOJsqM5DCKtQ==
+"@next/plugin-google-analytics@^9.3.7-canary.6":
+  version "9.3.7-canary.6"
+  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.3.7-canary.6.tgz#fa96a8ca0d58121bfbb4c776edadc824a230d263"
+  integrity sha512-ixwZpyscY1ugq0cPEtfmzDSJJ5lUmt+VlsiXuSwcUrZXwX48aqp318BkRdTUlTGiJtta9ZxyVsojuSUSkCnOvw==
 
-"@next/plugin-sentry@^9.3.7-canary.5":
-  version "9.3.7-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.7-canary.5.tgz#5c93db5cbd498a76e3b25bc9d3019996019c3050"
-  integrity sha512-MIjbra+nK3YJ4uDYDtc1uAbEwSwG2WvkB1N3za0L/AfvC0T6puXfBnHr/zHCiPBGgq7Gz7TEeukJ7OhQYLmp1g==
+"@next/plugin-sentry@^9.3.7-canary.6":
+  version "9.3.7-canary.6"
+  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.7-canary.6.tgz#8dcac851667bc1e88ef58c9f2ea7afe97dda1931"
+  integrity sha512-4t4w//HqNVuihr2jUhErB4gQIDEHQNKjxXOZD8mnYyEutEJOBCo3yRK8fU2Ezzh/nHH8gqhv6JQIJ5CO1YsQDQ==
   dependencies:
     "@sentry/browser" "5.7.1"
     "@sentry/node" "5.7.1"
 
-"@next/react-dev-overlay@9.3.7-canary.5":
-  version "9.3.7-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-9.3.7-canary.5.tgz#42ad634e0937b762882ecde5a84c9df2e84b368b"
-  integrity sha512-v5W7jaeqLUG9FAjh7fLXlqemDz8s93njqMP/Ta/k9CqQFdwOiQagxTtsIecmRuB8vFZnMv8L3Dg5BfPDLn28vQ==
+"@next/react-dev-overlay@9.3.7-canary.6":
+  version "9.3.7-canary.6"
+  resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-9.3.7-canary.6.tgz#cf0084aa717cacabe12763dd8083ab0513de1227"
+  integrity sha512-NEHFjhFeS/NThk/F0xMreMxrbB1Z+wpj7/Pdrjh0XjBRMxJsnmZg2izWsbe2+UkIAwY8q4Ob9Qj2GnSb/WxS0A==
   dependencies:
     "@babel/code-frame" "7.8.3"
     anser "1.4.9"
@@ -1476,10 +1476,10 @@
     stacktrace-parser "0.1.9"
     strip-ansi "6.0.0"
 
-"@next/react-refresh-utils@9.3.7-canary.5":
-  version "9.3.7-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.3.7-canary.5.tgz#04ade1e8d409069f286153698f4a4f54074144e4"
-  integrity sha512-SuIFq5+Vv2iEe6z/LCdp9jg52lJZ/Rbt2JUZpisVzaepT7eX1Rujeo4uD6+QZiQxk9nEhEzPJvhyOH+IEjGHFQ==
+"@next/react-refresh-utils@9.3.7-canary.6":
+  version "9.3.7-canary.6"
+  resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.3.7-canary.6.tgz#40a683a9f4cf26201fc364478aed82a46a930123"
+  integrity sha512-frz8mZDgxdqxgV+yzHqMyTWN6uYvPgnCSn12UFMzwVrEC/NUahjXqxe1pM/RfUr36JV11cl/vqIDJYU9/JfUHQ==
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
@@ -6508,12 +6508,12 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next@^9.3.7-canary.5:
-  version "9.3.7-canary.5"
-  resolved "https://registry.yarnpkg.com/next/-/next-9.3.7-canary.5.tgz#9089c890369936322d94c33b52bc9f8e9cc1459a"
-  integrity sha512-c87Mumi3UBnB48F5xq/16jsFMjpkEq3HA3sCB9eJQFaOphpmkUGCdaNAnWCBr2P+GS2iIYcv6wvlZoKxgvFsBQ==
+next@^9.3.7-canary.6:
+  version "9.3.7-canary.6"
+  resolved "https://registry.yarnpkg.com/next/-/next-9.3.7-canary.6.tgz#d2ddd664f8dcbe2c933566e14897b079c947c42b"
+  integrity sha512-c5iwbZzq/dqk7GEmuxyiySP1AFgQXLsYXcnR0DH6LTOQLfzlRg98MIVJbROHD4UeKXIB2jb2iotWCKwv6px81w==
   dependencies:
-    "@ampproject/toolbox-optimizer" "2.2.0"
+    "@ampproject/toolbox-optimizer" "2.3.0"
     "@babel/core" "7.7.2"
     "@babel/plugin-proposal-class-properties" "7.7.0"
     "@babel/plugin-proposal-nullish-coalescing-operator" "7.7.4"
@@ -6529,8 +6529,8 @@ next@^9.3.7-canary.5:
     "@babel/preset-react" "7.7.0"
     "@babel/preset-typescript" "7.7.2"
     "@babel/runtime" "7.7.2"
-    "@next/react-dev-overlay" "9.3.7-canary.5"
-    "@next/react-refresh-utils" "9.3.7-canary.5"
+    "@next/react-dev-overlay" "9.3.7-canary.6"
+    "@next/react-refresh-utils" "9.3.7-canary.6"
     babel-plugin-syntax-jsx "6.18.0"
     babel-plugin-transform-define "2.0.0"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
@@ -9055,10 +9055,10 @@ terser-webpack-plugin@^1.4.3:
     webpack-sources "^1.4.0"
     worker-farm "^1.7.0"
 
-terser@4.6.8:
-  version "4.6.8"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-4.6.8.tgz#62ccb14a52f102418ad6061dfef45076f13e5fa2"
-  integrity sha512-drV7ga6ZlIpBtitvb87Uk7P7gAJkCt3j/TqZr9wwF4Dlt0MBn52ANIAyuvP1F605WdPY4w6vT63u6KTWqaXFRQ==
+terser@4.6.11:
+  version "4.6.11"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-4.6.11.tgz#12ff99fdd62a26de2a82f508515407eb6ccd8a9f"
+  integrity sha512-76Ynm7OXUG5xhOpblhytE7X58oeNSmC8xnNhjWVo8CksHit0U0kO4hfNbPrrYwowLWFgM2n9L176VNx2QaHmtA==
   dependencies:
     commander "^2.20.0"
     source-map "~0.6.1"
