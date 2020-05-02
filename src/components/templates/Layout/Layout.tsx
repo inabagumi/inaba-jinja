@@ -8,7 +8,7 @@ import {
 } from 'assets/main-visual.jpg'
 import Footer from 'components/organisms/Footer'
 
-const mainVisual = process.env.INABA_JINJA_MAIN_VISUAL_URL ?? defaultMainVisual
+const mainVisual = process.env.NEXT_PUBLIC_MAIN_VISUAL_URL ?? defaultMainVisual
 
 const globalStyles = css`
   html {
