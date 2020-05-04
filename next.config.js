@@ -119,6 +119,7 @@ const nextConfig = {
   },
   generateEtags: false,
   pageExtensions: ['mdx', 'tsx'],
+  reactRefresh: true,
   webpack(config, { defaultLoaders, dev }) {
     const urlLoader = {
       loader: 'url-loader',
