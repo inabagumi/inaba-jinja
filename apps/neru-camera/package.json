@@ -10,7 +10,7 @@
     "next": "^9.3.6",
     "next-offline": "^5.0.2",
     "pixi-viewport": "^4.11.1",
-    "pixi.js": "^5.2.3",
+    "pixi.js": "^5.2.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

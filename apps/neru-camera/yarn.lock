@@ -6345,7 +6345,7 @@ pixi-viewport@^4.11.1:
   dependencies:
     penner "^0.1.3"
 
-pixi.js@^5.2.3:
+pixi.js@^5.2.4:
   version "5.2.4"
   resolved "https://registry.yarnpkg.com/pixi.js/-/pixi.js-5.2.4.tgz#272b172c44e3cb77f7a7851d252576e75b0a4c87"
   integrity sha512-QNmWPI1VscGleR2jUDiBlH9Lq8wh5mqi6K8RRUpW3O1xOXAKDTpD/TPA9EHzkYI9axag/AcChS7aiJVnwV2ytw==
