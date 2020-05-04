@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.1](https://github.com/inabagumi/inaba-jinja/compare/v1.10.0...v1.10.1) (2020-05-04)
+
+
+### Bug Fixes
+
+* **layout:** use lqip for main visaul on fx ([#606](https://github.com/inabagumi/inaba-jinja/issues/606)) ([4c5d4f8](https://github.com/inabagumi/inaba-jinja/commit/4c5d4f8f8027ab836e10b054769f72fd0599374a))
+
 ## [1.10.0](https://github.com/inabagumi/inaba-jinja/compare/v1.9.4...v1.10.0) (2020-05-02)
 
 
