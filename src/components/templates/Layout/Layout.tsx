@@ -23,7 +23,7 @@ const globalStyles = css`
         rgba(0, 0, 0, 0.54)
       ),
       url('${mainVisual}?auto=compress,format'),
-      url('${mainVisual}?auto=compress,format&w=10');
+      url('${placeholder}');
     background-image:
       linear-gradient(
         rgba(0, 0, 0, 0.54),
@@ -55,7 +55,7 @@ const globalStyles = css`
           rgba(0, 0, 0, 0.54)
         ),
         url('${mainVisual}?ar=0.8:1&auto=compress,format&fit=crop'),
-        url('${mainVisual}?ar=0.8:1&auto=compress,format&w=10&fit=crop');
+        url('${placeholder}');
       background-image:
         linear-gradient(
           rgba(0, 0, 0, 0.54),
