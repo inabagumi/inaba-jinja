@@ -1475,42 +1475,43 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.1.tgz#c1e8480844dfaeecde8b827d0e4bbf8793274659"
   integrity sha512-A3TBBjg5iVo8S4TTG0VrW8G9YNLob4+M6rALKjY8Sxr9zPExWQ7iTPUSvJVE7YhF9E08EQMubx1vRal3jtpJ9Q==
 
-"@next/mdx@^9.3.7-canary.9":
-  version "9.3.7-canary.9"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.7-canary.9.tgz#36ceb9603844966f34b1a70eb6347af1881fe309"
-  integrity sha512-ojX+oFSwNeGGYurycFiLyltSGtRr4PoCD4NTh7Txf9Rifti0Are8JseLtPbjCoGWgFxbumSjtYxPXJqvxp8RSg==
+"@next/mdx@^9.3.7-canary.10":
+  version "9.3.7-canary.10"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.7-canary.10.tgz#07d9f8054e6d1e6650aa44d4bc428625c4dd2bc4"
+  integrity sha512-UDMZXCbsdHp2Yq/avhgu2HIV4vUImNr5U25+L/bj8oYdTe9YQyIxMzAZjw8Xrx7KigueGLHzaEd8F+UORR5YYw==
 
-"@next/plugin-google-analytics@^9.3.7-canary.9":
-  version "9.3.7-canary.9"
-  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.3.7-canary.9.tgz#08ece76590b6596dce7f964c38913d548930b05b"
-  integrity sha512-nz1RpCtJHOvjMG71QYlUndHpy79eW3UV7zDzP3VA7CvpxURccTzYIjaLnGzuLhWAoKWBQEWDFCa7ygtrp1G5xQ==
+"@next/plugin-google-analytics@^9.3.7-canary.10":
+  version "9.3.7-canary.10"
+  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.3.7-canary.10.tgz#7f242bd851a6dc45d52c0a05688a83dada7f9bef"
+  integrity sha512-FkDSp2wGATmry+tB6mzUiUFdYmOKGUiD77MTb0OMPVW3wr9alB7wsKXn8gyFS4vBMXnkPzXAojYKwlYWpC+aug==
 
-"@next/plugin-sentry@^9.3.7-canary.9":
-  version "9.3.7-canary.9"
-  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.7-canary.9.tgz#4edd74ec4dc948239ee7ddc8d1753fb96e00ec2d"
-  integrity sha512-YIksKmbSY3U08UcAatDw1w6RO1tGuhH2KLy3m886Wb6JGh7Qsrm/jXxEcB0cNvW1Sao5b9mTPZPEukCddD5KKw==
+"@next/plugin-sentry@^9.3.7-canary.10":
+  version "9.3.7-canary.10"
+  resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-9.3.7-canary.10.tgz#2dadab82731a98bebba25077cd494d7eb26df3ea"
+  integrity sha512-j59YM4gpjAFbLprqfyhfHNLMVXzZgnVVV2ZczrZ+OJzWzANwLNPUCxrRhf/U/OpIXRmoEBOHOyJAiQv1fkw1Jw==
   dependencies:
     "@sentry/browser" "5.7.1"
     "@sentry/node" "5.7.1"
 
-"@next/react-dev-overlay@9.3.7-canary.9":
-  version "9.3.7-canary.9"
-  resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-9.3.7-canary.9.tgz#944850b8eee8a96d96549c3c0ebec78a0765b2d3"
-  integrity sha512-bPJuyjxw/naUSDU4i6f55Uo8DnnHPNyTLtf2+cuF+1zG1rbAThovy6B07FtQNqLT0EUHr+MM3F/zvCJn6wyjQw==
+"@next/react-dev-overlay@9.3.7-canary.10":
+  version "9.3.7-canary.10"
+  resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-9.3.7-canary.10.tgz#52a42125abe6f59a3a496324ca1afa08b205899e"
+  integrity sha512-LK+dwfpgS8urh32ldCIFo8FuDJ3F616Z47+lnUUscKDTOWmHPSl59BfiKnGy11OyO6OLmtl+qDE0AgDTXVdAwg==
   dependencies:
     "@babel/code-frame" "7.8.3"
     anser "1.4.9"
     chalk "4.0.0"
     classnames "2.2.6"
+    data-uri-to-buffer "3.0.0"
     shell-quote "1.7.2"
     source-map "0.8.0-beta.0"
     stacktrace-parser "0.1.9"
     strip-ansi "6.0.0"
 
-"@next/react-refresh-utils@9.3.7-canary.9":
-  version "9.3.7-canary.9"
-  resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.3.7-canary.9.tgz#3d694aad705c4c66d9f0ed879b41e2c811e25dad"
-  integrity sha512-03Y9+r/YSERuFozeD3IoOwX1YDmo5A8N0iVGaRW+TxS1xxpzTxMwxxuaTsu14oEmPBMtW0Muua+E1GgVwzqpIg==
+"@next/react-refresh-utils@9.3.7-canary.10":
+  version "9.3.7-canary.10"
+  resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.3.7-canary.10.tgz#b3c29cecf4c7a5d544fdc962e7f85ada86d46a1f"
+  integrity sha512-uoMq8Gil53O+u4bVOdy1630tb+1mxmHjXsAXY8HcrCpo8eFgytBuayWRFNIDYhCRLFsrwE5gWyhCDqFSadRbnA==
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
@@ -2671,7 +2672,7 @@ buffer-equal@0.0.1:
   resolved "https://registry.yarnpkg.com/buffer-equal/-/buffer-equal-0.0.1.tgz#91bc74b11ea405bc916bc6aa908faafa5b4aac4b"
   integrity sha1-kbx0sR6kBbyRa8aqkI+q+ltKrEs=
 
-buffer-from@^1.0.0:
+buffer-from@^1.0.0, buffer-from@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
@@ -3859,6 +3860,13 @@ dargs@^4.0.1:
   integrity sha1-A6nbtLXC8Tm/FK5T8LiipqhvThc=
   dependencies:
     number-is-nan "^1.0.0"
+
+data-uri-to-buffer@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-3.0.0.tgz#8a3088a5efd3f53c3682343313c6895d498eb8d7"
+  integrity sha512-MJ6mFTZ+nPQO+39ua/ltwNePXrfdF3Ww0wP1Od7EePySXN1cP9XNqRQOG3FxTfipp8jx898LUCgBCEP11Qw/ZQ==
+  dependencies:
+    buffer-from "^1.1.1"
 
 dateformat@^3.0.0:
   version "3.0.3"
@@ -6742,10 +6750,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next@^9.3.7-canary.9:
-  version "9.3.7-canary.9"
-  resolved "https://registry.yarnpkg.com/next/-/next-9.3.7-canary.9.tgz#ddb5ccc05aa80a0b9016d315de49f6b1fbaa727f"
-  integrity sha512-u6AE4AX5VUO3DnPPAKl/p7A0CCkUVeLUsdkN8Q+3CrdelEW01T2KxN7yU/4H0qz2bvIB3qhQolWBeEQGz8dUvQ==
+next@^9.3.7-canary.10:
+  version "9.3.7-canary.10"
+  resolved "https://registry.yarnpkg.com/next/-/next-9.3.7-canary.10.tgz#c5460a95f943daf34120f50951037d08e65d365d"
+  integrity sha512-MopUTpPNn18yF5icbGS7k3DxVLRZLn8ECJ1a3t1TA+446K3Hdm5hArNuTII9WzSahAujo5OkwHY85tKOoNvzkw==
   dependencies:
     "@ampproject/toolbox-optimizer" "2.3.0"
     "@babel/core" "7.7.2"
@@ -6763,8 +6771,8 @@ next@^9.3.7-canary.9:
     "@babel/preset-react" "7.7.0"
     "@babel/preset-typescript" "7.7.2"
     "@babel/runtime" "7.7.2"
-    "@next/react-dev-overlay" "9.3.7-canary.9"
-    "@next/react-refresh-utils" "9.3.7-canary.9"
+    "@next/react-dev-overlay" "9.3.7-canary.10"
+    "@next/react-refresh-utils" "9.3.7-canary.10"
     babel-plugin-syntax-jsx "6.18.0"
     babel-plugin-transform-define "2.0.0"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
