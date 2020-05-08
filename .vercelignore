@@ -4,7 +4,8 @@
 !/src/
 !/next-env.d.ts
 !/next.config.js
-!/vercel.json
+!/now.json
 !/package.json
 !/tsconfig.json
+!/vercel.json
 !/yarn.lock
