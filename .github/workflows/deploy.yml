@@ -18,8 +18,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Deploy to Now
-        run: now -S ${NOW_SCOPE} -c -t ${NOW_TOKEN} --prod
+      - name: Deploy to Vercel
+        run: npx vercel -S ${VERCEL_SCOPE} -c -t ${VERCEL_TOKEN} --prod
         env:
-          NOW_SCOPE: ${{ secrets.NOW_SCOPE }}
-          NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
+          VERCEL_SCOPE: ${{ secrets.VERCEL_SCOPE }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
