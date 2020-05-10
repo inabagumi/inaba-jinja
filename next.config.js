@@ -101,7 +101,6 @@ const nextConfig = {
         source: '/manifest.webmanifest'
       }
     ],
-    measureFid: true,
     modern: true,
     pageEnv: true,
     plugins: true,

@@ -5,6 +5,8 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo, LogoJsonLd } from 'next-seo'
 import React, { FC } from 'react'
+import { Metric } from 'web-vitals'
+
 import Link from 'components/atoms/Link'
 import Progress from 'components/atoms/Progress'
 import Layout from 'components/templates/Layout'
@@ -51,6 +53,15 @@ const globalStyles = css`
 
 const MDXComponents = {
   a: Link
+}
+
+export const reportWebVitals = ({ id, name, value }: Metric): void => {
+  gtag('event', name, {
+    event_category: 'Web Vitals',
+    event_label: id,
+    non_interaction: true,
+    value: Math.round(name === 'CLS' ? value * 1000 : value)
+  })
 }
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
