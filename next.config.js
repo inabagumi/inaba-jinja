@@ -103,7 +103,9 @@ const nextConfig = {
     ],
     measureFid: true,
     modern: true,
+    pageEnv: true,
     plugins: true,
+    reactRefresh: true,
     rewrites: () => [
       {
         destination: '/_next/static/service-worker.js',
@@ -117,7 +119,7 @@ const nextConfig = {
   },
   generateEtags: false,
   pageExtensions: ['mdx', 'tsx'],
-  reactRefresh: true,
+  reactStrictMode: true,
   webpack(config, { defaultLoaders, dev }) {
     const urlLoader = {
       loader: 'url-loader',
