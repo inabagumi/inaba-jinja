@@ -102,9 +102,7 @@ const nextConfig = {
       }
     ],
     modern: true,
-    pageEnv: true,
     plugins: true,
-    reactRefresh: true,
     rewrites: () => [
       {
         destination: '/_next/static/service-worker.js',
