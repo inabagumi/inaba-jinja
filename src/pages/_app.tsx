@@ -60,7 +60,7 @@ export function reportWebVitals(metric: NextMetric): void {
   const value = metric.name === 'CLS' ? metric.value * 1000 : metric.value
 
   gtag('event', metric.name, {
-    event_category: metric.label === 'web-vital' ? 'Web Vitals' : '',
+    event_category: `Next.js ${metric.label} metric`,
     event_label: metric.id,
     non_interaction: true,
     value: Math.round(value)
