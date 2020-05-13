@@ -96,5 +96,5 @@
     "release": "standard-version",
     "start": "next start"
   },
-  "version": "1.10.5"
+  "version": "1.10.6"
 }

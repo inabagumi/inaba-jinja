@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.6](https://github.com/inabagumi/inaba-jinja/compare/v1.10.5...v1.10.6) (2020-05-13)
+
+
+### Bug Fixes
+
+* **perf:** change event category ([#640](https://github.com/inabagumi/inaba-jinja/issues/640)) ([bbbebb4](https://github.com/inabagumi/inaba-jinja/commit/bbbebb4e54294ec64e78e2676f2c87d4835d2dee))
+
 ### [1.10.5](https://github.com/inabagumi/inaba-jinja/compare/v1.10.4...v1.10.5) (2020-05-13)
 
 
