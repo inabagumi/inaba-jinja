@@ -11,6 +11,7 @@ import Link from 'components/atoms/Link'
 import Progress from 'components/atoms/Progress'
 import Layout from 'components/templates/Layout'
 import fullPath from 'helpers/fullPath'
+import NextMetric from 'types/NextMetric'
 
 const globalStyles = css`
   :root {
@@ -55,12 +56,14 @@ const MDXComponents = {
   a: Link
 }
 
-export const reportWebVitals = ({ id, name, value }: Metric): void => {
-  gtag('event', name, {
-    event_category: 'Web Vitals',
-    event_label: id,
+export function reportWebVitals(metric: NextMetric): void {
+  const value = metric.name === 'CLS' ? metric.value * 1000 : metric.value
+
+  gtag('event', metric.name, {
+    event_category: metric.label === 'web-vital' ? 'Web Vitals' : '',
+    event_label: metric.id,
     non_interaction: true,
-    value: Math.round(name === 'CLS' ? value * 1000 : value)
+    value: Math.round(value)
   })
 }
 
