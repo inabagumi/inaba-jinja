@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.5](https://github.com/inabagumi/inaba-jinja/compare/v1.10.4...v1.10.5) (2020-05-13)
+
+
+### Bug Fixes
+
+* **perf:** supports custom metric ([#639](https://github.com/inabagumi/inaba-jinja/issues/639)) ([7a3e314](https://github.com/inabagumi/inaba-jinja/commit/7a3e3140286df10bfde8d340ab67102d2d7aa4c1))
+
 ### [1.10.4](https://github.com/inabagumi/inaba-jinja/compare/v1.10.3...v1.10.4) (2020-05-11)
 
 ### [1.10.3](https://github.com/inabagumi/inaba-jinja/compare/v1.10.2...v1.10.3) (2020-05-10)
