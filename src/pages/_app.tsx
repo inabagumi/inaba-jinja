@@ -1,56 +1,14 @@
-import { cache } from '@emotion/css'
-import { CacheProvider, Global, css } from '@emotion/react'
 import { MDXProvider } from '@mdx-js/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo, LogoJsonLd } from 'next-seo'
 import React, { FC } from 'react'
-import { Metric } from 'web-vitals'
 
 import Link from 'components/atoms/Link'
 import Progress from 'components/atoms/Progress'
 import Layout from 'components/templates/Layout'
 import fullPath from 'helpers/fullPath'
 import NextMetric from 'types/NextMetric'
-
-const globalStyles = css`
-  :root {
-    --ij-default-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
-      Helvetica, Arial, YuGothic, Yu Gothic, sans-serif;
-    --ij-serif-font-family: Garamond, Times New Roman, YuMincho, Yu Mincho,
-      serif;
-  }
-
-  html {
-    box-sizing: border-box;
-    font-family: var(--ij-default-font-family);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: none;
-  }
-
-  body {
-    margin: 0;
-    line-height: 2;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-
-  body,
-  html,
-  #__next {
-    height: 100%;
-  }
-
-  p {
-    margin: 0;
-    padding: 0;
-  }
-`
 
 const MDXComponents = {
   a: Link
@@ -108,17 +66,52 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
       />
     </Head>
 
-    <CacheProvider value={cache}>
-      <MDXProvider components={MDXComponents}>
-        <Global styles={globalStyles} />
+    <MDXProvider components={MDXComponents}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
 
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+      <Progress />
+    </MDXProvider>
 
-        <Progress />
-      </MDXProvider>
-    </CacheProvider>
+    <style global jsx>{`
+      :root {
+        --ij-default-font-family: -apple-system, BlinkMacSystemFont,
+          Helvetica Neue, Helvetica, Arial, YuGothic, Yu Gothic, sans-serif;
+        --ij-serif-font-family: Garamond, Times New Roman, YuMincho, Yu Mincho,
+          serif;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-family: var(--ij-default-font-family);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: none;
+      }
+
+      body {
+        margin: 0;
+        line-height: 2;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      body,
+      html,
+      #__next {
+        height: 100%;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    `}</style>
   </>
 )
 

@@ -1,29 +1,35 @@
-import styled from '@emotion/styled'
+import Link from 'next/link'
 import React, { FC } from 'react'
-import Link from 'components/atoms/Link'
+
 import Logo from 'components/atoms/Logo'
 
-const Brand = styled(Link)`
-  color: inherit;
-  font-size: 2rem;
-
-  &:hover {
-    color: inherit;
-  }
-`
-
-const Root = styled.header`
-  margin: 0 auto;
-  max-width: 100%;
-  width: 800px;
-`
-
 const Header: FC = () => (
-  <Root>
-    <Brand href="/" prefetch={false}>
-      <Logo aria-label="因幡神社" />
-    </Brand>
-  </Root>
+  <>
+    <header className="header">
+      <Link href="/" prefetch={false}>
+        <a className="brand" href="/">
+          <Logo aria-label="因幡神社" />
+        </a>
+      </Link>
+    </header>
+
+    <style jsx>{`
+      .brand {
+        color: inherit;
+        font-size: 2rem;
+      }
+
+      .brand:hover {
+        color: inherit;
+      }
+
+      .header {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 800px;
+      }
+    `}</style>
+  </>
 )
 
 export default Header

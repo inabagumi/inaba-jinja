@@ -1,53 +1,9 @@
-import styled from '@emotion/styled'
 import React, { FC } from 'react'
+
 import Image from 'components/atoms/Image'
 import SingleDoc from 'components/templates/SingleDoc'
 import fullPath from 'helpers/fullPath'
 import FortuneEntry from 'types/FortuneEntry'
-
-const Paper = styled(Image)`
-  background-color: #fff;
-  background-image: url("${({ src }): string => src}?w=10");
-  background-position: center;
-  background-size: contain;
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  max-width: 100%;
-`
-
-const ShareButton = styled.a`
-  background-color: #1da1f2;
-  border: 1px solid #1da1f2;
-  border-radius: 1rem;
-  color: #fff;
-  display: inline-block;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  line-height: 1;
-  padding: 0.5rem 1.5rem;
-  text-decoration: none;
-
-  &:hover {
-    background-color: #005fd1;
-    border-color: #005fd1;
-    color: #fff;
-  }
-`
-
-const ShareLinks = styled.nav`
-  margin-top: 3rem;
-
-  ul {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-`
 
 const getTweetLink = (fortune: FortuneEntry): string => {
   const text = `わたしの運勢は『${fortune.fields.blessing}』でした！ あなたもおみくじを引いてみてね`
@@ -70,31 +26,69 @@ const Fortune: FC<Props> = ({ fortune }) => {
   const imageURL = `https:${fortune.fields.paper.fields.file.url}`
 
   return (
-    <SingleDoc
-      title={`第${fortune.fields.number}番 ${fortune.fields.blessing}`}
-    >
-      <Paper
-        alt={`${fortune.fields.blessing} - ${fortune.fields.description}`}
-        height={imageDetails?.height || 0}
-        src={imageURL}
-        width={imageDetails?.width || 0}
-      />
+    <>
+      <SingleDoc
+        title={`第${fortune.fields.number}番 ${fortune.fields.blessing}`}
+      >
+        <Image
+          alt={`${fortune.fields.blessing} - ${fortune.fields.description}`}
+          height={imageDetails?.height || 0}
+          src={imageURL}
+          width={imageDetails?.width || 0}
+        />
 
-      <ShareLinks>
-        <ul>
-          <li>
-            <ShareButton
-              href={getTweetLink(fortune)}
-              rel="noopener noreferrer"
-              role="button"
-              target="_blank"
-            >
-              Twitterに共有する
-            </ShareButton>
-          </li>
-        </ul>
-      </ShareLinks>
-    </SingleDoc>
+        <nav className="share-links">
+          <ul className="share-links__list">
+            <li>
+              <a
+                className="share-button"
+                href={getTweetLink(fortune)}
+                rel="noopener noreferrer"
+                role="button"
+                target="_blank"
+              >
+                Twitterに共有する
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </SingleDoc>
+
+      <style jsx>{`
+        .share-button {
+          background-color: #1da1f2;
+          border: 1px solid #1da1f2;
+          border-radius: 1rem;
+          color: #fff;
+          display: inline-block;
+          font-size: 0.95rem;
+          font-weight: 700;
+          letter-spacing: 0.025em;
+          line-height: 1;
+          padding: 0.5rem 1.5rem;
+          text-decoration: none;
+        }
+
+        .share-button:hover {
+          background-color: #005fd1;
+          border-color: #005fd1;
+          color: #fff;
+        }
+
+        .share-links {
+          margin-top: 3rem;
+        }
+
+        .share-links__list {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+      `}</style>
+    </>
   )
 }
 
