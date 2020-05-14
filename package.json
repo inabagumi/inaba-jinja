@@ -10,10 +10,6 @@
   },
   "dependencies": {
     "@docusaurus/lqip-loader": "^2.0.0-alpha.54",
-    "@emotion/css": "^11.0.0-next.12",
-    "@emotion/react": "^11.0.0-next.12",
-    "@emotion/server": "^11.0.0-next.12",
-    "@emotion/styled": "^11.0.0-next.12",
     "@mdx-js/loader": "^1.6.1",
     "@next/mdx": "^9.4.0",
     "@next/plugin-google-analytics": "^9.4.0",
@@ -21,6 +17,7 @@
     "@sentry/webpack-plugin": "^1.11.1",
     "@svgr/webpack": "^5.4.0",
     "@zeit/next-source-maps": "^0.0.4-canary.1",
+    "clsx": "^1.1.0",
     "content-security-policy-builder": "^2.1.0",
     "contentful": "^7.14.4",
     "file-loader": "^6.0.0",
