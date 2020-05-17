@@ -14,14 +14,13 @@ const MDXComponents = {
   a: Link
 }
 
-export function reportWebVitals(metric: NextMetric): void {
-  const value = metric.name === 'CLS' ? metric.value * 1000 : metric.value
-
-  gtag('event', metric.name, {
-    event_category: `Next.js ${metric.label} metric`,
-    event_label: metric.id,
+export function reportWebVitals({ id, label, name, value }: NextMetric): void {
+  gtag('event', name, {
+    event_category:
+      label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
+    event_label: id,
     non_interaction: true,
-    value: Math.round(value)
+    value: Math.round(name === 'CLS' ? value * 1000 : value)
   })
 }
 
