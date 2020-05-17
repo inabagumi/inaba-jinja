@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.7](https://github.com/inabagumi/inaba-jinja/compare/v1.10.6...v1.10.7) (2020-05-17)
+
+
+### Bug Fixes
+
+* change category name for reports ([#644](https://github.com/inabagumi/inaba-jinja/issues/644)) ([3c16c05](https://github.com/inabagumi/inaba-jinja/commit/3c16c058a77f7e3405a69b9b9df65d0c0011bf26))
+
 ### [1.10.6](https://github.com/inabagumi/inaba-jinja/compare/v1.10.5...v1.10.6) (2020-05-13)
 
 
