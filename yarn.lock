@@ -81,29 +81,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@7.9.0":
-  version "7.9.0"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.9.0.tgz#ac977b538b77e132ff706f3b8a4dbad09c03c56e"
-  integrity sha512-kWc7L0fw1xwvI0zi8OKVBuxRVefwGOrKSQMvrQ3dW+bIIavBY3/NpXmpjMy7bQnLgwgzWQZ8TlM57YHpHNHz4w==
-  dependencies:
-    "@babel/code-frame" "^7.8.3"
-    "@babel/generator" "^7.9.0"
-    "@babel/helper-module-transforms" "^7.9.0"
-    "@babel/helpers" "^7.9.0"
-    "@babel/parser" "^7.9.0"
-    "@babel/template" "^7.8.6"
-    "@babel/traverse" "^7.9.0"
-    "@babel/types" "^7.9.0"
-    convert-source-map "^1.7.0"
-    debug "^4.1.0"
-    gensync "^1.0.0-beta.1"
-    json5 "^2.1.2"
-    lodash "^4.17.13"
-    resolve "^1.3.2"
-    semver "^5.4.1"
-    source-map "^0.5.0"
-
-"@babel/core@^7.7.5", "@babel/core@^7.8.4", "@babel/core@^7.9.0":
+"@babel/core@7.9.6", "@babel/core@^7.7.5", "@babel/core@^7.8.4", "@babel/core@^7.9.0":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.9.6.tgz#d9aa1f580abf3b2286ef40b6904d390904c63376"
   integrity sha512-nD3deLvbsApbHAHttzIssYqgb883yU/d9roe4RZymBCDaZryMJDbptVpEpeQuRh4BJ+SYI8le9YGxKvFEvl1Wg==
@@ -125,7 +103,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/generator@^7.7.7", "@babel/generator@^7.9.0", "@babel/generator@^7.9.6":
+"@babel/generator@^7.7.7", "@babel/generator@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.9.6.tgz#5408c82ac5de98cda0d77d8124e99fa1f2170a43"
   integrity sha512-+htwWKJbH2bL72HRluF8zumBxzuX0ZZUFl3JLNyoUjM/Ho8wnVpPXM6aUz8cfKDqQ/h7zHqKt4xzJteUosckqQ==
@@ -336,7 +314,7 @@
     "@babel/traverse" "^7.8.3"
     "@babel/types" "^7.8.3"
 
-"@babel/helpers@^7.7.4", "@babel/helpers@^7.9.0", "@babel/helpers@^7.9.6":
+"@babel/helpers@^7.7.4", "@babel/helpers@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.9.6.tgz#092c774743471d0bb6c7de3ad465ab3d3486d580"
   integrity sha512-tI4bUbldloLcHWoRUMAj4g1bF313M/o6fBKhIsb3QnGVPwRm9JsNf/gqMkQ7zjqReABiffPV6RWj7hEglID5Iw==
@@ -354,7 +332,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.7.7", "@babel/parser@^7.8.6", "@babel/parser@^7.9.0", "@babel/parser@^7.9.6":
+"@babel/parser@^7.7.7", "@babel/parser@^7.8.6", "@babel/parser@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.9.6.tgz#3b1bbb30dabe600cd72db58720998376ff653bc7"
   integrity sha512-AoeIEJn8vt+d/6+PXDRPaksYhnlbMIiejioBZvvMQsOjW/JYK6k/0dKnvvP3EhK5GfMBWDPtrxRtegWdAcdq9Q==
@@ -407,15 +385,6 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/plugin-syntax-numeric-separator" "^7.8.3"
-
-"@babel/plugin-proposal-object-rest-spread@7.9.5":
-  version "7.9.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.9.5.tgz#3fd65911306d8746014ec0d0cf78f0e39a149116"
-  integrity sha512-VP2oXvAf7KCYTthbUHwBlewbl1Iq059f6seJGsxMizaCdgHIeczOr7FBqELhSqfkIl04Fi8okzWzl63UKbQmmg==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.8.3"
-    "@babel/plugin-syntax-object-rest-spread" "^7.8.0"
-    "@babel/plugin-transform-parameters" "^7.9.5"
 
 "@babel/plugin-proposal-object-rest-spread@7.9.6", "@babel/plugin-proposal-object-rest-spread@^7.9.6":
   version "7.9.6"
@@ -967,7 +936,7 @@
     "@babel/parser" "^7.8.6"
     "@babel/types" "^7.8.6"
 
-"@babel/traverse@^7.7.4", "@babel/traverse@^7.8.3", "@babel/traverse@^7.9.0", "@babel/traverse@^7.9.6":
+"@babel/traverse@^7.7.4", "@babel/traverse@^7.8.3", "@babel/traverse@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.9.6.tgz#5540d7577697bf619cc57b92aa0f1c231a94f442"
   integrity sha512-b3rAHSjbxy6VEAvlxM8OV/0X4XrG72zoxme6q1MOoe2vd0bEc+TwayhuC1+Dfgqh1QEG+pj7atQqvUprHIccsg==
@@ -1174,33 +1143,33 @@
     "@babel/runtime" "^7.7.2"
     core-js "^3.4.1"
 
-"@mdx-js/loader@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-1.6.1.tgz#2f5fee718574eb24cfba7f51f42948fb0f201f1a"
-  integrity sha512-v1+q2NEjHQYiMAQVdCw9TA41I9XRJkJYAm8vPKyDIqAqqlq3QAvsAHyHKMpjXldzREfAMW1yckFqIl2ym10AEw==
+"@mdx-js/loader@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-1.6.2.tgz#8708f43ba8e99febe9671447803c559273fac614"
+  integrity sha512-K3WJxea2bnpLuMX16PMGFEESGJZskVOqC+NmMx6MRs0uVkMXHaUr/iFPP3iK6hxauoKkhBbWSjQVFu5YLfC4Fw==
   dependencies:
-    "@mdx-js/mdx" "^1.6.1"
-    "@mdx-js/react" "^1.6.1"
+    "@mdx-js/mdx" "^1.6.2"
+    "@mdx-js/react" "^1.6.2"
     loader-utils "2.0.0"
 
-"@mdx-js/mdx@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.6.1.tgz#95d53da3bdb0cd9239097e411b5a41ad86dbd059"
-  integrity sha512-DLnHbYZGoXSzfIHKgEtsO4qP8029YbdyJvC746PwfPNrRyGciPsqgWmfz/nEXt/fg+UMBG/6/cZaZx/hvyxnyg==
+"@mdx-js/mdx@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.6.2.tgz#25e5b38ea236983973c065ba1f40d1e7f4485c60"
+  integrity sha512-8UgSfqDeqFWPSdGy6LEkKkkOu8UxycafTaEBmMhVZixtdx/1mg6Gza49m/NRBgziD5oLOhg9h8FSXgKL4diV4A==
   dependencies:
-    "@babel/core" "7.9.0"
+    "@babel/core" "7.9.6"
     "@babel/plugin-syntax-jsx" "7.8.3"
     "@babel/plugin-syntax-object-rest-spread" "7.8.3"
-    "@mdx-js/util" "^1.6.1"
-    babel-plugin-apply-mdx-type-prop "^1.6.1"
-    babel-plugin-extract-import-names "^1.6.1"
+    "@mdx-js/util" "^1.6.2"
+    babel-plugin-apply-mdx-type-prop "^1.6.2"
+    babel-plugin-extract-import-names "^1.6.2"
     camelcase-css "2.0.1"
     detab "2.0.3"
     hast-util-raw "5.0.2"
     lodash.uniq "4.5.0"
     mdast-util-to-hast "8.2.0"
     remark-footnotes "1.0.0"
-    remark-mdx "^1.6.1"
+    remark-mdx "^1.6.2"
     remark-parse "8.0.2"
     remark-squeeze-paragraphs "4.0.0"
     style-to-object "0.3.0"
@@ -1208,15 +1177,15 @@
     unist-builder "2.0.3"
     unist-util-visit "2.0.2"
 
-"@mdx-js/react@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.6.1.tgz#46e56602c1f513452db2f1f4185f56dc60a4fcb7"
-  integrity sha512-jXBSWdWFPK2fs3johKb0hQFsf/x/C24XQYQwMhj8FxwlBgf7+NGATwXFs6pGkKd5/JfK9HXmbOcQ78MYoIZyxA==
+"@mdx-js/react@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.6.2.tgz#b2b7797c2fc0016acd39f6c529da4cca485891e8"
+  integrity sha512-eaBJubuxIv6KVN3w4IzV3Jdnkx8qELh7IIfiycqMuCwKViQJVP75AA6XiXLju4kH3Qpjk5Z+ju5IZYpxoDONXA==
 
-"@mdx-js/util@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.1.tgz#c1e8480844dfaeecde8b827d0e4bbf8793274659"
-  integrity sha512-A3TBBjg5iVo8S4TTG0VrW8G9YNLob4+M6rALKjY8Sxr9zPExWQ7iTPUSvJVE7YhF9E08EQMubx1vRal3jtpJ9Q==
+"@mdx-js/util@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.2.tgz#57818fff58daca3387dcbbc8954a007d5155b3ce"
+  integrity sha512-gnxK4zHAp+vt0MAnmLvtTQzZlLQt/UPhU1mipyibW30k8DTI+1dSRMnSEGYF8P1Vpn5r94XEiWeL8jMiyl/GOQ==
 
 "@next/mdx@^9.4.1":
   version "9.4.1"
@@ -2171,13 +2140,13 @@ babel-extract-comments@^1.0.0:
   dependencies:
     babylon "^6.18.0"
 
-babel-plugin-apply-mdx-type-prop@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-apply-mdx-type-prop/-/babel-plugin-apply-mdx-type-prop-1.6.1.tgz#7eaf057300f91e2dbce3142001131f578605c843"
-  integrity sha512-chjmLo1x7fCpDRICGUlbkwf2E6sMVG9jjG6PtPBWnQfMEjgV03Gh0jSVGbZJsEUxcMqOpHSsIXvPz1sYip6X3g==
+babel-plugin-apply-mdx-type-prop@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-apply-mdx-type-prop/-/babel-plugin-apply-mdx-type-prop-1.6.2.tgz#9298b461e7162f476713e9b3af636fc7f93664e7"
+  integrity sha512-5gjyZ9CRtPfuizMw6DTlWuBoBjshsplWXopeUBIMjBGwDy2v0DRYrbnHxKmx9aio/JA9PMIHdjGcyfxeEsYfzg==
   dependencies:
     "@babel/helper-plugin-utils" "7.8.3"
-    "@mdx-js/util" "^1.6.1"
+    "@mdx-js/util" "^1.6.2"
 
 babel-plugin-dynamic-import-node@^2.3.3:
   version "2.3.3"
@@ -2186,10 +2155,10 @@ babel-plugin-dynamic-import-node@^2.3.3:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-extract-import-names@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-extract-import-names/-/babel-plugin-extract-import-names-1.6.1.tgz#fc913f9fdb1aa1590ec96269a03c1ce98e8b76b1"
-  integrity sha512-u0uRrPyygx4RlNva1aqz7DM9UBpsQJQZ4NyakHVJF18s73H/iiyXuc+X7k+9tHeN0WKLsohQUGzGLli6z5a0Zw==
+babel-plugin-extract-import-names@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-extract-import-names/-/babel-plugin-extract-import-names-1.6.2.tgz#bc31fe34866dcf875053bad240286ebbd9799ff1"
+  integrity sha512-l/EN+UfAS8nE5hn3Exa891sWTw5upxpe0ttNjMUxASDr+9b2WhFCgQWq10jv2Iewro7K0xPPMeBg89z3wdHxxg==
   dependencies:
     "@babel/helper-plugin-utils" "7.8.3"
 
@@ -8119,16 +8088,16 @@ remark-footnotes@1.0.0:
   resolved "https://registry.yarnpkg.com/remark-footnotes/-/remark-footnotes-1.0.0.tgz#9c7a97f9a89397858a50033373020b1ea2aad011"
   integrity sha512-X9Ncj4cj3/CIvLI2Z9IobHtVi8FVdUrdJkCNaL9kdX8ohfsi18DXHsCVd/A7ssARBdccdDb5ODnt62WuEWaM/g==
 
-remark-mdx@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.6.1.tgz#693aa40d0c98afdd556e7e50f2ca263d0a845e19"
-  integrity sha512-UyCqqYFv9l5dstX29QpdqMprBHyUYUEQHOUe0MdFUIm1XATxfVGHbRPtVBFz4ccd5NV1UL/rmsruo9WOswwmpQ==
+remark-mdx@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.6.2.tgz#19100ee784a3f0cec5ff1ecd5827ec625a77f1e6"
+  integrity sha512-15OuD/VAhManmlssTjh9jMbln0uVu4Bc50DE+nfYUWX7ih1yk7Tztanw2lFNbzgGBVEGDNhohF14D0GTu4O2iw==
   dependencies:
-    "@babel/core" "7.9.0"
+    "@babel/core" "7.9.6"
     "@babel/helper-plugin-utils" "7.8.3"
-    "@babel/plugin-proposal-object-rest-spread" "7.9.5"
+    "@babel/plugin-proposal-object-rest-spread" "7.9.6"
     "@babel/plugin-syntax-jsx" "7.8.3"
-    "@mdx-js/util" "^1.6.1"
+    "@mdx-js/util" "^1.6.2"
     is-alphabetical "1.0.4"
     remark-parse "8.0.2"
     unified "9.0.0"
