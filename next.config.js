@@ -1,10 +1,7 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-
 const SentryWebpackPlugin = require('@sentry/webpack-plugin')
 const cspBuilder = require('content-security-policy-builder')
 
 const withMDX = require('@next/mdx')()
-const withSourceMaps = require('@zeit/next-source-maps')()
 const withOffline = require('next-offline')
 
 const release = [
@@ -19,6 +16,7 @@ const nextConfig = {
     SENTRY_RELEASE: release
   },
   experimental: {
+    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     headers: () => [
       {
         headers: [
@@ -103,6 +101,8 @@ const nextConfig = {
     ],
     modern: true,
     plugins: true,
+    productionBrowserSourceMaps: true,
+    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     rewrites: () => [
       {
         destination: '/_next/static/service-worker.js',
@@ -117,6 +117,7 @@ const nextConfig = {
   generateEtags: false,
   pageExtensions: ['mdx', 'tsx'],
   reactStrictMode: true,
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   webpack(config, { defaultLoaders, dev }) {
     const urlLoader = {
       loader: 'url-loader',
@@ -217,7 +218,7 @@ const nextConfig = {
   }
 }
 
-module.exports = [withSourceMaps, withMDX, withOffline].reduce(
+module.exports = [withMDX, withOffline].reduce(
   (config, plugin) => plugin(config),
   nextConfig
 )
