@@ -13,7 +13,7 @@
     "@mdx-js/loader": "^1.6.4",
     "@next/mdx": "^9.4.2",
     "@next/plugin-google-analytics": "^9.4.2",
-    "@next/plugin-sentry": "^9.4.2",
+    "@next/plugin-sentry": "^9.4.4",
     "@sentry/webpack-plugin": "^1.11.1",
     "@svgr/webpack": "^5.4.0",
     "clsx": "^1.1.0",
