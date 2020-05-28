@@ -1192,10 +1192,10 @@
   resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.4.2.tgz#860e5628d372c4e72e617aa62d34fdb66933591e"
   integrity sha512-yI5nS0XxccVfMc3WpspZsL6Y22EKIsv+/uJRfPb8uVfLlG4Oz9IHaBXR9KRlQKjvJ8mSm+R3GSg0j+WP4TGADQ==
 
-"@next/plugin-google-analytics@^9.4.2":
-  version "9.4.2"
-  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.4.2.tgz#aff29a3994bc9b20a6daa927e811cc50efcd4fbb"
-  integrity sha512-lGxH7ip7UFHn1opTWO7SLUp37QahPKqoIJe86q3IuH6uESOSirBl1p259zA6nvoT6aVUMzK82fhtysQxO324SA==
+"@next/plugin-google-analytics@^9.4.4":
+  version "9.4.4"
+  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-9.4.4.tgz#0dc2aef2f9b10d3ad302cf07d88ca652c22e9f11"
+  integrity sha512-X+EFML99AnOkshiZYPZUrmTn6EY1+rc+9B8k9o23pMNqP6dDEzmMc+aG73uEX1+zZ6wiuZqnZYJPXd+qH0tzeQ==
 
 "@next/plugin-sentry@^9.4.2":
   version "9.4.2"
