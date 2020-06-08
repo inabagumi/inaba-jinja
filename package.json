@@ -80,8 +80,8 @@
     "url": "https://github.com/inabagumi/inaba-jinja.git"
   },
   "resolutions": {
-    "@sentry/browser": "^5.16.1",
-    "@sentry/node": "^5.16.1"
+    "@sentry/browser": "^5.17.0",
+    "@sentry/node": "^5.17.0"
   },
   "scripts": {
     "build": "next build",
