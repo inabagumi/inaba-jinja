@@ -31,14 +31,6 @@ const products = [
     website: 'https://shinju.date/'
   },
   {
-    description:
-      '774 inc. 所属タレントのTwitterの情報を収集してグラフ化しているウェブサービスです',
-    learnMore: 'docs/21g',
-    preview: require('./showcase/21g.jpg'),
-    title: '21g',
-    website: 'https://21g.social/'
-  },
-  {
     description: '因幡神社は東京都北区赤羽のどこかにある神社です。',
     learnMore: 'docs/inaba-jinja',
     preview: require('./showcase/inaba-jinja.jpg'),
