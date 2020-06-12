@@ -35,6 +35,7 @@ const nextConfig = {
                   "'self'",
                   'https://images.ctfassets.net',
                   'https://www.google-analytics.com',
+                  'https://www.googletagmanager.com',
                   'https://*.imgix.net',
                   'https://*.ingest.sentry.io'
                 ],
