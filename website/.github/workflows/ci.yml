@@ -3,10 +3,10 @@ name: Node.js CI
 on:
   pull_request:
     branches:
-    - master
+    - trunk
   push:
     branches:
-    - master
+    - trunk
 
 jobs:
   build:
