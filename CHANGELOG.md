@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.9](https://github.com/inabagumi/inaba-jinja/compare/v1.10.8...v1.10.9) (2020-06-12)
+
+
+### Bug Fixes
+
+* **csp:** add googletagmanager.com to connect-src ([#684](https://github.com/inabagumi/inaba-jinja/issues/684)) ([d4c6e82](https://github.com/inabagumi/inaba-jinja/commit/d4c6e82386de63404644ebe2aa24cde23b2e4736))
+
 ### [1.10.8](https://github.com/inabagumi/inaba-jinja/compare/v1.10.7...v1.10.8) (2020-05-21)
 
 ### [1.10.7](https://github.com/inabagumi/inaba-jinja/compare/v1.10.6...v1.10.7) (2020-05-17)
