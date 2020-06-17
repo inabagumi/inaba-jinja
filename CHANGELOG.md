@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.1](https://github.com/inabagumi/inaba-jinja/compare/v1.11.0...v1.11.1) (2020-06-17)
+
+
+### Bug Fixes
+
+* add paths to tsconfig ([#698](https://github.com/inabagumi/inaba-jinja/issues/698)) ([3432e4a](https://github.com/inabagumi/inaba-jinja/commit/3432e4a659231898a57bc92a43880fc91f381c91))
+
 ## [1.11.0](https://github.com/inabagumi/inaba-jinja/compare/v1.10.9...v1.11.0) (2020-06-17)
 
 
