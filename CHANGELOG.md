@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/inabagumi/inaba-jinja/compare/v1.10.9...v1.11.0) (2020-06-17)
+
+
+### Features
+
+* **pwa:** add shortcuts ([#695](https://github.com/inabagumi/inaba-jinja/issues/695)) ([85ba3e8](https://github.com/inabagumi/inaba-jinja/commit/85ba3e849a104806fb94ac6497ca27c9d8af4dc9))
+
 ### [1.10.9](https://github.com/inabagumi/inaba-jinja/compare/v1.10.8...v1.10.9) (2020-06-12)
 
 

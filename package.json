@@ -121,5 +121,5 @@
     "start": "next start",
     "test": "jest"
   },
-  "version": "1.10.9"
+  "version": "1.11.0"
 }
