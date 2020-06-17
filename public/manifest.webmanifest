@@ -18,6 +18,12 @@
   "name": "因幡神社",
   "scope": "/",
   "short_name": "因幡神社",
+  "shortcuts": [
+    {
+      "name": "おみくじを引く",
+      "url": "/lottery"
+    }
+  ],
   "start_url": ".",
   "theme_color": "#ff5722"
 }
