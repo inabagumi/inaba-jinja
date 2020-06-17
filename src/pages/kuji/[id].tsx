@@ -1,12 +1,13 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { BreadcrumbJsonLd, NextSeo } from 'next-seo'
 import React from 'react'
-import Fortune from 'components/pages/Fortune'
-import getFortune from 'contentful/getFortune'
-import getFortunes from 'contentful/getFortunes'
-import fullPath from 'helpers/fullPath'
-import NotFound from 'pages/404.mdx'
-import FortuneEntry from 'types/FortuneEntry'
+
+import Fortune from '@/components/pages/Fortune'
+import getFortune from '@/contentful/getFortune'
+import getFortunes from '@/contentful/getFortunes'
+import fullPath from '@/helpers/fullPath'
+import NotFound from '@/pages/404.mdx'
+import FortuneEntry from '@/types/FortuneEntry'
 
 export type Params = {
   id: string

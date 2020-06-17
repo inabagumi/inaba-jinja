@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
 
-import Image from 'components/atoms/Image'
-import SingleDoc from 'components/templates/SingleDoc'
-import fullPath from 'helpers/fullPath'
-import FortuneEntry from 'types/FortuneEntry'
+import Image from '@/components/atoms/Image'
+import SingleDoc from '@/components/templates/SingleDoc'
+import fullPath from '@/helpers/fullPath'
+import FortuneEntry from '@/types/FortuneEntry'
 
 const getTweetLink = (fortune: FortuneEntry): string => {
   const text = `わたしの運勢は『${fortune.fields.blessing}』でした！ あなたもおみくじを引いてみてね`

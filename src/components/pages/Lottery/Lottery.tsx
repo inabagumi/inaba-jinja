@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
-import kujiImage from 'assets/kuji.png'
-import SingleDoc from 'components/templates/SingleDoc'
+
+import kujiImage from '@/assets/kuji.png'
+import SingleDoc from '@/components/templates/SingleDoc'
 
 const Lottery: FC = () => (
   <>
