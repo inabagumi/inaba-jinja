@@ -83,7 +83,7 @@
       "!**/node_modules/**"
     ],
     "moduleNameMapper": {
-      "\\.svg": "<rootDir>/__mocks__/svgMock.tsx"
+      "\\.svg": "<rootDir>/src/__mocks__/svgMock.tsx"
     },
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupTests.ts"
