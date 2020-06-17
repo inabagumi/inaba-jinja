@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import React, { FC } from 'react'
+
 import {
   preSrc as placeholder,
   src as defaultMainVisual
-} from 'assets/main-visual.jpg'
-import Footer from 'components/organisms/Footer'
+} from '@/assets/main-visual.jpg'
+import Footer from '@/components/organisms/Footer'
 
 const mainVisual = process.env.NEXT_PUBLIC_MAIN_VISUAL_URL ?? defaultMainVisual
 

@@ -3,9 +3,10 @@ import Head from 'next/head'
 import Router from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
-import Lottery from 'components/pages/Lottery'
-import getFortunes from 'contentful/getFortunes'
-import fullPath from 'helpers/fullPath'
+
+import Lottery from '@/components/pages/Lottery'
+import getFortunes from '@/contentful/getFortunes'
+import fullPath from '@/helpers/fullPath'
 
 const DELAY_SECONDS = 2
 

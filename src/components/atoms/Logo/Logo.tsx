@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import React, { FC, SVGProps } from 'react'
 
-import HorizontalLogo from 'assets/logo.svg'
-import VerticalLogo from 'assets/vertical-logo.svg'
+import HorizontalLogo from '@/assets/logo.svg'
+import VerticalLogo from '@/assets/vertical-logo.svg'
 
 type Props = {
   vertical?: boolean

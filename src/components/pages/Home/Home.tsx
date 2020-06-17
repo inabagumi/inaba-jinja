@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { FC } from 'react'
-import Logo from 'components/atoms/Logo'
+import Logo from '@/components/atoms/Logo'
 
 const Home: FC = () => {
   return (

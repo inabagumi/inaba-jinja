@@ -4,11 +4,11 @@ import Head from 'next/head'
 import { DefaultSeo, LogoJsonLd } from 'next-seo'
 import React, { FC } from 'react'
 
-import Link from 'components/atoms/Link'
-import Progress from 'components/atoms/Progress'
-import Layout from 'components/templates/Layout'
-import fullPath from 'helpers/fullPath'
-import NextMetric from 'types/NextMetric'
+import Link from '@/components/atoms/Link'
+import Progress from '@/components/atoms/Progress'
+import Layout from '@/components/templates/Layout'
+import fullPath from '@/helpers/fullPath'
+import NextMetric from '@/types/NextMetric'
 
 const MDXComponents = {
   a: Link
