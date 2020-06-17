@@ -41,3 +41,5 @@ jobs:
         env:
           GA_TRACKING_ID: UA-XXXXX-1
           SENTRY_DSN: https://4643a26331b48253b120a8e75effb9a73ae7f90945f53363b67af8d939e73478@sentry.example.com/178
+      - name: Test
+        run: yarn test
