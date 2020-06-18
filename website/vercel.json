@@ -1,8 +1,4 @@
 {
-  "github": {
-    "silent": true
-  },
-  "name": "haneru.dev",
   "routes": [
     {
       "headers": {
@@ -45,12 +41,6 @@
       },
       "src": "/products/(.*)\\.html",
       "status": 301
-    },
-    {
-      "headers": {
-        "cache-control": "max-age=31536000"
-      },
-      "src": "/assets/.+"
     },
     {
       "headers": {
