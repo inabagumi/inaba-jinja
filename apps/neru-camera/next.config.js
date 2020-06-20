@@ -2,15 +2,30 @@ const withOffline = require('next-offline')
 
 const nextConfig = {
   crossOrigin: 'anonymous',
-  env: {
-    CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
-    CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
-    NERU_CAMERA_BASE_URL: process.env.NERU_CAMERA_BASE_URL,
-    NERU_CAMERA_DESCRIPTION: process.env.NERU_CAMERA_DESCRIPTION,
-    NERU_CAMERA_TITLE: process.env.NERU_CAMERA_TITLE
-  },
   experimental: {
+    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+    headers: () => [
+      {
+        headers: [
+          {
+            key: 'cache-control',
+            value: 'max-age=600, s-maxage=60'
+          }
+        ],
+        source: '/((?!_next).*)'
+      },
+      {
+        headers: [
+          {
+            key: 'cache-control',
+            value: 'max-age=0'
+          }
+        ],
+        source: '/service-worker.js'
+      }
+    ],
     plugins: true,
+    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     rewrites: () => [
       {
         destination: '/_next/static/service-worker.js',
@@ -18,7 +33,6 @@ const nextConfig = {
       }
     ]
   },
-  target: 'serverless',
   workboxOpts: {
     clientsClaim: true,
     runtimeCaching: [],

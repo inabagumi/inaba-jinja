@@ -1,6 +1,6 @@
 /.next/
-/.now/
+/.vercel/
 /dist/
 /node_modules/
-/.env.build
+/.env.local
 /yarn-error.log
