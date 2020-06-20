@@ -25,4 +25,4 @@ jobs:
       - if: startsWith(github.ref, 'refs/tags/v')
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: npx vercel -t ${VERCEL_TOKEN} --prod
+        run: npx vercel -S ${VERCEL_SCOPE} -c -t ${VERCEL_TOKEN} --prod
