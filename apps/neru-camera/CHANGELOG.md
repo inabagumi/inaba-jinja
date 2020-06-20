@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.4.4](https://github.com/inabagumi/neru-camera/compare/v5.4.3...v5.4.4) (2020-06-20)
+
+
+### Bug Fixes
+
+* **vercel:** add -c options ([#605](https://github.com/inabagumi/neru-camera/issues/605)) ([3a68e54](https://github.com/inabagumi/neru-camera/commit/3a68e54dc49880c2b3a6ceb9955ecacddd94b488))
+
 ### [5.4.3](https://github.com/inabagumi/neru-camera/compare/v5.4.2...v5.4.3) (2020-06-20)
 
 ### [5.4.2](https://github.com/inabagumi/neru-camera/compare/v5.4.1...v5.4.2) (2020-04-30)
