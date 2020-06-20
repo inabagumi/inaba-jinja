@@ -134,6 +134,7 @@ const Camera: FC<Props> = ({ asset }) => {
             className={classes.stage}
             height={texture.height}
             options={{
+              autoDensity: false,
               preserveDrawingBuffer: true
             }}
             onMount={handleMount}
