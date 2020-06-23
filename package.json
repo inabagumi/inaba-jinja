@@ -108,8 +108,8 @@
     "url": "https://github.com/inabagumi/inaba-jinja.git"
   },
   "resolutions": {
-    "@sentry/browser": "^5.17.0",
-    "@sentry/node": "^5.17.0"
+    "@sentry/browser": "^5.18.0",
+    "@sentry/node": "^5.18.0"
   },
   "scripts": {
     "build": "next build",
