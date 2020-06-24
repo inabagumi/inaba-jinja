@@ -1,52 +1,28 @@
 {
-  "routes": [
+  "redirects": [
     {
-      "headers": {
-        "location": "/docs/introduction"
-      },
-      "src": "/about/",
-      "status": 301
+      "destination": "/docs/introduction",
+      "source": "/about/"
     },
     {
-      "headers": {
-        "location": "/docs/hanerubeat"
-      },
-      "src": "/docs/heartbeat",
-      "status": 301
+      "destination": "/docs/hanerubeat",
+      "source": "/docs/heartbeat"
     },
     {
-      "headers": {
-        "location": "/docs/shinju-date"
-      },
-      "src": "/docs/animare-search",
-      "status": 301
+      "destination": "/docs/shinju-date",
+      "source": "/docs/animare-search"
     },
     {
-      "headers": {
-        "location": "/docs/21g"
-      },
-      "src": "/docs/graph",
-      "status": 301
+      "destination": "/docs/21g",
+      "source": "/docs/graph"
     },
     {
-      "headers": {
-        "location": "/docs/eslint-config"
-      },
-      "src": "/(?:products|docs)/npm-packages(?:\\.html)?",
-      "status": 301
+      "destination": "/docs/eslint-config",
+      "source": "/(products|docs)/npm-packages(.html)?"
     },
     {
-      "headers": {
-        "location": "/docs/$1"
-      },
-      "src": "/products/(.*)\\.html",
-      "status": 301
-    },
-    {
-      "headers": {
-        "cache-control": "max-age=600, s-maxage=60"
-      },
-      "src": "/.*"
+      "destination": "/docs/:name",
+      "source": "/products/:name.html"
     }
   ],
   "regions": ["hnd1"],
