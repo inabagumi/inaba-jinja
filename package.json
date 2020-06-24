@@ -23,7 +23,7 @@
     "@svgr/webpack": "^5.4.0",
     "clsx": "^1.1.1",
     "content-security-policy-builder": "^2.1.0",
-    "contentful": "^7.14.4",
+    "contentful": "^7.14.5",
     "file-loader": "^6.0.0",
     "next": "^9.4.4",
     "next-offline": "^5.0.2",
