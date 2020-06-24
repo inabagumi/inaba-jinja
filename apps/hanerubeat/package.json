@@ -35,8 +35,8 @@
   "scripts": {
     "build": "react-scripts build",
     "dev": "react-scripts start",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{html,js,json,ts,tsx}\"",
-    "format-check": "prettier --ignore-path .gitignore --check \"**/*.{html,js,json,ts,tsx}\"",
+    "format": "prettier --ignore-path .gitignore --write .",
+    "format-check": "prettier --ignore-path .gitignore --check .",
     "now-build": "${npm_execpath} run build"
   },
   "version": "2.0.0"
