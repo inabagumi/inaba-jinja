@@ -1,5 +1,5 @@
 /.next/
 /.vercel/
 /node_modules/
-/.env.local
-/yarn-error.log
+
+*.md

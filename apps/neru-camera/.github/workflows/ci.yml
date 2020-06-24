@@ -3,12 +3,12 @@ name: Node.js CI
 on:
   pull_request:
     branches:
-    - trunk
+      - trunk
   push:
     branches:
-    - trunk
+      - trunk
     tags:
-    - 'v*'
+      - 'v*'
 
 jobs:
   tests_and_publish:

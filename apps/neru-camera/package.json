@@ -43,8 +43,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,ts,tsx}\"",
-    "format-check": "prettier --ignore-path .gitignore --check \"**/*.{js,json,ts,tsx}\"",
+    "format": "prettier --write .",
+    "format-check": "prettier --check .",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "release": "standard-version",
     "serve": "next start"
