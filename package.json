@@ -39,7 +39,7 @@
   "devDependencies": {
     "@inabagumi/eslint-config-react": "^5.3.0",
     "@inabagumi/prettier-config": "^1.1.2",
-    "@testing-library/jest-dom": "^5.10.1",
+    "@testing-library/jest-dom": "^5.11.0",
     "@testing-library/react": "^10.4.3",
     "@types/gtag.js": "^0.0.3",
     "@types/jest": "^26.0.3",
