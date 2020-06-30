@@ -88,7 +88,7 @@ const nextConfig = {
             value: '/'
           }
         ],
-        source: '/service-worker.js'
+        source: '/service-worker.js(.map)?'
       },
       {
         headers: [
@@ -106,12 +106,8 @@ const nextConfig = {
     // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     rewrites: () => [
       {
-        destination: '/_next/static/service-worker.js',
-        source: '/service-worker.js'
-      },
-      {
-        destination: '/_next/static/service-worker.js.map',
-        source: '/service-worker.js.map'
+        destination: '/_next/static/service-worker.js$1',
+        source: '/service-worker.js(.map)?'
       }
     ]
   },
