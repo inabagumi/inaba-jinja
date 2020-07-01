@@ -16,104 +16,104 @@ const nextConfig = {
     SENTRY_RELEASE: release
   },
   experimental: {
-    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-    headers: () => [
-      {
-        headers: [
-          {
-            key: 'cache-control',
-            value:
-              'max-age=600, public, s-maxage=120, stale-if-error=600, stale-while-revalidate=300'
-          },
-          {
-            key: 'content-security-policy',
-            value: cspBuilder({
-              directives: {
-                baseUri: ["'none'"],
-                blockAllMixedContent: true,
-                connectSrc: [
-                  "'self'",
-                  'https://images.ctfassets.net',
-                  'https://www.google-analytics.com',
-                  'https://www.googletagmanager.com',
-                  'https://*.imgix.net',
-                  'https://*.ingest.sentry.io'
-                ],
-                defaultSrc: ["'self'"],
-                fontSrc: ["'none'"],
-                formAction: ["'none'"],
-                frameAncestors: ["'none'"],
-                imgSrc: [
-                  "'self'",
-                  'data:',
-                  'https://images.ctfassets.net',
-                  'https://www.google-analytics.com',
-                  'https://www.googletagmanager.com',
-                  'https://*.imgix.net'
-                ],
-                manifestSrc: ["'self'"],
-                objectSrc: ["'none'"],
-                ...(process.env.CSP_REPORT_URL
-                  ? {
-                      reportUri: process.env.CSP_REPORT_URL
-                    }
-                  : {}),
-                scriptSrc: [
-                  "'self'",
-                  "'unsafe-inline'",
-                  "'unsafe-eval'",
-                  'https://www.google-analytics.com',
-                  'https://www.googletagmanager.com'
-                ],
-                styleSrc: ["'self'", "'unsafe-inline'"],
-                workerSrc: ["'self'"]
-              }
-            })
-          },
-          {
-            key: 'referrer-policy',
-            value: 'same-origin, strict-origin-when-cross-origin'
-          }
-        ],
-        source: '/((?!_next).*)'
-      },
-      {
-        headers: [
-          {
-            key: 'cache-control',
-            value: 'max-age=0'
-          },
-          {
-            key: 'service-worker-allowed',
-            value: '/'
-          }
-        ],
-        source: '/service-worker.js(.map)?'
-      },
-      {
-        headers: [
-          {
-            key: 'content-type',
-            value: 'application/manifest+json'
-          }
-        ],
-        source: '/manifest.webmanifest'
-      }
-    ],
     modern: true,
     plugins: true,
-    productionBrowserSourceMaps: true,
-    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-    rewrites: () => [
-      {
-        destination: '/_next/static/service-worker.js$1',
-        source: '/service-worker.js(.map)?'
-      }
-    ]
+    productionBrowserSourceMaps: true
   },
   generateEtags: false,
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+  headers: () => [
+    {
+      headers: [
+        {
+          key: 'cache-control',
+          value:
+            'max-age=600, public, s-maxage=120, stale-if-error=600, stale-while-revalidate=300'
+        },
+        {
+          key: 'content-security-policy',
+          value: cspBuilder({
+            directives: {
+              baseUri: ["'none'"],
+              blockAllMixedContent: true,
+              connectSrc: [
+                "'self'",
+                'https://images.ctfassets.net',
+                'https://www.google-analytics.com',
+                'https://www.googletagmanager.com',
+                'https://*.imgix.net',
+                'https://*.ingest.sentry.io'
+              ],
+              defaultSrc: ["'self'"],
+              fontSrc: ["'none'"],
+              formAction: ["'none'"],
+              frameAncestors: ["'none'"],
+              imgSrc: [
+                "'self'",
+                'data:',
+                'https://images.ctfassets.net',
+                'https://www.google-analytics.com',
+                'https://www.googletagmanager.com',
+                'https://*.imgix.net'
+              ],
+              manifestSrc: ["'self'"],
+              objectSrc: ["'none'"],
+              ...(process.env.CSP_REPORT_URL
+                ? {
+                    reportUri: process.env.CSP_REPORT_URL
+                  }
+                : {}),
+              scriptSrc: [
+                "'self'",
+                "'unsafe-inline'",
+                "'unsafe-eval'",
+                'https://www.google-analytics.com',
+                'https://www.googletagmanager.com'
+              ],
+              styleSrc: ["'self'", "'unsafe-inline'"],
+              workerSrc: ["'self'"]
+            }
+          })
+        },
+        {
+          key: 'referrer-policy',
+          value: 'same-origin, strict-origin-when-cross-origin'
+        }
+      ],
+      source: '/((?!_next).*)'
+    },
+    {
+      headers: [
+        {
+          key: 'cache-control',
+          value: 'max-age=0'
+        },
+        {
+          key: 'service-worker-allowed',
+          value: '/'
+        }
+      ],
+      source: '/service-worker.js(.map)?'
+    },
+    {
+      headers: [
+        {
+          key: 'content-type',
+          value: 'application/manifest+json'
+        }
+      ],
+      source: '/manifest.webmanifest'
+    }
+  ],
   pageExtensions: ['mdx', 'tsx'],
   reactStrictMode: true,
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+  rewrites: () => [
+    {
+      destination: '/_next/static/service-worker.js$1',
+      source: '/service-worker.js(.map)?'
+    }
+  ],
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   webpack(config, { defaultLoaders, dev }) {
     const urlLoader = {
