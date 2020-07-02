@@ -20,7 +20,7 @@ const Home: NextPage = () => (
         ],
         type: 'website'
       }}
-      title="774 inc."
+      title="774 ink."
       twitter={{
         cardType: 'summary_large_image'
       }}
