@@ -13,7 +13,7 @@ const Home: NextPage = () => (
         images: [
           {
             alt: 'Did you mean: 774 inc.',
-            url: cardURL,
+            url: `https://774.ink${cardURL}`,
             height: 620,
             width: 1200
           }
