@@ -1,0 +1,5 @@
+export { default as appleTouchIconURL } from './apple-touch-icon.png'
+export { default as cardURL } from './card.png'
+export { default as favicon192x192URL } from './favicon-192x192.png'
+export { default as favicon256x256URL } from './favicon-256x256.png'
+export { default as favicon512x512URL } from './favicon-512x512.png'
