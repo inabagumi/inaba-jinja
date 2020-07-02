@@ -20,7 +20,6 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
           name: 'theme_color'
         }
       ]}
-      title="774 ink."
     />
 
     <Component {...pageProps} />
