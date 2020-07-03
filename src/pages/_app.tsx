@@ -1,5 +1,5 @@
 import { MDXProvider } from '@mdx-js/react'
-import { AppProps } from 'next/app'
+import { AppProps, NextWebVitalsMetric } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo, LogoJsonLd } from 'next-seo'
 import React, { FC } from 'react'
@@ -8,19 +8,21 @@ import Link from '@/components/atoms/Link'
 import Progress from '@/components/atoms/Progress'
 import Layout from '@/components/templates/Layout'
 import fullPath from '@/helpers/fullPath'
-import NextMetric from '@/types/NextMetric'
 
 const MDXComponents = {
   a: Link
 }
 
-export function reportWebVitals({ id, label, name, value }: NextMetric): void {
-  gtag('event', name, {
-    event_category:
-      label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
-    event_label: id,
+export function reportWebVitals(metric: NextWebVitalsMetric): void {
+  const value = metric.name === 'CLS' ? metric.value * 1000 : metric.value
+  const category =
+    metric.label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric'
+
+  gtag('event', metric.name, {
+    event_category: category,
+    event_label: metric.id,
     non_interaction: true,
-    value: Math.round(name === 'CLS' ? value * 1000 : value)
+    value: Math.round(value)
   })
 }
 
