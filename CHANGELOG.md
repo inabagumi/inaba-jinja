@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.4](https://github.com/inabagumi/inaba-jinja/compare/v1.11.3...v1.11.4) (2020-07-03)
+
+
+### Bug Fixes
+
+* **app:** change metric type ([#734](https://github.com/inabagumi/inaba-jinja/issues/734)) ([5ac4cbf](https://github.com/inabagumi/inaba-jinja/commit/5ac4cbf3f3f73db6bf5b4d7b4d3ec38ed26b8694))
+
 ### [1.11.3](https://github.com/inabagumi/inaba-jinja/compare/v1.11.2...v1.11.3) (2020-06-30)
 
 ### [1.11.2](https://github.com/inabagumi/inaba-jinja/compare/v1.11.1...v1.11.2) (2020-06-30)
