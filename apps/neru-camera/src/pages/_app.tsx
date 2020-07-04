@@ -39,7 +39,7 @@ MyApp.getInitialProps = async (
   const initialProps = await App.getInitialProps(ctx)
   const entries = await contentfulClient
     .getEntries<OverlayFields>({
-      content_type: 'overlay', // eslint-disable-line @typescript-eslint/camelcase
+      content_type: 'overlay',
       limit: 100,
       order: '-sys.createdAt',
       select: ['sys.id', 'fields.keyColor', 'fields.media', 'fields.name'].join(
