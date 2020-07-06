@@ -4,7 +4,6 @@ import { favicon192x192URL, favicon512x512URL } from '@/assets'
 const handler: NextApiHandler<WebAppManifest> = (_req, res) => {
   const name = '774 ink.'
   const manifest: WebAppManifest = {
-    // eslint-disable-next-line @typescript-eslint/camelcase
     background_color: '#fff',
     display: 'standalone',
     icons: [
@@ -21,11 +20,8 @@ const handler: NextApiHandler<WebAppManifest> = (_req, res) => {
     ],
     name,
     scope: '/',
-    // eslint-disable-next-line @typescript-eslint/camelcase
     short_name: name,
-    // eslint-disable-next-line @typescript-eslint/camelcase
     start_url: '/',
-    // eslint-disable-next-line @typescript-eslint/camelcase
     theme_color: '#544643'
   }
 
