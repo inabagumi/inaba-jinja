@@ -1,5 +1,3 @@
-import '@/styles/globals.css'
-
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
@@ -23,6 +21,34 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
     />
 
     <Component {...pageProps} />
+
+    <style global jsx>{`
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        background-color: #544643;
+        color: #fff;
+        font-family: sans-serif;
+        line-height: 1;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      a {
+        color: #e85465;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    `}</style>
   </>
 )
 

@@ -1,8 +1,11 @@
-import { NextPage } from 'next'
+import { NextPage, PageConfig } from 'next'
 import { NextSeo } from 'next-seo'
 import React from 'react'
 import { cardURL } from '@/assets'
-import styles from '@/styles/Home.module.css'
+
+export const config: PageConfig = {
+  amp: true
+}
 
 const Home: NextPage = () => (
   <>
@@ -26,12 +29,12 @@ const Home: NextPage = () => (
       }}
     />
 
-    <div className={styles.container}>
-      <h1 className={styles.title}>774 ink.</h1>
-      <p className={styles.message}>
-        <span className={styles.label}>もしかして:&nbsp;</span>
+    <div className="container">
+      <h1 className="title">774 ink.</h1>
+      <p className="message">
+        <span className="label">もしかして:&nbsp;</span>
         <a
-          className={styles.link}
+          className="link"
           href="https://774.ai/"
           rel="noopener noreferrer"
           target="_blank"
@@ -40,6 +43,34 @@ const Home: NextPage = () => (
         </a>
       </p>
     </div>
+
+    <style jsx>{`
+      .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        padding: 1rem;
+        width: 100vw;
+      }
+
+      .title {
+        display: none;
+      }
+
+      .message {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      @media (max-width: 500px) {
+        .label,
+        .link {
+          display: block;
+        }
+      }
+    `}</style>
   </>
 )
 
