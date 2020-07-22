@@ -1,18 +1,17 @@
-name: Test
+name: Node.js CI
 
 on:
   pull_request:
     branches:
-      - trunk
+      - main
   push:
     branches:
-      - trunk
+      - main
     tags:
       - '!v*'
 
 jobs:
-  test:
-    name: Test
+  build:
     runs-on: ubuntu-latest
 
     steps:
