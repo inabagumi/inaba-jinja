@@ -3,14 +3,13 @@ name: Node.js CI
 on:
   pull_request:
     branches:
-      - trunk
+      - main
   push:
     branches:
-      - trunk
+      - main
 
 jobs:
-  test:
-    name: Test
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
