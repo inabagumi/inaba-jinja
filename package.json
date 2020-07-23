@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@docusaurus/lqip-loader": "^2.0.0-alpha.58",
-    "@mdx-js/loader": "^1.6.12",
+    "@mdx-js/loader": "^1.6.14",
     "@next/mdx": "^9.4.5-canary.42",
     "@next/plugin-google-analytics": "^9.4.5-canary.42",
     "@next/plugin-sentry": "^9.4.5-canary.42",
