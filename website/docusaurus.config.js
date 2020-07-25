@@ -78,7 +78,7 @@ module.exports = {
     image: 'https://haneru.dev/img/haneru-dev.jpg',
     navbar: {
       hideOnScroll: true,
-      links: [
+      items: [
         {
           activeBasePath: 'docs',
           to: 'docs/introduction',
