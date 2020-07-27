@@ -7,7 +7,7 @@
     "@next/plugin-material-ui": "^9.4.4",
     "clsx": "^1.1.1",
     "contentful": "^7.14.6",
-    "next": "^9.4.4",
+    "next": "^9.5.0",
     "next-offline": "^5.0.2",
     "pixi-viewport": "^4.12.2",
     "pixi.js": "^5.3.2",
