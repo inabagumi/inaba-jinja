@@ -41,7 +41,7 @@
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.7",
     "@types/gtag.js": "^0.0.3",
-    "@types/jest": "^26.0.7",
+    "@types/jest": "^26.0.8",
     "@types/mdx-js__react": "^1.5.2",
     "@types/node": "^12.12.47",
     "@types/nprogress": "^0.2.0",
