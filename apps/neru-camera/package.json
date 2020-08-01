@@ -9,7 +9,7 @@
     "contentful": "^7.14.6",
     "next": "^9.5.1",
     "next-offline": "^5.0.2",
-    "pixi-viewport": "^4.12.2",
+    "pixi-viewport": "^4.13.0",
     "pixi.js": "^5.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
