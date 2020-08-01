@@ -1,4 +1,12 @@
-const products = [
+type Product = {
+  description: string
+  learnMore: string
+  preview: any
+  title: string
+  website: string
+}
+
+const products: Product[] = [
   {
     description:
       '因幡はねるさんと一緒に写真が撮れるアプリです。ねるちゃんとの幸せなひとときをあなたに。',

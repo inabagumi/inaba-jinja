@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Layout from '@theme/Layout'
 
-const NotFound = () => (
+const NotFound: FC = () => (
   <Layout title="ページが見つかりません">
     <div className="container margin-vert--xl">
       <div className="row">

@@ -1,17 +1,15 @@
 import chunk from 'lodash/chunk'
-import React from 'react'
+import React, { FC } from 'react'
 import Image from '@theme/IdealImage'
 import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import useBaseUrl from '@docusaurus/useBaseUrl'
+import { useBaseUrlUtils } from '@docusaurus/useBaseUrl'
 import products from '../data/products'
 
-const Home = () => {
-  const context = useDocusaurusContext()
-  const introductionUrl = useBaseUrl('docs/introduction')
-
-  const { siteConfig = {} } = context
+const Home: FC = () => {
+  const { siteConfig = {} } = useDocusaurusContext()
+  const { withBaseUrl } = useBaseUrlUtils()
 
   return (
     <Layout
@@ -25,7 +23,7 @@ const Home = () => {
           <div>
             <Link
               className="button button--primary button--outline button--lg"
-              to={introductionUrl}
+              to={withBaseUrl('docs/introduction')}
             >
               Get Started
             </Link>
