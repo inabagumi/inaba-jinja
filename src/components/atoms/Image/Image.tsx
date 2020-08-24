@@ -37,7 +37,7 @@ const Image: FC<Props> = ({ alt, className, height, src, width }) => {
       <style jsx>{`
         .image {
           background-color: #fff;
-          background-image: url("${src}?w=10");
+          background-image: url('${src}?w=10');
           background-position: center;
           background-size: contain;
           display: block;

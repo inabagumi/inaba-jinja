@@ -51,15 +51,12 @@ const Layout: FC = ({ children }) => (
       }
 
       body::before {
-        background-image:
-          linear-gradient(
+        background-image: linear-gradient(
             rgba(0, 0, 0, 0.54),
             rgba(0, 0, 0, 0.54)
           ),
-          url('${mainVisual}?auto=compress,format'),
-          url('${placeholder}');
-        background-image:
-          linear-gradient(
+          url('${mainVisual}?auto=compress,format'), url('${placeholder}');
+        background-image: linear-gradient(
             rgba(0, 0, 0, 0.54),
             rgba(0, 0, 0, 0.54)
           ),
@@ -83,20 +80,19 @@ const Layout: FC = ({ children }) => (
 
       @media (orientation: portrait) {
         body::before {
-          background-image:
-            linear-gradient(
+          background-image: linear-gradient(
               rgba(0, 0, 0, 0.54),
               rgba(0, 0, 0, 0.54)
             ),
             url('${mainVisual}?ar=0.8:1&auto=compress,format&fit=crop'),
             url('${placeholder}');
-          background-image:
-            linear-gradient(
+          background-image: linear-gradient(
               rgba(0, 0, 0, 0.54),
               rgba(0, 0, 0, 0.54)
             ),
             image-set(
-              url('${mainVisual}?ar=0.8:1&auto=compress,format&fit=crop&w=0.5') 1x,
+              url('${mainVisual}?ar=0.8:1&auto=compress,format&fit=crop&w=0.5')
+                1x,
               url('${mainVisual}?ar=0.8:1&auto=compress,format&fit=crop') 2x
             ),
             url('${placeholder}');
