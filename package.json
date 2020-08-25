@@ -31,7 +31,7 @@
     "nprogress": "^1.0.0-1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "sharp": "^0.25.4",
+    "sharp": "^0.26.0",
     "url-loader": "^4.1.0"
   },
   "description": "The source code for the Inaba Jinja.",
