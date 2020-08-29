@@ -13,9 +13,9 @@
     ]
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.61",
-    "@docusaurus/plugin-ideal-image": "^2.0.0-alpha.61",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.61",
+    "@docusaurus/core": "^2.0.0-alpha.62",
+    "@docusaurus/plugin-ideal-image": "^2.0.0-alpha.62",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.62",
     "classnames": "^2.2.6",
     "lodash": "^4.17.20",
     "react": "^16.13.1",
@@ -23,7 +23,7 @@
   },
   "description": "We are Haneru Developers!",
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.0.0-alpha.61",
+    "@docusaurus/module-type-aliases": "^2.0.0-alpha.62",
     "@inabagumi/eslint-config-react": "^5.3.1",
     "@inabagumi/prettier-config": "^1.1.2",
     "@types/lodash": "^4.14.160",
