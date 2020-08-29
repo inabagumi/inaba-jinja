@@ -1254,10 +1254,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@docusaurus/lqip-loader@^2.0.0-alpha.61":
-  version "2.0.0-alpha.61"
-  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.61.tgz#a419632a037c0cd43091cc62271eae6caec8acc4"
-  integrity sha512-bSWGj2Ra7rUyXmeMfxETc0eMAZgUsxXHK5QVJpLAuJevOzTBoMr+D0srTN9P+RDWZjfjnwoTO/+UhvrhnA0wSg==
+"@docusaurus/lqip-loader@^2.0.0-alpha.62":
+  version "2.0.0-alpha.62"
+  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.62.tgz#d4718c810e85cbbedfd4a5bfbcc353d08d80ded0"
+  integrity sha512-vnAnTI5K4KMps6yRrpszFpWfvvZc5vGiUHGIqnNZ8eYxifUgl81lEZKKDVK5peQRFj7ZJN5K9iKNmTr0Nz4SwQ==
   dependencies:
     loader-utils "^1.2.3"
     lodash.sortby "^4.7.0"
