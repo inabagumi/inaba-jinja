@@ -19,7 +19,7 @@
     "@inabagumi/eslint-config-react": "^5.3.1",
     "@inabagumi/prettier-config": "^1.1.2",
     "@types/node": "^12.12.47",
-    "@types/react": "^16.9.48",
+    "@types/react": "^16.9.49",
     "eslint": "^7.7.0",
     "prettier": "^2.1.1",
     "standard-version": "^9.0.0",
