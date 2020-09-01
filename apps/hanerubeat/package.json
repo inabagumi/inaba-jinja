@@ -11,7 +11,7 @@
   },
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
-    "@inabagumi/eslint-config-react": "^5.3.1",
+    "@inabagumi/eslint-config-react": "^6.0.1",
     "@inabagumi/prettier-config": "^1.1.2",
     "@types/node": "^12.12.47",
     "@types/react": "^16.9.49",
@@ -26,7 +26,11 @@
   "eslintConfig": {
     "extends": [
       "@inabagumi/react"
-    ]
+    ],
+    "parserOptions": {
+      "project": "tsconfig.json"
+    },
+    "root": true
   },
   "homepage": "https://hanerubeat.app/",
   "name": "@inabagumi/hanerubeat",
@@ -37,7 +41,7 @@
     "dev": "react-scripts start",
     "format": "prettier --ignore-path .gitignore --write .",
     "format-check": "prettier --ignore-path .gitignore --check .",
-    "now-build": "${npm_execpath} run build"
+    "lint": "eslint --ext .js,.ts,.tsx --ignore-path .gitignore ."
   },
   "version": "2.0.0"
 }

@@ -113,6 +113,7 @@ const Heartbeat: FC = () => {
         </Button>
       </Controls>
 
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
       <audio crossOrigin="anonymous" loop preload="none" ref={audioRef}>
         <source src={oggPath} type="audio/ogg" />
         <source src={mp3Path} type="audio/mp3" />
