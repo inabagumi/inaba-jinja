@@ -22,8 +22,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({
 }) => {
   if (!params?.id) throw new TypeError('ID is required.')
 
-  const id = Array.isArray(params.id) ? params.id[0] : params.id
-  const fortune = await getFortune(id).catch(() => undefined)
+  const fortune = await getFortune(params.id).catch(() => undefined)
 
   return {
     props: {

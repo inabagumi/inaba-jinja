@@ -5,7 +5,11 @@ declare module '*.jpg' {
   export const preSrc: string
   export const src: string
 }
-declare module '*.png'
+declare module '*.png' {
+  const url: string
+
+  export default url
+}
 
 declare module '*.svg' {
   import { FC, ReactSVGElement, SVGProps } from 'react'

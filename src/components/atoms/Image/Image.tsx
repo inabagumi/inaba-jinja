@@ -1,20 +1,25 @@
 import clsx from 'clsx'
 import React, { FC } from 'react'
 
-const half = (number: number | undefined): number | undefined =>
-  number && number / 2
+const half = (number: number): number => number / 2
 
 type Props = {
   alt?: string
   className?: string
-  height: number
+  height?: number
   src: string
-  width: number
+  width?: number
 }
 
 const Image: FC<Props> = ({ alt, className, height, src, width }) => {
-  const clientWidth = half(width)
-  const clientHeight = half(height)
+  const clientWidth = width && half(width)
+  const clientHeight = height && half(height)
+  const srcSet = [
+    clientWidth && `${src}?w=${clientWidth} 1x`,
+    width && `${src}?w=${width} 2x`
+  ]
+    .filter(Boolean)
+    .join(',')
 
   return (
     <>
@@ -28,8 +33,8 @@ const Image: FC<Props> = ({ alt, className, height, src, width }) => {
           alt={alt}
           className={clsx('image', className)}
           height={clientHeight}
-          src={`${src}?w=${clientWidth}`}
-          srcSet={`${src}?w=${clientWidth} 1x, ${src}?w=${width} 2x`}
+          src={clientWidth ? `${src}?w=${clientWidth}` : src}
+          srcSet={srcSet || undefined}
           width={clientWidth}
         />
       </picture>

@@ -12,7 +12,7 @@ export { getStaticPaths, getStaticProps } from '@/pages/kuji/[id]'
 const SharePage: NextPage<KujiProps> = ({ fortune }) => {
   useEffect(() => {
     requestAnimationFrame(() => {
-      Router.replace('/')
+      void Router.replace('/')
     })
   }, [])
 
