@@ -17,25 +17,25 @@ void main(void) {
 }
 `
 
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 export default class ChromaKeyFilter extends Filter {
-  public constructor(keyColor = '#00ff00') {
+  constructor(keyColor = '#00ff00') {
     super(undefined, fragmentShader)
 
     this.uniforms.keyColor = new Float32Array(3)
     this.keyColor = keyColor
   }
 
-  public get keyColor(): string {
+  get keyColor(): string {
     const hex = utils.rgb2hex(this.uniforms.keyColor)
 
     return utils.hex2string(hex)
   }
 
-  public set keyColor(value: string) {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
+  set keyColor(value: string) {
     const hex = utils.string2hex(value)
 
     utils.hex2rgb(hex, this.uniforms.keyColor)
   }
 }
+/* eslint-enable @typescript-eslint/no-unsafe-member-access */

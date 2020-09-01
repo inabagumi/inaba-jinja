@@ -29,6 +29,7 @@ const Overlay: FC<Props> = ({ asset }) => {
   return (
     <>
       <Viewport
+        /* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access */
         interaction={app.renderer.plugins.interaction}
         screenHeight={app.screen.height}
         screenWidth={app.screen.width}
