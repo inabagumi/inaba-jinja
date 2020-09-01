@@ -64,10 +64,10 @@
     "extends": [
       "@inabagumi/react"
     ],
-    "root": true,
-    "rules": {
-      "@typescript-eslint/camelcase": "off"
-    }
+    "parserOptions": {
+      "project": "tsconfig.json"
+    },
+    "root": true
   },
   "homepage": "https://inaba-jinja.com",
   "husky": {

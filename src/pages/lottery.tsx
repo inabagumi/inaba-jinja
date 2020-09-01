@@ -29,10 +29,10 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
 
 const LotteryPage: NextPage<Props> = ({ id }) => {
   useEffect(() => {
-    Router.prefetch('/kuji/[id]', `/kuji/${id}`)
+    void Router.prefetch('/kuji/[id]', `/kuji/${id}`)
 
     const timeoutId = setTimeout(() => {
-      Router.replace('/kuji/[id]', `/kuji/${id}`)
+      void Router.replace('/kuji/[id]', `/kuji/${id}`)
     }, 1000 * DELAY_SECONDS)
 
     return (): void => {
