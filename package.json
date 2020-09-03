@@ -39,7 +39,7 @@
     "@inabagumi/eslint-config-react": "^6.0.1",
     "@inabagumi/prettier-config": "^1.1.2",
     "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.0.0",
+    "@testing-library/react": "^11.0.1",
     "@types/gtag.js": "^0.0.3",
     "@types/jest": "^26.0.13",
     "@types/mdx-js__react": "^1.5.2",
