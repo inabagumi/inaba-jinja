@@ -14,7 +14,7 @@
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
   "dependencies": {
-    "@docusaurus/lqip-loader": "^2.0.0-alpha.62",
+    "@docusaurus/lqip-loader": "^2.0.0-alpha.63",
     "@mdx-js/loader": "^1.6.16",
     "@next/mdx": "^9.5.3",
     "@next/plugin-google-analytics": "^9.5.3",
