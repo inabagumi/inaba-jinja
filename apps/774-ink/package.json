@@ -11,7 +11,7 @@
     "@types/node": "^14.10.1",
     "@types/react": "^16.9.49",
     "@types/web-app-manifest": "^1.0.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.9.0",
     "file-loader": "^6.1.0",
     "prettier": "^2.1.1",
     "typescript": "^4.0.2"
