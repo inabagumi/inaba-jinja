@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Router from 'next/router'
+import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
 
@@ -10,11 +10,15 @@ import { Props as KujiProps } from '@/pages/kuji/[id]'
 export { getStaticPaths, getStaticProps } from '@/pages/kuji/[id]'
 
 const SharePage: NextPage<KujiProps> = ({ fortune }) => {
+  const router = useRouter()
+
   useEffect(() => {
+    void router.prefetch('/')
+
     requestAnimationFrame(() => {
-      void Router.replace('/')
+      void router.replace('/')
     })
-  }, [])
+  }, [router])
 
   if (!fortune) return null
 
