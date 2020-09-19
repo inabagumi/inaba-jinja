@@ -1,4 +1,4 @@
-import Router from 'next/router'
+import { useRouter } from 'next/router'
 import NProgress from 'nprogress'
 import React, { FC, useCallback, useEffect } from 'react'
 
@@ -7,6 +7,8 @@ NProgress.configure({
 })
 
 const Progress: FC = () => {
+  const router = useRouter()
+
   const handleRouteChangeStart = useCallback(() => {
     NProgress.start()
   }, [])
@@ -20,19 +22,20 @@ const Progress: FC = () => {
   }, [])
 
   useEffect(() => {
-    Router.events.on('routeChangeStart', handleRouteChangeStart)
-    Router.events.on('routeChangeComplete', handleRouteChangeComplete)
-    Router.events.on('routeChangeError', handleRouteChangeError)
+    router.events.on('routeChangeStart', handleRouteChangeStart)
+    router.events.on('routeChangeComplete', handleRouteChangeComplete)
+    router.events.on('routeChangeError', handleRouteChangeError)
 
     return (): void => {
-      Router.events.off('routeChangeStart', handleRouteChangeStart)
-      Router.events.off('routeChangeComplete', handleRouteChangeComplete)
-      Router.events.off('routeChangeError', handleRouteChangeError)
+      router.events.off('routeChangeStart', handleRouteChangeStart)
+      router.events.off('routeChangeComplete', handleRouteChangeComplete)
+      router.events.off('routeChangeError', handleRouteChangeError)
     }
   }, [
     handleRouteChangeComplete,
     handleRouteChangeError,
-    handleRouteChangeStart
+    handleRouteChangeStart,
+    router
   ])
 
   return (

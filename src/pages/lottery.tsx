@@ -1,6 +1,6 @@
 import { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
-import Router from 'next/router'
+import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
 
@@ -28,17 +28,19 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
 }
 
 const LotteryPage: NextPage<Props> = ({ id }) => {
+  const router = useRouter()
+
   useEffect(() => {
-    void Router.prefetch('/kuji/[id]', `/kuji/${id}`)
+    void router.prefetch(`/kuji/${id}`)
 
     const timeoutId = setTimeout(() => {
-      void Router.replace('/kuji/[id]', `/kuji/${id}`)
+      void router.replace(`/kuji/${id}`)
     }, 1000 * DELAY_SECONDS)
 
     return (): void => {
       clearTimeout(timeoutId)
     }
-  }, [id])
+  }, [id, router])
 
   return (
     <>
