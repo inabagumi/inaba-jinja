@@ -110,7 +110,7 @@ const Heartbeat: NextPage = () => {
       <NextSeo
         canonical={new URL('/', process.env.NEXT_PUBLIC_BASE_URL).toString()}
         title={process.env.NEXT_PUBLIC_TITLE}
-        titleTemplate={undefined}
+        titleTemplate="%s"
       />
 
       <Container>
