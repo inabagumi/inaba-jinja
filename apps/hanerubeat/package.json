@@ -6,8 +6,14 @@
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
+    "file-loader": "^6.1.0",
+    "next": "^9.5.3",
+    "next-pwa": "^3.1.4",
+    "next-seo": "^4.7.3",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0",
+    "url-loader": "^4.1.0"
   },
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
@@ -16,8 +22,8 @@
     "@types/node": "^12.12.47",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
+    "eslint": "^7.9.0",
     "prettier": "^2.1.2",
-    "react-scripts": "^3.4.3",
     "typescript": "^4.0.3"
   },
   "engines": {
@@ -37,11 +43,11 @@
   "prettier": "@inabagumi/prettier-config",
   "private": true,
   "scripts": {
-    "build": "react-scripts build",
-    "dev": "react-scripts start",
+    "build": "next build",
+    "dev": "next",
     "format": "prettier --ignore-path .gitignore --write .",
     "format-check": "prettier --ignore-path .gitignore --check .",
-    "lint": "eslint --ext .js,.ts,.tsx --ignore-path .gitignore ."
+    "lint": "eslint --ignore-path .gitignore ."
   },
   "version": "2.0.0"
 }

@@ -1,7 +1,7 @@
 import { keyframes } from '@emotion/core'
 import styled from '@emotion/styled'
 import React, { FC } from 'react'
-import { ReactComponent as HeartIcon } from './Heart.svg'
+import { MdFavorite } from 'react-icons/md'
 
 const beat = keyframes`
   0% {
@@ -17,7 +17,7 @@ const beat = keyframes`
   }
 `
 
-const AnimatedHeart = styled(HeartIcon)`
+const AnimatedHeart = styled(MdFavorite)`
   animation: ${beat} 0.8s ease-in-out infinite;
   color: #fff59d;
   display: block;
