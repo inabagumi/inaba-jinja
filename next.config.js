@@ -123,8 +123,15 @@ const nextConfig = {
   },
   pageExtensions: ['mdx', 'tsx'],
   pwa: {
+    buildExcludes: [/\.map$/, /\.(?:jpg|png)$/],
     dest: '.next/static',
     disable: process.env.NODE_ENV === 'development',
+    publicExcludes: [
+      '!favicon.ico',
+      '!manifest.webmanifest',
+      '!robots.txt',
+      '!**/*.png'
+    ],
     sw: '/service-worker.js'
   },
   reactStrictMode: true,
