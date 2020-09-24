@@ -1,8 +1,9 @@
+const nextMDX = require('@next/mdx')
 const SentryWebpackPlugin = require('@sentry/webpack-plugin')
 const cspBuilder = require('content-security-policy-builder')
+const withPWA = require('next-pwa')
 
-const withMDX = require('@next/mdx')()
-const withOffline = require('next-offline')
+const withMDX = nextMDX()
 
 const release = [
   process.env.npm_package_name,
@@ -21,100 +22,124 @@ const nextConfig = {
     productionBrowserSourceMaps: true
   },
   generateEtags: false,
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-  headers: () => [
-    {
-      headers: [
-        {
-          key: 'cache-control',
-          value:
-            'max-age=600, public, s-maxage=120, stale-if-error=600, stale-while-revalidate=300'
-        },
-        {
-          key: 'content-security-policy',
-          value: cspBuilder({
-            directives: {
-              baseUri: ["'none'"],
-              blockAllMixedContent: true,
-              connectSrc: [
-                "'self'",
-                'https://images.ctfassets.net',
-                'https://www.google-analytics.com',
-                'https://www.googletagmanager.com',
-                'https://*.imgix.net',
-                'https://*.ingest.sentry.io'
-              ],
-              defaultSrc: ["'self'"],
-              fontSrc: ["'none'"],
-              formAction: ["'none'"],
-              frameAncestors: ["'none'"],
-              imgSrc: [
-                "'self'",
-                'data:',
-                'https://images.ctfassets.net',
-                'https://www.google-analytics.com',
-                'https://www.googletagmanager.com',
-                'https://*.imgix.net'
-              ],
-              manifestSrc: ["'self'"],
-              objectSrc: ["'none'"],
-              ...(process.env.CSP_REPORT_URL
-                ? {
-                    reportUri: process.env.CSP_REPORT_URL
-                  }
-                : {}),
-              scriptSrc: [
-                "'self'",
-                "'unsafe-inline'",
-                "'unsafe-eval'",
-                'https://www.google-analytics.com',
-                'https://www.googletagmanager.com'
-              ],
-              styleSrc: ["'self'", "'unsafe-inline'"],
-              workerSrc: ["'self'"]
-            }
-          })
-        },
-        {
-          key: 'referrer-policy',
-          value: 'same-origin, strict-origin-when-cross-origin'
-        }
-      ],
-      source: '/((?!_next).*)'
-    },
-    {
-      headers: [
-        {
-          key: 'cache-control',
-          value: 'max-age=0'
-        },
-        {
-          key: 'service-worker-allowed',
-          value: '/'
-        }
-      ],
-      source: '/service-worker.js(.map)?'
-    },
-    {
-      headers: [
-        {
-          key: 'content-type',
-          value: 'application/manifest+json'
-        }
-      ],
-      source: '/manifest.webmanifest'
-    }
-  ],
+  headers() {
+    return [
+      {
+        headers: [
+          {
+            key: 'cache-control',
+            value:
+              'max-age=600, public, s-maxage=120, stale-if-error=600, stale-while-revalidate=300'
+          },
+          {
+            key: 'content-security-policy',
+            value: cspBuilder({
+              directives: {
+                baseUri: ["'none'"],
+                blockAllMixedContent: true,
+                connectSrc: [
+                  "'self'",
+                  'https://images.ctfassets.net',
+                  'https://www.google-analytics.com',
+                  'https://www.googletagmanager.com',
+                  'https://*.imgix.net',
+                  'https://*.ingest.sentry.io'
+                ],
+                defaultSrc: ["'self'"],
+                fontSrc: ["'none'"],
+                formAction: ["'none'"],
+                frameAncestors: ["'none'"],
+                imgSrc: [
+                  "'self'",
+                  'data:',
+                  'https://images.ctfassets.net',
+                  'https://www.google-analytics.com',
+                  'https://www.googletagmanager.com',
+                  'https://*.imgix.net'
+                ],
+                manifestSrc: ["'self'"],
+                objectSrc: ["'none'"],
+                ...(process.env.CSP_REPORT_URL
+                  ? {
+                      reportUri: process.env.CSP_REPORT_URL
+                    }
+                  : {}),
+                scriptSrc: [
+                  "'self'",
+                  "'unsafe-inline'",
+                  "'unsafe-eval'",
+                  'https://www.google-analytics.com',
+                  'https://www.googletagmanager.com'
+                ],
+                styleSrc: ["'self'", "'unsafe-inline'"],
+                workerSrc: ["'self'"]
+              }
+            })
+          },
+          {
+            key: 'referrer-policy',
+            value: 'same-origin, strict-origin-when-cross-origin'
+          }
+        ],
+        source: '/((?!_next).*)'
+      },
+      {
+        headers: [
+          {
+            key: 'cache-control',
+            value: 'max-age=0'
+          }
+        ],
+        source: '/service-worker.js(.map)?'
+      },
+      {
+        headers: [
+          {
+            key: 'service-worker-allowed',
+            value: '/'
+          }
+        ],
+        source: '/service-worker.js'
+      },
+      {
+        headers: [
+          {
+            key: 'cache-control',
+            value: 'public,max-age=31536000,immutable'
+          }
+        ],
+        source: '/workbox-:hash.js(.map)?'
+      },
+      {
+        headers: [
+          {
+            key: 'content-type',
+            value: 'application/manifest+json'
+          }
+        ],
+        source: '/manifest.webmanifest'
+      }
+    ]
+  },
   pageExtensions: ['mdx', 'tsx'],
+  pwa: {
+    dest: '.next/static',
+    disable: process.env.NODE_ENV === 'development',
+    sw: '/service-worker.js'
+  },
   reactStrictMode: true,
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-  rewrites: () => [
-    {
-      destination: '/_next/static/service-worker.js$1',
-      source: '/service-worker.js(.map)?'
-    }
-  ],
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+  rewrites() {
+    return [
+      {
+        destination: '/_next/static/service-worker.js$1',
+        source: '/service-worker.js(.map)?'
+      },
+      {
+        destination: '/_next/static/workbox-:hash.js$2',
+        source: '/workbox-:hash.js(.map)?'
+      }
+    ]
+  },
   webpack(config, { defaultLoaders, dev }) {
     const urlLoader = {
       loader: 'url-loader',
@@ -179,43 +204,10 @@ const nextConfig = {
     }
 
     return config
-  },
-  workboxOpts: {
-    clientsClaim: true,
-    include: [
-      /\/pages\/(?:_[^.]+)\.module\.js$/,
-      /\/runtime\/(?:webpack|main)-[0-9a-f]{20}\.module\.js$/,
-      /\/chunks\/(?:commons|framework)\.[0-9a-f]{20}\.module\.js$/
-    ],
-    runtimeCaching: [
-      {
-        handler: 'NetworkFirst',
-        urlPattern: /\/(?:disclaimer|kuji\/\w|lottery|privacy|share\/\w+)?$/
-      },
-      {
-        handler: 'NetworkFirst',
-        urlPattern: /\/_next\/data\/[^/]+\/lottery\.json$/
-      },
-      {
-        handler: 'CacheFirst',
-        urlPattern: /\.(?:ico|jpe?g|js|json|png|webp)$/i
-      },
-      {
-        handler: 'CacheFirst',
-        options: {
-          cacheableResponse: {
-            statuses: [0, 200]
-          }
-        },
-        urlPattern: /^https:\/\/(?:[^.]+\.imgix\.net|images\.ctfassets\.net)\//i
-      }
-    ],
-    skipWaiting: true,
-    swDest: 'static/service-worker.js'
   }
 }
 
-module.exports = [withMDX, withOffline].reduce(
+module.exports = [withMDX, withPWA].reduce(
   (config, plugin) => plugin(config),
   nextConfig
 )
