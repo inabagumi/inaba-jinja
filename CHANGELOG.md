@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.1](https://github.com/inabagumi/inaba-jinja/compare/v1.12.0...v1.12.1) (2020-09-24)
+
+
+### Bug Fixes
+
+* **pwa:** exclude unnecessary files from cache ([#873](https://github.com/inabagumi/inaba-jinja/issues/873)) ([3cd0206](https://github.com/inabagumi/inaba-jinja/commit/3cd0206ed83e32997d38df3b7198cb9639a3ad01))
+
 ## [1.12.0](https://github.com/inabagumi/inaba-jinja/compare/v1.11.6...v1.12.0) (2020-09-24)
 
 ### [1.11.6](https://github.com/inabagumi/inaba-jinja/compare/v1.11.5...v1.11.6) (2020-09-19)
