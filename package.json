@@ -26,7 +26,7 @@
     "contentful": "^7.14.6",
     "file-loader": "^6.1.0",
     "next": "^9.5.3",
-    "next-offline": "^5.0.2",
+    "next-pwa": "^3.1.4",
     "next-seo": "^4.7.3",
     "nprogress": "^1.0.0-1",
     "react": "^16.13.1",
