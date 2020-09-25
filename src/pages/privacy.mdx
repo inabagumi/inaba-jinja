@@ -1,15 +1,8 @@
-import { NextSeo } from 'next-seo'
-
-import SingleDoc from '@/components/templates/SingleDoc'
-import fullPath from '@/helpers/fullPath'
+import MarkdownDoc from '@/components/MarkdownDoc'
 
 export const title = 'プライバシーポリシー'
-export default ({ children, title }) => (
-  <>
-    <NextSeo canonical={fullPath('/privacy')} title={title} />
-    <SingleDoc title={title}>{children}</SingleDoc>
-  </>
-)
+export const path = '/privacy'
+export default MarkdownDoc
 
 当ウェブサービスでは[Googleアナリティクス](https://developers.google.com/analytics/?hl=ja)を利用してトラフィックデータを収集しています。
 収集されたトラフィックデータは匿名化され、あなたの個人が特定されることはありません。

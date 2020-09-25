@@ -1,14 +1,6 @@
-import { NextSeo } from 'next-seo'
-
-import SingleDoc from '@/components/templates/SingleDoc'
-import fullPath from '@/helpers/fullPath'
+import MarkdownDoc from '@/components/MarkdownDoc'
 
 export const title = 'ページが見つかりません'
-export default ({ children, title }) => (
-  <>
-    <NextSeo canonical={fullPath('/disclaimer')} title={title} />
-    <SingleDoc title={title}>{children}</SingleDoc>
-  </>
-)
+export default MarkdownDoc
 
 申し訳ありませんがお探しのページを見つけられませんでした。
