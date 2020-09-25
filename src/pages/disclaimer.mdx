@@ -1,15 +1,8 @@
-import { NextSeo } from 'next-seo'
-
-import SingleDoc from '@/components/templates/SingleDoc'
-import fullPath from '@/helpers/fullPath'
+import MarkdownDoc from '@/components/MarkdownDoc'
 
 export const title = '免責事項'
-export default ({ children, title }) => (
-  <>
-    <NextSeo canonical={fullPath('/disclaimer')} title={title} />
-    <SingleDoc title={title}>{children}</SingleDoc>
-  </>
-)
+export const path = '/disclaimer'
+export default MarkdownDoc
 
 因幡神社は[因幡はねるさん](https://www.youtube.com/channel/UC0Owc36U9lOyi9Gx9Ic-4qg)が所属する[774 inc.](https://www.774.ai/) が定める[二次創作ガイドライン](https://www.774.ai/guideline)に従って因幡はねるさんのファンによって開発と運用が行われている非公式なウェブページです。
 このウェブページに対する問い合わせを因幡はねるさんや関連する個人、もしくは団体に対して行うのはお止めください。

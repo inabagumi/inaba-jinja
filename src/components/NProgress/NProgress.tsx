@@ -1,6 +1,27 @@
+import { Global, css } from '@emotion/react'
 import { useRouter } from 'next/router'
 import NProgress from 'nprogress'
 import React, { FC, useCallback, useEffect } from 'react'
+
+const globalStyles = css`
+  /**
+  * see https://github.com/rstacruz/nprogress/blob/v1.0.0-1/css/nprogress.css
+  */
+  #nprogress {
+    pointer-events: none;
+  }
+
+  #nprogress .bar {
+    background-color: #ff5722;
+    height: 2px;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1031;
+  }
+`
 
 NProgress.configure({
   showSpinner: false
@@ -38,27 +59,7 @@ const Progress: FC = () => {
     router
   ])
 
-  return (
-    <style global jsx>{`
-      /**
-       * see https://github.com/rstacruz/nprogress/blob/v1.0.0-1/css/nprogress.css
-       */
-      #nprogress {
-        pointer-events: none;
-      }
-
-      #nprogress .bar {
-        background-color: #ff5722;
-        height: 2px;
-        left: 0;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1031;
-      }
-    `}</style>
-  )
+  return <Global styles={globalStyles} />
 }
 
 export default Progress

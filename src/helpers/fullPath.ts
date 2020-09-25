@@ -1,3 +1,7 @@
 import { homepage as baseUrl } from '../../package.json'
 
-export default (path: string): string => new URL(path, baseUrl).toString()
+function fullPath(path: string): string {
+  return new URL(path, baseUrl).toString()
+}
+
+export default fullPath
