@@ -2,7 +2,7 @@ import { cache } from '@emotion/css'
 import { CacheProvider, Global, css } from '@emotion/react'
 import { AppProps, NextWebVitalsMetric } from 'next/app'
 import { DefaultSeo, LogoJsonLd } from 'next-seo'
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 
 import NProgress from '@/components/NProgress'
 import fullPath from '@/helpers/fullPath'
@@ -59,32 +59,40 @@ export function reportWebVitals(metric: NextWebVitalsMetric): void {
   })
 }
 
-const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
-  <>
-    <DefaultSeo
-      openGraph={{
-        type: 'article'
-      }}
-      twitter={{
-        cardType: 'summary_large_image',
-        site: '@Inaba_Jinja'
-      }}
-      titleTemplate="%s - 因幡神社"
-    />
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
+  useEffect(() => {
+    const emotionStyles = document.getElementById('emotion-server-side')
 
-    <LogoJsonLd
-      logo={fullPath('/images/favicon-192x192.png')}
-      url={fullPath('/')}
-    />
+    emotionStyles?.parentNode?.removeChild(emotionStyles)
+  }, [])
 
-    <CacheProvider value={cache}>
-      <Global styles={globalStyles} />
+  return (
+    <>
+      <DefaultSeo
+        openGraph={{
+          type: 'article'
+        }}
+        twitter={{
+          cardType: 'summary_large_image',
+          site: '@Inaba_Jinja'
+        }}
+        titleTemplate="%s - 因幡神社"
+      />
 
-      <Component {...pageProps} />
+      <LogoJsonLd
+        logo={fullPath('/images/favicon-192x192.png')}
+        url={fullPath('/')}
+      />
 
-      <NProgress />
-    </CacheProvider>
-  </>
-)
+      <CacheProvider value={cache}>
+        <Global styles={globalStyles} />
+
+        <Component {...pageProps} />
+
+        <NProgress />
+      </CacheProvider>
+    </>
+  )
+}
 
 export default MyApp
