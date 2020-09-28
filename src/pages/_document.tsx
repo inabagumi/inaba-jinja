@@ -24,6 +24,7 @@ class MyDocument extends Document {
           <style
             data-emotion-css={styles.ids.join(' ')}
             dangerouslySetInnerHTML={{ __html: styles.css }}
+            id="emotion-server-side"
           />
         </>
       )
