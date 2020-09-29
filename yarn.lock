@@ -2212,10 +2212,10 @@
   resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-1.0.6.tgz#a9ca4b70a18b270ccb2bc0aaafefd1d486b7ea74"
   integrity sha512-W+bw9ds02rAQaMvaLYxAbJ6cvguW/iJXNT6lTssS1ps6QdrMKttqEAMEG/b5CR8TZl3/L7/lH0ZV5nNR1LXikA==
 
-"@types/testing-library__jest-dom@^5.9.1", "@types/testing-library__jest-dom@^5.9.3":
-  version "5.9.3"
-  resolved "https://registry.yarnpkg.com/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.9.3.tgz#574039e210140a536c6ec891063289fb742a75eb"
-  integrity sha512-5YxiCFA2vk0cxq2LIxYgHBpFlnJvMH9bkUIVNin+1GXT+LZgVOgXBeEyyo2ZrGXMO/KWe1ZV3p7Kb6LJAvJasw==
+"@types/testing-library__jest-dom@^5.9.1", "@types/testing-library__jest-dom@^5.9.4":
+  version "5.9.4"
+  resolved "https://registry.yarnpkg.com/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.9.4.tgz#f5e009540bbea7b82745e352038c60db7320c327"
+  integrity sha512-6spmpkKOCVCO9XolAR23gfv09Nfd4QByRM3WbnYnPhVfjmOzEKlNrcj6GqFLZKduUvtJIH7Mf5t2TY6rs93zDA==
   dependencies:
     "@types/jest" "*"
 
