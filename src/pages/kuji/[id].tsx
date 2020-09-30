@@ -37,6 +37,12 @@ const ShareButton = styled.a`
   line-height: 1;
   padding: 0.5rem 1.5rem;
   text-decoration: none;
+
+  :hover {
+    background-color: #005fd1;
+    border-color: #005fd1;
+    color: #fff;
+  }
 `
 
 export type Params = {
