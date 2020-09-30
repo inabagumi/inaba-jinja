@@ -7,7 +7,6 @@ import Image from '@/components/Image'
 import Page from '@/components/Layout'
 import SingleWindow from '@/components/SimpleWindow'
 import getFortune from '@/contentful/getFortune'
-import getFortunes from '@/contentful/getFortunes'
 import fullPath from '@/helpers/fullPath'
 import getTweetLink from '@/helpers/getTweetLink'
 import NotFound from '@/pages/404.mdx'
@@ -45,35 +44,38 @@ export type Params = {
 }
 
 export type Props = {
-  fortune?: FortuneEntry
+  fortune: FortuneEntry | null
 }
 
 export const getStaticProps: GetStaticProps<Props, Params> = async ({
   params
 }) => {
-  if (!params?.id) throw new TypeError('ID is required.')
+  const id = params?.id
 
-  const fortune = await getFortune(params.id).catch(() => undefined)
+  if (id) {
+    const fortune = await getFortune(id).catch(() => null)
+
+    return {
+      props: {
+        fortune
+      },
+      revalidate: 5
+    }
+  }
 
   return {
     props: {
-      fortune
-    }
+      fortune: null
+    },
+    revalidate: 5
   }
 }
 
-export const getStaticPaths: GetStaticPaths<Params> = async () => {
-  const ids = await getFortunes().catch((): string[] => [])
-  const paths = ids.map((id) => ({
-    params: {
-      id
-    }
-  }))
-
-  return {
-    fallback: false,
-    paths
-  }
+export const getStaticPaths: GetStaticPaths<Params> = () => {
+  return Promise.resolve({
+    fallback: 'unstable_blocking',
+    paths: []
+  })
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
