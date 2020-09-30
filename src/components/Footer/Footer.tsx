@@ -45,6 +45,16 @@ const Footer: FC = () => {
       <nav>
         <NavLinks>
           <NavLinksItem>
+            <Link href="/about" passHref prefetch={false}>
+              <NavLink>因幡神社とは</NavLink>
+            </Link>
+          </NavLinksItem>
+          <NavLinksItem>
+            <Link href="/privacy" passHref prefetch={false}>
+              <NavLink>プライバシーポリシー</NavLink>
+            </Link>
+          </NavLinksItem>
+          <NavLinksItem>
             <NavLink
               className="footer__link"
               href="https://haneru.dev/"
@@ -53,16 +63,6 @@ const Footer: FC = () => {
             >
               運営者情報
             </NavLink>
-          </NavLinksItem>
-          <NavLinksItem>
-            <Link href="/disclaimer" passHref prefetch={false}>
-              <NavLink>免責事項</NavLink>
-            </Link>
-          </NavLinksItem>
-          <NavLinksItem>
-            <Link href="/privacy" passHref prefetch={false}>
-              <NavLink>プライバシーポリシー</NavLink>
-            </Link>
           </NavLinksItem>
         </NavLinks>
       </nav>

@@ -135,7 +135,16 @@ const nextConfig = {
     sw: '/service-worker.js'
   },
   reactStrictMode: true,
-  rewrites() {
+  async redirects() {
+    return [
+      {
+        destination: '/about',
+        permanent: true,
+        source: '/disclaimer'
+      }
+    ]
+  },
+  async rewrites() {
     return [
       {
         destination: '/_next/static/service-worker.js$1',
