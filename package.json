@@ -14,7 +14,7 @@
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
   "dependencies": {
-    "@docusaurus/lqip-loader": "^2.0.0-alpha.64",
+    "@docusaurus/lqip-loader": "^2.0.0-alpha.65",
     "@emotion/css": "^11.0.0-next.17",
     "@emotion/react": "^11.0.0-next.17",
     "@emotion/server": "^11.0.0-next.17",
