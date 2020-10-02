@@ -4,7 +4,7 @@ title: SHINJU DATE
 
 import Image from '@theme/IdealImage'
 
-<Image alt="SHINJU DATE" img={require('../src/data/showcase/shinju-date.png')} />
+<Image alt="SHINJU DATE" img={require('../src/data/showcase/shinju-date.jpg')} />
 
 - [shinju.date](https://shinju.date/)
 - [リポジトリ (inabagumi/shinju-date)](https://github.com/inabagumi/shinju-date)

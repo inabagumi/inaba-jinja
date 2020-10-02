@@ -34,7 +34,7 @@ const products: Product[] = [
   {
     description: '774 inc. 所属タレントの動画を検索できるウェブサービスです。',
     learnMore: 'docs/shinju-date',
-    preview: require('./showcase/shinju-date.png'),
+    preview: require('./showcase/shinju-date.jpg'),
     title: 'SHINJU DATE',
     website: 'https://shinju.date/'
   },
