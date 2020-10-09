@@ -14,7 +14,7 @@ import Image from '@theme/IdealImage'
 - [Node.js](https://nodejs.org/ja/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
-- [Gatsby](https://www.gatsbyjs.org/)
+- [Next.js](https://nextjs.org/)
 
 ## 公開日
 
