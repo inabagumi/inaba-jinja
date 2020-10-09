@@ -35,7 +35,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sharp": "^0.26.1",
-    "url-loader": "^4.1.0"
+    "url-loader": "^4.1.1"
   },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
