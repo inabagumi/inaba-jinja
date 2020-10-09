@@ -27,7 +27,7 @@
     "@svgr/webpack": "^5.4.0",
     "content-security-policy-builder": "^2.1.0",
     "contentful": "^7.14.7",
-    "file-loader": "^6.1.0",
+    "file-loader": "^6.1.1",
     "next": "^9.5.4",
     "next-pwa": "^3.1.5",
     "next-seo": "^4.11.0",
