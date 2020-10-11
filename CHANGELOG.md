@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/inabagumi/inaba-jinja/compare/v1.12.1...v1.13.0) (2020-10-11)
+
+
+### Features
+
+* **about:** add new page ([#894](https://github.com/inabagumi/inaba-jinja/issues/894)) ([c40eee2](https://github.com/inabagumi/inaba-jinja/commit/c40eee2eb7ea5a8cfcef8feb6632f47962845e40))
+
+
+### Bug Fixes
+
+* **app:** remove prerendered styles ([#887](https://github.com/inabagumi/inaba-jinja/issues/887)) ([212a5b4](https://github.com/inabagumi/inaba-jinja/commit/212a5b42b7ac99ebca3b5d3a8293b579dc9a5a83))
+* **kuji:** add :hover style to share button ([#895](https://github.com/inabagumi/inaba-jinja/issues/895)) ([a1f64ce](https://github.com/inabagumi/inaba-jinja/commit/a1f64cee866b6bbba1ba286b91912a4cab8ec710))
+* **pwa:** add more assets to precache ([#896](https://github.com/inabagumi/inaba-jinja/issues/896)) ([f208ee3](https://github.com/inabagumi/inaba-jinja/commit/f208ee39c1203d8a35e7dfc941874f69c1e15984))
+* **type:** remove unused defined ([#877](https://github.com/inabagumi/inaba-jinja/issues/877)) ([f4d8263](https://github.com/inabagumi/inaba-jinja/commit/f4d82630e9db04976ca04e5847dbf5139d477fbe))
+
 ### [1.12.1](https://github.com/inabagumi/inaba-jinja/compare/v1.12.0...v1.12.1) (2020-09-24)
 
 
