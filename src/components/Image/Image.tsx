@@ -47,7 +47,7 @@ type Props = {
 }
 
 const Image: FC<Props> = ({ alt, className, height, preSrc, src, width }) => {
-  const imageRef = useRef<HTMLImageElement>()
+  const imageRef = useRef<HTMLImageElement>(null)
   const [isLoading, setIsLoading] = useState(true)
 
   const complete = useCallback(() => {
@@ -93,7 +93,6 @@ const Image: FC<Props> = ({ alt, className, height, preSrc, src, width }) => {
         onError={complete}
         onLoad={complete}
         preSrc={preSrc}
-        /* @ts-ignore */
         ref={imageRef}
         src={clientWidth ? `${src}?w=${clientWidth}` : src}
         srcSet={srcSet || undefined}
