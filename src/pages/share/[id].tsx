@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
@@ -6,8 +6,6 @@ import React, { useEffect } from 'react'
 
 import fullPath from '@/helpers/fullPath'
 import { Props as KujiProps } from '@/pages/kuji/[id]'
-
-export { getStaticPaths, getStaticProps } from '@/pages/kuji/[id]'
 
 const SharePage: NextPage<KujiProps> = ({ fortune }) => {
   const router = useRouter()
@@ -43,12 +41,18 @@ const SharePage: NextPage<KujiProps> = ({ fortune }) => {
       />
 
       <Head>
-        <noscript>
-          <meta content={`0;URL=${fullPath('/')}`} httpEquiv="refresh" />
-        </noscript>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<meta content="0;URL=${fullPath(
+              '/'
+            )}" http-equiv="refresh" />`
+          }}
+        />
       </Head>
     </>
   )
 }
 
 export default SharePage
+
+export { getStaticPaths, getStaticProps } from '@/pages/kuji/[id]'
