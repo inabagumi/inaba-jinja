@@ -1,4 +1,4 @@
-import { GetServerSideProps, NextPage } from 'next'
+import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
@@ -56,12 +56,13 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
       <Head>
         <link as="image" href={kujiImage} rel="preload" />
 
-        <noscript>
-          <meta
-            content={`${DELAY_SECONDS};URL=${fullPath(`/kuji/${id}`)}`}
-            httpEquiv="refresh"
-          />
-        </noscript>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<meta content="${DELAY_SECONDS};URL=${fullPath(
+              `/kuji/${id}`
+            )}" http-equiv="refresh" />`
+          }}
+        />
       </Head>
 
       <Page>
