@@ -1,6 +1,7 @@
-import styled from '@emotion/styled'
 import Link from 'next/link'
-import React, { FC } from 'react'
+import React from 'react'
+import type { FC } from 'react'
+import styled from 'styled-components'
 
 const Container = styled.footer`
   align-items: flex-start;

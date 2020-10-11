@@ -1,7 +1,8 @@
-import styled from '@emotion/styled'
+import type { NextPage } from 'next'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
-import React, { FC } from 'react'
+import React from 'react'
+import styled from 'styled-components'
 
 import cardImage from '@/assets/card.jpg'
 import BaseLogo from '@/assets/vertical-logo.svg'
@@ -75,7 +76,7 @@ const LotteryButton = styled.a`
   }
 `
 
-const HomePage: FC = () => (
+const HomePage: NextPage = () => (
   <>
     <NextSeo
       canonical={fullPath('/')}

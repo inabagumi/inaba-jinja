@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import type { FC } from 'react'
+import styled from 'styled-components'
 
 type ContainerProps = {
   h: number

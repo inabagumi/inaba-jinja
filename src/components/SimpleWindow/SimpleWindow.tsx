@@ -1,5 +1,6 @@
-import styled from '@emotion/styled'
-import React, { FC } from 'react'
+import React from 'react'
+import type { FC } from 'react'
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
   padding: 0 0.5rem;

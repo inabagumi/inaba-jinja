@@ -1,10 +1,9 @@
-import { keyframes } from '@emotion/react'
-import styled from '@emotion/styled'
 import { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useEffect } from 'react'
+import styled, { keyframes } from 'styled-components'
 
 import kujiImage from '@/assets/kuji.png'
 import Page from '@/components/Layout'
@@ -33,19 +32,6 @@ const LotteryBox = styled.img`
 
 type Props = {
   id: string
-}
-
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  const ids = await getFortunes().catch((): string[] => [])
-  const id = ids[Math.floor(Math.random() * ids.length)]
-
-  if (!id) throw new TypeError("Fortune doesn't exist.")
-
-  return {
-    props: {
-      id
-    }
-  }
 }
 
 const LotteryPage: NextPage<Props> = ({ id }) => {
@@ -93,3 +79,16 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
 }
 
 export default LotteryPage
+
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
+  const ids = await getFortunes().catch((): string[] => [])
+  const id = ids[Math.floor(Math.random() * ids.length)]
+
+  if (!id) throw new TypeError("Fortune doesn't exist.")
+
+  return {
+    props: {
+      id
+    }
+  }
+}

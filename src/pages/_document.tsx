@@ -1,5 +1,4 @@
-import { extractCritical } from '@emotion/server'
-import Document, {
+import NextDocument, {
   DocumentContext,
   DocumentInitialProps,
   Head,
@@ -8,27 +7,37 @@ import Document, {
   NextScript
 } from 'next/document'
 import React from 'react'
+import { ServerStyleSheet } from 'styled-components'
 
-class MyDocument extends Document {
+class Document extends NextDocument {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
-    const initialProps = await super.getInitialProps(ctx)
-    const styles = extractCritical(initialProps.html)
+    const sheet = new ServerStyleSheet()
+    let initialProps: DocumentInitialProps
 
-    return {
-      ...initialProps,
-      styles: (
+    try {
+      initialProps = await super.getInitialProps({
+        ...ctx,
+        renderPage: () =>
+          ctx.renderPage({
+            enhanceApp: (App) => (props) =>
+              sheet.collectStyles(<App {...props} />)
+          })
+      })
+      initialProps.styles = (
         <>
           {initialProps.styles}
-          <style
-            data-emotion-css={styles.ids.join(' ')}
-            dangerouslySetInnerHTML={{ __html: styles.css }}
-            id="emotion-server-side"
-          />
+          {sheet.getStyleElement()}
         </>
       )
+    } catch {
+      initialProps = await super.getInitialProps(ctx)
+    } finally {
+      sheet.seal()
     }
+
+    return initialProps
   }
 
   render(): JSX.Element {
@@ -69,4 +78,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default Document

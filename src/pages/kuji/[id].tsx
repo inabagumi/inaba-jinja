@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { BreadcrumbJsonLd, NextSeo } from 'next-seo'
 import React from 'react'
+import styled from 'styled-components'
 
 import Image from '@/components/Image'
 import Page from '@/components/Layout'
