@@ -1,13 +1,13 @@
-import { cache } from '@emotion/css'
-import { CacheProvider, Global, css } from '@emotion/react'
 import { AppProps, NextWebVitalsMetric } from 'next/app'
 import { DefaultSeo, LogoJsonLd } from 'next-seo'
-import React, { FC, useEffect } from 'react'
+import React, { useEffect } from 'react'
+import type { FC } from 'react'
+import { createGlobalStyle } from 'styled-components'
 
 import NProgress from '@/components/NProgress'
 import fullPath from '@/helpers/fullPath'
 
-const globalStyles = css`
+const GlobalStyle = createGlobalStyle`
   :root {
     --ij-default-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
       Helvetica, Arial, YuGothic, Yu Gothic, sans-serif;
@@ -84,13 +84,11 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         url={fullPath('/')}
       />
 
-      <CacheProvider value={cache}>
-        <Global styles={globalStyles} />
+      <GlobalStyle />
 
-        <Component {...pageProps} />
+      <Component {...pageProps} />
 
-        <NProgress />
-      </CacheProvider>
+      <NProgress />
     </>
   )
 }

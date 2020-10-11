@@ -1,7 +1,7 @@
-import { Global, css } from '@emotion/react'
-import styled from '@emotion/styled'
 import Head from 'next/head'
-import React, { FC } from 'react'
+import React from 'react'
+import type { FC } from 'react'
+import styled, { createGlobalStyle } from 'styled-components'
 
 import {
   preSrc as placeholder,
@@ -12,7 +12,7 @@ import Footer from '@/components/Footer'
 
 const mainVisual = process.env.NEXT_PUBLIC_MAIN_VISUAL_URL ?? defaultMainVisual
 
-const globalStyles = css`
+const GlobalStyle = createGlobalStyle`
   html {
     background-color: #757575;
     color: #fff;
@@ -112,7 +112,7 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => (
       />
     </Head>
 
-    <Global styles={globalStyles} />
+    <GlobalStyle />
 
     <Wrapper>
       {!hideHeader && <Header />}

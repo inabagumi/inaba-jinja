@@ -1,9 +1,10 @@
-import { Global, css } from '@emotion/react'
 import { useRouter } from 'next/router'
 import NProgress from 'nprogress'
-import React, { FC, useCallback, useEffect } from 'react'
+import React, { useCallback, useEffect } from 'react'
+import type { FC } from 'react'
+import { createGlobalStyle } from 'styled-components'
 
-const globalStyles = css`
+const GlobalStyle = createGlobalStyle`
   /**
   * see https://github.com/rstacruz/nprogress/blob/v1.0.0-1/css/nprogress.css
   */
@@ -59,7 +60,7 @@ const Progress: FC = () => {
     router
   ])
 
-  return <Global styles={globalStyles} />
+  return <GlobalStyle />
 }
 
 export default Progress
