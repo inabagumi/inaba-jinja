@@ -12,6 +12,12 @@ import getTweetLink from '@/helpers/getTweetLink'
 import NotFound from '@/pages/404.mdx'
 import FortuneEntry from '@/types/FortuneEntry'
 
+const ImageContainer = styled.div`
+  max-width: 100%;
+  margin: 0 auto;
+  width: 254px;
+`
+
 const ShareLinks = styled.nav`
   margin-top: 3rem;
 `
@@ -45,43 +51,8 @@ const ShareButton = styled.a`
   }
 `
 
-export type Params = {
-  id: string
-}
-
 export type Props = {
   fortune: FortuneEntry | null
-}
-
-export const getStaticProps: GetStaticProps<Props, Params> = async ({
-  params
-}) => {
-  const id = params?.id
-
-  if (id) {
-    const fortune = await getFortune(id).catch(() => null)
-
-    return {
-      props: {
-        fortune
-      },
-      revalidate: 5
-    }
-  }
-
-  return {
-    props: {
-      fortune: null
-    },
-    revalidate: 5
-  }
-}
-
-export const getStaticPaths: GetStaticPaths<Params> = () => {
-  return Promise.resolve({
-    fallback: 'unstable_blocking',
-    paths: []
-  })
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
@@ -127,12 +98,15 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
 
       <Page>
         <SingleWindow title={name}>
-          <Image
-            alt={name}
-            height={imageDetails?.height || 0}
-            src={imageURL}
-            width={imageDetails?.width || 0}
-          />
+          <ImageContainer>
+            <Image
+              alt={name}
+              height={imageDetails?.height || 0}
+              preSrc={fortune.fields.prePaper}
+              src={imageURL}
+              width={imageDetails?.width || 0}
+            />
+          </ImageContainer>
 
           <ShareLinks>
             <ShareLinksList>
@@ -155,3 +129,38 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
 }
 
 export default KujiPage
+
+export type Params = {
+  id: string
+}
+
+export const getStaticProps: GetStaticProps<Props, Params> = async ({
+  params
+}) => {
+  const id = params?.id
+
+  if (id) {
+    const fortune = await getFortune(id).catch(() => null)
+
+    return {
+      props: {
+        fortune
+      },
+      revalidate: 5
+    }
+  }
+
+  return {
+    props: {
+      fortune: null
+    },
+    revalidate: 5
+  }
+}
+
+export const getStaticPaths: GetStaticPaths<Params> = () => {
+  return Promise.resolve({
+    fallback: 'unstable_blocking',
+    paths: []
+  })
+}

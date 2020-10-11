@@ -6,6 +6,7 @@ type FortuneFields = {
   description: string
   number: number
   paper: Asset
+  prePaper: string
 }
 
 export default FortuneFields
