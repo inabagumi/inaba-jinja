@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.1](https://github.com/inabagumi/inaba-jinja/compare/v1.13.0...v1.13.1) (2020-10-11)
+
+
+### Bug Fixes
+
+* **app:** remove unused code ([#920](https://github.com/inabagumi/inaba-jinja/issues/920)) ([3db7253](https://github.com/inabagumi/inaba-jinja/commit/3db725329873e4f9156c001df6d75da25dffab17))
+* **image:** remove [@ts-ignore](https://github.com/ts-ignore) ([#917](https://github.com/inabagumi/inaba-jinja/issues/917)) ([8c16afb](https://github.com/inabagumi/inaba-jinja/commit/8c16afb113a212bdfe61256a6a114e38e5ee99d8))
+* **share:** do not nest noscript ([#922](https://github.com/inabagumi/inaba-jinja/issues/922)) ([da3cba5](https://github.com/inabagumi/inaba-jinja/commit/da3cba50f48ca77290a22b2fcefba395cc885bb9))
+
 ## [1.13.0](https://github.com/inabagumi/inaba-jinja/compare/v1.12.1...v1.13.0) (2020-10-11)
 
 
