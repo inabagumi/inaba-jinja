@@ -60,12 +60,6 @@ export function reportWebVitals(metric: NextWebVitalsMetric): void {
 }
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
-  useEffect(() => {
-    const emotionStyles = document.getElementById('emotion-server-side')
-
-    emotionStyles?.parentNode?.removeChild(emotionStyles)
-  }, [])
-
   return (
     <>
       <DefaultSeo
