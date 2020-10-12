@@ -1,6 +1,6 @@
-import { AppProps, NextWebVitalsMetric } from 'next/app'
+import type { AppProps, NextWebVitalsMetric } from 'next/app'
 import { DefaultSeo, LogoJsonLd } from 'next-seo'
-import React, { useEffect } from 'react'
+import React from 'react'
 import type { FC } from 'react'
 import { createGlobalStyle } from 'styled-components'
 
