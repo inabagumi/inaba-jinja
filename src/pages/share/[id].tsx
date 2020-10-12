@@ -1,24 +1,14 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
-import React, { useEffect } from 'react'
+import React from 'react'
 
+import Refresh from '@/components/Refresh'
 import fullPath from '@/helpers/fullPath'
+import NotFound from '@/pages/404.mdx'
 import { Props as KujiProps } from '@/pages/kuji/[id]'
 
 const SharePage: NextPage<KujiProps> = ({ fortune }) => {
-  const router = useRouter()
-
-  useEffect(() => {
-    void router.prefetch('/')
-
-    requestAnimationFrame(() => {
-      void router.replace('/')
-    })
-  }, [router])
-
-  if (!fortune) return null
+  if (!fortune) return <NotFound />
 
   const title = `因幡はねるくじ 第${fortune.fields.number}番『${fortune.fields.blessing}』`
 
@@ -40,15 +30,7 @@ const SharePage: NextPage<KujiProps> = ({ fortune }) => {
         title={title}
       />
 
-      <Head>
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<meta content="0;URL=${fullPath(
-              '/'
-            )}" http-equiv="refresh" />`
-          }}
-        />
-      </Head>
+      <Refresh path="/" />
     </>
   )
 }
