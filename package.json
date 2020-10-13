@@ -58,47 +58,10 @@
   "engines": {
     "node": "12.x"
   },
-  "eslintConfig": {
-    "extends": [
-      "@inabagumi/react"
-    ],
-    "parserOptions": {
-      "project": "tsconfig.json"
-    },
-    "root": true
-  },
   "homepage": "https://inaba-jinja.com",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "**/*.{ts,tsx}",
-      "!**/*.d.ts",
-      "!**/node_modules/**"
-    ],
-    "moduleNameMapper": {
-      "\\.svg": "<rootDir>/src/__mocks__/svgMock.tsx"
-    },
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.ts"
-    ],
-    "testPathIgnorePatterns": [
-      "/.next/",
-      "/node_modules/"
-    ],
-    "testURL": "https://inaba-jinja.test"
-  },
   "license": "MIT",
-  "lint-staged": {
-    "*.{js,json,ts,tsx,yml}": "yarn format-check",
-    "*.{js,ts,tsx}": "yarn lint"
-  },
   "main": "n/a",
   "name": "inaba-jinja",
-  "prettier": "@inabagumi/prettier-config",
   "private": true,
   "repository": {
     "type": "git",
