@@ -17,7 +17,6 @@ const nextConfig = {
     SENTRY_RELEASE: release
   },
   experimental: {
-    modern: true,
     plugins: true,
     productionBrowserSourceMaps: true
   },
