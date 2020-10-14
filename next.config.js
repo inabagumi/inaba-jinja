@@ -172,7 +172,7 @@ const nextConfig = {
       use: [
         defaultLoaders.babel,
         {
-          loader: '@docusaurus/lqip-loader',
+          loader: 'lqip-loader',
           options: {
             base64: true,
             pallete: false
