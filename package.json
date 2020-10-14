@@ -22,7 +22,6 @@
   },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
-    "@docusaurus/lqip-loader": "^2.0.0-alpha.65",
     "@inabagumi/eslint-config-react": "^6.0.1",
     "@inabagumi/prettier-config": "^1.1.2",
     "@mdx-js/loader": "^1.6.18",
@@ -48,6 +47,7 @@
     "husky": "^4.3.0",
     "jest": "^26.5.3",
     "lint-staged": "^10.4.0",
+    "lqip-loader": "^2.2.1",
     "next-pwa": "^3.1.5",
     "prettier": "^2.1.2",
     "sharp": "^0.26.1",
@@ -70,7 +70,7 @@
   "resolutions": {
     "@sentry/browser": "^5.26.0",
     "@sentry/node": "^5.26.0",
-    "jpeg-js": "^0.4.2",
+    "jimp": "^0.16.1",
     "webpack": "^5.1.0",
     "workbox-webpack-plugin": "^6.0.0-alpha.3",
     "workbox-window": "^6.0.0-alpha.3"
