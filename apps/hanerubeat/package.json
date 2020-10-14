@@ -10,8 +10,8 @@
     "next": "^9.5.5",
     "next-pwa": "^3.1.5",
     "next-seo": "^4.11.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
     "url-loader": "^4.1.1"
   },
