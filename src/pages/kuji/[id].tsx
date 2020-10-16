@@ -151,10 +151,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({
   }
 
   return {
-    props: {
-      fortune: null
-    },
-    revalidate: 5
+    unstable_notFound: true
   }
 }
 
