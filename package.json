@@ -14,7 +14,7 @@
     "@next/plugin-sentry": "^9.5.6-canary.6",
     "contentful": "^7.14.8",
     "next": "^9.5.6-canary.6",
-    "next-seo": "^4.13.0",
+    "next-seo": "^4.14.0",
     "nprogress": "^1.0.0-1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
