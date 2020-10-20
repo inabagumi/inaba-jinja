@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import React, { FC } from 'react'
+import type { FC } from 'react'
 
 type Props = JSX.IntrinsicElements['a']
 

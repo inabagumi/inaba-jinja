@@ -1,7 +1,6 @@
 import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
 import { NextSeo } from 'next-seo'
-import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 import kujiImage from '@/assets/kuji.png'

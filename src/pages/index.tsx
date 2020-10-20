@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
-import React from 'react'
 import styled from 'styled-components'
 
 import cardImage from '@/assets/card.jpg'
