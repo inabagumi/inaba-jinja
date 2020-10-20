@@ -1,6 +1,5 @@
 import { NextPage, PageConfig } from 'next'
 import { NextSeo } from 'next-seo'
-import React from 'react'
 import { cardURL } from '@/assets'
 
 export const config: PageConfig = {
