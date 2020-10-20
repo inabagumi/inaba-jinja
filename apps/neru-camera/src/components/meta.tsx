@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import React, { FC, useContext } from 'react'
+import { FC, useContext } from 'react'
 import { SiteContext } from '../context/site-context'
 
 type Props = {

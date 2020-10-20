@@ -1,4 +1,4 @@
-import React, { FC, createContext, useContext } from 'react'
+import { FC, createContext, useContext } from 'react'
 import { OverlayEntry } from '../types/Overlay'
 
 type Values = {

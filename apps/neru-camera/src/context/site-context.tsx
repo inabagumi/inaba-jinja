@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, createContext } from 'react'
+import { FC, ReactElement, createContext } from 'react'
 
 const defaultValues = {
   baseUrl: 'https://example.com',

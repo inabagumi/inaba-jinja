@@ -1,7 +1,6 @@
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import App, { AppContext, AppInitialProps, AppProps } from 'next/app'
-import React from 'react'
 import contentfulClient from '../contentfulClient'
 import { AssetProvider } from '../context/asset-context'
 import { SiteProvider } from '../context/site-context'

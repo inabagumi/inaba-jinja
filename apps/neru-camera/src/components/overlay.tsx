@@ -1,6 +1,6 @@
 import { Container, Sprite, useApp, withFilters } from '@inlet/react-pixi'
 import { Point } from 'pixi.js'
-import React, { FC } from 'react'
+import { FC } from 'react'
 import ChromaKeyFilter from '../filters/chroma-key-filter'
 import useVideoTexture from '../hooks/use-video-texture'
 import { OverlayEntry } from '../types/Overlay'
