@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
-import React, { useCallback, useEffect, useState, useRef } from 'react'
+import { useCallback, useEffect, useState, useRef } from 'react'
 import { MdVolumeOff, MdVolumeUp } from 'react-icons/md'
 
 import mp3Path from 'assets/heartbeat.mp3'

@@ -1,6 +1,6 @@
 import { keyframes } from '@emotion/core'
 import styled from '@emotion/styled'
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { MdFavorite } from 'react-icons/md'
 
 const beat = keyframes`

@@ -36,7 +36,11 @@
     "parserOptions": {
       "project": "tsconfig.json"
     },
-    "root": true
+    "root": true,
+    "rules": {
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off"
+    }
   },
   "homepage": "https://hanerubeat.app/",
   "name": "@inabagumi/hanerubeat",

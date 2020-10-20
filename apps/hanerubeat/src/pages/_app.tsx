@@ -2,7 +2,7 @@ import { Global, css } from '@emotion/core'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
-import React, { FC } from 'react'
+import { FC } from 'react'
 
 const globalStyles = css`
   body {
