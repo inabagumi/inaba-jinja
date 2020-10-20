@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import NProgress from 'nprogress'
-import React, { useCallback, useEffect } from 'react'
+import { useCallback, useEffect } from 'react'
 import type { FC } from 'react'
 import { createGlobalStyle } from 'styled-components'
 

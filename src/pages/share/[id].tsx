@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
-import React from 'react'
 
 import Refresh from '@/components/Refresh'
 import fullPath from '@/helpers/fullPath'

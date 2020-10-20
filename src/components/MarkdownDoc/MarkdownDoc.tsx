@@ -1,7 +1,7 @@
 import { MDXProvider } from '@mdx-js/react'
 
 import { NextSeo } from 'next-seo'
-import React, { FC } from 'react'
+import { FC } from 'react'
 
 import Page from '@/components/Layout'
 import SimpleWindow from '@/components/SimpleWindow'

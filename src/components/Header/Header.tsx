@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import React from 'react'
 import type { FC } from 'react'
 import styled from 'styled-components'
 
