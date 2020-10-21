@@ -16,7 +16,7 @@
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
   "devDependencies": {
-    "@inabagumi/eslint-config-react": "^6.0.1",
+    "@inabagumi/eslint-config-react": "^6.0.2",
     "@inabagumi/prettier-config": "^1.1.2",
     "@types/node": "^12.12.47",
     "@types/react": "^16.9.53",
@@ -35,11 +35,7 @@
     "parserOptions": {
       "project": "tsconfig.json"
     },
-    "root": true,
-    "rules": {
-      "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off"
-    }
+    "root": true
   },
   "license": "MIT",
   "name": "neru-camera",
