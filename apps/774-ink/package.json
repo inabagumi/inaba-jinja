@@ -6,7 +6,7 @@
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
-    "@inabagumi/eslint-config-react": "^6.0.1",
+    "@inabagumi/eslint-config-react": "^6.0.2",
     "@inabagumi/prettier-config": "^1.1.2",
     "@types/node": "^14.14.0",
     "@types/react": "^16.9.53",
@@ -23,11 +23,7 @@
     "parserOptions": {
       "project": "tsconfig.json"
     },
-    "root": true,
-    "rules": {
-      "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off"
-    }
+    "root": true
   },
   "name": "774.ink",
   "prettier": "@inabagumi/prettier-config",
