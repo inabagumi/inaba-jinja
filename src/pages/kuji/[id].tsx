@@ -1,8 +1,8 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import NextImage from 'next/image'
 import { BreadcrumbJsonLd, NextSeo } from 'next-seo'
 import styled from 'styled-components'
 
-import Image from '@/components/Image'
 import Page from '@/components/Layout'
 import SingleWindow from '@/components/SimpleWindow'
 import getFortune from '@/contentful/getFortune'
@@ -15,6 +15,30 @@ const ImageContainer = styled.div`
   max-width: 100%;
   margin: 0 auto;
   width: 254px;
+`
+
+type ImageProps = {
+  presrc: string
+}
+
+const Image = styled(NextImage)<ImageProps>`
+  display: block;
+  overflow: hidden;
+
+  ::before {
+    background-color: #fff;
+    background-image: url('${(props) => props.presrc}');
+    background-position: center;
+    background-size: cover;
+    content: '';
+    display: block;
+    filter: blur(10px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 `
 
 const ShareLinks = styled.nav`
@@ -61,6 +85,8 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
   const title = `因幡はねるくじ ${name}`
   const imageDetails = fortune.fields.paper.fields.file.details.image
   const imageURL = `https:${fortune.fields.paper.fields.file.url}`
+  const imageWidth = imageDetails ? imageDetails.width / 2 : 0
+  const imageHeight = imageDetails ? imageDetails.height / 2 : 0
 
   return (
     <>
@@ -100,10 +126,14 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
           <ImageContainer>
             <Image
               alt={name}
-              height={imageDetails?.height || 0}
-              preSrc={fortune.fields.prePaper}
+              height={imageHeight}
+              presrc={fortune.fields.prePaper}
+              priority
+              quality="80"
+              sizes={imageWidth > 0 ? `${imageWidth}px` : undefined}
               src={imageURL}
-              width={imageDetails?.width || 0}
+              unsized={imageWidth < 1}
+              width={imageWidth}
             />
           </ImageContainer>
 

@@ -120,12 +120,12 @@ const nextConfig = {
       }
     ]
   },
+  images: {
+    domains: ['images.ctfassets.net']
+  },
   pageExtensions: ['mdx', 'tsx'],
   pwa: {
-    buildExcludes: [
-      /\.map$/,
-      /(^|\/)(?:card|main-visual)\.[0-9a-f]{8}\.(?:jpg|png)$/
-    ],
+    buildExcludes: [/\.map$/, /\.(?:jpg|png)$/],
     dest: '.next/static',
     disable: process.env.NODE_ENV === 'development',
     publicExcludes: ['!favicon.ico', '!robots.txt'],
@@ -153,15 +153,13 @@ const nextConfig = {
       }
     ]
   },
-  webpack(config, { defaultLoaders, dev }) {
+  webpack(config, { defaultLoaders }) {
     const urlLoader = {
       loader: 'url-loader',
       options: {
         esModule: false,
         limit: 8192,
-        name: dev
-          ? '[name].[ext]?[contenthash:8]'
-          : '[name].[contenthash:8].[ext]',
+        name: '[name].[contenthash:8].[ext]',
         outputPath: 'static/media',
         publicPath: '/_next/static/media'
       }

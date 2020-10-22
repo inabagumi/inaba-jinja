@@ -1,9 +1,9 @@
 import type { GetServerSideProps, NextPage } from 'next'
-import Head from 'next/head'
+import Image from 'next/image'
 import { NextSeo } from 'next-seo'
 import styled, { keyframes } from 'styled-components'
 
-import kujiImage from '@/assets/kuji.png'
+import kujiImageURL from '@/assets/kuji.png'
 import Page from '@/components/Layout'
 import Refresh from '@/components/Refresh'
 import SimpleWindow from '@/components/SimpleWindow'
@@ -21,11 +21,13 @@ const shake = keyframes`
   }
 `
 
-const LotteryBox = styled.img`
+const LotteryBox = styled.div`
   animation: ${shake} 0.3s infinite alternate linear;
   display: block;
   margin: 0 auto;
+  max-width: 80%;
   transform: translateY(0) rotate(180deg);
+  width: 256px;
 `
 
 type Props = {
@@ -35,22 +37,23 @@ type Props = {
 const LotteryPage: NextPage<Props> = ({ id }) => {
   return (
     <>
-      <Head>
-        <link as="image" href={kujiImage} rel="preload" />
-      </Head>
-
       <NextSeo noindex title="おみくじを引いています..." />
 
       <Refresh path={`/kuji/${id}`} delay={DELAY_SECONDS} />
 
       <Page>
         <SimpleWindow>
-          <LotteryBox
-            alt="くじ引き中..."
-            height="290"
-            src={kujiImage}
-            width="225"
-          />
+          <LotteryBox>
+            <Image
+              alt="くじ引き中..."
+              height={290}
+              priority
+              quality="80"
+              sizes="256px"
+              src={kujiImageURL}
+              width={225}
+            />
+          </LotteryBox>
         </SimpleWindow>
       </Page>
     </>
