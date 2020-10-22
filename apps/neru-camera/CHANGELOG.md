@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.5.1](https://github.com/inabagumi/neru-camera/compare/v5.5.0...v5.5.1) (2020-10-22)
+
 ## [5.5.0](https://github.com/inabagumi/neru-camera/compare/v5.4.5...v5.5.0) (2020-09-24)
 
 ### [5.4.5](https://github.com/inabagumi/neru-camera/compare/v5.4.4...v5.4.5) (2020-06-20)
