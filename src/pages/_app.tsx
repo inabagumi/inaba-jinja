@@ -2,7 +2,7 @@ import type { AppProps, NextWebVitalsMetric } from 'next/app'
 import { DefaultSeo, LogoJsonLd } from 'next-seo'
 import type { FC } from 'react'
 
-import NProgress from '@/components/NProgress'
+import NProgress from '@/components/nprogress'
 import fullPath from '@/helpers/fullPath'
 
 export function reportWebVitals(metric: NextWebVitalsMetric): void {

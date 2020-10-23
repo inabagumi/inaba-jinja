@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import cardImage from '@/assets/card.jpg'
 import BaseLogo from '@/assets/vertical-logo.svg'
-import Page from '@/components/Layout'
+import Page from '@/components/layout'
 import { SkipNavContent } from '@/components/skip-nav'
 import fullPath from '@/helpers/fullPath'
 

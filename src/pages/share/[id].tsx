@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 
-import Refresh from '@/components/Refresh'
+import Refresh from '@/components/refresh'
 import fullPath from '@/helpers/fullPath'
 import NotFound from '@/pages/404.mdx'
 import { Props as KujiProps } from '@/pages/kuji/[id]'

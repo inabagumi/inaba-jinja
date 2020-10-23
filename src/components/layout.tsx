@@ -9,8 +9,8 @@ import {
   preSrc as mainVisualPlaceholder,
   src as mainVisualURL
 } from '@/assets/main-visual@portrait.jpg'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Footer from '@/components/footer'
+import Header from '@/components/header'
 import { SkipNavContent, SkipNavLink } from '@/components/skip-nav'
 
 const createMainVisualURL = (
