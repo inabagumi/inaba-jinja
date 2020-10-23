@@ -1,4 +1,4 @@
-import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import NextImage from 'next/image'
 import { BreadcrumbJsonLd, NextSeo } from 'next-seo'
 import styled from 'styled-components'
