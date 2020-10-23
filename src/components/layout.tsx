@@ -36,17 +36,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    box-sizing: border-box;
-    background-color: #757575;
-    color: #fff;
-    font-family: var(--ij-default-font-family);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: none;
-  }
-
-  body {
     background-attachment: fixed;
+    background-color: #757575;
     background-image:
       linear-gradient(
         rgba(0, 0, 0, 0.54),
@@ -67,12 +58,17 @@ const GlobalStyle = createGlobalStyle`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: var(--ij-default-font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     line-height: 2;
-    margin: 0;
+    -webkit-text-size-adjust: none;
   }
 
   @media (orientation: landscape) {
-    body {
+    html {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
         url('${createMainVisualURL(768, 'landscape')}'),
@@ -88,7 +84,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @media (min-width: 960px) {
-    body {
+    html {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
         url('${createMainVisualURL(1200, 'landscape')}'),
@@ -104,7 +100,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @media (min-width: 960px) and (orientation: portrait) {
-    body {
+    html {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
         url('${createMainVisualURL(1200)}'),
@@ -117,6 +113,10 @@ const GlobalStyle = createGlobalStyle`
         ),
         url('${mainVisualPlaceholder}');
     }
+  }
+
+  body {
+    margin: 0;
   }
 
   a {
