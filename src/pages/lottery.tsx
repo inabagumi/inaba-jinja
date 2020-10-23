@@ -4,9 +4,9 @@ import { NextSeo } from 'next-seo'
 import styled, { keyframes } from 'styled-components'
 
 import kujiImageURL from '@/assets/kuji.png'
-import Page from '@/components/Layout'
-import Refresh from '@/components/Refresh'
-import SimpleWindow from '@/components/SimpleWindow'
+import Page from '@/components/layout'
+import Refresh from '@/components/refresh'
+import SimpleWindow from '@/components/simple-window'
 import getFortunes from '@/contentful/getFortunes'
 
 const DELAY_SECONDS = 2
