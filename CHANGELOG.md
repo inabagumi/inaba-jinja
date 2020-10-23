@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.14.1](https://github.com/inabagumi/inaba-jinja/compare/v1.14.0...v1.14.1) (2020-10-23)
+
+
+### Bug Fixes
+
+* **kuji:** redirect to lottery from kuji index ([#980](https://github.com/inabagumi/inaba-jinja/issues/980)) ([1e0e62c](https://github.com/inabagumi/inaba-jinja/commit/1e0e62c2cd170de21c87de603e6a727328cd3f30))
+* **layout:** move background styles to root element ([#977](https://github.com/inabagumi/inaba-jinja/issues/977)) ([9c93b71](https://github.com/inabagumi/inaba-jinja/commit/9c93b716c4c4fbc289ddd503f1e343e5fcd0bfbb))
+
 ## [1.14.0](https://github.com/inabagumi/inaba-jinja/compare/v1.13.1...v1.14.0) (2020-10-23)
 
 
