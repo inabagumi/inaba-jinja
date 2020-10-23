@@ -12,22 +12,24 @@ import NotFound from '@/pages/404.mdx'
 import FortuneEntry from '@/types/FortuneEntry'
 
 const ImageContainer = styled.div`
-  max-width: 100%;
-  margin: 0 auto;
-  width: 254px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 `
 
 type ImageProps = {
-  presrc: string
+  placeholder: string
 }
 
-const Image = styled(NextImage)<ImageProps>`
+const Image = styled(NextImage).withConfig({
+  shouldForwardProp: (prop) => !['placeholder'].includes(prop)
+})<ImageProps>`
   display: block;
   overflow: hidden;
 
   ::before {
     background-color: #fff;
-    background-image: url('${(props) => props.presrc}');
+    background-image: url('${(props) => props.placeholder}');
     background-position: center;
     background-size: cover;
     content: '';
@@ -127,8 +129,8 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
             <Image
               alt={name}
               height={imageHeight}
-              presrc={fortune.fields.prePaper}
-              priority
+              placeholder={fortune.fields.prePaper}
+              priority={imageWidth > 0}
               quality="80"
               sizes={imageWidth > 0 ? `${imageWidth}px` : undefined}
               src={imageURL}
