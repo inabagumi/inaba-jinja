@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import cardImage from '@/assets/card.jpg'
 import BaseLogo from '@/assets/vertical-logo.svg'
 import Page from '@/components/Layout'
+import { SkipNavContent } from '@/components/skip-nav'
 import fullPath from '@/helpers/fullPath'
 
 const description =
@@ -103,6 +104,8 @@ const HomePage: NextPage = () => (
 
           <Description>{description}</Description>
         </Header>
+
+        <SkipNavContent />
 
         <Link href="/lottery" passHref>
           <LotteryButton role="button">おみくじを引く</LotteryButton>

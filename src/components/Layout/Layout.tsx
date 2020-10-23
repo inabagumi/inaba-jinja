@@ -11,6 +11,7 @@ import {
 } from '@/assets/main-visual@portrait.jpg'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { SkipNavContent, SkipNavLink } from '@/components/skip-nav'
 
 const createMainVisualURL = (
   width: number,
@@ -147,10 +148,16 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => (
   <>
     <GlobalStyle />
 
+    <SkipNavLink>コンテンツにスキップ</SkipNavLink>
+
     <Wrapper>
       {!hideHeader && <Header />}
 
-      <Content>{children}</Content>
+      <Content>
+        {!hideHeader && <SkipNavContent />}
+
+        {children}
+      </Content>
 
       <Footer />
     </Wrapper>
