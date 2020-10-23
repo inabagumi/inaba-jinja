@@ -1,5 +1,5 @@
 import fullPath from '@/helpers/fullPath'
-import FortuneEntry from '@/types/FortuneEntry'
+import { FortuneEntry } from '@/types/fortune'
 
 function getTweetLink(fortune: FortuneEntry): string {
   const text = `わたしの運勢は『${fortune.fields.blessing}』でした！ あなたもおみくじを引いてみてね`

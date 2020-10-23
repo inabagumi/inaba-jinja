@@ -1,7 +1,6 @@
 import * as contentful from 'contentful'
 
-import FortuneEntry from '@/types/FortuneEntry'
-import FortuneFields from '@/types/FortuneFields'
+import { FortuneEntry, FortuneFields } from '@/types/fortune'
 
 export default async function getFortune(id: string): Promise<FortuneEntry> {
   if (!process.env.CONTENTFUL_ACCESS_TOKEN) throw new TypeError()

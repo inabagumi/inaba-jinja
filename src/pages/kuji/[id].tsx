@@ -9,7 +9,7 @@ import getFortune from '@/contentful/getFortune'
 import fullPath from '@/helpers/fullPath'
 import getTweetLink from '@/helpers/getTweetLink'
 import NotFound from '@/pages/404.mdx'
-import FortuneEntry from '@/types/FortuneEntry'
+import { FortuneEntry } from '@/types/fortune'
 
 const ImageContainer = styled.div`
   align-items: center;
