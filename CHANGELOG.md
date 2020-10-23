@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/inabagumi/inaba-jinja/compare/v1.13.1...v1.14.0) (2020-10-23)
+
+
+### Features
+
+* **layout:** introduce skip nav ([#973](https://github.com/inabagumi/inaba-jinja/issues/973)) ([7b348b7](https://github.com/inabagumi/inaba-jinja/commit/7b348b7589d474079b90bcd10da457523f8894d9))
+
+
+### Bug Fixes
+
+* **assets:** chmod 644 src/assets/main-visual@portrait.jpg ([#974](https://github.com/inabagumi/inaba-jinja/issues/974)) ([dfff073](https://github.com/inabagumi/inaba-jinja/commit/dfff073dddbabff8343c4d2f3ed165ed0ee22472))
+* **kuji:** remove unnecessary attribute from img element ([#967](https://github.com/inabagumi/inaba-jinja/issues/967)) ([1a189b7](https://github.com/inabagumi/inaba-jinja/commit/1a189b7d308735aefd973ea22f0f8312ee7b1a50))
+
 ### [1.13.1](https://github.com/inabagumi/inaba-jinja/compare/v1.13.0...v1.13.1) (2020-10-11)
 
 
