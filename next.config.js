@@ -132,8 +132,13 @@ const nextConfig = {
     sw: '/service-worker.js'
   },
   reactStrictMode: true,
-  async redirects() {
+  redirects() {
     return [
+      {
+        destination: '/lottery',
+        permanent: true,
+        source: '/kuji'
+      },
       {
         destination: '/about',
         permanent: true,
@@ -141,7 +146,7 @@ const nextConfig = {
       }
     ]
   },
-  async rewrites() {
+  rewrites() {
     return [
       {
         destination: '/_next/static/service-worker.js$1',
