@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/inabagumi/inaba-jinja/compare/v1.14.2...v1.15.0) (2020-10-27)
+
+
+### Features
+
+* disable csp ([#998](https://github.com/inabagumi/inaba-jinja/issues/998)) ([3280979](https://github.com/inabagumi/inaba-jinja/commit/3280979990ba06ef17701411f10e28d059c95c03))
+
 ### [1.14.2](https://github.com/inabagumi/inaba-jinja/compare/v1.14.1...v1.14.2) (2020-10-27)
 
 
