@@ -182,7 +182,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({
   }
 
   return {
-    unstable_notFound: true
+    notFound: true
   }
 }
 
