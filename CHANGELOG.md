@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/inabagumi/inaba-jinja/compare/v1.15.0...v1.16.0) (2020-10-27)
+
+
+### Features
+
+* **app:** remove report web vitals ([#1004](https://github.com/inabagumi/inaba-jinja/issues/1004)) ([d9734a0](https://github.com/inabagumi/inaba-jinja/commit/d9734a093ef961d1a78bab1f5bca9ab4e0804cb6))
+* **app:** replace to ga4 ([#1003](https://github.com/inabagumi/inaba-jinja/issues/1003)) ([c5e8fd8](https://github.com/inabagumi/inaba-jinja/commit/c5e8fd86a04a28201f5ced273953a0439eb179ed))
+
 ## [1.15.0](https://github.com/inabagumi/inaba-jinja/compare/v1.14.2...v1.15.0) (2020-10-27)
 
 
