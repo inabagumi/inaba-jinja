@@ -46,12 +46,12 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
           <LotteryBox>
             <Image
               alt="くじ引き中..."
-              height={290}
+              height={580}
               priority
               quality="80"
               sizes="256px"
               src={kujiImageURL}
-              width={225}
+              width={450}
             />
           </LotteryBox>
         </SimpleWindow>

@@ -11,10 +11,15 @@ import getTweetLink from '@/helpers/getTweetLink'
 import NotFound from '@/pages/404.mdx'
 import { FortuneEntry } from '@/types/fortune'
 
-const ImageContainer = styled.div`
+const Content = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
+`
+
+const ImageWrapper = styled.div`
+  max-width: 100%;
+  width: 256px;
 `
 
 type ImageProps = {
@@ -77,7 +82,7 @@ const ShareButton = styled.a`
 `
 
 export type Props = {
-  fortune: FortuneEntry | null
+  fortune?: FortuneEntry
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
@@ -87,8 +92,8 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
   const title = `因幡はねるくじ ${name}`
   const imageDetails = fortune.fields.paper.fields.file.details.image
   const imageURL = `https:${fortune.fields.paper.fields.file.url}`
-  const imageWidth = imageDetails ? imageDetails.width / 2 : 0
-  const imageHeight = imageDetails ? imageDetails.height / 2 : 0
+  const imageWidth = imageDetails?.width ?? 0
+  const imageHeight = imageDetails?.height ?? 0
 
   return (
     <>
@@ -98,9 +103,9 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
         openGraph={{
           images: [
             {
-              height: 630,
+              height: fortune.fields.card.fields.file.details.image?.height,
               url: fullPath(fortune.fields.card.fields.file.url),
-              width: 1200
+              width: fortune.fields.card.fields.file.details.image?.width
             }
           ],
           title
@@ -125,19 +130,21 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
 
       <Page>
         <SingleWindow title={name}>
-          <ImageContainer>
-            <Image
-              alt={name}
-              height={imageHeight}
-              placeholder={fortune.fields.prePaper}
-              priority={imageWidth > 0}
-              quality="80"
-              sizes={imageWidth > 0 ? `${imageWidth}px` : undefined}
-              src={imageURL}
-              unsized={imageWidth < 1}
-              width={imageWidth}
-            />
-          </ImageContainer>
+          <Content>
+            <ImageWrapper>
+              <Image
+                alt={name}
+                height={imageHeight}
+                placeholder={fortune.fields.prePaper}
+                priority={imageWidth > 0}
+                quality="80"
+                sizes={imageWidth > 0 ? `${imageWidth}px` : undefined}
+                src={imageURL}
+                unsized={imageWidth < 1}
+                width={imageWidth}
+              />
+            </ImageWrapper>
+          </Content>
 
           <ShareLinks>
             <ShareLinksList>
@@ -171,7 +178,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({
   const id = params?.id
 
   if (id) {
-    const fortune = await getFortune(id).catch(() => null)
+    const fortune = await getFortune(id).catch(() => undefined)
 
     return {
       props: {
