@@ -42,7 +42,6 @@
     "@types/testing-library__jest-dom": "^5.9.5",
     "@types/webpack-env": "^1.15.3",
     "babel-plugin-styled-components": "^1.11.1",
-    "content-security-policy-builder": "^2.1.0",
     "conventional-github-releaser": "3.1.5",
     "eslint": "^7.12.1",
     "file-loader": "^6.1.1",
