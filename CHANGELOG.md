@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.14.2](https://github.com/inabagumi/inaba-jinja/compare/v1.14.1...v1.14.2) (2020-10-27)
+
+
+### Bug Fixes
+
+* **kuji:** change size of image to actual size ([#995](https://github.com/inabagumi/inaba-jinja/issues/995)) ([3b28ea2](https://github.com/inabagumi/inaba-jinja/commit/3b28ea2e988b576163b30eee7941bc457aa8bf44))
+
 ### [1.14.1](https://github.com/inabagumi/inaba-jinja/compare/v1.14.0...v1.14.1) (2020-10-23)
 
 
