@@ -1,6 +1,5 @@
 const nextMDX = require('@next/mdx')
 const SentryWebpackPlugin = require('@sentry/webpack-plugin')
-const cspBuilder = require('content-security-policy-builder')
 const withPWA = require('next-pwa')
 
 const withMDX = nextMDX()
@@ -29,51 +28,6 @@ const nextConfig = {
             key: 'cache-control',
             value:
               'max-age=600, public, s-maxage=120, stale-if-error=600, stale-while-revalidate=300'
-          },
-          {
-            key: 'content-security-policy',
-            value: cspBuilder({
-              directives: {
-                baseUri: ["'none'"],
-                blockAllMixedContent: true,
-                connectSrc: [
-                  "'self'",
-                  'https://images.ctfassets.net',
-                  'https://www.google-analytics.com',
-                  'https://www.googletagmanager.com',
-                  'https://*.imgix.net',
-                  'https://*.ingest.sentry.io'
-                ],
-                defaultSrc: ["'self'"],
-                fontSrc: ["'none'"],
-                formAction: ["'none'"],
-                frameAncestors: ["'none'"],
-                imgSrc: [
-                  "'self'",
-                  'data:',
-                  'https://images.ctfassets.net',
-                  'https://www.google-analytics.com',
-                  'https://www.googletagmanager.com',
-                  'https://*.imgix.net'
-                ],
-                manifestSrc: ["'self'"],
-                objectSrc: ["'none'"],
-                ...(process.env.CSP_REPORT_URL
-                  ? {
-                      reportUri: process.env.CSP_REPORT_URL
-                    }
-                  : {}),
-                scriptSrc: [
-                  "'self'",
-                  "'unsafe-inline'",
-                  "'unsafe-eval'",
-                  'https://www.google-analytics.com',
-                  'https://www.googletagmanager.com'
-                ],
-                styleSrc: ["'self'", "'unsafe-inline'"],
-                workerSrc: ["'self'"]
-              }
-            })
           },
           {
             key: 'referrer-policy',
