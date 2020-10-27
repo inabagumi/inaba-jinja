@@ -1,22 +1,10 @@
 const nextMDX = require('@next/mdx')
-const SentryWebpackPlugin = require('@sentry/webpack-plugin')
 const withPWA = require('next-pwa')
 
 const withMDX = nextMDX()
 
-const release = [
-  process.env.npm_package_name,
-  process.env.NOW_GITHUB_COMMIT_SHA || process.env.npm_package_version
-].join('@')
-
 const nextConfig = {
-  env: {
-    NEXT_PUBLIC_GA_TRACKING_ID: process.env.NEXT_PUBLIC_GA_TRACKING_ID,
-    SENTRY_DSN: process.env.SENTRY_DSN,
-    SENTRY_RELEASE: release
-  },
   experimental: {
-    plugins: true,
     productionBrowserSourceMaps: true
   },
   generateEtags: false,
@@ -157,21 +145,6 @@ const nextConfig = {
         }
       ]
     })
-
-    if (
-      process.env.SENTRY_AUTH_TOKEN &&
-      process.env.SENTRY_ORG &&
-      process.env.SENTRY_PROJECT
-    ) {
-      config.plugins.push(
-        new SentryWebpackPlugin({
-          ignore: ['node_modules'],
-          include: '.next',
-          release,
-          urlPrefix: '~/_next'
-        })
-      )
-    }
 
     return config
   }
