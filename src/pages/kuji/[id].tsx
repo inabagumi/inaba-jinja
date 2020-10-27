@@ -188,7 +188,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({
 
 export const getStaticPaths: GetStaticPaths<Params> = () => {
   return Promise.resolve({
-    fallback: 'unstable_blocking',
+    fallback: 'blocking',
     paths: []
   })
 }
