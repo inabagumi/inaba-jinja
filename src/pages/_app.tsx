@@ -6,19 +6,6 @@ import type { FC } from 'react'
 import NProgress from '@/components/nprogress'
 import fullPath from '@/helpers/fullPath'
 
-export function reportWebVitals(metric: NextWebVitalsMetric): void {
-  const value = metric.name === 'CLS' ? metric.value * 1000 : metric.value
-  const category =
-    metric.label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric'
-
-  gtag('event', metric.name, {
-    event_category: category,
-    event_label: metric.id,
-    non_interaction: true,
-    value: Math.round(value)
-  })
-}
-
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
   const handleRouterChangeComplete = useCallback((url: string) => {
     const trackingID = process.env.NEXT_PUBLIC_GA_TRACKING_ID
