@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@mdx-js/react": "^1.6.19",
-    "@next/plugin-google-analytics": "^10.0.0",
     "@next/plugin-sentry": "^10.0.0",
     "@reach/skip-nav": "^0.11.2",
     "contentful": "^7.14.8",
