@@ -7,7 +7,7 @@
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
     "file-loader": "^6.1.1",
-    "next": "^9.5.5",
+    "next": "^10.0.0",
     "next-pwa": "^3.1.5",
     "next-seo": "^4.14.0",
     "react": "^17.0.1",
