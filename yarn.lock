@@ -1893,11 +1893,6 @@
   resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-10.0.0.tgz#985ecd32d13e3595d2b9c423cae8c673b2cae5db"
   integrity sha512-QSXaLs1HZhqaREhgdTlTmW4KQNS9uvbu0OUTLzk3KGfDPlRocdgChA32BOuy2m1rp60uLibYxQIZ7JjI6vqH/w==
 
-"@next/plugin-google-analytics@^10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@next/plugin-google-analytics/-/plugin-google-analytics-10.0.0.tgz#a50bef4775247d940c93b84074831e64197dd442"
-  integrity sha512-G6rf3pvu2DFQR1JHcYVF4a9gSxFCgEbJ8GQ4pSEB45OCNPyifbcjQrx2ckzDzuk8otP5vJow38Qh9wqk+LExCA==
-
 "@next/plugin-sentry@^10.0.0":
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/@next/plugin-sentry/-/plugin-sentry-10.0.0.tgz#9b1ea42371b8b86f034fe2463c99a22c1b7f86cd"
