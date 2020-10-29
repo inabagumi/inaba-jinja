@@ -66,7 +66,7 @@
   },
   "resolutions": {
     "jimp": "^0.16.1",
-    "webpack": "^5.3.1",
+    "webpack": "^5.3.2",
     "workbox-webpack-plugin": "^6.0.0-alpha.3",
     "workbox-window": "^6.0.0-alpha.3"
   },
