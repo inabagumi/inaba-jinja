@@ -1,4 +1,4 @@
-import type { AppProps, NextWebVitalsMetric } from 'next/app'
+import type { AppProps } from 'next/app'
 import { DefaultSeo, LogoJsonLd } from 'next-seo'
 import { useCallback, useEffect } from 'react'
 import type { FC } from 'react'
