@@ -1277,13 +1277,13 @@
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-1.1.2.tgz#6cc1a41e99acb36bd1ed9ed81f69b64258fc4a94"
   integrity sha512-bUFu1+UuIwFIwGx1W1HCTYqw6Ga7s/66H0d7mSj3iWuY7Es8vxWXGgxZVCtjBvDanoibAevJbtUV/7rtzfU5PQ==
 
-"@inlet/react-pixi@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-6.0.0.tgz#ac45e77a25973b8afd4dea2facb554fa5e4be890"
-  integrity sha512-Ylz8DTb3bAtYHEicwnyGKDAjmAKtTQ9N8HoIfLzG6RB9la9lgcyaLErgq6TtOoyxh+LLBIVNXDGhdImpqu8j9g==
+"@inlet/react-pixi@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-6.0.2.tgz#9d9349930bf95b75e943d1c613f0cbc082167b1e"
+  integrity sha512-YGXhM7u9frjYOBzu1lsr5bbTYGre+YqN9DTWKUp9zApZIt/Ot/YJuFBQbOO45ChCi6GDyQutDssdvbAqc2L5aw==
   dependencies:
     performance-now "2.1.0"
-    react-reconciler "0.26.0"
+    react-reconciler "0.26.1"
 
 "@material-ui/core@^4.11.0":
   version "4.11.0"
@@ -6899,14 +6899,14 @@ react-is@16.13.1, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-reconciler@0.26.0:
-  version "0.26.0"
-  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.26.0.tgz#053ae2fd1607e38a960e7a694ad694732e4989b6"
-  integrity sha512-n2FJE9vPSiZ0Dn/jaV/iOAO6rXepnk74QGRcgwPSgmN/2syUJnbfEz7Bw5yodBfJhjA3L7cu1YdImYISTj4KZQ==
+react-reconciler@0.26.1:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.26.1.tgz#860952dd359fd870f94895c254271e3a9de3b2d6"
+  integrity sha512-6E/CvH9zcDmHjhiNJlP0qJ8+3ufnY2b5RWs774Uy8XKWN0l6qfnlkz0XnDacxqj2rbJdq76w9dlFXjPPOQrmqA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "^0.20.0"
+    scheduler "^0.20.1"
 
 react-refresh@0.8.3:
   version "0.8.3"
@@ -7345,7 +7345,7 @@ sass-loader@10.0.2:
     schema-utils "^2.7.1"
     semver "^7.3.2"
 
-scheduler@^0.20.0, scheduler@^0.20.1:
+scheduler@^0.20.1:
   version "0.20.1"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.20.1.tgz#da0b907e24026b01181ecbc75efdc7f27b5a000c"
   integrity sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw==
