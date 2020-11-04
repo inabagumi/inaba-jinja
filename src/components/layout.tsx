@@ -19,7 +19,7 @@ const createMainVisualURL = (
 ): string =>
   `/_next/image?url=${encodeURIComponent(
     orientation === 'portrait' ? mainVisualURL : mainVisualURLForLandscape
-  )}&q=80&w=${width || 1200}`
+  )}&q=80&w=${width || 1920}`
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
         rgba(0, 0, 0, 0.54),
         rgba(0, 0, 0, 0.54)
       ),
-      url('${createMainVisualURL(768)}'),
+      url('${createMainVisualURL(1920)}'),
       url('${mainVisualPlaceholder}');
     background-image:
       linear-gradient(
@@ -51,8 +51,8 @@ const GlobalStyle = createGlobalStyle`
         rgba(0, 0, 0, 0.54)
       ),
       image-set(
-        url('${createMainVisualURL(320)}') 1x,
-        url('${createMainVisualURL(768)}') 2x,
+        url('${createMainVisualURL(1080)}') 1x,
+        url('${createMainVisualURL(1920)}') 2x,
       ),
       url('${mainVisualPlaceholder}');
     background-position: center;
@@ -71,13 +71,13 @@ const GlobalStyle = createGlobalStyle`
     html {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
-        url('${createMainVisualURL(768, 'landscape')}'),
+        url('${createMainVisualURL(1920, 'landscape')}'),
         url('${mainVisualPlaceholderForLandscape}');
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
         image-set(
-          url('${createMainVisualURL(320, 'landscape')}') 1x,
-          url('${createMainVisualURL(768, 'landscape')}') 2x,
+          url('${createMainVisualURL(1080, 'landscape')}') 1x,
+          url('${createMainVisualURL(1920, 'landscape')}') 2x,
         ),
         url('${mainVisualPlaceholderForLandscape}');
     }
@@ -87,13 +87,13 @@ const GlobalStyle = createGlobalStyle`
     html {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
-        url('${createMainVisualURL(1200, 'landscape')}'),
+        url('${createMainVisualURL(1920, 'landscape')}'),
         url('${mainVisualPlaceholderForLandscape}');
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
         image-set(
-          url('${createMainVisualURL(768, 'landscape')}') 1x,
-          url('${createMainVisualURL(1200, 'landscape')}') 2x,
+          url('${createMainVisualURL(1080, 'landscape')}') 1x,
+          url('${createMainVisualURL(1920, 'landscape')}') 2x,
         ),
         url('${mainVisualPlaceholderForLandscape}');
     }
@@ -108,8 +108,8 @@ const GlobalStyle = createGlobalStyle`
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
         image-set(
-          url('${createMainVisualURL(768)}') 1x,
-          url('${createMainVisualURL(1200)}') 2x,
+          url('${createMainVisualURL(1080)}') 1x,
+          url('${createMainVisualURL(1920)}') 2x,
         ),
         url('${mainVisualPlaceholder}');
     }
