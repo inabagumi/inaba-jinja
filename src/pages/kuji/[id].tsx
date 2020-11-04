@@ -1,8 +1,8 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
-import NextImage from 'next/image'
 import { BreadcrumbJsonLd, NextSeo } from 'next-seo'
 import styled from 'styled-components'
 
+import Image from '@/components/image'
 import Page from '@/components/layout'
 import SingleWindow from '@/components/simple-window'
 import getFortune from '@/contentful/getFortune'
@@ -20,32 +20,6 @@ const Content = styled.div`
 const ImageWrapper = styled.div`
   max-width: 100%;
   width: 256px;
-`
-
-type ImageProps = {
-  placeholder: string
-}
-
-const Image = styled(NextImage).withConfig({
-  shouldForwardProp: (prop) => !['placeholder'].includes(prop)
-})<ImageProps>`
-  display: block;
-  overflow: hidden;
-
-  ::before {
-    background-color: #fff;
-    background-image: url('${(props) => props.placeholder}');
-    background-position: center;
-    background-size: cover;
-    content: '';
-    display: block;
-    filter: blur(10px);
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
 `
 
 const ShareLinks = styled.nav`
@@ -136,11 +110,10 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
                 alt={name}
                 height={imageHeight}
                 placeholder={fortune.fields.prePaper}
-                priority={imageWidth > 0}
-                quality="80"
-                sizes={imageWidth > 0 ? `${imageWidth}px` : undefined}
+                priority={!!imageWidth}
+                quality={80}
+                sizes={imageWidth ? `${imageWidth}px` : undefined}
                 src={imageURL}
-                unsized={imageWidth < 1}
                 width={imageWidth}
               />
             </ImageWrapper>
