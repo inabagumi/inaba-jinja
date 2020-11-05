@@ -15,13 +15,6 @@ const Wrapper = styled.div.withConfig({
   width: 100%;
 `
 
-const Content = styled.div`
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-`
-
 type PlaceholderProps = {
   value: string
 }
@@ -65,17 +58,14 @@ const Image: FC<Props> = ({
   return (
     <Wrapper ratio={height / width}>
       {placeholder && <Placeholder value={placeholder} />}
-      <Content>
-        <NextImage
-          alt={alt}
-          height={height}
-          priority={priority}
-          quality={quality}
-          sizes={sizes}
-          src={src}
-          width={width}
-        />
-      </Content>
+      <NextImage
+        alt={alt}
+        layout="fill"
+        priority={priority}
+        quality={quality}
+        sizes={sizes}
+        src={src}
+      />
     </Wrapper>
   )
 }
