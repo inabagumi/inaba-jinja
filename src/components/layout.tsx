@@ -1,25 +1,14 @@
+import Image from 'next/image'
 import type { FC } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 
 import {
-  preSrc as mainVisualPlaceholderForLandscape,
-  src as mainVisualURLForLandscape
-} from '@/assets/main-visual@landscape.jpg'
-import {
   preSrc as mainVisualPlaceholder,
   src as mainVisualURL
-} from '@/assets/main-visual@portrait.jpg'
+} from '@/assets/main-visual.jpg'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import { SkipNavContent, SkipNavLink } from '@/components/skip-nav'
-
-const createMainVisualURL = (
-  width: number,
-  orientation: 'portrait' | 'landscape' = 'portrait'
-): string =>
-  `/_next/image?url=${encodeURIComponent(
-    orientation === 'portrait' ? mainVisualURL : mainVisualURLForLandscape
-  )}&q=80&w=${width || 1920}`
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -36,28 +25,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    background-attachment: fixed;
     background-color: #757575;
-    background-image:
-      linear-gradient(
-        rgba(0, 0, 0, 0.54),
-        rgba(0, 0, 0, 0.54)
-      ),
-      url('${createMainVisualURL(1920)}'),
-      url('${mainVisualPlaceholder}');
-    background-image:
-      linear-gradient(
-        rgba(0, 0, 0, 0.54),
-        rgba(0, 0, 0, 0.54)
-      ),
-      image-set(
-        url('${createMainVisualURL(1080)}') 1x,
-        url('${createMainVisualURL(1920)}') 2x,
-      ),
-      url('${mainVisualPlaceholder}');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     box-sizing: border-box;
     color: #fff;
     font-family: var(--ij-default-font-family);
@@ -65,54 +33,6 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     line-height: 2;
     -webkit-text-size-adjust: none;
-  }
-
-  @media (orientation: landscape) {
-    html {
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
-        url('${createMainVisualURL(1920, 'landscape')}'),
-        url('${mainVisualPlaceholderForLandscape}');
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
-        image-set(
-          url('${createMainVisualURL(1080, 'landscape')}') 1x,
-          url('${createMainVisualURL(1920, 'landscape')}') 2x,
-        ),
-        url('${mainVisualPlaceholderForLandscape}');
-    }
-  }
-
-  @media (min-width: 960px) {
-    html {
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
-        url('${createMainVisualURL(1920, 'landscape')}'),
-        url('${mainVisualPlaceholderForLandscape}');
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
-        image-set(
-          url('${createMainVisualURL(1080, 'landscape')}') 1x,
-          url('${createMainVisualURL(1920, 'landscape')}') 2x,
-        ),
-        url('${mainVisualPlaceholderForLandscape}');
-    }
-  }
-
-  @media (min-width: 960px) and (orientation: portrait) {
-    html {
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
-        url('${createMainVisualURL(1200)}'),
-        url('${mainVisualPlaceholder}');
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
-        image-set(
-          url('${createMainVisualURL(1080)}') 1x,
-          url('${createMainVisualURL(1920)}') 2x,
-        ),
-        url('${mainVisualPlaceholder}');
-    }
   }
 
   body {
@@ -125,6 +45,38 @@ const GlobalStyle = createGlobalStyle`
 
   a:hover {
     color: #ff6f00;
+  }
+`
+
+const Background = styled.div`
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+
+  ::before,
+  ::after {
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  ::before {
+    background-image: url('${mainVisualPlaceholder}');
+    background-size: cover;
+  }
+
+  ::after {
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+
+  img {
+    object-fit: cover;
   }
 `
 
@@ -149,6 +101,10 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => (
     <GlobalStyle />
 
     <SkipNavLink>コンテンツにスキップ</SkipNavLink>
+
+    <Background aria-hidden="true">
+      <Image alt="" layout="fill" src={mainVisualURL} />
+    </Background>
 
     <Wrapper>
       {!hideHeader && <Header />}
