@@ -75,7 +75,7 @@
     "dev": "next",
     "format": "prettier --write .",
     "format-check": "prettier -c .",
-    "lint": "eslint --ext .js,.ts,.tsx --ignore-path .gitignore .",
+    "lint": "eslint --ignore-path .gitignore .",
     "release": "standard-version",
     "start": "next start",
     "test": "jest"
