@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Background = styled.div`
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   position: fixed;
   width: 100%;
