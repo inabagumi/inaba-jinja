@@ -3,6 +3,7 @@ import type { MDXProviderComponents } from '@mdx-js/react'
 import NextLink from 'next/link'
 import { NextSeo } from 'next-seo'
 import type { FC } from 'react'
+import styled from 'styled-components'
 
 import ExternalLink from '@/components/external-link'
 import Page from '@/components/layout'
@@ -27,8 +28,14 @@ const Link: FC<LinkProps> = ({ children, href, ...props }) => {
   )
 }
 
+const Emphasis = styled.em`
+  font-style: normal;
+  font-weight: 700;
+`
+
 const mdxComponents: MDXProviderComponents = {
-  a: Link
+  a: Link,
+  em: Emphasis
 }
 
 type Props = {
