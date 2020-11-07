@@ -103,7 +103,7 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => (
     <SkipNavLink>コンテンツにスキップ</SkipNavLink>
 
     <Background aria-hidden="true">
-      <Image alt="" layout="fill" src={mainVisualURL} />
+      <Image alt="" layout="fill" priority src={mainVisualURL} />
     </Background>
 
     <Wrapper>
