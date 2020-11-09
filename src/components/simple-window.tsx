@@ -1,3 +1,4 @@
+import { SkipNavContent } from '@/components/skip-nav'
 import type { FC } from 'react'
 import styled from 'styled-components'
 
@@ -29,6 +30,8 @@ type Props = {
 const SimpleWindow: FC<Props> = ({ children, title }) => {
   return (
     <Wrapper>
+      <SkipNavContent />
+
       <Content>
         {title && <Title>{title}</Title>}
 

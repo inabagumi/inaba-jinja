@@ -4,28 +4,36 @@ import styled from 'styled-components'
 
 const Container = styled.footer`
   align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   font-size: 0.85rem;
   justify-content: space-between;
-  padding: 2rem 1rem 1.5rem;
+  margin-top: 3rem;
+  padding: 1rem 1rem;
 
   @media (min-width: 960px) {
-    flex-direction: row;
-    padding-bottom: 0.5rem;
+    align-items: flex-end;
   }
 `
 
 const NavLinks = styled.ul`
   display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 960px) {
+    flex-direction: row;
+  }
 `
 
 const NavLinksItem = styled.li`
-  :not(:first-child) {
-    margin-left: 0.5em;
+  @media (min-width: 960px) {
+    :not(:first-child) {
+      margin-left: 1em;
+    }
   }
 `
 

@@ -12,12 +12,12 @@ import fullPath from '@/helpers/fullPath'
 const description =
   '因幡神社は東京都北区赤羽のどこかにある神社です。有閑喫茶 あにまーれの因幡はねる様をご祭神としてお祀りしています。'
 
-const Container = styled.div`
+const Container = styled.main`
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: center;
+  min-height: 100vh;
 `
 
 const Header = styled.header`
@@ -46,7 +46,7 @@ const Logo = styled(BaseLogo)`
 `
 
 const Description = styled.p`
-  font-family: var(--ij-serif-font-family, sans-serif);
+  font-family: var(--ij-font-family-serif, serif);
   font-size: 0.95rem;
   letter-spacing: 0.3rem;
   margin: 1rem 0 0;
@@ -54,7 +54,6 @@ const Description = styled.p`
 `
 
 const LotteryButton = styled.a`
-  color: inherit;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid currentColor;
   border-radius: 5px;

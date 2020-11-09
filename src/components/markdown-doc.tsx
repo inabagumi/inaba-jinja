@@ -10,20 +10,31 @@ import Page from '@/components/layout'
 import SimpleWindow from '@/components/simple-window'
 import fullPath from '@/helpers/fullPath'
 
-type LinkProps = JSX.IntrinsicElements['a']
+const StyledLink = styled.a`
+  color: var(--ij-color-primary);
+  text-decoration: none;
+
+  :hover {
+    text-decoration: underline;
+  }
+`
+
+type LinkProps = Omit<JSX.IntrinsicElements['a'], 'href' | 'ref'> & {
+  href: string
+}
 
 const Link: FC<LinkProps> = ({ children, href, ...props }) => {
-  if (!href || (typeof href === 'string' && /^https?:\/\//i.test(href))) {
+  if (/^https?:\/\//i.test(href)) {
     return (
-      <ExternalLink href={href} {...props}>
+      <StyledLink as={ExternalLink} href={href} {...props}>
         {children}
-      </ExternalLink>
+      </StyledLink>
     )
   }
 
   return (
-    <NextLink href={href}>
-      <a {...props}>{children}</a>
+    <NextLink href={href} passHref>
+      <StyledLink {...props}>{children}</StyledLink>
     </NextLink>
   )
 }

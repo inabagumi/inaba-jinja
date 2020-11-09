@@ -8,13 +8,15 @@ import {
 } from '@/assets/main-visual.jpg'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
-import { SkipNavContent, SkipNavLink } from '@/components/skip-nav'
+import { SkipNavLink } from '@/components/skip-nav'
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --ij-default-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
+    --ij-color-primary: #f57f17;
+
+    --ij-font-family-base: -apple-system, BlinkMacSystemFont, Helvetica Neue,
       Helvetica, Arial, YuGothic, Yu Gothic, sans-serif;
-    --ij-serif-font-family: Garamond, Times New Roman, YuMincho, Yu Mincho,
+    --ij-font-family-serif: Garamond, Times New Roman, YuMincho, Yu Mincho,
       serif;
   }
 
@@ -22,13 +24,14 @@ const GlobalStyle = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: inherit;
+    color: inherit;
   }
 
   html {
     background-color: #757575;
     box-sizing: border-box;
     color: #fff;
-    font-family: var(--ij-default-font-family);
+    font-family: var(--ij-font-family-base, sans-serif);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 2;
@@ -37,14 +40,6 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-  }
-
-  a {
-    color: #f57f17;
-  }
-
-  a:hover {
-    color: #ff6f00;
   }
 `
 
@@ -81,15 +76,7 @@ const Background = styled.div`
 `
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  position: relative;
-  z-index: 0;
-`
-
-const Content = styled.div`
-  flex-grow: 1;
+  min-height: 100vh;
 `
 
 type Props = {
@@ -109,14 +96,10 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => (
     <Wrapper>
       {!hideHeader && <Header />}
 
-      <Content>
-        {!hideHeader && <SkipNavContent />}
-
-        {children}
-      </Content>
-
-      <Footer />
+      {children}
     </Wrapper>
+
+    <Footer />
   </>
 )
 

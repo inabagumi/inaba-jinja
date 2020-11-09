@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #nprogress .bar {
-    background-color: #ff5722;
+    background-color: var(--ij-color-primary);
     height: 2px;
     left: 0;
     overflow: hidden;
