@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.16.4](https://github.com/inabagumi/inaba-jinja/compare/v1.16.3...v1.16.4) (2020-11-09)
+
+
+### Bug Fixes
+
+* **about:** replace to em elem ([#1033](https://github.com/inabagumi/inaba-jinja/issues/1033)) ([f6a474e](https://github.com/inabagumi/inaba-jinja/commit/f6a474e33e12af2fc10b9a68b46d28a040953563))
+* **layout:** improve colors ([#1039](https://github.com/inabagumi/inaba-jinja/issues/1039)) ([3a9b7a1](https://github.com/inabagumi/inaba-jinja/commit/3a9b7a1f396ccdf294130ae1ff31ee28edd6af91))
+
 ### [1.16.3](https://github.com/inabagumi/inaba-jinja/compare/v1.16.2...v1.16.3) (2020-11-07)
 
 
