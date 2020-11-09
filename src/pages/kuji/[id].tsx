@@ -37,21 +37,19 @@ const ShareLinksList = styled.ul`
 
 const ShareButton = styled.a`
   background-color: #1da1f2;
-  border: 1px solid #1da1f2;
-  border-radius: 1rem;
+  border-radius: 1.2em;
   color: #fff;
   display: inline-block;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.025em;
   line-height: 1;
-  padding: 0.5rem 1.5rem;
+  padding: 0.6em 1.5em;
   text-decoration: none;
+  transition: background-color 0.5s ease;
 
   :hover {
     background-color: #005fd1;
-    border-color: #005fd1;
-    color: #fff;
   }
 `
 
