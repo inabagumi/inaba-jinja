@@ -11,7 +11,7 @@
   "dependencies": {
     "@mdx-js/react": "^1.6.21",
     "@reach/skip-nav": "^0.11.2",
-    "contentful": "^7.14.8",
+    "contentful": "^7.14.10",
     "next": "^10.0.1",
     "next-seo": "^4.15.1",
     "nprogress": "^1.0.0-1",
