@@ -48,8 +48,7 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
               alt="くじ引き中..."
               height={580}
               priority
-              quality="80"
-              sizes="256px"
+              quality={80}
               src={kujiImageURL}
               width={450}
             />
