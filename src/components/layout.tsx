@@ -1,11 +1,7 @@
-import Image from 'next/image'
 import type { FC } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 
-import {
-  preSrc as mainVisualPlaceholder,
-  src as mainVisualURL
-} from '@/assets/main-visual.jpg'
+import Background from '@/components/background'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import { SkipNavLink } from '@/components/skip-nav'
@@ -43,38 +39,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Background = styled.div`
-  height: 100vh;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  z-index: -1;
-
-  ::before,
-  ::after {
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-
-  ::before {
-    background-image: url('${mainVisualPlaceholder}');
-    background-size: cover;
-  }
-
-  ::after {
-    background-color: rgba(0, 0, 0, 0.54);
-  }
-
-  img {
-    object-fit: cover;
-  }
-`
-
 const Wrapper = styled.div`
   min-height: 100vh;
 `
@@ -83,24 +47,24 @@ type Props = {
   hideHeader?: boolean
 }
 
-const Layout: FC<Props> = ({ children, hideHeader = false }) => (
-  <>
-    <GlobalStyle />
+const Layout: FC<Props> = ({ children, hideHeader = false }) => {
+  return (
+    <>
+      <GlobalStyle />
 
-    <SkipNavLink>コンテンツにスキップ</SkipNavLink>
+      <SkipNavLink>コンテンツにスキップ</SkipNavLink>
 
-    <Background aria-hidden="true">
-      <Image alt="" layout="fill" priority src={mainVisualURL} />
-    </Background>
+      <Background />
 
-    <Wrapper>
-      {!hideHeader && <Header />}
+      <Wrapper>
+        {!hideHeader && <Header />}
 
-      {children}
-    </Wrapper>
+        {children}
+      </Wrapper>
 
-    <Footer />
-  </>
-)
+      <Footer />
+    </>
+  )
+}
 
 export default Layout

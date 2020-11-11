@@ -9,7 +9,6 @@ const Container = styled.footer`
   flex-direction: column;
   font-size: 0.85rem;
   justify-content: space-between;
-  margin-top: 3rem;
   padding: 1rem 1rem;
 
   @media (min-width: 960px) {
