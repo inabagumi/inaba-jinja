@@ -1,8 +1,8 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import NextImage from 'next/image'
 import { BreadcrumbJsonLd, NextSeo } from 'next-seo'
 import styled from 'styled-components'
 
-import Image from '@/components/image'
 import Page from '@/components/layout'
 import SingleWindow from '@/components/simple-window'
 import getFortune from '@/contentful/getFortune'
@@ -18,8 +18,15 @@ const Content = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  max-width: 100%;
-  width: 256px;
+  position: relative;
+
+  & > :last-of-type {
+    vertical-align: bottom;
+  }
+`
+
+const Image = styled(NextImage)`
+  margin: 0 auto;
 `
 
 const ShareLinks = styled.nav`
@@ -64,8 +71,8 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
   const title = `因幡はねるくじ ${name}`
   const imageDetails = fortune.fields.paper.fields.file.details.image
   const imageURL = `https:${fortune.fields.paper.fields.file.url}`
-  const imageWidth = imageDetails?.width ?? 0
-  const imageHeight = imageDetails?.height ?? 0
+  const imageWidth = imageDetails?.width && imageDetails.width / 2
+  const imageHeight = imageDetails?.height && imageDetails.height / 2
 
   return (
     <>
@@ -104,13 +111,18 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
         <SingleWindow title={name}>
           <Content>
             <ImageWrapper>
+              <NextImage
+                alt=""
+                layout="fill"
+                priority
+                src={fortune.fields.prePaper}
+                unoptimized
+              />
               <Image
                 alt={name}
                 height={imageHeight}
-                placeholder={fortune.fields.prePaper}
                 priority={!!imageWidth}
                 quality={80}
-                sizes={imageWidth ? `${imageWidth}px` : undefined}
                 src={imageURL}
                 width={imageWidth}
               />
