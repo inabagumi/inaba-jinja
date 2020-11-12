@@ -1,14 +1,13 @@
 import { MDXProvider } from '@mdx-js/react'
 import type { MDXProviderComponents } from '@mdx-js/react'
 import NextLink from 'next/link'
-import { NextSeo } from 'next-seo'
 import type { FC } from 'react'
 import styled from 'styled-components'
 
 import ExternalLink from '@/components/external-link'
 import Page from '@/components/layout'
+import SEO from '@/components/seo'
 import SimpleWindow from '@/components/simple-window'
-import fullPath from '@/helpers/fullPath'
 
 const StyledLink = styled.a`
   color: var(--ij-color-primary);
@@ -55,11 +54,9 @@ type Props = {
 }
 
 const MarkdownDoc: FC<Props> = ({ children, path, title }) => {
-  const canonicalURL = path && fullPath(path)
-
   return (
     <MDXProvider components={mdxComponents}>
-      <NextSeo canonical={canonicalURL} title={title} />
+      <SEO path={path} title={title} type="article" />
 
       <Page>
         <SimpleWindow title={title}>{children}</SimpleWindow>

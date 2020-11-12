@@ -1,13 +1,12 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import NextImage from 'next/image'
-import { BreadcrumbJsonLd, NextSeo } from 'next-seo'
 import styled from 'styled-components'
 
 import Page from '@/components/layout'
 import Placeholder from '@/components/placeholder'
+import SEO from '@/components/seo'
 import SingleWindow from '@/components/simple-window'
 import getFortune from '@/contentful/getFortune'
-import fullPath from '@/helpers/fullPath'
 import getTweetLink from '@/helpers/getTweetLink'
 import NotFound from '@/pages/404.mdx'
 import { FortuneEntry } from '@/types/fortune'
@@ -77,35 +76,16 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
 
   return (
     <>
-      <NextSeo
-        canonical={fullPath(`/kuji/${fortune.sys.id}`)}
+      <SEO
         description={fortune.fields.description}
-        openGraph={{
-          images: [
-            {
-              height: fortune.fields.card.fields.file.details.image?.height,
-              url: fullPath(fortune.fields.card.fields.file.url),
-              width: fortune.fields.card.fields.file.details.image?.width
-            }
-          ],
-          title
+        image={{
+          height: fortune.fields.card.fields.file.details.image?.height,
+          url: fortune.fields.card.fields.file.url,
+          width: fortune.fields.card.fields.file.details.image?.width
         }}
+        path={`/kuji/${fortune.sys.id}`}
         title={title}
-      />
-
-      <BreadcrumbJsonLd
-        itemListElements={[
-          {
-            item: fullPath('/lottery'),
-            name: 'ねるくじ',
-            position: 1
-          },
-          {
-            item: fullPath(`/kuji/${fortune.sys.id}`),
-            name,
-            position: 2
-          }
-        ]}
+        type="article"
       />
 
       <Page>

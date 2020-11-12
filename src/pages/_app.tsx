@@ -1,10 +1,8 @@
 import type { AppProps } from 'next/app'
-import { DefaultSeo, LogoJsonLd } from 'next-seo'
 import { useCallback, useEffect } from 'react'
 import type { FC } from 'react'
 
 import NProgress from '@/components/nprogress'
-import fullPath from '@/helpers/fullPath'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
   const handleRouterChangeComplete = useCallback((url: string) => {
@@ -30,22 +28,6 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
 
   return (
     <>
-      <DefaultSeo
-        openGraph={{
-          type: 'article'
-        }}
-        twitter={{
-          cardType: 'summary_large_image',
-          site: '@Inaba_Jinja'
-        }}
-        titleTemplate="%s - 因幡神社"
-      />
-
-      <LogoJsonLd
-        logo={fullPath('/images/favicon-192x192.png')}
-        url={fullPath('/')}
-      />
-
       <Component {...pageProps} />
 
       <NProgress />

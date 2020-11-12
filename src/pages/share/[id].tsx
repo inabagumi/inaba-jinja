@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
-import { NextSeo } from 'next-seo'
 
 import Refresh from '@/components/refresh'
-import fullPath from '@/helpers/fullPath'
+import SEO from '@/components/seo'
 import NotFound from '@/pages/404.mdx'
 import { Props as KujiProps } from '@/pages/kuji/[id]'
 
@@ -13,20 +12,16 @@ const SharePage: NextPage<KujiProps> = ({ fortune }) => {
 
   return (
     <>
-      <NextSeo
-        canonical={fullPath(`/kuji/${fortune.sys.id}`)}
+      <SEO
         description={fortune.fields.description}
-        openGraph={{
-          images: [
-            {
-              height: 630,
-              url: fullPath(fortune.fields.card.fields.file.url),
-              width: 1200
-            }
-          ],
-          title
+        image={{
+          height: fortune.fields.card.fields.file.details.image?.height,
+          url: fortune.fields.card.fields.file.url,
+          width: fortune.fields.card.fields.file.details.image?.width
         }}
+        path={`/kuji/${fortune.sys.id}`}
         title={title}
+        type="article"
       />
 
       <Refresh path="/" />
