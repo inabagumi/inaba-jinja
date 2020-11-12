@@ -1277,10 +1277,10 @@
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-1.1.2.tgz#6cc1a41e99acb36bd1ed9ed81f69b64258fc4a94"
   integrity sha512-bUFu1+UuIwFIwGx1W1HCTYqw6Ga7s/66H0d7mSj3iWuY7Es8vxWXGgxZVCtjBvDanoibAevJbtUV/7rtzfU5PQ==
 
-"@inlet/react-pixi@^6.0.5":
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-6.0.5.tgz#66fa3a81d2fd4b5428fecba0fef6296522204b89"
-  integrity sha512-UqWKd0rQGu66C3UOCDEk3uvYjQAcd42uZwphzQXWgv9U4eHdvlPm0dpC68EiMcoBE43l0qHt6fL22zS1P8gMPQ==
+"@inlet/react-pixi@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-6.0.6.tgz#b233a65d3712d02348f85b07d8f686f97b9061c7"
+  integrity sha512-ECp5ilJUi+ZD+u5QrqesN8dkzCIwA1/TEclw1fFayv6pbcpIx11nynfAwp2h+sIhwkAClwrWT0JBh7vGUmvtYA==
   dependencies:
     performance-now "2.1.0"
     react-reconciler "0.26.1"
