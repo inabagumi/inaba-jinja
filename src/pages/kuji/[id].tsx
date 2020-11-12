@@ -4,6 +4,7 @@ import { BreadcrumbJsonLd, NextSeo } from 'next-seo'
 import styled from 'styled-components'
 
 import Page from '@/components/layout'
+import Placeholder from '@/components/placeholder'
 import SingleWindow from '@/components/simple-window'
 import getFortune from '@/contentful/getFortune'
 import fullPath from '@/helpers/fullPath'
@@ -111,13 +112,7 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
         <SingleWindow title={name}>
           <Content>
             <ImageWrapper>
-              <NextImage
-                alt=""
-                layout="fill"
-                priority
-                src={fortune.fields.prePaper}
-                unoptimized
-              />
+              <Placeholder src={fortune.fields.prePaper} />
               <Image
                 alt={name}
                 height={imageHeight}

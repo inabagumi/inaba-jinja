@@ -101,35 +101,22 @@ const nextConfig = {
     ]
   },
   webpack(config, { defaultLoaders }) {
-    const urlLoader = {
-      loader: 'url-loader',
-      options: {
-        esModule: false,
-        limit: 8192,
-        name: '[name].[contenthash:8].[ext]',
-        outputPath: 'static/media',
-        publicPath: '/_next/static/media'
-      }
-    }
-
     config.module.rules.push({
-      test: /\.jpg$/,
+      test: /\.(?:jpg|png)$/,
       use: [
         defaultLoaders.babel,
         {
-          loader: 'lqip-loader',
+          loader: 'responsive-loader',
           options: {
-            base64: true,
-            pallete: false
+            adapter: require('responsive-loader/sharp'),
+            esModule: true,
+            name: '[name].[contenthash:8].[width].[ext]',
+            outputPath: 'static/media',
+            placeholder: true,
+            publicPath: '/_next/static/media'
           }
-        },
-        urlLoader
+        }
       ]
-    })
-
-    config.module.rules.push({
-      test: /\.png$/,
-      use: [defaultLoaders.babel, urlLoader]
     })
 
     config.module.rules.push({

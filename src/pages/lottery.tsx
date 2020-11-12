@@ -3,13 +3,21 @@ import Image from 'next/image'
 import { NextSeo } from 'next-seo'
 import styled, { keyframes } from 'styled-components'
 
-import kujiImageURL from '@/assets/kuji.png'
+import kujiImage from '@/assets/kuji.png'
 import Page from '@/components/layout'
 import Refresh from '@/components/refresh'
 import SimpleWindow from '@/components/simple-window'
 import getFortunes from '@/contentful/getFortunes'
 
 const DELAY_SECONDS = 2
+
+const Content = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+`
 
 const shake = keyframes`
   from {
@@ -27,7 +35,6 @@ const LotteryBox = styled.div`
   margin: 0 auto;
   max-width: 80%;
   transform: translateY(0) rotate(180deg);
-  width: 256px;
 `
 
 type Props = {
@@ -43,16 +50,18 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
 
       <Page>
         <SimpleWindow>
-          <LotteryBox>
-            <Image
-              alt="くじ引き中..."
-              height={580}
-              priority
-              quality={80}
-              src={kujiImageURL}
-              width={450}
-            />
-          </LotteryBox>
+          <Content>
+            <LotteryBox>
+              <Image
+                alt="くじ引き中..."
+                height={kujiImage.height / 2}
+                priority
+                quality={80}
+                src={kujiImage.src}
+                width={kujiImage.width / 2}
+              />
+            </LotteryBox>
+          </Content>
         </SimpleWindow>
       </Page>
     </>
