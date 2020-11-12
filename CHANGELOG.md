@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.16.6](https://github.com/inabagumi/inaba-jinja/compare/v1.16.5...v1.16.6) (2020-11-12)
+
+
+### Bug Fixes
+
+* **layout:** change bg color on skip nav ([#1053](https://github.com/inabagumi/inaba-jinja/issues/1053)) ([10253e0](https://github.com/inabagumi/inaba-jinja/commit/10253e07aa0817d427f10cf42325ed86f8dd0199))
+
 ### [1.16.5](https://github.com/inabagumi/inaba-jinja/compare/v1.16.4...v1.16.5) (2020-11-11)
 
 ### [1.16.4](https://github.com/inabagumi/inaba-jinja/compare/v1.16.3...v1.16.4) (2020-11-09)
