@@ -3,6 +3,7 @@ import type { FC } from 'react'
 import styled from 'styled-components'
 
 import mainVisual from '@/assets/main-visual.jpg'
+import Placeholder from '@/components/placeholder'
 
 const Container = styled.div`
   height: 100vh;
@@ -27,14 +28,8 @@ const Overlay = styled.div`
 
 const Background: FC = () => {
   return (
-    <Container aria-hidden="true" role="presentation">
-      <Image
-        alt=""
-        layout="fill"
-        priority
-        unoptimized
-        src={mainVisual.preSrc}
-      />
+    <Container aria-hidden="true" role="none presentation">
+      <Placeholder src={mainVisual.placeholder} />
       <Image alt="" layout="fill" priority quality={70} src={mainVisual.src} />
       <Overlay />
     </Container>
