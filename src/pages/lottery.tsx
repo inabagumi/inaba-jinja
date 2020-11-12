@@ -1,11 +1,11 @@
 import type { GetServerSideProps, NextPage } from 'next'
 import Image from 'next/image'
-import { NextSeo } from 'next-seo'
 import styled, { keyframes } from 'styled-components'
 
 import kujiImage from '@/assets/kuji.png'
 import Page from '@/components/layout'
 import Refresh from '@/components/refresh'
+import SEO from '@/components/seo'
 import SimpleWindow from '@/components/simple-window'
 import getFortunes from '@/contentful/getFortunes'
 
@@ -44,7 +44,7 @@ type Props = {
 const LotteryPage: NextPage<Props> = ({ id }) => {
   return (
     <>
-      <NextSeo noindex title="おみくじを引いています..." />
+      <SEO noindex path="/lottery" title="おみくじを引いています..." />
 
       <Refresh path={`/kuji/${id}`} delay={DELAY_SECONDS} />
 

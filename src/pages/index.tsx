@@ -1,13 +1,12 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import { NextSeo } from 'next-seo'
 import styled from 'styled-components'
 
 import cardImage from '@/assets/card.jpg'
 import BaseLogo from '@/assets/vertical-logo.svg'
 import Page from '@/components/layout'
+import SEO from '@/components/seo'
 import { SkipNavContent } from '@/components/skip-nav'
-import fullPath from '@/helpers/fullPath'
 
 const description =
   '因幡神社は東京都北区赤羽のどこかにある神社です。有閑喫茶 あにまーれの因幡はねる様をご祭神としてお祀りしています。'
@@ -77,21 +76,14 @@ const LotteryButton = styled.a`
 
 const HomePage: NextPage = () => (
   <>
-    <NextSeo
-      canonical={fullPath('/')}
+    <SEO
       description={description}
-      openGraph={{
-        images: [
-          {
-            height: 630,
-            url: fullPath(cardImage.src),
-            width: 1200
-          }
-        ],
-        type: 'website'
+      image={{
+        height: cardImage.height,
+        url: cardImage.src,
+        width: cardImage.width
       }}
-      title="因幡神社"
-      titleTemplate="%s"
+      path="/"
     />
 
     <Page hideHeader>
