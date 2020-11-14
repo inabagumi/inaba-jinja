@@ -13,16 +13,11 @@ const nextConfig = {
       {
         headers: [
           {
-            key: 'cache-control',
-            value:
-              'max-age=600, public, s-maxage=120, stale-if-error=600, stale-while-revalidate=300'
-          },
-          {
             key: 'referrer-policy',
             value: 'same-origin, strict-origin-when-cross-origin'
           }
         ],
-        source: '/((?!_next).*)'
+        source: '/.*'
       },
       {
         headers: [
