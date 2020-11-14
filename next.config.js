@@ -4,10 +4,6 @@ const withPWA = require('next-pwa')
 const withMDX = nextMDX()
 
 const nextConfig = {
-  experimental: {
-    productionBrowserSourceMaps: true
-  },
-  generateEtags: false,
   headers() {
     return [
       {
