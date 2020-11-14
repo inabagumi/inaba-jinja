@@ -1,8 +1,5 @@
 {
   "author": "Haneru Developers",
-  "browserslist": [
-    "defaults"
-  ],
   "dependencies": {
     "next": "^10.0.1",
     "next-seo": "^4.17.0",
@@ -27,25 +24,15 @@
   "engines": {
     "node": "12.x"
   },
-  "eslintConfig": {
-    "extends": [
-      "@inabagumi/react"
-    ],
-    "parserOptions": {
-      "project": "tsconfig.json"
-    },
-    "root": true
-  },
   "homepage": "https://hanerubeat.app/",
   "name": "@inabagumi/hanerubeat",
-  "prettier": "@inabagumi/prettier-config",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier --ignore-path .gitignore --write .",
-    "format-check": "prettier --ignore-path .gitignore --check .",
-    "lint": "eslint --ignore-path .gitignore ."
+    "format": "prettier --write .",
+    "format-check": "prettier -c .",
+    "lint": "eslint ."
   },
   "version": "2.0.0"
 }
