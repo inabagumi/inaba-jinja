@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.16.8](https://github.com/inabagumi/inaba-jinja/compare/v1.16.7...v1.16.8) (2020-11-14)
+
+
+### Bug Fixes
+
+* remove cache-control header ([#1061](https://github.com/inabagumi/inaba-jinja/issues/1061)) ([758ce3f](https://github.com/inabagumi/inaba-jinja/commit/758ce3fd22f155190ba5a266ad9d069b6129c7ec))
+
 ### [1.16.7](https://github.com/inabagumi/inaba-jinja/compare/v1.16.6...v1.16.7) (2020-11-14)
 
 
