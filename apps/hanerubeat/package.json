@@ -4,16 +4,11 @@
     "defaults"
   ],
   "dependencies": {
-    "@emotion/core": "^10.1.1",
-    "@emotion/styled": "^10.0.27",
-    "file-loader": "^6.2.0",
     "next": "^10.0.1",
-    "next-pwa": "^3.1.5",
     "next-seo": "^4.17.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-icons": "^3.11.0",
-    "url-loader": "^4.1.1"
+    "react-icons": "^3.11.0"
   },
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
@@ -23,8 +18,11 @@
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
     "eslint": "^7.13.0",
+    "file-loader": "^6.2.0",
+    "next-pwa": "^3.1.5",
     "prettier": "^2.1.2",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "url-loader": "^4.1.1"
   },
   "engines": {
     "node": "12.x"

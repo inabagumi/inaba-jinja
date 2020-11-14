@@ -1,54 +1,12 @@
-import styled from '@emotion/styled'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import { useCallback, useEffect, useState, useRef } from 'react'
 import { MdVolumeOff, MdVolumeUp } from 'react-icons/md'
 
 import mp3Path from 'assets/heartbeat.mp3'
 import oggPath from 'assets/heartbeat.ogg'
-import Heart from 'components/Heart'
-
-const Container = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  position: relative;
-`
-
-const Controls = styled.div`
-  align-items: center;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-`
-
-const Button = styled.button`
-  background-color: transparent;
-  border: 0;
-  color: #eee;
-  display: block;
-  font-size: 64px;
-  margin: 0;
-  padding: 0;
-
-  :focus {
-    outline: 0;
-  }
-
-  [disabled] {
-    color: #aaa;
-  }
-
-  svg {
-    height: auto;
-    width: 1em;
-  }
-`
+import Heart from 'components/heart'
+import styles from 'styles/pages/index.module.css'
 
 const Heartbeat: NextPage = () => {
   const audioRef = useRef<HTMLAudioElement>(null)
@@ -105,6 +63,8 @@ const Heartbeat: NextPage = () => {
     }
   }, [])
 
+  const ButtonIcon = muted ? MdVolumeOff : MdVolumeUp
+
   return (
     <>
       <NextSeo
@@ -113,21 +73,25 @@ const Heartbeat: NextPage = () => {
         titleTemplate="%s"
       />
 
-      <Container>
+      <div className={styles.container}>
         <Heart />
 
-        <Controls>
-          <Button disabled={isLoading} onClick={handleButtonClick}>
-            {muted ? <MdVolumeOff /> : <MdVolumeUp />}
-          </Button>
-        </Controls>
+        <div className={styles.controls}>
+          <button
+            className={styles.button}
+            disabled={isLoading}
+            onClick={handleButtonClick}
+          >
+            <ButtonIcon className={styles['button__icon']} />
+          </button>
+        </div>
 
         {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
         <audio crossOrigin="anonymous" loop preload="none" ref={audioRef}>
           <source src={oggPath} type="audio/ogg" />
           <source src={mp3Path} type="audio/mp3" />
         </audio>
-      </Container>
+      </div>
     </>
   )
 }
