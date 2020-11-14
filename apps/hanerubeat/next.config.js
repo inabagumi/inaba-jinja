@@ -33,7 +33,7 @@ const nextConfig = {
   },
   webpack(config, { defaultLoaders, dev }) {
     config.module.rules.push({
-      test: /\.(?:ogg|mp3)$/i,
+      test: /\.(?:mp3|ogg|vtt)$/i,
       use: [
         defaultLoaders.babel,
         {
