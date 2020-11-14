@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.16.7](https://github.com/inabagumi/inaba-jinja/compare/v1.16.6...v1.16.7) (2020-11-14)
+
+
+### Features
+
+* **seo:** remove next-seo ([#1055](https://github.com/inabagumi/inaba-jinja/issues/1055)) ([d8e930e](https://github.com/inabagumi/inaba-jinja/commit/d8e930e9a066a95c128fb86e1bae3f5386240fca))
+
+
+### Bug Fixes
+
+* **kuji:** handling 404 ([#1058](https://github.com/inabagumi/inaba-jinja/issues/1058)) ([f67ec13](https://github.com/inabagumi/inaba-jinja/commit/f67ec13bdd4529d291fce47655dfafea522a2b8c))
+
 ### [1.16.6](https://github.com/inabagumi/inaba-jinja/compare/v1.16.5...v1.16.6) (2020-11-12)
 
 
