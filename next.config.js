@@ -17,7 +17,7 @@ const nextConfig = {
             value: 'same-origin, strict-origin-when-cross-origin'
           }
         ],
-        source: '/.*'
+        source: '/(.*)'
       },
       {
         headers: [
