@@ -1,5 +1,5 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
-import NextImage from 'next/image'
+import Image from 'next/image'
 import styled from 'styled-components'
 
 import Page from '@/components/layout'
@@ -8,7 +8,6 @@ import SEO from '@/components/seo'
 import SingleWindow from '@/components/simple-window'
 import getFortune from '@/contentful/getFortune'
 import getTweetLink from '@/helpers/getTweetLink'
-import NotFound from '@/pages/404.mdx'
 import { FortuneEntry } from '@/types/fortune'
 
 const Content = styled.div`
@@ -23,10 +22,6 @@ const ImageWrapper = styled.div`
   & > :last-of-type {
     vertical-align: bottom;
   }
-`
-
-const Image = styled(NextImage)`
-  margin: 0 auto;
 `
 
 const ShareLinks = styled.nav`
@@ -61,18 +56,15 @@ const ShareButton = styled.a`
 `
 
 export type Props = {
-  fortune?: FortuneEntry
+  fortune: FortuneEntry
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
-  if (!fortune) return <NotFound />
-
   const name = `第${fortune.fields.number}番『${fortune.fields.blessing}』`
-  const title = `因幡はねるくじ ${name}`
   const imageDetails = fortune.fields.paper.fields.file.details.image
   const imageURL = `https:${fortune.fields.paper.fields.file.url}`
-  const imageWidth = imageDetails?.width && imageDetails.width / 2
-  const imageHeight = imageDetails?.height && imageDetails.height / 2
+  const imageWidth = imageDetails ? imageDetails.width / 2 : 254
+  const imageHeight = imageDetails ? imageDetails.height / 2 : 540
 
   return (
     <>
@@ -84,7 +76,7 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
           width: fortune.fields.card.fields.file.details.image?.width
         }}
         path={`/kuji/${fortune.sys.id}`}
-        title={title}
+        title={`因幡はねるくじ ${name}`}
         type="article"
       />
 
@@ -96,7 +88,7 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
               <Image
                 alt={name}
                 height={imageHeight}
-                priority={!!imageWidth}
+                priority
                 quality={80}
                 src={imageURL}
                 width={imageWidth}
@@ -133,21 +125,20 @@ export type Params = {
 export const getStaticProps: GetStaticProps<Props, Params> = async ({
   params
 }) => {
-  const id = params?.id
+  const fortune = await getFortune(params?.id).catch(() => undefined)
 
-  if (id) {
-    const fortune = await getFortune(id).catch(() => undefined)
-
+  if (fortune) {
     return {
       props: {
         fortune
       },
-      revalidate: 5
+      revalidate: 30
     }
   }
 
   return {
-    notFound: true
+    notFound: true,
+    revalidate: 5
   }
 }
 
