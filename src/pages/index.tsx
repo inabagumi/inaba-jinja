@@ -16,7 +16,12 @@ const Container = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  padding: 3rem 0;
+
+  @media (min-width: 960px) {
+    min-height: 100vh;
+    padding: 0;
+  }
 `
 
 const Header = styled.header`

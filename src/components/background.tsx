@@ -6,7 +6,9 @@ import mainVisual from '@/assets/main-visual.jpg'
 import Placeholder from '@/components/placeholder'
 
 const Container = styled.div`
+  bottom: 0;
   height: 100vh;
+  left: 0;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -28,7 +30,7 @@ const Overlay = styled.div`
 
 const Background: FC = () => {
   return (
-    <Container aria-hidden="true" role="none presentation">
+    <Container aria-hidden role="none presentation">
       <Placeholder src={mainVisual.placeholder} />
       <Image alt="" layout="fill" priority quality={70} src={mainVisual.src} />
       <Overlay />
