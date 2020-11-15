@@ -39,6 +39,10 @@ class Document extends NextDocument {
     return (
       <Html lang="ja">
         <Head prefix="og: http://ogp.me/ns#">
+          <meta
+            content="viewport-fit=cover,width=device-width"
+            name="viewport"
+          />
           <meta content="#ff5722" name="theme-color" />
 
           <link href="https://www.google-analytics.com" rel="preconnect" />
