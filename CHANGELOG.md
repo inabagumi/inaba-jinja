@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/inabagumi/inaba-jinja/compare/v1.16.9...v1.17.0) (2020-11-15)
+
+
+### Features
+
+* **layout:** show menu for mobile ([#1067](https://github.com/inabagumi/inaba-jinja/issues/1067)) ([f1b1fdb](https://github.com/inabagumi/inaba-jinja/commit/f1b1fdb1fc3ab7babd25c2c54081832a25510c80))
+
 ### [1.16.9](https://github.com/inabagumi/inaba-jinja/compare/v1.16.8...v1.16.9) (2020-11-15)
 
 ### [1.16.8](https://github.com/inabagumi/inaba-jinja/compare/v1.16.7...v1.16.8) (2020-11-14)
