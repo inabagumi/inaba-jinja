@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.17.3](https://github.com/inabagumi/inaba-jinja/compare/v1.17.2...v1.17.3) (2020-11-15)
+
+
+### Bug Fixes
+
+* **layout:** add right space to menu button ([#1074](https://github.com/inabagumi/inaba-jinja/issues/1074)) ([2950829](https://github.com/inabagumi/inaba-jinja/commit/2950829fbf2b19524069ad7167ff96ef118d2c50))
+* **layout:** move viewport tag to _app ([#1073](https://github.com/inabagumi/inaba-jinja/issues/1073)) ([26d6bde](https://github.com/inabagumi/inaba-jinja/commit/26d6bde77302de85c138490ad5154a926bf429e4))
+
 ### [1.17.2](https://github.com/inabagumi/inaba-jinja/compare/v1.17.1...v1.17.2) (2020-11-15)
 
 
