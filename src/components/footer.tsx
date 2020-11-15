@@ -2,17 +2,19 @@ import Link from 'next/link'
 import type { FC } from 'react'
 import styled from 'styled-components'
 
+import ExternalLink from '@/components/external-link'
+
 const Container = styled.footer`
-  align-items: flex-start;
+  align-items: flex-end;
   background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
+  display: none;
   flex-direction: column;
   font-size: 0.85rem;
   justify-content: space-between;
   padding: 1rem 1rem;
 
   @media (min-width: 960px) {
-    align-items: flex-end;
+    display: flex;
   }
 `
 
@@ -62,12 +64,7 @@ const Footer: FC = () => {
             </Link>
           </NavLinksItem>
           <NavLinksItem>
-            <NavLink
-              className="footer__link"
-              href="https://haneru.dev/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <NavLink as={ExternalLink} href="https://haneru.dev/">
               運営者情報
             </NavLink>
           </NavLinksItem>

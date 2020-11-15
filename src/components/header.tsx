@@ -16,6 +16,7 @@ const Logo = styled(BaseLogo)`
 const Container = styled.header`
   margin: 0 auto;
   max-width: 100%;
+  padding: 0 0.5rem;
   width: 800px;
 `
 

@@ -27,7 +27,7 @@ type Props = {
 const Placeholder: FC<Props> = ({ src }) => {
   return (
     <Container>
-      <Image alt="" aria-hidden="true" role="none presentation" src={src} />
+      <Image alt="" aria-hidden role="none presentation" src={src} />
     </Container>
   )
 }
