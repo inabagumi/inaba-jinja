@@ -33,6 +33,8 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
   return (
     <>
       <Head>
+        <meta content="viewport-fit=cover,width=device-width" name="viewport" />
+
         <link
           href={favicon192x192.src}
           rel="icon"
