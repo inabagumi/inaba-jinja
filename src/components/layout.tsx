@@ -1,52 +1,19 @@
 import Link from 'next/link'
 import type { FC } from 'react'
 import { useCallback, useState } from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
 import Logo from '@/assets/logo.svg'
-import Background from '@/components/background'
 import ExternalLink from '@/components/external-link'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import IconButton from '@/components/icon-button'
 import { SkipNavLink } from '@/components/skip-nav'
 
-const GlobalStyle = createGlobalStyle`
-  :root {
-    --ij-color-primary: #f57f17;
-
-    --ij-font-family-base: -apple-system, BlinkMacSystemFont, Helvetica Neue,
-      Helvetica, Arial, YuGothic, Yu Gothic, sans-serif;
-    --ij-font-family-serif: Garamond, Times New Roman, YuMincho, Yu Mincho,
-      serif;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-    color: inherit;
-  }
-
-  html {
-    background-color: #757575;
-    box-sizing: border-box;
-    color: #fff;
-    font-family: var(--ij-font-family-base, sans-serif);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 2;
-    -webkit-text-size-adjust: none;
-  }
-
-  body {
-    margin: 0;
-  }
-`
-
 const Wrapper = styled.div`
-  padding: env(safe-area-inset-top, 0) env(safe-area-inset-left, 0) 0
-    env(safe-area-inset-right, 0);
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
+  padding-top: env(safe-area-inset-top, 0);
   position: relative;
 
   @media (min-width: 960px) {
@@ -175,8 +142,6 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => {
 
   return (
     <>
-      <GlobalStyle />
-
       <SkipNavLink>コンテンツにスキップ</SkipNavLink>
 
       <Wrapper>
@@ -234,8 +199,6 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => {
       </Wrapper>
 
       <Footer />
-
-      <Background />
     </>
   )
 }
