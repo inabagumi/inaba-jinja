@@ -59,7 +59,7 @@ const MenuButton = styled(IconButton)`
   font-size: 3rem;
   margin: 0.5rem 0.5rem 0 0;
   position: absolute;
-  right: 0;
+  right: env(safe-area-inset-right, 0);
   top: 0;
 
   @media (min-width: 960px) {
