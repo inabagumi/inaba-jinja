@@ -45,6 +45,8 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Wrapper = styled.div`
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-left, 0) 0
+    env(safe-area-inset-right, 0);
   position: relative;
 `
 
@@ -124,6 +126,10 @@ const MenuItem = styled.a`
   padding: 0.5em 1em 0.5em 0.25em;
   text-align: right;
   text-decoration: none;
+
+  :last-of-type {
+    padding-bottom: calc(0.25em + env(safe-area-inset-bottom, 0));
+  }
 `
 
 type BackdropProps = {

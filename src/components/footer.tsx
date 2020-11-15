@@ -11,7 +11,7 @@ const Container = styled.footer`
   flex-direction: column;
   font-size: 0.85rem;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 1rem + calc(env(safe-area-inset-bottom, 0));
 
   @media (min-width: 960px) {
     display: flex;
