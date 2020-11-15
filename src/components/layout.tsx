@@ -48,6 +48,10 @@ const Wrapper = styled.div`
   padding: env(safe-area-inset-top, 0) env(safe-area-inset-left, 0) 0
     env(safe-area-inset-right, 0);
   position: relative;
+
+  @media (min-width: 960px) {
+    min-height: 100vh;
+  }
 `
 
 const MenuButton = styled(IconButton)`
