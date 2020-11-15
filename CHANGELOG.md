@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.17.4](https://github.com/inabagumi/inaba-jinja/compare/v1.17.3...v1.17.4) (2020-11-15)
+
+
+### Bug Fixes
+
+* **background:** move background component to _app ([#1076](https://github.com/inabagumi/inaba-jinja/issues/1076)) ([c121ec8](https://github.com/inabagumi/inaba-jinja/commit/c121ec8b383bc9f62c96d44e8865e17a35eb775a))
+
 ### [1.17.3](https://github.com/inabagumi/inaba-jinja/compare/v1.17.2...v1.17.3) (2020-11-15)
 
 
