@@ -1,12 +1,8 @@
-import NextDocument, {
-  DocumentContext,
-  DocumentInitialProps,
-  Head,
-  Html,
-  Main,
-  NextScript
-} from 'next/document'
+import type { DocumentContext, DocumentInitialProps } from 'next/document'
+import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+
+import createGoogleAnalyticsTrackingCode from '@/helpers/createGoogleAnalyticsTrackingCode'
 
 class Document extends NextDocument {
   static async getInitialProps(
@@ -48,23 +44,6 @@ class Document extends NextDocument {
           <link href="https://www.google-analytics.com" rel="preconnect" />
           <link href="https://www.googletagmanager.com" rel="preconnect" />
           <link href="/manifest.webmanifest" rel="manifest" />
-          <link
-            href="/images/favicon-192x192.png"
-            rel="icon"
-            sizes="192x192"
-            type="image/png"
-          />
-          <link
-            href="/images/favicon-512x512.png"
-            rel="icon"
-            sizes="512x512"
-            type="image/png"
-          />
-          <link
-            href="/apple-touch-icon.png"
-            rel="apple-touch-icon"
-            sizes="152x152"
-          />
 
           {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
             <>
@@ -74,12 +53,9 @@ class Document extends NextDocument {
               />
               <script
                 dangerouslySetInnerHTML={{
-                  __html: [
-                    'window.dataLayer = window.dataLayer || [];',
-                    'function gtag(){dataLayer.push(arguments);}',
-                    "gtag('js', new Date());",
-                    `gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');`
-                  ].join('')
+                  __html: createGoogleAnalyticsTrackingCode(
+                    process.env.NEXT_PUBLIC_GA_TRACKING_ID
+                  )
                 }}
               />
             </>

@@ -2153,6 +2153,11 @@
   resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
   integrity sha1-DSUBJorY+ZYrdA04fEZU9fjiPlI=
 
+"@types/web-app-manifest@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/web-app-manifest/-/web-app-manifest-1.0.0.tgz#62b1be8ec79edd2ff6fcd3693321b60021f41bba"
+  integrity sha512-t9jCCqE8hGRSO7KTgw6hW0KpncQJhjYGrgqYkjAhtTRdOxF6lWm0kiW4II7sfgePXhKTisn9d4/RAQ6GQ0IeHg==
+
 "@types/webpack-env@^1.15.3":
   version "1.15.3"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.15.3.tgz#fb602cd4c2f0b7c0fb857e922075fdf677d25d84"

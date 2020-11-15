@@ -41,22 +41,13 @@ const nextConfig = {
           }
         ],
         source: '/workbox-:hash.js(.map)?'
-      },
-      {
-        headers: [
-          {
-            key: 'content-type',
-            value: 'application/manifest+json'
-          }
-        ],
-        source: '/manifest.webmanifest'
       }
     ]
   },
   images: {
     domains: ['images.ctfassets.net']
   },
-  pageExtensions: ['mdx', 'tsx'],
+  pageExtensions: ['mdx', 'tsx', 'ts'],
   pwa: {
     buildExcludes: [/\.map$/, /\.(?:jpg|png)$/],
     dest: '.next/static',
@@ -88,6 +79,10 @@ const nextConfig = {
       {
         destination: '/_next/static/workbox-:hash.js$2',
         source: '/workbox-:hash.js(.map)?'
+      },
+      {
+        destination: '/api/manifest',
+        source: '/manifest.webmanifest'
       }
     ]
   },
