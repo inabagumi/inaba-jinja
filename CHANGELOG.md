@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.17.5](https://github.com/inabagumi/inaba-jinja/compare/v1.17.4...v1.17.5) (2020-11-16)
+
+
+### Bug Fixes
+
+* **menu:** remove scroll when showing menu ([#1081](https://github.com/inabagumi/inaba-jinja/issues/1081)) ([759d721](https://github.com/inabagumi/inaba-jinja/commit/759d7217fe154d271f9ffc839ba9ea37bb182d31))
+
 ### [1.17.4](https://github.com/inabagumi/inaba-jinja/compare/v1.17.3...v1.17.4) (2020-11-15)
 
 
