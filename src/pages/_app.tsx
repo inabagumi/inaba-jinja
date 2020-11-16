@@ -9,7 +9,7 @@ import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
 import Background from '@/components/background'
-import NProgress from '@/components/nprogress'
+import Loading from '@/components/loading'
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -95,7 +95,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
       <GlobalStyle />
       <Component {...pageProps} />
       <Background />
-      <NProgress />
+      <Loading />
     </>
   )
 }
