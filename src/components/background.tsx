@@ -13,10 +13,6 @@ const Container = styled.div`
   position: fixed;
   width: 100%;
   z-index: -1;
-
-  img {
-    object-fit: cover;
-  }
 `
 
 const Overlay = styled.div`
@@ -32,7 +28,14 @@ const Background: FC = () => {
   return (
     <Container aria-hidden role="none presentation">
       <Placeholder src={mainVisual.placeholder} />
-      <Image alt="" layout="fill" priority quality={70} src={mainVisual.src} />
+      <Image
+        alt=""
+        layout="fill"
+        objectFit="cover"
+        priority
+        quality={70}
+        src={mainVisual.src}
+      />
       <Overlay />
     </Container>
   )
