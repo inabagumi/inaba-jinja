@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import type { FC } from 'react'
 import { useCallback, useEffect } from 'react'
 import { createGlobalStyle } from 'styled-components'
@@ -43,7 +44,9 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
+  const router = useRouter()
+
   const handleRouterChangeComplete = useCallback((url: string) => {
     const trackingID = process.env.NEXT_PUBLIC_GA_TRACKING_ID
 
