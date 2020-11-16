@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import type { FC } from 'react'
 import { useCallback, useState } from 'react'
+import FocusLock from 'react-focus-lock'
+import { RemoveScroll } from 'react-remove-scroll'
 import styled from 'styled-components'
 
 import Logo from '@/assets/logo.svg'
@@ -161,37 +163,55 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => {
           onClick={hideMenu}
           role="none presentation"
           show={menuShown}
+          tabIndex={-1}
         />
-        <Menu aria-hidden={!menuShown} id="global-menu" role="menu">
-          <MenuHeader>
-            <Link href="/" passHref>
-              <MenuLogoLink onClick={hideMenu}>
-                <MenuLogo />
-              </MenuLogoLink>
-            </Link>
-          </MenuHeader>
+        <FocusLock disabled={!menuShown} returnFocus>
+          <RemoveScroll allowPinchZoom enabled={menuShown} forwardProps>
+            <Menu aria-hidden={!menuShown} id="global-menu" role="menu">
+              <MenuHeader>
+                <Link href="/" passHref>
+                  <MenuLogoLink
+                    onClick={hideMenu}
+                    tabIndex={!menuShown ? -1 : undefined}
+                  >
+                    <MenuLogo />
+                  </MenuLogoLink>
+                </Link>
+              </MenuHeader>
 
-          <MenuContent />
+              <MenuContent />
 
-          <MenuFooter>
-            <Link href="/about" passHref>
-              <MenuItem onClick={hideMenu} role="menuitem">
-                因幡神社とは
-              </MenuItem>
-            </Link>
-            <Link href="/privacy" passHref>
-              <MenuItem role="menuitem">プライバシーポリシー</MenuItem>
-            </Link>
-            <MenuItem
-              as={ExternalLink}
-              href="https://haneru.dev"
-              onClick={hideMenu}
-              role="menuitem"
-            >
-              運営者情報
-            </MenuItem>
-          </MenuFooter>
-        </Menu>
+              <MenuFooter>
+                <Link href="/about" passHref>
+                  <MenuItem
+                    onClick={hideMenu}
+                    role="menuitem"
+                    tabIndex={!menuShown ? -1 : undefined}
+                  >
+                    因幡神社とは
+                  </MenuItem>
+                </Link>
+                <Link href="/privacy" passHref>
+                  <MenuItem
+                    role="menuitem"
+                    tabIndex={!menuShown ? -1 : undefined}
+                  >
+                    プライバシーポリシー
+                  </MenuItem>
+                </Link>
+                <MenuItem
+                  as={ExternalLink}
+                  href="https://haneru.dev"
+                  onClick={hideMenu}
+                  role="menuitem"
+                  tabIndex={!menuShown ? -1 : undefined}
+                >
+                  運営者情報
+                </MenuItem>
+              </MenuFooter>
+            </Menu>
+          </RemoveScroll>
+        </FocusLock>
 
         {!hideHeader && <Header />}
 
