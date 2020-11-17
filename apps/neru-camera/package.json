@@ -6,7 +6,7 @@
     "@material-ui/icons": "^4.9.1",
     "@next/plugin-material-ui": "^9.4.4",
     "clsx": "^1.1.1",
-    "contentful": "^7.14.12",
+    "contentful": "^7.14.13",
     "next": "^10.0.1",
     "next-pwa": "^3.1.5",
     "pixi-viewport": "^4.17.1",
