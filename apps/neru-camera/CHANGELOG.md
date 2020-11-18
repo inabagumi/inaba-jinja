@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.5.2](https://github.com/inabagumi/neru-camera/compare/v5.5.1...v5.5.2) (2020-11-18)
+
+
+### Bug Fixes
+
+* **app:** remove @next/plugin-material-ui ([#729](https://github.com/inabagumi/neru-camera/issues/729)) ([7295754](https://github.com/inabagumi/neru-camera/commit/72957547c025da6d6d35b15ca9826bc99ab1d9b3))
+
 ### [5.5.1](https://github.com/inabagumi/neru-camera/compare/v5.5.0...v5.5.1) (2020-10-22)
 
 ## [5.5.0](https://github.com/inabagumi/neru-camera/compare/v5.4.5...v5.5.0) (2020-09-24)
