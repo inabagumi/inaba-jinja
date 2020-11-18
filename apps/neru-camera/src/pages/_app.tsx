@@ -1,10 +1,12 @@
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import App, { AppContext, AppInitialProps, AppProps } from 'next/app'
+import type { AppContext, AppInitialProps, AppProps } from 'next/app'
+import App from 'next/app'
+import { useEffect } from 'react'
 import contentfulClient from '../contentfulClient'
 import { AssetProvider } from '../context/asset-context'
 import { SiteProvider } from '../context/site-context'
-import { OverlayEntry, OverlayFields } from '../types/Overlay'
+import type { OverlayEntry, OverlayFields } from '../types/Overlay'
 
 const theme = createMuiTheme({
   palette: {
@@ -20,17 +22,25 @@ const MyApp = ({
   Component,
   assets,
   pageProps
-}: AppProps & Props): JSX.Element => (
-  <ThemeProvider theme={theme}>
-    <SiteProvider>
-      <AssetProvider assets={assets}>
-        <CssBaseline />
+}: AppProps & Props): JSX.Element => {
+  useEffect(() => {
+    const jssStyles = document.getElementById('jss-server-side')
 
-        <Component {...pageProps} />
-      </AssetProvider>
-    </SiteProvider>
-  </ThemeProvider>
-)
+    jssStyles?.parentNode?.removeChild(jssStyles)
+  }, [])
+
+  return (
+    <ThemeProvider theme={theme}>
+      <SiteProvider>
+        <AssetProvider assets={assets}>
+          <CssBaseline />
+
+          <Component {...pageProps} />
+        </AssetProvider>
+      </SiteProvider>
+    </ThemeProvider>
+  )
+}
 
 MyApp.getInitialProps = async (
   ctx: AppContext
