@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.18.0](https://github.com/inabagumi/inaba-jinja/compare/v1.17.5...v1.18.0) (2020-11-18)
+
+
+### Features
+
+* **app:** replace to react-nprogress ([#1084](https://github.com/inabagumi/inaba-jinja/issues/1084)) ([a04ec57](https://github.com/inabagumi/inaba-jinja/commit/a04ec575dce1d15e1d49251304578ebdc7ca7753))
+
 ### [1.17.5](https://github.com/inabagumi/inaba-jinja/compare/v1.17.4...v1.17.5) (2020-11-16)
 
 
