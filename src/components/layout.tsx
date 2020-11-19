@@ -182,7 +182,7 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => {
               <MenuContent />
 
               <MenuFooter>
-                <Link href="/about" passHref>
+                <Link href="/about" passHref prefetch={false}>
                   <MenuItem
                     onClick={hideMenu}
                     role="menuitem"
@@ -191,7 +191,7 @@ const Layout: FC<Props> = ({ children, hideHeader = false }) => {
                     因幡神社とは
                   </MenuItem>
                 </Link>
-                <Link href="/privacy" passHref>
+                <Link href="/privacy" passHref prefetch={false}>
                   <MenuItem
                     role="menuitem"
                     tabIndex={!menuShown ? -1 : undefined}
