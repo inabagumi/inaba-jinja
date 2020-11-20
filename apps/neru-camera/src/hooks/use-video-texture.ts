@@ -1,12 +1,6 @@
 import { Texture } from 'pixi.js'
 import { useCallback, useEffect, useState } from 'react'
 
-declare global {
-  interface HTMLVideoElement extends HTMLMediaElement {
-    playsInline?: boolean
-  }
-}
-
 type Options = {
   src?: string
   srcObject?: MediaStream
