@@ -5,7 +5,7 @@
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "clsx": "^1.1.1",
-    "contentful": "^7.14.13",
+    "contentful": "^7.14.14",
     "next": "^10.0.2",
     "pixi-viewport": "^4.17.1",
     "pixi.js": "^5.3.3",
