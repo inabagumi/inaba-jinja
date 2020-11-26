@@ -66,7 +66,7 @@
   },
   "resolutions": {
     "react-is": "^17.0.1",
-    "webpack": "^5.6.0",
+    "webpack": "^5.7.0",
     "workbox-webpack-plugin": "^6.0.0-rc.0",
     "workbox-window": "^6.0.0-rc.0"
   },
