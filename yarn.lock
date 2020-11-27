@@ -1450,26 +1450,26 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@reach/portal@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@reach/portal/-/portal-0.12.0.tgz#934a047e2022fd2c82a2178fcb610ae5ea587a13"
-  integrity sha512-isSl/+I8VRxU/v8TxzlpFxUmvKhtG2N+QyRCbTVdwxWd6TsxSdEUfu9H2kwBB16Hd/Sd+x0R/oc2OxZn5KUgjA==
+"@reach/portal@^0.12.1":
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/@reach/portal/-/portal-0.12.1.tgz#995858a6e758d9446870937b60b8707a2efa11cb"
+  integrity sha512-Lhmtd2Qw1DzNZ2m0GHNzCu+2TYUf6kBREPSQJf44AP6kThRs02p1clntbJcmW/rrpYFYgFNbgf5Lso7NyW9ZXg==
   dependencies:
-    "@reach/utils" "0.12.0"
+    "@reach/utils" "0.12.1"
     tslib "^2.0.0"
 
-"@reach/skip-nav@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@reach/skip-nav/-/skip-nav-0.12.0.tgz#4a8f1d9420150f874283e240a273b5582a0fc112"
-  integrity sha512-a7GlAU9mF0g9KBc4deTMDuibkH2qOhL00PLK19qvNcBe+aRVgOl6jevVTzpeFgUMDtWLJ8kaFpS/OolYDpnyhg==
+"@reach/skip-nav@^0.12.1":
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/@reach/skip-nav/-/skip-nav-0.12.1.tgz#082b7f22b8ab50e6bff6297137c13d0ad5a4bb64"
+  integrity sha512-LlnkUaVSQpo9grWbOHKC4Tc6ppwV7uiL+KhQ8388AB7sCbxL6zFo6WlZVNNHW5ahzQR86b3tQE9stf9rX2aJHw==
   dependencies:
-    "@reach/utils" "0.12.0"
+    "@reach/utils" "0.12.1"
     tslib "^2.0.0"
 
-"@reach/utils@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.12.0.tgz#3cc8aef8ed46df1e923d590ff1c995be233c4397"
-  integrity sha512-Uvt4dnYbGOzmGg2mxLVfh1lW4EulPK+3/RY9BBTaOTG6AowqFY0Uze/rCJR3fJdiN3rElQW+AKYxeMd5XIzdpA==
+"@reach/utils@0.12.1":
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.12.1.tgz#02b9c15ba5cddf23e16f2d2ca77aef98a9702607"
+  integrity sha512-5uH4OgO+GupAzZuf3b6Wv/9uC6NdMBlxS6FSKD6YqSxP4QJ0vjD34RVon6N/RMRORacCLyD/aaZIA7283YgeOg==
   dependencies:
     "@types/warning" "^3.0.0"
     tslib "^2.0.0"
