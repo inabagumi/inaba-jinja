@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@mdx-js/react": "^1.6.21",
-    "@reach/portal": "^0.12.0",
-    "@reach/skip-nav": "^0.12.0",
+    "@reach/portal": "^0.12.1",
+    "@reach/skip-nav": "^0.12.1",
     "@tanem/react-nprogress": "^3.0.49",
     "contentful": "^7.15.0",
     "next": "^10.0.3",
