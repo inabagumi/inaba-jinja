@@ -7386,15 +7386,15 @@ neo-async@^2.6.0, neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-next-pwa@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-3.1.5.tgz#336de6998b7678614f0a129b18467785e4e57b40"
-  integrity sha512-FInX1Xj9BCYvzwrzH0JupoHCpXKN1lVFospp7uYcL1eO3gOICtrNruYq988JIPG9vaW5iQpmcUkwbjIittyIlQ==
+next-pwa@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-5.0.0.tgz#d82774e6c4d439eba58db4614e216fb5b572b9ec"
+  integrity sha512-h10xIDE3jJshZamVU0ceGTUB1vYmZcIXhd6TMhnEoRc35ZcAKFUZy7AhbpMJCy+qBaWrDqguTCmwMALf+joWgg==
   dependencies:
     clean-webpack-plugin "^3.0.0"
     globby "^11.0.1"
-    workbox-webpack-plugin "^5.1.4"
-    workbox-window "^5.1.4"
+    workbox-webpack-plugin "^6.0.2"
+    workbox-window "^6.0.2"
 
 next-tick@~1.0.0:
   version "1.0.0"
@@ -10917,7 +10917,7 @@ workbox-sw@^6.0.2:
   resolved "https://registry.yarnpkg.com/workbox-sw/-/workbox-sw-6.0.2.tgz#cd1b8b02ceaaf1abe5804936158a87ec605d271e"
   integrity sha512-EoOjbyy5bpoBoSqt2PIeDOZ/JJ41f+WJjb979PkfIUWw4F+F/w2uKJJrMA5fk+nWnVge83Fwy8nF3dWNsqOrdg==
 
-workbox-webpack-plugin@^5.1.4, workbox-webpack-plugin@^6.0.2:
+workbox-webpack-plugin@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/workbox-webpack-plugin/-/workbox-webpack-plugin-6.0.2.tgz#a7fc0499bc6b5cfa7ebf8d71d8da00be93c9a112"
   integrity sha512-HvzXLyaOD+6pEfNNKZYheRvHk9fVkIL9Rp6CHCd2LowF7M9YMEj8zh2Uuf5IEav6NZ02FR53zWnznO8Imv+fVQ==
@@ -10929,7 +10929,7 @@ workbox-webpack-plugin@^5.1.4, workbox-webpack-plugin@^6.0.2:
     webpack-sources "^1.4.3"
     workbox-build "^6.0.2"
 
-workbox-window@^5.1.4, workbox-window@^6.0.2:
+workbox-window@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/workbox-window/-/workbox-window-6.0.2.tgz#9b47fdb7c088aa4e8b7d0c6cfda17c8bfca6bf7f"
   integrity sha512-I/X+qUh1AwN9x/MxFbXsPn7DA27BMtzkXo55w1tBD8V54fv8nUCeC5E4RpXt/mlgdSwBztnURCQTWsdhTrSUjg==
