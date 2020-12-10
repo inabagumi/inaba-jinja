@@ -13,9 +13,9 @@ import IconButton from '@/components/icon-button'
 import { SkipNavLink } from '@/components/skip-nav'
 
 const Wrapper = styled.div`
+  margin-top: env(safe-area-inset-top, 0);
   padding-left: env(safe-area-inset-left, 0);
   padding-right: env(safe-area-inset-right, 0);
-  padding-top: env(safe-area-inset-top, 0);
   position: relative;
 
   @media (min-width: 960px) {

@@ -40,6 +40,11 @@ class Document extends NextDocument {
       <Html lang="ja">
         <Head prefix="og: http://ogp.me/ns#">
           <meta content="#ff5722" name="theme-color" />
+          <meta content="yes" name="apple-mobile-web-app-capable" />
+          <meta
+            content="black-translucent"
+            name="apple-mobile-web-app-status-bar-style"
+          />
 
           <link href="https://www.google-analytics.com" rel="preconnect" />
           <link href="https://www.googletagmanager.com" rel="preconnect" />
