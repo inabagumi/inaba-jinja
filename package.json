@@ -74,6 +74,7 @@
     "format": "prettier --write .",
     "format-check": "prettier -c .",
     "lint": "eslint --ignore-path .gitignore .",
+    "postinstall": "husky install || exit 0",
     "release": "standard-version",
     "start": "next start",
     "test": "jest"
