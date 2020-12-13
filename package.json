@@ -75,7 +75,7 @@
     "format": "prettier --write .",
     "format-check": "prettier -c .",
     "lint": "eslint --ignore-path .gitignore .",
-    "postinstall": "is-ci || husky install",
+    "postinstall": "is-ci || [ -n \"$VERCEL\" ] || husky install",
     "release": "standard-version",
     "start": "next start",
     "test": "jest"
