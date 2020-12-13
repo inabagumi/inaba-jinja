@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.18.6](https://github.com/inabagumi/inaba-jinja/compare/v1.18.5...v1.18.6) (2020-12-13)
+
+
+### Bug Fixes
+
+* **husky:** do not install husky automatically ([#1152](https://github.com/inabagumi/inaba-jinja/issues/1152)) ([2b4a4a1](https://github.com/inabagumi/inaba-jinja/commit/2b4a4a13815b4fec8e930475872b9918ab92d122))
+
 ### [1.18.5](https://github.com/inabagumi/inaba-jinja/compare/v1.18.4...v1.18.5) (2020-12-13)
 
 ### [1.18.4](https://github.com/inabagumi/inaba-jinja/compare/v1.18.3...v1.18.4) (2020-12-13)
