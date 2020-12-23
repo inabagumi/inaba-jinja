@@ -8831,10 +8831,10 @@ responselike@1.0.2:
   dependencies:
     lowercase-keys "^1.0.0"
 
-responsive-loader@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/responsive-loader/-/responsive-loader-2.2.1.tgz#8fd4809f6c8083d1d1e0fad983c1e34b1c3eac7c"
-  integrity sha512-gX8FwMOl8W34gOE15UIkE9wCvQzkfFkIGrNkdCi+ntLx6Et5WJ/mkvKwVbfu4PowWpPTrXvFV/cHscDTUE6W0w==
+responsive-loader@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/responsive-loader/-/responsive-loader-2.3.0.tgz#3123b6db1dd8aeee37c4d7805e3f45d2e8f5edc1"
+  integrity sha512-8GyyasTKdOfTMDvYy/mBpyV2EM7hz7zWoKdxpocA60eX1jM2udsb+ji03haZWeGnTkQvOplXVqHsev9952dWng==
   dependencies:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"

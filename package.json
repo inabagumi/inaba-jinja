@@ -48,7 +48,7 @@
     "lint-staged": "^10.5.3",
     "next-pwa": "^5.0.0",
     "prettier": "^2.2.1",
-    "responsive-loader": "^2.2.1",
+    "responsive-loader": "^2.3.0",
     "standard-version": "^9.0.0",
     "typescript": "^4.1.3"
   },
