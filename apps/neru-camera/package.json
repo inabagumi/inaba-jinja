@@ -18,7 +18,7 @@
     "@inabagumi/prettier-config": "^1.1.2",
     "@types/node": "^12.12.47",
     "@types/react": "^17.0.0",
-    "eslint": "^7.16.0",
+    "eslint": "^7.17.0",
     "next-pwa": "^5.0.2",
     "prettier": "^2.2.1",
     "standard-version": "^9.1.0",
