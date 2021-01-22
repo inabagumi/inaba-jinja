@@ -1604,15 +1604,15 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
-"@tanem/react-nprogress@^3.0.53":
-  version "3.0.53"
-  resolved "https://registry.yarnpkg.com/@tanem/react-nprogress/-/react-nprogress-3.0.53.tgz#349b05aa3d97753f120e167c66f5590b4bc9cb84"
-  integrity sha512-cJPwa8pPYAi3RfdjJsU25+UBpdfEKNYIUYCCXXY0JjpdU5J8ajDyplnGNrb38VrUa3UpcttTpgqlgU3ritbI+A==
+"@tanem/react-nprogress@^3.0.54":
+  version "3.0.54"
+  resolved "https://registry.yarnpkg.com/@tanem/react-nprogress/-/react-nprogress-3.0.54.tgz#5b910bfc608cdbfa1fdaac995c923abb6f173d1e"
+  integrity sha512-OzC6yX5+SzufBsT94CgHZQEfQE8albmUP4a1t3OQ9AGiUlMEydRfHkuqSeqkeD5xuprEjvDzS84VSrWsJvV/wg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     hoist-non-react-statics "^3.3.2"
     prop-types "^15.7.2"
-    react-use "^15.3.7"
+    react-use "^15.3.8"
 
 "@testing-library/dom@^7.28.1":
   version "7.29.4"
@@ -8385,7 +8385,7 @@ react-universal-interface@^0.6.2:
   resolved "https://registry.yarnpkg.com/react-universal-interface/-/react-universal-interface-0.6.2.tgz#5e8d438a01729a4dbbcbeeceb0b86be146fe2b3b"
   integrity sha512-dg8yXdcQmvgR13RIlZbTRQOoUrDciFVoSBZILwjE2LFISxZZ8loVJKAkuzswl5js8BHda79bIb2b84ehU8IjXw==
 
-react-use@^15.3.7:
+react-use@^15.3.8:
   version "15.3.8"
   resolved "https://registry.yarnpkg.com/react-use/-/react-use-15.3.8.tgz#ca839ac7fb3d696e5ccbeabbc8dadc2698969d30"
   integrity sha512-GeGcrmGuUvZrY5wER3Lnph9DSYhZt5nEjped4eKDq8BRGr2CnLf9bDQWG9RFc7oCPphnscUUdOovzq0E5F2c6Q==
