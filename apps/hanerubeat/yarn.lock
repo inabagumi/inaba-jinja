@@ -3526,16 +3526,16 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-next-pwa@^5.0.4:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-5.0.4.tgz#8b32df9227d429fad022d524eef147879c84ec03"
-  integrity sha512-LbDyxCQvhAdGBYS8ueTqkJmkkwaCki9YXIAedmMc1jtgNTALqDfGOFRTsQjEWZ3LHS+duInh7MDsQJwUSWuy2Q==
+next-pwa@^5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-5.0.5.tgz#1c75ec8b5acbb6e86a8f454234d641fc7fb23bcf"
+  integrity sha512-rkIrPjZ1nyrdf+Pj9L9/SQop6XBApb1sWAWhnJgdYDIbwRoHsJYAcTtCSwf7CK5T/xQ0X7xFu9tz2lkR+SezMQ==
   dependencies:
     babel-loader "^8.2.2"
     clean-webpack-plugin "^3.0.0"
     globby "^11.0.2"
-    workbox-webpack-plugin "^6.0.2"
-    workbox-window "^6.0.2"
+    workbox-webpack-plugin "^6.1.0"
+    workbox-window "^6.1.0"
 
 next-seo@^4.18.0:
   version "4.18.0"
@@ -5256,7 +5256,7 @@ workbox-sw@^6.1.0:
   resolved "https://registry.yarnpkg.com/workbox-sw/-/workbox-sw-6.1.0.tgz#dfaca1029264af71f13a90fdfb16cf8d64ed0537"
   integrity sha512-e2jnIWSmNrpO9Psy4D6euDdRUW8FTXAdMxOj5O02gxa01fri1kfTSM9irDnTGKUiSGc+hlycsvzGdr8bnvzDiA==
 
-workbox-webpack-plugin@^6.0.2:
+workbox-webpack-plugin@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/workbox-webpack-plugin/-/workbox-webpack-plugin-6.1.0.tgz#7090533aed07d000181f5686b5cc5f8c5fe36e06"
   integrity sha512-uRmImfQghNmNF/iyPJ+MS0o2Z9E6kExZRSZIDOhnf1v+Mw1ixxx3n9fuTvTuCDvrUksaXcVEkvhagr12kfkEYA==
@@ -5268,7 +5268,7 @@ workbox-webpack-plugin@^6.0.2:
     webpack-sources "^1.4.3"
     workbox-build "^6.1.0"
 
-workbox-window@^6.0.2, workbox-window@^6.1.0:
+workbox-window@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/workbox-window/-/workbox-window-6.1.0.tgz#5856127f183bcccfd93655b0e3cba5f2432b9156"
   integrity sha512-sjnE+nTSnrBvYx5KmpESvsTC82P3yy8h5l4Ae4Q8uLqdH29UQ3bMd8puGVVhX1JZFCmV40cvrbZ1fUj+3/TQ9g==
