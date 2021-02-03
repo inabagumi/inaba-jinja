@@ -25,6 +25,5 @@
       "source": "/products/:name.html"
     }
   ],
-  "regions": ["hnd1"],
   "version": 2
 }
