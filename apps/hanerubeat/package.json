@@ -22,9 +22,6 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.20.1"
   },
-  "engines": {
-    "node": "12.x"
-  },
   "homepage": "https://hanerubeat.app/",
   "name": "@inabagumi/hanerubeat",
   "private": true,
