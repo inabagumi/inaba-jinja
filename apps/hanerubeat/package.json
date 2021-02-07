@@ -5,7 +5,7 @@
     "next-seo": "^4.19.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-icons": "^4.1.0"
+    "react-icons": "^4.2.0"
   },
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
