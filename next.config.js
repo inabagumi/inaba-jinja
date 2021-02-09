@@ -4,6 +4,9 @@ const withPWA = require('next-pwa')
 const withMDX = nextMDX()
 
 const nextConfig = {
+  future: {
+    webpack5: true
+  },
   headers() {
     return [
       {
