@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.18.9](https://github.com/inabagumi/inaba-jinja/compare/v1.18.8...v1.18.9) (2021-02-10)
+
 ### [1.18.8](https://github.com/inabagumi/inaba-jinja/compare/v1.18.7...v1.18.8) (2021-01-07)
 
 ### [1.18.7](https://github.com/inabagumi/inaba-jinja/compare/v1.18.6...v1.18.7) (2020-12-13)
