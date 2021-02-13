@@ -1,4 +1,5 @@
 const nextMDX = require('@next/mdx')
+const withPlugins = require('next-compose-plugins')
 const withPWA = require('next-pwa')
 
 const withMDX = nextMDX()
@@ -7,7 +8,7 @@ const nextConfig = {
   future: {
     webpack5: true
   },
-  headers() {
+  async headers() {
     return [
       {
         headers: [
@@ -50,16 +51,8 @@ const nextConfig = {
   images: {
     domains: ['images.ctfassets.net']
   },
-  pageExtensions: ['mdx', 'tsx', 'ts'],
-  pwa: {
-    buildExcludes: [/\.map$/, /\.(?:jpg|png)$/],
-    dest: '.next/static',
-    disable: process.env.NODE_ENV === 'development',
-    publicExcludes: ['!favicon.ico', '!robots.txt'],
-    sw: '/service-worker.js'
-  },
   reactStrictMode: true,
-  redirects() {
+  async redirects() {
     return [
       {
         destination: '/lottery',
@@ -73,7 +66,7 @@ const nextConfig = {
       }
     ]
   },
-  rewrites() {
+  async rewrites() {
     return [
       {
         destination: '/_next/static/service-worker.js$1',
@@ -126,7 +119,26 @@ const nextConfig = {
   }
 }
 
-module.exports = [withMDX, withPWA].reduce(
-  (config, plugin) => plugin(config),
+module.exports = withPlugins(
+  [
+    [
+      withMDX,
+      {
+        pageExtensions: ['mdx', 'tsx', 'ts']
+      }
+    ],
+    [
+      withPWA,
+      {
+        pwa: {
+          buildExcludes: [/\.map$/, /\.(?:jpg|png)$/],
+          dest: '.next/static',
+          disable: process.env.NODE_ENV === 'development',
+          publicExcludes: ['!favicon.ico', '!robots.txt'],
+          sw: '/service-worker.js'
+        }
+      }
+    ]
+  ],
   nextConfig
 )
