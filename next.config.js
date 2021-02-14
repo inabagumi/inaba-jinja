@@ -5,6 +5,9 @@ const withPWA = require('next-pwa')
 const withMDX = nextMDX()
 
 const nextConfig = {
+  experimental: {
+    optimizeCss: true
+  },
   future: {
     webpack5: true
   },
