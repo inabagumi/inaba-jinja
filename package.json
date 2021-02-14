@@ -62,9 +62,6 @@
     "type": "git",
     "url": "https://github.com/inabagumi/inaba-jinja.git"
   },
-  "resolutions": {
-    "react-is": "^17.0.1"
-  },
   "scripts": {
     "build": "next build",
     "dev": "next",
