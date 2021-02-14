@@ -1,6 +1,5 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
-import styled from 'styled-components'
 
 import Page from '@/components/layout'
 import Placeholder from '@/components/placeholder'
@@ -8,52 +7,8 @@ import SEO from '@/components/seo'
 import SingleWindow from '@/components/simple-window'
 import getFortune from '@/contentful/getFortune'
 import getTweetLink from '@/helpers/getTweetLink'
+import styles from '@/styles/pages/kuji/[id].module.css'
 import { FortuneEntry } from '@/types/fortune'
-
-const Content = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: center;
-`
-
-const ImageWrapper = styled.div`
-  position: relative;
-
-  & > :last-of-type {
-    vertical-align: bottom;
-  }
-`
-
-const ShareLinks = styled.nav`
-  margin-top: 3rem;
-`
-
-const ShareLinksList = styled.ul`
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-`
-
-const ShareButton = styled.a`
-  background-color: #1da1f2;
-  border-radius: 1.2em;
-  color: #fff;
-  display: inline-block;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  line-height: 1;
-  padding: 0.6em 1.5em;
-  text-decoration: none;
-  transition: background-color 0.5s ease;
-
-  :hover {
-    background-color: #005fd1;
-  }
-`
 
 export type Props = {
   fortune: FortuneEntry
@@ -82,8 +37,8 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
 
       <Page>
         <SingleWindow title={name}>
-          <Content>
-            <ImageWrapper>
+          <div className={styles.content}>
+            <div className={styles.imageWrapper}>
               <Placeholder src={fortune.fields.prePaper} />
               <Image
                 alt={name}
@@ -93,23 +48,24 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
                 src={imageURL}
                 width={imageWidth}
               />
-            </ImageWrapper>
-          </Content>
+            </div>
+          </div>
 
-          <ShareLinks>
-            <ShareLinksList>
+          <nav className={styles.shareLinks}>
+            <ul className={styles.shareLinksList}>
               <li>
-                <ShareButton
+                <a
+                  className={styles.shareButton}
                   href={getTweetLink(fortune)}
                   rel="noopener noreferrer"
                   role="button"
                   target="_blank"
                 >
                   Twitterに共有する
-                </ShareButton>
+                </a>
               </li>
-            </ShareLinksList>
-          </ShareLinks>
+            </ul>
+          </nav>
         </SingleWindow>
       </Page>
     </>

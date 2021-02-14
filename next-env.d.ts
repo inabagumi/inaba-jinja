@@ -30,9 +30,11 @@ declare module '*.png' {
 }
 
 declare module '*.svg' {
-  import { FC, SVGProps } from 'react'
+  import { VFC } from 'react'
 
-  const content: FC<SVGProps<SVGSVGElement>>
+  type Props = Omit<JSX.IntrinsicElements['svg'], 'ref'>
+
+  const content: VFC<Props>
   export default content
 }
 

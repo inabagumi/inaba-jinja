@@ -1,6 +1,5 @@
 import type { GetServerSideProps, NextPage } from 'next'
 import Image from 'next/image'
-import styled, { keyframes } from 'styled-components'
 
 import kujiImage from '@/assets/kuji.png'
 import Page from '@/components/layout'
@@ -8,34 +7,9 @@ import Refresh from '@/components/refresh'
 import SEO from '@/components/seo'
 import SimpleWindow from '@/components/simple-window'
 import getFortunes from '@/contentful/getFortunes'
+import styles from '@/styles/pages/lottery.module.css'
 
 const DELAY_SECONDS = 2
-
-const Content = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2rem 0 1rem;
-`
-
-const shake = keyframes`
-  from {
-    transform: translateY(0) rotate(180deg);
-  }
-
-  to {
-    transform: translateY(20px) rotate(170deg);
-  }
-`
-
-const LotteryBox = styled.div`
-  animation: ${shake} 0.3s infinite alternate linear;
-  display: block;
-  margin: 0 auto;
-  max-width: 80%;
-  transform: translateY(0) rotate(180deg);
-`
 
 type Props = {
   id: string
@@ -50,8 +24,8 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
 
       <Page>
         <SimpleWindow>
-          <Content>
-            <LotteryBox>
+          <div className={styles.content}>
+            <div className={styles.lotteryBox}>
               <Image
                 alt="くじ引き中..."
                 height={kujiImage.height / 2}
@@ -60,8 +34,8 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
                 src={kujiImage.src}
                 width={kujiImage.width / 2}
               />
-            </LotteryBox>
-          </Content>
+            </div>
+          </div>
         </SimpleWindow>
       </Page>
     </>

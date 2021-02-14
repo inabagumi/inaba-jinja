@@ -1,9 +1,10 @@
+import '@/styles/globals.css'
+
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import type { FC } from 'react'
+import type { VFC } from 'react'
 import { useCallback, useEffect } from 'react'
-import { createGlobalStyle } from 'styled-components'
 
 import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
@@ -11,40 +12,7 @@ import favicon512x512 from '@/assets/icons/favicon-512x512.png'
 import Background from '@/components/background'
 import Loading from '@/components/loading'
 
-const GlobalStyle = createGlobalStyle`
-  :root {
-    --ij-color-primary: #f57f17;
-
-    --ij-font-family-base: -apple-system, BlinkMacSystemFont, Helvetica Neue,
-      Helvetica, Arial, YuGothic, Yu Gothic, sans-serif;
-    --ij-font-family-serif: Garamond, Times New Roman, YuMincho, Yu Mincho,
-      serif;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-    color: inherit;
-  }
-
-  html {
-    background-color: #757575;
-    box-sizing: border-box;
-    color: #fff;
-    font-family: var(--ij-font-family-base, sans-serif);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 2;
-    -webkit-text-size-adjust: none;
-  }
-
-  body {
-    margin: 0;
-  }
-`
-
-const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
+const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()
 
   const handleRouterChangeComplete = useCallback((url: string) => {
@@ -92,7 +60,6 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         />
       </Head>
 
-      <GlobalStyle />
       <Component {...pageProps} />
       <Background />
       <Loading />

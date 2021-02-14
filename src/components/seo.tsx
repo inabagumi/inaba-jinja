@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import type { FC } from 'react'
+import type { VFC } from 'react'
 
 import fullPath from '@/helpers/fullPath'
 
@@ -21,7 +21,7 @@ type Props = {
   type?: 'article' | 'website'
 }
 
-const SEO: FC<Props> = ({
+const SEO: VFC<Props> = ({
   description,
   image,
   noindex = false,

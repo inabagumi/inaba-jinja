@@ -1,5 +1,7 @@
-import type { FC } from 'react'
+import type { VFC } from 'react'
 
-const SvgMock: FC = (props) => <svg data-testid="svg-mock" {...props} />
+type Props = Omit<JSX.IntrinsicElements['svg'], 'ref'>
+
+const SvgMock: VFC<Props> = (props) => <svg data-testid="svg-mock" {...props} />
 
 export default SvgMock
