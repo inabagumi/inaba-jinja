@@ -1,40 +1,13 @@
 import Portal from '@reach/portal'
 import { useNProgress } from '@tanem/react-nprogress'
+import clsx from 'clsx'
 import { useRouter } from 'next/router'
-import type { FC } from 'react'
+import type { VFC } from 'react'
 import { useCallback, useEffect, useState } from 'react'
-import styled from 'styled-components'
 
-type ContainerProps = {
-  animationDuration: number
-  show: boolean
-}
+import styles from '@/styles/components/loading.module.css'
 
-const Container = styled.div<ContainerProps>`
-  opacity: ${(props) => (props.show ? 1 : 0)};
-  pointer-events: none;
-  transition: opacity ${(props) => props.animationDuration}ms linear;
-`
-
-type BarProps = {
-  animationDuration: number
-  progress: number
-}
-
-const Bar = styled.div<BarProps>`
-  background-color: var(--ij-color-primary);
-  height: 2px;
-  left: 0;
-  margin-left: ${(props) => (-1 + props.progress) * 100}%;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  transition: margin-left ${(props) => props.animationDuration}ms linear;
-  width: 100%;
-  z-index: 1031;
-`
-
-const Loading: FC = () => {
+const Loading: VFC = () => {
   const [isAnimating, setIsAnimating] = useState(false)
   const router = useRouter()
   const { animationDuration, isFinished, progress } = useNProgress({
@@ -63,17 +36,24 @@ const Loading: FC = () => {
 
   return (
     <Portal type="div">
-      <Container
+      <div
         aria-hidden
-        animationDuration={animationDuration}
-        show={!isFinished}
+        className={clsx(styles.container, {
+          [styles.containerShow]: !isFinished
+        })}
+        style={{
+          transitionDuration: `${animationDuration}ms`
+        }}
       >
-        <Bar
-          animationDuration={animationDuration}
+        <div
+          className={styles.bar}
           key={router.pathname}
-          progress={progress}
+          style={{
+            marginLeft: `${(-1 + progress) * 100}%`,
+            transitionDuration: `${animationDuration}ms`
+          }}
         />
-      </Container>
+      </div>
     </Portal>
   )
 }

@@ -1,23 +1,20 @@
-import styled from 'styled-components'
+import clsx from 'clsx'
+import { VFC } from 'react'
 
-const IconButton = styled.button`
-  align-items: center;
-  background-color: transparent;
-  border: 0;
-  border-radius: 50%;
-  display: inline-flex;
-  flex-direction: column;
-  height: 1em;
-  justify-content: center;
-  line-height: 1;
-  padding: 0.2em;
-  transition: background-color 0.3s ease;
-  width: 1em;
+import styles from '@/styles/components/icon-button.module.css'
 
-  :focus {
-    background-color: rgba(255, 255, 255, 0.3);
-    outline: 0;
-  }
-`
+type Props = Omit<JSX.IntrinsicElements['button'], 'ref'>
+
+const IconButton: VFC<Props> = ({ children, className, type, ...props }) => {
+  return (
+    <button
+      className={clsx(styles.iconButton, className)}
+      type={type || 'button'}
+      {...props}
+    >
+      {children}
+    </button>
+  )
+}
 
 export default IconButton

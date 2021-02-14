@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import type { FC } from 'react'
+import type { VFC } from 'react'
 
 import fullPath from '@/helpers/fullPath'
 
@@ -10,7 +10,7 @@ type Props = {
   path: string
 }
 
-const Refresh: FC<Props> = ({ delay = 0, path }) => {
+const Refresh: VFC<Props> = ({ delay = 0, path }) => {
   const router = useRouter()
 
   useEffect(() => {
