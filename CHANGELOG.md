@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.19.0](https://github.com/inabagumi/inaba-jinja/compare/v1.18.9...v1.19.0) (2021-02-15)
+
+
+### Features
+
+* **about:** add description of haneru ([#1236](https://github.com/inabagumi/inaba-jinja/issues/1236)) ([a973b5d](https://github.com/inabagumi/inaba-jinja/commit/a973b5de1425c00af70045977ca46348f09864d2))
+* **sitemap:** introduce sitemap ([#1237](https://github.com/inabagumi/inaba-jinja/issues/1237)) ([6a54b8f](https://github.com/inabagumi/inaba-jinja/commit/6a54b8ff352a50ec330310de5d8f23e67909fc63))
+
 ### [1.18.9](https://github.com/inabagumi/inaba-jinja/compare/v1.18.8...v1.18.9) (2021-02-10)
 
 ### [1.18.8](https://github.com/inabagumi/inaba-jinja/compare/v1.18.7...v1.18.8) (2021-01-07)
