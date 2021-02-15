@@ -12,7 +12,7 @@
     "@mdx-js/react": "^1.6.22",
     "@reach/portal": "^0.13.0",
     "@reach/skip-nav": "^0.13.0",
-    "@tanem/react-nprogress": "^3.0.54",
+    "@tanem/react-nprogress": "^3.0.55",
     "clsx": "^1.1.1",
     "contentful": "^8.1.7",
     "next": "^10.0.6",
