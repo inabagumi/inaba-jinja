@@ -8,7 +8,7 @@
     "contentful": "^8.1.7",
     "next": "^10.0.7",
     "pixi-viewport": "^4.20.0",
-    "pixi.js": "^5.3.7",
+    "pixi.js": "^5.3.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
