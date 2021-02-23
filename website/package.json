@@ -24,7 +24,7 @@
   "description": "We are Haneru Developers!",
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.0.0-alpha.70",
-    "@inabagumi/eslint-config-react": "^7.0.0",
+    "@inabagumi/eslint-config-react": "^8.0.1",
     "@inabagumi/prettier-config": "^1.1.2",
     "@tsconfig/docusaurus": "^1.0.2",
     "@types/lodash": "^4.14.168",
