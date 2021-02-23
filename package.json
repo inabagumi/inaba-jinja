@@ -25,7 +25,7 @@
   },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
-    "@inabagumi/eslint-config-react": "^7.0.0",
+    "@inabagumi/eslint-config-react": "^8.0.1",
     "@inabagumi/prettier-config": "^1.1.2",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.7",
