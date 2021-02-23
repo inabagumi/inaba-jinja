@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.19.1](https://github.com/inabagumi/inaba-jinja/compare/v1.19.0...v1.19.1) (2021-02-23)
+
+
+### Bug Fixes
+
+* **layout:** add noFocusGuards to FocusLock ([#1255](https://github.com/inabagumi/inaba-jinja/issues/1255)) ([542f365](https://github.com/inabagumi/inaba-jinja/commit/542f3651ebca3f620589d834f59fb03a0e1a41f6))
+* **layout:** move :last-of-type to parent node ([#1254](https://github.com/inabagumi/inaba-jinja/issues/1254)) ([f343689](https://github.com/inabagumi/inaba-jinja/commit/f3436893301ebcf76938cd7c58738f9a05496294))
+
 ## [1.19.0](https://github.com/inabagumi/inaba-jinja/compare/v1.18.9...v1.19.0) (2021-02-15)
 
 
