@@ -99,14 +99,14 @@
   display: block;
   font-size: 1rem;
   margin: 0;
-  padding: 0.5em 1em 0.5em 0.25em;
+  padding: 0.5em 1em;
   text-align: right;
   text-decoration: none;
 }
 
-.menuLink:last-of-type {
-  padding-bottom: 0.25em;
-  padding-bottom: calc(0.25em + env(safe-area-inset-bottom, 0));
+.menuItem:last-of-type .menuLink {
+  padding-bottom: 0.5em;
+  padding-bottom: calc(0.5em + env(safe-area-inset-bottom, 0));
 }
 
 .backdrop {
