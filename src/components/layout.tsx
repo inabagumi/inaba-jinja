@@ -85,7 +85,7 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
 
             <footer>
               <ul className={styles.menuList} role="menu">
-                <li role="menuitem">
+                <li className={styles.menuItem} role="menuitem">
                   <Link href="/about" prefetch={false}>
                     <a
                       className={styles.menuLink}
@@ -98,7 +98,7 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
                     </a>
                   </Link>
                 </li>
-                <li role="menuitem">
+                <li className={styles.menuItem} role="menuitem">
                   <Link href="/privacy" prefetch={false}>
                     <a
                       className={styles.menuLink}
@@ -111,7 +111,7 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
                     </a>
                   </Link>
                 </li>
-                <li role="menuitem">
+                <li className={styles.menuItem} role="menuitem">
                   <a
                     className={styles.menuLink}
                     href="https://haneru.dev"
