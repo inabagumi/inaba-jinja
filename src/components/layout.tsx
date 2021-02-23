@@ -65,6 +65,7 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
               'aria-hidden': !menuShown,
               id: 'global-menu'
             }}
+            noFocusGuards
             returnFocus
           >
             <header className={styles.menuHeader}>
