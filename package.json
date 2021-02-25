@@ -52,7 +52,7 @@
     "responsive-loader": "^2.3.0",
     "standard-version": "^9.1.1",
     "typescript": "^4.2.2",
-    "webpack": "^5.24.0"
+    "webpack": "^5.24.2"
   },
   "homepage": "https://inaba-jinja.com",
   "license": "MIT",
