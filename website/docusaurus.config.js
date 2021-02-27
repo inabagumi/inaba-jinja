@@ -1,6 +1,15 @@
 module.exports = {
   baseUrl: '/',
   favicon: 'img/favicon.png',
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja'],
+    localeConfigs: {
+      ja: {
+        label: '日本語'
+      }
+    }
+  },
   organizationName: 'inabagumi',
   plugins: [require.resolve('@docusaurus/plugin-ideal-image')],
   presets: [
