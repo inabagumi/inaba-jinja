@@ -959,10 +959,10 @@
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-1.1.2.tgz#6cc1a41e99acb36bd1ed9ed81f69b64258fc4a94"
   integrity sha512-bUFu1+UuIwFIwGx1W1HCTYqw6Ga7s/66H0d7mSj3iWuY7Es8vxWXGgxZVCtjBvDanoibAevJbtUV/7rtzfU5PQ==
 
-"@inlet/react-pixi@^6.1.1":
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-6.1.1.tgz#866e67896e65e3b6a71b906cc868a6e1eb53fab9"
-  integrity sha512-MCJ4XXRQo9rJcpIcRY54qWvSnCtfuA7pm3YZc+X12GqTetdp5ZmSNmldpl0obE2nlxKas9Pi4GfFNTzEqLXs3A==
+"@inlet/react-pixi@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-6.2.0.tgz#93477923a4bb58a0b7552f89a012c66890a9323d"
+  integrity sha512-ufESFMAkl/xhGArwFSH7S1ZLPs0L3Zs22Dw8+Zq7Wn+Ya7zd1uVrXFhEwuQNaUnUcFFoatzC8HqRVZPeMD5Rbw==
   dependencies:
     performance-now "2.1.0"
     react-reconciler "0.26.1"
