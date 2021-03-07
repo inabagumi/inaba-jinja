@@ -6,7 +6,7 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@inabagumi/eslint-config-react": "^8.0.1",
+    "@inabagumi/eslint-config-react": "^9.0.0",
     "@inabagumi/prettier-config": "^1.1.2",
     "@types/node": "^14.14.32",
     "@types/react": "^17.0.3",
