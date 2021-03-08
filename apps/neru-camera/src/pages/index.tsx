@@ -5,12 +5,13 @@ import MenuItem from '@material-ui/core/MenuItem'
 import Toolbar from '@material-ui/core/Toolbar'
 import { makeStyles } from '@material-ui/core/styles'
 import MoreIcon from '@material-ui/icons/MoreVert'
-import { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import dynamic from 'next/dynamic'
-import { useCallback, useContext, useState } from 'react'
+import { useCallback, useState } from 'react'
 import * as React from 'react'
 import Meta from '../components/meta'
-import AssetContext, { useAsset } from '../context/asset-context'
+import contentfulClient from '../contentfulClient'
+import type { OverlayEntry, OverlayFields } from '../types/Overlay'
 
 const Camera = dynamic(() => import('../components/camera'), { ssr: false })
 
@@ -31,12 +32,14 @@ const useStyles = makeStyles({
   }
 })
 
-const Index: NextPage = () => {
-  const { assets } = useContext(AssetContext)
+type Props = {
+  assets: OverlayEntry[]
+}
+
+const Index: NextPage<Props> = ({ assets }) => {
   const [assetId, setAssetId] = useState<string>()
   const [anchorEl, setAnchorEl] = useState<HTMLElement>()
   const classes = useStyles()
-  const asset = useAsset(assetId)
 
   const handleClick = useCallback(
     (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -60,6 +63,10 @@ const Index: NextPage = () => {
     },
     []
   )
+
+  const asset = assetId
+    ? assets.find((entry) => entry.sys.id === assetId)
+    : assets[assets.length - 1]
 
   return (
     <>
@@ -112,3 +119,23 @@ const Index: NextPage = () => {
 }
 
 export default Index
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const entries = await contentfulClient
+    .getEntries<OverlayFields>({
+      content_type: 'overlay',
+      limit: 100,
+      order: '-sys.createdAt',
+      select: ['sys.id', 'fields.keyColor', 'fields.media', 'fields.name'].join(
+        ','
+      )
+    })
+    .catch(() => null)
+  const assets = entries?.items || []
+
+  return {
+    props: {
+      assets
+    }
+  }
+}

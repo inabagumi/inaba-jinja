@@ -5,10 +5,7 @@ const nextConfig = {
   experimental: {
     plugins: true
   },
-  future: {
-    webpack5: true
-  },
-  headers() {
+  async headers() {
     return [
       {
         headers: [
@@ -44,7 +41,7 @@ const nextConfig = {
     disable: process.env.NODE_ENV === 'development',
     sw: '/service-worker.js'
   },
-  rewrites() {
+  async rewrites() {
     return [
       {
         destination: '/_next/static/service-worker.js',
