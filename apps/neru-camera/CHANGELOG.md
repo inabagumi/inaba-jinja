@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.5.3](https://github.com/inabagumi/neru-camera/compare/v5.5.2...v5.5.3) (2021-03-08)
+
+
+### Bug Fixes
+
+* **home:** replace to getStaticProps ([#845](https://github.com/inabagumi/neru-camera/issues/845)) ([c9540a5](https://github.com/inabagumi/neru-camera/commit/c9540a5b96d0178ff7908bbe4534bd72f87cd651))
+
 ### [5.5.2](https://github.com/inabagumi/neru-camera/compare/v5.5.1...v5.5.2) (2020-11-18)
 
 
