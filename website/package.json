@@ -61,8 +61,7 @@
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "lint": "eslint --ignore-path .gitignore .",
-    "swizzle": "docusaurus swizzle",
-    "now-build": "${npm_execpath} run build"
+    "swizzle": "docusaurus swizzle"
   },
   "version": "2.0.0"
 }
