@@ -2,9 +2,6 @@ const withPWA = require('next-pwa')
 
 const nextConfig = {
   crossOrigin: 'anonymous',
-  experimental: {
-    plugins: true
-  },
   async headers() {
     return [
       {
