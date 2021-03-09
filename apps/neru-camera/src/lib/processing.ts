@@ -1,9 +1,9 @@
-export default (
+export default function processing(
   pixiView: HTMLCanvasElement,
   type = 'image/png',
   quality = 1.0
-): Promise<Blob> =>
-  new Promise((resolve, reject) => {
+): Promise<Blob> {
+  return new Promise((resolve, reject) => {
     const canvas = document.createElement('canvas')
     const context = canvas.getContext('2d')
 
@@ -27,3 +27,4 @@ export default (
       reject(error)
     }
   })
+}

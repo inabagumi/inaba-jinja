@@ -9,10 +9,10 @@ import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
+import { fileSave } from 'browser-fs-access'
 import { Application } from 'pixi.js'
 import { FC, useCallback, useEffect, useState } from 'react'
 import useVideoTexture from '../hooks/use-video-texture'
-import download from '../lib/download'
 import processing from '../lib/processing'
 import { OverlayEntry } from '../types/Overlay'
 import Overlay from './overlay'
@@ -107,7 +107,15 @@ const Camera: FC<Props> = ({ asset }) => {
     setIsShooting(true)
 
     processing(pixiView, 'image/jpeg', 0.8)
-      .then((blob) => download(blob))
+      .then((blob) =>
+        fileSave(blob, {
+          extensions: ['.jpg', '.jpeg'],
+          fileName: `NeruCamera-${Date.now()}.jpg`
+        })
+      )
+      .catch((error) => {
+        console.error(error)
+      })
       .finally(() => setIsShooting(false))
   }, [pixiView, isShooting])
 
