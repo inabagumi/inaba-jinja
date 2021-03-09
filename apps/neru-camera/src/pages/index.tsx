@@ -7,8 +7,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import MoreIcon from '@material-ui/icons/MoreVert'
 import type { GetStaticProps, NextPage } from 'next'
 import dynamic from 'next/dynamic'
+import type { MouseEvent as ReactMouseEvent } from 'react'
 import { useCallback, useState } from 'react'
-import * as React from 'react'
 import Meta from '../components/meta'
 import contentfulClient from '../contentfulClient'
 import type { OverlayEntry, OverlayFields } from '../types/Overlay'
@@ -42,7 +42,7 @@ const Index: NextPage<Props> = ({ assets }) => {
   const classes = useStyles()
 
   const handleClick = useCallback(
-    (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    (event: ReactMouseEvent<HTMLButtonElement, MouseEvent>) => {
       setAnchorEl(event.currentTarget)
     },
     []
@@ -53,7 +53,7 @@ const Index: NextPage<Props> = ({ assets }) => {
   }, [])
 
   const changeAsset = useCallback(
-    (event: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
+    (event: ReactMouseEvent<HTMLLIElement, MouseEvent>) => {
       setAnchorEl(undefined)
 
       const target = event.currentTarget
