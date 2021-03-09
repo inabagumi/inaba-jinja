@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "destination": "/docs/introduction",
+      "destination": "/docs/",
       "source": "/about/"
     },
     {

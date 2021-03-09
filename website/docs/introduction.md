@@ -1,4 +1,5 @@
 ---
+slug: /
 title: Haneru Developers とは?
 ---
 

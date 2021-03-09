@@ -90,7 +90,7 @@ module.exports = {
       items: [
         {
           activeBasePath: 'docs',
-          to: 'docs/introduction',
+          to: 'docs/',
           label: 'ドキュメント',
           position: 'left'
         },

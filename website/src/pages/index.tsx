@@ -23,7 +23,7 @@ const Home: FC = () => {
           <div>
             <Link
               className="button button--primary button--outline button--lg"
-              to={withBaseUrl('docs/introduction')}
+              to={withBaseUrl('docs/')}
             >
               Get Started
             </Link>
