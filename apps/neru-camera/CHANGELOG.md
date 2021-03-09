@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.6.0](https://github.com/inabagumi/neru-camera/compare/v5.5.3...v5.6.0) (2021-03-09)
+
+
+### Features
+
+* **camera:** replace to browser-fs-access ([#848](https://github.com/inabagumi/neru-camera/issues/848)) ([814826b](https://github.com/inabagumi/neru-camera/commit/814826b61baf199f358c3700641a0b5b5ded2191))
+
+
+### Bug Fixes
+
+* **next-config:** remove unused experimental option ([#850](https://github.com/inabagumi/neru-camera/issues/850)) ([185d227](https://github.com/inabagumi/neru-camera/commit/185d2275f7b92607de037dd2058420c2c927eae6))
+
 ### [5.5.3](https://github.com/inabagumi/neru-camera/compare/v5.5.2...v5.5.3) (2021-03-08)
 
 
