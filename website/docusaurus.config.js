@@ -1,3 +1,6 @@
+/**
+ * @type {import('@docusaurus/types').DocusaurusConfig}
+ */
 module.exports = {
   baseUrl: '/',
   favicon: 'img/favicon.png',
@@ -11,10 +14,10 @@ module.exports = {
     }
   },
   organizationName: 'inabagumi',
-  plugins: [require.resolve('@docusaurus/plugin-ideal-image')],
+  plugins: ['@docusaurus/plugin-ideal-image'],
   presets: [
     [
-      require.resolve('@docusaurus/preset-classic'),
+      '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js')
