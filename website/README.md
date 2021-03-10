@@ -1,8 +1,6 @@
 # Haneru Developers Website
 
-[Haneru Developers (haneru.dev)](https://haneru.dev/) のソースファイルです。
-
-[Docusaurus](https://docusaurus.io/) を使って構築され、[Now](https://zeit.co/now) にデプロイされます。
+[Haneru Developers (haneru.dev)](https://haneru.dev/) のソースファイルです。[Docusaurus](https://docusaurus.io/) を使って構築され、[Vercel](https://vercel.com/home) にデプロイされます。
 
 ## セットアップ
 
