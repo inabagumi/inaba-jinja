@@ -4751,10 +4751,10 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
-pixi-viewport@^4.21.1:
-  version "4.21.1"
-  resolved "https://registry.yarnpkg.com/pixi-viewport/-/pixi-viewport-4.21.1.tgz#f5eaf71fc1bbb100532ead7f0ea65c2d0d310216"
-  integrity sha512-idGVrfH1NNzYdDzdPboUvLEGVT+3xKCtbhdH/ksT8Vy3S/NkA2K0rdlVnugF55B9h6CMTXUz+Jx1wBSbW9jQNQ==
+pixi-viewport@^4.21.2:
+  version "4.21.2"
+  resolved "https://registry.yarnpkg.com/pixi-viewport/-/pixi-viewport-4.21.2.tgz#d2a9f7e9ba2cb3bd930a30da0b54cc1d39020799"
+  integrity sha512-fKBIrRBCr3HW2+ppAVWWxm+QePRA3IRum7dws1tfmpK1LfMc9Li5czolzhiD6FPHmPMfLWeJlAGe0aR0ETTwDA==
   dependencies:
     penner "^0.1.3"
 
