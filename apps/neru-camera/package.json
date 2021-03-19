@@ -1,7 +1,7 @@
 {
   "author": "Haneru Developers",
   "dependencies": {
-    "@inlet/react-pixi": "^6.2.1",
+    "@inlet/react-pixi": "^6.2.2",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "browser-fs-access": "^0.14.2",
