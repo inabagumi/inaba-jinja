@@ -1575,10 +1575,10 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
-"@tanem/react-nprogress@^3.0.58":
-  version "3.0.58"
-  resolved "https://registry.yarnpkg.com/@tanem/react-nprogress/-/react-nprogress-3.0.58.tgz#dcfdfdfd1ef8ec697bbc2764ca4bf1247b8225e4"
-  integrity sha512-zPX0N6bF2uiyaMgS1miRI6WQNmfbJ5j/gfsHVOBan6Xf8fPYouyl9lrazG4RzKpvsXSgQg0krIuEQpclNiydkw==
+"@tanem/react-nprogress@^3.0.59":
+  version "3.0.59"
+  resolved "https://registry.yarnpkg.com/@tanem/react-nprogress/-/react-nprogress-3.0.59.tgz#820b75aa1546eeeaa8c3bc4580e6ba47cca2dfc8"
+  integrity sha512-Y2uULtEftCF+HDXTZvRUW9xwb0lvQAJeVg9kucSsq9k/56CM3dwQGfENGNNSb7Urg21MV27io6ylet5hMcSarA==
   dependencies:
     "@babel/runtime" "^7.13.10"
     hoist-non-react-statics "^3.3.2"
