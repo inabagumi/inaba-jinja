@@ -3,8 +3,8 @@
   "dependencies": {
     "next": "^10.0.9",
     "next-seo": "^4.22.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.2.0"
   },
   "description": "Feel the life of Neru-chan!",
