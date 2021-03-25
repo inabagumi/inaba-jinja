@@ -15,6 +15,7 @@ const Home: FC = () => {
     <Layout
       description="Haneru Developers はバーチャル YouTuber の因幡はねるさんをテーマとしたアプリやサービスの開発を主として行うコミュニティです。"
       permalink="/"
+      title={siteConfig.tagline}
     >
       <header className="hero hero--dark">
         <div className="container">
