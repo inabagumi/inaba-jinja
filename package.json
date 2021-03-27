@@ -73,5 +73,5 @@
     "start": "next start",
     "test": "jest"
   },
-  "version": "1.19.3"
+  "version": "1.19.4"
 }
