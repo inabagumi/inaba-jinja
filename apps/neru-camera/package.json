@@ -6,7 +6,7 @@
     "@material-ui/icons": "^4.11.2",
     "browser-fs-access": "^0.16.0",
     "clsx": "^1.1.1",
-    "contentful": "^8.2.0",
+    "contentful": "^8.2.1",
     "next": "^10.0.9",
     "pixi-viewport": "^4.22.1",
     "pixi.js": "^6.0.1",
