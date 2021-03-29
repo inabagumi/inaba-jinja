@@ -7,8 +7,6 @@ on:
   push:
     branches:
       - main
-    tags:
-      - 'v*'
 
 jobs:
   build:
@@ -21,8 +19,3 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn format-check
       - run: yarn lint
-      - if: startsWith(github.ref, 'refs/tags/v')
-        env:
-          VERCEL_SCOPE: ${{ secrets.VERCEL_SCOPE }}
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: npx vercel -S ${VERCEL_SCOPE} -c -t ${VERCEL_TOKEN} --prod
