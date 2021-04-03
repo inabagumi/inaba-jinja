@@ -142,7 +142,7 @@ module.exports = withPlugins(
           dest: '.next/static',
           disable: process.env.NODE_ENV === 'development',
           publicExcludes: ['!favicon.ico', '!robots.txt'],
-          sw: '/service-worker.js'
+          sw: 'service-worker.js'
         }
       }
     ]
