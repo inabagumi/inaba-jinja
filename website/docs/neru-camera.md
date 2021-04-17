@@ -1,8 +1,6 @@
----
-title: ねるカメラ
----
-
 import Image from '@theme/IdealImage'
+
+# ねるカメラ
 
 <Image alt="ねるカメラ" img={require('../src/data/showcase/neru-camera.jpg')} />
 

@@ -1,6 +1,4 @@
----
-title: "@inabagumi/eslint-config"
----
+# @inabagumi/eslint-config
 
 - [npm](https://www.npmjs.com/package/@inabagumi/eslint-config)
 

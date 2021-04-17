@@ -1,8 +1,6 @@
----
-title: 因幡神社
----
-
 import Image from '@theme/IdealImage'
+
+# 因幡神社
 
 <Image alt="因幡神社" img={require('../src/data/showcase/inaba-jinja.jpg')} />
 

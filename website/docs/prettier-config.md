@@ -1,6 +1,4 @@
----
-title: "@inabagumi/prettier-config"
----
+# @inabagumi/prettier-config
 
 - [npm](https://www.npmjs.com/package/@inabagumi/prettier-config)
 

@@ -1,6 +1,4 @@
----
-title: "@inabagumi/renovate-config"
----
+# @inabagumi/renovate-config
 
 - [npm](https://www.npmjs.com/package/@inabagumi/renovate-config)
 

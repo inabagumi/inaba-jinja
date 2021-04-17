@@ -1,8 +1,6 @@
----
-title: Haneru Beat!
----
-
 import Image from '@theme/IdealImage'
+
+# Haneru Beat!
 
 <Image alt="Haneru Beat!" img={require('../src/data/showcase/hanerubeat.jpg')} />
 

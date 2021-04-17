@@ -1,8 +1,6 @@
----
-title: あにまーれ診断
----
-
 import Image from '@theme/IdealImage'
+
+# あにまーれ診断
 
 <Image alt="あにまーれ診断" img={require('../src/data/showcase/animare-shindan.jpg')} />
 

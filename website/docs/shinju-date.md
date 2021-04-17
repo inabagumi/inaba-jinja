@@ -1,8 +1,6 @@
----
-title: SHINJU DATE
----
-
 import Image from '@theme/IdealImage'
+
+# SHINJU DATE
 
 <Image alt="SHINJU DATE" img={require('../src/data/showcase/shinju-date.jpg')} />
 
