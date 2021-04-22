@@ -1,11 +1,12 @@
 import { PixiComponent } from '@inlet/react-pixi'
-import { Viewport, ViewportOptions } from 'pixi-viewport'
+import type { IViewportOptions } from 'pixi-viewport'
+import { Viewport } from 'pixi-viewport'
 
-export default PixiComponent<ViewportOptions, Viewport>('Viewport', {
-  create: (props: ViewportOptions) => {
+export default PixiComponent<IViewportOptions, Viewport>('Viewport', {
+  create: (props: IViewportOptions) => {
     const viewport = new Viewport(props)
 
-    viewport.drag().pinch().wheel().decelerate()
+    viewport.drag({}).pinch({}).wheel({}).decelerate({})
 
     return viewport
   }
