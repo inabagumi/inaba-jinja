@@ -36,7 +36,7 @@
     "@types/jest": "^26.0.23",
     "@types/mdx-js__react": "^1.5.3",
     "@types/node": "^14.14.41",
-    "@types/react": "^17.0.3",
+    "@types/react": "^17.0.4",
     "@types/testing-library__jest-dom": "^5.9.5",
     "@types/web-app-manifest": "^1.0.0",
     "@types/webpack-env": "^1.16.0",
