@@ -3169,10 +3169,10 @@ contentful-sdk-core@^6.5.0:
     fast-copy "^2.1.0"
     qs "^6.9.4"
 
-contentful@^8.3.1:
-  version "8.3.1"
-  resolved "https://registry.yarnpkg.com/contentful/-/contentful-8.3.1.tgz#78151fddc9c2f7196f6e6dfef2b6d74c53f70ca3"
-  integrity sha512-M9f6bSkvXBm8ytAH1fFv5WoWinZlwp47dYOwh+53XVWlUK1NR3Aj6OnR7EnPKtUXbZZV+BTHbf9TgR/pyOiXVg==
+contentful@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-8.3.2.tgz#50d65e7b2d14dc88f395593ba687e0b90809cd20"
+  integrity sha512-7o0VvZFzdcAPGnKuD+RydtQqEFebvS2e6gyoh0G/b6uhobCEmgK2xrSzBIYIXSPOE7Ae4fSmU7/K6JcyTLmKLA==
   dependencies:
     axios "^0.21.1"
     contentful-resolve-response "^1.3.0"
