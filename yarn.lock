@@ -967,7 +967,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.0", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.14.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
   integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
@@ -1618,15 +1618,15 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
-"@tanem/react-nprogress@^3.0.64":
-  version "3.0.64"
-  resolved "https://registry.yarnpkg.com/@tanem/react-nprogress/-/react-nprogress-3.0.64.tgz#d6a5928de99db22cb5c0f53563736256ce9fc48d"
-  integrity sha512-rhCP7zTRi49c/AhP5NttLy7BQfNuMd2y5ybHN6X3EFP3OIa6Ig9+MbiwB3VWlwj2yX2Aa6DTh6n4mNG/pDQM6g==
+"@tanem/react-nprogress@^3.0.65":
+  version "3.0.65"
+  resolved "https://registry.yarnpkg.com/@tanem/react-nprogress/-/react-nprogress-3.0.65.tgz#552e7fcd80091c7baddae4837cd9595120066014"
+  integrity sha512-LnN9UkwytouOv8MLRdf2RAf2lsZfoAus9qzkd0iL5EOcvX53cM5057A7QeCgamx9A48DZbffZHZfeo+5CQ+nMw==
   dependencies:
-    "@babel/runtime" "^7.13.10"
+    "@babel/runtime" "^7.14.0"
     hoist-non-react-statics "^3.3.2"
     prop-types "^15.7.2"
-    react-use "^17.2.3"
+    react-use "^17.2.4"
 
 "@testing-library/dom@^7.28.1":
   version "7.30.4"
@@ -8162,7 +8162,7 @@ react-universal-interface@^0.6.2:
   resolved "https://registry.yarnpkg.com/react-universal-interface/-/react-universal-interface-0.6.2.tgz#5e8d438a01729a4dbbcbeeceb0b86be146fe2b3b"
   integrity sha512-dg8yXdcQmvgR13RIlZbTRQOoUrDciFVoSBZILwjE2LFISxZZ8loVJKAkuzswl5js8BHda79bIb2b84ehU8IjXw==
 
-react-use@^17.2.3:
+react-use@^17.2.4:
   version "17.2.4"
   resolved "https://registry.yarnpkg.com/react-use/-/react-use-17.2.4.tgz#1f89be3db0a8237c79253db0a15e12bbe3cfeff1"
   integrity sha512-vQGpsAM0F5UIlshw5UI8ULGPS4yn5rm7/qvn3T1Gnkrz7YRMEEMh+ynKcmRloOyiIeLvKWiQjMiwRGtdbgs5qQ==
