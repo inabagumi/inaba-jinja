@@ -1,0 +1,16 @@
+name: release-please
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v2
+        with:
+          package-name: inaba-jinja
+          pull-request-title-pattern: 'chore(release): v${version}'
+          release-type: node
