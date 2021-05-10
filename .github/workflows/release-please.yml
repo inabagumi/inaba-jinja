@@ -12,5 +12,4 @@ jobs:
       - uses: google-github-actions/release-please-action@v2
         with:
           package-name: inaba-jinja
-          pull-request-title-pattern: 'chore(release): v${version}'
           release-type: node
