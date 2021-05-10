@@ -20,7 +20,7 @@
     "react-dom": "^17.0.2",
     "react-focus-lock": "^2.5.0",
     "react-remove-scroll": "^2.4.2",
-    "sharp": "^0.28.1",
+    "sharp": "^0.28.2",
     "sitemap": "^7.0.0"
   },
   "description": "The source code for the Inaba Jinja.",
