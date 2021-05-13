@@ -1,5 +1,4 @@
 import { MDXProvider } from '@mdx-js/react'
-import type { MDXProviderComponents } from '@mdx-js/react'
 import NextLink from 'next/link'
 import type { ReactNode, VFC } from 'react'
 
@@ -44,11 +43,6 @@ const Emphasis: VFC<EmphasisProps> = ({ children }) => {
   return <em className={styles.emphasis}>{children}</em>
 }
 
-const mdxComponents: MDXProviderComponents = {
-  a: Link,
-  em: Emphasis
-}
-
 type Props = {
   children: ReactNode
   path?: string
@@ -57,7 +51,7 @@ type Props = {
 
 const MarkdownDoc: VFC<Props> = ({ children, path, title }) => {
   return (
-    <MDXProvider components={mdxComponents}>
+    <MDXProvider components={{ a: Link, em: Emphasis }}>
       <SEO path={path} title={title} type="article" />
 
       <Page>

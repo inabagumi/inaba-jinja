@@ -1,3 +1,4 @@
+/// <reference types="@mdx-js/loader" />
 /// <reference types="next" />
 /// <reference types="next/types/global" />
 
