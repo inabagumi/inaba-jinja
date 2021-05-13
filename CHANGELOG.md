@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.19.6](https://www.github.com/inabagumi/inaba-jinja/compare/v1.19.5...v1.19.6) (2021-05-13)
+
+
+### Bug Fixes
+
+* **deps:** only patch release can be upgraded for prettier ([#1373](https://www.github.com/inabagumi/inaba-jinja/issues/1373)) ([ed60d8f](https://www.github.com/inabagumi/inaba-jinja/commit/ed60d8fbb8b85549946a21e95473d9ec401a3d56))
+
 ### [1.19.5](https://github.com/inabagumi/inaba-jinja/compare/v1.19.4...v1.19.5) (2021-04-29)
 
 ### [1.19.4](https://github.com/inabagumi/inaba-jinja/compare/v1.19.3...v1.19.4) (2021-03-27)
