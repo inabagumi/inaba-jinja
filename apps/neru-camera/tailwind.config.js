@@ -1,3 +1,4 @@
 module.exports = {
-  mode: 'jit'
+  mode: 'jit',
+  purge: ['./src/**/*.{ts,tsx}']
 }
