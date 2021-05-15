@@ -1,117 +1,55 @@
-import AppBar from '@material-ui/core/AppBar'
-import IconButton from '@material-ui/core/IconButton'
-import Menu from '@material-ui/core/Menu'
-import MenuItem from '@material-ui/core/MenuItem'
-import Toolbar from '@material-ui/core/Toolbar'
-import { makeStyles } from '@material-ui/core/styles'
-import MoreIcon from '@material-ui/icons/MoreVert'
+import '@reach/menu-button/styles.css'
+import { DotsVerticalIcon } from '@heroicons/react/solid'
+import { Menu, MenuButton, MenuItem, MenuList } from '@reach/menu-button'
 import type { GetStaticProps, NextPage } from 'next'
 import dynamic from 'next/dynamic'
-import type { MouseEvent as ReactMouseEvent } from 'react'
-import { useCallback, useState } from 'react'
-import Meta from '../components/meta'
+import { NextSeo } from 'next-seo'
+import { useState } from 'react'
 import contentfulClient from '../contentfulClient'
 import type { OverlayEntry, OverlayFields } from '../types/Overlay'
 
 const Camera = dynamic(() => import('../components/camera'), { ssr: false })
-
-const useStyles = makeStyles({
-  appBar: {
-    backgroundColor: 'transparent',
-    boxShadow: 'none'
-  },
-  container: {
-    bottom: 0,
-    left: 0,
-    position: 'fixed',
-    right: 0,
-    top: 0
-  },
-  toolbar: {
-    justifyContent: 'flex-end'
-  }
-})
 
 type Props = {
   assets: OverlayEntry[]
 }
 
 const Index: NextPage<Props> = ({ assets }) => {
-  const [assetId, setAssetId] = useState<string>()
-  const [anchorEl, setAnchorEl] = useState<HTMLElement>()
-  const classes = useStyles()
+  const [assetID, setAssetID] = useState<string>()
 
-  const handleClick = useCallback(
-    (event: ReactMouseEvent<HTMLButtonElement, MouseEvent>) => {
-      setAnchorEl(event.currentTarget)
-    },
-    []
-  )
-
-  const handleClose = useCallback(() => {
-    setAnchorEl(undefined)
-  }, [])
-
-  const changeAsset = useCallback(
-    (event: ReactMouseEvent<HTMLLIElement, MouseEvent>) => {
-      setAnchorEl(undefined)
-
-      const target = event.currentTarget
-      const id = target.getAttribute('data-asset-id')
-
-      if (id) setAssetId(id)
-    },
-    []
-  )
-
-  const asset = assetId
-    ? assets.find((entry) => entry.sys.id === assetId)
+  const asset = assetID
+    ? assets.find((entry) => entry.sys.id === assetID)
     : assets[assets.length - 1]
 
   return (
     <>
-      <Meta />
+      <NextSeo
+        canonical={
+          process.env.NEXT_PUBLIC_BASE_URL &&
+          `${process.env.NEXT_PUBLIC_BASE_URL}/`
+        }
+      />
 
-      <AppBar className={classes.appBar} color="inherit" position="fixed">
-        <Toolbar className={classes.toolbar}>
-          <IconButton
-            aria-controls="change-menu"
-            aria-haspopup="true"
-            aria-label="メニューを開く"
-            color="inherit"
-            edge="end"
-            onClick={handleClick}
-          >
-            <MoreIcon />
-          </IconButton>
-          <Menu
-            id="change-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={!!anchorEl}
-            onClose={handleClose}
-          >
-            {assets.map((asset, index) => {
-              const selected = assetId
-                ? asset.sys.id === assetId
-                : index === assets.length - 1
+      <header className="fixed flex justify-end text-white top-0 w-full z-10">
+        <Menu>
+          <MenuButton className="focus:bg-opacity-25 focus:bg-white m-2 focus:outline-none p-2 rounded-full">
+            <DotsVerticalIcon className="h-5 w-5" />
+          </MenuButton>
+          <MenuList className="p-0">
+            {assets.map((asset) => (
+              <MenuItem
+                data-asset-id={asset.sys.id}
+                key={asset.sys.id}
+                onSelect={() => setAssetID(asset.sys.id)}
+              >
+                {asset.fields.name}
+              </MenuItem>
+            ))}
+          </MenuList>
+        </Menu>
+      </header>
 
-              return (
-                <MenuItem
-                  data-asset-id={asset.sys.id}
-                  key={asset.sys.id}
-                  onClick={changeAsset}
-                  selected={selected}
-                >
-                  {asset.fields.name}
-                </MenuItem>
-              )
-            })}
-          </Menu>
-        </Toolbar>
-      </AppBar>
-
-      <main className={classes.container}>
+      <main className="bg-black fixed inset-0 z-0">
         <Camera asset={asset} />
       </main>
     </>
@@ -136,6 +74,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props: {
       assets
-    }
+    },
+    revalidate: 60
   }
 }

@@ -1,0 +1,22 @@
+/* ref: https://codepen.io/supah/pen/BjYLdW */
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+.animateDash {
+  animation: dash 1s ease-in infinite;
+}

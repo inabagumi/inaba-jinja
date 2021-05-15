@@ -1,20 +1,19 @@
+import '@reach/dialog/styles.css'
 import { Sprite, Stage } from '@inlet/react-pixi'
-import Button from '@material-ui/core/Button'
-import CircularProgress from '@material-ui/core/CircularProgress'
-import Container from '@material-ui/core/Container'
-import Dialog from '@material-ui/core/Dialog'
-import DialogActions from '@material-ui/core/DialogActions'
-import DialogContent from '@material-ui/core/DialogContent'
-import DialogContentText from '@material-ui/core/DialogContentText'
-import DialogTitle from '@material-ui/core/DialogTitle'
-import { makeStyles } from '@material-ui/core/styles'
-import clsx from 'clsx'
+import {
+  AlertDialog,
+  AlertDialogDescription,
+  AlertDialogLabel
+} from '@reach/alert-dialog'
 import { fileSave } from 'browser-fs-access'
-import { Application } from 'pixi.js'
-import { FC, useCallback, useEffect, useState } from 'react'
+import clsx from 'clsx'
+import type { Application } from 'pixi.js'
+import type { VFC } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import useVideoTexture from '../hooks/use-video-texture'
 import processing from '../lib/processing'
 import { OverlayEntry } from '../types/Overlay'
+import styles from './camera.module.css'
 import Overlay from './overlay'
 
 const mediaStreamConstraints: MediaStreamConstraints = {
@@ -26,72 +25,16 @@ const mediaStreamConstraints: MediaStreamConstraints = {
   }
 }
 
-const useStyles = makeStyles({
-  actionButton: {
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-    border: '3px solid #fafafa',
-    borderRadius: '50%',
-    color: '#fafafa',
-    display: 'block',
-    height: '56px',
-    overflow: 'hidden',
-    padding: 0,
-    width: '56px',
-
-    '&:focus': {
-      outline: 0
-    },
-
-    '&::before': {
-      backgroundColor: '#fafafa',
-      border: '2px solid #1b1b1b',
-      borderRadius: '50%',
-      content: '""',
-      display: 'block',
-      height: '100%',
-      transition: 'border-width 0.2s linear',
-      width: '100%'
-    }
-  },
-  actionButtonActive: {
-    borderWidth: '4px'
-  },
-  actionButtons: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    padding: '5px 12px 24px',
-    width: '100%'
-  },
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100%'
-  },
-  preview: {
-    alignItems: 'center',
-    display: 'flex',
-    flexGrow: 1,
-    justifyContent: 'center',
-    overflow: 'hidden'
-  },
-  stage: {
-    display: 'block',
-    heigh: 'auto',
-    width: '100%'
-  }
-})
-
 type Props = {
   asset?: OverlayEntry
 }
 
-const Camera: FC<Props> = ({ asset }) => {
+const Camera: VFC<Props> = ({ asset }) => {
   const [pixiView, setPixiView] = useState<HTMLCanvasElement>()
   const [cameraStream, setCameraStream] = useState<MediaStream>()
   const [isShooting, setIsShooting] = useState(false)
   const [hasError, setHasError] = useState(false)
-  const classes = useStyles()
+  const cancelRef = useRef<HTMLDivElement>(null)
   const texture = useVideoTexture({ srcObject: cameraStream })
 
   const handleMount = useCallback(
@@ -119,8 +62,6 @@ const Camera: FC<Props> = ({ asset }) => {
       .finally(() => setIsShooting(false))
   }, [pixiView, isShooting])
 
-  const refreshError = useCallback(() => setHasError(false), [])
-
   useEffect(() => {
     if (!navigator.mediaDevices) {
       setHasError(true)
@@ -135,11 +76,11 @@ const Camera: FC<Props> = ({ asset }) => {
   }, [])
 
   return (
-    <Container className={classes.container} disableGutters maxWidth={false}>
-      <div className={classes.preview}>
+    <div className="flex flex-col h-full">
+      <div className="flex flex-grow items-center justify-center overflow-hidden">
         {texture ? (
           <Stage
-            className={classes.stage}
+            className="block h-auto w-full"
             height={texture.height}
             options={{
               autoDensity: false,
@@ -154,44 +95,62 @@ const Camera: FC<Props> = ({ asset }) => {
             {asset && <Overlay asset={asset} />}
           </Stage>
         ) : (
-          <CircularProgress color="secondary" />
+          <svg
+            className="animate-spin h-10 text-yellow-400 w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              className={clsx('opacity-75', styles.animateDash)}
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeWidth="2"
+            />
+          </svg>
         )}
       </div>
 
-      <div className={classes.actionButtons}>
+      <div className="flex justify-around pb-6 pt-2 px-4">
         <button
-          className={clsx(classes.actionButton, {
-            [classes.actionButtonActive]: isShooting
-          })}
+          className={clsx(
+            'bg-gray-50',
+            'bg-opacity-95',
+            isShooting ? 'border-2' : 'border-0',
+            'border-black',
+            'border-opacity-95',
+            'ease-linear',
+            'h-14',
+            'focus:outline-none',
+            'ring-2',
+            'ring-offset-2',
+            'ring-offset-black',
+            'ring-opacity-95',
+            'ring-white',
+            'rounded-full',
+            'transition-all',
+            'w-14'
+          )}
           disabled={isShooting}
           onClick={takePhoto}
           tabIndex={-1}
         >
-          Take a photo!
+          <span className="sr-only">写真を撮る</span>
         </button>
       </div>
 
-      <Dialog
-        aria-describedby="alert-dialog-description"
-        aria-labelledby="alert-dialog-title"
-        onClose={refreshError}
-        open={hasError}
-      >
-        <DialogTitle id="alert-dialog-title">エラー</DialogTitle>
+      {hasError && (
+        <AlertDialog leastDestructiveRef={cancelRef}>
+          <AlertDialogLabel>エラー</AlertDialogLabel>
 
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
+          <AlertDialogDescription>
             カメラの取得に失敗しました。
-          </DialogContentText>
-        </DialogContent>
-
-        <DialogActions>
-          <Button color="primary" onClick={refreshError}>
-            閉じる
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </Container>
+          </AlertDialogDescription>
+        </AlertDialog>
+      )}
+    </div>
   )
 }
 

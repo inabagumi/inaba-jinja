@@ -1,17 +1,21 @@
 {
   "author": "Haneru Developers",
   "dependencies": {
+    "@heroicons/react": "^1.0.1",
     "@inlet/react-pixi": "^6.5.2",
-    "@material-ui/core": "^4.11.4",
-    "@material-ui/icons": "^4.11.2",
+    "@reach/alert-dialog": "^0.15.0",
+    "@reach/dialog": "^0.15.0",
+    "@reach/menu-button": "^0.15.1",
     "browser-fs-access": "^0.17.1",
     "clsx": "^1.1.1",
     "contentful": "^8.3.5",
     "next": "^10.2.0",
+    "next-seo": "^4.24.0",
     "pixi-viewport": "^4.31.0",
     "pixi.js": "^6.0.4",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^2.1.2"
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
   "devDependencies": {
@@ -19,8 +23,10 @@
     "@inabagumi/prettier-config": "^1.1.3",
     "@types/node": "^12.20.13",
     "@types/react": "^17.0.5",
+    "autoprefixer": "^10.2.5",
     "eslint": "^7.26.0",
     "next-pwa": "^5.2.21",
+    "postcss": "^8.2.15",
     "prettier": "~2.3.0",
     "typescript": "~4.2.4"
   },
