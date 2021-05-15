@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://www.github.com/inabagumi/neru-camera/compare/v5.6.2...v6.0.0) (2021-05-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove crossorigin (#953)
+
+### Features
+
+* **tailwindcss:** enable jit ([#954](https://www.github.com/inabagumi/neru-camera/issues/954)) ([d0fc402](https://www.github.com/inabagumi/neru-camera/commit/d0fc402217ab50a84d513215dfacd09db7ed334a))
+
+
+### Bug Fixes
+
+* **tailwindcss:** purge unused class names ([#960](https://www.github.com/inabagumi/neru-camera/issues/960)) ([2255544](https://www.github.com/inabagumi/neru-camera/commit/22555444a05981316ffe4d562c19a588805db6b6))
+* **tailwindcss:** rename tailwind config ([#957](https://www.github.com/inabagumi/neru-camera/issues/957)) ([85da70a](https://www.github.com/inabagumi/neru-camera/commit/85da70ab9f5e2d4ff7c2743389e9b4082e8c3eda))
+
+
+### Code Refactoring
+
+* remove crossorigin ([#953](https://www.github.com/inabagumi/neru-camera/issues/953)) ([245e390](https://www.github.com/inabagumi/neru-camera/commit/245e39045aacf7d9b944e144eb6b56a56924c7e4))
+
 ### [5.6.2](https://www.github.com/inabagumi/neru-camera/compare/v5.6.1...v5.6.2) (2021-05-15)
 
 

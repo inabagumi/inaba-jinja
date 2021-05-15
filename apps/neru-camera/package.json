@@ -40,5 +40,5 @@
     "lint": "eslint --ignore-path .gitignore .",
     "start": "next start"
   },
-  "version": "5.6.2"
+  "version": "6.0.0"
 }
