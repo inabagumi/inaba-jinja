@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.6.2](https://www.github.com/inabagumi/neru-camera/compare/v5.6.1...v5.6.2) (2021-05-15)
+
+
+### Bug Fixes
+
+* **deps:** only patch release can be upgraded for prettier ([#941](https://www.github.com/inabagumi/neru-camera/issues/941)) ([6001c88](https://www.github.com/inabagumi/neru-camera/commit/6001c88ad9b6a83aec37da880e4cba8963f96ac6))
+
 ### [5.6.1](https://github.com/inabagumi/neru-camera/compare/v5.6.0...v5.6.1) (2021-03-29)
 
 ## [5.6.0](https://github.com/inabagumi/neru-camera/compare/v5.5.3...v5.6.0) (2021-03-09)
