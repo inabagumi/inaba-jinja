@@ -25,6 +25,9 @@
     "@types/react": "^17.0.5",
     "autoprefixer": "^10.2.5",
     "eslint": "^7.26.0",
+    "husky": "^6.0.0",
+    "is-ci": "^3.0.0",
+    "lint-staged": "^11.0.0",
     "next-pwa": "^5.2.21",
     "postcss": "^8.2.15",
     "prettier": "~2.3.0",
@@ -36,8 +39,10 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier --write .",
+    "format": "prettier --write './**/*.{json,yml}'",
+    "format-check": "prettier --check './**/*.{json,yml}'",
     "lint": "eslint --ignore-path .gitignore .",
+    "prepare": "is-ci || husky install",
     "start": "next start"
   },
   "version": "6.0.0"
