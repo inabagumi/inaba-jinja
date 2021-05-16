@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.0.1](https://www.github.com/inabagumi/neru-camera/compare/v6.0.0...v6.0.1) (2021-05-16)
+
+
+### Performance Improvements
+
+* remove web fonts ([#963](https://www.github.com/inabagumi/neru-camera/issues/963)) ([c783dcf](https://www.github.com/inabagumi/neru-camera/commit/c783dcff2cba17e0eaffa51ce2d39fbd9de8b4ba))
+
 ## [6.0.0](https://www.github.com/inabagumi/neru-camera/compare/v5.6.2...v6.0.0) (2021-05-15)
 
 
