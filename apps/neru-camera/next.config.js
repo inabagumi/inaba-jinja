@@ -32,6 +32,10 @@ const nextConfig = {
       }
     ]
   },
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja']
+  },
   pwa: {
     dest: '.next/static',
     disable: process.env.NODE_ENV === 'development',

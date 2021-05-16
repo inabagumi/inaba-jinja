@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import type { VFC } from 'react'
 
@@ -28,6 +29,10 @@ const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
           cardType: 'summary_large_image'
         }}
       />
+
+      <Head>
+        <link href="/manifest.json" rel="manifest" />
+      </Head>
 
       <Component {...pageProps} />
     </>
