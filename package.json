@@ -42,7 +42,7 @@
     "@types/web-app-manifest": "^1.0.0",
     "@types/webpack-env": "^1.16.0",
     "critters": "^0.0.10",
-    "eslint": "^7.26.0",
+    "eslint": "^7.27.0",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "lint-staged": "^11.0.0",
