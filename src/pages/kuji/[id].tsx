@@ -1,3 +1,4 @@
+import type { Asset } from 'contentful'
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
 
@@ -10,6 +11,13 @@ import getTweetLink from '@/helpers/getTweetLink'
 import styles from '@/styles/pages/kuji/[id].module.css'
 import { FortuneEntry } from '@/types/fortune'
 
+function getContentfulImageURL(asset: Asset): string {
+  const updatedAt = new Date(asset.sys.updatedAt)
+  const version = `v${Math.floor(updatedAt.getTime() / 1000)}`
+
+  return `/images/contentful/${version}/${asset.sys.id}`
+}
+
 export type Props = {
   fortune: FortuneEntry
 }
@@ -17,7 +25,6 @@ export type Props = {
 const KujiPage: NextPage<Props> = ({ fortune }) => {
   const name = `第${fortune.fields.number}番『${fortune.fields.blessing}』`
   const imageDetails = fortune.fields.paper.fields.file.details.image
-  const imageURL = `https:${fortune.fields.paper.fields.file.url}`
   const imageWidth = imageDetails ? imageDetails.width / 2 : 254
   const imageHeight = imageDetails ? imageDetails.height / 2 : 540
 
@@ -27,7 +34,7 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
         description={fortune.fields.description}
         image={{
           height: fortune.fields.card.fields.file.details.image?.height,
-          url: fortune.fields.card.fields.file.url,
+          url: getContentfulImageURL(fortune.fields.card),
           width: fortune.fields.card.fields.file.details.image?.width
         }}
         path={`/kuji/${fortune.sys.id}`}
@@ -45,7 +52,7 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
                 height={imageHeight}
                 priority
                 quality={80}
-                src={imageURL}
+                src={getContentfulImageURL(fortune.fields.paper)}
                 width={imageWidth}
               />
             </div>
