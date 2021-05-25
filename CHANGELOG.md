@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.19.9](https://www.github.com/inabagumi/inaba-jinja/compare/v1.19.8...v1.19.9) (2021-05-25)
+
+
+### Performance Improvements
+
+* introduce imgix ([#1409](https://www.github.com/inabagumi/inaba-jinja/issues/1409)) ([845b43f](https://www.github.com/inabagumi/inaba-jinja/commit/845b43f6f43e3de173fffac4810f3b2fca479e98))
+
 ### [1.19.8](https://www.github.com/inabagumi/inaba-jinja/compare/v1.19.7...v1.19.8) (2021-05-13)
 
 
