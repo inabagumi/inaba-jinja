@@ -2612,7 +2612,7 @@ contentful-sdk-core@^6.5.0:
     fast-copy "^2.1.0"
     qs "^6.9.4"
 
-contentful@^8.3.5:
+contentful@^8.3.6:
   version "8.3.6"
   resolved "https://registry.yarnpkg.com/contentful/-/contentful-8.3.6.tgz#612a689e740545527cead616b48155c3f5280ef7"
   integrity sha512-GbGwC/F5Mv0VAqcWA0dEp46uojt1AqoeMaVi+T7Yojc49R4znsy/hPU4S9e9rxaEbH7ndp68BBiQea8aJpWGZQ==
