@@ -52,7 +52,13 @@ const nextConfig = {
     ]
   },
   images: {
-    domains: ['images.ctfassets.net']
+    domains: [],
+    ...(process.env.IMGIX_BASE_PATH
+      ? {
+          loader: 'imgix',
+          path: process.env.IMGIX_BASE_PATH
+        }
+      : {})
   },
   reactStrictMode: true,
   async redirects() {
@@ -86,6 +92,10 @@ const nextConfig = {
       {
         destination: '/api/sitemap',
         source: '/sitemap.xml'
+      },
+      {
+        destination: `/api/images/:asset_id`,
+        source: '/images/contentful/:version/:asset_id'
       }
     ]
   },

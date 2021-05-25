@@ -1,16 +1,9 @@
-import * as contentful from 'contentful'
+import type { FortuneEntry, FortuneFields } from '@/types/fortune'
 
-import { FortuneEntry, FortuneFields } from '@/types/fortune'
+import getClient from './getClient'
 
 export default async function getFortune(id?: string): Promise<FortuneEntry> {
-  if (!id) throw new TypeError()
-  if (!process.env.CONTENTFUL_ACCESS_TOKEN) throw new TypeError()
-  if (!process.env.CONTENTFUL_SPACE_ID) throw new TypeError()
+  if (!id) throw new TypeError('The fortune ID is required.')
 
-  const client = contentful.createClient({
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    space: process.env.CONTENTFUL_SPACE_ID
-  })
-
-  return client.getEntry<FortuneFields>(id)
+  return getClient().getEntry<FortuneFields>(id)
 }
