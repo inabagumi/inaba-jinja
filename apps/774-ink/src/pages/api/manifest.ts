@@ -1,4 +1,5 @@
-import { NextApiHandler } from 'next'
+import type { NextApiHandler } from 'next'
+import type { WebAppManifest } from 'web-app-manifest'
 import { favicon192x192URL, favicon512x512URL } from '@/assets'
 
 const handler: NextApiHandler<WebAppManifest> = (_req, res) => {

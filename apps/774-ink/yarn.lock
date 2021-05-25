@@ -214,10 +214,10 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
   integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
 
-"@types/web-app-manifest@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/web-app-manifest/-/web-app-manifest-1.0.0.tgz#62b1be8ec79edd2ff6fcd3693321b60021f41bba"
-  integrity sha512-t9jCCqE8hGRSO7KTgw6hW0KpncQJhjYGrgqYkjAhtTRdOxF6lWm0kiW4II7sfgePXhKTisn9d4/RAQ6GQ0IeHg==
+"@types/web-app-manifest@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/web-app-manifest/-/web-app-manifest-1.0.1.tgz#f29e8775fd6e257dd51aa19d5c68d40e98b53a2a"
+  integrity sha512-8sRE9rPCFaCEful4rj2gggK7vab8Glc8F/6fqtRj/Gk47bfK0SJqXpqQFZcfVfeMWdDQMAx45cfWSnDRuIkmMg==
 
 "@typescript-eslint/eslint-plugin@~4.21.0":
   version "4.21.0"
