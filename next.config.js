@@ -6,6 +6,7 @@ const withMDX = nextMDX()
 
 const nextConfig = {
   experimental: {
+    enableBlurryPlaceholder: true,
     optimizeCss: true
   },
   future: {

@@ -4,14 +4,6 @@
   justify-content: center;
 }
 
-.imageWrapper {
-  position: relative;
-}
-
-.imageWrapper > :last-of-type {
-  vertical-align: bottom;
-}
-
 .shareLinks {
   margin-top: 3rem;
 }
