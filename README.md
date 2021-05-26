@@ -12,7 +12,7 @@
 ```console
 $ git clone https://github.com/inabagumi/inaba-jinja.git
 $ cd inaba-jinja
-$ yarn install --frozen-lockfile
+$ yarn install
 $ yarn build
 $ yarn start
 ```
