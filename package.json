@@ -67,10 +67,10 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier --write .",
-    "format-check": "prettier -c .",
-    "lint": "eslint --ignore-path .gitignore .",
-    "prepare": "husky install",
+    "format": "prettier --write '**/*.{json,yml}'",
+    "format-check": "prettier -c '**/*.{json,yml}'",
+    "lint": "eslint .",
+    "postinstall": "husky install",
     "start": "next start",
     "test": "jest"
   },
