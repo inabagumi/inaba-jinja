@@ -47,7 +47,7 @@
     "critters": "^0.0.10",
     "eslint": "^7.27.0",
     "husky": "^6.0.0",
-    "jest": "^27.0.1",
+    "jest": "^27.0.3",
     "lint-staged": "^11.0.0",
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^5.2.21",
