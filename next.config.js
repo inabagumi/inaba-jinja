@@ -10,7 +10,8 @@ const withMDX = nextMDX()
 const nextConfig = {
   experimental: {
     enableBlurryPlaceholder: true,
-    optimizeCss: true
+    optimizeCss: true,
+    turboMode: true
   },
   future: {
     webpack5: true
