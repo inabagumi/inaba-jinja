@@ -1,5 +1,8 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
-  - about: 質問や連絡は Twitter でお受けしております。
+  - about: このプロジェクトにアイデアの提案をする。
+    name: 機能要望
+    url: https://github.com/inabagumi/inaba-jinja/discussions/new?category=ideas
+  - about: 質問や連絡はTwitterでお受けしております。
     name: Twitter
     url: https://twitter.com/Inaba_Jinja
