@@ -20,3 +20,5 @@ yarn.lock
 # yarn v2
 .yarn
 .yarnrc.yml
+.pnp.*
+.vscode

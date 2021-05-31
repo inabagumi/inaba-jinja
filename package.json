@@ -45,6 +45,7 @@
     "@types/web-app-manifest": "^1.0.1",
     "@types/webpack-env": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
     "critters": "^0.0.10",
     "eslint": "^7.27.0",
     "eslint-config-next": "^10.2.4-canary.3",
@@ -69,7 +70,7 @@
     "url": "https://github.com/inabagumi/inaba-jinja.git"
   },
   "scripts": {
-    "build": "next build",
+    "build": "next build --no-lint",
     "dev": "next",
     "format": "prettier --write '**/*.{json,yml}'",
     "format-check": "prettier -c '**/*.{json,yml}'",
