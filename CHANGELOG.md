@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.19.10](https://www.github.com/inabagumi/inaba-jinja/compare/v1.19.9...v1.19.10) (2021-06-01)
+
+
+### Bug Fixes
+
+* remove unused style ([#1416](https://www.github.com/inabagumi/inaba-jinja/issues/1416)) ([bfceaad](https://www.github.com/inabagumi/inaba-jinja/commit/bfceaad40d9a0d99db859bebe2cfb27973517a70))
+
 ### [1.19.9](https://www.github.com/inabagumi/inaba-jinja/compare/v1.19.8...v1.19.9) (2021-05-25)
 
 
