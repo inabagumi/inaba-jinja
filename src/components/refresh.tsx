@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import type { VFC } from 'react'
 
-import fullPath from '@/helpers/fullPath'
+import useBaseURLUtils from '@/hooks/use-base-url-utils'
 
 type Props = {
   delay?: number
@@ -12,6 +12,7 @@ type Props = {
 
 const Refresh: VFC<Props> = ({ delay = 0, path }) => {
   const router = useRouter()
+  const { withBaseURL } = useBaseURLUtils()
 
   useEffect(() => {
     void router.prefetch(path)
@@ -29,7 +30,7 @@ const Refresh: VFC<Props> = ({ delay = 0, path }) => {
     <Head>
       <noscript
         dangerouslySetInnerHTML={{
-          __html: `<meta content="${delay};URL=${fullPath(
+          __html: `<meta content="${delay};URL=${withBaseURL(
             path
           )}" http-equiv="refresh" />`
         }}

@@ -40,5 +40,5 @@ jobs:
         run: yarn build
         env:
           NEXT_PUBLIC_GA_TRACKING_ID: G-XXXXXXXXXX
-      - name: Test
-        run: yarn test
+      # - name: Test
+      #   run: yarn test
