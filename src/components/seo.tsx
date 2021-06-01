@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import type { VFC } from 'react'
 
-import fullPath from '@/helpers/fullPath'
+import useBaseURLUtils from '@/hooks/use-base-url-utils'
 
 const siteName = '因幡神社'
 
@@ -29,7 +29,7 @@ const SEO: VFC<Props> = ({
   title,
   type = 'website'
 }) => {
-  const canonicalURL = path && fullPath(path)
+  const { withBaseURL } = useBaseURLUtils()
 
   return (
     <Head>
@@ -40,7 +40,7 @@ const SEO: VFC<Props> = ({
       {description && <meta content={description} property="og:description" />}
       {image && (
         <>
-          <meta content={fullPath(image.url)} property="og:image" />
+          <meta content={withBaseURL(image.url)} property="og:image" />
           {image.height && (
             <meta content={`${image.height}`} property="og:image:height" />
           )}
@@ -53,14 +53,14 @@ const SEO: VFC<Props> = ({
       {title && <meta content={siteName} property="og:site_name" />}
       <meta content={title ?? siteName} property="og:title" />
       <meta content={type} property="og:type" />
-      {canonicalURL && <meta content={canonicalURL} property="og:url" />}
+      {path && <meta content={withBaseURL(path)} property="og:url" />}
       <meta content="summary_large_image" name="twitter:card" />
       <meta content="@Inaba_Jinja" name="twitter:site" />
       {title && (
         <meta content={`${title} - ${siteName}`} name="twitter:title" />
       )}
 
-      {canonicalURL && <link href={canonicalURL} rel="canonical" />}
+      {path && <link href={withBaseURL(path)} rel="canonical" />}
     </Head>
   )
 }

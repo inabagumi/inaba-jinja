@@ -1,6 +1,16 @@
+import dedent from 'dedent'
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
 
-import createGoogleAnalyticsTrackingCode from '@/helpers/createGoogleAnalyticsTrackingCode'
+function createGoogleAnalyticsTrackingCode(trackingID: string): string {
+  const trackingCode = dedent`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${trackingID}');
+  `
+
+  return trackingCode
+}
 
 class Document extends NextDocument {
   render(): JSX.Element {
