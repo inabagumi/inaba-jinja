@@ -2567,10 +2567,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.17.1":
-  version: 14.17.1
-  resolution: "@types/node@npm:14.17.1"
-  checksum: 81cc34ecd6e21ed723f00e55f042ccc1e1bde306122fa73aab9437584339fe1dd0c10e00ee691c99f0b9ca1ebcc9d6f0d35ca78356f7d0d580eaf3e93bd48718
+"@types/node@npm:^14.17.2":
+  version: 14.17.2
+  resolution: "@types/node@npm:14.17.2"
+  checksum: 50e9a7302f5a2dc3741c55d37a7747a3eb86f94b9d85a16919e5dab672a7028b66b1d55be8afe77d8197906a6b49e82740925f8c1320911552774c8874aa5e97
   languageName: node
   linkType: hard
 
@@ -6160,7 +6160,7 @@ __metadata:
     "@types/dedent": ^0.7.0
     "@types/gtag.js": ^0.0.5
     "@types/jest": ^26.0.23
-    "@types/node": ^14.17.1
+    "@types/node": ^14.17.2
     "@types/react": ^17.0.9
     "@types/testing-library__jest-dom": ^5.9.5
     "@types/web-app-manifest": ^1.0.1
