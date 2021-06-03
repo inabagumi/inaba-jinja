@@ -72,7 +72,6 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
               <Link href="/" prefetch={false}>
                 <a
                   className={styles.menuLogoLink}
-                  href="/"
                   onClick={hideMenu}
                   onKeyPress={hideMenu}
                   tabIndex={!menuShown ? -1 : undefined}
@@ -133,7 +132,7 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
         {!hideHeader && (
           <header className={styles.header}>
             <Link href="/" prefetch={false}>
-              <a className={styles.brand} href="/">
+              <a className={styles.brand}>
                 <Logo className={styles.brandLogo} aria-label="因幡神社" />
               </a>
             </Link>

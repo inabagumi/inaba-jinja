@@ -37,7 +37,7 @@ jobs:
       - name: Lint
         run: yarn lint
       - name: Build
-        run: yarn build
+        run: yarn build --no-lint
         env:
           NEXT_PUBLIC_GA_TRACKING_ID: G-XXXXXXXXXX
       # - name: Test

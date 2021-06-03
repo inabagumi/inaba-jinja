@@ -36,7 +36,7 @@ const HomePage: NextPage = () => (
         <SkipNavContent />
 
         <Link href="/lottery">
-          <a className={styles.lotteryButton} href="/lottery" role="button">
+          <a className={styles.lotteryButton} role="button">
             おみくじを引く
           </a>
         </Link>
