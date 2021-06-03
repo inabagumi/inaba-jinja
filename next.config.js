@@ -8,10 +8,10 @@ const withMDX = nextMDX()
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 const nextConfig = {
+  eslint: true,
   experimental: {
     enableBlurryPlaceholder: true,
-    optimizeCss: true,
-    turboMode: true
+    optimizeCss: true
   },
   future: {
     webpack5: true
