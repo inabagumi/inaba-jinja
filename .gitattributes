@@ -1,2 +1,3 @@
 /.yarn/**/*.cjs linguist-vendored
+/.pnp.cjs linguist-vendored
 /yarn.lock linguist-language=YAML
