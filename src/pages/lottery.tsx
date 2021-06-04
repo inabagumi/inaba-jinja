@@ -31,7 +31,7 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
                 height={kujiImage.height / 2}
                 priority
                 quality={80}
-                src={kujiImage.src}
+                src={kujiImage}
                 width={kujiImage.width / 2}
               />
             </div>

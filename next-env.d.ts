@@ -2,30 +2,21 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
 
-type ResponsiveLoaderImage = {
+type StaticImageData = {
   height: number
-  path: string
-  width: number
-}
-
-type ResponsiveLoaderOutput = {
-  height: number
-  images: ResponsiveLoaderImage[]
-  placeholder: string
+  placeholder?: string
   src: string
-  srcSet: string
-  toString: () => string
   width: number
 }
 
 declare module '*.jpg' {
-  const content: ResponsiveLoaderOutput
+  const content: StaticImageData
 
   export default content
 }
 
 declare module '*.png' {
-  const content: ResponsiveLoaderOutput
+  const content: StaticImageData
 
   export default content
 }

@@ -10,6 +10,7 @@ const withMDX = nextMDX()
 const nextConfig = {
   experimental: {
     enableBlurryPlaceholder: true,
+    enableStaticImages: true,
     optimizeCss: true
   },
   future: {
@@ -104,23 +105,11 @@ const nextConfig = {
     ]
   },
   webpack(config, { defaultLoaders }) {
-    config.module.rules.push({
-      test: /\.(?:jpg|png)$/,
-      use: [
-        defaultLoaders.babel,
-        {
-          loader: 'responsive-loader',
-          options: {
-            adapter: require('responsive-loader/sharp'),
-            esModule: true,
-            name: '[name].[contenthash:8].[width].[ext]',
-            outputPath: 'static/media',
-            placeholder: true,
-            publicPath: '/_next/static/media'
-          }
-        }
-      ]
-    })
+    for (const rule of config.module.rules) {
+      if (rule.loader === 'next-image-loader') {
+        rule.test = /\.(png|jpg|jpeg|gif|webp|ico|bmp)$/i
+      }
+    }
 
     config.module.rules.push({
       test: /\.svg$/,
