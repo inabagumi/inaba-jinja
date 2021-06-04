@@ -22,7 +22,6 @@
     "react-dom": "^17.0.2",
     "react-focus-lock": "^2.5.1",
     "react-remove-scroll": "^2.4.2",
-    "sharp": "^0.28.3",
     "sitemap": "^7.0.0"
   },
   "description": "The source code for the Inaba Jinja.",
@@ -57,7 +56,6 @@
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^5.2.21",
     "prettier": "~2.3.0",
-    "responsive-loader": "^2.3.0",
     "typescript": "~4.3.2"
   },
   "homepage": "https://inaba-jinja.com",
