@@ -7,8 +7,6 @@ import styles from '@/styles/components/background.module.css'
 const Background: VFC = () => {
   return (
     <div aria-hidden className={styles.container} role="none presentation">
-      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-      {/* @ts-ignore */}
       <Image
         alt=""
         layout="fill"

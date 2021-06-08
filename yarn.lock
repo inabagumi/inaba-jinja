@@ -1926,10 +1926,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:10.2.4-canary.5":
-  version: 10.2.4-canary.5
-  resolution: "@next/env@npm:10.2.4-canary.5"
-  checksum: c16edaf3b72d29a42ca72c310f9bb7284e26d70dd34b7065692da6aaa1bea8d608ddb94ff94aa0d2da5fbd9dbe4281e7e7bda5ea2e977b33ce769f9f2d566b24
+"@next/env@npm:10.2.4-canary.6":
+  version: 10.2.4-canary.6
+  resolution: "@next/env@npm:10.2.4-canary.6"
+  checksum: 9a71a889ee0a1e063641975030abd194f3321a9e7156ee6b747022e5146be4e5b03c0f471d3ca3df0cb2811777982366ffd309eaae07494d66065bcf6b40f499
   languageName: node
   linkType: hard
 
@@ -1950,16 +1950,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/polyfill-module@npm:10.2.4-canary.5":
-  version: 10.2.4-canary.5
-  resolution: "@next/polyfill-module@npm:10.2.4-canary.5"
-  checksum: 25e2aae4acdbd6fc0b85766207e42586beb7b606efe28835b32192c8a44a1e35c415dfed5bab463a124e3acb899a96682d1e5646fd32a0b7ec129c358c3710e6
+"@next/polyfill-module@npm:10.2.4-canary.6":
+  version: 10.2.4-canary.6
+  resolution: "@next/polyfill-module@npm:10.2.4-canary.6"
+  checksum: 501e228bca330684560ad3e1f55ee47ec99f70e1444915d18ae0993df3b1c61342ea411ca4d2557638a0e44d83841c6e69953c63bd268961d0e42cd272ba62f1
   languageName: node
   linkType: hard
 
-"@next/react-dev-overlay@npm:10.2.4-canary.5":
-  version: 10.2.4-canary.5
-  resolution: "@next/react-dev-overlay@npm:10.2.4-canary.5"
+"@next/react-dev-overlay@npm:10.2.4-canary.6":
+  version: 10.2.4-canary.6
+  resolution: "@next/react-dev-overlay@npm:10.2.4-canary.6"
   dependencies:
     "@babel/code-frame": 7.12.11
     anser: 1.4.9
@@ -1975,20 +1975,20 @@ __metadata:
   peerDependencies:
     react: ^17.0.2
     react-dom: ^17.0.2
-  checksum: 3becd7ae3fcd059c54a8c37ee8edfb42129cc9bff26e0e36f56468c31c9db8737ceba26022d52bf2bf8598592f5aab6c592e0dae5035f5458d0dec6f678e856b
+  checksum: 95a997f88a11240617213501e7b16a4e0b86b2e542001a282fcf6828417b34bd77d5a0a5ae4ac1b023904436fe9d7726a3e67fa5432573ecf6845648f694c60b
   languageName: node
   linkType: hard
 
-"@next/react-refresh-utils@npm:10.2.4-canary.5":
-  version: 10.2.4-canary.5
-  resolution: "@next/react-refresh-utils@npm:10.2.4-canary.5"
+"@next/react-refresh-utils@npm:10.2.4-canary.6":
+  version: 10.2.4-canary.6
+  resolution: "@next/react-refresh-utils@npm:10.2.4-canary.6"
   peerDependencies:
     react-refresh: 0.8.3
     webpack: ^4 || ^5
   peerDependenciesMeta:
     webpack:
       optional: true
-  checksum: dfed54aa8b69c70f9e58503b7213ced51e46350df9c537887b026ec5fc59c07461da5ab691fba4d3522d453408ee901e7175a07268ca9253664a1d8166d9a157
+  checksum: 6a05d692551fb1d4d3b96d33a8c575c7f91a8a4cd04e82c2d01f58a0ce3bad7cb5af6436b05630bece9083063b1ecfbac561f61948117c8db6f0dde10c8847ea
   languageName: node
   linkType: hard
 
@@ -6194,7 +6194,7 @@ __metadata:
     jest: ^27.0.4
     lint-staged: ^11.0.0
     mini-svg-data-uri: ^1.3.3
-    next: ^10.2.4-canary.5
+    next: ^10.2.4-canary.6
     next-compose-plugins: ^2.2.1
     next-pwa: ^5.2.21
     prettier: ~2.3.1
@@ -8317,16 +8317,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:^10.2.4-canary.5":
-  version: 10.2.4-canary.5
-  resolution: "next@npm:10.2.4-canary.5"
+"next@npm:^10.2.4-canary.6":
+  version: 10.2.4-canary.6
+  resolution: "next@npm:10.2.4-canary.6"
   dependencies:
     "@babel/runtime": 7.12.5
     "@hapi/accept": 5.0.2
-    "@next/env": 10.2.4-canary.5
-    "@next/polyfill-module": 10.2.4-canary.5
-    "@next/react-dev-overlay": 10.2.4-canary.5
-    "@next/react-refresh-utils": 10.2.4-canary.5
+    "@next/env": 10.2.4-canary.6
+    "@next/polyfill-module": 10.2.4-canary.6
+    "@next/react-dev-overlay": 10.2.4-canary.6
+    "@next/react-refresh-utils": 10.2.4-canary.6
     "@opentelemetry/api": 0.14.0
     assert: 2.0.0
     ast-types: 0.13.2
@@ -8387,7 +8387,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 222ccc216e006684bfee2de8a43c55e32fab212eed929f5ec9e795c94944cd604a17e315a959599cfb1c75c9db54bfdb1c086a0515617bb926eb50f43a5e5b01
+  checksum: 8fd328d0fec3f8c90601ce11b42c1dde8e5881b53ac40238004ee36f81bdfd4ada7990069f4c1ee21de49d578ff77b58030a258be5936373bd0fc8af12de5922
   languageName: node
   linkType: hard
 
