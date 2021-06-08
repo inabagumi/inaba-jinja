@@ -2308,9 +2308,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanem/react-nprogress@npm:^3.0.67":
-  version: 3.0.67
-  resolution: "@tanem/react-nprogress@npm:3.0.67"
+"@tanem/react-nprogress@npm:^3.0.68":
+  version: 3.0.68
+  resolution: "@tanem/react-nprogress@npm:3.0.68"
   dependencies:
     "@babel/runtime": ^7.14.0
     hoist-non-react-statics: ^3.3.2
@@ -2319,7 +2319,7 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
-  checksum: bb45ee9d33663d64a1598f0f095cb24a4d047ea91952edb7feae17ab282c8109bb757ec9d108304ceb4e7e31a122b652c9856f4d6d6b8df7fdd4ed2f2e3b2e7d
+  checksum: f50b71c56e8f52c1afd6ec07e72137e6741472644e148724e04512d06e2926e6fc118a02d01cc5508b9488d76e34850e4e469d6abae1b105138dc0fb4c69830c
   languageName: node
   linkType: hard
 
@@ -6168,7 +6168,7 @@ __metadata:
     "@reach/portal": ^0.15.0
     "@reach/skip-nav": ^0.15.0
     "@svgr/webpack": ^5.5.0
-    "@tanem/react-nprogress": ^3.0.67
+    "@tanem/react-nprogress": ^3.0.68
     "@testing-library/jest-dom": ^5.13.0
     "@testing-library/react": ^11.2.7
     "@types/dedent": ^0.7.0
