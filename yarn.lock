@@ -2601,14 +2601,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^17.0.9":
-  version: 17.0.9
-  resolution: "@types/react@npm:17.0.9"
+"@types/react@npm:^17.0.10":
+  version: 17.0.10
+  resolution: "@types/react@npm:17.0.10"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: c626e3ca42b6173b0617102af6c1c8c6068f69fafeba51f5d614962cabaf98a5706295081941ece93da04117268cb0aad471be87e76dde7e0d5f79a46280c586
+  checksum: 7a32f258c391b99484fad43f2cf87ca54a5e27ede65aa76bc36368b068f9e3deb7bed2320b32d2023aa3ccc2d97c7480e60f6475c0062bb512bfa6b8425220ce
   languageName: node
   linkType: hard
 
@@ -6160,7 +6160,7 @@ __metadata:
     "@types/gtag.js": ^0.0.5
     "@types/jest": ^26.0.23
     "@types/node": ^14.17.3
-    "@types/react": ^17.0.9
+    "@types/react": ^17.0.10
     "@types/testing-library__jest-dom": ^5.13.0
     "@types/web-app-manifest": ^1.0.1
     "@types/webpack-env": ^1.16.0
