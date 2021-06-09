@@ -1926,40 +1926,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:10.2.4-canary.9":
-  version: 10.2.4-canary.9
-  resolution: "@next/env@npm:10.2.4-canary.9"
-  checksum: 884d4eb05b82fa8ce9e42819bb6ce36d311dea32d4b636f700385eeb83c7ac669f9061272223b624f44784c801d2112d1c02d786c0b359922c649d145651d432
+"@next/env@npm:10.2.4-canary.10":
+  version: 10.2.4-canary.10
+  resolution: "@next/env@npm:10.2.4-canary.10"
+  checksum: 6af33f92c7e4d0bdfeef7e64c9be0503d53f3c9277534a6bddeb20c30aa81a153ad505e89234c1f9e8bd31b44d991db4c6d94d7a921cdb0a20424233d86d832c
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:10.2.4-canary.9":
-  version: 10.2.4-canary.9
-  resolution: "@next/eslint-plugin-next@npm:10.2.4-canary.9"
-  checksum: e9e5bf20f3632af3163bcd80d20f1bd9bdca1e2cbd017a7c71bc8bbda7cd299474bbca5c658dcb676a146c2ccfd2f8acad63ecdfd181f68b2bdb35dbd7285aee
+"@next/eslint-plugin-next@npm:10.2.4-canary.10":
+  version: 10.2.4-canary.10
+  resolution: "@next/eslint-plugin-next@npm:10.2.4-canary.10"
+  checksum: c046f2465c55b71653d431b139723d62371560506535500c3ce00bcfc3f98ec7f584f744604bf75a58b020e849ed8ebdac679f10a1b17c84c9fae1167cba45bc
   languageName: node
   linkType: hard
 
-"@next/mdx@npm:^10.2.4-canary.9":
-  version: 10.2.4-canary.9
-  resolution: "@next/mdx@npm:10.2.4-canary.9"
+"@next/mdx@npm:^10.2.4-canary.10":
+  version: 10.2.4-canary.10
+  resolution: "@next/mdx@npm:10.2.4-canary.10"
   peerDependencies:
     "@mdx-js/loader": ">=0.15.0"
     "@mdx-js/react": "*"
-  checksum: 89886c62217e599b90eae2b6d7092d4e42f9990016b6e16e03c5ca4fe34d698d8a1baa727368d7cec6e47e33c23e25540d254190396656652c609dc92ccbe76e
+  checksum: 5a6fc5cd8a40c9df8bae37552e4ec45018678497211ecb099793ec762487a23b8dfa8aaf15bd0bcb5d55f8d4cc0aebbad9517e901d8e1c7dcc6b08ec49a1da77
   languageName: node
   linkType: hard
 
-"@next/polyfill-module@npm:10.2.4-canary.9":
-  version: 10.2.4-canary.9
-  resolution: "@next/polyfill-module@npm:10.2.4-canary.9"
-  checksum: 08040cc91043cce69543f9d75ed61625b81459a75ae08ac18f5232ce85ae960559f89141ec1f50803cf749220b7973d704676395a6f40c935ad199a460aef56c
+"@next/polyfill-module@npm:10.2.4-canary.10":
+  version: 10.2.4-canary.10
+  resolution: "@next/polyfill-module@npm:10.2.4-canary.10"
+  checksum: d9177293958c329b7c008a52fa8739fa188afda5a61997048c184ef889ca36b120fb5f19ec052aa7039cc1fb11d0cddbafb6b253b55e5d589e1cb419116728b1
   languageName: node
   linkType: hard
 
-"@next/react-dev-overlay@npm:10.2.4-canary.9":
-  version: 10.2.4-canary.9
-  resolution: "@next/react-dev-overlay@npm:10.2.4-canary.9"
+"@next/react-dev-overlay@npm:10.2.4-canary.10":
+  version: 10.2.4-canary.10
+  resolution: "@next/react-dev-overlay@npm:10.2.4-canary.10"
   dependencies:
     "@babel/code-frame": 7.12.11
     anser: 1.4.9
@@ -1975,20 +1975,20 @@ __metadata:
   peerDependencies:
     react: ^17.0.2
     react-dom: ^17.0.2
-  checksum: c841db34815e28972089b13d3b888ebc1d20d68d6ba0029d17c0c929b8ed273a07a4f757ac75f2339fea668b616ccd4b8a4ea5fb730287c3ea7a231809bcf6bd
+  checksum: e531cc67fe56c94caabea34ed066a38044ed6777b0aa64cb6fbbdb035ab431e8b99098023f9211265ec12f6b4216f0d3c709dec29dc11f536f7c52509a1c0dd8
   languageName: node
   linkType: hard
 
-"@next/react-refresh-utils@npm:10.2.4-canary.9":
-  version: 10.2.4-canary.9
-  resolution: "@next/react-refresh-utils@npm:10.2.4-canary.9"
+"@next/react-refresh-utils@npm:10.2.4-canary.10":
+  version: 10.2.4-canary.10
+  resolution: "@next/react-refresh-utils@npm:10.2.4-canary.10"
   peerDependencies:
     react-refresh: 0.8.3
     webpack: ^4 || ^5
   peerDependenciesMeta:
     webpack:
       optional: true
-  checksum: 448f356a99cc24d936a28362c38d2d8e1587d4489c38514e444e89dd8b2d39d0c9c4c907d22c9daebdbe4adeab3dec47c6f3cc83013fa2dccdf2af817e2d1a10
+  checksum: 7f545cd491a9726bf240e4e6d1dc8269b4f8bbd9feb7d34f0b97f698060b045f1be5daba0e905f68ef50e91dfa87faecac64a8c888d67577f46132be86120aa3
   languageName: node
   linkType: hard
 
@@ -4975,11 +4975,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:^10.2.4-canary.9":
-  version: 10.2.4-canary.9
-  resolution: "eslint-config-next@npm:10.2.4-canary.9"
+"eslint-config-next@npm:^10.2.4-canary.10":
+  version: 10.2.4-canary.10
+  resolution: "eslint-config-next@npm:10.2.4-canary.10"
   dependencies:
-    "@next/eslint-plugin-next": 10.2.4-canary.9
+    "@next/eslint-plugin-next": 10.2.4-canary.10
     "@rushstack/eslint-patch": ^1.0.6
     "@typescript-eslint/parser": ^4.20.0
     eslint-import-resolver-node: ^0.3.4
@@ -4994,7 +4994,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: ce388ff627addf54706e2d6a6160a5e8012cb7f8ccd610d08f62a85816daf091b98f084e85e9fe62968f963adbdc3a5afd8dd42d8741032a9475cb5c1112bdb7
+  checksum: 071c9343dde8df6231b9ec8971ec033d2d16c1b90891d394192082095870d9016a67f2492dc61b77fa8febcb4f17ab378a7e3a648f7f29e5c02d0985eedd37ea
   languageName: node
   linkType: hard
 
@@ -6148,7 +6148,7 @@ __metadata:
     "@inabagumi/prettier-config": ^1.1.3
     "@mdx-js/loader": ^2.0.0-next.9
     "@mdx-js/react": ^2.0.0-next.9
-    "@next/mdx": ^10.2.4-canary.9
+    "@next/mdx": ^10.2.4-canary.10
     "@reach/portal": ^0.15.0
     "@reach/skip-nav": ^0.15.0
     "@svgr/webpack": ^5.5.0
@@ -6171,14 +6171,14 @@ __metadata:
     critters: ^0.0.10
     dedent: ^0.7.0
     eslint: ^7.28.0
-    eslint-config-next: ^10.2.4-canary.9
+    eslint-config-next: ^10.2.4-canary.10
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^3.4.0
     husky: ^6.0.0
     jest: ^27.0.4
     lint-staged: ^11.0.0
     mini-svg-data-uri: ^1.3.3
-    next: ^10.2.4-canary.9
+    next: ^10.2.4-canary.10
     next-compose-plugins: ^2.2.1
     next-pwa: ^5.2.21
     prettier: ~2.3.1
@@ -8301,16 +8301,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:^10.2.4-canary.9":
-  version: 10.2.4-canary.9
-  resolution: "next@npm:10.2.4-canary.9"
+"next@npm:^10.2.4-canary.10":
+  version: 10.2.4-canary.10
+  resolution: "next@npm:10.2.4-canary.10"
   dependencies:
     "@babel/runtime": 7.12.5
     "@hapi/accept": 5.0.2
-    "@next/env": 10.2.4-canary.9
-    "@next/polyfill-module": 10.2.4-canary.9
-    "@next/react-dev-overlay": 10.2.4-canary.9
-    "@next/react-refresh-utils": 10.2.4-canary.9
+    "@next/env": 10.2.4-canary.10
+    "@next/polyfill-module": 10.2.4-canary.10
+    "@next/react-dev-overlay": 10.2.4-canary.10
+    "@next/react-refresh-utils": 10.2.4-canary.10
     assert: 2.0.0
     ast-types: 0.13.2
     browserify-zlib: 0.2.0
@@ -8370,7 +8370,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 66b8363d0c5fc362c5969745d72156221e1745fb25d4c866f2c720f44b19c38d88e3d2e663f9d8543e30ac845cc93cf11be30a22c881e05a4c740b29092535bb
+  checksum: 178b862f1a18f50b43f622d18ee61650b92e1db04f7768b68374261a0e4ca92b3a0ebc4bd65f631812562b49b20f9ff8ca52c88efb9d16f2d73924e5510c93e0
   languageName: node
   linkType: hard
 
