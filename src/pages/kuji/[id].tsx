@@ -6,7 +6,6 @@ import Page from '@/components/layout'
 import SEO from '@/components/seo'
 import SingleWindow from '@/components/simple-window'
 import getFortune from '@/contentful/getFortune'
-import useBlurKujiURL from '@/hooks/use-blur-kuji-url'
 import useTweetShareURL from '@/hooks/use-tweet-share-url'
 import styles from '@/styles/pages/kuji/[id].module.css'
 import { FortuneEntry } from '@/types/fortune'
@@ -23,7 +22,6 @@ export type Props = {
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
-  const blurDataURL = useBlurKujiURL(fortune)
   const tweetShereURL = useTweetShareURL(fortune)
 
   const name = `第${fortune.fields.number}番『${fortune.fields.blessing}』`
@@ -48,7 +46,7 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
           <div className={styles.content}>
             <Image
               alt={name}
-              blurDataURL={blurDataURL}
+              blurDataURL={fortune.fields.prePaper}
               height={imageDetails ? imageDetails.height / 2 : 540}
               placeholder="blur"
               priority

@@ -6177,7 +6177,6 @@ __metadata:
     husky: ^6.0.0
     jest: ^27.0.4
     lint-staged: ^11.0.0
-    mini-svg-data-uri: ^1.3.3
     next: ^10.2.4-canary.12
     next-compose-plugins: ^2.2.1
     next-pwa: ^5.2.21
@@ -8070,15 +8069,6 @@ __metadata:
   version: 1.0.1
   resolution: "min-indent@npm:1.0.1"
   checksum: bfc6dd03c5eaf623a4963ebd94d087f6f4bbbfd8c41329a7f09706b0cb66969c4ddd336abeb587bc44bc6f08e13bf90f0b374f9d71f9f01e04adc2cd6f083ef1
-  languageName: node
-  linkType: hard
-
-"mini-svg-data-uri@npm:^1.3.3":
-  version: 1.3.3
-  resolution: "mini-svg-data-uri@npm:1.3.3"
-  bin:
-    mini-svg-data-uri: cli.js
-  checksum: 3a778132031f5472a46d9f8c012e420137412bef67997e0acedfc98dea7235c716c42fed57e80e8a5f0296fae2dab24282ebb3602dc341513745257434edc676
   languageName: node
   linkType: hard
 
