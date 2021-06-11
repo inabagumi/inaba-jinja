@@ -4120,7 +4120,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:^8.3.8":
+"contentful@npm:^8.3.9":
   version: 8.3.9
   resolution: "contentful@npm:8.3.9"
   dependencies:
@@ -6167,7 +6167,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.26.1
     "@typescript-eslint/parser": ^4.26.1
     clsx: ^1.1.1
-    contentful: ^8.3.8
+    contentful: ^8.3.9
     critters: ^0.0.10
     dedent: ^0.7.0
     eslint: ^7.28.0
