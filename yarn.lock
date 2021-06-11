@@ -2659,12 +2659,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/testing-library__jest-dom@npm:^5.13.0, @types/testing-library__jest-dom@npm:^5.9.1":
-  version: 5.13.0
-  resolution: "@types/testing-library__jest-dom@npm:5.13.0"
+"@types/testing-library__jest-dom@npm:^5.14.0, @types/testing-library__jest-dom@npm:^5.9.1":
+  version: 5.14.0
+  resolution: "@types/testing-library__jest-dom@npm:5.14.0"
   dependencies:
     "@types/jest": "*"
-  checksum: 90d73200b510cd20a27323b677a2a68cc31b2d301dcf9d6961cc122b6f522a4acb8eb0daa6f174a94967b487c21cd48ed34bdb4f7fcbda3247263c2ae00d5640
+  checksum: dc42909d5afb907f82a2ad29d77bb8ed8bff17ad3090586cec18742dd94d7ce533ac0a4571ffd93ccfa6f54a02d991a3ba561361cb72107df754b8ed7a8b04ae
   languageName: node
   linkType: hard
 
@@ -6162,7 +6162,7 @@ __metadata:
     "@types/jest": ^26.0.23
     "@types/node": ^14.17.3
     "@types/react": ^17.0.11
-    "@types/testing-library__jest-dom": ^5.13.0
+    "@types/testing-library__jest-dom": ^5.14.0
     "@types/web-app-manifest": ^1.0.1
     "@types/webpack-env": ^1.16.0
     "@typescript-eslint/eslint-plugin": ^4.26.1
