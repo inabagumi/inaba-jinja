@@ -14,7 +14,7 @@
     "@reach/skip-nav": "^0.15.0",
     "@tanem/react-nprogress": "^3.0.68",
     "clsx": "^1.1.1",
-    "contentful": "^8.3.9",
+    "contentful": "^8.4.0",
     "dedent": "^0.7.0",
     "next": "^10.2.4-canary.13",
     "react": "^17.0.2",
