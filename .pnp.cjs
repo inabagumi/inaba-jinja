@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@reach/skip-nav", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:0.15.0"],
             ["@svgr/webpack", "npm:5.5.0"],
             ["@tanem/react-nprogress", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:3.0.68"],
-            ["@testing-library/jest-dom", "npm:5.14.0"],
+            ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.2.7"],
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
@@ -3819,10 +3819,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@testing-library/jest-dom", [
-        ["npm:5.14.0", {
-          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.14.0-0cfdbf0d7e-a6c47b0331.zip/node_modules/@testing-library/jest-dom/",
+        ["npm:5.14.1", {
+          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.14.1-1ece992419-eeba37ba10.zip/node_modules/@testing-library/jest-dom/",
           "packageDependencies": [
-            ["@testing-library/jest-dom", "npm:5.14.0"],
+            ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@babel/runtime", "npm:7.14.0"],
             ["@types/testing-library__jest-dom", "npm:5.13.0"],
             ["aria-query", "npm:4.2.2"],
@@ -8502,7 +8502,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@reach/skip-nav", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:0.15.0"],
             ["@svgr/webpack", "npm:5.5.0"],
             ["@tanem/react-nprogress", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:3.0.68"],
-            ["@testing-library/jest-dom", "npm:5.14.0"],
+            ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.2.7"],
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],

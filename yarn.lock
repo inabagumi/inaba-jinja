@@ -2323,9 +2323,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.14.0":
-  version: 5.14.0
-  resolution: "@testing-library/jest-dom@npm:5.14.0"
+"@testing-library/jest-dom@npm:^5.14.1":
+  version: 5.14.1
+  resolution: "@testing-library/jest-dom@npm:5.14.1"
   dependencies:
     "@babel/runtime": ^7.9.2
     "@types/testing-library__jest-dom": ^5.9.1
@@ -2336,7 +2336,7 @@ __metadata:
     dom-accessibility-api: ^0.5.6
     lodash: ^4.17.15
     redent: ^3.0.0
-  checksum: a6c47b0331fb3b44780da92f201a92c619f0374a58a3ba893b7611695827aa6bd542f42d27ec05133222cfd2f98440896de5a3915d75900cf520c839cd4e97b1
+  checksum: eeba37ba10be550bd9ab7dd0dda77d9011a96d9a4f75c70ed57d7bf120fe4126b251ccfb1444da1746c19773bbe4efbd96a0408f970d98c9cd1d399b2455d2c1
   languageName: node
   linkType: hard
 
@@ -6154,7 +6154,7 @@ __metadata:
     "@reach/skip-nav": ^0.15.0
     "@svgr/webpack": ^5.5.0
     "@tanem/react-nprogress": ^3.0.68
-    "@testing-library/jest-dom": ^5.14.0
+    "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^11.2.7
     "@types/dedent": ^0.7.0
     "@types/eslint-plugin-prettier": ^3
