@@ -1307,12 +1307,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.0, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
-  version: 7.14.0
-  resolution: "@babel/runtime@npm:7.14.0"
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.5, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+  version: 7.14.5
+  resolution: "@babel/runtime@npm:7.14.5"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: 257dc2594355dd8798455f25b6f2f9a00f162b427391265752933e0e3337b3b14661d09283187d5039ae3764f723890ffe767e995c73d662f1d515bdf48e5ade
+  checksum: f609df5ca9e26a1f0f71f92754a5f6e1a4a9c22f982627e8c2c2b751ebbf45da10376501024a68c22d7a625331f40a26f9d1830c8c869512bef813f223d18ba1
   languageName: node
   linkType: hard
 
@@ -2292,18 +2292,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanem/react-nprogress@npm:^3.0.68":
-  version: 3.0.68
-  resolution: "@tanem/react-nprogress@npm:3.0.68"
+"@tanem/react-nprogress@npm:^3.0.69":
+  version: 3.0.69
+  resolution: "@tanem/react-nprogress@npm:3.0.69"
   dependencies:
-    "@babel/runtime": ^7.14.0
+    "@babel/runtime": ^7.14.5
     hoist-non-react-statics: ^3.3.2
     prop-types: ^15.7.2
     react-use: ^17.2.4
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
-  checksum: f50b71c56e8f52c1afd6ec07e72137e6741472644e148724e04512d06e2926e6fc118a02d01cc5508b9488d76e34850e4e469d6abae1b105138dc0fb4c69830c
+  checksum: 245d62df9a001ec23cc4cb468286959ffae17c4b80eb28bd2b605af7811010af4f6d230e14700d4f2b6c96f2049e429c4a99e41367e9dd5fd2227ffda1bf20fb
   languageName: node
   linkType: hard
 
@@ -6153,7 +6153,7 @@ __metadata:
     "@reach/portal": ^0.15.0
     "@reach/skip-nav": ^0.15.0
     "@svgr/webpack": ^5.5.0
-    "@tanem/react-nprogress": ^3.0.68
+    "@tanem/react-nprogress": ^3.0.69
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^11.2.7
     "@types/dedent": ^0.7.0
