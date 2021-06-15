@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import type { VFC } from 'react'
+import mainVisual from '../../public/img/main-visual.jpg'
 
 const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
   const baseURL = process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000'
@@ -17,9 +18,9 @@ const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
         openGraph={{
           images: [
             {
-              height: 630,
-              url: `${baseURL}/img/main-visual.jpg`,
-              width: 1200
+              height: mainVisual.height,
+              url: new URL(mainVisual.src, baseURL).toString(),
+              width: mainVisual.width
             }
           ],
           type: 'website'
