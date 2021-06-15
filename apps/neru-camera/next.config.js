@@ -1,9 +1,6 @@
 const withPWA = require('next-pwa')
 
 const nextConfig = {
-  future: {
-    webpack5: true
-  },
   async headers() {
     return [
       {
