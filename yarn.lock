@@ -6187,7 +6187,7 @@ __metadata:
     react-focus-lock: ^2.5.1
     react-remove-scroll: ^2.4.2
     sitemap: ^7.0.0
-    typescript: ~4.3.2
+    typescript: ~4.3.3
   languageName: unknown
   linkType: soft
 
@@ -11201,23 +11201,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@~4.3.2#~builtin<compat/typescript>":
-  version: 4.3.2
-  resolution: "typescript@patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=d8b4e7"
+"typescript@patch:typescript@~4.3.3#~builtin<compat/typescript>":
+  version: 4.3.3
+  resolution: "typescript@patch:typescript@npm%3A4.3.3#~builtin<compat/typescript>::version=4.3.3&hash=d8b4e7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 3d3dec06ba6e5b05caa292355712ed9db813fa1c2377630b1f24b42e5ee8957f0bcdd5efd1500c970a11a6f684897f5728f5542ac822932227159a0611499a5e
+  checksum: 4d6ca2ba48932bbac77253ccfc3fd431151703f30a2e4bbd2cf292c92b96957b6d2a5e4794cf1f9410a74700e4ac485b3a247d18730eba364cc2c98ddc1a4a1e
   languageName: node
   linkType: hard
 
-typescript@~4.3.2:
-  version: 4.3.2
-  resolution: "typescript@npm:4.3.2"
+typescript@~4.3.3:
+  version: 4.3.3
+  resolution: "typescript@npm:4.3.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c2a86fa03ce03b255adc13ccd70a55173ca6539ae12114feca59f34a4e9bb69f14fb7cd5adc6c2416e568cff05c870b89d1366768ec55fce04fbdffb429a1cee
+  checksum: a9611281390443fa7b2933802f6deb45204dc2481c085fb6b2d0654e98d81233e8c683812abe8e0cf22ab7c516fc31d25dd763ae0345461c97bb9f24ed6c884f
   languageName: node
   linkType: hard
 
