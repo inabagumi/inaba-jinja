@@ -20,5 +20,5 @@
     "target": "es2017"
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["src/global.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

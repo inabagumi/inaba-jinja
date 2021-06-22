@@ -100,12 +100,6 @@ const nextConfig = {
     ]
   },
   webpack(config, { defaultLoaders }) {
-    for (const rule of config.module.rules) {
-      if (rule.loader === 'next-image-loader') {
-        rule.test = /\.(png|jpg|jpeg|gif|webp|ico|bmp)$/i
-      }
-    }
-
     config.module.rules.push({
       test: /\.svg$/,
       use: [
