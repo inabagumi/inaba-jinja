@@ -2,13 +2,13 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import { FC } from 'react'
-import { appleTouchIconURL, favicon256x256URL } from '@/assets'
+import { appleTouchIcon, favicon256x256 } from '@/assets'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
   <>
     <Head>
-      <link href={favicon256x256URL} rel="icon" type="image/png" />
-      <link href={appleTouchIconURL} rel="apple-touch-icon" type="image/png" />
+      <link href={favicon256x256.src} rel="icon" type="image/png" />
+      <link href={appleTouchIcon.src} rel="apple-touch-icon" type="image/png" />
     </Head>
 
     <DefaultSeo

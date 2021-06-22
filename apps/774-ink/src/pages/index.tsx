@@ -1,23 +1,25 @@
 import { NextPage, PageConfig } from 'next'
 import { NextSeo } from 'next-seo'
-import { cardURL } from '@/assets'
+import { card } from '@/assets'
 
 export const config: PageConfig = {
   amp: true
 }
 
+const canonical = 'https://774.ink/'
+
 const Home: NextPage = () => (
   <>
     <NextSeo
-      canonical="https://774.ink/"
+      canonical={canonical}
       description="もしかして: 774 inc."
       openGraph={{
         images: [
           {
             alt: 'Did you mean: 774 inc.',
-            url: `https://774.ink${cardURL}`,
-            height: 620,
-            width: 1200
+            height: card.height,
+            url: new URL(card.src, canonical).toString(),
+            width: card.width
           }
         ],
         type: 'website'

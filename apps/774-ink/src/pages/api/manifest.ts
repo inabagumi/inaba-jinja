@@ -1,6 +1,6 @@
 import type { NextApiHandler } from 'next'
 import type { WebAppManifest } from 'web-app-manifest'
-import { favicon192x192URL, favicon512x512URL } from '@/assets'
+import { favicon192x192, favicon512x512 } from '@/assets'
 
 const handler: NextApiHandler<WebAppManifest> = (_req, res) => {
   const name = '774 ink.'
@@ -9,13 +9,13 @@ const handler: NextApiHandler<WebAppManifest> = (_req, res) => {
     display: 'standalone',
     icons: [
       {
-        sizes: '192x192',
-        src: favicon192x192URL,
+        sizes: [favicon192x192.width, favicon192x192.height].join('x'),
+        src: favicon192x192.src,
         type: 'image/png'
       },
       {
-        sizes: '512x512',
-        src: favicon512x512URL,
+        sizes: [favicon512x512.width, favicon512x512.height].join('x'),
+        src: favicon512x512.src,
         type: 'image/png'
       }
     ],
