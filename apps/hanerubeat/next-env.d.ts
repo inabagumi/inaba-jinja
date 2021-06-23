@@ -1,17 +1,3 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
-
-declare module '*.mp3' {
-  const src: string
-  export default src
-}
-
-declare module '*.ogg' {
-  const src: string
-  export default src
-}
-
-declare module '*.vtt' {
-  const src: string
-  export default src
-}
+/// <reference types="next/image-types/global" />

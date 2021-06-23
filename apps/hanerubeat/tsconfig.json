@@ -18,5 +18,5 @@
     "strict": true
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx"]
+  "include": ["global.d.ts", "next-env.d.ts", "src/**/*.ts", "src/**/*.tsx"]
 }
