@@ -1,8 +1,3 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
-
-declare module '*.png' {
-  const url: string
-
-  export default url
-}
+/// <reference types="next/image-types/global" />
