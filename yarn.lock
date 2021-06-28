@@ -2029,42 +2029,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reach/portal@npm:^0.15.0":
-  version: 0.15.0
-  resolution: "@reach/portal@npm:0.15.0"
+"@reach/portal@npm:^0.15.2":
+  version: 0.15.2
+  resolution: "@reach/portal@npm:0.15.2"
   dependencies:
-    "@reach/utils": 0.15.0
-    tslib: ^2.1.0
+    "@reach/utils": 0.15.2
+    tslib: ^2.3.0
   peerDependencies:
     react: ^16.8.0 || 17.x
     react-dom: ^16.8.0 || 17.x
-  checksum: 9cb6f00a9fb7e61efd811a4a56e50d7a5257c5e1ef9ebc3083f0340610b55a62688214a11313e0c93b4d631fe7a4854247d0e94bbc844941fbf06f3a48d4c49d
+  checksum: b081f8f377268c24cee890822f803d5aa5a75b9c9865bcc310a7eb97839d3c8f5d7607a30e86781f76e8cd91b3fc2e9b9a89dca4f2a13ce4265fa5b2cf51c8ce
   languageName: node
   linkType: hard
 
-"@reach/skip-nav@npm:^0.15.0":
-  version: 0.15.0
-  resolution: "@reach/skip-nav@npm:0.15.0"
+"@reach/skip-nav@npm:^0.15.2":
+  version: 0.15.2
+  resolution: "@reach/skip-nav@npm:0.15.2"
   dependencies:
-    "@reach/utils": 0.15.0
-    tslib: ^2.1.0
+    "@reach/utils": 0.15.2
+    tslib: ^2.3.0
   peerDependencies:
     react: ^16.8.0 || 17.x
     react-dom: ^16.8.0 || 17.x
-  checksum: 6e9f3dc2af068b1ffe3aca16f3beef2c8ee04103158529953e1b1658a60e5390e1117a1319874def897c77536b4a640551c8f4fd5b9b6f9bc5375dc2fc1af0b9
+  checksum: 95dd394bc17631f3fe558feafe2f7a16b7aa123f32b526c4af2369754bd0485dc12d822fd78eae7f5cc802822e078542e198601c40cc75e1448a37eb203df4d6
   languageName: node
   linkType: hard
 
-"@reach/utils@npm:0.15.0":
-  version: 0.15.0
-  resolution: "@reach/utils@npm:0.15.0"
+"@reach/utils@npm:0.15.2":
+  version: 0.15.2
+  resolution: "@reach/utils@npm:0.15.2"
   dependencies:
     tiny-warning: ^1.0.3
-    tslib: ^2.1.0
+    tslib: ^2.3.0
   peerDependencies:
     react: ^16.8.0 || 17.x
     react-dom: ^16.8.0 || 17.x
-  checksum: f542b574955b7eb8bd8a0b33a145a3b5243976cd33c3e37098ef680bbb25a969c666e10019734a1fdf8f959456a6f4499b0450ee6304433242aa7484da5f068a
+  checksum: f500604c4ce55b75056912b5d2753eff8fac6ed6c41d8d63e7d613fcaaadecf9124174d0a2a489991ac82632f3b4d823a91cfe6c8437529c54863e449ce03ee9
   languageName: node
   linkType: hard
 
@@ -6174,8 +6174,8 @@ __metadata:
     "@mdx-js/loader": ^2.0.0-next.9
     "@mdx-js/react": ^2.0.0-next.9
     "@next/mdx": ^11.0.1
-    "@reach/portal": ^0.15.0
-    "@reach/skip-nav": ^0.15.0
+    "@reach/portal": ^0.15.2
+    "@reach/skip-nav": ^0.15.2
     "@svgr/webpack": ^5.5.0
     "@tanem/react-nprogress": ^3.0.71
     "@testing-library/jest-dom": ^5.14.1
@@ -11110,7 +11110,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3, tslib@npm:^2.1.0":
+"tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0":
   version: 2.3.0
   resolution: "tslib@npm:2.3.0"
   checksum: 8869694c26e4a7b56d449662fd54a4f9ba872c889d991202c74462bd99f10e61d5bd63199566c4284c0f742277736292a969642cc7b590f98727a7cae9529122
