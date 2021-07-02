@@ -2691,10 +2691,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/webpack-env@npm:^1.16.0":
-  version: 1.16.0
-  resolution: "@types/webpack-env@npm:1.16.0"
-  checksum: 9d23191e48a6de17931685140aea701c8cf04f518ce20fc095085a2552bd2a7a4fd566060658e6c51306a5d0ceb0cb430057872a432707c61159340413d1f8b1
+"@types/webpack-env@npm:^1.16.1":
+  version: 1.16.1
+  resolution: "@types/webpack-env@npm:1.16.1"
+  checksum: 74e4d02cc23811987a4554f6a2e591b639ec77353d5b693e498162109fe4ff7ad3711f2b98c42f5c2aefaf7cd4c74a41e55ce8b8b8f73ac033a0adfff8a36583
   languageName: node
   linkType: hard
 
@@ -6188,7 +6188,7 @@ __metadata:
     "@types/react": ^17.0.13
     "@types/testing-library__jest-dom": ^5.14.0
     "@types/web-app-manifest": ^1.0.1
-    "@types/webpack-env": ^1.16.0
+    "@types/webpack-env": ^1.16.1
     "@typescript-eslint/eslint-plugin": ^4.28.1
     "@typescript-eslint/parser": ^4.28.1
     clsx: ^1.1.1
