@@ -55,7 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.13"],
             ["@types/testing-library__jest-dom", "npm:5.14.0"],
             ["@types/web-app-manifest", "npm:1.0.1"],
-            ["@types/webpack-env", "npm:1.16.1"],
+            ["@types/webpack-env", "npm:1.16.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.1"],
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.1"],
             ["clsx", "npm:1.1.1"],
@@ -4281,10 +4281,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/webpack-env", [
-        ["npm:1.16.1", {
-          "packageLocation": "./.yarn/cache/@types-webpack-env-npm-1.16.1-5854d8ae9c-74e4d02cc2.zip/node_modules/@types/webpack-env/",
+        ["npm:1.16.2", {
+          "packageLocation": "./.yarn/cache/@types-webpack-env-npm-1.16.2-f0651e60fb-122273f20e.zip/node_modules/@types/webpack-env/",
           "packageDependencies": [
-            ["@types/webpack-env", "npm:1.16.1"]
+            ["@types/webpack-env", "npm:1.16.2"]
           ],
           "linkType": "HARD",
         }]
@@ -8550,7 +8550,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.13"],
             ["@types/testing-library__jest-dom", "npm:5.14.0"],
             ["@types/web-app-manifest", "npm:1.0.1"],
-            ["@types/webpack-env", "npm:1.16.1"],
+            ["@types/webpack-env", "npm:1.16.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.1"],
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.1"],
             ["clsx", "npm:1.1.1"],
