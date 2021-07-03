@@ -2702,10 +2702,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/web-app-manifest@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@types/web-app-manifest@npm:1.0.1"
-  checksum: 3171d6e11e30ff2e5d50d57c3b75c04a0ea47f176c2eac5483a30292fd7eb6dc0976f782501d7f4d38014fbd711005f91d4e5409e916941057254320332c69cc
+"@types/web-app-manifest@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@types/web-app-manifest@npm:1.0.2"
+  checksum: 4f9ced49816a9a45ee92fbaec0b7181edc31f8a1ea3c9ea877db0dedb3f0813358cc03c1f4612893d199932267422d21ab960dcb235707e465a1bbd1404c163b
   languageName: node
   linkType: hard
 
@@ -6206,7 +6206,7 @@ __metadata:
     "@types/node": ^14.17.4
     "@types/react": ^17.0.13
     "@types/testing-library__jest-dom": ^5.14.0
-    "@types/web-app-manifest": ^1.0.1
+    "@types/web-app-manifest": ^1.0.2
     "@types/webpack-env": ^1.16.2
     "@typescript-eslint/eslint-plugin": ^4.28.1
     "@typescript-eslint/parser": ^4.28.1
