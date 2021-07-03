@@ -5817,7 +5817,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:^11.0.3":
+"globby@npm:^11.0.3, globby@npm:^11.0.4":
   version: 11.0.4
   resolution: "globby@npm:11.0.4"
   dependencies:
@@ -6223,7 +6223,7 @@ __metadata:
     lint-staged: ^11.0.0
     next: ^11.0.1
     next-compose-plugins: ^2.2.1
-    next-pwa: ^5.2.21
+    next-pwa: ^5.2.22
     prettier: ~2.3.2
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -8319,19 +8319,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-pwa@npm:^5.2.21":
-  version: 5.2.21
-  resolution: "next-pwa@npm:5.2.21"
+"next-pwa@npm:^5.2.22":
+  version: 5.2.22
+  resolution: "next-pwa@npm:5.2.22"
   dependencies:
     babel-loader: ^8.2.2
     clean-webpack-plugin: ^3.0.0
-    globby: ^11.0.3
-    terser-webpack-plugin: ^5.1.1
+    globby: ^11.0.4
+    terser-webpack-plugin: ^5.1.4
     workbox-webpack-plugin: ^6.1.5
     workbox-window: ^6.1.5
   peerDependencies:
-    next: ">=7.0.0"
-  checksum: 1b139f7d5dd49e16b9aa72041d95d579ce8e2fb62fab98c981d1d3182779824f8c7fb8a7f2d4617baadcff561eee1f203cf6a260aae1ecb010938b6570f88be8
+    next: ">=9.0.0"
+  checksum: a47f71b907ea07a6dc681ec12bf567f638638d2edc17a77ab45ccac9b51411c375e3332e942183d375920e5f6938eeecb494ef5a78360005b14b9ea809d84ad5
   languageName: node
   linkType: hard
 
@@ -10899,7 +10899,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"terser-webpack-plugin@npm:^5.1.1":
+"terser-webpack-plugin@npm:^5.1.4":
   version: 5.1.4
   resolution: "terser-webpack-plugin@npm:5.1.4"
   dependencies:
