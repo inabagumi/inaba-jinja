@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.17.4"],
             ["@types/react", "npm:17.0.13"],
             ["@types/testing-library__jest-dom", "npm:5.14.0"],
-            ["@types/web-app-manifest", "npm:1.0.1"],
+            ["@types/web-app-manifest", "npm:1.0.2"],
             ["@types/webpack-env", "npm:1.16.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.1"],
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.1"],
@@ -4278,10 +4278,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/web-app-manifest", [
-        ["npm:1.0.1", {
-          "packageLocation": "./.yarn/cache/@types-web-app-manifest-npm-1.0.1-652427a398-3171d6e11e.zip/node_modules/@types/web-app-manifest/",
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/@types-web-app-manifest-npm-1.0.2-7b13c119a3-4f9ced4981.zip/node_modules/@types/web-app-manifest/",
           "packageDependencies": [
-            ["@types/web-app-manifest", "npm:1.0.1"]
+            ["@types/web-app-manifest", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -8571,7 +8571,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.17.4"],
             ["@types/react", "npm:17.0.13"],
             ["@types/testing-library__jest-dom", "npm:5.14.0"],
-            ["@types/web-app-manifest", "npm:1.0.1"],
+            ["@types/web-app-manifest", "npm:1.0.2"],
             ["@types/webpack-env", "npm:1.16.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.1"],
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.1"],
