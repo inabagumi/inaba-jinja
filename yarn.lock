@@ -6228,7 +6228,7 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     react-focus-lock: ^2.5.2
-    react-remove-scroll: ^2.4.2
+    react-remove-scroll: ^2.4.3
     sitemap: ^7.0.0
     typescript: ~4.3.5
   languageName: unknown
@@ -9447,9 +9447,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-remove-scroll@npm:^2.4.2":
-  version: 2.4.2
-  resolution: "react-remove-scroll@npm:2.4.2"
+"react-remove-scroll@npm:^2.4.3":
+  version: 2.4.3
+  resolution: "react-remove-scroll@npm:2.4.3"
   dependencies:
     react-remove-scroll-bar: ^2.1.0
     react-style-singleton: ^2.1.0
@@ -9462,7 +9462,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 6b287ae81d7fdd85cc2325f2a33268f28891048f6da0d87bedfacf4671e3e5b395d17cde5317c470cc3fdfed017a98f3ccf61b7b25254e4bb4a2383cbc041dd7
+  checksum: c2f4277ee953b3905b8500c72b6f509f5138dc6eff157ff1160f7810cb6934ee148d13aef7f9fa3f4ed12372cc4564347ed6b16083ff1e4d241708bb1b8bf5a7
   languageName: node
   linkType: hard
 
