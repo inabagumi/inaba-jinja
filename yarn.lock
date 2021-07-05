@@ -6230,7 +6230,7 @@ __metadata:
     lint-staged: ^11.0.0
     next: ^11.0.1
     next-compose-plugins: ^2.2.1
-    next-pwa: ^5.2.22
+    next-pwa: ^5.2.23
     prettier: ~2.3.2
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -8326,9 +8326,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-pwa@npm:^5.2.22":
-  version: 5.2.22
-  resolution: "next-pwa@npm:5.2.22"
+"next-pwa@npm:^5.2.23":
+  version: 5.2.23
+  resolution: "next-pwa@npm:5.2.23"
   dependencies:
     babel-loader: ^8.2.2
     clean-webpack-plugin: ^3.0.0
@@ -8338,7 +8338,7 @@ __metadata:
     workbox-window: ^6.1.5
   peerDependencies:
     next: ">=9.0.0"
-  checksum: a47f71b907ea07a6dc681ec12bf567f638638d2edc17a77ab45ccac9b51411c375e3332e942183d375920e5f6938eeecb494ef5a78360005b14b9ea809d84ad5
+  checksum: 2c627bb33fa1431ad996d60d19477dd24a38fda6007da40a0538c3b24f1aea4b6953a150ea2c300916b98e09622be78d19a42df34acb0818ce6e5066dbdc9074
   languageName: node
   linkType: hard
 
