@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.0.0"],
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
-            ["@types/gtag.js", "npm:0.0.6"],
+            ["@types/gtag.js", "npm:0.0.7"],
             ["@types/jest", "npm:26.0.23"],
             ["@types/node", "npm:14.17.4"],
             ["@types/react", "npm:17.0.13"],
@@ -4016,10 +4016,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/gtag.js", [
-        ["npm:0.0.6", {
-          "packageLocation": "./.yarn/cache/@types-gtag.js-npm-0.0.6-56532a7c1d-e1d6657b6b.zip/node_modules/@types/gtag.js/",
+        ["npm:0.0.7", {
+          "packageLocation": "./.yarn/cache/@types-gtag.js-npm-0.0.7-bfdf64bf0e-056b15ac63.zip/node_modules/@types/gtag.js/",
           "packageDependencies": [
-            ["@types/gtag.js", "npm:0.0.6"]
+            ["@types/gtag.js", "npm:0.0.7"]
           ],
           "linkType": "HARD",
         }]
@@ -8573,7 +8573,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.0.0"],
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
-            ["@types/gtag.js", "npm:0.0.6"],
+            ["@types/gtag.js", "npm:0.0.7"],
             ["@types/jest", "npm:26.0.23"],
             ["@types/node", "npm:14.17.4"],
             ["@types/react", "npm:17.0.13"],
