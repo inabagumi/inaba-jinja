@@ -2485,10 +2485,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/gtag.js@npm:^0.0.6":
-  version: 0.0.6
-  resolution: "@types/gtag.js@npm:0.0.6"
-  checksum: e1d6657b6b183f9c49fe0bd2340d063e7c5acbced4a90be29784f6c766295aa42ab53e3649ee6d588d5a2830c0bf0f8c6626175290b89f7246fdaa4ea7ed29c9
+"@types/gtag.js@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "@types/gtag.js@npm:0.0.7"
+  checksum: 056b15ac63429993a0a43ef85c950e5fcf413d5ca104bd8b25c24625fe61e5b2af4a61eaa2be53e31f29e1ef4f9e953830ddd98693e885f531ab70482863419c
   languageName: node
   linkType: hard
 
@@ -6208,7 +6208,7 @@ __metadata:
     "@testing-library/react": ^12.0.0
     "@types/dedent": ^0.7.0
     "@types/eslint-plugin-prettier": ^3
-    "@types/gtag.js": ^0.0.6
+    "@types/gtag.js": ^0.0.7
     "@types/jest": ^26.0.23
     "@types/node": ^14.17.4
     "@types/react": ^17.0.13
