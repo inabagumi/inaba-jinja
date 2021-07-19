@@ -36,7 +36,7 @@
     "husky": "^7.0.1",
     "is-ci": "^3.0.0",
     "lint-staged": "^11.0.1",
-    "next-pwa": "^5.2.23",
+    "next-pwa": "^5.2.24",
     "postcss": "^8.3.5",
     "prettier": "~2.3.2",
     "typescript": "~4.3.5"
