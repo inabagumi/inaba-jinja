@@ -53,7 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.24"],
             ["@types/node", "npm:14.17.5"],
             ["@types/react", "npm:17.0.14"],
-            ["@types/testing-library__jest-dom", "npm:5.14.0"],
+            ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["@types/web-app-manifest", "npm:1.0.2"],
             ["@types/webpack-env", "npm:1.16.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.3"],
@@ -3845,7 +3845,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@babel/runtime", "npm:7.14.6"],
-            ["@types/testing-library__jest-dom", "npm:5.14.0"],
+            ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["aria-query", "npm:4.2.2"],
             ["chalk", "npm:3.0.0"],
             ["css", "npm:3.0.0"],
@@ -4247,10 +4247,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/testing-library__jest-dom", [
-        ["npm:5.14.0", {
-          "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.0-e92742093c-dc42909d5a.zip/node_modules/@types/testing-library__jest-dom/",
+        ["npm:5.14.1", {
+          "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.1-f3ff511550-77fe7ad3a9.zip/node_modules/@types/testing-library__jest-dom/",
           "packageDependencies": [
-            ["@types/testing-library__jest-dom", "npm:5.14.0"],
+            ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["@types/jest", "npm:26.0.24"]
           ],
           "linkType": "HARD",
@@ -8568,7 +8568,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.24"],
             ["@types/node", "npm:14.17.5"],
             ["@types/react", "npm:17.0.14"],
-            ["@types/testing-library__jest-dom", "npm:5.14.0"],
+            ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["@types/web-app-manifest", "npm:1.0.2"],
             ["@types/webpack-env", "npm:1.16.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.28.3"],
