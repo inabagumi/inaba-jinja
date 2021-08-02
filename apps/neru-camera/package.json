@@ -5,7 +5,7 @@
     "@inlet/react-pixi": "^6.6.3",
     "@reach/alert-dialog": "^0.16.0",
     "@reach/dialog": "^0.16.0",
-    "@reach/menu-button": "^0.16.0",
+    "@reach/menu-button": "^0.16.1",
     "browser-fs-access": "^0.19.2",
     "clsx": "^1.1.1",
     "contentful": "^8.4.2",
