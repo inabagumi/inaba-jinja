@@ -2048,42 +2048,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reach/portal@npm:^0.15.3":
-  version: 0.15.3
-  resolution: "@reach/portal@npm:0.15.3"
+"@reach/portal@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "@reach/portal@npm:0.16.0"
   dependencies:
-    "@reach/utils": 0.15.3
+    "@reach/utils": 0.16.0
     tslib: ^2.3.0
   peerDependencies:
     react: ^16.8.0 || 17.x
     react-dom: ^16.8.0 || 17.x
-  checksum: bdd75ade0cf4ab1ed4d31db294c7901c308d009bdfd2ff2c9a18c854e1cfad3f484c444d8a770af031f19eecb795117be4f0b0361fd3ab15fe3a6a52afea756e
+  checksum: 7aa1584d08d9391ae9ba3ce507dbe5e77494c0e834ef3878997658202d91ab384aad7a7f8b09316d175b12e2d4473d80f11b70a158aaf9b1b6f78a070fa5f1a7
   languageName: node
   linkType: hard
 
-"@reach/skip-nav@npm:^0.15.3":
-  version: 0.15.3
-  resolution: "@reach/skip-nav@npm:0.15.3"
+"@reach/skip-nav@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "@reach/skip-nav@npm:0.16.0"
   dependencies:
-    "@reach/utils": 0.15.3
+    "@reach/utils": 0.16.0
     tslib: ^2.3.0
   peerDependencies:
     react: ^16.8.0 || 17.x
     react-dom: ^16.8.0 || 17.x
-  checksum: 6bcc343a85c64e782055823af32395373858743454f3c4670e75f3469102e368dce8919a30455aecb4caa2cef1356f43d752024c38dd54935171cfd47d13f68e
+  checksum: 8b8278dbdb8d3702ef14874c040a9289c11f718e68cdbe1e3ecd02eb515cfcf3105ab000097fa7d8633066894ab68a712f0eb87917bd08322e126b28c4bf7f50
   languageName: node
   linkType: hard
 
-"@reach/utils@npm:0.15.3":
-  version: 0.15.3
-  resolution: "@reach/utils@npm:0.15.3"
+"@reach/utils@npm:0.16.0":
+  version: 0.16.0
+  resolution: "@reach/utils@npm:0.16.0"
   dependencies:
     tiny-warning: ^1.0.3
     tslib: ^2.3.0
   peerDependencies:
     react: ^16.8.0 || 17.x
     react-dom: ^16.8.0 || 17.x
-  checksum: 387f0ddc5375590ced9d6a90a84d39a30bd11b8d39eaff6cbb005415b44c011861c897111e7734562916172b2ec2114111d3f0952b5795faf43822bc44ae3f14
+  checksum: 36bc0eb41a71798eb6186b23de265ba709e51dae5bf214fb8505c66bb3f2e6a41bb2401457350436ba89ca9e3a50f93a04fe7c33d15648ce11e568a85622d770
   languageName: node
   linkType: hard
 
@@ -6205,8 +6205,8 @@ __metadata:
     "@mdx-js/loader": ^2.0.0-next.9
     "@mdx-js/react": ^2.0.0-next.9
     "@next/mdx": ^11.0.1
-    "@reach/portal": ^0.15.3
-    "@reach/skip-nav": ^0.15.3
+    "@reach/portal": ^0.16.0
+    "@reach/skip-nav": ^0.16.0
     "@svgr/webpack": ^5.5.0
     "@tanem/react-nprogress": ^3.0.76
     "@testing-library/jest-dom": ^5.14.1
