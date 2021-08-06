@@ -68,7 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:3.4.0"],
             ["husky", "npm:7.0.1"],
             ["jest", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:27.0.6"],
-            ["lint-staged", "npm:11.1.1"],
+            ["lint-staged", "npm:11.1.2"],
             ["next", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.0.1"],
             ["next-compose-plugins", "npm:2.2.1"],
             ["next-pwa", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:5.2.24"],
@@ -8595,7 +8595,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:3.4.0"],
             ["husky", "npm:7.0.1"],
             ["jest", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:27.0.6"],
-            ["lint-staged", "npm:11.1.1"],
+            ["lint-staged", "npm:11.1.2"],
             ["next", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.0.1"],
             ["next-compose-plugins", "npm:2.2.1"],
             ["next-pwa", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:5.2.24"],
@@ -10084,19 +10084,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lint-staged", [
-        ["npm:11.1.1", {
-          "packageLocation": "./.yarn/cache/lint-staged-npm-11.1.1-bd7b64720f-87d6654b71.zip/node_modules/lint-staged/",
+        ["npm:11.1.2", {
+          "packageLocation": "./.yarn/cache/lint-staged-npm-11.1.2-a47d5d9f47-0050d1836d.zip/node_modules/lint-staged/",
           "packageDependencies": [
-            ["lint-staged", "npm:11.1.1"],
+            ["lint-staged", "npm:11.1.2"],
             ["chalk", "npm:4.1.2"],
             ["cli-truncate", "npm:2.1.0"],
             ["commander", "npm:7.2.0"],
             ["cosmiconfig", "npm:7.0.0"],
             ["debug", "virtual:41f5274785bb440d4f107421717dcb0848a9b16e4081ab2780de34b4f7d17222abc2ae51b36e9addef72b719aec49b9f363bd9bce65bdbde0a7de0dea21413b7#npm:4.3.2"],
-            ["dedent", "npm:0.7.0"],
             ["enquirer", "npm:2.3.6"],
             ["execa", "npm:5.1.1"],
-            ["listr2", "virtual:bd7b64720f835e9a39ff4a5134896f2c7ed11631ce875288d1ef72e10145627658f8aa6230529c5f376a516faba14d37c09875326d713ba38964882f10e5260f#npm:3.11.0"],
+            ["listr2", "virtual:a47d5d9f47c76114e7540aa654233431e377dbaddfa8a838d697f88bcc3549c436645703ccf55780fa4233345b3aa0463da5073333450f69aba0b2cc3fd9ff27#npm:3.11.0"],
             ["log-symbols", "npm:4.1.0"],
             ["micromatch", "npm:4.0.4"],
             ["normalize-path", "npm:3.0.0"],
@@ -10115,10 +10114,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:bd7b64720f835e9a39ff4a5134896f2c7ed11631ce875288d1ef72e10145627658f8aa6230529c5f376a516faba14d37c09875326d713ba38964882f10e5260f#npm:3.11.0", {
-          "packageLocation": "./.yarn/__virtual__/listr2-virtual-77b93c12ca/0/cache/listr2-npm-3.11.0-a2fe7d17b1-6533edd430.zip/node_modules/listr2/",
+        ["virtual:a47d5d9f47c76114e7540aa654233431e377dbaddfa8a838d697f88bcc3549c436645703ccf55780fa4233345b3aa0463da5073333450f69aba0b2cc3fd9ff27#npm:3.11.0", {
+          "packageLocation": "./.yarn/__virtual__/listr2-virtual-22acdcd58a/0/cache/listr2-npm-3.11.0-a2fe7d17b1-6533edd430.zip/node_modules/listr2/",
           "packageDependencies": [
-            ["listr2", "virtual:bd7b64720f835e9a39ff4a5134896f2c7ed11631ce875288d1ef72e10145627658f8aa6230529c5f376a516faba14d37c09875326d713ba38964882f10e5260f#npm:3.11.0"],
+            ["listr2", "virtual:a47d5d9f47c76114e7540aa654233431e377dbaddfa8a838d697f88bcc3549c436645703ccf55780fa4233345b3aa0463da5073333450f69aba0b2cc3fd9ff27#npm:3.11.0"],
             ["@types/enquirer", null],
             ["cli-truncate", "npm:2.1.0"],
             ["colorette", "npm:1.2.2"],
