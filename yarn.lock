@@ -2481,13 +2481,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:^26.0.24":
-  version: 26.0.24
-  resolution: "@types/jest@npm:26.0.24"
+"@types/jest@npm:*, @types/jest@npm:^27.0.0":
+  version: 27.0.0
+  resolution: "@types/jest@npm:27.0.0"
   dependencies:
     jest-diff: ^26.0.0
     pretty-format: ^26.0.0
-  checksum: ae39675412f08d884926254e9b12bfd2b5a4e4d204c94d3148cb942174a474930d0c60540133c968f22241d4712b7940c96cbc883096eb326a4d5b206fb78bd0
+  checksum: bb894a1fcc0e244ecefdf2b43ed786c0354c416d00e433155bf68569d0d8a45b012b008fbe6673890903b785076b9a34f128c7095e1b25f4481f3d2a76c7495f
   languageName: node
   linkType: hard
 
@@ -6209,7 +6209,7 @@ __metadata:
     "@types/dedent": ^0.7.0
     "@types/eslint-plugin-prettier": ^3
     "@types/gtag.js": ^0.0.7
-    "@types/jest": ^26.0.24
+    "@types/jest": ^27.0.0
     "@types/node": ^14.17.9
     "@types/react": ^17.0.16
     "@types/testing-library__jest-dom": ^5.14.1
