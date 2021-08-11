@@ -50,7 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/gtag.js", "npm:0.0.7"],
-            ["@types/jest", "npm:26.0.24"],
+            ["@types/jest", "npm:27.0.0"],
             ["@types/node", "npm:14.17.9"],
             ["@types/react", "npm:17.0.16"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
@@ -4022,10 +4022,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/jest", [
-        ["npm:26.0.24", {
-          "packageLocation": "./.yarn/cache/@types-jest-npm-26.0.24-47c570294f-ae39675412.zip/node_modules/@types/jest/",
+        ["npm:27.0.0", {
+          "packageLocation": "./.yarn/cache/@types-jest-npm-27.0.0-071a5f5a28-bb894a1fcc.zip/node_modules/@types/jest/",
           "packageDependencies": [
-            ["@types/jest", "npm:26.0.24"],
+            ["@types/jest", "npm:27.0.0"],
             ["jest-diff", "npm:26.6.2"],
             ["pretty-format", "npm:26.6.2"]
           ],
@@ -4219,7 +4219,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.1-f3ff511550-77fe7ad3a9.zip/node_modules/@types/testing-library__jest-dom/",
           "packageDependencies": [
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
-            ["@types/jest", "npm:26.0.24"]
+            ["@types/jest", "npm:27.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -8575,7 +8575,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/gtag.js", "npm:0.0.7"],
-            ["@types/jest", "npm:26.0.24"],
+            ["@types/jest", "npm:27.0.0"],
             ["@types/node", "npm:14.17.9"],
             ["@types/react", "npm:17.0.16"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
