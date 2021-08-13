@@ -17,5 +17,5 @@
     "target": "es2018"
   },
   "exclude": ["node_modules"],
-  "include": ["global.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["additional.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
