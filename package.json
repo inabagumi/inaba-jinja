@@ -23,6 +23,14 @@
     "react-remove-scroll": "^2.4.3",
     "sitemap": "^7.0.0"
   },
+  "dependenciesMeta": {
+    "core-js-pure": {
+      "built": false
+    },
+    "ejs": {
+      "built": false
+    }
+  },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -61,6 +69,7 @@
   "license": "MIT",
   "main": "n/a",
   "name": "inaba-jinja",
+  "packageManager": "yarn@3.0.0",
   "private": true,
   "repository": {
     "type": "git",
