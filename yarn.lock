@@ -6211,7 +6211,7 @@ __metadata:
     lint-staged: ^11.1.2
     next: ^11.1.0
     next-compose-plugins: ^2.2.1
-    next-pwa: ^5.2.24
+    next-pwa: ^5.3.1
     prettier: ~2.3.2
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -8318,19 +8318,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-pwa@npm:^5.2.24":
-  version: 5.2.24
-  resolution: "next-pwa@npm:5.2.24"
+"next-pwa@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "next-pwa@npm:5.3.1"
   dependencies:
     babel-loader: ^8.2.2
     clean-webpack-plugin: ^3.0.0
     globby: ^11.0.4
     terser-webpack-plugin: ^5.1.4
-    workbox-webpack-plugin: ^6.1.5
-    workbox-window: ^6.1.5
+    workbox-webpack-plugin: ^6.2.4
+    workbox-window: ^6.2.4
   peerDependencies:
     next: ">=9.0.0"
-  checksum: 5c4860d1f0131bfab2a1d2c9fb47e1c003d829d90afabd0b79a4eb8aec9d8ba06daecfd02915a318c1870ab5a9677f8edfe20c1042a9cf27291219912687fa7e
+  checksum: 1c6f74243515ddffd4248355ae9e6a46424b3ae94ffa0db140d05dbcc59fbad839b2a6608e549aba37a7fb4908818dbd77241be0240e17a92b4b51078ec8b65d
   languageName: node
   linkType: hard
 
@@ -11963,7 +11963,7 @@ typescript@~4.3.5:
   languageName: node
   linkType: hard
 
-"workbox-webpack-plugin@npm:^6.1.5":
+"workbox-webpack-plugin@npm:^6.2.4":
   version: 6.2.4
   resolution: "workbox-webpack-plugin@npm:6.2.4"
   dependencies:
@@ -11979,7 +11979,7 @@ typescript@~4.3.5:
   languageName: node
   linkType: hard
 
-"workbox-window@npm:6.2.4, workbox-window@npm:^6.1.5":
+"workbox-window@npm:6.2.4, workbox-window@npm:^6.2.4":
   version: 6.2.4
   resolution: "workbox-window@npm:6.2.4"
   dependencies:
