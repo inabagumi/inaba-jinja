@@ -1319,7 +1319,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.8, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.15.3
   resolution: "@babel/runtime@npm:7.15.3"
   dependencies:
@@ -2268,18 +2268,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanem/react-nprogress@npm:^3.0.77":
-  version: 3.0.77
-  resolution: "@tanem/react-nprogress@npm:3.0.77"
+"@tanem/react-nprogress@npm:^3.0.78":
+  version: 3.0.78
+  resolution: "@tanem/react-nprogress@npm:3.0.78"
   dependencies:
-    "@babel/runtime": ^7.14.8
+    "@babel/runtime": ^7.15.3
     hoist-non-react-statics: ^3.3.2
     prop-types: ^15.7.2
     react-use: ^17.2.4
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
-  checksum: 9fe624a73bc04d1adcee3e36fb1c0f42ad5c750503e10dcf56ed64e47870ae7196e4805aa10d91b709ef252eeb912cc7886d0a4dfe48d26f9a9fb0f440c1c190
+  checksum: bbe33f2c37d48c402d08f6f51e5dadc10738a9a7ee5418e415ed5f8274dc61568f4903d0ddfb832f2036684297e3101fedf409c04e9d65e1494ed51196c8e831
   languageName: node
   linkType: hard
 
@@ -6184,7 +6184,7 @@ __metadata:
     "@reach/portal": ^0.16.0
     "@reach/skip-nav": ^0.16.0
     "@svgr/webpack": ^5.5.0
-    "@tanem/react-nprogress": ^3.0.77
+    "@tanem/react-nprogress": ^3.0.78
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@types/dedent": ^0.7.0
