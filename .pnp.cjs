@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/gtag.js", "npm:0.0.7"],
             ["@types/jest", "npm:27.0.1"],
-            ["@types/node", "npm:14.17.10"],
+            ["@types/node", "npm:14.17.11"],
             ["@types/react", "npm:17.0.19"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["@types/web-app-manifest", "npm:1.0.2"],
@@ -4091,10 +4091,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:14.17.10", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.10-f479af541c-ec618cb3e0.zip/node_modules/@types/node/",
+        ["npm:14.17.11", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.11-1749a5f307-94192a5f6f.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.17.10"]
+            ["@types/node", "npm:14.17.11"]
           ],
           "linkType": "HARD",
         }],
@@ -8573,7 +8573,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/gtag.js", "npm:0.0.7"],
             ["@types/jest", "npm:27.0.1"],
-            ["@types/node", "npm:14.17.10"],
+            ["@types/node", "npm:14.17.11"],
             ["@types/react", "npm:17.0.19"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["@types/web-app-manifest", "npm:1.0.2"],
