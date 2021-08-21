@@ -1,6 +1,4 @@
-/**
- * @type {import('eslint/lib/shared/types').ConfigData}
- */
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   env: {
     browser: true,
@@ -8,7 +6,6 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'next',
     'next/core-web-vitals',
     'plugin:prettier/recommended'
   ],

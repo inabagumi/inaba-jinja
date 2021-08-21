@@ -4,9 +4,7 @@ const withPWA = require('next-pwa')
 
 const withMDX = nextMDX()
 
-/**
- * @type {import('next').NextConfig}
- **/
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
     optimizeCss: true
