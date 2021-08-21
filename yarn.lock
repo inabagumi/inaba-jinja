@@ -2391,16 +2391,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint-plugin-prettier@npm:^3":
-  version: 3.1.0
-  resolution: "@types/eslint-plugin-prettier@npm:3.1.0"
-  dependencies:
-    "@types/eslint": "*"
-  checksum: e8fc9991cc181967a961c344ab894b57122e54b5f36950373f42638bb05847caef89a0e12decbb5b4a42e4eefaeefe63053ee2cbf6e1dfce43d77a445bbae728
-  languageName: node
-  linkType: hard
-
-"@types/eslint@npm:*":
+"@types/eslint@npm:^7.28.0":
   version: 7.28.0
   resolution: "@types/eslint@npm:7.28.0"
   dependencies:
@@ -6188,7 +6179,7 @@ __metadata:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@types/dedent": ^0.7.0
-    "@types/eslint-plugin-prettier": ^3
+    "@types/eslint": ^7.28.0
     "@types/gtag.js": ^0.0.7
     "@types/jest": ^27.0.1
     "@types/node": ^14.17.11
