@@ -23,7 +23,7 @@
     "file-loader": "^6.2.0",
     "next-pwa": "^5.3.1",
     "prettier": "~2.3.2",
-    "typescript": "~4.3.5",
+    "typescript": "~4.4.2",
     "url-loader": "^4.1.1"
   },
   "homepage": "https://hanerubeat.app/",
