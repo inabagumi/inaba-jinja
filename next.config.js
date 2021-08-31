@@ -6,6 +6,9 @@ const withMDX = nextMDX()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    dirs: ['__mocks__', 'components', 'contentful', 'hooks', 'pages', 'styles']
+  },
   experimental: {
     optimizeCss: true
   },
@@ -48,6 +51,10 @@ const nextConfig = {
         source: '/workbox-:hash.js(.map)?'
       }
     ]
+  },
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja']
   },
   images: {
     domains: [],

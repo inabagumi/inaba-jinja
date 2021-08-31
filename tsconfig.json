@@ -7,18 +7,24 @@
     "incremental": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["dom", "dom.iterable", "es2021"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/assets/*": ["./assets/*"],
+      "@/components/*": ["./components/*"],
+      "@/contentful/*": ["./contentful/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/pages/*": ["./pages/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/types/*": ["./types/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2017"
+    "target": "es2021"
   },
   "exclude": ["node_modules"],
-  "include": ["src/global.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["additional.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

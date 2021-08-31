@@ -1,4 +1,4 @@
-import pkg from '../../package.json'
+import pkg from '../package.json'
 
 export type BaseURLUtils = {
   withBaseURL: (path: string) => string
