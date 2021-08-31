@@ -76,11 +76,11 @@
     "url": "https://github.com/inabagumi/inaba-jinja.git"
   },
   "scripts": {
-    "build": "next build --no-lint",
+    "build": "next build",
     "dev": "next",
     "format": "prettier --write '**/*.{json,yml}'",
     "format-check": "prettier -c '**/*.{json,yml}'",
-    "lint": "next lint -d .",
+    "lint": "next lint",
     "postinstall": "husky install",
     "start": "next start",
     "test": "jest"
