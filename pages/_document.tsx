@@ -1,5 +1,6 @@
 import dedent from 'dedent'
-import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
+import { Head, Html, Main, NextScript } from 'next/document'
+import type { VFC } from 'react'
 
 function createGoogleAnalyticsTrackingCode(trackingID: string): string {
   const trackingCode = dedent`
@@ -12,42 +13,40 @@ function createGoogleAnalyticsTrackingCode(trackingID: string): string {
   return trackingCode
 }
 
-class Document extends NextDocument {
-  render(): JSX.Element {
-    return (
-      <Html lang="ja">
-        <Head prefix="og: http://ogp.me/ns#">
-          <meta content="#ff5722" name="theme-color" />
+const Document: VFC = (): JSX.Element => {
+  return (
+    <Html>
+      <Head prefix="og: http://ogp.me/ns#">
+        <meta content="#ff5722" name="theme-color" />
 
-          <link href="https://www.google-analytics.com" rel="preconnect" />
-          <link href="https://www.googletagmanager.com" rel="preconnect" />
-          <link href="/manifest.webmanifest" rel="manifest" />
+        <link href="https://www.google-analytics.com" rel="preconnect" />
+        <link href="https://www.googletagmanager.com" rel="preconnect" />
+        <link href="/manifest.webmanifest" rel="manifest" />
 
-          {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
-            <>
-              <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: createGoogleAnalyticsTrackingCode(
-                    process.env.NEXT_PUBLIC_GA_TRACKING_ID
-                  )
-                }}
-              />
-            </>
-          )}
-        </Head>
+        {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: createGoogleAnalyticsTrackingCode(
+                  process.env.NEXT_PUBLIC_GA_TRACKING_ID
+                )
+              }}
+            />
+          </>
+        )}
+      </Head>
 
-        <body>
-          <Main />
+      <body>
+        <Main />
 
-          <NextScript />
-        </body>
-      </Html>
-    )
-  }
+        <NextScript />
+      </body>
+    </Html>
+  )
 }
 
 export default Document
