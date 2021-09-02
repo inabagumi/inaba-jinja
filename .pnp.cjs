@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.30.0"],
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.30.0"],
             ["clsx", "npm:1.1.1"],
-            ["contentful", "npm:8.5.0"],
+            ["contentful", "npm:8.5.3"],
             ["critters", "npm:0.0.10"],
             ["dedent", "npm:0.7.0"],
             ["eslint", "npm:7.32.0"],
@@ -6113,13 +6113,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["contentful", [
-        ["npm:8.5.0", {
-          "packageLocation": "./.yarn/cache/contentful-npm-8.5.0-46390fa116-e07a290c60.zip/node_modules/contentful/",
+        ["npm:8.5.3", {
+          "packageLocation": "./.yarn/cache/contentful-npm-8.5.3-58eeeb3305-102a15e02a.zip/node_modules/contentful/",
           "packageDependencies": [
-            ["contentful", "npm:8.5.0"],
+            ["contentful", "npm:8.5.3"],
             ["axios", "npm:0.21.1"],
             ["contentful-resolve-response", "npm:1.3.0"],
-            ["contentful-sdk-core", "npm:6.8.0"],
+            ["contentful-sdk-core", "npm:6.8.5"],
             ["fast-copy", "npm:2.1.1"],
             ["json-stringify-safe", "npm:5.0.1"]
           ],
@@ -6137,10 +6137,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["contentful-sdk-core", [
-        ["npm:6.8.0", {
-          "packageLocation": "./.yarn/cache/contentful-sdk-core-npm-6.8.0-6d95466c44-a7485a01e4.zip/node_modules/contentful-sdk-core/",
+        ["npm:6.8.5", {
+          "packageLocation": "./.yarn/cache/contentful-sdk-core-npm-6.8.5-09e0b48031-763249eb0d.zip/node_modules/contentful-sdk-core/",
           "packageDependencies": [
-            ["contentful-sdk-core", "npm:6.8.0"],
+            ["contentful-sdk-core", "npm:6.8.5"],
             ["fast-copy", "npm:2.1.1"],
             ["qs", "npm:6.10.1"]
           ],
@@ -8640,7 +8640,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.30.0"],
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.30.0"],
             ["clsx", "npm:1.1.1"],
-            ["contentful", "npm:8.5.0"],
+            ["contentful", "npm:8.5.3"],
             ["critters", "npm:0.0.10"],
             ["dedent", "npm:0.7.0"],
             ["eslint", "npm:7.32.0"],
