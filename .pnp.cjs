@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.31.0"],
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.31.0"],
             ["clsx", "npm:1.1.1"],
-            ["contentful", "npm:8.5.5"],
+            ["contentful", "npm:8.5.6"],
             ["critters", "npm:0.0.10"],
             ["dedent", "npm:0.7.0"],
             ["eslint", "npm:7.32.0"],
@@ -6130,10 +6130,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["contentful", [
-        ["npm:8.5.5", {
-          "packageLocation": "./.yarn/cache/contentful-npm-8.5.5-ae73c4e838-660d40d4e8.zip/node_modules/contentful/",
+        ["npm:8.5.6", {
+          "packageLocation": "./.yarn/cache/contentful-npm-8.5.6-26b2e3fa9a-58ffcd276d.zip/node_modules/contentful/",
           "packageDependencies": [
-            ["contentful", "npm:8.5.5"],
+            ["contentful", "npm:8.5.6"],
             ["axios", "npm:0.21.4"],
             ["contentful-resolve-response", "npm:1.3.0"],
             ["contentful-sdk-core", "npm:6.8.5"],
@@ -8657,7 +8657,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.31.0"],
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:4.31.0"],
             ["clsx", "npm:1.1.1"],
-            ["contentful", "npm:8.5.5"],
+            ["contentful", "npm:8.5.6"],
             ["critters", "npm:0.0.10"],
             ["dedent", "npm:0.7.0"],
             ["eslint", "npm:7.32.0"],
