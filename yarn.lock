@@ -4157,16 +4157,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:^8.5.7":
-  version: 8.5.7
-  resolution: "contentful@npm:8.5.7"
+"contentful@npm:^8.5.8":
+  version: 8.5.8
+  resolution: "contentful@npm:8.5.8"
   dependencies:
     axios: ^0.21.1
     contentful-resolve-response: ^1.3.0
     contentful-sdk-core: ^6.8.5
     fast-copy: ^2.1.0
     json-stringify-safe: ^5.0.1
-  checksum: dff844bc4314d359e94e058cf2cea9276d9480ae92ecd4808812624b5900ec52fd25fb917e4d0b71b185631bb079106021a5b8ca2fbaa785306e4f7330caf8f1
+  checksum: 7b09c7a08be34d8852c76af3bd8f1858d5ebc2afca3ce7b39c1441d1d24b088e8a0e877cc74db5ed1e551e5658d62f6aca50562fe72dd4e7840b5f9ff8bf21fa
   languageName: node
   linkType: hard
 
@@ -6276,7 +6276,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.31.0
     "@typescript-eslint/parser": ^4.31.0
     clsx: ^1.1.1
-    contentful: ^8.5.7
+    contentful: ^8.5.8
     critters: ^0.0.10
     dedent: ^0.7.0
     eslint: ^7.32.0
