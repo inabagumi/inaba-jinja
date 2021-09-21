@@ -50,7 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/gtag.js", "npm:0.0.7"],
-            ["@types/jest", "npm:27.0.1"],
+            ["@types/jest", "npm:27.0.2"],
             ["@types/node", "npm:14.17.17"],
             ["@types/react", "npm:17.0.22"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
@@ -4089,10 +4089,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/jest", [
-        ["npm:27.0.1", {
-          "packageLocation": "./.yarn/cache/@types-jest-npm-27.0.1-a860f5c797-972aaae341.zip/node_modules/@types/jest/",
+        ["npm:27.0.2", {
+          "packageLocation": "./.yarn/cache/@types-jest-npm-27.0.2-f9ba43c7f9-814ad5f5d2.zip/node_modules/@types/jest/",
           "packageDependencies": [
-            ["@types/jest", "npm:27.0.1"],
+            ["@types/jest", "npm:27.0.2"],
             ["jest-diff", "npm:27.2.0"],
             ["pretty-format", "npm:27.2.0"]
           ],
@@ -4295,7 +4295,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.1-f3ff511550-77fe7ad3a9.zip/node_modules/@types/testing-library__jest-dom/",
           "packageDependencies": [
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
-            ["@types/jest", "npm:27.0.1"]
+            ["@types/jest", "npm:27.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -8660,7 +8660,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/gtag.js", "npm:0.0.7"],
-            ["@types/jest", "npm:27.0.1"],
+            ["@types/jest", "npm:27.0.2"],
             ["@types/node", "npm:14.17.17"],
             ["@types/react", "npm:17.0.22"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
