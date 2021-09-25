@@ -1,5 +1,6 @@
 import chunk from 'lodash/chunk'
-import React, { FC } from 'react'
+import type { VFC } from 'react'
+import * as React from 'react'
 import Image from '@theme/IdealImage'
 import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
@@ -7,7 +8,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { useBaseUrlUtils } from '@docusaurus/useBaseUrl'
 import products from '../data/products'
 
-const Home: FC = () => {
+const Home: VFC = () => {
   const { siteConfig = {} } = useDocusaurusContext()
   const { withBaseUrl } = useBaseUrlUtils()
 
@@ -24,7 +25,7 @@ const Home: FC = () => {
           <div>
             <Link
               className="button button--primary button--outline button--lg"
-              to={withBaseUrl('docs/')}
+              to={withBaseUrl('docs')}
             >
               Get Started
             </Link>

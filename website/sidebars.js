@@ -1,10 +1,6 @@
 module.exports = {
   docs: [
-    {
-      items: ['introduction'],
-      label: 'Haneru Developers',
-      type: 'category'
-    },
+    'introduction',
     {
       items: ['neru-camera', 'animare-shindan', 'hanerubeat', 'inaba-jinja'],
       label: 'ねるねるアプリ',
