@@ -99,13 +99,8 @@ module.exports = {
             position: 'left'
           },
           {
-            href: 'https://github.com/inabagumi',
-            label: 'GitHub',
-            position: 'right'
-          },
-          {
-            href: 'https://discord.gg/d9V3PSj',
-            label: 'Discord',
+            to: 'contact',
+            label: 'お問い合わせ',
             position: 'right'
           }
         ],
