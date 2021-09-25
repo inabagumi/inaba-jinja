@@ -6,4 +6,67 @@
   --ifm-color-primary-light: #f68d31;
   --ifm-color-primary-lighter: #f7943e;
   --ifm-color-primary-lightest: #f8aa64;
+
+  --inb-textfield-background-color: var(--ifm-background-surface-color);
+  --inb-textfield-border-color: var(--ifm-color-content);
+  --inb-textfield-border-radius: var(--ifm-button-border-radius);
+  --inb-textfield-border-width: var(--ifm-global-border-width);
+  --inb-textfield-color: var(--ifm-font-color-base);
+  --inb-textfield-font-size: var(--ifm-font-size-base);
+  --inb-textfield-invalid-background-color: var(
+    --ifm-color-danger-contrast-background
+  );
+  --inb-textfield-invalid-border-color: var(--ifm-color-danger-darkest);
+  --inb-textfield-padding: var(--ifm-button-padding-vertical);
+  --inb-textfield-placeholder-color: var(--ifm-color-gray-500);
+}
+
+.textfield {
+  background-color: var(--inb-textfield-background-color);
+  border: var(--inb-textfield-border-width) solid
+    var(--inb-textfield-border-color);
+  border-radius: var(--inb-textfield-border-radius);
+  color: var(--inb-textfield-color);
+  font-size: var(--inb-textfield-font-size);
+  font-family: var(--ifm-font-family-monospace);
+  padding: var(--inb-textfield-padding);
+}
+
+.textfield:disabled {
+  --inb-textfield-background-color: var(--ifm-color-gray-100);
+  --inb-textfield-border-color: var(--ifm-color-gray-300);
+  --inb-textfield-color: var(--ifm-color-gray-500);
+
+  pointer-events: none;
+}
+
+.textfield:focus {
+  --inb-textfield-border-color: var(--ifm-color-primary-darker);
+
+  outline: 0;
+}
+
+.textfield::placeholder {
+  color: var(--inb-textfield-placeholder-color);
+}
+
+.textfield--block {
+  display: block;
+  width: 100%;
+}
+
+.textfield--invalid {
+  background-color: var(--inb-textfield-invalid-background-color);
+  border-color: var(--inb-textfield-invalid-border-color);
+}
+
+.textfield--invalid:focus {
+  --inb-textfield-invalid-background-color: var(
+    --inb-textfield-background-color
+  );
+  --inb-textfield-invalid-border-color: var(--inb-textfield-border-color);
+}
+
+.textfield--multiline {
+  resize: vertical;
 }

@@ -1,0 +1,23 @@
+{
+  "forms": {
+    "contact-form": {
+      "actions": [
+        {
+          "to": "$INABAGUMI_CONTACT_EMAIL_ADDRESS",
+          "type": "email"
+        }
+      ],
+      "fields": {
+        "email": {
+          "type": "email",
+          "required": true
+        },
+        "message": {
+          "type": "text",
+          "required": true
+        }
+      },
+      "name": "Contact Form"
+    }
+  }
+}
