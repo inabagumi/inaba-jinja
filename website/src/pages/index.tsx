@@ -1,5 +1,4 @@
 import chunk from 'lodash/chunk'
-import type { VFC } from 'react'
 import * as React from 'react'
 import Image from '@theme/IdealImage'
 import Layout from '@theme/Layout'
@@ -8,8 +7,10 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { useBaseUrlUtils } from '@docusaurus/useBaseUrl'
 import products from '../data/products'
 
+import type { VFC } from 'react'
+
 const Home: VFC = () => {
-  const { siteConfig = {} } = useDocusaurusContext()
+  const { siteConfig } = useDocusaurusContext()
   const { withBaseUrl } = useBaseUrlUtils()
 
   return (
