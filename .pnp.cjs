@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@commitlint/cli", "npm:13.1.0"],
             ["@commitlint/config-conventional", "npm:13.1.0"],
-            ["@inabagumi/prettier-config", "npm:1.1.3"],
+            ["@inabagumi/prettier-config", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:2.0.0"],
             ["@mdx-js/loader", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:2.0.0-next.9"],
             ["@mdx-js/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:2.0.0-next.9"],
             ["@next/mdx", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.1.2"],
@@ -2893,10 +2893,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@inabagumi/prettier-config", [
-        ["npm:1.1.3", {
-          "packageLocation": "./.yarn/cache/@inabagumi-prettier-config-npm-1.1.3-1e75f18469-ac9d349719.zip/node_modules/@inabagumi/prettier-config/",
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/@inabagumi-prettier-config-npm-2.0.0-be23b98823-9a1dd794af.zip/node_modules/@inabagumi/prettier-config/",
           "packageDependencies": [
-            ["@inabagumi/prettier-config", "npm:1.1.3"]
+            ["@inabagumi/prettier-config", "npm:2.0.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:2.0.0", {
+          "packageLocation": "./.yarn/__virtual__/@inabagumi-prettier-config-virtual-5abab3da42/0/cache/@inabagumi-prettier-config-npm-2.0.0-be23b98823-9a1dd794af.zip/node_modules/@inabagumi/prettier-config/",
+          "packageDependencies": [
+            ["@inabagumi/prettier-config", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:2.0.0"],
+            ["@types/prettier", null],
+            ["prettier", "npm:2.4.1"]
+          ],
+          "packagePeers": [
+            "@types/prettier",
+            "prettier"
           ],
           "linkType": "HARD",
         }]
@@ -8662,7 +8675,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["inaba-jinja", "workspace:."],
             ["@commitlint/cli", "npm:13.1.0"],
             ["@commitlint/config-conventional", "npm:13.1.0"],
-            ["@inabagumi/prettier-config", "npm:1.1.3"],
+            ["@inabagumi/prettier-config", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:2.0.0"],
             ["@mdx-js/loader", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:2.0.0-next.9"],
             ["@mdx-js/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:2.0.0-next.9"],
             ["@next/mdx", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.1.2"],
