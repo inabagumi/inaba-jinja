@@ -17,32 +17,34 @@ type Props = {
 
 const TextField = forwardRef<HTMLInputElement | HTMLTextAreaElement, Props>(
   function TextField(
-    { block = false, className, multiline = false, type = 'text', ...props },
+    {
+      block = false,
+      className: additionalClassName,
+      multiline = false,
+      type = 'text',
+      ...props
+    },
     ref
   ) {
+    const className = clsx(
+      styles.root,
+      {
+        [styles.multiline]: multiline,
+        [styles.block]: block
+      },
+      additionalClassName
+    )
+
     return multiline ? (
       <TextareaAutosize
-        className={clsx(
-          styles.root,
-          styles.multiline,
-          {
-            [styles.block]: block
-          },
-          className
-        )}
+        className={className}
         minRows={10}
         ref={ref as Ref<HTMLTextAreaElement>}
         {...props}
       />
     ) : (
       <input
-        className={clsx(
-          styles.root,
-          {
-            [styles.block]: block
-          },
-          className
-        )}
+        className={className}
         ref={ref as Ref<HTMLInputElement>}
         type={type}
         {...props}
