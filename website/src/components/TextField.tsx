@@ -8,6 +8,7 @@ import type { HTMLAttributes, Ref } from 'react'
 
 type Props = {
   block?: boolean
+  disabled?: boolean
   multiline?: boolean
   type?: string
 } & Omit<
