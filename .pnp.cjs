@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@svgr/webpack", "npm:5.5.0"],
             ["@tanem/react-nprogress", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:3.0.79"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
-            ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.1.0"],
+            ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.1.1"],
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/gtag.js", "npm:0.0.7"],
@@ -3916,17 +3916,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@testing-library/react", [
-        ["npm:12.1.0", {
-          "packageLocation": "./.yarn/cache/@testing-library-react-npm-12.1.0-0552057b66-84ab074f12.zip/node_modules/@testing-library/react/",
+        ["npm:12.1.1", {
+          "packageLocation": "./.yarn/cache/@testing-library-react-npm-12.1.1-69d28b273b-1882161426.zip/node_modules/@testing-library/react/",
           "packageDependencies": [
-            ["@testing-library/react", "npm:12.1.0"]
+            ["@testing-library/react", "npm:12.1.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.1.0", {
-          "packageLocation": "./.yarn/__virtual__/@testing-library-react-virtual-dc551f67bb/0/cache/@testing-library-react-npm-12.1.0-0552057b66-84ab074f12.zip/node_modules/@testing-library/react/",
+        ["virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.1.1", {
+          "packageLocation": "./.yarn/__virtual__/@testing-library-react-virtual-4ee1d2ffb1/0/cache/@testing-library-react-npm-12.1.1-69d28b273b-1882161426.zip/node_modules/@testing-library/react/",
           "packageDependencies": [
-            ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.1.0"],
+            ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.1.1"],
             ["@babel/runtime", "npm:7.15.4"],
             ["@testing-library/dom", "npm:8.6.0"],
             ["@types/react", "npm:17.0.24"],
@@ -8684,7 +8684,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@svgr/webpack", "npm:5.5.0"],
             ["@tanem/react-nprogress", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:3.0.79"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
-            ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.1.0"],
+            ["@testing-library/react", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:12.1.1"],
             ["@types/dedent", "npm:0.7.0"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/gtag.js", "npm:0.0.7"],

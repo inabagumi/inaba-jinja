@@ -40,7 +40,7 @@
     "@next/mdx": "^11.1.2",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.1.0",
+    "@testing-library/react": "^12.1.1",
     "@types/dedent": "^0.7.0",
     "@types/eslint": "^7.28.0",
     "@types/gtag.js": "^0.0.7",
