@@ -30,7 +30,7 @@
     "@docusaurus/module-type-aliases": "^2.0.0-beta.6",
     "@formspree/cli": "^0.9.6",
     "@inabagumi/eslint-config-react": "^9.0.1",
-    "@inabagumi/prettier-config": "^1.1.3",
+    "@inabagumi/prettier-config": "^2.0.0",
     "@tsconfig/docusaurus": "^1.0.4",
     "@types/lodash": "^4.14.174",
     "@types/react": "^17.0.24",
