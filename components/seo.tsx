@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import type { VFC } from 'react'
-
 import useBaseURLUtils from '@/hooks/use-base-url-utils'
+import type { VFC } from 'react'
 
 const siteName = '因幡神社'
 

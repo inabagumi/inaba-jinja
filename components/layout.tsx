@@ -3,14 +3,13 @@ import '@reach/skip-nav/styles.css'
 import { SkipNavLink } from '@reach/skip-nav'
 import clsx from 'clsx'
 import Link from 'next/link'
-import type { ReactNode, VFC } from 'react'
 import { useCallback, useState } from 'react'
 import FocusLock from 'react-focus-lock'
 import { RemoveScroll } from 'react-remove-scroll'
-
 import Logo from '@/assets/logo.svg'
 import IconButton from '@/components/icon-button'
 import styles from '@/styles/components/layout.module.css'
+import type { ReactNode, VFC } from 'react'
 
 type Props = {
   children: ReactNode

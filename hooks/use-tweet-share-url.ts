@@ -1,6 +1,5 @@
-import { FortuneEntry } from '@/types/fortune'
-
 import useBaseURLUtils from './use-base-url-utils'
+import { FortuneEntry } from '@/types/fortune'
 
 function useTweetShareURL(fortune: FortuneEntry): string {
   const { withBaseURL } = useBaseURLUtils()

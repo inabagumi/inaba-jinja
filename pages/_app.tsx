@@ -1,16 +1,15 @@
 import '@/styles/globals.css'
 
-import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import type { VFC } from 'react'
 import { useCallback, useEffect } from 'react'
-
 import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
 import Background from '@/components/background'
 import Loading from '@/components/loading'
+import type { AppProps } from 'next/app'
+import type { VFC } from 'react'
 
 const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()

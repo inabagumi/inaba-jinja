@@ -1,7 +1,6 @@
 import { request } from 'https'
-import type { NextApiHandler } from 'next'
-
 import getAsset from '@/contentful/getAsset'
+import type { NextApiHandler } from 'next'
 
 const handler: NextApiHandler = async (req, res) => {
   const id = Array.isArray(req.query.id) ? req.query.id[0] : req.query.id

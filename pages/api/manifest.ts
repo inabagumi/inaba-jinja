@@ -1,8 +1,7 @@
-import type { NextApiHandler } from 'next'
-import type { WebAppManifest } from 'web-app-manifest'
-
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
+import type { NextApiHandler } from 'next'
+import type { WebAppManifest } from 'web-app-manifest'
 
 const INABA_JINJA_SITE_NAME = '因幡神社'
 const INABA_JINJA_DESCRIPTION =

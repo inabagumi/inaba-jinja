@@ -1,9 +1,8 @@
-import type { NextPage } from 'next'
-
 import Refresh from '@/components/refresh'
 import SEO from '@/components/seo'
 import NotFound from '@/pages/404.mdx'
 import { Props as KujiProps } from '@/pages/kuji/[id]'
+import type { NextPage } from 'next'
 
 const SharePage: NextPage<KujiProps> = ({ fortune }) => {
   if (!fortune) return <NotFound />
