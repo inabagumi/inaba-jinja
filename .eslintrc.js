@@ -7,12 +7,12 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ['**/*.ts?(x)'],
       extends: [
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking'
       ],
+      files: ['**/*.ts?(x)'],
       parserOptions: {
         project: './tsconfig.json'
       }
@@ -35,5 +35,39 @@ module.exports = {
       }
     }
   ],
-  root: true
+  root: true,
+  rules: {
+    'import/order': [
+      'error',
+      {
+        alphabetize: {
+          caseInsensitive: false,
+          order: 'asc'
+        },
+        groups: [
+          ['builtin', 'external'],
+          'internal',
+          'parent',
+          ['index', 'sibling'],
+          'unknown',
+          'type'
+        ],
+        'newlines-between': 'never',
+        warnOnUnassignedImports: false
+      }
+    ],
+    'sort-keys': [
+      'error',
+      'asc',
+      {
+        caseSensitive: true,
+        minKeys: 2,
+        natural: true
+      }
+    ],
+    'sort-vars': ['error', { ignoreCase: false }]
+  },
+  settings: {
+    'import/external-module-folders': ['.yarn']
+  }
 }

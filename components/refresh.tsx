@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import type { VFC } from 'react'
-
 import useBaseURLUtils from '@/hooks/use-base-url-utils'
+import type { VFC } from 'react'
 
 type Props = {
   delay?: number

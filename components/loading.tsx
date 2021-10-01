@@ -2,10 +2,9 @@ import Portal from '@reach/portal'
 import { useNProgress } from '@tanem/react-nprogress'
 import clsx from 'clsx'
 import { useRouter } from 'next/router'
-import type { VFC } from 'react'
 import { useCallback, useEffect, useState } from 'react'
-
 import styles from '@/styles/components/loading.module.css'
+import type { VFC } from 'react'
 
 const Loading: VFC = () => {
   const [isAnimating, setIsAnimating] = useState(false)

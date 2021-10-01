@@ -1,11 +1,10 @@
 import { MDXProvider } from '@mdx-js/react'
 import NextLink from 'next/link'
-import type { ReactNode, VFC } from 'react'
-
 import Page from '@/components/layout'
 import SEO from '@/components/seo'
 import SimpleWindow from '@/components/simple-window'
 import styles from '@/styles/components/markdown-doc.module.css'
+import type { ReactNode, VFC } from 'react'
 
 type LinkProps = Omit<JSX.IntrinsicElements['a'], 'href' | 'ref'> & {
   href: string

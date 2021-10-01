@@ -1,7 +1,4 @@
-import type { Asset } from 'contentful'
-import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
-
 import Page from '@/components/layout'
 import SEO from '@/components/seo'
 import SingleWindow from '@/components/simple-window'
@@ -9,6 +6,8 @@ import getFortune from '@/contentful/getFortune'
 import useTweetShareURL from '@/hooks/use-tweet-share-url'
 import styles from '@/styles/pages/kuji/[id].module.css'
 import { FortuneEntry } from '@/types/fortune'
+import type { Asset } from 'contentful'
+import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 
 function getContentfulImageURL(asset: Asset): string {
   const updatedAt = new Date(asset.sys.updatedAt)
