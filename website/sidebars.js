@@ -10,11 +10,6 @@ module.exports = {
       items: ['shinju-date', '21g'],
       label: 'プロダクト',
       type: 'category'
-    },
-    {
-      items: ['eslint-config', 'prettier-config', 'renovate-config'],
-      label: 'npm パッケージ',
-      type: 'category'
     }
   ]
 }

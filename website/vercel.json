@@ -17,8 +17,8 @@
       "source": "/docs/graph"
     },
     {
-      "destination": "/docs/eslint-config",
-      "source": "/(products|docs)/npm-packages(.html)?"
+      "destination": "/",
+      "source": "/(products|docs)/(npm-packages|eslint-config|prettier-config|renovate-config)(.html)?"
     },
     {
       "destination": "/docs/:name",
