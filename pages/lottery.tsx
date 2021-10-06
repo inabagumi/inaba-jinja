@@ -19,7 +19,7 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
     <>
       <SEO noindex path="/lottery" title="おみくじを引いています..." />
 
-      <Refresh path={`/kuji/${id}`} delay={DELAY_SECONDS} />
+      <Refresh delay={DELAY_SECONDS} path={`/kuji/${id}`} />
 
       <Page>
         <SimpleWindow>
