@@ -132,7 +132,7 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
           <header className={styles.header}>
             <Link href="/" prefetch={false}>
               <a className={styles.brand}>
-                <Logo className={styles.brandLogo} aria-label="因幡神社" />
+                <Logo aria-label="因幡神社" className={styles.brandLogo} />
               </a>
             </Link>
           </header>

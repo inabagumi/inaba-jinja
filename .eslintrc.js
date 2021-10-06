@@ -56,6 +56,8 @@ module.exports = {
         warnOnUnassignedImports: false
       }
     ],
+    'react/jsx-sort-props': 'error',
+    'react/sort-prop-types': 'error',
     'sort-keys': [
       'error',
       'asc',
