@@ -4,12 +4,12 @@ module.exports = {
   favicon: 'img/favicon.png',
   i18n: {
     defaultLocale: 'ja',
-    locales: ['ja'],
     localeConfigs: {
       ja: {
         label: '日本語'
       }
-    }
+    },
+    locales: ['ja']
   },
   organizationName: 'inabagumi',
   plugins: ['@docusaurus/plugin-ideal-image'],
@@ -36,7 +36,6 @@ module.exports = {
         copyright: 'Copyright © 2019 Haneru Developers.',
         links: [
           {
-            title: 'ねるねるアプリ',
             items: [
               {
                 label: 'ねるカメラ',
@@ -54,10 +53,10 @@ module.exports = {
                 label: '因幡神社',
                 to: 'docs/inaba-jinja'
               }
-            ]
+            ],
+            title: 'ねるねるアプリ'
           },
           {
-            title: 'プロダクト',
             items: [
               {
                 label: 'SHINJU DATE',
@@ -67,10 +66,10 @@ module.exports = {
                 label: '21g',
                 to: 'docs/21g'
               }
-            ]
+            ],
+            title: 'プロダクト'
           },
           {
-            title: 'ソーシャル',
             items: [
               {
                 href: 'https://github.com/inabagumi',
@@ -80,7 +79,8 @@ module.exports = {
                 href: 'https://discord.gg/d9V3PSj',
                 label: 'Discord'
               }
-            ]
+            ],
+            title: 'ソーシャル'
           }
         ],
         style: 'dark'
@@ -94,14 +94,14 @@ module.exports = {
         items: [
           {
             activeBasePath: 'docs',
-            to: 'docs',
             label: 'ドキュメント',
-            position: 'left'
+            position: 'left',
+            to: 'docs'
           },
           {
-            to: 'contact',
             label: 'お問い合わせ',
-            position: 'right'
+            position: 'right',
+            to: 'contact'
           }
         ],
         logo: {

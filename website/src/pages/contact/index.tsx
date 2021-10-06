@@ -1,10 +1,9 @@
+import Layout from '@theme/Layout'
 import * as React from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
-import Layout from '@theme/Layout'
 import ContactForm from '@site/src/components/ContactForm'
-
-import type { VFC } from 'react'
 import type { FormData } from '@site/src/components/ContactForm'
+import type { VFC } from 'react'
 
 const Contact: VFC = () => {
   const methods = useForm<FormData>({

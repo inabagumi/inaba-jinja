@@ -1,12 +1,11 @@
-import chunk from 'lodash/chunk'
-import * as React from 'react'
+import Link from '@docusaurus/Link'
+import { useBaseUrlUtils } from '@docusaurus/useBaseUrl'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Image from '@theme/IdealImage'
 import Layout from '@theme/Layout'
-import Link from '@docusaurus/Link'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import { useBaseUrlUtils } from '@docusaurus/useBaseUrl'
+import chunk from 'lodash/chunk'
+import * as React from 'react'
 import products from '../data/products'
-
 import type { VFC } from 'react'
 
 const Home: VFC = () => {
@@ -42,6 +41,7 @@ const Home: VFC = () => {
                   <div className="col col--4" key={product.website}>
                     <div className="card margin-bottom--md">
                       <div className="card__image">
+                        {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
                         <Image alt={product.title} img={product.preview} />
                       </div>
                       <div className="card__body">

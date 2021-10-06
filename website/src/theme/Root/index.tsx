@@ -1,6 +1,6 @@
 import { FormspreeProvider } from '@formspree/react'
+import * as React from 'react'
 import type { ReactNode, VFC } from 'react'
-import React from 'react'
 
 type Props = {
   children: ReactNode

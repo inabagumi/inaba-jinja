@@ -1,13 +1,12 @@
 import { ErrorMessage } from '@hookform/error-message'
-import { useFormContext } from 'react-hook-form'
 import clsx from 'clsx'
 import * as React from 'react'
+import { useFormContext } from 'react-hook-form'
 import TextField from '@site/src/components/TextField'
 import styles from './FormControl.module.css'
-
+import type { FormData } from './types'
 import type { VFC } from 'react'
 import type { RegisterOptions } from 'react-hook-form'
-import type { FormData } from './types'
 
 type Props = {
   disabled?: boolean
