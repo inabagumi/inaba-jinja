@@ -4,7 +4,7 @@ import cardImage from '@/assets/card.jpg'
 import Logo from '@/assets/vertical-logo.svg'
 import Page from '@/components/layout'
 import SEO from '@/components/seo'
-import styles from '@/styles/pages/index.module.css'
+import styles from '@/styles/Home.module.css'
 import type { NextPage } from 'next'
 
 const description =

@@ -1,13 +1,15 @@
 import '@/styles/globals.css'
 
+import dedent from 'dedent'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import Script from 'next/script'
 import { useCallback, useEffect } from 'react'
 import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
 import Background from '@/components/background'
-import Loading from '@/components/loading'
+import * as gtag from '@/lib/gtag'
 import type { AppProps } from 'next/app'
 import type { VFC } from 'react'
 
@@ -15,16 +17,7 @@ const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()
 
   const handleRouterChangeComplete = useCallback((url: string) => {
-    const trackingID = process.env.NEXT_PUBLIC_GA_TRACKING_ID
-
-    if (!trackingID) return
-
-    setTimeout(() => {
-      gtag('config', trackingID, {
-        page_location: url,
-        page_title: document.title
-      })
-    }, 0)
+    gtag.pageview(url)
   }, [])
 
   useEffect(() => {
@@ -59,9 +52,30 @@ const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
         />
       </Head>
 
+      {gtag.GA_TRACKING_ID && (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+            strategy="afterInteractive"
+          />
+          <Script
+            dangerouslySetInnerHTML={{
+              __html: dedent`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', '${gtag.GA_TRACKING_ID}');
+              `
+            }}
+            id="gtag-init"
+            strategy="afterInteractive"
+          />
+        </>
+      )}
+
       <Component {...pageProps} />
       <Background />
-      <Loading />
     </>
   )
 }

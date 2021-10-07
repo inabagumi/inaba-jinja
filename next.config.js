@@ -1,13 +1,11 @@
-const nextMDX = require('@next/mdx')
+const withMDX = require('@next/mdx')()
 const withPlugins = require('next-compose-plugins')
 const withPWA = require('next-pwa')
-
-const withMDX = nextMDX()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    dirs: ['__mocks__', 'components', 'contentful', 'hooks', 'pages', 'styles']
+    dirs: ['__mocks__', 'components', 'lib', 'pages']
   },
   experimental: {
     optimizeCss: true
@@ -56,15 +54,15 @@ const nextConfig = {
     defaultLocale: 'ja',
     locales: ['ja']
   },
-  images: {
-    domains: [],
-    ...(process.env.IMGIX_BASE_PATH
-      ? {
-          loader: 'imgix',
-          path: process.env.IMGIX_BASE_PATH
-        }
-      : {})
-  },
+  images: process.env.IMGIX_BASE_PATH
+    ? {
+        domains: [],
+        loader: 'imgix',
+        path: process.env.IMGIX_BASE_PATH
+      }
+    : {
+        domains: []
+      },
   reactStrictMode: true,
   async redirects() {
     return [
@@ -99,8 +97,8 @@ const nextConfig = {
         source: '/sitemap.xml'
       },
       {
-        destination: `/api/images/:asset_id`,
-        source: '/images/contentful/:version/:asset_id'
+        destination: `https://images.ctfassets.net/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}/:asset_id/:unique_id/:filename`,
+        source: '/images/contentful/:asset_id/:unique_id/:filename'
       }
     ]
   },

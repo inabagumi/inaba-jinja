@@ -1,7 +1,21 @@
-import useBaseURLUtils from './use-base-url-utils'
-import { FortuneEntry } from '@/types/fortune'
+import pkg from '../package.json'
+import type { Fortune } from './contentful'
 
-function useTweetShareURL(fortune: FortuneEntry): string {
+export type BaseURLUtils = {
+  withBaseURL: (path: string) => string
+}
+
+export function useBaseURLUtils(): BaseURLUtils {
+  const { homepage: baseURL } = pkg
+
+  return {
+    withBaseURL: (path) => {
+      return new URL(path, baseURL).toString()
+    }
+  }
+}
+
+export function useTweetShareURL(fortune: Fortune): string {
   const { withBaseURL } = useBaseURLUtils()
 
   const url = new URL('https://twitter.com/intent/tweet')
@@ -16,5 +30,3 @@ function useTweetShareURL(fortune: FortuneEntry): string {
 
   return url.toString()
 }
-
-export default useTweetShareURL

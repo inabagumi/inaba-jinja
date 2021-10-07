@@ -2,22 +2,14 @@ import Image from 'next/image'
 import Page from '@/components/layout'
 import SEO from '@/components/seo'
 import SingleWindow from '@/components/simple-window'
-import getFortune from '@/contentful/getFortune'
-import useTweetShareURL from '@/hooks/use-tweet-share-url'
-import styles from '@/styles/pages/kuji/[id].module.css'
-import { FortuneEntry } from '@/types/fortune'
-import type { Asset } from 'contentful'
+import { getFortune, getImageURL } from '@/lib/contentful'
+import { useTweetShareURL } from '@/lib/hooks'
+import styles from '@/styles/Kuji.module.css'
+import type { Fortune } from '@/lib/contentful'
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 
-function getContentfulImageURL(asset: Asset): string {
-  const updatedAt = new Date(asset.sys.updatedAt)
-  const version = `v${Math.floor(updatedAt.getTime() / 1000)}`
-
-  return `/images/contentful/${version}/${asset.sys.id}`
-}
-
 export type Props = {
-  fortune: FortuneEntry
+  fortune: Fortune
 }
 
 const KujiPage: NextPage<Props> = ({ fortune }) => {
@@ -32,7 +24,7 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
         description={fortune.fields.description}
         image={{
           height: fortune.fields.card.fields.file.details.image?.height,
-          url: getContentfulImageURL(fortune.fields.card),
+          url: getImageURL(fortune.fields.card),
           width: fortune.fields.card.fields.file.details.image?.width
         }}
         path={`/kuji/${fortune.sys.id}`}
@@ -50,7 +42,7 @@ const KujiPage: NextPage<Props> = ({ fortune }) => {
               placeholder="blur"
               priority
               quality={80}
-              src={getContentfulImageURL(fortune.fields.paper)}
+              src={getImageURL(fortune.fields.paper)}
               width={imageDetails ? imageDetails.width / 2 : 254}
             />
           </div>
