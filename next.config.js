@@ -28,7 +28,7 @@ const nextConfig = {
             value: 'max-age=0'
           }
         ],
-        source: '/service-worker.js(.map)?'
+        source: '/service-worker.js'
       },
       {
         headers: [
@@ -46,7 +46,7 @@ const nextConfig = {
             value: 'public,max-age=31536000,immutable'
           }
         ],
-        source: '/workbox-:hash.js(.map)?'
+        source: '/workbox-:hash.js'
       }
     ]
   },
@@ -81,12 +81,12 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        destination: '/_next/static/service-worker.js$1',
-        source: '/service-worker.js(.map)?'
+        destination: '/_next/static/service-worker.js',
+        source: '/service-worker.js'
       },
       {
-        destination: '/_next/static/workbox-:hash.js$2',
-        source: '/workbox-:hash.js(.map)?'
+        destination: '/_next/static/workbox-:hash.js',
+        source: '/workbox-:hash.js'
       },
       {
         destination: '/api/manifest',
@@ -133,7 +133,7 @@ module.exports = withPlugins(
       withPWA,
       {
         pwa: {
-          buildExcludes: [/\.map$/, /\.(?:jpg|png)$/],
+          buildExcludes: [/\.(?:jpg|png)$/],
           dest: '.next/static',
           disable: process.env.NODE_ENV === 'development',
           publicExcludes: ['!favicon.ico', '!robots.txt'],
