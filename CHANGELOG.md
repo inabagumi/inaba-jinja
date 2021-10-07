@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://www.github.com/inabagumi/inaba-jinja/compare/v1.20.1...v2.0.0) (2021-10-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* Major changes have been made to the directory structure.
+
+### Bug Fixes
+
+* remove .map from rewrites ([#1656](https://www.github.com/inabagumi/inaba-jinja/issues/1656)) ([7e2d4b2](https://www.github.com/inabagumi/inaba-jinja/commit/7e2d4b2c15b9b737941295a69f1fa911505866b8))
+
+
+### Performance Improvements
+
+* use next/script ([#1653](https://www.github.com/inabagumi/inaba-jinja/issues/1653)) ([b8322da](https://www.github.com/inabagumi/inaba-jinja/commit/b8322daac085f0274e4cfc8fa7a8bc5b643b30e6))
+
 ### [1.20.1](https://www.github.com/inabagumi/inaba-jinja/compare/v1.20.0...v1.20.1) (2021-08-11)
 
 
