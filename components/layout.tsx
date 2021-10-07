@@ -6,9 +6,9 @@ import Link from 'next/link'
 import { useCallback, useState } from 'react'
 import FocusLock from 'react-focus-lock'
 import { RemoveScroll } from 'react-remove-scroll'
-import styles from './layout.module.css'
 import Logo from '@/assets/logo.svg'
 import IconButton from '@/components/icon-button'
+import styles from './layout.module.css'
 import type { ReactNode, VFC } from 'react'
 
 type Props = {

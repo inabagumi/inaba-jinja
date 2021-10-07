@@ -73,8 +73,11 @@
     "type": "git",
     "url": "https://github.com/inabagumi/inaba-jinja.git"
   },
+  "resolutions": {
+    "eslint-config-next/eslint-plugin-import": "^2.22.1 <2.24.0"
+  },
   "scripts": {
-    "build": "next build",
+    "build": "next build --no-lint",
     "dev": "next",
     "format": "prettier -w .",
     "format-check": "prettier -c .",
