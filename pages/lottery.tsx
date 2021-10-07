@@ -4,8 +4,8 @@ import Page from '@/components/layout'
 import Refresh from '@/components/refresh'
 import SEO from '@/components/seo'
 import SimpleWindow from '@/components/simple-window'
-import getFortunes from '@/contentful/getFortunes'
-import styles from '@/styles/pages/lottery.module.css'
+import { getAnyFortuneID } from '@/lib/contentful'
+import styles from '@/styles/Lottery.module.css'
 import type { GetServerSideProps, NextPage } from 'next'
 
 const DELAY_SECONDS = 2
@@ -44,10 +44,7 @@ const LotteryPage: NextPage<Props> = ({ id }) => {
 export default LotteryPage
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  const ids = await getFortunes().catch((): string[] => [])
-  const id = ids[Math.floor(Math.random() * ids.length)]
-
-  if (!id) throw new TypeError("Fortune doesn't exist.")
+  const id = await getAnyFortuneID()
 
   return {
     props: {

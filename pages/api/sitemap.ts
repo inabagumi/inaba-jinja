@@ -1,6 +1,6 @@
 import { EnumChangefreq, SitemapStream } from 'sitemap'
-import pkg from '@/../package.json'
-import getFortunes from '@/contentful/getFortunes'
+import pkg from '../../package.json'
+import { getFortuneIDs } from '@/lib/contentful'
 import type { NextApiHandler } from 'next'
 import type { SitemapItemLoose } from 'sitemap'
 
@@ -31,7 +31,7 @@ const sitemapHandler: NextApiHandler<string> = async (_req, res) => {
     smStream.write(page)
   }
 
-  const fortunes = await getFortunes().catch((): string[] => [])
+  const fortunes = await getFortuneIDs()
   for (const id of fortunes) {
     smStream.write({
       changefreq: EnumChangefreq.MONTHLY,

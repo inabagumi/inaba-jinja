@@ -1,10 +1,9 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'next/core-web-vitals',
-    'plugin:prettier/recommended'
-  ],
+  env: {
+    es2020: true
+  },
+  extends: ['eslint:recommended', 'next/core-web-vitals', 'prettier'],
   overrides: [
     {
       extends: [
@@ -21,15 +20,7 @@ module.exports = {
       env: {
         commonjs: true
       },
-      files: [
-        '.eslintrc.js',
-        'babel.config.js',
-        'commitlint.config.js',
-        'jest.config.js',
-        'lint-staged.config.js',
-        'next.config.js',
-        'prettier.config.js'
-      ],
+      files: ['.*rc.js', '*.config.js'],
       parserOptions: {
         sourceType: 'script'
       }
@@ -41,7 +32,6 @@ module.exports = {
       'error',
       {
         alphabetize: {
-          caseInsensitive: false,
           order: 'asc'
         },
         groups: [
@@ -52,22 +42,30 @@ module.exports = {
           'unknown',
           'type'
         ],
-        'newlines-between': 'never',
-        warnOnUnassignedImports: false
+        'newlines-between': 'never'
       }
     ],
     'react/jsx-sort-props': 'error',
     'react/sort-prop-types': 'error',
+    'sort-imports': [
+      'error',
+      {
+        ignoreDeclarationSort: true
+      }
+    ],
     'sort-keys': [
       'error',
       'asc',
       {
-        caseSensitive: true,
-        minKeys: 2,
         natural: true
       }
     ],
-    'sort-vars': ['error', { ignoreCase: false }]
+    'sort-vars': [
+      'error',
+      {
+        ignoreCase: false
+      }
+    ]
   },
   settings: {
     'import/external-module-folders': ['.yarn']

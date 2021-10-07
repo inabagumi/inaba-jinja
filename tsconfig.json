@@ -14,11 +14,9 @@
     "paths": {
       "@/assets/*": ["./assets/*"],
       "@/components/*": ["./components/*"],
-      "@/contentful/*": ["./contentful/*"],
-      "@/hooks/*": ["./hooks/*"],
+      "@/lib/*": ["./lib/*"],
       "@/pages/*": ["./pages/*"],
-      "@/styles/*": ["./styles/*"],
-      "@/types/*": ["./types/*"]
+      "@/styles/*": ["./styles/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,

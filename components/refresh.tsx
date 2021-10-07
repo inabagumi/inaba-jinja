@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import useBaseURLUtils from '@/hooks/use-base-url-utils'
+import { useBaseURLUtils } from '@/lib/hooks'
 import type { VFC } from 'react'
 
 type Props = {

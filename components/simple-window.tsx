@@ -1,5 +1,5 @@
 import { SkipNavContent } from '@reach/skip-nav'
-import styles from '@/styles/components/simple-window.module.css'
+import styles from './simple-window.module.css'
 import type { ReactNode, VFC } from 'react'
 
 type Props = {
