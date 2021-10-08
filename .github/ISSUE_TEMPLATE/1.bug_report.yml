@@ -1,14 +1,17 @@
 name: 不具合報告
 description: 改善に役立つ報告をする。
 labels: [bug]
+title: ''
 body:
   - type: input
+    id: describe
     attributes:
       label: 不具合の詳細
       description: 不具合について簡潔でわかりやすい説明をしてください。
     validations:
       required: true
   - type: textarea
+    id: repro
     attributes:
       label: 再現手順
       description: 不具合を再現する手順を書いてください。
@@ -22,10 +25,10 @@ body:
         2. 
         3. 
         ...
-      render: markdown
     validations:
       required: false
-  - type: input
+  - type: textarea
+    id: expected
     attributes:
       label: 期待する挙動
       description: あなたが期待する挙動について簡潔でわかりやすい説明をしてください。
