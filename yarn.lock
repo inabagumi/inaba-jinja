@@ -4150,15 +4150,15 @@ __metadata:
   linkType: hard
 
 "contentful-sdk-core@npm:^6.9.0":
-  version: 6.10.2
-  resolution: "contentful-sdk-core@npm:6.10.2"
+  version: 6.10.3
+  resolution: "contentful-sdk-core@npm:6.10.3"
   dependencies:
     fast-copy: ^2.1.0
     lodash.isplainobject: ^4.0.6
     lodash.isstring: ^4.0.1
     p-throttle: ^4.1.1
     qs: ^6.9.4
-  checksum: d4bb420e08b11769a53923c761d7804194e016e3c0b763f493f8959c00785ae1b0a2feeb1f866c571016b8dcdc86afe42b700c14de710fe9f3f6d655ed8a39e0
+  checksum: 471142ff941e42cdb7f2448980453dd7ea3e154d4e44dbff3cc910bdb6b957e352e0f480e26f4bda4088896b2130282be452b96c388494977688ce6720fa0999
   languageName: node
   linkType: hard
 
