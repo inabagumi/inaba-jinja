@@ -6128,7 +6128,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["contentful", "npm:9.0.3"],
             ["axios", "npm:0.22.0"],
             ["contentful-resolve-response", "npm:1.3.0"],
-            ["contentful-sdk-core", "npm:6.10.2"],
+            ["contentful-sdk-core", "npm:6.10.3"],
             ["fast-copy", "npm:2.1.1"],
             ["json-stringify-safe", "npm:5.0.1"]
           ],
@@ -6146,10 +6146,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["contentful-sdk-core", [
-        ["npm:6.10.2", {
-          "packageLocation": "./.yarn/cache/contentful-sdk-core-npm-6.10.2-7b34c6f355-d4bb420e08.zip/node_modules/contentful-sdk-core/",
+        ["npm:6.10.3", {
+          "packageLocation": "./.yarn/cache/contentful-sdk-core-npm-6.10.3-d78d37e4ac-471142ff94.zip/node_modules/contentful-sdk-core/",
           "packageDependencies": [
-            ["contentful-sdk-core", "npm:6.10.2"],
+            ["contentful-sdk-core", "npm:6.10.3"],
             ["fast-copy", "npm:2.1.1"],
             ["lodash.isplainobject", "npm:4.0.6"],
             ["lodash.isstring", "npm:4.0.1"],
