@@ -1,6 +1,6 @@
 import { EnumChangefreq, SitemapStream } from 'sitemap'
-import { getFortuneIDs } from '@/lib/contentful'
 import pkg from '../../package.json'
+import { getFortuneIDs } from '@/lib/contentful'
 import type { NextApiHandler } from 'next'
 import type { SitemapItemLoose } from 'sitemap'
 
