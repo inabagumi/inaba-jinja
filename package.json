@@ -52,7 +52,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "critters": "^0.0.10",
-    "eslint": "^8.0.0",
+    "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.2",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.2",
@@ -73,11 +73,8 @@
     "type": "git",
     "url": "https://github.com/inabagumi/inaba-jinja.git"
   },
-  "resolutions": {
-    "eslint-config-next/eslint-plugin-import": "^2.22.1 <2.25.2"
-  },
   "scripts": {
-    "build": "next build --no-lint",
+    "build": "next build",
     "dev": "next",
     "format": "prettier -w .",
     "format-check": "prettier -c .",
