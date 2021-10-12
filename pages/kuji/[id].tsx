@@ -3,9 +3,9 @@ import Page from '@/components/layout'
 import SEO from '@/components/seo'
 import SingleWindow from '@/components/simple-window'
 import { getFortune, getImageURL } from '@/lib/contentful'
+import type { Fortune } from '@/lib/contentful'
 import { useTweetShareURL } from '@/lib/hooks'
 import styles from '@/styles/Kuji.module.css'
-import type { Fortune } from '@/lib/contentful'
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 
 export type Props = {
