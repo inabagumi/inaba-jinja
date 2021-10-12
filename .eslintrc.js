@@ -42,7 +42,13 @@ module.exports = {
           'unknown',
           'type'
         ],
-        'newlines-between': 'never'
+        'newlines-between': 'never',
+        pathGroups: [
+          {
+            group: 'internal',
+            pattern: '@/**'
+          }
+        ]
       }
     ],
     'react/jsx-sort-props': 'error',

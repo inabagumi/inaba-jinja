@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import styles from './background.module.css'
 import mainVisual from '@/assets/main-visual.jpg'
+import styles from './background.module.css'
 import type { VFC } from 'react'
 
 const Background: VFC = () => {
