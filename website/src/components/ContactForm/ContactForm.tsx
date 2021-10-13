@@ -16,6 +16,20 @@ const ContactForm: VFC = () => {
       <dl className="margin--none">
         <FormControl
           disabled={formState.isSubmitting}
+          label="お名前"
+          name="name"
+          placeholder=""
+          registerOptions={{
+            required: {
+              message: 'お名前の入力は必須です。',
+              value: true
+            }
+          }}
+          type="text"
+        />
+
+        <FormControl
+          disabled={formState.isSubmitting}
           label="メールアドレス"
           name="email"
           placeholder="you@example.com"

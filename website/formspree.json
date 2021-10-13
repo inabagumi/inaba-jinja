@@ -8,6 +8,10 @@
         }
       ],
       "fields": {
+        "name": {
+          "type": "text",
+          "required": true
+        },
         "email": {
           "type": "email",
           "required": true
