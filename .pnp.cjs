@@ -50,7 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.28.1"],
             ["@types/gtag.js", "npm:0.0.7"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/node", "npm:14.17.25"],
+            ["@types/node", "npm:14.17.26"],
             ["@types/react", "npm:17.0.29"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["@types/web-app-manifest", "npm:1.0.2"],
@@ -4155,10 +4155,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:14.17.25", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.25-aaedb9265d-2fdf3f7825.zip/node_modules/@types/node/",
+        ["npm:14.17.26", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.26-c3095634db-f8d211e638.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.17.25"]
+            ["@types/node", "npm:14.17.26"]
           ],
           "linkType": "HARD",
         }],
@@ -8682,7 +8682,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.28.1"],
             ["@types/gtag.js", "npm:0.0.7"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/node", "npm:14.17.25"],
+            ["@types/node", "npm:14.17.26"],
             ["@types/react", "npm:17.0.29"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["@types/web-app-manifest", "npm:1.0.2"],
