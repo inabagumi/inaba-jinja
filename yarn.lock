@@ -2663,24 +2663,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/source-list-map@npm:*":
-  version: 0.1.2
-  resolution: "@types/source-list-map@npm:0.1.2"
-  checksum: fda8f37537aca9d3ed860d559289ab1dddb6897e642e6f53e909bbd18a7ac3129a8faa2a7d093847c91346cf09c86ef36e350c715406fba1f2271759b449adf6
-  languageName: node
-  linkType: hard
-
 "@types/stack-utils@npm:^2.0.0":
   version: 2.0.1
   resolution: "@types/stack-utils@npm:2.0.1"
   checksum: 205fdbe3326b7046d7eaf5e494d8084f2659086a266f3f9cf00bccc549c8e36e407f88168ad4383c8b07099957ad669f75f2532ed4bc70be2b037330f7bae019
-  languageName: node
-  linkType: hard
-
-"@types/tapable@npm:^1":
-  version: 1.0.8
-  resolution: "@types/tapable@npm:1.0.8"
-  checksum: b4b754dd0822c407b8f29ef6b766490721c276880f9e976d92ee2b3ef915f11a05a2442ae36c8978bcd872ad6bc833b0a2c4d267f2d611590668a366bad50652
   languageName: node
   linkType: hard
 
@@ -2697,15 +2683,6 @@ __metadata:
   version: 2.0.2
   resolution: "@types/trusted-types@npm:2.0.2"
   checksum: 3371eef5f1c50e1c3c07a127c1207b262ba65b83dd167a1c460fc1b135a3fb0c97b9f508efebd383f239cc5dd5b7169093686a692a501fde9c3f7208657d9b0d
-  languageName: node
-  linkType: hard
-
-"@types/uglify-js@npm:*":
-  version: 3.13.1
-  resolution: "@types/uglify-js@npm:3.13.1"
-  dependencies:
-    source-map: ^0.6.1
-  checksum: def36fd2c698a33d8f67f5e21aab926eb9bda2d7951eab544941e1feb1231f020ff1c210d840dcc0fc9f07b5d22ef8b566887ddec9753b8b9f7223cceaa70993
   languageName: node
   linkType: hard
 
@@ -2727,31 +2704,6 @@ __metadata:
   version: 1.16.3
   resolution: "@types/webpack-env@npm:1.16.3"
   checksum: faefa7c0a75289fb469b9a5ae44059a00009de840e0e62d13b3f837d77647da76808e7839cdc414b8c585969cf6b6a7f290dc2cb437a9ccdf04cb214c68f3223
-  languageName: node
-  linkType: hard
-
-"@types/webpack-sources@npm:*":
-  version: 3.2.0
-  resolution: "@types/webpack-sources@npm:3.2.0"
-  dependencies:
-    "@types/node": "*"
-    "@types/source-list-map": "*"
-    source-map: ^0.7.3
-  checksum: fa23dcfb99f79cc0ba8e6ca41cb8dedb406f8d7772e8e3d3d9b443bfb36557a1a78f4de2b97905554db98beee1a2ef6f930e188977adde6452392a64dd4b7c2a
-  languageName: node
-  linkType: hard
-
-"@types/webpack@npm:^4.4.31":
-  version: 4.41.31
-  resolution: "@types/webpack@npm:4.41.31"
-  dependencies:
-    "@types/node": "*"
-    "@types/tapable": ^1
-    "@types/uglify-js": "*"
-    "@types/webpack-sources": "*"
-    anymatch: ^3.0.0
-    source-map: ^0.6.0
-  checksum: 8aa4b4ad68bb7a6ee5bd027005014e6242434162ed4c14cd251713ad6041e42bf7629fc56a5edc5a2124b49cc0dce273d6ee3386fae9a9cfe02e1f7e82087ea2
   languageName: node
   linkType: hard
 
@@ -3135,7 +3087,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"anymatch@npm:^3.0.0, anymatch@npm:^3.0.3, anymatch@npm:~3.1.1":
+"anymatch@npm:^3.0.3, anymatch@npm:~3.1.1":
   version: 3.1.2
   resolution: "anymatch@npm:3.1.2"
   dependencies:
@@ -3993,15 +3945,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clean-webpack-plugin@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "clean-webpack-plugin@npm:3.0.0"
+"clean-webpack-plugin@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "clean-webpack-plugin@npm:4.0.0"
   dependencies:
-    "@types/webpack": ^4.4.31
     del: ^4.1.1
   peerDependencies:
-    webpack: "*"
-  checksum: ca933e80d34e079084ca2fd70f05bed1d0e93fcb5cd21a6ab8aeca521ab92749d28a28ea7600b9b92de9326ddc253147187dee8b1bea9d60b0be0b76600914d6
+    webpack: ">=4.0.0 <6.0.0"
+  checksum: 199425e87b8c4a24ea321ec8116408219930f2ef86e27dd4cdf0ed77ed7b8b3a6908ed5160e4e981c773e015ba1d79d3f53f2fdcfebc5dc0b68f1478dea08fff
   languageName: node
   linkType: hard
 
@@ -6303,7 +6254,7 @@ __metadata:
     lint-staged: ^11.2.3
     next: ^11.1.2
     next-compose-plugins: ^2.2.1
-    next-pwa: ^5.3.1
+    next-pwa: ^5.3.2
     prettier: ~2.4.1
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -8378,19 +8329,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-pwa@npm:^5.3.1":
-  version: 5.3.1
-  resolution: "next-pwa@npm:5.3.1"
+"next-pwa@npm:^5.3.2":
+  version: 5.3.2
+  resolution: "next-pwa@npm:5.3.2"
   dependencies:
     babel-loader: ^8.2.2
-    clean-webpack-plugin: ^3.0.0
+    clean-webpack-plugin: ^4.0.0
     globby: ^11.0.4
-    terser-webpack-plugin: ^5.1.4
-    workbox-webpack-plugin: ^6.2.4
-    workbox-window: ^6.2.4
+    terser-webpack-plugin: ^5.2.4
+    workbox-webpack-plugin: ^6.3.0
+    workbox-window: ^6.3.0
   peerDependencies:
     next: ">=9.0.0"
-  checksum: 1c6f74243515ddffd4248355ae9e6a46424b3ae94ffa0db140d05dbcc59fbad839b2a6608e549aba37a7fb4908818dbd77241be0240e17a92b4b51078ec8b65d
+  checksum: 65d1174f947bda835f0091482ff78498461bb23b1746a6b66e355e9dfc204d0fc2b785fe5117776b6e59bf4fc167a586e34d92bed8abd284bee24f6a59ae254b
   languageName: node
   linkType: hard
 
@@ -10806,7 +10757,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"terser-webpack-plugin@npm:^5.1.4":
+"terser-webpack-plugin@npm:^5.2.4":
   version: 5.2.4
   resolution: "terser-webpack-plugin@npm:5.2.4"
   dependencies:
@@ -11870,7 +11821,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"workbox-webpack-plugin@npm:^6.2.4":
+"workbox-webpack-plugin@npm:^6.3.0":
   version: 6.3.0
   resolution: "workbox-webpack-plugin@npm:6.3.0"
   dependencies:
@@ -11886,7 +11837,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"workbox-window@npm:6.3.0, workbox-window@npm:^6.2.4":
+"workbox-window@npm:6.3.0, workbox-window@npm:^6.3.0":
   version: 6.3.0
   resolution: "workbox-window@npm:6.3.0"
   dependencies:
