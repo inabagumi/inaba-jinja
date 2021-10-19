@@ -1405,13 +1405,13 @@
     eventemitter3 "^3.1.0"
     url "^0.11.0"
 
-"@reach/alert-dialog@^0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@reach/alert-dialog/-/alert-dialog-0.16.0.tgz#6d1f56c2eada65a579265dd3015db64aae5d4175"
-  integrity sha512-0kPayeHcEQq054FulqsEQFOpER7xCV4YUoekrRA4nL+RI7i1ulq9XYD3mveQfsKFVUfgy9fF7gfm/k2adHvl1w==
+"@reach/alert-dialog@^0.16.2":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@reach/alert-dialog/-/alert-dialog-0.16.2.tgz#624ddef82f3689b6fea9a19687d9cc664767e745"
+  integrity sha512-r38jO2AGgNAdgVUfeoCPdu+jJVw9px9mb24Z+uhejKe6xakNtiHHiFmKlZLytEpXuzQDh36U+AeSLyKfo0wA6g==
   dependencies:
     "@reach/auto-id" "0.16.0"
-    "@reach/dialog" "0.16.0"
+    "@reach/dialog" "0.16.2"
     "@reach/utils" "0.16.0"
     invariant "^2.2.4"
     prop-types "^15.7.2"
@@ -1433,36 +1433,36 @@
     "@reach/utils" "0.16.0"
     tslib "^2.3.0"
 
-"@reach/dialog@0.16.0", "@reach/dialog@^0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@reach/dialog/-/dialog-0.16.0.tgz#66651868bb6b149fac923f40952355252da05d53"
-  integrity sha512-EsQ6wPafXHkny7ATihGCCJuVb6bo8MzzFvsDY+BNLeUt4XN3Kcq1oe5xJbXfxbm1Ljzs80bqF3E/Q16O12fPng==
+"@reach/dialog@0.16.2", "@reach/dialog@^0.16.2":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@reach/dialog/-/dialog-0.16.2.tgz#567e6f59d0a6dabe84b2ba4c456404efa6cb7d03"
+  integrity sha512-qq8oX0cROgTb8LjOKWzzNm4SqaN9b89lJHr7UyVo2aQ6WbeNzZBxqXhGywFP7dkR+hNqOJnrA59PXFWhfttA9A==
   dependencies:
-    "@reach/portal" "0.16.0"
+    "@reach/portal" "0.16.2"
     "@reach/utils" "0.16.0"
     prop-types "^15.7.2"
     react-focus-lock "^2.5.2"
     react-remove-scroll "^2.4.3"
     tslib "^2.3.0"
 
-"@reach/dropdown@0.16.1":
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/@reach/dropdown/-/dropdown-0.16.1.tgz#0af4fd17e590ca852f6bb27f34d525f07510a326"
-  integrity sha512-56ITaEAWYFvEYSJz0RqFndrHIDhSuhmobmgB4Wy1q6Aj/3F20Bns1mGu61/ny5Ld8spgP1mJTJViacHsn7x/Dg==
+"@reach/dropdown@0.16.2":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@reach/dropdown/-/dropdown-0.16.2.tgz#4aa7df0f716cb448d01bc020d54df595303d5fa6"
+  integrity sha512-l4nNiX6iUpMdHQNbZMhgW5APtw0AUwJuRnkqE93vkjvdtrYl/sNJy1Jr6cGG7TrZIABLSOsfwbXU3C+qwJ3ftQ==
   dependencies:
     "@reach/auto-id" "0.16.0"
     "@reach/descendants" "0.16.1"
-    "@reach/popover" "0.16.0"
+    "@reach/popover" "0.16.2"
     "@reach/utils" "0.16.0"
     tslib "^2.3.0"
 
-"@reach/menu-button@^0.16.1":
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/@reach/menu-button/-/menu-button-0.16.1.tgz#a81ab9d2ee21874bf8d957b29a388b8daa2b7cfd"
-  integrity sha512-0Oh/Oq+GupS48LuBdIu8VyMJFLlWReRAGgT24SrcAAxmlyO/qUP9KJS9D1CEvl2KUoSk2wO0Fu885E4eaBYucA==
+"@reach/menu-button@^0.16.2":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@reach/menu-button/-/menu-button-0.16.2.tgz#664e33e70de431f88abf1f8537c48b1b6ce87e88"
+  integrity sha512-p4n6tFVaJZHJZEznHWy0YH2Xr3I+W7tsQWAT72PqKGT+uryGRdtgEQqi76f/8cRaw/00ueazBk5lwLG7UKGFaA==
   dependencies:
-    "@reach/dropdown" "0.16.1"
-    "@reach/popover" "0.16.0"
+    "@reach/dropdown" "0.16.2"
+    "@reach/popover" "0.16.2"
     "@reach/utils" "0.16.0"
     prop-types "^15.7.2"
     tiny-warning "^1.0.3"
@@ -1473,23 +1473,24 @@
   resolved "https://registry.yarnpkg.com/@reach/observe-rect/-/observe-rect-1.2.0.tgz#d7a6013b8aafcc64c778a0ccb83355a11204d3b2"
   integrity sha512-Ba7HmkFgfQxZqqaeIWWkNK0rEhpxVQHIoVyW1YDSkGsGIXzcaW4deC8B0pZrNSSyLTdIk7y+5olKt5+g0GmFIQ==
 
-"@reach/popover@0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@reach/popover/-/popover-0.16.0.tgz#82c5ab96a88c49e2451a9c04b2d4392a9055f623"
-  integrity sha512-xmgiSyQwfshMkMNu6URbGrjjDTD3dnAITojvgEqfEtV1chDYqktKdDbIPrq+UGI54ey/IxbRpVzKcIjXiKoMmA==
+"@reach/popover@0.16.2":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@reach/popover/-/popover-0.16.2.tgz#71d7af3002ca49d791476b22dee1840dd1719c19"
+  integrity sha512-IwkRrHM7Vt33BEkSXneovymJv7oIToOfTDwRKpuYEB/BWYMAuNfbsRL7KVe6MjkgchDeQzAk24cYY1ztQj5HQQ==
   dependencies:
-    "@reach/portal" "0.16.0"
+    "@reach/portal" "0.16.2"
     "@reach/rect" "0.16.0"
     "@reach/utils" "0.16.0"
     tabbable "^4.0.0"
     tslib "^2.3.0"
 
-"@reach/portal@0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@reach/portal/-/portal-0.16.0.tgz#1544531d978b770770b718b2872b35652a11e7e3"
-  integrity sha512-vXJ0O9T+72HiSEWHPs2cx7YbSO7pQsTMhgqPc5aaddIYpo2clJx1PnYuS0lSNlVaDO0IxQhwYq43evXaXnmviw==
+"@reach/portal@0.16.2":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@reach/portal/-/portal-0.16.2.tgz#ca83696215ee03acc2bb25a5ae5d8793eaaf2f64"
+  integrity sha512-9ur/yxNkuVYTIjAcfi46LdKUvH0uYZPfEp4usWcpt6PIp+WDF57F/5deMe/uGi/B/nfDweQu8VVwuMVrCb97JQ==
   dependencies:
     "@reach/utils" "0.16.0"
+    tiny-warning "^1.0.3"
     tslib "^2.3.0"
 
 "@reach/rect@0.16.0":
