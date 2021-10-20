@@ -2078,16 +2078,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reach/portal@npm:^0.16.0":
-  version: 0.16.0
-  resolution: "@reach/portal@npm:0.16.0"
+"@reach/portal@npm:^0.16.2":
+  version: 0.16.2
+  resolution: "@reach/portal@npm:0.16.2"
   dependencies:
     "@reach/utils": 0.16.0
+    tiny-warning: ^1.0.3
     tslib: ^2.3.0
   peerDependencies:
     react: ^16.8.0 || 17.x
     react-dom: ^16.8.0 || 17.x
-  checksum: 7aa1584d08d9391ae9ba3ce507dbe5e77494c0e834ef3878997658202d91ab384aad7a7f8b09316d175b12e2d4473d80f11b70a158aaf9b1b6f78a070fa5f1a7
+  checksum: 7413dcd169cfb9854dd0d3a01f811ec19ef170558fcbd00118d676fc02c197d1c0bce1d1357508879d4775169561d103e13a8e4d74cc677eb0037cc7b04f7a1e
   languageName: node
   linkType: hard
 
@@ -6226,7 +6227,7 @@ __metadata:
     "@mdx-js/loader": ^2.0.0-next.9
     "@mdx-js/react": ^2.0.0-next.9
     "@next/mdx": ^11.1.2
-    "@reach/portal": ^0.16.0
+    "@reach/portal": ^0.16.2
     "@reach/skip-nav": ^0.16.0
     "@svgr/webpack": ^5.5.0
     "@testing-library/jest-dom": ^5.14.1
