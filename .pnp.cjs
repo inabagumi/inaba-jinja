@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:5.0.0"],
             ["clsx", "npm:1.1.1"],
             ["contentful", "npm:9.1.3"],
-            ["critters", "npm:0.0.10"],
+            ["critters", "npm:0.0.11"],
             ["dedent", "npm:0.7.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-next", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.1.2"],
@@ -6337,14 +6337,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["critters", [
-        ["npm:0.0.10", {
-          "packageLocation": "./.yarn/cache/critters-npm-0.0.10-2db928ef2d-bd93269cf7.zip/node_modules/critters/",
+        ["npm:0.0.11", {
+          "packageLocation": "./.yarn/cache/critters-npm-0.0.11-0c2f838641-8b3f5c4c69.zip/node_modules/critters/",
           "packageDependencies": [
-            ["critters", "npm:0.0.10"],
+            ["critters", "npm:0.0.11"],
             ["chalk", "npm:4.1.2"],
-            ["css", "npm:3.0.0"],
+            ["css-select", "npm:1.2.0"],
             ["parse5", "npm:6.0.1"],
             ["parse5-htmlparser2-tree-adapter", "npm:6.0.1"],
+            ["postcss", "npm:8.3.9"],
             ["pretty-bytes", "npm:5.6.0"]
           ],
           "linkType": "HARD",
@@ -6404,6 +6405,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["css-select", [
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/css-select-npm-1.2.0-a7a03607e0-607cca60d2.zip/node_modules/css-select/",
+          "packageDependencies": [
+            ["css-select", "npm:1.2.0"],
+            ["boolbase", "npm:1.0.0"],
+            ["css-what", "npm:2.1.3"],
+            ["domutils", "npm:1.5.1"],
+            ["nth-check", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.1.0", {
           "packageLocation": "./.yarn/cache/css-select-npm-2.1.0-c123ed1e29-0c4099910f.zip/node_modules/css-select/",
           "packageDependencies": [
@@ -6446,6 +6458,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["css-what", [
+        ["npm:2.1.3", {
+          "packageLocation": "./.yarn/cache/css-what-npm-2.1.3-a9583898e8-a52d56c591.zip/node_modules/css-what/",
+          "packageDependencies": [
+            ["css-what", "npm:2.1.3"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.4.2", {
           "packageLocation": "./.yarn/cache/css-what-npm-3.4.2-7b91a90423-26bb5ec3ae.zip/node_modules/css-what/",
           "packageDependencies": [
@@ -6942,6 +6961,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["domutils", [
+        ["npm:1.5.1", {
+          "packageLocation": "./.yarn/cache/domutils-npm-1.5.1-6f8de414e8-800d1f9d1c.zip/node_modules/domutils/",
+          "packageDependencies": [
+            ["domutils", "npm:1.5.1"],
+            ["dom-serializer", "npm:0.2.2"],
+            ["domelementtype", "npm:1.3.1"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:1.7.0", {
           "packageLocation": "./.yarn/cache/domutils-npm-1.7.0-7a1529fcfc-f60a725b1f.zip/node_modules/domutils/",
           "packageDependencies": [
@@ -8638,7 +8666,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:5.0.0"],
             ["clsx", "npm:1.1.1"],
             ["contentful", "npm:9.1.3"],
-            ["critters", "npm:0.0.10"],
+            ["critters", "npm:0.0.11"],
             ["dedent", "npm:0.7.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-next", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.1.2"],
@@ -10942,10 +10970,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["nanoid", [
-        ["npm:3.1.29", {
-          "packageLocation": "./.yarn/cache/nanoid-npm-3.1.29-17cd9c0f26-8837bc351a.zip/node_modules/nanoid/",
+        ["npm:3.1.30", {
+          "packageLocation": "./.yarn/cache/nanoid-npm-3.1.30-58cf6fe7ec-276d0d4b0c.zip/node_modules/nanoid/",
           "packageDependencies": [
-            ["nanoid", "npm:3.1.29"]
+            ["nanoid", "npm:3.1.30"]
           ],
           "linkType": "HARD",
         }]
@@ -11848,8 +11876,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss", "npm:8.2.15"],
             ["colorette", "npm:1.4.0"],
-            ["nanoid", "npm:3.1.29"],
+            ["nanoid", "npm:3.1.30"],
             ["source-map", "npm:0.6.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:8.3.9", {
+          "packageLocation": "./.yarn/cache/postcss-npm-8.3.9-f40ddb7d0e-b64d0e59bc.zip/node_modules/postcss/",
+          "packageDependencies": [
+            ["postcss", "npm:8.3.9"],
+            ["nanoid", "npm:3.1.30"],
+            ["picocolors", "npm:0.2.1"],
+            ["source-map-js", "npm:0.6.2"]
           ],
           "linkType": "HARD",
         }]
@@ -13082,6 +13120,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["source-map", "npm:0.8.0-beta.0"],
             ["whatwg-url", "npm:7.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["source-map-js", [
+        ["npm:0.6.2", {
+          "packageLocation": "./.yarn/cache/source-map-js-npm-0.6.2-af388ea7f1-9c8151a29e.zip/node_modules/source-map-js/",
+          "packageDependencies": [
+            ["source-map-js", "npm:0.6.2"]
           ],
           "linkType": "HARD",
         }]
