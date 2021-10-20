@@ -4317,16 +4317,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"critters@npm:^0.0.10":
-  version: 0.0.10
-  resolution: "critters@npm:0.0.10"
+"critters@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "critters@npm:0.0.11"
   dependencies:
     chalk: ^4.1.0
-    css: ^3.0.0
+    css-select: ^1.2.0
     parse5: ^6.0.1
     parse5-htmlparser2-tree-adapter: ^6.0.1
+    postcss: ^8.3.7
     pretty-bytes: ^5.3.0
-  checksum: bd93269cf76ab0b9ccbcb15fee584c06b9cfe52a528db9aff2e139830cd1ac49153ff7b7223ce923a7724b0bc0728b3736d0fabfc91237ca6a787f7cc3443a28
+  checksum: 8b3f5c4c69d978c13ad53c4938d7e60c40da2fd5c410e94326630611bfe704126eebb70d5c00f1cea05ced99385d9be412943d0da0fc67c3ba930d8805beba7a
   languageName: node
   linkType: hard
 
@@ -4374,6 +4375,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-select@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "css-select@npm:1.2.0"
+  dependencies:
+    boolbase: ~1.0.0
+    css-what: 2.1
+    domutils: 1.5.1
+    nth-check: ~1.0.1
+  checksum: 607cca60d2f5c56701fe5f800bbe668b114395c503d4e4808edbbbe70b8be3c96a6407428dc0227fcbdf335b20468e6a9e7fd689185edfb57d402e1e4837c9b7
+  languageName: node
+  linkType: hard
+
 "css-select@npm:^2.0.0":
   version: 2.1.0
   resolution: "css-select@npm:2.1.0"
@@ -4403,6 +4416,13 @@ __metadata:
     mdn-data: 2.0.14
     source-map: ^0.6.1
   checksum: 79f9b81803991b6977b7fcb1588799270438274d89066ce08f117f5cdb5e20019b446d766c61506dd772c839df84caa16042d6076f20c97187f5abe3b50e7d1f
+  languageName: node
+  linkType: hard
+
+"css-what@npm:2.1":
+  version: 2.1.3
+  resolution: "css-what@npm:2.1.3"
+  checksum: a52d56c591a7e1c37506d0d8c4fdef72537fb8eb4cb68711485997a88d76b5a3342b73a7c79176268f95b428596c447ad7fa3488224a6b8b532e2f1f2ee8545c
   languageName: node
   linkType: hard
 
@@ -4790,6 +4810,16 @@ __metadata:
   dependencies:
     webidl-conversions: ^5.0.0
   checksum: d638e9cb05c52999f1b2eb87c374b03311ea5b1d69c2f875bc92da73e17db60c12142b45c950228642ff7f845c536b65305483350d080df59003a653da80b691
+  languageName: node
+  linkType: hard
+
+"domutils@npm:1.5.1":
+  version: 1.5.1
+  resolution: "domutils@npm:1.5.1"
+  dependencies:
+    dom-serializer: 0
+    domelementtype: 1
+  checksum: 800d1f9d1c2e637267dae078ff6e24461e6be1baeb52fa70f2e7e7520816c032a925997cd15d822de53ef9896abb1f35e5c439d301500a9cd6b46a395f6f6ca0
   languageName: node
   linkType: hard
 
@@ -6244,7 +6274,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.0.0
     clsx: ^1.1.1
     contentful: ^9.1.3
-    critters: ^0.0.10
+    critters: ^0.0.11
     dedent: ^0.7.0
     eslint: ^7.32.0
     eslint-config-next: ^11.1.2
@@ -8297,12 +8327,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.23":
-  version: 3.1.29
-  resolution: "nanoid@npm:3.1.29"
+"nanoid@npm:^3.1.23, nanoid@npm:^3.1.28":
+  version: 3.1.30
+  resolution: "nanoid@npm:3.1.30"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 8837bc351ac6d26882d568ce3e1d5e2d5095b0c6ca99aa8f5710eff5153e0aea4c5273681c7642d9d7a6f6e20fb1d32e5eb1125c70b25bdead417f007d30f96f
+  checksum: 276d0d4b0c41c46aeefec5f09f093e4085a2352d06881c845db22b84f8ef72cc8defae6d76bfb1d8a2a128eb2dec42ab148d16582be4e7754c97905806ef57b6
   languageName: node
   linkType: hard
 
@@ -8582,7 +8612,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nth-check@npm:^1.0.2":
+"nth-check@npm:^1.0.2, nth-check@npm:~1.0.1":
   version: 1.0.2
   resolution: "nth-check@npm:1.0.2"
   dependencies:
@@ -9107,6 +9137,17 @@ __metadata:
     nanoid: ^3.1.23
     source-map: ^0.6.1
   checksum: 07c309e5318843cdbb240b19101c8c679e19cb88544811de921dd9125118d6c0603afe925da7f2ac928dd7d4c0c6380ccdedf032400af5013210a3f145baca5d
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.3.7":
+  version: 8.3.9
+  resolution: "postcss@npm:8.3.9"
+  dependencies:
+    nanoid: ^3.1.28
+    picocolors: ^0.2.1
+    source-map-js: ^0.6.2
+  checksum: b64d0e59bc027b2f09e5a84ca32b4f0620553812110e42295a79fd0e6ea664779e575c2d5e8d35a1b0804f0933ec878404c6e161e008b5bc51cba44eaef216ef
   languageName: node
   linkType: hard
 
@@ -10149,6 +10190,13 @@ resolve@^2.0.0-next.3:
   version: 2.0.1
   resolution: "source-list-map@npm:2.0.1"
   checksum: 806efc6f75e7cd31e4815e7a3aaf75a45c704871ea4075cb2eb49882c6fca28998f44fc5ac91adb6de03b2882ee6fb02f951fdc85e6a22b338c32bfe19557938
+  languageName: node
+  linkType: hard
+
+"source-map-js@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "source-map-js@npm:0.6.2"
+  checksum: 9c8151a29e00fd8d3ba87709fdf9a9ce48313d653f4a29a39b4ae53d346ac79e005de624796ff42eff55cbaf26d2e87f4466001ca87831d400d818c5cf146a0e
   languageName: node
   linkType: hard
 
