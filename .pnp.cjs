@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:5.1.0"],
             ["clsx", "npm:1.1.1"],
             ["contentful", "npm:9.1.3"],
-            ["critters", "npm:0.0.12"],
+            ["critters", "npm:0.0.14"],
             ["dedent", "npm:0.7.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-next", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.1.2"],
@@ -6337,10 +6337,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["critters", [
-        ["npm:0.0.12", {
-          "packageLocation": "./.yarn/cache/critters-npm-0.0.12-cf5ca61a26-3a4ce08a13.zip/node_modules/critters/",
+        ["npm:0.0.14", {
+          "packageLocation": "./.yarn/cache/critters-npm-0.0.14-9dc1ff3ba9-ccde57f7b3.zip/node_modules/critters/",
           "packageDependencies": [
-            ["critters", "npm:0.0.12"],
+            ["critters", "npm:0.0.14"],
             ["chalk", "npm:4.1.2"],
             ["css-select", "npm:4.1.3"],
             ["parse5", "npm:6.0.1"],
@@ -8688,7 +8688,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:5.1.0"],
             ["clsx", "npm:1.1.1"],
             ["contentful", "npm:9.1.3"],
-            ["critters", "npm:0.0.12"],
+            ["critters", "npm:0.0.14"],
             ["dedent", "npm:0.7.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-next", "virtual:24ed5072520b186e6880323b89c95519458602dc1d9426040c4bd42ed3c47f0ca0b16a729b9342e305e16840d9d43bca314a098a8ea67c867070bc60d10b9144#npm:11.1.2"],
