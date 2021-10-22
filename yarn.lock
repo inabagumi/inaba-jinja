@@ -4318,9 +4318,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"critters@npm:^0.0.12":
-  version: 0.0.12
-  resolution: "critters@npm:0.0.12"
+"critters@npm:^0.0.14":
+  version: 0.0.14
+  resolution: "critters@npm:0.0.14"
   dependencies:
     chalk: ^4.1.0
     css-select: ^4.1.3
@@ -4328,7 +4328,7 @@ __metadata:
     parse5-htmlparser2-tree-adapter: ^6.0.1
     postcss: ^8.3.7
     pretty-bytes: ^5.3.0
-  checksum: 3a4ce08a1342b0b580fe5413df5ff06d50aa4c7ab0681cfe1b1a3da50ccf6629296f7d66e65b847f1c0c8399c4838cc731eac6619da9c60b9a3478b5d176ab27
+  checksum: ccde57f7b30e911b0c677515a66fbe8e9a12623acee2864667541224e2b311766482672f0fb8fcc729a3cb49493f38fd82530a3484f7aeece428f6c24c899d9c
   languageName: node
   linkType: hard
 
@@ -6297,7 +6297,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.1.0
     clsx: ^1.1.1
     contentful: ^9.1.3
-    critters: ^0.0.12
+    critters: ^0.0.14
     dedent: ^0.7.0
     eslint: ^7.32.0
     eslint-config-next: ^11.1.2
