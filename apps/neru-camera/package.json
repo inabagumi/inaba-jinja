@@ -35,7 +35,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "is-ci": "^3.0.0",
-    "lint-staged": "^11.2.3",
+    "lint-staged": "^11.2.4",
     "next-pwa": "^5.4.0",
     "postcss": "^8.3.11",
     "prettier": "~2.4.1",
