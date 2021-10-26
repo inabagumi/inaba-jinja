@@ -3328,12 +3328,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.23.0":
-  version: 0.23.0
-  resolution: "axios@npm:0.23.0"
+"axios@npm:^0.24.0":
+  version: 0.24.0
+  resolution: "axios@npm:0.24.0"
   dependencies:
     follow-redirects: ^1.14.4
-  checksum: 879f61022bd825da2a7ebb72410bc528683ba54c140436baa0b924b7cab02ec0919fe64a04a546f482a75f5fd570b77884f9826764a95f2fd88265e61dcb70db
+  checksum: 468cf496c08a6aadfb7e699bebdac02851e3043d4e7d282350804ea8900e30d368daa6e3cd4ab83b8ddb5a3b1e17a5a21ada13fc9cebd27b74828f47a4236316
   languageName: node
   linkType: hard
 
@@ -4176,16 +4176,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:^9.1.3":
-  version: 9.1.3
-  resolution: "contentful@npm:9.1.3"
+"contentful@npm:^9.1.4":
+  version: 9.1.4
+  resolution: "contentful@npm:9.1.4"
   dependencies:
-    axios: ^0.23.0
+    axios: ^0.24.0
     contentful-resolve-response: ^1.3.0
     contentful-sdk-core: ^6.9.0
     fast-copy: ^2.1.0
     json-stringify-safe: ^5.0.1
-  checksum: 73efbef5666e907a17b3e3b35bf5517c0e5a878ca27b4122e7ef277ef89fa5611248df605884d4be035a45a624151a4184b436ad8a49ac227415062066087cb5
+  checksum: 6182d2b0e1647618c7d99dabf51a87ff2842424e9e1a15c5834cf0bbab4f52d0bf7a7632f57f62d84388291eb3be6cc60747cf1a36fa79370c893d222fe74ce5
   languageName: node
   linkType: hard
 
@@ -6303,7 +6303,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.2.0
     "@typescript-eslint/parser": ^5.2.0
     clsx: ^1.1.1
-    contentful: ^9.1.3
+    contentful: ^9.1.4
     critters: ^0.0.14
     dedent: ^0.7.0
     eslint: ^7.32.0
