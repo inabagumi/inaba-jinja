@@ -1,4 +1,0 @@
-/.yarn/**/*.cjs linguist-vendored
-/.yarn/sdks/*  linguist-vendored
-/.pnp.cjs linguist-vendored
-/yarn.lock linguist-language=YAML
