@@ -1,8 +1,8 @@
 import MarkdownDoc from '@/components/markdown-doc'
 
-export const title = 'プライバシーポリシー'
-export const path = '/privacy'
-export default MarkdownDoc
+export default function Root(props) {
+  return <MarkdownDoc path="/privacy" title="プライバシーポリシー" {...props} />
+}
 
 当ウェブサービスでは[Googleアナリティクス](https://developers.google.com/analytics/?hl=ja)を利用してトラフィックデータを収集しています。
 収集されたトラフィックデータは匿名化され、あなたの個人が特定されることはありません。

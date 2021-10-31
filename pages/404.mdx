@@ -1,6 +1,7 @@
 import MarkdownDoc from '@/components/markdown-doc'
 
-export const title = 'ページが見つかりません'
-export default MarkdownDoc
+export default function Root(props) {
+  return <MarkdownDoc title="ページが見つかりません" {...props} />
+}
 
 申し訳ありませんがお探しのページを見つけられませんでした。

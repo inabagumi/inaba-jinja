@@ -1,13 +1,13 @@
-.link {
+.markdown a {
   color: var(--ij-color-primary);
   text-decoration: none;
 }
 
-.link:hover {
+.markdown a:hover {
   text-decoration: underline;
 }
 
-.emphasis {
+.markdown em {
   font-style: normal;
   font-weight: 700;
 }
