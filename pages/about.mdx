@@ -1,8 +1,8 @@
 import MarkdownDoc from '@/components/markdown-doc'
 
-export const title = '因幡神社とは'
-export const path = '/about'
-export default MarkdownDoc
+export default function Root(props) {
+  return <MarkdownDoc path="/about" title="因幡神社とは" {...props} />
+}
 
 因幡神社は有閑喫茶あにまーれの[因幡はねる様](https://www.youtube.com/channel/UC0Owc36U9lOyi9Gx9Ic-4qg)のファンによって開発と運用が行われている非公式なウェブページです。2018年11月16日に開催されたイベント『因の者オフ会』で販売された因幡はねる様が作成したおみくじを引ける機能を備えています。
 

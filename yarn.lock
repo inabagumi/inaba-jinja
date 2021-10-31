@@ -1396,7 +1396,7 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@mdx-js/loader@^2.0.0-next.9":
+"@mdx-js/loader@^2.0.0-rc.1":
   version "2.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-2.0.0-rc.1.tgz#56588fc0ab8ab85cea24a2589f6ea34c1e89d1c5"
   integrity sha512-qAwpcpa7lxovWONlBRYMmCWJti7PstIQQ7gAhXvHGDsIp8I/tJiCLNIE9/KTXCsN8TJoMoOoSxzxYToKtvYAUw==
@@ -1428,7 +1428,7 @@
     unist-util-visit "^4.0.0"
     vfile "^5.0.0"
 
-"@mdx-js/react@^2.0.0-next.9":
+"@mdx-js/react@^2.0.0-rc.1":
   version "2.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-2.0.0-rc.1.tgz#e45342c10d1fd8a47384485547e24ccd3bf184a5"
   integrity sha512-oV1DvXamgZFQsKNU1ZVWwoMAVwbu+As2NqtMrzmSeQ6YMndYDg/aP8pIMW3CZ4YppeyvgVV8ZwuTIlMO3FfatQ==
@@ -1965,7 +1965,7 @@
   resolved "https://registry.yarnpkg.com/@types/mdurl/-/mdurl-1.0.2.tgz#e2ce9d83a613bacf284c7be7d491945e39e1f8e9"
   integrity sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==
 
-"@types/mdx@^2.0.0":
+"@types/mdx@^2.0.0", "@types/mdx@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/mdx/-/mdx-2.0.1.tgz#e4c05d355d092d7b58db1abfe460e53f41102ac8"
   integrity sha512-JPEv4iAl0I+o7g8yVWDwk30es8mfVrjkvh5UeVR2sYPpZCK44vrAPsbJpIS+rJAUxLgaSAMKTEH5Vn5qd9XsrQ==
