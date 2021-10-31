@@ -8,8 +8,8 @@
 
 @media (min-width: 960px) {
   .container {
-    min-height: 100vh;
-    padding: 0;
+    min-height: 80vh;
+    padding: 1em;
   }
 }
 
