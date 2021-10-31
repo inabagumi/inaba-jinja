@@ -28,7 +28,6 @@
     "@commitlint/config-conventional": "^13.2.0",
     "@inabagumi/prettier-config": "^2.0.0",
     "@mdx-js/loader": "^2.0.0-rc.1",
-    "@next/mdx": "^12.0.1",
     "@svgr/webpack": "^6.0.0-alpha.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
@@ -54,6 +53,7 @@
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^5.4.0",
     "prettier": "~2.4.1",
+    "remark-gfm": "^3.0.0",
     "typescript": "~4.4.4"
   },
   "homepage": "https://inaba-jinja.com",
