@@ -1768,6 +1768,11 @@
     "@svgr/plugin-svgo" "^6.0.0-alpha.1"
     loader-utils "^2.0.0"
 
+"@swc/jest@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@swc/jest/-/jest-0.2.5.tgz#2c9a84974208524e70192f1ff1c090cf6252c292"
+  integrity sha512-7Vb+RXuXWk47QbOPJ3hwSIMCwUVylp7JUhUITVtMe3hMoBv0IMfVCML9p6jiRhoBAzjzYDPPteKoVxSUJjFNPA==
+
 "@testing-library/dom@^8.0.0":
   version "8.10.1"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.10.1.tgz#e24fed92ad51c619cf304c6f1410b4c76b1000c0"
