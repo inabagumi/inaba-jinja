@@ -11,6 +11,8 @@
 
 @media (min-width: 960px) {
   .wrapper {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
   }
 }
@@ -157,6 +159,11 @@
   line-height: 1;
   vertical-align: middle;
   width: auto;
+}
+
+.content {
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .footer {
