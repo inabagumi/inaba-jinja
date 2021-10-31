@@ -2,13 +2,10 @@ name: Test
 
 on:
   pull_request:
-    branches:
-      - main
+    branches: [main]
   push:
-    branches:
-      - main
-    tags:
-      - '!v*'
+    branches: [main]
+    tags: ['!v*']
 
 jobs:
   build:
@@ -21,15 +18,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.x
-      - name: Get yarn cache directory path
-        id: yarn-pnp-unplugged-dir-path
-        run: echo "::set-output name=dir::$(yarn config get pnpUnpluggedFolder)"
-      - uses: actions/cache@v2
-        with:
-          path: ${{ steps.yarn-pnp-unplugged-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+          cache: yarn
       - name: Install dependencies
         run: yarn install --immutable
       - name: Format check

@@ -72,8 +72,5 @@ module.exports = {
         ignoreCase: false
       }
     ]
-  },
-  settings: {
-    'import/external-module-folders': ['.yarn']
   }
 }
