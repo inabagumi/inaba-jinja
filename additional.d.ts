@@ -1,10 +1,4 @@
-/// <reference types="@mdx-js/loader" />
-
-declare module '*.mdx' {
-  const MDXComponent: () => JSX.Element
-
-  export default MDXComponent
-}
+/// <reference types="mdx" />
 
 declare module '*.svg' {
   import type { SVGProps, VFC } from 'react'
