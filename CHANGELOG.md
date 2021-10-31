@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://www.github.com/inabagumi/inaba-jinja/compare/v2.0.0...v2.1.0) (2021-10-31)
+
+
+### Features
+
+* **middleware:** restrict imgix ([#1712](https://www.github.com/inabagumi/inaba-jinja/issues/1712)) ([9eee2cc](https://www.github.com/inabagumi/inaba-jinja/commit/9eee2cc1269d04b0bd13623d31207b5486d8094f))
+* **style:** always showing footer ([#1715](https://www.github.com/inabagumi/inaba-jinja/issues/1715)) ([c492df8](https://www.github.com/inabagumi/inaba-jinja/commit/c492df8f9493cea62a93020f804ef5d72afea3d1))
+
+
+### Bug Fixes
+
+* re-enable gfm ([#1717](https://www.github.com/inabagumi/inaba-jinja/issues/1717)) ([5e40007](https://www.github.com/inabagumi/inaba-jinja/commit/5e4000703a879a247a7e99721e33d75637b10e7b))
+
 ## [2.0.0](https://www.github.com/inabagumi/inaba-jinja/compare/v1.20.1...v2.0.0) (2021-10-07)
 
 
