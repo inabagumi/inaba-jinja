@@ -1471,11 +1471,6 @@
   dependencies:
     glob "7.1.7"
 
-"@next/mdx@^12.0.1":
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-12.0.1.tgz#fa71dbb4fdb9307fb13e461766c11d8bf3f3f4cf"
-  integrity sha512-hF8l6/CYdcPUSkoBwK3HES5oKchSFMjxEqNPI4z4puhw8gfl/3LsxsI0LpcKT3LoZLhkNuiCMbNyzHnXszVWUA==
-
 "@next/polyfill-module@12.0.1":
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/@next/polyfill-module/-/polyfill-module-12.0.1.tgz#d20abf06f686ee7a8bd0d9056accfd0662f19e87"
@@ -1978,7 +1973,7 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
-"@types/mdast@^3.0.0":
+"@types/mdast@^3.0.0", "@types/mdast@^3.0.3":
   version "3.0.10"
   resolved "https://registry.yarnpkg.com/@types/mdast/-/mdast-3.0.10.tgz#4724244a82a4598884cbbe9bcfd73dff927ee8af"
   integrity sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==
@@ -2851,6 +2846,11 @@ caniuse-lite@^1.0.30001202, caniuse-lite@^1.0.30001219, caniuse-lite@^1.0.300012
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001274.tgz#26ca36204d15b17601ba6fc35dbdad950a647cc7"
   integrity sha512-+Nkvv0fHyhISkiMIjnyjmf5YJcQ1IQHZN6U9TLUMroWR38FNwpsC51Gb68yueafX1V6ifOisInSgP9WJFS13ew==
 
+ccount@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ccount/-/ccount-2.0.1.tgz#17a3bf82302e0870d6da43a01311a8bc02a3ecf5"
+  integrity sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==
+
 chalk@2.4.2, chalk@^2.0.0:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
@@ -3716,6 +3716,11 @@ escape-string-regexp@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
+
+escape-string-regexp@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz#4683126b500b61762f2dbebace1806e8be31b1c8"
+  integrity sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==
 
 escodegen@^2.0.0:
   version "2.0.0"
@@ -5778,6 +5783,11 @@ markdown-extensions@^1.0.0:
   resolved "https://registry.yarnpkg.com/markdown-extensions/-/markdown-extensions-1.1.1.tgz#fea03b539faeaee9b4ef02a3769b455b189f7fc3"
   integrity sha512-WWC0ZuMzCyDHYCasEGs4IPvLyTGftYwh6wIEOULOF0HXcqZlhwRzrK0w2VUlxWA98xnvb/jszw4ZSkJ6ADpM6Q==
 
+markdown-table@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-3.0.1.tgz#88c48957aaf2a8014ccb2ba026776a1d736fe3dc"
+  integrity sha512-CBbaYXKSGnE1uLRpKA1SWgIRb2PQrpkllNWpZtZe6VojOJ4ysqiq7/2glYcmKsOYN09QgH/HEBX5hIshAeiK6A==
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -5796,6 +5806,15 @@ mdast-util-definitions@^5.0.0:
     "@types/unist" "^2.0.0"
     unist-util-visit "^3.0.0"
 
+mdast-util-find-and-replace@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-find-and-replace/-/mdast-util-find-and-replace-2.1.0.tgz#69728acd250749f8aac6e150e07d1fd15619e829"
+  integrity sha512-1w1jbqAd13oU78QPBf5223+xB+37ecNtQ1JElq2feWols5oEYAl+SgNDnOZipe7NfLemoEt362yUS15/wip4mw==
+  dependencies:
+    escape-string-regexp "^5.0.0"
+    unist-util-is "^5.0.0"
+    unist-util-visit-parents "^4.0.0"
+
 mdast-util-from-markdown@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mdast-util-from-markdown/-/mdast-util-from-markdown-1.0.4.tgz#b1fefae59cf4a6368779e01b7e830281ee277532"
@@ -5813,6 +5832,61 @@ mdast-util-from-markdown@^1.0.0:
     parse-entities "^3.0.0"
     unist-util-stringify-position "^3.0.0"
     uvu "^0.5.0"
+
+mdast-util-gfm-autolink-literal@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/mdast-util-gfm-autolink-literal/-/mdast-util-gfm-autolink-literal-1.0.2.tgz#4032dcbaddaef7d4f2f3768ed830475bb22d3970"
+  integrity sha512-FzopkOd4xTTBeGXhXSBU0OCDDh5lUj2rd+HQqG92Ld+jL4lpUfgX2AT2OHAVP9aEeDKp7G92fuooSZcYJA3cRg==
+  dependencies:
+    "@types/mdast" "^3.0.0"
+    ccount "^2.0.0"
+    mdast-util-find-and-replace "^2.0.0"
+    micromark-util-character "^1.0.0"
+
+mdast-util-gfm-footnote@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-gfm-footnote/-/mdast-util-gfm-footnote-1.0.0.tgz#355c1e8dc9e17e871d1b3fa5da8824923fc756e0"
+  integrity sha512-qeg9YoS2YYP6OBmMyUFxKXb6BLwAsbGidIxgwDAXHIMYZQhIwe52L9BSJs+zP29Jp5nSERPkmG3tSwAN23/ZbQ==
+  dependencies:
+    "@types/mdast" "^3.0.0"
+    mdast-util-to-markdown "^1.0.0"
+    micromark-util-normalize-identifier "^1.0.0"
+    unist-util-visit "^4.0.0"
+
+mdast-util-gfm-strikethrough@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-gfm-strikethrough/-/mdast-util-gfm-strikethrough-1.0.0.tgz#6cc72ef5d9539f4cee76af3f15dd0daa9e3af40f"
+  integrity sha512-gM9ipBUdRxYa6Yq1Hd8Otg6jEn/dRxFZ1F9ZX4QHosHOexLGqNZO2dh0A+YFbUEd10RcKjnjb4jOfJJzoXXUew==
+  dependencies:
+    "@types/mdast" "^3.0.3"
+    mdast-util-to-markdown "^1.0.0"
+
+mdast-util-gfm-table@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mdast-util-gfm-table/-/mdast-util-gfm-table-1.0.1.tgz#07c269a219d66ec2deb6de38aed0ba1d1f9442df"
+  integrity sha512-NByKuaSg5+M6r9DZBPXFUmhMHGFf9u+WE76EeStN01ghi8hpnydiWBXr+qj0XCRWI7SAMNtEjGvip6zci9axQA==
+  dependencies:
+    markdown-table "^3.0.0"
+    mdast-util-to-markdown "^1.0.0"
+
+mdast-util-gfm-task-list-item@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-gfm-task-list-item/-/mdast-util-gfm-task-list-item-1.0.0.tgz#a0aa2a00c893f9f006d13ba096cbc64608559c7f"
+  integrity sha512-dwkzOTjQe8JCCHVE3Cb0pLHTYLudf7t9WCAnb20jI8/dW+VHjgWhjtIUVA3oigNkssgjEwX+i+3XesUdCnXGyA==
+  dependencies:
+    "@types/mdast" "^3.0.3"
+    mdast-util-to-markdown "^1.0.0"
+
+mdast-util-gfm@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-gfm/-/mdast-util-gfm-2.0.0.tgz#2545856bc18a66d5cc63fbef0b097a020a8e9e3d"
+  integrity sha512-wMwejlTN3EQADPFuvxe8lmGsay3+f6gSJKdAHR6KBJzpcxvsjJSILB9K6u6G7eQLC7iOTyVIHYGui9uBc9r1Tg==
+  dependencies:
+    mdast-util-gfm-autolink-literal "^1.0.0"
+    mdast-util-gfm-footnote "^1.0.0"
+    mdast-util-gfm-strikethrough "^1.0.0"
+    mdast-util-gfm-table "^1.0.0"
+    mdast-util-gfm-task-list-item "^1.0.0"
 
 mdast-util-mdx-expression@^1.0.0:
   version "1.1.1"
@@ -5946,6 +6020,85 @@ micromark-core-commonmark@^1.0.0, micromark-core-commonmark@^1.0.1:
     micromark-util-types "^1.0.1"
     parse-entities "^3.0.0"
     uvu "^0.5.0"
+
+micromark-extension-gfm-autolink-literal@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-autolink-literal/-/micromark-extension-gfm-autolink-literal-1.0.2.tgz#aafadc9ef2f8078d359eb635f144d913c669e0f6"
+  integrity sha512-z2Asd0v4iV/QoI1l23J1qB6G8IqVWTKmwdlP45YQfdGW47ZzpddyzSxZ78YmlucOLqIbS5H98ekKf9GunFfnLA==
+  dependencies:
+    micromark-util-character "^1.0.0"
+    micromark-util-sanitize-uri "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    micromark-util-types "^1.0.0"
+    uvu "^0.5.0"
+
+micromark-extension-gfm-footnote@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-footnote/-/micromark-extension-gfm-footnote-1.0.2.tgz#cd6309f842db8859556b3708302abc7721351b5f"
+  integrity sha512-C6o+B7w1wDM4JjDJeHCTszFYF1q46imElNY6mfXsBfw4E91M9TvEEEt3sy0FbJmGVzdt1pqFVRYWT9ZZ0FjFuA==
+  dependencies:
+    micromark-core-commonmark "^1.0.0"
+    micromark-factory-space "^1.0.0"
+    micromark-util-character "^1.0.0"
+    micromark-util-normalize-identifier "^1.0.0"
+    micromark-util-sanitize-uri "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    uvu "^0.5.0"
+
+micromark-extension-gfm-strikethrough@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-strikethrough/-/micromark-extension-gfm-strikethrough-1.0.3.tgz#010900cfc9a2bf35d2859612c356a21d7fb19af5"
+  integrity sha512-PJKhBNyrNIo694ZQCE/FBBQOQSb6YC0Wi5Sv0OCah5XunnNaYbtak9CSv9/eq4YeFMMyd1jX84IRwUSE+7ioLA==
+  dependencies:
+    micromark-util-chunked "^1.0.0"
+    micromark-util-classify-character "^1.0.0"
+    micromark-util-resolve-all "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    micromark-util-types "^1.0.0"
+    uvu "^0.5.0"
+
+micromark-extension-gfm-table@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-table/-/micromark-extension-gfm-table-1.0.3.tgz#4761e35e3d21bde691aa06313406e1124a319239"
+  integrity sha512-JIfE1DGi64zzOx39/pGg6cZbiaUAF/MXbBLZnVl4aFz6Mja7GYMZjksfTGm9NzbgZkiZvbD77NLPuwGIRcFMjg==
+  dependencies:
+    micromark-factory-space "^1.0.0"
+    micromark-util-character "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    micromark-util-types "^1.0.0"
+    uvu "^0.5.0"
+
+micromark-extension-gfm-tagfilter@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-tagfilter/-/micromark-extension-gfm-tagfilter-1.0.0.tgz#a38c7c462c2007b534fcb485e9310165879654a7"
+  integrity sha512-GGUZhzQrOdHR8RHU2ru6K+4LMlj+pBdNuXRtw5prOflDOk2hHqDB0xEgej1AHJ2VETeycX7tzQh2EmaTUOmSKg==
+  dependencies:
+    micromark-util-types "^1.0.0"
+
+micromark-extension-gfm-task-list-item@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-task-list-item/-/micromark-extension-gfm-task-list-item-1.0.2.tgz#953c1cd565df864790815c3a162d452d004255ed"
+  integrity sha512-8AZib9xxPtppTKig/d00i9uKi96kVgoqin7+TRtGprDb8uTUrN1ZfJ38ga8yUdmu7EDQxr2xH8ltZdbCcmdshg==
+  dependencies:
+    micromark-factory-space "^1.0.0"
+    micromark-util-character "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    micromark-util-types "^1.0.0"
+    uvu "^0.5.0"
+
+micromark-extension-gfm@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm/-/micromark-extension-gfm-2.0.0.tgz#d9d1b82967f43c346a335864060c16b735e3861f"
+  integrity sha512-yYPlZ48Ss8fRFSmlQP/QXt3/M6tEvawEVFO+jDPnFA3mGeVgzIyaeHgrIV/9AMFAjQhctKA47Bk8xBhcuaL74Q==
+  dependencies:
+    micromark-extension-gfm-autolink-literal "^1.0.0"
+    micromark-extension-gfm-footnote "^1.0.0"
+    micromark-extension-gfm-strikethrough "^1.0.0"
+    micromark-extension-gfm-table "^1.0.0"
+    micromark-extension-gfm-tagfilter "^1.0.0"
+    micromark-extension-gfm-task-list-item "^1.0.0"
+    micromark-util-combine-extensions "^1.0.0"
+    micromark-util-types "^1.0.0"
 
 micromark-extension-mdx-expression@^1.0.0:
   version "1.0.2"
@@ -7200,6 +7353,16 @@ regjsparser@^0.7.0:
   integrity sha512-A4pcaORqmNMDVwUjWoTzuhwMGpP+NykpfqAsEgI1FSH/EzC7lrN5TMd+kN8YCovX+jMpu8eaqXgXPCa0g8FQNQ==
   dependencies:
     jsesc "~0.5.0"
+
+remark-gfm@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/remark-gfm/-/remark-gfm-3.0.0.tgz#a2efb06eceb8472610f095ccbff82d17daa1f415"
+  integrity sha512-CXJw5h1iwUW6czFwi4tveoOSlsEZU44hcdNzUxC5uiNi7r/OQySf46AoEihM8/NwBbW1LcsnyGIsHBnbURFw2g==
+  dependencies:
+    "@types/mdast" "^3.0.0"
+    mdast-util-gfm "^2.0.0"
+    micromark-extension-gfm "^2.0.0"
+    unified "^10.0.0"
 
 remark-mdx@^2.0.0-rc.1:
   version "2.0.0-rc.1"

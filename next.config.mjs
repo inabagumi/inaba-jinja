@@ -1,6 +1,6 @@
-const withMDX = require('@next/mdx')()
-const withPlugins = require('next-compose-plugins')
-const withPWA = require('next-pwa')
+import withPlugins from 'next-compose-plugins'
+import withPWA from 'next-pwa'
+import remarkGfm from 'remark-gfm'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -63,6 +63,7 @@ const nextConfig = {
     : {
         domains: []
       },
+  pageExtensions: ['mdx', 'tsx', 'ts'],
   reactStrictMode: true,
   async redirects() {
     return [
@@ -104,6 +105,20 @@ const nextConfig = {
   },
   webpack(config, { defaultLoaders }) {
     config.module.rules.push({
+      test: /\.mdx$/,
+      use: [
+        defaultLoaders.babel,
+        {
+          loader: '@mdx-js/loader',
+          /** @type {import('@mdx-js/loader').Options} */
+          options: {
+            remarkPlugins: [remarkGfm]
+          }
+        }
+      ]
+    })
+
+    config.module.rules.push({
       test: /\.svg$/,
       use: [
         defaultLoaders.babel,
@@ -121,14 +136,8 @@ const nextConfig = {
   }
 }
 
-module.exports = withPlugins(
+export default withPlugins(
   [
-    [
-      withMDX,
-      {
-        pageExtensions: ['mdx', 'tsx', 'ts']
-      }
-    ],
     [
       withPWA,
       {
