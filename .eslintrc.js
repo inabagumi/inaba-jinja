@@ -1,5 +1,7 @@
+// @ts-check
+
 /** @type {import('eslint').Linter.Config} */
-module.exports = {
+const eslintConfig = {
   env: {
     es2020: true
   },
@@ -20,7 +22,7 @@ module.exports = {
       env: {
         commonjs: true
       },
-      files: ['.*rc.js', '*.config.js'],
+      files: ['.eslintrc.js', '**/*.cjs'],
       parserOptions: {
         sourceType: 'script'
       }
@@ -74,3 +76,5 @@ module.exports = {
     ]
   }
 }
+
+module.exports = eslintConfig
