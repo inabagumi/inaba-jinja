@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-
+import { MDXProvider } from '@mdx-js/react'
 import dedent from 'dedent'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -9,9 +9,15 @@ import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
 import Background from '@/components/background'
+import Link, { Props as LinkProps } from '@/components/link'
 import * as gtag from '@/lib/gtag'
+import type { FunctionComponent, MDXComponents } from 'mdx/types'
 import type { AppProps } from 'next/app'
 import type { VFC } from 'react'
+
+const mdxComponents: MDXComponents = {
+  a: Link as FunctionComponent<LinkProps>
+}
 
 const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -29,7 +35,7 @@ const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
   }, [router.events, handleRouterChangeComplete])
 
   return (
-    <>
+    <MDXProvider components={mdxComponents}>
       <Head>
         <meta content="viewport-fit=cover,width=device-width" name="viewport" />
 
@@ -76,7 +82,7 @@ const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
 
       <Component {...pageProps} />
       <Background />
-    </>
+    </MDXProvider>
   )
 }
 
