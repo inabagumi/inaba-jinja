@@ -37,5 +37,4 @@ yarn-error.log*
 *.tsbuildinfo
 
 # documents
-*.md
-*.mdx
+CHANGELOG.md

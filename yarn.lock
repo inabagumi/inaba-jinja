@@ -1768,6 +1768,11 @@
     "@svgr/plugin-svgo" "^6.0.0-alpha.1"
     loader-utils "^2.0.0"
 
+"@swc/jest@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@swc/jest/-/jest-0.2.5.tgz#2c9a84974208524e70192f1ff1c090cf6252c292"
+  integrity sha512-7Vb+RXuXWk47QbOPJ3hwSIMCwUVylp7JUhUITVtMe3hMoBv0IMfVCML9p6jiRhoBAzjzYDPPteKoVxSUJjFNPA==
+
 "@testing-library/dom@^8.0.0":
   version "8.10.1"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.10.1.tgz#e24fed92ad51c619cf304c6f1410b4c76b1000c0"
@@ -3722,7 +3727,7 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-next@~12.0.1:
+eslint-config-next@~12.0.2:
   version "12.0.2"
   resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-12.0.2.tgz#87ea50cf062d5701294948182cea9217ac0a45a4"
   integrity sha512-Tck3Ga3IQ+/6ziTraLc1CTQ9kw2jWzjgZtB6wsBOAvMauK25a/ociCW8SFXsYWVFb899tdqPemrTZEeXjXjrvQ==
@@ -6471,7 +6476,7 @@ next-pwa@^5.4.0:
     workbox-webpack-plugin "^6.3.0"
     workbox-window "^6.3.0"
 
-next@^12.0.1:
+next@^12.0.2:
   version "12.0.2"
   resolved "https://registry.yarnpkg.com/next/-/next-12.0.2.tgz#269512cdf14d12c535c12240280da95e7be2d006"
   integrity sha512-8YfNLK1pPYZzAhTB1EkaRdpT3KiRUlK8ad3gJOweeclAL7O5c96/GnrEZKMoSkpq1U0Lxa0qRf8ciUmzGfmDmA==
@@ -7003,6 +7008,11 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
+
+prettier-plugin-md-nocjsp@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-md-nocjsp/-/prettier-plugin-md-nocjsp-1.2.0.tgz#ad8fed862590c87bb2ad5e0b83dbb24d355ea2e8"
+  integrity sha512-ShX2dd8XoE6bi1zlY3U4yKJl/MN5LIdMDjVr//n/Dy6vWOWZdMqSFYeA7qcETTfUj6bTP4VfULDcQbgaJcgJKg==
 
 prettier@~2.4.1:
   version "2.4.1"
