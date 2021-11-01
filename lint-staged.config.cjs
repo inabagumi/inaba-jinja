@@ -5,5 +5,5 @@ module.exports = {
       .map((filename) => `--file ${filename}`)
       .join(' ')} --fix`
   ],
-  '*.{json,yml}': 'prettier -w'
+  '*.{json,md,mdx,yml}': 'prettier -w'
 }
