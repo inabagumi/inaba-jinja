@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://www.github.com/inabagumi/inaba-jinja/compare/v2.1.0...v2.1.1) (2021-11-01)
+
+
+### Bug Fixes
+
+* **mdx:** move mdx provider to _app ([#1727](https://www.github.com/inabagumi/inaba-jinja/issues/1727)) ([450779c](https://www.github.com/inabagumi/inaba-jinja/commit/450779c176f80d5ef6768d2714ef47b9445d5a0c))
+
 ## [2.1.0](https://www.github.com/inabagumi/inaba-jinja/compare/v2.0.0...v2.1.0) (2021-10-31)
 
 
