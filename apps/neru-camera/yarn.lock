@@ -5008,10 +5008,10 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
-pixi-viewport@^4.34.0:
-  version "4.34.0"
-  resolved "https://registry.yarnpkg.com/pixi-viewport/-/pixi-viewport-4.34.0.tgz#f28163ff1bd5cdce022483d18924418c12170e78"
-  integrity sha512-7yy+wmYievooFi3IxlWa6ojh79Qo8oh8doiRmMiC0D3+/0s7T3OobpjgXmk4IFGhfhZywkH/nOeHJT1N1ZrqEw==
+pixi-viewport@^4.34.1:
+  version "4.34.1"
+  resolved "https://registry.yarnpkg.com/pixi-viewport/-/pixi-viewport-4.34.1.tgz#70f6b750eb3d975a23ab6055b090daa93e87abfb"
+  integrity sha512-WoMMB7PL7bEL3z8M6KmR+ByTnYSQlKT70oUSE+nEI+BBn9ntKWCzFDaxY3SnnyansnNwCjZibjoJ5inhi7tHuA==
   dependencies:
     penner "^0.1.3"
 
