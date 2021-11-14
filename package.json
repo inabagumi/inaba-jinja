@@ -52,7 +52,7 @@
     "husky": "^7.0.4",
     "jest": "^27.3.1",
     "jest-config": "^27.3.1",
-    "lint-staged": "^12.0.1",
+    "lint-staged": "^12.0.2",
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^5.4.0",
     "prettier": "~2.4.1",
