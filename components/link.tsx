@@ -8,18 +8,12 @@ const Link = forwardRef<HTMLAnchorElement, Props>(function Link(
   { href = '', ...props },
   ref
 ) {
-  return /^https?:\/\//i.test(href) ? (
-    <a
-      href={href}
-      rel="noopener noreferrer"
-      target="_blank"
-      {...props}
-      ref={ref}
-    />
-  ) : (
+  return href || !/^https?:\/\//i.test(href) ? (
     <NextLink href={href}>
       <a {...props} ref={ref} />
     </NextLink>
+  ) : (
+    <a href={href} {...props} ref={ref} />
   )
 })
 
