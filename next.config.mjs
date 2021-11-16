@@ -1,5 +1,6 @@
 import withPlugins from 'next-compose-plugins'
 import withPWA from 'next-pwa'
+import rehypeExternalLinks from 'rehype-external-links'
 import remarkGfm from 'remark-gfm'
 
 /** @type {import('next').NextConfig} */
@@ -114,6 +115,14 @@ const nextConfig = {
           options: {
             jsx: true,
             providerImportSource: '@mdx-js/react',
+            rehypePlugins: [
+              [
+                rehypeExternalLinks,
+                {
+                  rel: ['noopener', 'noreferrer']
+                }
+              ]
+            ],
             remarkPlugins: [remarkGfm]
           }
         }
