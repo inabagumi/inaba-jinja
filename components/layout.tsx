@@ -127,17 +127,19 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
         </FocusLock>
       </RemoveScroll>
 
-      {!hideHeader && (
-        <header className={styles.header}>
-          <Link href="/" prefetch={false}>
-            <a className={styles.brand}>
-              <Logo aria-label="因幡神社" className={styles.brandLogo} />
-            </a>
-          </Link>
-        </header>
-      )}
+      <div>
+        {!hideHeader && (
+          <header className={styles.header}>
+            <Link href="/" prefetch={false}>
+              <a className={styles.brand}>
+                <Logo aria-label="因幡神社" className={styles.brandLogo} />
+              </a>
+            </Link>
+          </header>
+        )}
 
-      <div className={styles.content}>{children}</div>
+        {children}
+      </div>
 
       <footer className={styles.footer}>
         <nav>

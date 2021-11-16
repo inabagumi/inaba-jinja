@@ -11,8 +11,8 @@
 
 @media (min-width: 960px) {
   .wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr auto;
     min-height: 100vh;
   }
 }
@@ -49,8 +49,8 @@
   background-color: #fff;
   border-left: 1px solid #90a4ae;
   color: #212121;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   height: 100%;
   left: 100%;
   max-width: 100%;
@@ -159,11 +159,6 @@
   line-height: 1;
   vertical-align: middle;
   width: auto;
-}
-
-.content {
-  flex-grow: 1;
-  flex-shrink: 0;
 }
 
 .footer {
