@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.2](https://www.github.com/inabagumi/inaba-jinja/compare/v2.1.1...v2.1.2) (2021-11-16)
+
+
+### Bug Fixes
+
+* **mdx:** use rehype-external-links ([#1751](https://www.github.com/inabagumi/inaba-jinja/issues/1751)) ([2f4c2f8](https://www.github.com/inabagumi/inaba-jinja/commit/2f4c2f86127c1e183905abd38dae50a209a90e96))
+
 ### [2.1.1](https://www.github.com/inabagumi/inaba-jinja/compare/v2.1.0...v2.1.1) (2021-11-01)
 
 
