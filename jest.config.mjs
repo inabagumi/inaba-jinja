@@ -1,4 +1,6 @@
-import { defaults } from 'jest-config'
+import nextJest from 'next/jest.js'
+
+const createJestConfig = nextJest()
 
 /** @type {import('@jest/types').Config.InitialOptions} */
 const jestConfig = {
@@ -7,11 +9,7 @@ const jestConfig = {
     '\\.svg': '<rootDir>/__mocks__/svgMock.tsx'
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  testPathIgnorePatterns: [...defaults.testPathIgnorePatterns, '/.next/'],
-  testURL: 'https://inaba-jinja.test',
-  transform: {
-    '^.+\\.(t|j)sx?$': '@swc/jest'
-  }
+  testURL: 'https://inaba-jinja.test'
 }
 
-export default jestConfig
+export default createJestConfig(jestConfig)
