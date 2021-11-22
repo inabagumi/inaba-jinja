@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.3](https://www.github.com/inabagumi/inaba-jinja/compare/v2.1.2...v2.1.3) (2021-11-22)
+
+
+### Bug Fixes
+
+* **document:** replace to class based component ([#1764](https://www.github.com/inabagumi/inaba-jinja/issues/1764)) ([a9d02d8](https://www.github.com/inabagumi/inaba-jinja/commit/a9d02d8d69e590c50fd2311d3f00b5d8e285a5fd))
+
 ### [2.1.2](https://www.github.com/inabagumi/inaba-jinja/compare/v2.1.1...v2.1.2) (2021-11-16)
 
 
