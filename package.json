@@ -52,7 +52,7 @@
     "jest": "^27.3.1",
     "lint-staged": "^12.1.2",
     "next-compose-plugins": "^2.2.1",
-    "next-pwa": "^5.4.0",
+    "next-pwa": "^5.4.1",
     "prettier": "~2.4.1",
     "prettier-plugin-md-nocjsp": "^1.2.0",
     "rehype-external-links": "^1.0.0",
