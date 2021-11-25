@@ -53,7 +53,7 @@
     "lint-staged": "^12.1.2",
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^5.4.1",
-    "prettier": "~2.4.1",
+    "prettier": "~2.5.0",
     "prettier-plugin-md-nocjsp": "^1.2.0",
     "rehype-external-links": "^1.0.0",
     "remark-gfm": "^3.0.1",
