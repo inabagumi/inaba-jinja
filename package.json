@@ -30,7 +30,7 @@
     "@jest/types": "^27.4.2",
     "@mdx-js/loader": "^2.0.0-rc.2",
     "@svgr/webpack": "^6.1.0",
-    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^12.1.2",
     "@types/dedent": "^0.7.0",
     "@types/eslint": "^7.29.0",
