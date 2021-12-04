@@ -17,7 +17,7 @@ void main(void) {
 }
 `
 
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 export default class ChromaKeyFilter extends Filter {
   constructor(keyColor = '#00ff00') {
     super(undefined, fragmentShader)
@@ -38,4 +38,4 @@ export default class ChromaKeyFilter extends Filter {
     utils.hex2rgb(hex, this.uniforms.keyColor)
   }
 }
-/* eslint-enable @typescript-eslint/no-unsafe-member-access */
+/* eslint-enable @typescript-eslint/no-unsafe-argument */
