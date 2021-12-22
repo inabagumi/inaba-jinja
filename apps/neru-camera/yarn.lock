@@ -4920,10 +4920,10 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
-pixi-viewport@^4.34.3:
-  version "4.34.3"
-  resolved "https://registry.yarnpkg.com/pixi-viewport/-/pixi-viewport-4.34.3.tgz#5ea82becd662d377fc8c56312ac8f9334d60de5e"
-  integrity sha512-PK+AgByV/FA24R2QHt/OQa9+Z7kipKrPlFAw54e/fSMXwerfu9Z+TxndEbrMUznDKRs9zxefISmPS6q0LamS7g==
+pixi-viewport@^4.34.4:
+  version "4.34.4"
+  resolved "https://registry.yarnpkg.com/pixi-viewport/-/pixi-viewport-4.34.4.tgz#78d575235225d852e5017e89da7cc939ec50a9f8"
+  integrity sha512-JARPbHRxmbiedj2qc/kjwd0rKIplKoRcLIDjO9DAMtjXzAlVWAdkwLxvY7g2EJBCHqNqxrEQy9ssye1DM4XRKg==
 
 pixi.js@^6.2.1:
   version "6.2.1"
