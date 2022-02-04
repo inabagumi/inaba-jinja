@@ -41,10 +41,10 @@ const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
         />
       </Head>
 
-      {gtag.GA_TRACKING_ID && (
+      {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
         <>
           <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
             strategy="afterInteractive"
           />
           <Script
@@ -54,7 +54,7 @@ const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
-                gtag('config', '${gtag.GA_TRACKING_ID}');
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');
               `
             }}
             id="gtag-init"
