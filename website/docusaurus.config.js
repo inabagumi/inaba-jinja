@@ -21,6 +21,9 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js')
         },
+        googleAnalytics: {
+          trackingID: 'UA-140696242-1'
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
         }
@@ -84,9 +87,6 @@ module.exports = {
           }
         ],
         style: 'dark'
-      },
-      googleAnalytics: {
-        trackingID: 'UA-140696242-1'
       },
       image: 'https://haneru.dev/img/haneru-dev.jpg',
       navbar: {
