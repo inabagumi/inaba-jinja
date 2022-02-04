@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.4](https://github.com/inabagumi/inaba-jinja/compare/v2.1.3...v2.1.4) (2022-02-04)
+
+
+### Bug Fixes
+
+* remove send page view event ([#1867](https://github.com/inabagumi/inaba-jinja/issues/1867)) ([8c07909](https://github.com/inabagumi/inaba-jinja/commit/8c07909f19f6f5ceede64fbe95efc8722a4a45d1))
+
 ### [2.1.3](https://www.github.com/inabagumi/inaba-jinja/compare/v2.1.2...v2.1.3) (2021-11-22)
 
 
