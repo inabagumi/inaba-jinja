@@ -2,15 +2,12 @@ import '@/styles/globals.css'
 import { MDXProvider } from '@mdx-js/react'
 import dedent from 'dedent'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import Script from 'next/script'
-import { useCallback, useEffect } from 'react'
 import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
 import Background from '@/components/background'
 import Link, { Props as LinkProps } from '@/components/link'
-import * as gtag from '@/lib/gtag'
 import type { FunctionComponent, MDXComponents } from 'mdx/types'
 import type { AppProps } from 'next/app'
 import type { VFC } from 'react'
@@ -20,20 +17,6 @@ const mdxComponents: MDXComponents = {
 }
 
 const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
-  const router = useRouter()
-
-  const handleRouterChangeComplete = useCallback((url: string) => {
-    gtag.pageview(url)
-  }, [])
-
-  useEffect(() => {
-    router.events.on('routeChangeComplete', handleRouterChangeComplete)
-
-    return () => {
-      router.events.off('routeChangeComplete', handleRouterChangeComplete)
-    }
-  }, [router.events, handleRouterChangeComplete])
-
   return (
     <MDXProvider components={mdxComponents}>
       <Head>
