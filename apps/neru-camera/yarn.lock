@@ -2090,10 +2090,10 @@ braces@^3.0.1, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-browser-fs-access@^0.24.1:
-  version "0.24.1"
-  resolved "https://registry.yarnpkg.com/browser-fs-access/-/browser-fs-access-0.24.1.tgz#29b915fdcd2ef0972ebabc2b7685c6893d288a72"
-  integrity sha512-fRcwhfNej0h2Jy+Uodxjbc5PQvNkZyG9fXu3S6Mcv0kigKath5sL54GXfMtOay/A/ULMa956eQZ9lMWVPiLtMA==
+browser-fs-access@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/browser-fs-access/-/browser-fs-access-0.25.0.tgz#3b32fd86cc6e3ae18136225acdcae932e3b3fb43"
+  integrity sha512-ovMv4bO/+dPXTqpBpzvrW3N66oJhhNkGZZpE+1vZhQDWmU0FOTc2lD2T0AOuaFOSV0LV71j4+UFnYE1RW2XY2Q==
 
 browserslist@^4.17.5, browserslist@^4.19.1:
   version "4.19.3"
