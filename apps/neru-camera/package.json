@@ -53,5 +53,5 @@
     "prepare": "is-ci || husky install",
     "start": "next start"
   },
-  "version": "6.1.1"
+  "version": "6.2.0"
 }
