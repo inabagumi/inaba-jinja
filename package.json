@@ -47,7 +47,7 @@
     "critters": "^0.0.16",
     "eslint": "~8.9.0",
     "eslint-config-next": "~12.1.0",
-    "eslint-config-prettier": "~8.4.0",
+    "eslint-config-prettier": "~8.5.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
     "lint-staged": "^12.3.4",
