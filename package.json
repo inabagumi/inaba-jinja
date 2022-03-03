@@ -35,7 +35,7 @@
     "@types/dedent": "^0.7.0",
     "@types/eslint": "^8.4.1",
     "@types/gtag.js": "^0.0.8",
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.4.1",
     "@types/mdx": "^2.0.1",
     "@types/node": "^14.18.12",
     "@types/react": "^17.0.39",
