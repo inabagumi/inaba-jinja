@@ -1115,10 +1115,10 @@
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-2.0.0.tgz#a6087e00f49ed8d1de53301dbd7391a3bacbe509"
   integrity sha512-b5tcbqpJv4gmJca3SQrRQ+QH/cDlMV5rS9gi9zTPXtIRGMByR4hLMuIffkknbKTOQ5UrDjvrWBbzY1mfw5geJA==
 
-"@inlet/react-pixi@^6.6.5":
-  version "6.6.5"
-  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-6.6.5.tgz#46c8986b3e7fd3ec83198260cd03ac78e3319009"
-  integrity sha512-xflQcnxHtf/wlSAaFSk4r6ePGwe4iRRkMceYRqbweTTKfJEudN5LksxDbxpuNPm9vw6DqFKnOtUXG1Qa1ZmNjg==
+"@inlet/react-pixi@^6.6.6":
+  version "6.6.6"
+  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-6.6.6.tgz#6af4bf5755f5b3b61a3f2bb2e3605ef92ba31b2e"
+  integrity sha512-DXJCE+Tey/law7Br0BtOMl/u+ZMTT/MV36oSXG91eNOMs6cXew2XWbMuy/um3Rl8DIpeZ0edidxQeTJvR4EhqA==
 
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.0.5"
