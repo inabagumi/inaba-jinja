@@ -31,7 +31,7 @@
     "@mdx-js/loader": "^2.1.1",
     "@svgr/webpack": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.0.0",
+    "@testing-library/react": "^13.0.1",
     "@types/dedent": "^0.7.0",
     "@types/eslint": "^8.4.1",
     "@types/gtag.js": "^0.0.10",
