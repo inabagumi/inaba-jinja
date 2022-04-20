@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.1",
-    "@reach/portal": "^0.16.2",
-    "@reach/skip-nav": "^0.16.0",
+    "@reach/portal": "^0.17.0",
+    "@reach/skip-nav": "^0.17.0",
     "clsx": "^1.1.1",
     "contentful": "^9.1.22",
     "dedent": "^0.7.0",
