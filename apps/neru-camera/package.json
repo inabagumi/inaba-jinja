@@ -8,7 +8,7 @@
     "@reach/menu-button": "^0.17.0",
     "browser-fs-access": "^0.29.1",
     "clsx": "^1.1.1",
-    "contentful": "^9.1.24",
+    "contentful": "^9.1.26",
     "next": "^12.1.5",
     "next-seo": "^5.4.0",
     "pixi-viewport": "^4.34.4",
