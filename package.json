@@ -18,7 +18,7 @@
     "next": "^12.1.5",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-focus-lock": "^2.8.1",
+    "react-focus-lock": "^2.9.0",
     "react-remove-scroll": "^2.5.3",
     "sitemap": "^7.1.1"
   },
