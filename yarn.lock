@@ -6384,7 +6384,7 @@ react-dom@^18.1.0:
     loose-envify "^1.1.0"
     scheduler "^0.22.0"
 
-react-focus-lock@^2.8.1:
+react-focus-lock@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/react-focus-lock/-/react-focus-lock-2.9.0.tgz#c148fcadb78cc86968c722b0ed7369aa45585f1c"
   integrity sha512-MF4uqKm77jkz1gn5t2BAnHeWWsDevZofrCxp2utDls0FX7pW/F1cn7Xi7pSpnqxCP1JL2okS8tcFEFIfzjJcIw==
