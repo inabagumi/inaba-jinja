@@ -33,7 +33,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@types/dedent": "^0.7.0",
-    "@types/eslint": "^8.4.1",
+    "@types/eslint": "^8.4.2",
     "@types/gtag.js": "^0.0.10",
     "@types/jest": "^27.5.0",
     "@types/mdx": "^2.0.1",
