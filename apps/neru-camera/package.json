@@ -25,7 +25,7 @@
     "@next/eslint-plugin-next": "^12.1.6",
     "@types/eslint": "^8.4.2",
     "@types/node": "^14.18.16",
-    "@types/react": "^17.0.44",
+    "@types/react": "^17.0.45",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
     "autoprefixer": "^10.4.7",
