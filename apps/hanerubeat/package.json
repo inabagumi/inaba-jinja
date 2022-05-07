@@ -1,7 +1,7 @@
 {
   "author": "Haneru Developers",
   "dependencies": {
-    "next": "^12.1.5",
+    "next": "^12.1.6",
     "next-seo": "^5.4.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -17,7 +17,7 @@
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
     "eslint": "^8.15.0",
-    "eslint-config-next": "^12.1.5",
+    "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "file-loader": "^6.2.0",
