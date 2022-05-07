@@ -2,10 +2,6 @@ import { NextPage, PageConfig } from 'next'
 import { NextSeo } from 'next-seo'
 import { card } from '@/assets'
 
-export const config: PageConfig = {
-  amp: true
-}
-
 const canonical = 'https://774.ink/'
 
 const Home: NextPage = () => (
