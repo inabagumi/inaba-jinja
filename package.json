@@ -48,7 +48,7 @@
     "eslint": "~8.15.0",
     "eslint-config-next": "~12.1.6",
     "eslint-config-prettier": "~8.5.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.1",
     "jest": "^28.1.0",
     "lint-staged": "^12.4.1",
     "next-compose-plugins": "^2.2.1",
