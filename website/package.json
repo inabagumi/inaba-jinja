@@ -11,7 +11,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-hook-form": "^7.31.1",
-    "react-textarea-autosize": "^8.3.3"
+    "react-textarea-autosize": "^8.3.4"
   },
   "description": "We are Haneru Developers!",
   "devDependencies": {
