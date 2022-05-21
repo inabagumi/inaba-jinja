@@ -1,10 +1,10 @@
 /// <reference types="mdx" />
 
 declare module '*.svg' {
-  import type { SVGProps, VFC } from 'react'
+  import { type FC, type SVGProps } from 'react'
 
   type Props = SVGProps<SVGSVGElement>
-  const content: VFC<Props>
+  const content: FC<Props>
 
   export default content
 }

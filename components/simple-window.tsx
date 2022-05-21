@@ -1,13 +1,13 @@
 import { SkipNavContent } from '@reach/skip-nav'
+import { type FC, type ReactNode } from 'react'
 import styles from './simple-window.module.css'
-import type { ReactNode, VFC } from 'react'
 
 type Props = {
   children: ReactNode
   title?: string
 }
 
-const SimpleWindow: VFC<Props> = ({ children, title }) => {
+const SimpleWindow: FC<Props> = ({ children, title }) => {
   return (
     <div className={styles.wrapper}>
       <SkipNavContent />

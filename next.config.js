@@ -9,6 +9,7 @@ const nextConfig = {
     dirs: ['__mocks__', 'components', 'lib', 'pages']
   },
   experimental: {
+    newNextLinkBehavior: true,
     optimizeCss: true
   },
   async headers() {
@@ -104,6 +105,7 @@ const nextConfig = {
       }
     ]
   },
+  swcMinify: true,
   webpack(config, { defaultLoaders }) {
     config.module.rules.push({
       test: /\.mdx$/,

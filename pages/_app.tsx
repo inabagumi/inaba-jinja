@@ -1,22 +1,22 @@
 import '@/styles/globals.css'
 import { MDXProvider } from '@mdx-js/react'
 import dedent from 'dedent'
+import { type FunctionComponent, type MDXComponents } from 'mdx/types'
+import { type AppProps } from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
+import { type FC } from 'react'
 import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
 import Background from '@/components/background'
 import Link, { Props as LinkProps } from '@/components/link'
-import type { FunctionComponent, MDXComponents } from 'mdx/types'
-import type { AppProps } from 'next/app'
-import type { VFC } from 'react'
 
 const mdxComponents: MDXComponents = {
   a: Link as FunctionComponent<LinkProps>
 }
 
-const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <MDXProvider components={mdxComponents}>
       <Head>

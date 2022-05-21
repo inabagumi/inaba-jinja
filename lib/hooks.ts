@@ -1,5 +1,5 @@
 import pkg from '../package.json'
-import type { Fortune } from './contentful'
+import { type Fortune } from './contentful'
 
 export type BaseURLUtils = {
   withBaseURL: (path: string) => string

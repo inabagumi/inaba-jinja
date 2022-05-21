@@ -1,4 +1,4 @@
-module.exports = {
+const lintstagedrc = {
   '*.{js,ts,tsx}': (filenames) => [
     `prettier -w ${filenames.join(' ')}`,
     `next lint ${filenames
@@ -7,3 +7,5 @@ module.exports = {
   ],
   '*.{json,md,mdx,yml}': 'prettier -w'
 }
+
+export default lintstagedrc

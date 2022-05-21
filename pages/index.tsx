@@ -1,11 +1,11 @@
 import { SkipNavContent } from '@reach/skip-nav'
+import { type NextPage } from 'next'
 import Link from 'next/link'
 import cardImage from '@/assets/card.jpg'
 import Logo from '@/assets/vertical-logo.svg'
 import Page from '@/components/layout'
 import SEO from '@/components/seo'
 import styles from '@/styles/Home.module.css'
-import type { NextPage } from 'next'
 
 const description =
   '因幡神社は東京都北区赤羽のどこかにある神社です。有閑喫茶 あにまーれの因幡はねる様をご祭神としてお祀りしています。'
@@ -34,10 +34,8 @@ const HomePage: NextPage = () => (
 
         <SkipNavContent />
 
-        <Link href="/lottery">
-          <a className={styles.lotteryButton} role="button">
-            おみくじを引く
-          </a>
+        <Link className={styles.lotteryButton} href="/lottery" role="button">
+          おみくじを引く
         </Link>
       </main>
     </Page>

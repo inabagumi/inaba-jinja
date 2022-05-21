@@ -4,19 +4,19 @@ import { SkipNavLink } from '@reach/skip-nav'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { useCallback, useState } from 'react'
+import { type FC, type ReactNode } from 'react'
 import FocusLock from 'react-focus-lock'
 import { RemoveScroll } from 'react-remove-scroll'
 import Logo from '@/assets/logo.svg'
 import IconButton from '@/components/icon-button'
 import styles from './layout.module.css'
-import type { ReactNode, VFC } from 'react'
 
 type Props = {
   children: ReactNode
   hideHeader?: boolean
 }
 
-const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
+const Layout: FC<Props> = ({ children, hideHeader = false }) => {
   const [menuShown, setMenuShown] = useState(false)
 
   const showMenu = useCallback(() => {
@@ -67,15 +67,15 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
           returnFocus
         >
           <header className={styles.menuHeader}>
-            <Link href="/" prefetch={false}>
-              <a
-                className={styles.menuLogoLink}
-                onClick={hideMenu}
-                onKeyPress={hideMenu}
-                tabIndex={!menuShown ? -1 : undefined}
-              >
-                <Logo aria-label="因幡神社" className={styles.menuLogo} />
-              </a>
+            <Link
+              className={styles.menuLogoLink}
+              href="/"
+              onClick={hideMenu}
+              onKeyPress={hideMenu}
+              prefetch={false}
+              tabIndex={!menuShown ? -1 : undefined}
+            >
+              <Logo aria-label="因幡神社" className={styles.menuLogo} />
             </Link>
           </header>
 
@@ -84,29 +84,27 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
           <footer>
             <ul className={styles.menuList} role="menu">
               <li className={styles.menuItem} role="menuitem">
-                <Link href="/about" prefetch={false}>
-                  <a
-                    className={styles.menuLink}
-                    href="/about"
-                    onClick={hideMenu}
-                    onKeyPress={hideMenu}
-                    tabIndex={!menuShown ? -1 : undefined}
-                  >
-                    因幡神社とは
-                  </a>
+                <Link
+                  className={styles.menuLink}
+                  href="/about"
+                  onClick={hideMenu}
+                  onKeyPress={hideMenu}
+                  prefetch={false}
+                  tabIndex={!menuShown ? -1 : undefined}
+                >
+                  因幡神社とは
                 </Link>
               </li>
               <li className={styles.menuItem} role="menuitem">
-                <Link href="/privacy" prefetch={false}>
-                  <a
-                    className={styles.menuLink}
-                    href="/privacy"
-                    onClick={hideMenu}
-                    onKeyPress={hideMenu}
-                    tabIndex={!menuShown ? -1 : undefined}
-                  >
-                    プライバシーポリシー
-                  </a>
+                <Link
+                  className={styles.menuLink}
+                  href="/privacy"
+                  onClick={hideMenu}
+                  onKeyPress={hideMenu}
+                  prefetch={false}
+                  tabIndex={!menuShown ? -1 : undefined}
+                >
+                  プライバシーポリシー
                 </Link>
               </li>
               <li className={styles.menuItem} role="menuitem">
@@ -130,10 +128,8 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
       <div>
         {!hideHeader && (
           <header className={styles.header}>
-            <Link href="/" prefetch={false}>
-              <a className={styles.brand}>
-                <Logo aria-label="因幡神社" className={styles.brandLogo} />
-              </a>
+            <Link className={styles.brand} href="/" prefetch={false}>
+              <Logo aria-label="因幡神社" className={styles.brandLogo} />
             </Link>
           </header>
         )}
@@ -145,17 +141,13 @@ const Layout: VFC<Props> = ({ children, hideHeader = false }) => {
         <nav>
           <ul className={styles.navLinks}>
             <li className={styles.navLinksItem}>
-              <Link href="/about" prefetch={false}>
-                <a className={styles.navLink} href="/about">
-                  因幡神社とは
-                </a>
+              <Link className={styles.navLink} href="/about" prefetch={false}>
+                因幡神社とは
               </Link>
             </li>
             <li className={styles.navLinksItem}>
-              <Link href="/privacy" prefetch={false}>
-                <a className={styles.navLink} href="/privacy">
-                  プライバシーポリシー
-                </a>
+              <Link className={styles.navLink} href="/privacy" prefetch={false}>
+                プライバシーポリシー
               </Link>
             </li>
             <li className={styles.navLinksItem}>

@@ -1,8 +1,7 @@
-import { EnumChangefreq, SitemapStream } from 'sitemap'
+import { type NextApiHandler } from 'next'
+import { EnumChangefreq, type SitemapItemLoose, SitemapStream } from 'sitemap'
 import { getFortuneIDs } from '@/lib/contentful'
 import pkg from '../../package.json'
-import type { NextApiHandler } from 'next'
-import type { SitemapItemLoose } from 'sitemap'
 
 const STATIC_PAGES: SitemapItemLoose[] = [
   {
