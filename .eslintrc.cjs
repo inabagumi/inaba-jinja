@@ -22,7 +22,7 @@ const eslintConfig = {
       env: {
         commonjs: true
       },
-      files: ['.eslintrc.js', '**/*.cjs'],
+      files: ['**/*.cjs'],
       parserOptions: {
         sourceType: 'script'
       }

@@ -1,6 +1,6 @@
 import Head from 'next/head'
+import { type FC } from 'react'
 import { useBaseURLUtils } from '@/lib/hooks'
-import type { VFC } from 'react'
 
 const siteName = '因幡神社'
 
@@ -20,7 +20,7 @@ type Props = {
   type?: 'article' | 'website'
 }
 
-const SEO: VFC<Props> = ({
+const SEO: FC<Props> = ({
   description,
   image,
   noindex = false,

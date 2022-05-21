@@ -1,23 +1,21 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document'
-import type { VFC } from 'react'
+import { Head, Html, Main, NextScript } from 'next/document'
+import { type FC } from 'react'
 
-class MyDocument extends Document {
-  render() {
-    return (
-      <Html>
-        <Head prefix="og: http://ogp.me/ns#">
-          <meta content="#ff5722" name="theme-color" />
-          <link href="/manifest.webmanifest" rel="manifest" />
-        </Head>
+const MyDocument: FC = () => {
+  return (
+    <Html>
+      <Head prefix="og: http://ogp.me/ns#">
+        <meta content="#ff5722" name="theme-color" />
+        <link href="/manifest.webmanifest" rel="manifest" />
+      </Head>
 
-        <body>
-          <Main />
+      <body>
+        <Main />
 
-          <NextScript />
-        </body>
-      </Html>
-    )
-  }
+        <NextScript />
+      </body>
+    </Html>
+  )
 }
 
 export default MyDocument

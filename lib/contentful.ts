@@ -1,5 +1,9 @@
-import { createClient } from 'contentful'
-import type { Asset, ContentfulClientApi, Entry } from 'contentful'
+import {
+  type Asset,
+  type ContentfulClientApi,
+  type Entry,
+  createClient
+} from 'contentful'
 
 let client: ContentfulClientApi
 

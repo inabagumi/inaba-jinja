@@ -1,15 +1,14 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import { type FC, useEffect } from 'react'
 import { useBaseURLUtils } from '@/lib/hooks'
-import type { VFC } from 'react'
 
 type Props = {
   delay?: number
   path: string
 }
 
-const Refresh: VFC<Props> = ({ delay = 0, path }) => {
+const Refresh: FC<Props> = ({ delay = 0, path }) => {
   const router = useRouter()
   const { withBaseURL } = useBaseURLUtils()
 

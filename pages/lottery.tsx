@@ -1,3 +1,4 @@
+import { type GetServerSideProps, type NextPage } from 'next'
 import Image from 'next/image'
 import kujiImage from '@/assets/kuji.png'
 import Page from '@/components/layout'
@@ -6,7 +7,6 @@ import SEO from '@/components/seo'
 import SimpleWindow from '@/components/simple-window'
 import { getAnyFortuneID } from '@/lib/contentful'
 import styles from '@/styles/Lottery.module.css'
-import type { GetServerSideProps, NextPage } from 'next'
 
 const DELAY_SECONDS = 2
 

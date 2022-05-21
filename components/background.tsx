@@ -1,9 +1,9 @@
 import Image from 'next/image'
+import { type FC } from 'react'
 import mainVisual from '@/assets/main-visual.jpg'
 import styles from './background.module.css'
-import type { VFC } from 'react'
 
-const Background: VFC = () => {
+const Background: FC = () => {
   return (
     <div aria-hidden className={styles.container} role="none presentation">
       <Image

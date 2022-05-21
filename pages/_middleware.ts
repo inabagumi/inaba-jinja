@@ -1,4 +1,4 @@
-import type { NextRequest } from 'next/server'
+import { type NextMiddleware, NextResponse } from 'next/server'
 
 const ACCEPT_IMAGE_TYPES = [
   'image/avif',
@@ -9,12 +9,12 @@ const ACCEPT_IMAGE_TYPES = [
   'image/webp'
 ]
 
-export async function middleware(req: NextRequest): Promise<void | Response> {
-  if (req.headers.get('user-agent')?.startsWith('imgix/')) {
+const middleware: NextMiddleware = async (req) => {
+  if (req.ua?.ua.startsWith('imgix/')) {
     const res = await fetch(req)
     const contentType = res.headers.get('content-type')
 
-    return !!contentType && ACCEPT_IMAGE_TYPES.includes(contentType)
+    return contentType && ACCEPT_IMAGE_TYPES.includes(contentType)
       ? res
       : new Response('Not Found', {
           status: 404,
@@ -22,5 +22,7 @@ export async function middleware(req: NextRequest): Promise<void | Response> {
         })
   }
 
-  return
+  return NextResponse.next()
 }
+
+export default middleware
