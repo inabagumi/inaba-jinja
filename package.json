@@ -63,7 +63,7 @@
   "license": "MIT",
   "main": "n/a",
   "name": "inaba-jinja",
-  "packageManager": "yarn@1.22.18",
+  "packageManager": "yarn@1.22.19",
   "private": true,
   "repository": {
     "type": "git",
