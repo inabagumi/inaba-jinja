@@ -16,8 +16,8 @@
     "contentful": "^9.1.32",
     "dedent": "^0.7.0",
     "next": "^12.1.6",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-focus-lock": "^2.9.1",
     "react-remove-scroll": "^2.5.4",
     "sitemap": "^7.1.1"
