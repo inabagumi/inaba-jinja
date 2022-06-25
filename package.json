@@ -24,8 +24,8 @@
   },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@inabagumi/prettier-config": "^2.0.0",
     "@jest/types": "^28.1.1",
     "@mdx-js/loader": "^2.1.2",
