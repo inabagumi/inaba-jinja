@@ -9,6 +9,7 @@ const nextConfig = {
     dirs: ['__mocks__', 'components', 'lib', 'pages']
   },
   experimental: {
+    browsersListForSwc: true,
     images: {
       remotePatterns: [
         {
@@ -17,6 +18,7 @@ const nextConfig = {
         }
       ]
     },
+    legacyBrowsers: false,
     newNextLinkBehavior: true,
     optimizeCss: true
   },
