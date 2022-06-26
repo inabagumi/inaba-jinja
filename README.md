@@ -6,15 +6,15 @@
 
 ## デプロイ
 
-- [**Node.js**](https://nodejs.org/ja/) v12.13+
-- [**Yarn**](https://yarnpkg.com/ja/)
+- [**Node.js**](https://nodejs.org/ja/) v16.9+
 
 ```console
 $ git clone https://github.com/inabagumi/inaba-jinja.git
 $ cd inaba-jinja
-$ yarn install
-$ yarn build
-$ yarn start
+$ corepack enable
+$ pnpm install
+$ pnpm build
+$ pnpm start
 ```
 
 ## ライセンス

@@ -14,16 +14,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Use Node.js 14.x
+      - name: Enable corepack
+        run: corepack enable
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
-          node-version: 14.x
-          cache: yarn
+          node-version: 16.x
+          cache: pnpm
       - name: Install dependencies
-        run: yarn install --immutable
+        run: pnpm install --frozen-lockfile
       - name: Format check
-        run: yarn format-check
+        run: pnpm format-check
       - name: Lint
-        run: yarn lint
+        run: pnpm lint
       # - name: Test
-      #   run: yarn test --ci --coverage
+      #   run: pnpm test --ci --coverage

@@ -13,5 +13,6 @@ module.exports = {
         parser: 'mdx-nocjsp'
       }
     }
-  ]
+  ],
+  plugins: [require('prettier-plugin-md-nocjsp')]
 }
