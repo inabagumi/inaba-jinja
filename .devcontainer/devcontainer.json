@@ -7,8 +7,8 @@
   ],
   "forwardPorts": [3000],
   "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-16-buster",
-  "name": "Node.js & TypeScript",
-  "postCreateCommand": "yarn install",
+  "name": "Inaba Jinja",
+  "postCreateCommand": "corepack enable",
   "remoteUser": "node",
   "settings": {}
 }
