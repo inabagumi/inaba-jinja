@@ -1,7 +1,7 @@
 {
   "configurations": [
     {
-      "command": "yarn dev",
+      "command": "pnpm dev",
       "name": "Next.js: debug server-side",
       "type": "node-terminal",
       "request": "launch"
@@ -13,7 +13,7 @@
       "url": "http://localhost:3000"
     },
     {
-      "command": "yarn dev",
+      "command": "pnpm dev",
       "console": "integratedTerminal",
       "name": "Next.js: debug full stack",
       "request": "launch",
