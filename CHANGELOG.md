@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.6](https://github.com/inabagumi/inaba-jinja/compare/v2.1.5...v2.1.6) (2022-06-26)
+
+
+### Performance Improvements
+
+* remove suppors legacy browsers ([#2083](https://github.com/inabagumi/inaba-jinja/issues/2083)) ([427e6eb](https://github.com/inabagumi/inaba-jinja/commit/427e6ebbecf0338d47f43bfe290e920e931d0db7))
+* replace to image optimizer for vercel ([#2081](https://github.com/inabagumi/inaba-jinja/issues/2081)) ([8714a3f](https://github.com/inabagumi/inaba-jinja/commit/8714a3fa2b53479785f14305cf4400716ca78f02))
+
 ### [2.1.5](https://github.com/inabagumi/inaba-jinja/compare/v2.1.4...v2.1.5) (2022-03-12)
 
 
