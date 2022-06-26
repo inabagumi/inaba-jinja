@@ -9,6 +9,14 @@ const nextConfig = {
     dirs: ['__mocks__', 'components', 'lib', 'pages']
   },
   experimental: {
+    images: {
+      remotePatterns: [
+        {
+          hostname: 'images.ctfassets.net',
+          pathname: `/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}/**`
+        }
+      ]
+    },
     newNextLinkBehavior: true,
     optimizeCss: true
   },
@@ -56,15 +64,6 @@ const nextConfig = {
     defaultLocale: 'ja',
     locales: ['ja']
   },
-  images: process.env.IMGIX_BASE_PATH
-    ? {
-        domains: [],
-        loader: 'imgix',
-        path: process.env.IMGIX_BASE_PATH
-      }
-    : {
-        domains: []
-      },
   pageExtensions: ['mdx', 'tsx', 'ts'],
   reactStrictMode: true,
   async redirects() {
@@ -98,10 +97,6 @@ const nextConfig = {
       {
         destination: '/api/sitemap',
         source: '/sitemap.xml'
-      },
-      {
-        destination: `https://images.ctfassets.net/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}/:asset_id/:unique_id/:filename`,
-        source: '/images/contentful/:asset_id/:unique_id/:filename'
       }
     ]
   },

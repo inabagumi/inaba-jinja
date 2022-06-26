@@ -68,19 +68,7 @@ export async function getAnyFortuneID(): Promise<string> {
 }
 
 export function getImageURL(asset: Asset): string {
-  const { pathname } = new URL(
-    asset.fields.file.url,
-    'https://images.ctfassets.net'
-  )
-  const [, spaceID, assetID, uniqueID, filename] = pathname.split('/')
+  const url = new URL(asset.fields.file.url, 'https://images.ctfassets.net')
 
-  if (spaceID !== process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID) {
-    throw new TypeError('Space ID does not match.')
-  }
-
-  if (!assetID || !uniqueID || !filename) {
-    throw new TypeError('Incorrect image URL format.')
-  }
-
-  return `/images/contentful/${assetID}/${uniqueID}/${filename}`
+  return url.toString()
 }
