@@ -42,7 +42,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   react-focus-lock: ^2.9.1
-  react-remove-scroll: ^2.5.4
+  react-remove-scroll: ^2.5.5
   rehype-external-links: ^1.0.1
   remark-gfm: ^3.0.1
   sitemap: ^7.1.1
@@ -59,7 +59,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-focus-lock: 2.9.1_luyos4mouogwq6z3wafb3re4ce
-  react-remove-scroll: 2.5.4_luyos4mouogwq6z3wafb3re4ce
+  react-remove-scroll: 2.5.5_luyos4mouogwq6z3wafb3re4ce
   sitemap: 7.1.1
 
 devDependencies:
@@ -7041,8 +7041,8 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /react-remove-scroll/2.5.4_luyos4mouogwq6z3wafb3re4ce:
-    resolution: {integrity: sha512-xGVKJJr0SJGQVirVFAUZ2k1QLyO6m+2fy0l8Qawbp5Jgrv3DeLalrfMNBFSlmz5kriGGzsVBtGVnf4pTKIhhWA==}
+  /react-remove-scroll/2.5.5_luyos4mouogwq6z3wafb3re4ce:
+    resolution: {integrity: sha512-ImKhrzJJsyXJfBZ4bzu8Bwpka14c/fQt0k+cyFp/PBhTfyDnU5hjOtM4AG/0AMyy8oKzOTR0lDgJIM7pYXI0kw==}
     engines: {node: '>=10'}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
