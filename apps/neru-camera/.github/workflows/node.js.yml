@@ -13,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: corepack enable
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-          cache: yarn
-      - run: yarn install --frozen-lockfile
-      - run: yarn lint
-      - run: yarn format-check
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm format-check

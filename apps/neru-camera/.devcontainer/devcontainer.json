@@ -7,7 +7,7 @@
   "forwardPorts": [3000],
   "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-16-buster",
   "name": "Neru Camera",
-  "postCreateCommand": "corepack enable && yarn install",
+  "postCreateCommand": "sudo corepack enable && pnpm install",
   "remoteUser": "node",
   "settings": {}
 }

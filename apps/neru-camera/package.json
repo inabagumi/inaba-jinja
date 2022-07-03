@@ -3,6 +3,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@inlet/react-pixi": "npm:@saitonakamura/react-pixi@7.0.0-alpha",
+    "@pixi/interaction": "^6.4.2",
     "@reach/alert-dialog": "^0.17.0",
     "@reach/dialog": "^0.17.0",
     "@reach/menu-button": "^0.17.0",
@@ -42,6 +43,7 @@
   },
   "license": "MIT",
   "name": "neru-camera",
+  "packageManager": "pnpm@7.5.0",
   "private": true,
   "scripts": {
     "build": "next build",
