@@ -1,7 +1,12 @@
 import { PixiComponent } from '@inlet/react-pixi'
 import { type IViewportOptions, Viewport } from 'pixi-viewport'
+import { type ReactNode } from 'react'
 
-export default PixiComponent<IViewportOptions, Viewport>('Viewport', {
+type Props = IViewportOptions & {
+  children: ReactNode
+}
+
+export default PixiComponent<Props, Viewport>('Viewport', {
   create: (props: IViewportOptions) => {
     const viewport = new Viewport(props)
 

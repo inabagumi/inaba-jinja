@@ -1,14 +1,11 @@
-import { Container, Sprite, useApp, withFilters } from '@inlet/react-pixi'
+import { Sprite, useApp } from '@inlet/react-pixi'
+import { type InteractionManager } from '@pixi/interaction'
 import { Point } from 'pixi.js'
 import { type FC } from 'react'
 import ChromaKeyFilter from '../filters/chroma-key-filter'
 import useVideoTexture from '../hooks/use-video-texture'
 import { type OverlayEntry } from '../lib/contentful'
 import Viewport from './viewport'
-
-const Filters = withFilters(Container, {
-  chorma: ChromaKeyFilter
-})
 
 type Props = {
   asset: OverlayEntry
@@ -29,21 +26,19 @@ const Overlay: FC<Props> = ({ asset }) => {
   return (
     <>
       <Viewport
-        /* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access */
-        interaction={app.renderer.plugins.interaction}
+        interaction={app.renderer.plugins.interaction as InteractionManager}
         screenHeight={app.screen.height}
         screenWidth={app.screen.width}
         worldHeight={app.screen.height}
         worldWidth={app.screen.width}
       >
         {texture && (
-          <Filters chorma={{ keyColor: asset.fields.keyColor }}>
-            <Sprite
-              anchor={new Point(anchor, anchor)}
-              position={position}
-              texture={texture}
-            />
-          </Filters>
+          <Sprite
+            anchor={new Point(anchor, anchor)}
+            position={position}
+            texture={texture}
+            filters={[new ChromaKeyFilter(asset.fields.keyColor)]}
+          />
         )}
       </Viewport>
     </>
