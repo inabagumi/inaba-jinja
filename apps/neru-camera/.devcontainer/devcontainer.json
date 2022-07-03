@@ -1,0 +1,13 @@
+{
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode"
+  ],
+  "forwardPorts": [3000],
+  "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-16-buster",
+  "name": "Neru Camera",
+  "postCreateCommand": "corepack enable && yarn install",
+  "remoteUser": "node",
+  "settings": {}
+}
