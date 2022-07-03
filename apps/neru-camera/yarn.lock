@@ -1112,10 +1112,10 @@
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-2.0.0.tgz#a6087e00f49ed8d1de53301dbd7391a3bacbe509"
   integrity sha512-b5tcbqpJv4gmJca3SQrRQ+QH/cDlMV5rS9gi9zTPXtIRGMByR4hLMuIffkknbKTOQ5UrDjvrWBbzY1mfw5geJA==
 
-"@inlet/react-pixi@^6.8.0":
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/@inlet/react-pixi/-/react-pixi-6.8.0.tgz#6d1f632c61ec814dd0306a61512c24d01e48f2f7"
-  integrity sha512-WIbmChkiM14XswP7pb8aCWR++h2qYKutNkXqYeWoDOQGKJw89278fRVC22zPYOw2SjSNVRtnLMlj4nkCfjTiFg==
+"@inlet/react-pixi@npm:@saitonakamura/react-pixi@7.0.0-alpha":
+  version "7.0.0-alpha"
+  resolved "https://registry.yarnpkg.com/@saitonakamura/react-pixi/-/react-pixi-7.0.0-alpha.tgz#c0c4d39850410f5cf999c8290c6d907e59b0f239"
+  integrity sha512-n6/CE6oSs6UetCroyCcQEmXGpNrhsxf7Z6fVa/8Xlyd76fMuYOd5bmR1oCGfmjR8OEayUkPjgO6Ocpov05TkVA==
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
