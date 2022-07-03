@@ -32,7 +32,6 @@
     "eslint": "^8.19.0",
     "eslint-config-next": "^12.2.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
     "is-ci": "^3.0.1",
     "lint-staged": "^13.0.3",
@@ -47,9 +46,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier --write './**/*.{json,yml}'",
-    "format-check": "prettier --check './**/*.{json,yml}'",
-    "lint": "next lint -d .",
+    "format": "prettier --write .",
+    "format-check": "prettier --check .",
+    "lint": "next lint",
     "prepare": "is-ci || husky install",
     "start": "next start"
   },

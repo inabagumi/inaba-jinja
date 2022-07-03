@@ -2,6 +2,9 @@ const withPWA = require('next-pwa')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    dirs: ['components', 'filters', 'hooks', 'lib', 'pages']
+  },
   async headers() {
     return [
       {

@@ -1,11 +1,11 @@
 import 'tailwindcss/tailwind.css'
-import type { AppProps } from 'next/app'
+import { type AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
-import type { VFC } from 'react'
-import mainVisual from '../../public/img/main-visual.jpg'
+import { type FC } from 'react'
+import mainVisual from '../public/img/main-visual.jpg'
 
-const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const baseURL = process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000'
   const title = process.env.NEXT_PUBLIC_TITLE
   const description = process.env.NEXT_PUBLIC_DESCRIPTION

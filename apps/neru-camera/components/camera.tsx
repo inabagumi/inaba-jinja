@@ -7,12 +7,11 @@ import {
 } from '@reach/alert-dialog'
 import { fileSave } from 'browser-fs-access'
 import clsx from 'clsx'
-import type { Application } from 'pixi.js'
-import type { VFC } from 'react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { type Application } from 'pixi.js'
+import { type FC, useCallback, useEffect, useRef, useState } from 'react'
 import useVideoTexture from '../hooks/use-video-texture'
+import { type OverlayEntry } from '../lib/contentful'
 import processing from '../lib/processing'
-import { OverlayEntry } from '../types/Overlay'
 import styles from './camera.module.css'
 import Overlay from './overlay'
 
@@ -29,7 +28,7 @@ type Props = {
   asset?: OverlayEntry
 }
 
-const Camera: VFC<Props> = ({ asset }) => {
+const Camera: FC<Props> = ({ asset }) => {
   const [pixiView, setPixiView] = useState<HTMLCanvasElement>()
   const [cameraStream, setCameraStream] = useState<MediaStream>()
   const [isShooting, setIsShooting] = useState(false)

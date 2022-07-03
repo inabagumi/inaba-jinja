@@ -1,12 +1,15 @@
 import '@reach/menu-button/styles.css'
 import { DotsVerticalIcon } from '@heroicons/react/solid'
 import { Menu, MenuButton, MenuItem, MenuList } from '@reach/menu-button'
-import type { GetStaticProps, NextPage } from 'next'
+import { type GetStaticProps, type NextPage } from 'next'
 import dynamic from 'next/dynamic'
 import { NextSeo } from 'next-seo'
 import { useState } from 'react'
-import contentfulClient from '../contentfulClient'
-import type { OverlayEntry, OverlayFields } from '../types/Overlay'
+import {
+  type OverlayEntry,
+  type OverlayFields,
+  createClient
+} from '../lib/contentful'
 
 const Camera = dynamic(() => import('../components/camera'), { ssr: false })
 
@@ -59,7 +62,8 @@ const Index: NextPage<Props> = ({ assets }) => {
 export default Index
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const entries = await contentfulClient
+  const client = createClient()
+  const entries = await client
     .getEntries<OverlayFields>({
       content_type: 'overlay',
       limit: 100,

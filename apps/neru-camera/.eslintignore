@@ -4,8 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-package.json
-yarn.lock
 
 # testing
 /coverage
@@ -25,12 +23,16 @@ yarn.lock
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
 # local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*.local
 
 # vercel
 .vercel
+
+# typescript
+*.tsbuildinfo
+
+# documents
+CHANGELOG.md
