@@ -24,7 +24,7 @@ specifiers:
   '@types/webpack-env': ^1.17.0
   '@typescript-eslint/eslint-plugin': ~5.30.5
   '@typescript-eslint/parser': ~5.30.5
-  clsx: ^1.2.0
+  clsx: ^1.2.1
   contentful: ^9.1.32
   critters: ^0.0.16
   dedent: ^0.7.0
@@ -52,7 +52,7 @@ dependencies:
   '@mdx-js/react': 2.1.2_react@18.2.0
   '@reach/portal': 0.17.0_biqbaboplfbrettd7655fr4n2y
   '@reach/skip-nav': 0.17.0_biqbaboplfbrettd7655fr4n2y
-  clsx: 1.2.0
+  clsx: 1.2.1
   contentful: 9.1.32
   dedent: 0.7.0
   next: 12.2.0_biqbaboplfbrettd7655fr4n2y
@@ -3349,8 +3349,8 @@ packages:
       wrap-ansi: 7.0.0
     dev: true
 
-  /clsx/1.2.0:
-    resolution: {integrity: sha512-EPRP7XJsM1y0iCU3Z7C7jFKdQboXSeHgEfzQUTlz7m5NP3hDrlz48aUsmNGp4pC+JOW9WA3vIRqlYuo/bl4Drw==}
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
     engines: {node: '>=6'}
     dev: false
 
