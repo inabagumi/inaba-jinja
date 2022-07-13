@@ -15,7 +15,7 @@ specifiers:
   '@types/dedent': ^0.7.0
   '@types/eslint': ^8.4.5
   '@types/gtag.js': ^0.0.10
-  '@types/jest': ^28.1.4
+  '@types/jest': ^28.1.5
   '@types/mdx': ^2.0.2
   '@types/node': ^16.11.43
   '@types/react': ^18.0.15
@@ -74,7 +74,7 @@ devDependencies:
   '@types/dedent': 0.7.0
   '@types/eslint': 8.4.5
   '@types/gtag.js': 0.0.10
-  '@types/jest': 28.1.4
+  '@types/jest': 28.1.5
   '@types/mdx': 2.0.2
   '@types/node': 16.11.43
   '@types/react': 18.0.15
@@ -2523,8 +2523,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/28.1.4:
-    resolution: {integrity: sha512-telv6G5N7zRJiLcI3Rs3o+ipZ28EnE+7EvF0pSrt2pZOMnAVI/f+6/LucDxOvcBcTeTL3JMF744BbVQAVBUQRA==}
+  /@types/jest/28.1.5:
+    resolution: {integrity: sha512-TLAC2zXxGnohSP3GxgIyJn7yrTeRPDEyVFyCY1NE2wzg392auI+69uk5EPGjUXuhkq/K208J/TWpLG7J8ebIEQ==}
     dependencies:
       jest-matcher-utils: 28.1.1
       pretty-format: 28.1.1
@@ -2620,7 +2620,7 @@ packages:
   /@types/testing-library__jest-dom/5.14.5:
     resolution: {integrity: sha512-SBwbxYoyPIvxHbeHxTZX2Pe/74F/tX2/D3mMvzabdeJ25bBojfW0TyB8BHrbq/9zaaKICJZjLP+8r6AeZMFCuQ==}
     dependencies:
-      '@types/jest': 28.1.4
+      '@types/jest': 28.1.5
     dev: true
 
   /@types/trusted-types/2.0.2:
