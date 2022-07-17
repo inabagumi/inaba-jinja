@@ -38,7 +38,7 @@ specifiers:
   next-compose-plugins: ^2.2.1
   next-pwa: ^5.5.4
   prettier: ~2.7.1
-  prettier-plugin-md-nocjsp: ^1.2.0
+  prettier-plugin-md-nocjsp: ^1.3.0
   react: ^18.2.0
   react-dom: ^18.2.0
   react-focus-lock: ^2.9.1
@@ -93,7 +93,7 @@ devDependencies:
   next-compose-plugins: 2.2.1
   next-pwa: 5.5.4_next@12.2.2
   prettier: 2.7.1
-  prettier-plugin-md-nocjsp: 1.2.0
+  prettier-plugin-md-nocjsp: 1.3.0
   rehype-external-links: 1.0.1
   remark-gfm: 3.0.1
   typescript: 4.7.4
@@ -6898,8 +6898,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-md-nocjsp/1.2.0:
-    resolution: {integrity: sha512-ShX2dd8XoE6bi1zlY3U4yKJl/MN5LIdMDjVr//n/Dy6vWOWZdMqSFYeA7qcETTfUj6bTP4VfULDcQbgaJcgJKg==}
+  /prettier-plugin-md-nocjsp/1.3.0:
+    resolution: {integrity: sha512-EAJAEKZ/kuRSZsEDT5Ust8vva2u73fawphRisqIefh4d3aNu4UY2HJZscuRGK073xzQZ83nNQN61fkc67xFTrA==}
     dev: true
 
   /prettier/2.7.1:
