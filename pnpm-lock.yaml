@@ -25,7 +25,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ~5.30.7
   '@typescript-eslint/parser': ~5.30.7
   clsx: ^1.2.1
-  contentful: ^9.1.32
+  contentful: ^9.1.33
   critters: ^0.0.16
   dedent: ^0.7.0
   eslint: ~8.20.0
@@ -53,7 +53,7 @@ dependencies:
   '@reach/portal': 0.17.0_biqbaboplfbrettd7655fr4n2y
   '@reach/skip-nav': 0.17.0_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
-  contentful: 9.1.32
+  contentful: 9.1.33
   dedent: 0.7.0
   next: 12.2.2_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -3451,8 +3451,8 @@ packages:
       qs: 6.11.0
     dev: false
 
-  /contentful/9.1.32:
-    resolution: {integrity: sha512-tMnqogNYtEhCWQWXGA4lyEQj2sNuFcCCEmU4DNOO20CoZjx0ah4tHVVLzvw8bn1dav1/nVlJBk33DpYTEAgTZw==}
+  /contentful/9.1.33:
+    resolution: {integrity: sha512-iiu2cC/9JvDrTK6cfSHhZ1iW6dOq+NmYMA2p5Thpv+9h2pEOyoHm1Un9Xir5XZSB11bu4POmo6JazGAn9N0tqg==}
     engines: {node: '>=12'}
     requiresBuild: true
     dependencies:
