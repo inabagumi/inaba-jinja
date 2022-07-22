@@ -118,7 +118,8 @@ const nextConfig = {
               [
                 rehypeExternalLinks,
                 {
-                  rel: ['noopener', 'noreferrer']
+                  rel: ['noopener', 'noreferrer'],
+                  target: '_blank'
                 }
               ]
             ],
