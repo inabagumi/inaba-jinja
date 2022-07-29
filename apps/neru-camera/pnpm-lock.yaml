@@ -7,7 +7,7 @@ specifiers:
   '@inabagumi/prettier-config': ^2.0.0
   '@inlet/react-pixi': npm:@saitonakamura/react-pixi@7.0.0-alpha-4
   '@next/eslint-plugin-next': ^12.2.3
-  '@pixi/interaction': ^6.5.0
+  '@pixi/interaction': ^6.5.1
   '@reach/alert-dialog': ^0.17.0
   '@reach/dialog': ^0.17.0
   '@reach/menu-button': ^0.17.0
@@ -30,7 +30,7 @@ specifiers:
   next-pwa: ^5.5.5
   next-seo: ^5.5.0
   pixi-viewport: ^4.34.4
-  pixi.js: ^6.5.0
+  pixi.js: ^6.5.1
   postcss: ^8.4.14
   prettier: ~2.7.1
   react: ^18.2.0

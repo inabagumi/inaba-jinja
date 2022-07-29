@@ -3,7 +3,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@inlet/react-pixi": "npm:@saitonakamura/react-pixi@7.0.0-alpha-4",
-    "@pixi/interaction": "^6.5.0",
+    "@pixi/interaction": "^6.5.1",
     "@reach/alert-dialog": "^0.17.0",
     "@reach/dialog": "^0.17.0",
     "@reach/menu-button": "^0.17.0",
@@ -13,7 +13,7 @@
     "next": "^12.2.3",
     "next-seo": "^5.5.0",
     "pixi-viewport": "^4.34.4",
-    "pixi.js": "^6.5.0",
+    "pixi.js": "^6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.1.6"
