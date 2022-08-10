@@ -13,7 +13,7 @@
     "@reach/portal": "^0.17.0",
     "@reach/skip-nav": "^0.17.0",
     "clsx": "^1.2.1",
-    "contentful": "^9.1.33",
+    "contentful": "^9.1.34",
     "dedent": "^0.7.0",
     "next": "^12.2.4",
     "react": "^18.2.0",
