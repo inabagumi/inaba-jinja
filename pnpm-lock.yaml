@@ -21,7 +21,7 @@ specifiers:
   '@types/react': ^18.0.17
   '@types/testing-library__jest-dom': ^5.14.5
   '@types/web-app-manifest': ^1.0.2
-  '@types/webpack-env': ^1.17.0
+  '@types/webpack-env': ^1.18.0
   '@typescript-eslint/eslint-plugin': ~5.33.1
   '@typescript-eslint/parser': ~5.33.1
   clsx: ^1.2.1
@@ -80,7 +80,7 @@ devDependencies:
   '@types/react': 18.0.17
   '@types/testing-library__jest-dom': 5.14.5
   '@types/web-app-manifest': 1.0.2
-  '@types/webpack-env': 1.17.0
+  '@types/webpack-env': 1.18.0
   '@typescript-eslint/eslint-plugin': 5.33.1_vsoshirnpb7xw6mr7xomgfas2i
   '@typescript-eslint/parser': 5.33.1_4rv7y5c6xz3vfxwhbrcxxi73bq
   critters: 0.0.16
@@ -2649,8 +2649,8 @@ packages:
     resolution: {integrity: sha512-Dzq+rbsRHy+HLuDd4j/q8jTyW6Yte1dRihlBD0Xf5FTrnjFg8QgtzXySCahxy1VRreqASMBhn7amZIs8ZJ/T2Q==}
     dev: true
 
-  /@types/webpack-env/1.17.0:
-    resolution: {integrity: sha512-eHSaNYEyxRA5IAG0Ym/yCyf86niZUIF/TpWKofQI/CVfh5HsMEUyfE2kwFxha4ow0s5g0LfISQxpDKjbRDrizw==}
+  /@types/webpack-env/1.18.0:
+    resolution: {integrity: sha512-56/MAlX5WMsPVbOg7tAxnYvNYMMWr/QJiIp6BxVSW3JJXUVzzOn64qW8TzQyMSqSUFM2+PVI4aUHcHOzIz/1tg==}
     dev: true
 
   /@types/yargs-parser/21.0.0:
