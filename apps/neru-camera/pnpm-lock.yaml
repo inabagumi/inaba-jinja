@@ -27,7 +27,7 @@ specifiers:
   is-ci: ^3.0.1
   lint-staged: ^13.0.3
   next: ^12.2.5
-  next-pwa: ^5.5.5
+  next-pwa: ^5.5.6
   next-seo: ^5.5.0
   pixi-viewport: ^4.35.0
   pixi.js: ^6.5.1
@@ -73,7 +73,7 @@ devDependencies:
   husky: 8.0.1
   is-ci: 3.0.1
   lint-staged: 13.0.3
-  next-pwa: 5.5.5_next@12.2.5
+  next-pwa: 5.5.6_next@12.2.5
   postcss: 8.4.16
   prettier: 2.7.1
   typescript: 4.7.4
@@ -4835,8 +4835,8 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /next-pwa/5.5.5_next@12.2.5:
-    resolution: {integrity: sha512-EdheDzxr3V7piAeW2qAeH0uJW5iouSt7s/Fzz6xuvkmRPgbyqQeRY/3ZOWbhfgbPBuzGjdbBWzVurWJPH8bY5w==}
+  /next-pwa/5.5.6_next@12.2.5:
+    resolution: {integrity: sha512-TklBB5XwAWk6i9eX4dlQ+uCesbN3zJ7iZtgRc8/aVbWC/Ygay30kcUWGmFNmGENInIGnLP4josvkVY/zGm2SQQ==}
     peerDependencies:
       next: '>=9.0.0'
     dependencies:
