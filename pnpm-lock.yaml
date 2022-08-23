@@ -36,7 +36,7 @@ specifiers:
   lint-staged: ^13.0.3
   next: ^12.2.5
   next-compose-plugins: ^2.2.1
-  next-pwa: ^5.5.5
+  next-pwa: ^5.6.0
   prettier: ~2.7.1
   prettier-plugin-md-nocjsp: ^1.4.0
   react: ^18.2.0
@@ -91,7 +91,7 @@ devDependencies:
   jest: 28.1.3_@types+node@16.11.53
   lint-staged: 13.0.3
   next-compose-plugins: 2.2.1
-  next-pwa: 5.5.5_next@12.2.5
+  next-pwa: 5.6.0_next@12.2.5
   prettier: 2.7.1
   prettier-plugin-md-nocjsp: 1.4.0
   rehype-external-links: 2.0.0
@@ -6462,8 +6462,8 @@ packages:
     resolution: {integrity: sha512-OjJ+fV15FXO2uQXQagLD4C0abYErBjyjE0I0FHpOEIB8upw0hg1ldFP6cqHTJBH1cZqy96OeR3u1dJ+Ez2D4Bg==}
     dev: true
 
-  /next-pwa/5.5.5_next@12.2.5:
-    resolution: {integrity: sha512-EdheDzxr3V7piAeW2qAeH0uJW5iouSt7s/Fzz6xuvkmRPgbyqQeRY/3ZOWbhfgbPBuzGjdbBWzVurWJPH8bY5w==}
+  /next-pwa/5.6.0_next@12.2.5:
+    resolution: {integrity: sha512-XV8g8C6B7UmViXU8askMEYhWwQ4qc/XqJGnexbLV68hzKaGHZDMtHsm2TNxFcbR7+ypVuth/wwpiIlMwpRJJ5A==}
     peerDependencies:
       next: '>=9.0.0'
     dependencies:
