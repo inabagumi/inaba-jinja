@@ -1136,7 +1136,7 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.6", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.6", "@babel/runtime@^7.18.9", "@babel/runtime@^7.8.4":
   version "7.18.9"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.9.tgz#b4fcfce55db3d2e5e080d2490f608a3b9f407f4a"
   integrity sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==
@@ -1681,11 +1681,12 @@
   dependencies:
     axios "^0.21.1"
 
-"@formspree/react@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@formspree/react/-/react-2.3.0.tgz#c51312329ed58148bf4c20048409e689d8edb162"
-  integrity sha512-QBHb4mNP3uNPkBfGZ6m4ox0o/Y3ee6L6p/RMRV19C4slXxVxL+TM2vxUvKv/SuUf5ydiXLCCQtYqpVlcG1xHig==
+"@formspree/react@^2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@formspree/react/-/react-2.3.3.tgz#695c1becdb201dd55f0b5e5748da9109aa70153c"
+  integrity sha512-3LfmFMLWE1Z3SVmfG2IMHN4sR0P5+IQDEAib85GzC5Rx3mmNnWEdXXD8xSyVpTZYNq4SaymP2A6nt+wOF0DqqQ==
   dependencies:
+    "@babel/runtime" "^7.18.9"
     "@formspree/core" "^2.7.0"
     "@stripe/react-stripe-js" "^1.7.1"
     "@stripe/stripe-js" "^1.27.0"
