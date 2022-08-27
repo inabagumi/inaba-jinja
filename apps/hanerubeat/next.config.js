@@ -1,4 +1,4 @@
-const withPWA = require('next-pwa')
+const nextPWA = require('next-pwa')
 
 const nextConfig = {
   headers() {
@@ -13,11 +13,6 @@ const nextConfig = {
         source: '/workbox-:hash.js'
       }
     ]
-  },
-  pwa: {
-    dest: '.next/static',
-    disable: process.env.NODE_ENV === 'development',
-    sw: 'service-worker.js'
   },
   rewrites() {
     return [
@@ -53,5 +48,11 @@ const nextConfig = {
     return config
   }
 }
+
+const withPWA = nextPWA({
+  dest: '.next/static',
+  disable: process.env.NODE_ENV === 'development',
+  sw: 'service-worker.js'
+})
 
 module.exports = withPWA(nextConfig)
