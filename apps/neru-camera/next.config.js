@@ -1,4 +1,4 @@
-const withPWA = require('next-pwa')
+const nextPWA = require('next-pwa')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -40,11 +40,6 @@ const nextConfig = {
     defaultLocale: 'ja',
     locales: ['ja']
   },
-  pwa: {
-    dest: '.next/static',
-    disable: process.env.NODE_ENV === 'development',
-    sw: 'service-worker.js'
-  },
   async rewrites() {
     return [
       {
@@ -58,5 +53,11 @@ const nextConfig = {
     ]
   }
 }
+
+const withPWA = nextPWA({
+  dest: '.next/static',
+  disable: process.env.NODE_ENV === 'development',
+  sw: 'service-worker.js'
+})
 
 module.exports = withPWA(nextConfig)
