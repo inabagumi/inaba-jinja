@@ -5,7 +5,7 @@ specifiers:
   '@commitlint/config-conventional': ^17.1.0
   '@heroicons/react': ^1.0.6
   '@inabagumi/prettier-config': ^2.0.0
-  '@inlet/react-pixi': npm:@saitonakamura/react-pixi@7.0.0-beta-3
+  '@inlet/react-pixi': npm:@saitonakamura/react-pixi@7.0.0-beta-4
   '@next/eslint-plugin-next': ^12.2.5
   '@pixi/interaction': ^6.5.2
   '@reach/alert-dialog': ^0.17.0
@@ -40,7 +40,7 @@ specifiers:
 
 dependencies:
   '@heroicons/react': 1.0.6_react@18.2.0
-  '@inlet/react-pixi': /@saitonakamura/react-pixi/7.0.0-beta-3_32tkqa4pwqcdjmntfhy5diuueq
+  '@inlet/react-pixi': /@saitonakamura/react-pixi/7.0.0-beta-4_32tkqa4pwqcdjmntfhy5diuueq
   '@pixi/interaction': 6.5.2
   '@reach/alert-dialog': 0.17.0_zxljzmqdrxwnuenbkrz77w74uy
   '@reach/dialog': 0.17.0_zxljzmqdrxwnuenbkrz77w74uy
@@ -2316,8 +2316,8 @@ packages:
     resolution: {integrity: sha512-LwzQKA4vzIct1zNZzBmRKI9QuNpLgTQMEjsQLf3BXuGYb3QPTP4Yjf6mkdX+X1mYttZ808QpOwAzZjv28kq7DA==}
     dev: true
 
-  /@saitonakamura/react-pixi/7.0.0-beta-3_32tkqa4pwqcdjmntfhy5diuueq:
-    resolution: {integrity: sha512-6bz5vbEwa6SXM9iq8C3UAi9meCdzYjT9tTcHgRIGPAUEsOPLTkow1/D0u4C15/Jc+Lfiz4+CnGLNPhzm6uhDEQ==}
+  /@saitonakamura/react-pixi/7.0.0-beta-4_32tkqa4pwqcdjmntfhy5diuueq:
+    resolution: {integrity: sha512-4X4mNOKnTCyhE7hmt7Vy6utSNA2E81EScjwn6d6LPswsoUBHEEhZ9WmLuyZJcuGmUMQmI599ZkbUsJp6xMv/EA==}
     peerDependencies:
       pixi.js: ^6.0.0
       prop-types: ^15.8.1
