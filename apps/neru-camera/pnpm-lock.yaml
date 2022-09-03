@@ -29,7 +29,7 @@ specifiers:
   next: ^12.2.5
   next-pwa: ^5.6.0
   next-seo: ^5.5.0
-  pixi-viewport: ^4.35.0
+  pixi-viewport: ^4.35.1
   pixi.js: ^6.5.2
   postcss: ^8.4.16
   prettier: ~2.7.1
@@ -50,7 +50,7 @@ dependencies:
   contentful: 9.1.34
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
   next-seo: 5.5.0_3xcjr4wz26biff45sz3jtokgje
-  pixi-viewport: 4.35.0_@pixi+interaction@6.5.2
+  pixi-viewport: 4.35.1_@pixi+interaction@6.5.2
   pixi.js: 6.5.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -5196,8 +5196,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pixi-viewport/4.35.0_@pixi+interaction@6.5.2:
-    resolution: {integrity: sha512-jrrDBlW/F8su5abLeiilq2hu2XOHHN6flMQ0DNa5pxY39cAQeC+LwyCQeHJF57a8nM10P/EhcR7M1Tu2CJEefw==}
+  /pixi-viewport/4.35.1_@pixi+interaction@6.5.2:
+    resolution: {integrity: sha512-IQ7dBPe93T7b3rxIC09RAfm2cze+BQCp/CdqGeoKhjx4nwFxJQ6JcTa2Hg+uJJEr7EvJBqvbywhfyL6bcPPp0g==}
     peerDependencies:
       '@pixi/display': ^6.5.1
       '@pixi/interaction': ^6.5.1
