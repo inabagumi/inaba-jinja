@@ -14,7 +14,7 @@ specifiers:
   '@testing-library/react': ^13.4.0
   '@types/dedent': ^0.7.0
   '@types/eslint': ^8.4.6
-  '@types/gtag.js': ^0.0.11
+  '@types/gtag.js': ^0.0.12
   '@types/jest': ^29.1.1
   '@types/mdx': ^2.0.2
   '@types/node': ^16.11.64
@@ -73,7 +73,7 @@ devDependencies:
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/dedent': 0.7.0
   '@types/eslint': 8.4.6
-  '@types/gtag.js': 0.0.11
+  '@types/gtag.js': 0.0.12
   '@types/jest': 29.1.1
   '@types/mdx': 2.0.2
   '@types/node': 16.11.64
@@ -2515,8 +2515,8 @@ packages:
       '@types/node': 17.0.45
     dev: true
 
-  /@types/gtag.js/0.0.11:
-    resolution: {integrity: sha512-rUuSDedDjcuUpoc2zf6eX6zRrxqALNgwrmMBfVFopkLH7YGM52C7tt6j9GsYIvaxn+ioVRpOKoHnN1DXzHEqIg==}
+  /@types/gtag.js/0.0.12:
+    resolution: {integrity: sha512-YQV9bUsemkzG81Ea295/nF/5GijnD2Af7QhEofh7xu+kvCN6RdodgNwwGWXB5GMI3NoyvQo0odNctoH/qLMIpg==}
     dev: true
 
   /@types/hast/2.3.4:
