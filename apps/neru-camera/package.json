@@ -7,7 +7,7 @@
     "@reach/alert-dialog": "^0.17.0",
     "@reach/dialog": "^0.17.0",
     "@reach/menu-button": "^0.17.0",
-    "browser-fs-access": "^0.31.0",
+    "browser-fs-access": "^0.31.1",
     "clsx": "^1.2.1",
     "contentful": "^9.2.5",
     "next": "^12.3.1",
