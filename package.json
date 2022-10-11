@@ -9,7 +9,7 @@
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
   "dependencies": {
-    "@mdx-js/react": "^2.1.4",
+    "@mdx-js/react": "^2.1.5",
     "@reach/portal": "^0.17.0",
     "@reach/skip-nav": "^0.17.0",
     "clsx": "^1.2.1",
@@ -28,7 +28,7 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@inabagumi/prettier-config": "^2.0.0",
     "@jest/types": "^29.1.2",
-    "@mdx-js/loader": "^2.1.4",
+    "@mdx-js/loader": "^2.1.5",
     "@svgr/webpack": "^6.4.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
