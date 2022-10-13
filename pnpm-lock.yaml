@@ -7,8 +7,8 @@ specifiers:
   '@jest/types': ^29.1.2
   '@mdx-js/loader': ^2.1.5
   '@mdx-js/react': ^2.1.5
-  '@reach/portal': ^0.17.0
-  '@reach/skip-nav': ^0.17.0
+  '@reach/portal': ^0.18.0
+  '@reach/skip-nav': ^0.18.0
   '@svgr/webpack': ^6.4.0
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^13.4.0
@@ -50,8 +50,8 @@ specifiers:
 
 dependencies:
   '@mdx-js/react': 2.1.5_react@18.2.0
-  '@reach/portal': 0.17.0_biqbaboplfbrettd7655fr4n2y
-  '@reach/skip-nav': 0.17.0_biqbaboplfbrettd7655fr4n2y
+  '@reach/portal': 0.18.0_biqbaboplfbrettd7655fr4n2y
+  '@reach/skip-nav': 0.18.0_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
   contentful: 9.2.5
   dedent: 0.7.0
@@ -2086,41 +2086,44 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@reach/portal/0.17.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-+IxsgVycOj+WOeNPL2NdgooUdHPSY285wCtj/iWID6akyr4FgGUK7sMhRM9aGFyrGpx2vzr+eggbUmAVZwOz+A==}
+  /@reach/polymorphic/0.18.0_react@18.2.0:
+    resolution: {integrity: sha512-N9iAjdMbE//6rryZZxAPLRorzDcGBnluf7YQij6XDLiMtfCj1noa7KyLpEc/5XCIB/EwhX3zCluFAwloBKdblA==}
     peerDependencies:
       react: ^16.8.0 || 17.x
-      react-dom: ^16.8.0 || 17.x
     dependencies:
-      '@reach/utils': 0.17.0_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      tiny-warning: 1.0.3
-      tslib: 2.4.0
     dev: false
 
-  /@reach/skip-nav/0.17.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-wkkpQK3ffczzGHis6TaUvpOabuAL9n9Kh5vr4h56XPIJP3X77VcHUDk7MK3HbV1mTgamGxc9Hbd1sXKSWLu3yA==}
+  /@reach/portal/0.18.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-TImozRapd576ofRk30Le2L3lRTFXF1p47B182wnp5eMTdZa74JX138BtNGEPJFOyrMaVmguVF8SSwZ6a0fon1Q==}
     peerDependencies:
       react: ^16.8.0 || 17.x
       react-dom: ^16.8.0 || 17.x
     dependencies:
-      '@reach/utils': 0.17.0_biqbaboplfbrettd7655fr4n2y
+      '@reach/utils': 0.18.0_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      tslib: 2.4.0
     dev: false
 
-  /@reach/utils/0.17.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-M5y8fCBbrWeIsxedgcSw6oDlAMQDkl5uv3VnMVJ7guwpf4E48Xlh1v66z/1BgN/WYe2y8mB/ilFD2nysEfdGeA==}
+  /@reach/skip-nav/0.18.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-7XKHX0NNTz9VJw1d+ZRuu3KhKSOZTIHSbHUuv7qKKPwSNApDa+dVGqR/I7dKwyB/CDFMXO4iEz4XLtOmvi0FEg==}
+    peerDependencies:
+      react: ^16.8.0 || 17.x
+      react-dom: ^16.8.0 || 17.x
+    dependencies:
+      '@reach/polymorphic': 0.18.0_react@18.2.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@reach/utils/0.18.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-KdVMdpTgDyK8FzdKO9SCpiibuy/kbv3pwgfXshTI6tEcQT1OOwj7BAksnzGC0rPz0UholwC+AgkqEl3EJX3M1A==}
     peerDependencies:
       react: ^16.8.0 || 17.x
       react-dom: ^16.8.0 || 17.x
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      tiny-warning: 1.0.3
-      tslib: 2.4.0
     dev: false
 
   /@rollup/plugin-babel/5.3.1_vy4anxjpv2s44kyfi2kxqu576u:
@@ -7867,10 +7870,6 @@ packages:
     dependencies:
       readable-stream: 3.6.0
     dev: true
-
-  /tiny-warning/1.0.3:
-    resolution: {integrity: sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==}
-    dev: false
 
   /tmpl/1.0.5:
     resolution: {integrity: sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw==}
