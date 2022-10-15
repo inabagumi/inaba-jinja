@@ -12,7 +12,7 @@ specifiers:
   '@reach/dialog': ^0.18.0
   '@reach/menu-button': ^0.18.0
   '@types/eslint': ^8.4.6
-  '@types/node': ^16.11.65
+  '@types/node': ^16.11.66
   '@types/react': ^18.0.21
   '@typescript-eslint/eslint-plugin': ^5.40.0
   '@typescript-eslint/parser': ^5.40.0
@@ -62,7 +62,7 @@ devDependencies:
   '@inabagumi/prettier-config': 2.0.0_prettier@2.7.1
   '@next/eslint-plugin-next': 12.3.1
   '@types/eslint': 8.4.6
-  '@types/node': 16.11.65
+  '@types/node': 16.11.66
   '@types/react': 18.0.21
   '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
   '@typescript-eslint/parser': 5.40.0_z4bbprzjrhnsfa24uvmcbu7f5q
@@ -2374,7 +2374,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 16.11.65
+      '@types/node': 16.11.66
     dev: true
 
   /@types/json-schema/7.0.11:
@@ -2397,8 +2397,8 @@ packages:
     resolution: {integrity: sha512-vQAnaReSQkEDa8uwAyQby8bYGKu84R/deEc6mg5T8fX6gzCn8QW6rziSgsti1fNvsrswKUKPnVTi7uoB+u62Mw==}
     dev: true
 
-  /@types/node/16.11.65:
-    resolution: {integrity: sha512-Vfz7wGMOr4jbQGiQHVJm8VjeQwM9Ya7mHe9LtQ264/Epf5n1KiZShOFqk++nBzw6a/ubgYdB9Od7P+MH/LjoWw==}
+  /@types/node/16.11.66:
+    resolution: {integrity: sha512-+xvMrGl3eAygKcf5jm+4zA4tbfEgmKM9o6/glTmN0RFVdu2VuFXMYYtRmuv3zTGCgAYMnEZLde3B7BTp+Yxcig==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -2426,7 +2426,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 16.11.65
+      '@types/node': 16.11.66
     dev: true
 
   /@types/scheduler/0.16.2:
@@ -4454,7 +4454,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 16.11.65
+      '@types/node': 16.11.66
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -4463,7 +4463,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 16.11.65
+      '@types/node': 16.11.66
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
