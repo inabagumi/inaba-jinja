@@ -1,7 +1,14 @@
-import withPlugins from 'next-compose-plugins'
-import withPWA from 'next-pwa'
+import nextPWA from 'next-pwa'
 import rehypeExternalLinks from 'rehype-external-links'
 import remarkGfm from 'remark-gfm'
+
+const withPWA = nextPWA({
+  buildExcludes: [/\.(?:jpg|png)$/],
+  dest: '.next/static',
+  disable: process.env.NODE_ENV === 'development',
+  publicExcludes: ['!favicon.ico', '!robots.txt'],
+  sw: 'service-worker.js'
+})
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,17 +16,6 @@ const nextConfig = {
     dirs: ['__mocks__', 'components', 'lib', 'pages']
   },
   experimental: {
-    browsersListForSwc: true,
-    images: {
-      remotePatterns: [
-        {
-          hostname: 'images.ctfassets.net',
-          pathname: `/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}/**`
-        }
-      ]
-    },
-    legacyBrowsers: false,
-    newNextLinkBehavior: true,
     optimizeCss: true
   },
   async headers() {
@@ -65,6 +61,14 @@ const nextConfig = {
   i18n: {
     defaultLocale: 'ja',
     locales: ['ja']
+  },
+  images: {
+    remotePatterns: [
+      {
+        hostname: 'images.ctfassets.net',
+        pathname: `/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}/**`
+      }
+    ]
   },
   pageExtensions: ['mdx', 'tsx', 'ts'],
   reactStrictMode: true,
@@ -147,20 +151,4 @@ const nextConfig = {
   }
 }
 
-export default withPlugins(
-  [
-    [
-      withPWA,
-      {
-        pwa: {
-          buildExcludes: [/\.(?:jpg|png)$/],
-          dest: '.next/static',
-          disable: process.env.NODE_ENV === 'development',
-          publicExcludes: ['!favicon.ico', '!robots.txt'],
-          sw: 'service-worker.js'
-        }
-      }
-    ]
-  ],
-  nextConfig
-)
+export default withPWA(nextConfig)

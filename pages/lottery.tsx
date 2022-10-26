@@ -1,5 +1,5 @@
 import { type GetServerSideProps, type NextPage } from 'next'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import kujiImage from '@/assets/kuji.png'
 import Page from '@/components/layout'
 import Refresh from '@/components/refresh'
