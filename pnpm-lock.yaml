@@ -13,7 +13,7 @@ specifiers:
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^13.4.0
   '@types/dedent': ^0.7.0
-  '@types/eslint': ^8.4.7
+  '@types/eslint': ^8.4.8
   '@types/gtag.js': ^0.0.12
   '@types/jest': ^29.2.0
   '@types/mdx': ^2.0.3
@@ -72,7 +72,7 @@ devDependencies:
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/dedent': 0.7.0
-  '@types/eslint': 8.4.7
+  '@types/eslint': 8.4.8
   '@types/gtag.js': 0.0.12
   '@types/jest': 29.2.0
   '@types/mdx': 2.0.3
@@ -2479,8 +2479,8 @@ packages:
     resolution: {integrity: sha512-EGlKlgMhnLt/cM4DbUSafFdrkeJoC9Mvnj0PUCU7tFmTjMjNRT957kXCx0wYm3JuEq4o4ZsS5vG+NlkM2DMd2A==}
     dev: true
 
-  /@types/eslint/8.4.7:
-    resolution: {integrity: sha512-ehM7cCt2RSFs42mb+lcmhFT9ouIlV92PuaeRGn8N8c98oMjG4Z5pJHA9b1QiCcuqnbPSHcyfiD3mlhqMaHsQIw==}
+  /@types/eslint/8.4.8:
+    resolution: {integrity: sha512-zUCKQI1bUCTi+0kQs5ZQzQ/XILWRLIlh15FXWNykJ+NG3TMKMVvwwC6GP3DR1Ylga15fB7iAExSzc4PNlR5i3w==}
     dependencies:
       '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
