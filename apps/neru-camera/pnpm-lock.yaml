@@ -19,7 +19,7 @@ specifiers:
   autoprefixer: ^10.4.13
   browser-fs-access: ^0.31.1
   clsx: ^1.2.1
-  contentful: ^9.2.7
+  contentful: ^9.2.9
   eslint: ^8.26.0
   eslint-config-next: ^13.0.0
   eslint-config-prettier: ^8.5.0
@@ -47,7 +47,7 @@ dependencies:
   '@reach/menu-button': 0.18.0_biqbaboplfbrettd7655fr4n2y
   browser-fs-access: 0.31.1
   clsx: 1.2.1
-  contentful: 9.2.7
+  contentful: 9.2.9
   next: 13.0.0_biqbaboplfbrettd7655fr4n2y
   next-seo: 5.11.0_r5sq4deac3rmm2d5onhwvomqve
   pixi-viewport: 4.37.0_@pixi+interaction@6.5.8
@@ -3128,32 +3128,32 @@ packages:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
-  /contentful-resolve-response/1.3.11:
-    resolution: {integrity: sha512-QSjPwLrmrGbK3XrT1T8xGF3lE+1hPFIHIpYOBIZIOZxriFIGx5vEiW6GJFaaA+nntMLwqyzsPeStbzT15PFkug==}
+  /contentful-resolve-response/1.3.12:
+    resolution: {integrity: sha512-fe2dsACyV3jzRjHcoeAa4bBt06YwkdsY+kdQwFCcdETyBQIxifuyGamIF4NmKcDqvZ9Yhw7ujjPCadzHb9jmKw==}
     engines: {node: '>=4.7.2'}
     dependencies:
-      fast-copy: 3.0.0
+      fast-copy: 2.1.7
     dev: false
 
-  /contentful-sdk-core/7.0.3:
-    resolution: {integrity: sha512-Ylr/GYIZKf/bG1hyIIl2zAPOBY/IHUKsD9GTJhXRGFlysmCAALlQkWG5uiO/IXACGnR0i12Bo7IOKacRtFMkGw==}
+  /contentful-sdk-core/7.0.4:
+    resolution: {integrity: sha512-HwYdXmTsVh9rJOq+TA8CsY+vt6ivqkyJZpiEyVboZKIXAa83QmeVLAeBxK75+IiI9KpaPz7LCjVBXTGoTrhV7A==}
     engines: {node: '>=12'}
     dependencies:
-      fast-copy: 3.0.0
+      fast-copy: 2.1.7
       lodash.isplainobject: 4.0.6
       lodash.isstring: 4.0.1
       p-throttle: 4.1.1
       qs: 6.11.0
     dev: false
 
-  /contentful/9.2.7:
-    resolution: {integrity: sha512-p45JcL37aUmUDb4CY/TjZ4A4Pxsot3/bwQ5S+rHYOQr+rCb8zkEDjUym/T8X2GEU0sL/3RDW1JpPtsDf1tKDLQ==}
+  /contentful/9.2.9:
+    resolution: {integrity: sha512-JasmowuQka/HMbn7qbBLi8G63dUNCOiyB5ac8c0dUkEdx977XhAj33f43QQvZoiHmGkFlVUz/1A4tR8rSBfGEQ==}
     engines: {node: '>=12'}
     requiresBuild: true
     dependencies:
       axios: 0.27.2
-      contentful-resolve-response: 1.3.11
-      contentful-sdk-core: 7.0.3
+      contentful-resolve-response: 1.3.12
+      contentful-sdk-core: 7.0.4
       fast-copy: 2.1.7
       json-stringify-safe: 5.0.1
     transitivePeerDependencies:
@@ -3845,10 +3845,6 @@ packages:
 
   /fast-copy/2.1.7:
     resolution: {integrity: sha512-ozrGwyuCTAy7YgFCua8rmqmytECYk/JYAMXcswOcm0qvGoE3tPb7ivBeIHTOK2DiapBhDZgacIhzhQIKU5TCfA==}
-    dev: false
-
-  /fast-copy/3.0.0:
-    resolution: {integrity: sha512-4HzS+9pQ5Yxtv13Lhs1Z1unMXamBdn5nA4bEi1abYpDNSpSp7ODYQ1KPMF6nTatfEzgH6/zPvXKU1zvHiUjWlA==}
     dev: false
 
   /fast-deep-equal/3.1.3:
