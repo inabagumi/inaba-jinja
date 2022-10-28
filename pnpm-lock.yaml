@@ -25,7 +25,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ~5.41.0
   '@typescript-eslint/parser': ~5.41.0
   clsx: ^1.2.1
-  contentful: ^9.2.7
+  contentful: ^9.2.8
   critters: ^0.0.16
   dedent: ^0.7.0
   eslint: ~8.26.0
@@ -53,7 +53,7 @@ dependencies:
   '@reach/portal': 0.18.0_biqbaboplfbrettd7655fr4n2y
   '@reach/skip-nav': 0.18.0_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
-  contentful: 9.2.7
+  contentful: 9.2.8
   dedent: 0.7.0
   next: 12.3.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -3456,11 +3456,11 @@ packages:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
-  /contentful-resolve-response/1.3.11:
-    resolution: {integrity: sha512-QSjPwLrmrGbK3XrT1T8xGF3lE+1hPFIHIpYOBIZIOZxriFIGx5vEiW6GJFaaA+nntMLwqyzsPeStbzT15PFkug==}
+  /contentful-resolve-response/1.3.12:
+    resolution: {integrity: sha512-fe2dsACyV3jzRjHcoeAa4bBt06YwkdsY+kdQwFCcdETyBQIxifuyGamIF4NmKcDqvZ9Yhw7ujjPCadzHb9jmKw==}
     engines: {node: '>=4.7.2'}
     dependencies:
-      fast-copy: 3.0.0
+      fast-copy: 2.1.7
     dev: false
 
   /contentful-sdk-core/7.0.3:
@@ -3474,13 +3474,13 @@ packages:
       qs: 6.11.0
     dev: false
 
-  /contentful/9.2.7:
-    resolution: {integrity: sha512-p45JcL37aUmUDb4CY/TjZ4A4Pxsot3/bwQ5S+rHYOQr+rCb8zkEDjUym/T8X2GEU0sL/3RDW1JpPtsDf1tKDLQ==}
+  /contentful/9.2.8:
+    resolution: {integrity: sha512-wgfQ/xNeRE8FSK6D5NZOXYVXiJi0LEnZKrp+6rFo76sEiI+q/hrU4Veg5Abu5ehcC/oLemW77wmQg9zklUs7zQ==}
     engines: {node: '>=12'}
     requiresBuild: true
     dependencies:
       axios: 0.27.2
-      contentful-resolve-response: 1.3.11
+      contentful-resolve-response: 1.3.12
       contentful-sdk-core: 7.0.3
       fast-copy: 2.1.7
       json-stringify-safe: 5.0.1
