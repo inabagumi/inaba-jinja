@@ -25,7 +25,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ~5.41.0
   '@typescript-eslint/parser': ~5.41.0
   clsx: ^1.2.1
-  contentful: ^9.2.8
+  contentful: ^9.2.9
   critters: ^0.0.16
   dedent: ^0.7.0
   eslint: ~8.26.0
@@ -53,7 +53,7 @@ dependencies:
   '@reach/portal': 0.18.0_biqbaboplfbrettd7655fr4n2y
   '@reach/skip-nav': 0.18.0_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
-  contentful: 9.2.8
+  contentful: 9.2.9
   dedent: 0.7.0
   next: 12.3.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -3463,25 +3463,25 @@ packages:
       fast-copy: 2.1.7
     dev: false
 
-  /contentful-sdk-core/7.0.3:
-    resolution: {integrity: sha512-Ylr/GYIZKf/bG1hyIIl2zAPOBY/IHUKsD9GTJhXRGFlysmCAALlQkWG5uiO/IXACGnR0i12Bo7IOKacRtFMkGw==}
+  /contentful-sdk-core/7.0.4:
+    resolution: {integrity: sha512-HwYdXmTsVh9rJOq+TA8CsY+vt6ivqkyJZpiEyVboZKIXAa83QmeVLAeBxK75+IiI9KpaPz7LCjVBXTGoTrhV7A==}
     engines: {node: '>=12'}
     dependencies:
-      fast-copy: 3.0.0
+      fast-copy: 2.1.7
       lodash.isplainobject: 4.0.6
       lodash.isstring: 4.0.1
       p-throttle: 4.1.1
       qs: 6.11.0
     dev: false
 
-  /contentful/9.2.8:
-    resolution: {integrity: sha512-wgfQ/xNeRE8FSK6D5NZOXYVXiJi0LEnZKrp+6rFo76sEiI+q/hrU4Veg5Abu5ehcC/oLemW77wmQg9zklUs7zQ==}
+  /contentful/9.2.9:
+    resolution: {integrity: sha512-JasmowuQka/HMbn7qbBLi8G63dUNCOiyB5ac8c0dUkEdx977XhAj33f43QQvZoiHmGkFlVUz/1A4tR8rSBfGEQ==}
     engines: {node: '>=12'}
     requiresBuild: true
     dependencies:
       axios: 0.27.2
       contentful-resolve-response: 1.3.12
-      contentful-sdk-core: 7.0.3
+      contentful-sdk-core: 7.0.4
       fast-copy: 2.1.7
       json-stringify-safe: 5.0.1
     transitivePeerDependencies:
@@ -4362,10 +4362,6 @@ packages:
 
   /fast-copy/2.1.7:
     resolution: {integrity: sha512-ozrGwyuCTAy7YgFCua8rmqmytECYk/JYAMXcswOcm0qvGoE3tPb7ivBeIHTOK2DiapBhDZgacIhzhQIKU5TCfA==}
-    dev: false
-
-  /fast-copy/3.0.0:
-    resolution: {integrity: sha512-4HzS+9pQ5Yxtv13Lhs1Z1unMXamBdn5nA4bEi1abYpDNSpSp7ODYQ1KPMF6nTatfEzgH6/zPvXKU1zvHiUjWlA==}
     dev: false
 
   /fast-deep-equal/3.1.3:
