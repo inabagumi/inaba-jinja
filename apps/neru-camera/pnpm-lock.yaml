@@ -28,7 +28,7 @@ specifiers:
   lint-staged: ^13.0.3
   next: ^13.0.0
   next-pwa: ^5.6.0
-  next-seo: ^5.11.0
+  next-seo: ^5.11.1
   pixi-viewport: ^4.37.0
   pixi.js: ^6.5.8
   postcss: ^8.4.18
@@ -49,7 +49,7 @@ dependencies:
   clsx: 1.2.1
   contentful: 9.2.9
   next: 13.0.0_biqbaboplfbrettd7655fr4n2y
-  next-seo: 5.11.0_r5sq4deac3rmm2d5onhwvomqve
+  next-seo: 5.11.1_r5sq4deac3rmm2d5onhwvomqve
   pixi-viewport: 4.37.0_@pixi+interaction@6.5.8
   pixi.js: 6.5.8
   react: 18.2.0
@@ -4881,8 +4881,8 @@ packages:
       - webpack
     dev: true
 
-  /next-seo/5.11.0_r5sq4deac3rmm2d5onhwvomqve:
-    resolution: {integrity: sha512-TdGJKh6dVi2b5Ibkz3SF8/xMNx8lBx1Zvtr0/fxsh0IdNPKBHrJamAp9HOacToeVfC0TfWJk3SBVQw4MvzH0hQ==}
+  /next-seo/5.11.1_r5sq4deac3rmm2d5onhwvomqve:
+    resolution: {integrity: sha512-P18E5mDaUEvIK/hDlCLAl7w02Ew6a8m1E3KO3d+rIPKWPcBRMckcMzxkdFkafFqwHl4ygCLNCWlKWM9EKD3jIQ==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
