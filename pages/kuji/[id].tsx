@@ -1,5 +1,5 @@
 import { type GetStaticPaths, type GetStaticProps, type NextPage } from 'next'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Page from '@/components/layout'
 import SEO from '@/components/seo'
 import SingleWindow from '@/components/simple-window'

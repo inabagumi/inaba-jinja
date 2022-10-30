@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { type FC } from 'react'
 import mainVisual from '@/assets/main-visual.jpg'
 import styles from './background.module.css'
