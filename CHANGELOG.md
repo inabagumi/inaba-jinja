@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/inabagumi/inaba-jinja/compare/v2.1.7...v3.0.0) (2022-11-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace to app directory (#2291)
+
+### Code Refactoring
+
+* replace to app directory ([#2291](https://github.com/inabagumi/inaba-jinja/issues/2291)) ([0df5d89](https://github.com/inabagumi/inaba-jinja/commit/0df5d894f6eab02c6f00b08d6a814c4ee3ab4649))
+
 ## [2.1.7](https://github.com/inabagumi/inaba-jinja/compare/v2.1.6...v2.1.7) (2022-06-27)
 
 
