@@ -12,17 +12,29 @@
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
+      "@/app/*": ["./app/*"],
       "@/assets/*": ["./assets/*"],
-      "@/components/*": ["./components/*"],
       "@/lib/*": ["./lib/*"],
       "@/pages/*": ["./pages/*"],
-      "@/styles/*": ["./styles/*"]
+      "@/styles/*": ["./styles/*"],
+      "@/ui/*": ["./ui/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2021"
+    "target": "es2021",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "additional.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": [
+    "next-env.d.ts",
+    "additional.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ]
 }

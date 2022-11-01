@@ -1,0 +1,38 @@
+.header {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 0.5rem;
+  width: 800px;
+}
+
+.brand {
+  color: inherit;
+  font-size: 2rem;
+}
+
+.brand:hover {
+  color: inherit;
+}
+
+.brandLogo {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  line-height: 1;
+  vertical-align: middle;
+  width: auto;
+}
+
+.wrapper {
+  padding: 0 0.5rem;
+}
+
+.content {
+  background-color: rgba(38, 50, 56, 0.7);
+  border-radius: 1rem;
+  margin: 1rem auto 2rem;
+  min-height: 70vh;
+  max-width: 100%;
+  padding: 1rem 1rem 2rem;
+  width: 800px;
+}
