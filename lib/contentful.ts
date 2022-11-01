@@ -4,6 +4,7 @@ import {
   type Entry,
   createClient
 } from 'contentful'
+import { cache } from 'react'
 
 let client: ContentfulClientApi
 
@@ -24,12 +25,6 @@ export function getClient(
   return client
 }
 
-export async function getAsset(id?: string): Promise<Asset> {
-  if (!id) throw new TypeError('The asset ID is required.')
-
-  return getClient().getAsset(id)
-}
-
 export type FortuneFields = {
   blessing: string
   card: Asset
@@ -41,13 +36,17 @@ export type FortuneFields = {
 
 export type Fortune = Entry<FortuneFields>
 
-export async function getFortune(id?: string): Promise<Fortune> {
+export const getFortune = cache(async function getFortune(
+  id?: string
+): Promise<Fortune> {
   if (!id) throw new TypeError('The fortune ID is required.')
 
   return getClient().getEntry<FortuneFields>(id)
-}
+})
 
-export async function getFortuneIDs(): Promise<string[]> {
+export const getFortuneIDs = cache(async function getFortuneIDs(): Promise<
+  string[]
+> {
   const entries = await getClient().getEntries<undefined>({
     content_type: 'fortune',
     limit: 100,
@@ -55,7 +54,7 @@ export async function getFortuneIDs(): Promise<string[]> {
   })
 
   return entries.items.map((item) => item.sys.id)
-}
+})
 
 export async function getAnyFortuneID(): Promise<string> {
   const ids = await getFortuneIDs()
