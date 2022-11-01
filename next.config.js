@@ -13,10 +13,10 @@ const withPWA = nextPWA({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    dirs: ['__mocks__', 'components', 'lib', 'pages']
+    dirs: ['__mocks__', 'app', 'lib', 'ui']
   },
   experimental: {
-    optimizeCss: true
+    appDir: true
   },
   async headers() {
     return [
@@ -58,10 +58,6 @@ const nextConfig = {
       }
     ]
   },
-  i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja']
-  },
   images: {
     remotePatterns: [
       {
@@ -70,7 +66,6 @@ const nextConfig = {
       }
     ]
   },
-  pageExtensions: ['mdx', 'tsx', 'ts'],
   reactStrictMode: true,
   async redirects() {
     return [
