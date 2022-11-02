@@ -10,18 +10,18 @@ type Props = {
 
 export default function ContentLayout({ children }: Props): JSX.Element {
   return (
-    <>
+    <div>
       <header className={styles.header}>
         <Link className={styles.brand} href="/">
           <Logo aria-label="因幡神社" className={styles.brandLogo} />
         </Link>
       </header>
 
-      <div className={styles.wrapper}>
+      <main className={styles.wrapper}>
         <SkipNavContent />
 
         <div className={styles.content}>{children}</div>
-      </div>
-    </>
+      </main>
+    </div>
   )
 }
