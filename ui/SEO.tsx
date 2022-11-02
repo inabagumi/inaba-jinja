@@ -55,6 +55,12 @@ export default function SEO({
       {title && <meta content={siteName} property="og:site_name" />}
       <meta content={title ?? siteName} property="og:title" />
       <meta content={type} property="og:type" />
+      {path && (
+        <meta
+          href={new URL(path, process.env.NEXT_PUBLIC_BASE_URL).toString()}
+          rel="og:url"
+        />
+      )}
 
       <meta content="summary_large_image" name="twitter:card" />
       <meta content={`@${twitterAccount}`} name="twitter:site" />
