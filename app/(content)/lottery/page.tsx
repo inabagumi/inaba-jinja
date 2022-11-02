@@ -6,6 +6,8 @@ import styles from './page.module.css'
 
 const DELAY_SECONDS = 2
 
+export const revalidate = 0
+
 export default async function Page(): Promise<JSX.Element> {
   const id = await getAnyFortuneID()
   const path = `/kuji/${id}`
