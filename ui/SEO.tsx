@@ -57,7 +57,7 @@ export default function SEO({
       <meta content={type} property="og:type" />
 
       <meta content="summary_large_image" name="twitter:card" />
-      <meta content={twitterAccount} name="twitter:site" />
+      <meta content={`@${twitterAccount}`} name="twitter:site" />
       <meta
         content={title ? `${title} - ${siteName}` : title}
         name="twitter:title"
