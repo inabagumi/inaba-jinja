@@ -1,3 +1,4 @@
+import { twitterAccount } from '@/lib/constants'
 import styles from './ShareLinks.module.css'
 
 const DEFAULT_HASHTAGS = ['ねるくじ']
@@ -22,7 +23,7 @@ function generateTweetShareURL({
   }
 
   tweetShareURL.searchParams.append('url', url)
-  tweetShareURL.searchParams.append('via', 'Inaba_Jinja')
+  tweetShareURL.searchParams.append('via', twitterAccount)
 
   return tweetShareURL.toString()
 }

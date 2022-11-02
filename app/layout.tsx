@@ -6,6 +6,7 @@ import { type ReactNode } from 'react'
 import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
+import { themeColor } from '@/lib/constants'
 import AnalyticsWrapper from './AnalyticsWrapper'
 import Background from './Background'
 import Menu from './Menu'
@@ -20,7 +21,7 @@ export default function RootLayout({ children }: Props): JSX.Element {
     <html lang="ja">
       <head prefix="og: http://ogp.me/ns#">
         <meta content="viewport-fit=cover,width=device-width" name="viewport" />
-        <meta content="#ff5722" name="theme-color" />
+        <meta content={themeColor} name="theme-color" />
         <link href="/manifest.webmanifest" rel="manifest" />
         <link
           href={favicon192x192.src}

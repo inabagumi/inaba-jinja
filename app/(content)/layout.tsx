@@ -2,6 +2,7 @@ import { SkipNavContent } from '@reach/skip-nav'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
 import Logo from '@/assets/logo.svg'
+import { title } from '@/lib/constants'
 import styles from './layout.module.css'
 
 type Props = {
@@ -13,7 +14,7 @@ export default function ContentLayout({ children }: Props): JSX.Element {
     <div>
       <header className={styles.header}>
         <Link className={styles.brand} href="/">
-          <Logo aria-label="因幡神社" className={styles.brandLogo} />
+          <Logo aria-label={title} className={styles.brandLogo} />
         </Link>
       </header>
 
