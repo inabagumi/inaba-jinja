@@ -27,3 +27,7 @@ html {
 body {
   margin: 0;
 }
+
+[data-nextjs-scroll-focus-boundary] {
+  display: contents;
+}
