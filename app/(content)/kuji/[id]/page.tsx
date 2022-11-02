@@ -52,7 +52,7 @@ export default async function Page({ params }: Props): Promise<JSX.Element> {
       <ShareLinks
         text={`わたしの運勢は『${fortune.fields.blessing}』でした！ あなたもおみくじを引いてみてね`}
         url={new URL(
-          `/kuji/${fortune.sys.id}`,
+          `/share/${fortune.sys.id}`,
           process.env.NEXT_PUBLIC_BASE_URL
         ).toString()}
       />
