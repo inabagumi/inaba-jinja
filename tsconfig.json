@@ -19,15 +19,15 @@
       "@/styles/*": ["./styles/*"],
       "@/ui/*": ["./ui/*"]
     },
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "es2021",
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2021"
   },
   "exclude": ["node_modules"],
   "include": [
