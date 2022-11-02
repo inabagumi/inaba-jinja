@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.3](https://github.com/inabagumi/inaba-jinja/compare/v3.0.2...v3.0.3) (2022-11-02)
+
+
+### Bug Fixes
+
+* **kuji:** catch error in head ([#2307](https://github.com/inabagumi/inaba-jinja/issues/2307)) ([7ab12fa](https://github.com/inabagumi/inaba-jinja/commit/7ab12fa9d54b52711b91d1af77d68e06cc76e3f5))
+* **seo:** add missing `og:url` ([#2305](https://github.com/inabagumi/inaba-jinja/issues/2305)) ([8b7b716](https://github.com/inabagumi/inaba-jinja/commit/8b7b7167915efbb4b55c06f75aa99a00d01486a0))
+
 ## [3.0.2](https://github.com/inabagumi/inaba-jinja/compare/v3.0.1...v3.0.2) (2022-11-02)
 
 
