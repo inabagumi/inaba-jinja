@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.1](https://github.com/inabagumi/inaba-jinja/compare/v3.0.0...v3.0.1) (2022-11-02)
+
+
+### Bug Fixes
+
+* **contentful:** enable cache ([#2294](https://github.com/inabagumi/inaba-jinja/issues/2294)) ([f166450](https://github.com/inabagumi/inaba-jinja/commit/f166450054f92d5d7936bd5b909b8004acb72bd9))
+* **kuji:** fix share url ([#2295](https://github.com/inabagumi/inaba-jinja/issues/2295)) ([0080b0b](https://github.com/inabagumi/inaba-jinja/commit/0080b0b006f4276dd5a5afef94e1eaa48565ec03))
+* **layout:** add `[data-reach-skip-nav-link]` ([#2299](https://github.com/inabagumi/inaba-jinja/issues/2299)) ([7712c73](https://github.com/inabagumi/inaba-jinja/commit/7712c73101609cb7dc353af0bffcc89be1c5bb59))
+* **lottery:** disable cache ([#2296](https://github.com/inabagumi/inaba-jinja/issues/2296)) ([da8a968](https://github.com/inabagumi/inaba-jinja/commit/da8a96878f24795f403ff797bfd9e0bd6699ccdc))
+* **styles:** set `display: none` to `[data-nextjs-scroll-focus-boundary]` ([#2298](https://github.com/inabagumi/inaba-jinja/issues/2298)) ([202dcd0](https://github.com/inabagumi/inaba-jinja/commit/202dcd09dca1912d99a6f60b4bdd553e07b35df0))
+
 ## [3.0.0](https://github.com/inabagumi/inaba-jinja/compare/v2.1.7...v3.0.0) (2022-11-01)
 
 
