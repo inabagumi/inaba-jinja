@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.2](https://github.com/inabagumi/inaba-jinja/compare/v3.0.1...v3.0.2) (2022-11-02)
+
+
+### Bug Fixes
+
+* **layout:** add wrapper element ([#2301](https://github.com/inabagumi/inaba-jinja/issues/2301)) ([602a494](https://github.com/inabagumi/inaba-jinja/commit/602a4942e4b17bf6ea0504e26a8484af26ded1bf))
+
 ## [3.0.1](https://github.com/inabagumi/inaba-jinja/compare/v3.0.0...v3.0.1) (2022-11-02)
 
 
