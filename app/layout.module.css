@@ -1,4 +1,4 @@
-.skipNavLink:focus {
+[data-reach-skip-nav-link].skipNavLink:focus {
   background-color: var(--ij-color-primary);
 }
 
