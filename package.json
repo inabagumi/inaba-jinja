@@ -30,6 +30,7 @@
     "@inabagumi/prettier-config": "^2.0.0",
     "@jest/types": "^29.2.1",
     "@mdx-js/loader": "^2.1.5",
+    "@next/mdx": "^13.0.1",
     "@svgr/webpack": "^6.5.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

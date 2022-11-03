@@ -7,6 +7,7 @@ specifiers:
   '@jest/types': ^29.2.1
   '@mdx-js/loader': ^2.1.5
   '@mdx-js/react': ^2.1.5
+  '@next/mdx': ^13.0.1
   '@reach/portal': ^0.18.0
   '@reach/skip-nav': ^0.18.0
   '@svgr/webpack': ^6.5.1
@@ -68,6 +69,7 @@ devDependencies:
   '@inabagumi/prettier-config': 2.0.0_prettier@2.7.1
   '@jest/types': 29.2.1
   '@mdx-js/loader': 2.1.5
+  '@next/mdx': 13.0.1_wuv4qx5dshjptmdbtsqqkih5iu
   '@svgr/webpack': 6.5.1
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
@@ -1944,7 +1946,6 @@ packages:
       '@types/mdx': 2.0.3
       '@types/react': 18.0.24
       react: 18.2.0
-    dev: false
 
   /@next/env/13.0.1:
     resolution: {integrity: sha512-gK60YoFae3s8qi5UgIzbvxOhsh5gKyEaiKH5+kLBUYXLlrPyWJR2xKBj2WqvHkO7wDX7/Hed3DAqjSpU4ijIvQ==}
@@ -1953,6 +1954,16 @@ packages:
     resolution: {integrity: sha512-t3bggJhKE/oB4pvMM7hMNnmIpIqsMGJ+OLklk8llOkSeXtfCV+MBQbhImWxf5QODkxNAmMK3IJGAAecQhBTc/Q==}
     dependencies:
       glob: 7.1.7
+    dev: true
+
+  /@next/mdx/13.0.1_wuv4qx5dshjptmdbtsqqkih5iu:
+    resolution: {integrity: sha512-7h/EEs7JbLkDnVhvNE3D33k8vLJbQzKh+Zg0qvYulnpze96zjL4ZCd9qOeDCqNAATgZhpSbvQ9ujYLRFBJpHCQ==}
+    peerDependencies:
+      '@mdx-js/loader': '>=0.15.0'
+      '@mdx-js/react': '*'
+    dependencies:
+      '@mdx-js/loader': 2.1.5
+      '@mdx-js/react': 2.1.5_react@18.2.0
     dev: true
 
   /@next/swc-android-arm-eabi/13.0.1:
