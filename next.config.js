@@ -1,9 +1,26 @@
+import nextMDX from '@next/mdx'
 import nextPWA from 'next-pwa'
 import rehypeExternalLinks from 'rehype-external-links'
 import remarkGfm from 'remark-gfm'
 
+const withMDX = nextMDX({
+  options: {
+    jsx: true,
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          rel: ['noopener', 'noreferrer'],
+          target: '_blank'
+        }
+      ]
+    ],
+    remarkPlugins: [remarkGfm]
+  }
+})
+
 const withPWA = nextPWA({
-  buildExcludes: [/\.(?:jpg|png)$/],
+  buildExcludes: [/app-build-manifest\.json$/, /\.(?:jpg|png)$/],
   dest: '.next/static',
   disable: process.env.NODE_ENV === 'development',
   publicExcludes: ['!favicon.ico', '!robots.txt'],
@@ -104,31 +121,6 @@ const nextConfig = {
   swcMinify: true,
   webpack(config, { defaultLoaders }) {
     config.module.rules.push({
-      test: /\.mdx$/,
-      use: [
-        defaultLoaders.babel,
-        {
-          loader: '@mdx-js/loader',
-          /** @type {import('@mdx-js/loader').Options} */
-          options: {
-            jsx: true,
-            providerImportSource: '@mdx-js/react',
-            rehypePlugins: [
-              [
-                rehypeExternalLinks,
-                {
-                  rel: ['noopener', 'noreferrer'],
-                  target: '_blank'
-                }
-              ]
-            ],
-            remarkPlugins: [remarkGfm]
-          }
-        }
-      ]
-    })
-
-    config.module.rules.push({
       test: /\.svg$/,
       use: [
         defaultLoaders.babel,
@@ -146,4 +138,4 @@ const nextConfig = {
   }
 }
 
-export default withPWA(nextConfig)
+export default withMDX(withPWA(nextConfig))
