@@ -11,7 +11,7 @@ specifiers:
   '@reach/alert-dialog': ^0.18.0
   '@reach/dialog': ^0.18.0
   '@reach/menu-button': ^0.18.0
-  '@types/eslint': ^8.4.9
+  '@types/eslint': ^8.4.10
   '@types/node': ^16.18.3
   '@types/react': ^18.0.25
   '@typescript-eslint/eslint-plugin': ^5.42.0
@@ -61,7 +61,7 @@ devDependencies:
   '@commitlint/config-conventional': 17.2.0
   '@inabagumi/prettier-config': 2.0.0_prettier@2.7.1
   '@next/eslint-plugin-next': 13.0.2
-  '@types/eslint': 8.4.9
+  '@types/eslint': 8.4.10
   '@types/node': 16.18.3
   '@types/react': 18.0.25
   '@typescript-eslint/eslint-plugin': 5.42.0_6xw5wg2354iw4zujk2f3vyfrzu
@@ -2366,8 +2366,8 @@ packages:
     resolution: {integrity: sha512-w8oigUCDjElRHRRrMvn/spybSMyX8MTkKA5Dv+tS1IE/TgmNZPqUYtvYBXGY8cieSE66gm+szeK+bnbxC2xHTQ==}
     dev: false
 
-  /@types/eslint/8.4.9:
-    resolution: {integrity: sha512-jFCSo4wJzlHQLCpceUhUnXdrPuCNOjGFMQ8Eg6JXxlz3QaCKOb7eGi2cephQdM4XTYsNej69P9JDJ1zqNIbncQ==}
+  /@types/eslint/8.4.10:
+    resolution: {integrity: sha512-Sl/HOqN8NKPmhWo2VBEPm0nvHnu2LL3v9vKo8MEq0EtbJ4eVzGPl41VNPvn5E1i5poMk4/XD8UriLHpJvEP/Nw==}
     dependencies:
       '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
