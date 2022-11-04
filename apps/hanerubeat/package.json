@@ -2,7 +2,7 @@
   "author": "Haneru Developers",
   "dependencies": {
     "next": "^13.0.2",
-    "next-seo": "^5.13.0",
+    "next-seo": "^5.14.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0"
