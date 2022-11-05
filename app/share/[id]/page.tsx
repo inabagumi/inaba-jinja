@@ -1,16 +1,25 @@
 import { notFound } from 'next/navigation'
-import { type Props } from '@/app/(content)/kuji/[id]/page'
-import { getFortune } from '@/lib/contentful'
+import { type Props, generateFortuneName } from '@/app/(content)/kuji/[id]/page'
+import { type Fortune, getFortune } from '@/lib/contentful'
+import DynamicTitle from '@/ui/DynamicTitle'
 import Refresh from '@/ui/Refresh'
 
 export { revalidate } from '@/app/(content)/kuji/[id]/page'
 
 export default async function Page({ params }: Props): Promise<JSX.Element> {
+  let fortune: Fortune
   try {
-    await getFortune(params.id)
+    fortune = await getFortune(params.id)
   } catch {
     notFound()
   }
 
-  return <Refresh path="/" />
+  const name = generateFortuneName(fortune)
+
+  return (
+    <>
+      <DynamicTitle>因幡はねるくじ {name}</DynamicTitle>
+      <Refresh path="/" />
+    </>
+  )
 }

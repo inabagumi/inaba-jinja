@@ -2,6 +2,7 @@ import Image from 'next/legacy/image'
 import { notFound } from 'next/navigation'
 import { getFortune, getImageURL } from '@/lib/contentful'
 import { type Fortune } from '@/lib/contentful'
+import DynamicTitle from '@/ui/DynamicTitle'
 import ShareLinks from '@/ui/ShareLinks'
 import SimpleTitle from '@/ui/SimpleTitle'
 import styles from './page.module.css'
@@ -22,7 +23,6 @@ export type Props = {
 
 export default async function Page({ params }: Props): Promise<JSX.Element> {
   let fortune: Fortune
-
   try {
     fortune = await getFortune(params.id)
   } catch {
@@ -34,6 +34,7 @@ export default async function Page({ params }: Props): Promise<JSX.Element> {
 
   return (
     <>
+      <DynamicTitle>{`因幡はねるくじ ${name}`}</DynamicTitle>
       <SimpleTitle>{name}</SimpleTitle>
 
       <div className={styles.content}>

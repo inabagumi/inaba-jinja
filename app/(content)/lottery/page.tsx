@@ -1,6 +1,7 @@
 import Image from 'next/legacy/image'
 import kujiImage from '@/assets/kuji.png'
 import { getAnyFortuneID } from '@/lib/contentful'
+import DynamicTitle from '@/ui/DynamicTitle'
 import Refresh from '@/ui/Refresh'
 import styles from './page.module.css'
 
@@ -14,6 +15,8 @@ export default async function Page(): Promise<JSX.Element> {
 
   return (
     <>
+      <DynamicTitle>おみくじを引いています...</DynamicTitle>
+
       <div className={styles.content}>
         <div className={styles.lotteryBox}>
           <Image
