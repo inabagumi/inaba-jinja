@@ -1,20 +1,26 @@
 import Image from 'next/legacy/image'
 import { notFound } from 'next/navigation'
-import { getFortune, getImageURL } from '@/lib/contentful'
+import { getFortune, getFortuneIDs, getImageURL } from '@/lib/contentful'
 import { type Fortune } from '@/lib/contentful'
 import DynamicTitle from '@/ui/DynamicTitle'
 import ShareLinks from '@/ui/ShareLinks'
 import SimpleTitle from '@/ui/SimpleTitle'
 import styles from './page.module.css'
 
-export const revalidate = 30
-
 export function generateFortuneName(fortune: Fortune): string {
   return `第${fortune.fields.number}番『${fortune.fields.blessing}』`
 }
 
+export const revalidate = 30
+
 export type Params = {
   id: string
+}
+
+export async function generateStaticParams(): Promise<Params[]> {
+  const ids = await getFortuneIDs()
+
+  return ids.map((id) => ({ id }))
 }
 
 export type Props = {
