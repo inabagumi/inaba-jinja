@@ -14,6 +14,18 @@ All notable changes to this project will be documented in this file. See [standa
 
 * enable isr ([#2315](https://github.com/inabagumi/inaba-jinja/issues/2315)) ([521c075](https://github.com/inabagumi/inaba-jinja/commit/521c075efaf2366e1ca4c959bfb2367f747992be))
 
+## [3.0.4](https://github.com/inabagumi/inaba-jinja/compare/v3.0.3...v3.0.4) (2022-11-05)
+
+
+### Bug Fixes
+
+* change title dynamically ([#2313](https://github.com/inabagumi/inaba-jinja/issues/2313)) ([3f462e6](https://github.com/inabagumi/inaba-jinja/commit/3f462e6dab9ad504b33dda1a7734b363d93fe2d5))
+
+
+### Performance Improvements
+
+* enable isr ([#2315](https://github.com/inabagumi/inaba-jinja/issues/2315)) ([521c075](https://github.com/inabagumi/inaba-jinja/commit/521c075efaf2366e1ca4c959bfb2367f747992be))
+
 ## [3.0.3](https://github.com/inabagumi/inaba-jinja/compare/v3.0.2...v3.0.3) (2022-11-02)
 
 
