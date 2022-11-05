@@ -4,7 +4,10 @@ import { type Fortune, getFortune } from '@/lib/contentful'
 import DynamicTitle from '@/ui/DynamicTitle'
 import Refresh from '@/ui/Refresh'
 
-export { revalidate } from '@/app/(content)/kuji/[id]/page'
+export {
+  generateStaticParams,
+  revalidate
+} from '@/app/(content)/kuji/[id]/page'
 
 export default async function Page({ params }: Props): Promise<JSX.Element> {
   let fortune: Fortune
