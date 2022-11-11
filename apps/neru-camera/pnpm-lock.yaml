@@ -35,7 +35,7 @@ specifiers:
   prettier: ~2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
-  tailwindcss: ^3.2.3
+  tailwindcss: ^3.2.4
   typescript: ~4.8.4
 
 dependencies:
@@ -54,7 +54,7 @@ dependencies:
   pixi.js: 6.5.8
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  tailwindcss: 3.2.3_postcss@8.4.19
+  tailwindcss: 3.2.4_postcss@8.4.19
 
 devDependencies:
   '@commitlint/cli': 17.2.0
@@ -6068,8 +6068,8 @@ packages:
     resolution: {integrity: sha512-QD9qKY3StfbZqWOPLp0++pOrAVb/HbUi5xCc8cUo4XjP19808oaMiDzn0leBY5mCespIBM0CIZePzZjgzR83kA==}
     dev: false
 
-  /tailwindcss/3.2.3_postcss@8.4.19:
-    resolution: {integrity: sha512-Xt9D4PK4zuuQCEB8bwK9JUCKmTgUwyac/6b0/42Vqhgl6YJkep+Wf5wq+5uXYfmrupdAD0YY2NY1hyZp1HjRrg==}
+  /tailwindcss/3.2.4_postcss@8.4.19:
+    resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
