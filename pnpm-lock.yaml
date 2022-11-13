@@ -41,7 +41,7 @@ specifiers:
   prettier-plugin-md-nocjsp: ^1.4.0
   react: ^18.2.0
   react-dom: ^18.2.0
-  react-focus-lock: ^2.9.1
+  react-focus-lock: ^2.9.2
   react-remove-scroll: ^2.5.5
   rehype-external-links: ^2.0.1
   remark-gfm: ^3.0.1
@@ -59,7 +59,7 @@ dependencies:
   next: 13.0.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-focus-lock: 2.9.1_fan5qbzahqtxlm5dzefqlqx5ia
+  react-focus-lock: 2.9.2_fan5qbzahqtxlm5dzefqlqx5ia
   react-remove-scroll: 2.5.5_fan5qbzahqtxlm5dzefqlqx5ia
   sitemap: 7.1.1
 
@@ -7138,8 +7138,8 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-focus-lock/2.9.1_fan5qbzahqtxlm5dzefqlqx5ia:
-    resolution: {integrity: sha512-pSWOQrUmiKLkffPO6BpMXN7SNKXMsuOakl652IBuALAu1esk+IcpJyM+ALcYzPTTFz1rD0R54aB9A4HuP5t1Wg==}
+  /react-focus-lock/2.9.2_fan5qbzahqtxlm5dzefqlqx5ia:
+    resolution: {integrity: sha512-5JfrsOKyA5Zn3h958mk7bAcfphr24jPoMoznJ8vaJF6fUrPQ8zrtEd3ILLOK8P5jvGxdMd96OxWNjDzATfR2qw==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
