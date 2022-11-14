@@ -12,7 +12,7 @@
     "@mdx-js/react": "^2.1.5",
     "@reach/portal": "^0.18.0",
     "@reach/skip-nav": "^0.18.0",
-    "@vercel/analytics": "^0.1.4",
+    "@vercel/analytics": "^0.1.5",
     "clsx": "^1.2.1",
     "contentful": "^9.2.11",
     "dedent": "^0.7.0",
