@@ -27,7 +27,7 @@ specifiers:
   '@typescript-eslint/parser': ~5.43.0
   '@vercel/analytics': ^0.1.5
   clsx: ^1.2.1
-  contentful: ^9.2.11
+  contentful: ^9.2.12
   dedent: ^0.7.0
   eslint: ~8.27.0
   eslint-config-next: ~13.0.3
@@ -54,7 +54,7 @@ dependencies:
   '@reach/skip-nav': 0.18.0_biqbaboplfbrettd7655fr4n2y
   '@vercel/analytics': 0.1.5_react@18.2.0
   clsx: 1.2.1
-  contentful: 9.2.11
+  contentful: 9.2.12
   dedent: 0.7.0
   next: 13.0.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -3488,8 +3488,8 @@ packages:
       qs: 6.11.0
     dev: false
 
-  /contentful/9.2.11:
-    resolution: {integrity: sha512-IKdxgwO930yGsTad22/E8szD2KHKaLQIDx+l18oH6PtzS9w0eV+EFBUbAkATGutUmnXR+kcj8IK9N7axyv/yCA==}
+  /contentful/9.2.12:
+    resolution: {integrity: sha512-xYZHcRfBsAF2haTUNekSF0ZXSlitVvOcO/lPBvWCVnN2mr5KQSDUrzD3qRYv52vqDVMq3kFs5Z934Ma+9hV8Qg==}
     engines: {node: '>=12'}
     requiresBuild: true
     dependencies:
