@@ -19,7 +19,7 @@ specifiers:
   autoprefixer: ^10.4.13
   browser-fs-access: ^0.31.1
   clsx: ^1.2.1
-  contentful: ^9.2.12
+  contentful: ^9.2.13
   eslint: ^8.28.0
   eslint-config-next: ^13.0.4
   eslint-config-prettier: ^8.5.0
@@ -47,7 +47,7 @@ dependencies:
   '@reach/menu-button': 0.18.0_biqbaboplfbrettd7655fr4n2y
   browser-fs-access: 0.31.1
   clsx: 1.2.1
-  contentful: 9.2.12
+  contentful: 9.2.13
   next: 13.0.4_biqbaboplfbrettd7655fr4n2y
   next-seo: 5.14.1_dcors23iqtgxrhrwosgnnc4xji
   pixi-viewport: 4.37.0_@pixi+interaction@6.5.8
@@ -3162,8 +3162,8 @@ packages:
       qs: 6.11.0
     dev: false
 
-  /contentful/9.2.12:
-    resolution: {integrity: sha512-xYZHcRfBsAF2haTUNekSF0ZXSlitVvOcO/lPBvWCVnN2mr5KQSDUrzD3qRYv52vqDVMq3kFs5Z934Ma+9hV8Qg==}
+  /contentful/9.2.13:
+    resolution: {integrity: sha512-JEgNKY1gdzlg6poN5N6ImUbJQ2fPv9Cgxp3KXa5JTdDBpbySRLQI+0QXIUbvGu5HI/u1bpw6hEa2ZRtgYpdSew==}
     engines: {node: '>=12'}
     requiresBuild: true
     dependencies:
