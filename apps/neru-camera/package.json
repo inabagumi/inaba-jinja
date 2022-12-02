@@ -9,7 +9,7 @@
     "@reach/menu-button": "^0.18.0",
     "browser-fs-access": "^0.31.1",
     "clsx": "^1.2.1",
-    "contentful": "^9.2.13",
+    "contentful": "^9.2.14",
     "next": "^13.0.5",
     "next-seo": "^5.14.1",
     "pixi-viewport": "^4.38.0",
