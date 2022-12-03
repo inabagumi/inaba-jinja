@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.5](https://github.com/inabagumi/inaba-jinja/compare/v3.0.4...v3.0.5) (2022-12-03)
+
+
+### Bug Fixes
+
+* remove ad-hoc `DynamicTitle` component ([#2357](https://github.com/inabagumi/inaba-jinja/issues/2357)) ([7a6eb6d](https://github.com/inabagumi/inaba-jinja/commit/7a6eb6d6c7f380ec0f031aa69b88fb90c19f0113))
+
 ## [3.0.4](https://github.com/inabagumi/inaba-jinja/compare/v3.0.3...v3.0.4) (2022-11-05)
 
 
