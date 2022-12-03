@@ -64,10 +64,13 @@ export default function SEO({
 
       <meta content="summary_large_image" name="twitter:card" />
       <meta content={`@${twitterAccount}`} name="twitter:site" />
+      {/*
+      // todo: to avoid unexplained error
       <meta
         content={title ? `${title} - ${siteName}` : title}
         name="twitter:title"
       />
+      */}
 
       {path && (
         <link
