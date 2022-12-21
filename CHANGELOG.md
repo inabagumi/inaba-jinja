@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.6](https://github.com/inabagumi/inaba-jinja/compare/v3.0.5...v3.0.6) (2022-12-21)
+
+
+### Bug Fixes
+
+* remove unnecessary `div` element ([#2388](https://github.com/inabagumi/inaba-jinja/issues/2388)) ([5d56128](https://github.com/inabagumi/inaba-jinja/commit/5d56128cf6efb7555fd5fd98529d7957738770e8))
+
 ## [3.0.5](https://github.com/inabagumi/inaba-jinja/compare/v3.0.4...v3.0.5) (2022-12-03)
 
 
