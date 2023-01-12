@@ -17,7 +17,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.48.1
   '@typescript-eslint/parser': ^5.48.1
   autoprefixer: ^10.4.13
-  browser-fs-access: ^0.31.1
+  browser-fs-access: ^0.31.2
   clsx: ^1.2.1
   contentful: ^9.2.15
   eslint: ^8.31.0
@@ -45,7 +45,7 @@ dependencies:
   '@reach/alert-dialog': 0.18.0_ib3m5ricvtkl2cll7qpr2f6lvq
   '@reach/dialog': 0.18.0_ib3m5ricvtkl2cll7qpr2f6lvq
   '@reach/menu-button': 0.18.0_biqbaboplfbrettd7655fr4n2y
-  browser-fs-access: 0.31.1
+  browser-fs-access: 0.31.2
   clsx: 1.2.1
   contentful: 9.2.15
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
@@ -2947,8 +2947,8 @@ packages:
     dependencies:
       fill-range: 7.0.1
 
-  /browser-fs-access/0.31.1:
-    resolution: {integrity: sha512-jMz9f56DkLM7LyA8wZYO7CtpoF3RdUk1/FXrnRNybgV0R5eqk/fgFWR0k5IMjPYgK4jmZecytP/UDO5WBi9Dhg==}
+  /browser-fs-access/0.31.2:
+    resolution: {integrity: sha512-wZSA7UgKMwR6oxddFQeSIoD7cxiNiaZT+iuVJw4/avr9t2ROwu80gxENT0YJChsLxJ7xBbLZDGHTAXfAg3Pq5Q==}
     dev: false
 
   /browserslist/4.21.4:
