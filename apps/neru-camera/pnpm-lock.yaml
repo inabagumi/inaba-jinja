@@ -32,7 +32,7 @@ specifiers:
   pixi-viewport: ^4.38.0
   pixi.js: ^6.5.8
   postcss: ^8.4.21
-  prettier: ~2.8.2
+  prettier: ~2.8.3
   react: ^18.2.0
   react-dom: ^18.2.0
   tailwindcss: ^3.2.4
@@ -59,7 +59,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
-  '@inabagumi/prettier-config': 2.0.0_prettier@2.8.2
+  '@inabagumi/prettier-config': 2.0.0_prettier@2.8.3
   '@next/eslint-plugin-next': 13.1.2
   '@types/eslint': 8.4.10
   '@types/node': 18.11.18
@@ -75,7 +75,7 @@ devDependencies:
   lint-staged: 13.1.0
   next-pwa: 5.6.0_next@13.1.2
   postcss: 8.4.21
-  prettier: 2.8.2
+  prettier: 2.8.3
   typescript: 4.9.4
 
 packages:
@@ -1468,12 +1468,12 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@inabagumi/prettier-config/2.0.0_prettier@2.8.2:
+  /@inabagumi/prettier-config/2.0.0_prettier@2.8.3:
     resolution: {integrity: sha512-b5tcbqpJv4gmJca3SQrRQ+QH/cDlMV5rS9gi9zTPXtIRGMByR4hLMuIffkknbKTOQ5UrDjvrWBbzY1mfw5geJA==}
     peerDependencies:
       prettier: '>= 2.4.0'
     dependencies:
-      prettier: 2.8.2
+      prettier: 2.8.3
     dev: true
 
   /@jridgewell/gen-mapping/0.1.1:
@@ -5530,8 +5530,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.8.2:
-    resolution: {integrity: sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==}
+  /prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
