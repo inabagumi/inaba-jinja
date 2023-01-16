@@ -14,7 +14,7 @@
     "@reach/skip-nav": "^0.18.0",
     "@vercel/analytics": "^0.1.8",
     "clsx": "^1.2.1",
-    "contentful": "^9.2.15",
+    "contentful": "^9.2.17",
     "dedent": "^0.7.0",
     "next": "~13.1.2",
     "react": "^18.2.0",
