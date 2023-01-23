@@ -19,7 +19,7 @@ specifiers:
   autoprefixer: ^10.4.13
   browser-fs-access: ^0.31.2
   clsx: ^1.2.1
-  contentful: ^9.2.17
+  contentful: ^9.2.18
   eslint: ^8.32.0
   eslint-config-next: ^13.1.4
   eslint-config-prettier: ^8.6.0
@@ -47,7 +47,7 @@ dependencies:
   '@reach/menu-button': 0.18.0_biqbaboplfbrettd7655fr4n2y
   browser-fs-access: 0.31.2
   clsx: 1.2.1
-  contentful: 9.2.17
+  contentful: 9.2.18
   next: 13.1.4_biqbaboplfbrettd7655fr4n2y
   next-seo: 5.15.0_gru2niblrprbai56sdagiiy5sa
   pixi-viewport: 4.38.0_@pixi+interaction@6.5.8
@@ -3154,8 +3154,8 @@ packages:
       fast-copy: 2.1.7
     dev: false
 
-  /contentful-sdk-core/7.0.4:
-    resolution: {integrity: sha512-HwYdXmTsVh9rJOq+TA8CsY+vt6ivqkyJZpiEyVboZKIXAa83QmeVLAeBxK75+IiI9KpaPz7LCjVBXTGoTrhV7A==}
+  /contentful-sdk-core/7.0.5:
+    resolution: {integrity: sha512-GG+DvFRwaoTeco072WjN+uyfpHs8Gilxl3ryJcXo3mlxeN/A/inbAqhX+RrKB5HNOVREdNWeMBAg0D7hLvlBXQ==}
     engines: {node: '>=12'}
     dependencies:
       fast-copy: 2.1.7
@@ -3165,14 +3165,14 @@ packages:
       qs: 6.11.0
     dev: false
 
-  /contentful/9.2.17:
-    resolution: {integrity: sha512-rFGD5x5D0p/3c17gidJW9gwpUtfi+oqVpLplymPMXXnRVDFxZ9LXrJv+lXOHKWecfi7VaNtTdQ6BGoEWWRTCPw==}
+  /contentful/9.2.18:
+    resolution: {integrity: sha512-O1fSO45bmzMS7/EYaWR48Ph3jn1o1csE3DtgUldoblOv8JF2x3sxRGJh+VTg12bNrUShiuotHhnmivh4sQ90yw==}
     engines: {node: '>=12'}
     requiresBuild: true
     dependencies:
       axios: 0.27.2
       contentful-resolve-response: 1.6.2
-      contentful-sdk-core: 7.0.4
+      contentful-sdk-core: 7.0.5
       fast-copy: 2.1.7
       json-stringify-safe: 5.0.1
     transitivePeerDependencies:
