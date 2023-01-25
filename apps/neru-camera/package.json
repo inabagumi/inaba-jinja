@@ -13,7 +13,7 @@
     "next": "^13.1.5",
     "next-seo": "^5.15.0",
     "pixi-viewport": "^4.38.0",
-    "pixi.js": "^6.5.8",
+    "pixi.js": "^6.5.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.2.4"
