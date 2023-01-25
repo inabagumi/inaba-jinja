@@ -3,7 +3,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@inlet/react-pixi": "npm:@saitonakamura/react-pixi@7.0.0-beta-5",
-    "@pixi/interaction": "^6.5.8",
+    "@pixi/interaction": "^6.5.9",
     "@reach/alert-dialog": "^0.18.0",
     "@reach/dialog": "^0.18.0",
     "@reach/menu-button": "^0.18.0",
