@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.7](https://github.com/inabagumi/inaba-jinja/compare/v3.0.6...v3.0.7) (2023-01-31)
+
+
+### Bug Fixes
+
+* **home:** set `website` to `og:type` ([#2450](https://github.com/inabagumi/inaba-jinja/issues/2450)) ([13c8690](https://github.com/inabagumi/inaba-jinja/commit/13c869084b180b1cd822f6c7d8d7fec61407e80c))
+
 ## [3.0.6](https://github.com/inabagumi/inaba-jinja/compare/v3.0.5...v3.0.6) (2022-12-21)
 
 
