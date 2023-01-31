@@ -13,6 +13,6 @@ type Props = {
   children: ReactNode
 }
 
-export default function MarkdownWrapper({ children }: Props): JSX.Element {
+export default function MarkdownWrapper({ children }: Props) {
   return <MDXProvider components={mdxComponents}>{children}</MDXProvider>
 }

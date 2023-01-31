@@ -6,7 +6,7 @@ type Props = {
   children: ReactNode
 }
 
-export default function DocumentLayout({ children }: Props): JSX.Element {
+export default function DocumentLayout({ children }: Props) {
   return (
     <MarkdownWrapper>
       <div className={styles.markdown}>{children}</div>
