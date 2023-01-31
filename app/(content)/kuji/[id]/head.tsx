@@ -2,7 +2,7 @@ import { type Fortune, getFortune, getImageURL } from '@/lib/contentful'
 import SEO from '@/ui/SEO'
 import { type Props, generateFortuneName } from './page'
 
-export default async function Head({ params }: Props): Promise<JSX.Element> {
+export default async function Head({ params }: Props) {
   let fortune: Fortune
   try {
     fortune = await getFortune(params.id)

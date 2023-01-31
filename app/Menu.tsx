@@ -9,7 +9,7 @@ import Logo from '@/assets/logo.svg'
 import IconButton from '@/ui/IconButton'
 import styles from './Menu.module.css'
 
-export default function Menu(): JSX.Element {
+export default function Menu() {
   const [menuShown, setMenuShown] = useState(false)
 
   const showMenu = useCallback(() => {

@@ -26,7 +26,7 @@ export type Props = {
   params: Params
 }
 
-export default async function Page({ params }: Props): Promise<JSX.Element> {
+export default async function Page({ params }: Props) {
   let fortune: Fortune
   try {
     fortune = await getFortune(params.id)

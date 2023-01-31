@@ -9,7 +9,7 @@ type Props = {
   children: ReactNode
 }
 
-export default function ContentLayout({ children }: Props): JSX.Element {
+export default function ContentLayout({ children }: Props) {
   return (
     <div>
       <header className={styles.header}>

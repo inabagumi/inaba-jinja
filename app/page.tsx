@@ -4,7 +4,17 @@ import Logo from '@/assets/vertical-logo.svg'
 import { description, title } from '@/lib/constants'
 import styles from './page.module.css'
 
-export default function Page(): JSX.Element {
+export const metadata = {
+  alternates: {
+    canonical: new URL('/', process.env.NEXT_PUBLIC_BASE_URL),
+    languages: []
+  },
+  openGraph: {
+    url: new URL('/', process.env.NEXT_PUBLIC_BASE_URL)
+  }
+}
+
+export default function Page() {
   return (
     <main className={styles.container}>
       <header className={styles.header}>
