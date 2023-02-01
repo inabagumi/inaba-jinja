@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.8](https://github.com/inabagumi/inaba-jinja/compare/v3.0.7...v3.0.8) (2023-02-01)
+
+
+### Bug Fixes
+
+* **about:** remove invalid dollar ([#2453](https://github.com/inabagumi/inaba-jinja/issues/2453)) ([6e1f5b5](https://github.com/inabagumi/inaba-jinja/commit/6e1f5b573f6644f69ac10282824e8ce488ce2951))
+
 ## [3.0.7](https://github.com/inabagumi/inaba-jinja/compare/v3.0.6...v3.0.7) (2023-01-31)
 
 
