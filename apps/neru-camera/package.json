@@ -24,7 +24,7 @@
     "@commitlint/config-conventional": "^17.4.2",
     "@inabagumi/prettier-config": "^2.0.0",
     "@next/eslint-plugin-next": "^13.1.6",
-    "@types/eslint": "^8.4.10",
+    "@types/eslint": "^8.21.0",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.27",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
