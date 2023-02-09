@@ -5,8 +5,8 @@ specifiers:
   '@commitlint/config-conventional': ^17.4.2
   '@inabagumi/prettier-config': ^2.0.0
   '@jest/types': ^29.4.2
-  '@mdx-js/loader': ^2.2.1
-  '@mdx-js/react': ^2.2.1
+  '@mdx-js/loader': ^2.3.0
+  '@mdx-js/react': ^2.3.0
   '@next/mdx': ^13.1.6
   '@reach/portal': ^0.18.0
   '@reach/skip-nav': ^0.18.0
@@ -49,7 +49,7 @@ specifiers:
   typescript: ~4.9.5
 
 dependencies:
-  '@mdx-js/react': 2.2.1_react@18.2.0
+  '@mdx-js/react': 2.3.0_react@18.2.0
   '@reach/portal': 0.18.0_biqbaboplfbrettd7655fr4n2y
   '@reach/skip-nav': 0.18.0_biqbaboplfbrettd7655fr4n2y
   '@vercel/analytics': 0.1.8_react@18.2.0
@@ -68,8 +68,8 @@ devDependencies:
   '@commitlint/config-conventional': 17.4.2
   '@inabagumi/prettier-config': 2.0.0_prettier@2.8.4
   '@jest/types': 29.4.2
-  '@mdx-js/loader': 2.2.1
-  '@next/mdx': 13.1.6_vvg67iglxhejglpl7nsv3pjzui
+  '@mdx-js/loader': 2.3.0
+  '@next/mdx': 13.1.6_msthxdjvrhmdkfpqqalumiidgq
   '@svgr/webpack': 6.5.1
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
@@ -1910,8 +1910,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@mdx-js/loader/2.2.1:
-    resolution: {integrity: sha512-J4E8A5H+xtk4otZiEZ5AXl61Tj04Avm5MqLQazITdI3+puVXVnTTuZUKM1oNHTtfDIfOl0uMt+o/Ij+x6Fvf+g==}
+  /@mdx-js/loader/2.3.0:
+    resolution: {integrity: sha512-IqsscXh7Q3Rzb+f5DXYk0HU71PK+WuFsEhf+mSV3fOhpLcEpgsHvTQ2h0T6TlZ5gHOaBeFjkXwB52by7ypMyNg==}
     peerDependencies:
       webpack: '>=4'
     dependencies:
@@ -1945,8 +1945,8 @@ packages:
       - supports-color
     dev: true
 
-  /@mdx-js/react/2.2.1_react@18.2.0:
-    resolution: {integrity: sha512-YdXcMcEnqZhzql98RNrqYo9cEhTTesBiCclEtoiQUbJwx87q9453GTapYU6kJ8ZZ2ek1Vp25SiAXEFy5O/eAPw==}
+  /@mdx-js/react/2.3.0_react@18.2.0:
+    resolution: {integrity: sha512-zQH//gdOmuu7nt2oJR29vFhDv88oGPmVw6BggmrHeMI+xgEkp1B2dX9/bMBSYtK0dyLX/aOmesKS09g222K1/g==}
     peerDependencies:
       react: '>=16'
     dependencies:
@@ -1963,14 +1963,14 @@ packages:
       glob: 7.1.7
     dev: true
 
-  /@next/mdx/13.1.6_vvg67iglxhejglpl7nsv3pjzui:
+  /@next/mdx/13.1.6_msthxdjvrhmdkfpqqalumiidgq:
     resolution: {integrity: sha512-ZLhXXDJeHbudFpSZT68eYQRzOaNwkaw+NuO7Zvnm5XKB6P7hKSj2dS47ZtitrY0JaL3KxR4FoxUSYeLvdoRwtQ==}
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
       '@mdx-js/react': '*'
     dependencies:
-      '@mdx-js/loader': 2.2.1
-      '@mdx-js/react': 2.2.1_react@18.2.0
+      '@mdx-js/loader': 2.3.0
+      '@mdx-js/react': 2.3.0_react@18.2.0
       source-map: 0.7.4
     dev: true
 
