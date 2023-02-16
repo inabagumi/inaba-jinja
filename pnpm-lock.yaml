@@ -25,7 +25,7 @@ specifiers:
   '@types/webpack-env': ^1.18.0
   '@typescript-eslint/eslint-plugin': ~5.52.0
   '@typescript-eslint/parser': ~5.52.0
-  '@vercel/analytics': ^0.1.8
+  '@vercel/analytics': ^0.1.9
   clsx: ^1.2.1
   contentful: ^9.3.2
   dedent: ^0.7.0
@@ -52,7 +52,7 @@ dependencies:
   '@mdx-js/react': 2.3.0_react@18.2.0
   '@reach/portal': 0.18.0_biqbaboplfbrettd7655fr4n2y
   '@reach/skip-nav': 0.18.0_biqbaboplfbrettd7655fr4n2y
-  '@vercel/analytics': 0.1.8_react@18.2.0
+  '@vercel/analytics': 0.1.9_react@18.2.0
   clsx: 1.2.1
   contentful: 9.3.2
   dedent: 0.7.0
@@ -2821,8 +2821,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vercel/analytics/0.1.8_react@18.2.0:
-    resolution: {integrity: sha512-PQrOI8BJ9qUiVJuQfnKiJd15eDjDJH9TBKsNeMrtelT4NAk7d9mBVz1CoZkvoFnHQ0OW7Xnqmr1F2nScfAnznQ==}
+  /@vercel/analytics/0.1.9_react@18.2.0:
+    resolution: {integrity: sha512-Lfus/6HAZXQBr4uv5eCtNKrEvthKWQFFcUNh5wC3fWn+4PbHxT8bqcm1TMQfYvGJ8O4TWzn0IfrQFNWh1DHDbQ==}
     peerDependencies:
       react: ^16.8||^17||^18
     dependencies:
