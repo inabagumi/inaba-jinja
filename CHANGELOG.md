@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.9](https://github.com/inabagumi/inaba-jinja/compare/v3.0.8...v3.0.9) (2023-02-16)
+
+
+### Bug Fixes
+
+* add missing `twitter:title` ([#2476](https://github.com/inabagumi/inaba-jinja/issues/2476)) ([0df1415](https://github.com/inabagumi/inaba-jinja/commit/0df1415e5f8b4eceec0e87abce2904d0d9f7025e))
+
 ## [3.0.8](https://github.com/inabagumi/inaba-jinja/compare/v3.0.7...v3.0.8) (2023-02-01)
 
 
