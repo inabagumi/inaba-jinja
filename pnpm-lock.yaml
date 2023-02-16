@@ -41,7 +41,7 @@ specifiers:
   prettier-plugin-md-nocjsp: ^1.5.1
   react: ^18.2.0
   react-dom: ^18.2.0
-  react-focus-lock: ^2.9.3
+  react-focus-lock: ^2.9.4
   react-remove-scroll: ^2.5.5
   rehype-external-links: ^2.0.1
   remark-gfm: ^3.0.1
@@ -59,7 +59,7 @@ dependencies:
   next: 13.1.7-canary.15_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-focus-lock: 2.9.3_pmekkgnqduwlme35zpnqhenc34
+  react-focus-lock: 2.9.4_pmekkgnqduwlme35zpnqhenc34
   react-remove-scroll: 2.5.5_pmekkgnqduwlme35zpnqhenc34
   sitemap: 7.1.1
 
@@ -4539,8 +4539,8 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /focus-lock/0.11.5:
-    resolution: {integrity: sha512-1mTr6pl9HBpJ8CqY7hRc38MCrcuTZIeYAkBD1gBTzbx5/to+bRBaBYtJ68iDq7ryTzAAbKrG3dVKjkrWTaaEaw==}
+  /focus-lock/0.11.6:
+    resolution: {integrity: sha512-KSuV3ur4gf2KqMNoZx3nXNVhqCkn42GuTYCX4tXPEwf0MjpFQmNMiN6m7dXaUXgIoivL6/65agoUMg4RLS0Vbg==}
     engines: {node: '>=10'}
     dependencies:
       tslib: 2.5.0
@@ -7237,8 +7237,8 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-focus-lock/2.9.3_pmekkgnqduwlme35zpnqhenc34:
-    resolution: {integrity: sha512-cGNkz9p5Fpqio6hBHlkKxzRYrBYtcPosFOL6Q3N/LSbHjwP/PTBqHpvbgaOYoE7rWfzw8qXPKTB3Tk/VPgw4NQ==}
+  /react-focus-lock/2.9.4_pmekkgnqduwlme35zpnqhenc34:
+    resolution: {integrity: sha512-7pEdXyMseqm3kVjhdVH18sovparAzLg5h6WvIx7/Ck3ekjhrrDMEegHSa3swwC8wgfdd7DIdUVRGeiHT9/7Sgg==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -7248,7 +7248,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.13
       '@types/react': 18.0.28
-      focus-lock: 0.11.5
+      focus-lock: 0.11.6
       prop-types: 15.8.1
       react: 18.2.0
       react-clientside-effect: 1.2.6_react@18.2.0
