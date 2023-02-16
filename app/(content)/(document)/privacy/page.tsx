@@ -1,21 +1,25 @@
-import { title as siteName } from '@/lib/constants'
+import { type Metadata } from 'next'
+import { title as siteName, twitterAccount } from '@/lib/constants'
 import SimpleTitle from '@/ui/SimpleTitle'
 import PrivacyWrapper from './PrivacyWrapper'
 
 const title = 'プライバシーポリシー'
 
-export const metadata = {
+export const metadata: Metadata = {
   alternates: {
-    canonical: new URL('/privacy', process.env.NEXT_PUBLIC_BASE_URL),
-    languages: []
+    canonical: '/privacy'
   },
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   openGraph: {
+    siteName,
     title,
-    url: new URL('/privacy', process.env.NEXT_PUBLIC_BASE_URL)
+    type: 'article',
+    url: '/privacy'
   },
   title,
   twitter: {
-    title: `${title} | ${siteName}`
+    site: `@${twitterAccount}`,
+    title: `${title} - ${siteName}`
   }
 }
 

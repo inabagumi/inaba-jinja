@@ -1,7 +1,13 @@
+import { type Metadata } from 'next'
 import Image from 'next/legacy/image'
 import { notFound } from 'next/navigation'
-import { getFortune, getFortuneIDs, getImageURL } from '@/lib/contentful'
-import { type Fortune } from '@/lib/contentful'
+import { title as siteName, twitterAccount } from '@/lib/constants'
+import {
+  type Fortune,
+  getFortune,
+  getFortuneIDs,
+  getImageURL
+} from '@/lib/contentful'
 import ShareLinks from '@/ui/ShareLinks'
 import SimpleTitle from '@/ui/SimpleTitle'
 import styles from './page.module.css'
@@ -24,6 +30,45 @@ export async function generateStaticParams(): Promise<Params[]> {
 
 export type Props = {
   params: Params
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const fortune = await getFortune(params.id)
+
+  if (!fortune) {
+    return {}
+  }
+
+  const name = generateFortuneName(fortune)
+  const title = `因幡はねるくじ ${name}`
+
+  return {
+    alternates: {
+      canonical: `/kuji/${fortune.sys.id}`
+    },
+    description: fortune.fields.description,
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
+    openGraph: {
+      description: fortune.fields.description,
+      images: [
+        {
+          height: fortune.fields.card.fields.file.details.image?.height ?? 630,
+          url: getImageURL(fortune.fields.card),
+          width: fortune.fields.card.fields.file.details.image?.width ?? 1200
+        }
+      ],
+      siteName,
+      title,
+      type: 'article',
+      url: `/kuji/${fortune.sys.id}`
+    },
+    title,
+    twitter: {
+      card: 'summary_large_image',
+      site: `@${twitterAccount}`,
+      title: `${title} - ${siteName}`
+    }
+  }
 }
 
 export default async function Page({ params }: Props) {

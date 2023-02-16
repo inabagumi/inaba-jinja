@@ -4,6 +4,7 @@ import { getFortune } from '@/lib/contentful'
 import Refresh from '@/ui/Refresh'
 
 export {
+  generateMetadata,
   generateStaticParams,
   revalidate
 } from '@/app/(content)/kuji/[id]/page'

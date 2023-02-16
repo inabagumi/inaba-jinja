@@ -1,6 +1,7 @@
 import '@reach/skip-nav/styles.css'
 import '@/styles/globals.css'
 import { SkipNavLink } from '@reach/skip-nav'
+import { type Metadata } from 'next'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
 import cardImage from '@/assets/card.jpg'
@@ -18,24 +19,21 @@ import Background from './Background'
 import Menu from './Menu'
 import styles from './layout.module.css'
 
-export const metadata = {
+export const metadata: Metadata = {
   description,
   icons: {
     apple: {
-      height: appleTouchIcon.height,
-      url: appleTouchIcon.src,
-      width: appleTouchIcon.width
+      sizes: `${appleTouchIcon.width}x${appleTouchIcon.height}`,
+      url: appleTouchIcon.src
     },
     icon: [
       {
-        height: favicon192x192.height,
-        url: favicon192x192.src,
-        width: favicon192x192.width
+        sizes: `${favicon192x192.width}x${favicon192x192.height}`,
+        url: favicon192x192.src
       },
       {
-        height: favicon512x512.height,
-        url: favicon512x512.src,
-        width: favicon512x512.width
+        sizes: `${favicon512x512.width}x${favicon512x512.height}`,
+        url: favicon512x512.src
       }
     ]
   },
@@ -44,10 +42,7 @@ export const metadata = {
     images: [
       {
         height: cardImage.height,
-        url: new URL(
-          cardImage.src,
-          process.env.NEXT_PUBLIC_BASE_URL
-        ).toString(),
+        url: cardImage.src,
         width: cardImage.width
       }
     ],
