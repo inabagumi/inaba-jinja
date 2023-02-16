@@ -1,6 +1,7 @@
+import { type Metadata } from 'next'
 import Image from 'next/legacy/image'
 import kujiImage from '@/assets/kuji.png'
-import { title as siteName } from '@/lib/constants'
+import { title as siteName, twitterAccount } from '@/lib/constants'
 import { getAnyFortuneID } from '@/lib/contentful'
 import Refresh from '@/ui/Refresh'
 import styles from './page.module.css'
@@ -11,21 +12,23 @@ export const revalidate = 0
 
 const title = 'おみくじを引いています...'
 
-export const metadata = {
+export const metadata: Metadata = {
   alternates: {
-    canonical: new URL('/lottery', process.env.NEXT_PUBLIC_BASE_URL),
-    languages: []
+    canonical: '/lottery'
   },
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   openGraph: {
     title,
-    url: new URL('/lottery', process.env.NEXT_PUBLIC_BASE_URL)
+    url: '/lottery'
   },
   robots: {
+    follow: true,
     index: false
   },
   title,
   twitter: {
-    title: `${title} | ${siteName}`
+    site: `@${twitterAccount}`,
+    title: `${title} - ${siteName}`
   }
 }
 

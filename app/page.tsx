@@ -1,17 +1,18 @@
 import { SkipNavContent } from '@reach/skip-nav'
+import { type Metadata } from 'next'
 import Link from 'next/link'
 import Logo from '@/assets/vertical-logo.svg'
 import { description, title } from '@/lib/constants'
 import styles from './page.module.css'
 
-export const metadata = {
+export const metadata: Metadata = {
   alternates: {
-    canonical: new URL('/', process.env.NEXT_PUBLIC_BASE_URL),
-    languages: []
+    canonical: '/'
   },
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   openGraph: {
     type: 'website',
-    url: new URL('/', process.env.NEXT_PUBLIC_BASE_URL)
+    url: '/'
   }
 }
 
