@@ -1,5 +1,10 @@
 import { type NextApiHandler } from 'next'
-import { EnumChangefreq, type SitemapItemLoose, SitemapStream } from 'sitemap'
+import {
+  EnumChangefreq,
+  type SitemapItemLoose,
+  SitemapStream,
+  streamToPromise
+} from 'sitemap'
 import { getFortuneIDs } from '@/lib/contentful'
 import pkg from '../../package.json'
 
@@ -21,7 +26,7 @@ const STATIC_PAGES: SitemapItemLoose[] = [
   }
 ]
 
-const sitemapHandler: NextApiHandler<string> = async (_req, res) => {
+async function writeSitemap() {
   const smStream = new SitemapStream({
     hostname: pkg.homepage
   })
@@ -39,14 +44,13 @@ const sitemapHandler: NextApiHandler<string> = async (_req, res) => {
     })
   }
 
-  res.status(200)
-  res.setHeader('Content-Type', 'application/xml')
-  res.setHeader('Cache-Control', 'max-age=604800')
-
-  smStream.end()
-  smStream.pipe(res).on('close', () => {
-    res.end()
-  })
+  return streamToPromise(smStream)
 }
 
-export default sitemapHandler
+export const handler: NextApiHandler = async (_req, res) => {
+  const sitemapBody = await writeSitemap()
+
+  res.setHeader('Cache-Control', 'max-age=604800')
+  res.setHeader('Content-Type', 'application/xml')
+  res.end(sitemapBody)
+}

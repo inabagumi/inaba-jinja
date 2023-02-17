@@ -109,10 +109,6 @@ const nextConfig = {
         source: '/workbox-:hash.js'
       },
       {
-        destination: '/api/manifest',
-        source: '/manifest.webmanifest'
-      },
-      {
         destination: '/api/sitemap',
         source: '/sitemap.xml'
       }
