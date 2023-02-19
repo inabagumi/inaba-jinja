@@ -107,10 +107,6 @@ const nextConfig = {
       {
         destination: '/_next/static/workbox-:hash.js',
         source: '/workbox-:hash.js'
-      },
-      {
-        destination: '/api/sitemap',
-        source: '/sitemap.xml'
       }
     ]
   },

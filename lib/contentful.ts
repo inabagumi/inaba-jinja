@@ -2,6 +2,7 @@ import {
   type Asset,
   type ContentfulClientApi,
   type Entry,
+  type EntryCollection,
   createClient
 } from 'contentful'
 import { cache } from 'react'
@@ -44,20 +45,47 @@ export const getFortune = cache(async function getFortune(
   return getClient().getEntry<FortuneFields>(id)
 })
 
-export const getFortuneIDs = cache(async function getFortuneIDs(): Promise<
-  string[]
-> {
-  const entries = await getClient().getEntries<undefined>({
-    content_type: 'fortune',
-    limit: 100,
-    select: 'sys.id'
-  })
+export const getFortuneIDs = cache(
+  async function* getFortuneIDs(): AsyncGenerator<string> {
+    const { items, limit, total } = await getClient().getEntries<undefined>({
+      content_type: 'fortune',
+      limit: 100,
+      select: 'sys.id'
+    })
 
-  return entries.items.map((item) => item.sys.id)
-})
+    for (const entry of items) {
+      yield entry.sys.id
+    }
+
+    if (items.length < total) {
+      const promises: Promise<EntryCollection<undefined>>[] = []
+
+      for (let skip = limit; skip < total; skip += limit) {
+        promises.push(
+          getClient().getEntries<undefined>({
+            content_type: 'fortune',
+            limit,
+            select: 'sys.id'
+          })
+        )
+      }
+
+      const collectionList = await Promise.all(promises)
+      for (const { items: collectionItems } of collectionList) {
+        for (const entry of collectionItems) {
+          yield entry.sys.id
+        }
+      }
+    }
+  }
+)
 
 export async function getAnyFortuneID(): Promise<string> {
-  const ids = await getFortuneIDs()
+  const ids: string[] = []
+
+  for await (const id of getFortuneIDs()) {
+    ids.push(id)
+  }
 
   if (ids.length < 1) {
     throw new TypeError("Fortune doesn't exist.")
