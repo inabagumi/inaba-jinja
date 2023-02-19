@@ -23,7 +23,11 @@ export type Params = {
 }
 
 export async function generateStaticParams(): Promise<Params[]> {
-  const ids = await getFortuneIDs()
+  const ids: string[] = []
+
+  for await (const id of getFortuneIDs()) {
+    ids.push(id)
+  }
 
   return ids.map((id) => ({ id }))
 }
