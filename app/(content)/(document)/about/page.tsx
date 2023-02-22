@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/privacy'
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   openGraph: {
     siteName,
     title,

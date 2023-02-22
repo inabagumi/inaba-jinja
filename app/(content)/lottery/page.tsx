@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/lottery'
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   openGraph: {
     title,
     url: '/lottery'
