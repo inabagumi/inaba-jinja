@@ -35,22 +35,16 @@ const STATIC_PAGES: SitemapItem[] = [
   }
 ]
 
-class SitemapTransformStream extends TransformStream<SitemapItem, Uint8Array> {
+class SitemapTransformStream extends TransformStream<SitemapItem, string> {
   constructor() {
-    const textEncoder = new TextEncoder()
-
     super({
       flush(controller) {
-        controller.enqueue(textEncoder.encode('</urlset>'))
+        controller.enqueue('</urlset>')
       },
       start(controller) {
+        controller.enqueue('<?xml version="1.0" encoding="UTF-8"?>')
         controller.enqueue(
-          textEncoder.encode('<?xml version="1.0" encoding="UTF-8"?>')
-        )
-        controller.enqueue(
-          textEncoder.encode(
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-          )
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         )
       },
       transform(chunk, controller) {
@@ -65,7 +59,7 @@ class SitemapTransformStream extends TransformStream<SitemapItem, Uint8Array> {
           .filter(Boolean)
           .join('')
 
-        controller.enqueue(textEncoder.encode(value))
+        controller.enqueue(value)
       }
     })
   }
@@ -88,7 +82,9 @@ function createSitemapStream(): ReadableStream<Uint8Array> {
 
       controller.close()
     }
-  }).pipeThrough(new SitemapTransformStream())
+  })
+    .pipeThrough(new SitemapTransformStream())
+    .pipeThrough(new TextEncoderStream())
 
   return sitemapStream
 }
