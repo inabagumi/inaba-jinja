@@ -51,7 +51,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `/kuji/${fortune.sys.id}`
     },
     description: fortune.fields.description,
-    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
     openGraph: {
       description: fortune.fields.description,
       images: [
