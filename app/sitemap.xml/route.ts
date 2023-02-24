@@ -1,21 +1,6 @@
+import { type SitemapItem, SitemapStream } from 'edge-sitemap'
 import { NextResponse } from 'next/server'
 import { getFortuneIDs } from '@/lib/contentful'
-
-type SitemapChangeFreq =
-  | 'always'
-  | 'daily'
-  | 'hourly'
-  | 'monthly'
-  | 'never'
-  | 'weekly'
-  | 'yearly'
-
-type SitemapItem = {
-  changefreq?: SitemapChangeFreq
-  lastmod?: `${number}-${number}-${number}`
-  loc: URL
-  priority?: number
-}
 
 const STATIC_PAGES: SitemapItem[] = [
   {
@@ -35,64 +20,41 @@ const STATIC_PAGES: SitemapItem[] = [
   }
 ]
 
-class SitemapTransformStream extends TransformStream<SitemapItem, string> {
-  constructor() {
-    super({
-      flush(controller) {
-        controller.enqueue('</urlset>')
-      },
-      start(controller) {
-        controller.enqueue('<?xml version="1.0" encoding="UTF-8"?>')
-        controller.enqueue(
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-        )
-      },
-      transform(chunk, controller) {
-        const value = [
-          '<url>',
-          chunk.changefreq && `<changefreq>${chunk.changefreq}</changefreq>`,
-          chunk.lastmod && `<lastmod>${chunk.lastmod}</lastmod>`,
-          `<loc>${chunk.loc.toString()}</loc>`,
-          chunk.priority && `<priority>${chunk.priority.toFixed(1)}</priority>`,
-          '</url>'
-        ]
-          .filter(Boolean)
-          .join('')
+async function writeSitemap(
+  writableStream: WritableStream<SitemapItem>
+): Promise<void> {
+  const writer = writableStream.getWriter()
 
-        controller.enqueue(value)
-      }
+  await writer.ready
+
+  const sitemapItems: SitemapItem[] = [...STATIC_PAGES]
+
+  for await (const id of getFortuneIDs()) {
+    sitemapItems.push({
+      changefreq: 'monthly',
+      loc: `/kuji/${id}`,
+      priority: 0.7
     })
+  }
+
+  try {
+    await Promise.all(
+      sitemapItems.map((sitemapItem) => writer.write(sitemapItem))
+    )
+  } finally {
+    await writer.close()
   }
 }
 
-function createSitemapStream(): ReadableStream<Uint8Array> {
-  const sitemapStream = new ReadableStream<SitemapItem>({
-    async start(controller) {
-      for (const sitemapItem of STATIC_PAGES) {
-        controller.enqueue(sitemapItem)
-      }
-
-      for await (const id of getFortuneIDs()) {
-        controller.enqueue({
-          changefreq: 'monthly',
-          loc: new URL(`/kuji/${id}`, process.env.NEXT_PUBLIC_BASE_URL),
-          priority: 0.7
-        })
-      }
-
-      controller.close()
-    }
-  })
-    .pipeThrough(new SitemapTransformStream())
-    .pipeThrough(new TextEncoderStream())
-
-  return sitemapStream
-}
-
 export function GET(): NextResponse {
-  const sitemapStream = createSitemapStream()
+  const { readable: smReadable, writable: smWritable } = new SitemapStream({
+    baseURL: new URL(process.env.NEXT_PUBLIC_BASE_URL)
+  })
+  const body = smReadable.pipeThrough(new TextEncoderStream())
 
-  return new NextResponse(sitemapStream, {
+  void writeSitemap(smWritable)
+
+  return new NextResponse(body, {
     headers: {
       'Cache-Control': 'max-age=604800',
       'Content-Type': 'application/xml'
