@@ -29,7 +29,7 @@ specifiers:
   clsx: ^1.2.1
   contentful: ^9.3.3
   dedent: ^0.7.0
-  edge-sitemap: ^1.0.3
+  edge-sitemap: ^1.0.5
   eslint: ~8.34.0
   eslint-config-next: ^13.2.1
   eslint-config-prettier: ~8.6.0
@@ -56,7 +56,7 @@ dependencies:
   clsx: 1.2.1
   contentful: 9.3.3
   dedent: 0.7.0
-  edge-sitemap: 1.0.3
+  edge-sitemap: 1.0.5
   next: 13.2.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -3862,8 +3862,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /edge-sitemap/1.0.3:
-    resolution: {integrity: sha512-iRwTcGsJkBoENvMwzidC9N647bwjZ/hnbFCvuaN6xH7dLh1ttyt0QZdk3NLV3Kwlct59VJFY5beZSYsQjwesBw==}
+  /edge-sitemap/1.0.5:
+    resolution: {integrity: sha512-ntTe+gGciNUwbrqboFDZCx3iBGJL+oofTgZx3IQqnJtCCjjCnWxsH+ovW5rB/hTVFzIIxZElV8qdubWxYomTDw==}
     engines: {node: '>=18.12.0'}
     dev: false
 
