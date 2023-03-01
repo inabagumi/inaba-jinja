@@ -4,16 +4,10 @@ import { SkipNavLink } from '@reach/skip-nav'
 import { type Metadata } from 'next'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
-import cardImage from '@/assets/card.jpg'
 import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
-import {
-  description,
-  title as siteName,
-  themeColor,
-  twitterAccount
-} from '@/lib/constants'
+import { description, title as siteName, themeColor } from '@/lib/constants'
 import AnalyticsWrapper from './AnalyticsWrapper'
 import Background from './Background'
 import Menu from './Menu'
@@ -38,18 +32,6 @@ export const metadata: Metadata = {
     ]
   },
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
-  openGraph: {
-    description,
-    images: [
-      {
-        height: cardImage.height,
-        url: cardImage.src,
-        width: cardImage.width
-      }
-    ],
-    siteName,
-    type: 'article'
-  },
   robots: {
     follow: true,
     index: true
@@ -59,11 +41,10 @@ export const metadata: Metadata = {
     default: siteName,
     template: `%s - ${siteName}`
   },
-  twitter: {
-    card: 'summary_large_image',
-    site: `@${twitterAccount}`
-  },
-  viewport: 'viewport-fit=cover,width=device-width'
+  viewport: {
+    viewportFit: 'cover',
+    width: 'device-width'
+  }
 }
 
 type Props = {
