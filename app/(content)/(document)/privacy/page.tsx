@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 import { title as siteName, twitterAccount } from '@/lib/constants'
 import SimpleTitle from '@/ui/SimpleTitle'
-import PrivacyWrapper from './PrivacyWrapper'
+import Privacy from './Privacy.mdx'
 
 const title = 'プライバシーポリシー'
 
@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <>
       <SimpleTitle>{title}</SimpleTitle>
-      <PrivacyWrapper />
+      <Privacy />
     </>
   )
 }

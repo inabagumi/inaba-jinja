@@ -5,7 +5,6 @@ import remarkGfm from 'remark-gfm'
 
 const withMDX = nextMDX({
   options: {
-    jsx: true,
     rehypePlugins: [
       [
         rehypeExternalLinks,
@@ -33,7 +32,8 @@ const nextConfig = {
     dirs: ['__mocks__', 'app', 'lib', 'ui']
   },
   experimental: {
-    appDir: true
+    appDir: true,
+    mdxRs: true
   },
   async headers() {
     return [
