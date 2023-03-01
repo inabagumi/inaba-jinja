@@ -3,7 +3,7 @@ import { type Metadata } from 'next'
 import Link from 'next/link'
 import cardImage from '@/assets/card.jpg'
 import Logo from '@/assets/vertical-logo.svg'
-import { description, title } from '@/lib/constants'
+import { description, title, twitterAccount } from '@/lib/constants'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
@@ -19,9 +19,14 @@ export const metadata: Metadata = {
         width: cardImage.width
       }
     ],
-    siteName: title,
+    title,
     type: 'website',
     url: '/'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: `@${twitterAccount}`,
+    title
   }
 }
 
