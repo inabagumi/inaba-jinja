@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 import { title as siteName, twitterAccount } from '@/lib/constants'
 import SimpleTitle from '@/ui/SimpleTitle'
-import AboutWrapper from './AboutWrapper'
+import About from './About.mdx'
 
 const title = '因幡神社とは'
 
@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <>
       <SimpleTitle>{title}</SimpleTitle>
-      <AboutWrapper />
+      <About />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import '@reach/skip-nav/styles.css'
 import '@/styles/globals.css'
 import { SkipNavLink } from '@reach/skip-nav'
+import { Analytics } from '@vercel/analytics/react'
 import { type Metadata } from 'next'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
@@ -14,7 +15,6 @@ import {
   themeColor,
   twitterAccount
 } from '@/lib/constants'
-import AnalyticsWrapper from './AnalyticsWrapper'
 import Background from './Background'
 import Menu from './Menu'
 import styles from './layout.module.css'
@@ -116,7 +116,7 @@ export default function RootLayout({ children }: Props) {
 
         <Background />
 
-        <AnalyticsWrapper />
+        <Analytics />
       </body>
     </html>
   )

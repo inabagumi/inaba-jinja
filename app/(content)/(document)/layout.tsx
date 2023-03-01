@@ -1,5 +1,4 @@
 import { type ReactNode } from 'react'
-import MarkdownWrapper from './MarkdownWrapper'
 import styles from './layout.module.css'
 
 type Props = {
@@ -7,9 +6,5 @@ type Props = {
 }
 
 export default function DocumentLayout({ children }: Props) {
-  return (
-    <MarkdownWrapper>
-      <div className={styles.markdown}>{children}</div>
-    </MarkdownWrapper>
-  )
+  return <div className={styles.markdown}>{children}</div>
 }
