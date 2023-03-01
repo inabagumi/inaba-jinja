@@ -1,6 +1,7 @@
 import { SkipNavContent } from '@reach/skip-nav'
 import { type Metadata } from 'next'
 import Link from 'next/link'
+import cardImage from '@/assets/card.jpg'
 import Logo from '@/assets/vertical-logo.svg'
 import { description, title } from '@/lib/constants'
 import styles from './page.module.css'
@@ -10,6 +11,15 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   openGraph: {
+    description,
+    images: [
+      {
+        height: cardImage.height,
+        url: cardImage.src,
+        width: cardImage.width
+      }
+    ],
+    siteName: title,
     type: 'website',
     url: '/'
   }
