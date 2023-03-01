@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.10](https://github.com/inabagumi/inaba-jinja/compare/v3.0.9...v3.0.10) (2023-03-01)
+
+
+### Bug Fixes
+
+* **home:** add `og:image` to top page ([#2515](https://github.com/inabagumi/inaba-jinja/issues/2515)) ([17aad18](https://github.com/inabagumi/inaba-jinja/commit/17aad18b908b5d95b5158e5e23a11d5ed893fe9f))
+
 ## [3.0.9](https://github.com/inabagumi/inaba-jinja/compare/v3.0.8...v3.0.9) (2023-02-16)
 
 
