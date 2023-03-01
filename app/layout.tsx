@@ -1,6 +1,7 @@
 import '@reach/skip-nav/styles.css'
 import '@/styles/globals.css'
 import { SkipNavLink } from '@reach/skip-nav'
+import { Analytics } from '@vercel/analytics/react'
 import { type Metadata } from 'next'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
@@ -8,7 +9,6 @@ import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
 import favicon192x192 from '@/assets/icons/favicon-192x192.png'
 import favicon512x512 from '@/assets/icons/favicon-512x512.png'
 import { description, title as siteName, themeColor } from '@/lib/constants'
-import AnalyticsWrapper from './AnalyticsWrapper'
 import Background from './Background'
 import Menu from './Menu'
 import styles from './layout.module.css'
@@ -97,7 +97,7 @@ export default function RootLayout({ children }: Props) {
 
         <Background />
 
-        <AnalyticsWrapper />
+        <Analytics />
       </body>
     </html>
   )
