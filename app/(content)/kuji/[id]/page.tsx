@@ -36,11 +36,14 @@ export type Props = {
   params: Params
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const fortune = await getFortune(params.id)
-
-  if (!fortune) {
-    return {}
+export async function generateMetadata({
+  params
+}: Props): Promise<Metadata | null> {
+  let fortune: Fortune
+  try {
+    fortune = await getFortune(params.id)
+  } catch {
+    return null
   }
 
   const name = generateFortuneName(fortune)
