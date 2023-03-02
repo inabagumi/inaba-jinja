@@ -6,6 +6,7 @@ import {
   createClient
 } from 'contentful'
 import { cache } from 'react'
+import { fromAsync } from '@/lib/polyfills/array'
 
 let client: ContentfulClientApi
 
@@ -81,11 +82,7 @@ export const getFortuneIDs = cache(
 )
 
 export async function getAnyFortuneID(): Promise<string> {
-  const ids: string[] = []
-
-  for await (const id of getFortuneIDs()) {
-    ids.push(id)
-  }
+  const ids = await fromAsync(getFortuneIDs())
 
   if (ids.length < 1) {
     throw new TypeError("Fortune doesn't exist.")
