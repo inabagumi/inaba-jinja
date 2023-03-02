@@ -8,6 +8,7 @@ import {
   getFortuneIDs,
   getImageURL
 } from '@/lib/contentful'
+import { fromAsync } from '@/lib/polyfills/array'
 import ShareLinks from '@/ui/ShareLinks'
 import SimpleTitle from '@/ui/SimpleTitle'
 import styles from './page.module.css'
@@ -23,11 +24,7 @@ export type Params = {
 }
 
 export async function generateStaticParams(): Promise<Params[]> {
-  const ids: string[] = []
-
-  for await (const id of getFortuneIDs()) {
-    ids.push(id)
-  }
+  const ids = await fromAsync(getFortuneIDs())
 
   return ids.map((id) => ({ id }))
 }
