@@ -47,7 +47,7 @@ export const getFortune = cache(async function getFortune(
 })
 
 export const getFortuneIDs = cache(
-  async function* getFortuneIDs(): AsyncGenerator<string> {
+  async function* getFortuneIDs(): AsyncGenerator<string, void> {
     const { items, limit, total } = await getClient().getEntries<undefined>({
       content_type: 'fortune',
       limit: 100,
