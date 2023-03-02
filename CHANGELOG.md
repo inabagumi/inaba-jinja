@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/inabagumi/inaba-jinja/compare/v3.0.10...v3.1.0) (2023-03-02)
+
+
+### Features
+
+* add not found page ([#2520](https://github.com/inabagumi/inaba-jinja/issues/2520)) ([8e1d124](https://github.com/inabagumi/inaba-jinja/commit/8e1d124211ba1cd519ad210022931aea3abe015c))
+
 ## [3.0.10](https://github.com/inabagumi/inaba-jinja/compare/v3.0.9...v3.0.10) (2023-03-01)
 
 
