@@ -20,39 +20,38 @@ const STATIC_PAGES: SitemapItem[] = [
   }
 ]
 
-async function writeSitemap(
-  writableStream: WritableStream<SitemapItem>
-): Promise<void> {
-  const writer = writableStream.getWriter()
+function createReadableStream(): ReadableStream<SitemapItem> {
+  const fortuneIDIterator = getFortuneIDs()
 
-  await writer.ready
+  return new ReadableStream({
+    async pull(controller) {
+      const { done, value } = await fortuneIDIterator.next()
 
-  const sitemapItems: SitemapItem[] = [...STATIC_PAGES]
+      if (value) {
+        controller.enqueue({
+          changefreq: 'monthly',
+          loc: `/kuji/${value}`,
+          priority: 0.7
+        })
+      }
 
-  for await (const id of getFortuneIDs()) {
-    sitemapItems.push({
-      changefreq: 'monthly',
-      loc: `/kuji/${id}`,
-      priority: 0.7
-    })
-  }
-
-  try {
-    await Promise.all(
-      sitemapItems.map((sitemapItem) => writer.write(sitemapItem))
-    )
-  } finally {
-    await writer.close()
-  }
+      if (done) {
+        controller.close()
+      }
+    },
+    start(controller) {
+      for (const sitemapItem of STATIC_PAGES) {
+        controller.enqueue(sitemapItem)
+      }
+    }
+  })
 }
 
 export function GET(): NextResponse {
-  const { readable: smReadable, writable: smWritable } = new SitemapStream({
-    baseURL: new URL(process.env.NEXT_PUBLIC_BASE_URL)
-  })
-  const body = smReadable.pipeThrough(new TextEncoderStream())
-
-  void writeSitemap(smWritable)
+  const baseURL = new URL(process.env.NEXT_PUBLIC_BASE_URL)
+  const body = createReadableStream()
+    .pipeThrough(new SitemapStream({ baseURL }))
+    .pipeThrough(new TextEncoderStream())
 
   return new NextResponse(body, {
     headers: {
