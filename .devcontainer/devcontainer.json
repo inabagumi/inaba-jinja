@@ -5,7 +5,7 @@
         "dbaeumer.vscode-eslint",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
-        "silvenon.mdx"
+        "unifiedjs.vscode-mdx"
       ],
       "settings": {}
     }
