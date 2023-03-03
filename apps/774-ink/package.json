@@ -8,7 +8,7 @@
   "devDependencies": {
     "@inabagumi/prettier-config": "^2.0.0",
     "@types/eslint": "^8.21.1",
-    "@types/node": "^18.14.4",
+    "@types/node": "^18.14.5",
     "@types/react": "^18.0.28",
     "@types/web-app-manifest": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
