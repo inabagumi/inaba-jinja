@@ -17,6 +17,6 @@
   },
   "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18-buster",
   "name": "Inaba Jinja",
-  "postCreateCommand": "sudo corepack enable",
+  "postCreateCommand": "sudo corepack enable && pnpm install",
   "waitFor": "postCreateCommand"
 }
