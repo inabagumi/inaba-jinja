@@ -5,8 +5,10 @@ import {
   type EntryCollection,
   createClient
 } from 'contentful'
+import dedent from 'dedent'
 import { cache } from 'react'
 import { fromAsync } from '@/lib/polyfills/array'
+import { redisClient } from '@/lib/redis'
 
 let client: ContentfulClientApi
 
@@ -82,13 +84,37 @@ export const getFortuneIDs = cache(
 )
 
 export async function getAnyFortuneID(): Promise<string> {
-  const ids = await fromAsync(getFortuneIDs())
+  const id = await redisClient.spop<string>('fortunes')
 
-  if (ids.length < 1) {
+  if (id) {
+    return id
+  }
+
+  const m = redisClient.multi()
+  const idSet = await fromAsync(getFortuneIDs())
+
+  m.eval<string[], string | null>(
+    dedent`
+      local expire = 60 * 60 * 24 * 30
+
+      if redis.call('SCARD', KEYS[1]) < 1 then
+        redis.call('SADD', KEYS[1], unpack(ARGV, 2))
+        redis.call('EXPIRE', KEYS[1], expire)
+      end
+
+      return redis.call('SPOP', KEYS[1])
+    `,
+    ['fortunes'],
+    idSet
+  )
+
+  const [newID] = await m.exec<[string | null]>()
+
+  if (!newID) {
     throw new TypeError("Fortune doesn't exist.")
   }
 
-  return ids[Math.floor(Math.random() * ids.length)]
+  return newID
 }
 
 export function getImageURL(asset: Asset): string {
