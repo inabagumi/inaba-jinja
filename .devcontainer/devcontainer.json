@@ -2,7 +2,6 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "dbaeumer.vscode-eslint",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
         "unifiedjs.vscode-mdx"
@@ -11,8 +10,13 @@
     }
   },
   "forwardPorts": [3000],
-  "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-18-buster",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "8gb",
+    "storage": "32gb"
+  },
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18-buster",
   "name": "Inaba Jinja",
   "postCreateCommand": "sudo corepack enable",
-  "remoteUser": "node"
+  "waitFor": "postCreateCommand"
 }
