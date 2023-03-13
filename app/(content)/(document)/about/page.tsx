@@ -5,7 +5,7 @@ import About from './About.mdx'
 
 const title = '因幡神社とは'
 
-export const runtime = 'edge'
+// export const runtime = 'edge'
 export const dynamic = 'force-static'
 
 export const metadata: Metadata = {
