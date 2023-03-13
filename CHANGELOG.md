@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/inabagumi/inaba-jinja/compare/v3.1.0...v3.2.0) (2023-03-13)
+
+
+### Features
+
+* improve random lottery ([#2541](https://github.com/inabagumi/inaba-jinja/issues/2541)) ([23de498](https://github.com/inabagumi/inaba-jinja/commit/23de498fefd9960f7cbea4043074bf29b6e6624d))
+
+
+### Bug Fixes
+
+* disable edge runtime ([#2547](https://github.com/inabagumi/inaba-jinja/issues/2547)) ([3158e40](https://github.com/inabagumi/inaba-jinja/commit/3158e40adf39a7a547e046e2cff6524bea6ce142))
+
+
+### Performance Improvements
+
+* refresh only bot on share url ([#2542](https://github.com/inabagumi/inaba-jinja/issues/2542)) ([6907ee7](https://github.com/inabagumi/inaba-jinja/commit/6907ee75d70cbcc12268eace338c99e3cb65e738))
+* set `force-static` to static resources ([#2545](https://github.com/inabagumi/inaba-jinja/issues/2545)) ([9130df5](https://github.com/inabagumi/inaba-jinja/commit/9130df5f434fc408785a205248bb3ff9587b9099))
+
 ## [3.1.0](https://github.com/inabagumi/inaba-jinja/compare/v3.0.10...v3.1.0) (2023-03-02)
 
 
