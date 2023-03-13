@@ -20,6 +20,8 @@ const STATIC_PAGES: SitemapItem[] = [
   }
 ]
 
+export const dynamic = 'force-static'
+
 function createReadableStream(): ReadableStream<SitemapItem> {
   const fortuneIDIterator = getFortuneIDs()
 

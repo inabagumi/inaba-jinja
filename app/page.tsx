@@ -6,6 +6,9 @@ import Logo from '@/assets/vertical-logo.svg'
 import { description, title, twitterAccount } from '@/lib/constants'
 import styles from './page.module.css'
 
+export const runtime = 'edge'
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   alternates: {
     canonical: '/'

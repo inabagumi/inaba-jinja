@@ -5,6 +5,9 @@ import Privacy from './Privacy.mdx'
 
 const title = 'プライバシーポリシー'
 
+export const runtime = 'edge'
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   alternates: {
     canonical: '/privacy'

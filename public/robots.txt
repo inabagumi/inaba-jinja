@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://inaba-jinja.com/sitemap.xml
