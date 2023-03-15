@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.4.4
   '@commitlint/config-conventional': ^17.4.4
-  '@heroicons/react': ^1.0.6
+  '@heroicons/react': ^2.0.16
   '@inabagumi/prettier-config': ^2.0.0
   '@next/eslint-plugin-next': ^13.2.4
   '@pixi/react': ^7.0.3
@@ -38,7 +38,7 @@ specifiers:
   typescript: ~4.9.5
 
 dependencies:
-  '@heroicons/react': 1.0.6_react@18.2.0
+  '@heroicons/react': 2.0.16_react@18.2.0
   '@pixi/react': 7.0.3_biqbaboplfbrettd7655fr4n2y
   '@reach/alert-dialog': 0.18.0_zula6vjvt3wdocc4mwcxqa6nzi
   '@reach/dialog': 0.18.0_zula6vjvt3wdocc4mwcxqa6nzi
@@ -1460,8 +1460,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@heroicons/react/1.0.6_react@18.2.0:
-    resolution: {integrity: sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==}
+  /@heroicons/react/2.0.16_react@18.2.0:
+    resolution: {integrity: sha512-x89rFxH3SRdYaA+JCXwfe+RkE1SFTo9GcOkZettHer71Y3T7V+ogKmfw5CjTazgS3d0ClJ7p1NA+SP7VQLQcLw==}
     peerDependencies:
       react: '>= 16'
     dependencies:

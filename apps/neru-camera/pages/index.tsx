@@ -1,5 +1,5 @@
 import '@reach/menu-button/styles.css'
-import { DotsVerticalIcon } from '@heroicons/react/solid'
+import { EllipsisVerticalIcon } from '@heroicons/react/24/solid'
 import { Menu, MenuButton, MenuItem, MenuList } from '@reach/menu-button'
 import { type GetStaticProps, type NextPage } from 'next'
 import dynamic from 'next/dynamic'
@@ -36,7 +36,7 @@ const Index: NextPage<Props> = ({ assets }) => {
       <header className="fixed flex justify-end text-white top-0 w-full z-10">
         <Menu>
           <MenuButton className="focus:bg-opacity-25 focus:bg-white m-2 focus:outline-none p-2 rounded-full">
-            <DotsVerticalIcon className="h-5 w-5" />
+            <EllipsisVerticalIcon className="h-5 w-5" />
           </MenuButton>
           <MenuList className="p-0">
             {assets.map((asset) => (
