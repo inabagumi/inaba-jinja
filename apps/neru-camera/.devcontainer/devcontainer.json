@@ -1,13 +1,12 @@
 {
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "EditorConfig.EditorConfig",
-    "esbenp.prettier-vscode"
-  ],
+  "customizations": {
+    "vscode": {
+      "extensions": ["EditorConfig.EditorConfig", "esbenp.prettier-vscode"],
+      "settings": {}
+    }
+  },
   "forwardPorts": [3000],
-  "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-16-buster",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18-buster",
   "name": "Neru Camera",
-  "postCreateCommand": "sudo corepack enable && pnpm install",
-  "remoteUser": "node",
-  "settings": {}
+  "postCreateCommand": "sudo corepack enable && pnpm install"
 }
