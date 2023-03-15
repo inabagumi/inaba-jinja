@@ -1,4 +1,4 @@
-import { PixiComponent } from '@inlet/react-pixi'
+import { PixiComponent } from '@pixi/react'
 import { type IViewportOptions, Viewport } from 'pixi-viewport'
 import { type ReactNode } from 'react'
 

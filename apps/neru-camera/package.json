@@ -2,8 +2,7 @@
   "author": "Haneru Developers",
   "dependencies": {
     "@heroicons/react": "^1.0.6",
-    "@inlet/react-pixi": "npm:@saitonakamura/react-pixi@7.0.0-beta-5",
-    "@pixi/interaction": "^6.5.9",
+    "@pixi/react": "^7.0.3",
     "@reach/alert-dialog": "^0.18.0",
     "@reach/dialog": "^0.18.0",
     "@reach/menu-button": "^0.18.0",
@@ -12,8 +11,8 @@
     "contentful": "^9.3.5",
     "next": "^13.2.4",
     "next-seo": "^5.15.0",
-    "pixi-viewport": "^4.38.0",
-    "pixi.js": "^6.5.9",
+    "pixi-viewport": "^5.0.1",
+    "pixi.js": "^7.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.2.7"

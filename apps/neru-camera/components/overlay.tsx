@@ -1,5 +1,4 @@
-import { Sprite, useApp } from '@inlet/react-pixi'
-import { type InteractionManager } from '@pixi/interaction'
+import { Sprite, useApp } from '@pixi/react'
 import { Point } from 'pixi.js'
 import { type FC } from 'react'
 import ChromaKeyFilter from '../filters/chroma-key-filter'
@@ -26,7 +25,7 @@ const Overlay: FC<Props> = ({ asset }) => {
   return (
     <>
       <Viewport
-        interaction={app.renderer.plugins.interaction as InteractionManager}
+        events={app.renderer.events}
         screenHeight={app.screen.height}
         screenWidth={app.screen.width}
         worldHeight={app.screen.height}

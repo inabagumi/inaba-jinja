@@ -1,5 +1,5 @@
 import '@reach/dialog/styles.css'
-import { Sprite, Stage } from '@inlet/react-pixi'
+import { Sprite, Stage } from '@pixi/react'
 import {
   AlertDialog,
   AlertDialogDescription,
@@ -37,7 +37,7 @@ const Camera: FC<Props> = ({ asset }) => {
   const texture = useVideoTexture({ srcObject: cameraStream })
 
   const handleMount = useCallback(
-    (app: Application) => setPixiView(app.view),
+    (app: Application<HTMLCanvasElement>) => setPixiView(app.view),
     []
   )
 
