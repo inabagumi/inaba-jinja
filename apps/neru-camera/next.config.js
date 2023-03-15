@@ -2,8 +2,8 @@ const nextPWA = require('next-pwa')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    dirs: ['components', 'filters', 'hooks', 'lib', 'pages']
+  experimental: {
+    appDir: true
   },
   async headers() {
     return [
@@ -35,10 +35,6 @@ const nextConfig = {
         source: '/workbox-:hash.js'
       }
     ]
-  },
-  i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja']
   },
   async rewrites() {
     return [

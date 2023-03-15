@@ -1,3 +1,5 @@
+'use client'
+
 import '@reach/dialog/styles.css'
 import { Sprite, Stage } from '@pixi/react'
 import {
@@ -8,11 +10,11 @@ import {
 import { fileSave } from 'browser-fs-access'
 import clsx from 'clsx'
 import { type Application } from 'pixi.js'
-import { type FC, useCallback, useEffect, useRef, useState } from 'react'
-import useVideoTexture from '../hooks/use-video-texture'
-import { type OverlayEntry } from '../lib/contentful'
-import processing from '../lib/processing'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import processing from '@/lib/processing'
+import { useAsset } from './asset'
 import styles from './camera.module.css'
+import { useVideoTexture } from './hooks'
 import Overlay from './overlay'
 
 const mediaStreamConstraints: MediaStreamConstraints = {
@@ -24,11 +26,8 @@ const mediaStreamConstraints: MediaStreamConstraints = {
   }
 }
 
-type Props = {
-  asset?: OverlayEntry
-}
-
-const Camera: FC<Props> = ({ asset }) => {
+export default function Camera(): JSX.Element {
+  const { currentAsset: asset } = useAsset()
   const [pixiView, setPixiView] = useState<HTMLCanvasElement>()
   const [cameraStream, setCameraStream] = useState<MediaStream>()
   const [isShooting, setIsShooting] = useState(false)
@@ -152,5 +151,3 @@ const Camera: FC<Props> = ({ asset }) => {
     </div>
   )
 }
-
-export default Camera

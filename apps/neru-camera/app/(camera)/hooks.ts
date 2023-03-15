@@ -1,12 +1,15 @@
 import { Texture } from 'pixi.js'
 import { useCallback, useEffect, useState } from 'react'
 
-type Options = {
+export type UseVideoTextureOptions = {
   src?: string
   srcObject?: MediaStream
 }
 
-const useVideoTexture = ({ src, srcObject }: Options): Texture | undefined => {
+export function useVideoTexture({
+  src,
+  srcObject
+}: UseVideoTextureOptions): Texture | undefined {
   const [texture, setTexture] = useState<Texture>()
 
   const handleLoadedData = useCallback((event: Event) => {
@@ -42,5 +45,3 @@ const useVideoTexture = ({ src, srcObject }: Options): Texture | undefined => {
 
   return texture
 }
-
-export default useVideoTexture

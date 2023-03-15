@@ -1,20 +1,26 @@
+'use client'
+
 import { Sprite, useApp } from '@pixi/react'
 import { Point } from 'pixi.js'
-import { type FC } from 'react'
-import ChromaKeyFilter from '../filters/chroma-key-filter'
-import useVideoTexture from '../hooks/use-video-texture'
-import { type OverlayEntry } from '../lib/contentful'
+import { useMemo } from 'react'
+import { ChromaKeyFilter } from './filters'
+import { useVideoTexture } from './hooks'
+import { type OverlayEntry } from '@/lib/contentful'
 import Viewport from './viewport'
 
 type Props = {
   asset: OverlayEntry
 }
 
-const Overlay: FC<Props> = ({ asset }) => {
+export default function Overlay({ asset }: Props): JSX.Element {
   const app = useApp()
   const texture = useVideoTexture({
     src: asset.fields.media.fields.file.url
   })
+  const chromaKeyFilter = useMemo(
+    () => new ChromaKeyFilter(asset.fields.keyColor),
+    [asset.fields.keyColor]
+  )
 
   const anchor = 0.5
   const position = new Point(
@@ -36,12 +42,10 @@ const Overlay: FC<Props> = ({ asset }) => {
             anchor={new Point(anchor, anchor)}
             position={position}
             texture={texture}
-            filters={[new ChromaKeyFilter(asset.fields.keyColor)]}
+            filters={[chromaKeyFilter]}
           />
         )}
       </Viewport>
     </>
   )
 }
-
-export default Overlay
