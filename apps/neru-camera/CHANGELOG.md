@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 7.0.0 (2023-03-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace to app dir ([#1975](https://github.com/inabagumi/neru-camera/issues/1975))
+* align with CRN output of Next.js 13.2 ([#1974](https://github.com/inabagumi/neru-camera/issues/1974))
+* **deps:** replace to `@pixi/react` ([#1973](https://github.com/inabagumi/neru-camera/issues/1973))
+
+### Features
+
+* replace to app dir ([#1975](https://github.com/inabagumi/neru-camera/issues/1975)) ([b08ee93](https://github.com/inabagumi/neru-camera/commit/b08ee93d276e1657dde6f250155112d733608519))
+
+
+### Bug Fixes
+
+* align with CRN output of Next.js 13.2 ([#1974](https://github.com/inabagumi/neru-camera/issues/1974)) ([9a4fa0d](https://github.com/inabagumi/neru-camera/commit/9a4fa0d8557ff5c8248e0b9b06ce36aeb4071b4e))
+
+
+### Build System
+
+* **deps:** replace to `@pixi/react` ([#1973](https://github.com/inabagumi/neru-camera/issues/1973)) ([675c8e2](https://github.com/inabagumi/neru-camera/commit/675c8e29fa0157e954e8b93c19c54fccdb97d282))
+
 ## [6.2.0](https://github.com/inabagumi/neru-camera/compare/v6.1.1...v6.2.0) (2022-02-20)
 
 
