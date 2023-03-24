@@ -42,7 +42,7 @@
   },
   "license": "MIT",
   "name": "neru-camera",
-  "packageManager": "pnpm@7.30.2",
+  "packageManager": "pnpm@7.30.3",
   "private": true,
   "scripts": {
     "build": "next build",
