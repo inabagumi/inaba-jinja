@@ -32,7 +32,7 @@
     "@jest/types": "^29.5.0",
     "@mdx-js/loader": "^2.3.0",
     "@next/mdx": "^13.2.4",
-    "@svgr/webpack": "^6.5.1",
+    "@svgr/webpack": "^7.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/dedent": "^0.7.0",
