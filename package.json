@@ -64,7 +64,7 @@
   "license": "MIT",
   "main": "n/a",
   "name": "inaba-jinja",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@8.1.0",
   "private": true,
   "repository": {
     "type": "git",
