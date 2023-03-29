@@ -10,7 +10,7 @@
   "description": "Feel the life of Neru-chan!",
   "devDependencies": {
     "@inabagumi/prettier-config": "^2.0.0",
-    "@types/eslint": "^8.21.3",
+    "@types/eslint": "^8.37.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.31",
     "@types/react-dom": "^18.0.11",
