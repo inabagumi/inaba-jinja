@@ -12,7 +12,7 @@
     "@mdx-js/react": "^2.3.0",
     "@reach/portal": "^0.18.0",
     "@reach/skip-nav": "^0.18.0",
-    "@upstash/redis": "^1.20.1",
+    "@upstash/redis": "^1.20.2",
     "@vercel/analytics": "^0.1.11",
     "clsx": "^1.2.1",
     "contentful": "^9.3.5",
