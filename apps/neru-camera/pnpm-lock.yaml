@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@heroicons/react':
-    specifier: ^2.0.16
-    version: 2.0.16(react@18.2.0)
+    specifier: ^2.0.17
+    version: 2.0.17(react@18.2.0)
   '@pixi/react':
     specifier: ^7.0.3
     version: 7.0.3(@babel/runtime@7.21.0)(@pixi/app@7.2.3)(@pixi/constants@7.2.3)(@pixi/core@7.2.3)(@pixi/display@7.2.3)(@pixi/extensions@7.2.3)(@pixi/graphics@7.2.3)(@pixi/math@7.2.3)(@pixi/mesh-extras@7.2.3)(@pixi/mesh@7.2.3)(@pixi/particle-container@7.2.3)(@pixi/sprite-animated@7.2.3)(@pixi/sprite-tiling@7.2.3)(@pixi/sprite@7.2.3)(@pixi/text-bitmap@7.2.3)(@pixi/text@7.2.3)(@pixi/ticker@7.2.3)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -1470,8 +1470,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@heroicons/react@2.0.16(react@18.2.0):
-    resolution: {integrity: sha512-x89rFxH3SRdYaA+JCXwfe+RkE1SFTo9GcOkZettHer71Y3T7V+ogKmfw5CjTazgS3d0ClJ7p1NA+SP7VQLQcLw==}
+  /@heroicons/react@2.0.17(react@18.2.0):
+    resolution: {integrity: sha512-90GMZktkA53YbNzHp6asVEDevUQCMtxWH+2UK2S8OpnLEu7qckTJPhNxNQG52xIR1WFTwFqtH6bt7a60ZNcLLA==}
     peerDependencies:
       react: '>= 16'
     dependencies:
