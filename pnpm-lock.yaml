@@ -39,10 +39,10 @@ dependencies:
     version: 18.2.0(react@18.2.0)
   react-focus-lock:
     specifier: ^2.9.4
-    version: 2.9.4(@types/react@18.0.31)(react@18.2.0)
+    version: 2.9.4(@types/react@18.0.32)(react@18.2.0)
   react-remove-scroll:
     specifier: ^2.5.5
-    version: 2.5.5(@types/react@18.0.31)(react@18.2.0)
+    version: 2.5.5(@types/react@18.0.32)(react@18.2.0)
 
 devDependencies:
   '@commitlint/cli':
@@ -91,8 +91,8 @@ devDependencies:
     specifier: ^18.15.11
     version: 18.15.11
   '@types/react':
-    specifier: ^18.0.31
-    version: 18.0.31
+    specifier: ^18.0.32
+    version: 18.0.32
   '@types/testing-library__jest-dom':
     specifier: ^5.14.5
     version: 5.14.5
@@ -1997,7 +1997,7 @@ packages:
       react: '>=16'
     dependencies:
       '@types/mdx': 2.0.4
-      '@types/react': 18.0.31
+      '@types/react': 18.0.32
       react: 18.2.0
 
   /@next/env@13.2.4:
@@ -2677,11 +2677,11 @@ packages:
   /@types/react-dom@18.0.11:
     resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
-      '@types/react': 18.0.31
+      '@types/react': 18.0.32
     dev: true
 
-  /@types/react@18.0.31:
-    resolution: {integrity: sha512-EEG67of7DsvRDU6BLLI0p+k1GojDLz9+lZsnCpCRTa/lOokvyPBvp8S5x+A24hME3yyQuIipcP70KJ6H7Qupww==}
+  /@types/react@18.0.32:
+    resolution: {integrity: sha512-gYGXdtPQ9Cj0w2Fwqg5/ak6BcK3Z15YgjSqtyDizWUfx7mQ8drs0NBUzRRsAdoFVTO8kJ8L2TL8Skm7OFPnLUw==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -7424,7 +7424,7 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-focus-lock@2.9.4(@types/react@18.0.31)(react@18.2.0):
+  /react-focus-lock@2.9.4(@types/react@18.0.32)(react@18.2.0):
     resolution: {integrity: sha512-7pEdXyMseqm3kVjhdVH18sovparAzLg5h6WvIx7/Ck3ekjhrrDMEegHSa3swwC8wgfdd7DIdUVRGeiHT9/7Sgg==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -7434,13 +7434,13 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.21.0
-      '@types/react': 18.0.31
+      '@types/react': 18.0.32
       focus-lock: 0.11.6
       prop-types: 15.8.1
       react: 18.2.0
       react-clientside-effect: 1.2.6(react@18.2.0)
-      use-callback-ref: 1.3.0(@types/react@18.0.31)(react@18.2.0)
-      use-sidecar: 1.1.2(@types/react@18.0.31)(react@18.2.0)
+      use-callback-ref: 1.3.0(@types/react@18.0.32)(react@18.2.0)
+      use-sidecar: 1.1.2(@types/react@18.0.32)(react@18.2.0)
     dev: false
 
   /react-is@16.13.1:
@@ -7454,7 +7454,7 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
-  /react-remove-scroll-bar@2.3.4(@types/react@18.0.31)(react@18.2.0):
+  /react-remove-scroll-bar@2.3.4(@types/react@18.0.32)(react@18.2.0):
     resolution: {integrity: sha512-63C4YQBUt0m6ALadE9XV56hV8BgJWDmmTPY758iIJjfQKt2nYwoUrPk0LXRXcB/yIj82T1/Ixfdpdk68LwIB0A==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -7464,13 +7464,13 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.0.31
+      '@types/react': 18.0.32
       react: 18.2.0
-      react-style-singleton: 2.2.1(@types/react@18.0.31)(react@18.2.0)
+      react-style-singleton: 2.2.1(@types/react@18.0.32)(react@18.2.0)
       tslib: 2.5.0
     dev: false
 
-  /react-remove-scroll@2.5.5(@types/react@18.0.31)(react@18.2.0):
+  /react-remove-scroll@2.5.5(@types/react@18.0.32)(react@18.2.0):
     resolution: {integrity: sha512-ImKhrzJJsyXJfBZ4bzu8Bwpka14c/fQt0k+cyFp/PBhTfyDnU5hjOtM4AG/0AMyy8oKzOTR0lDgJIM7pYXI0kw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -7480,16 +7480,16 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.0.31
+      '@types/react': 18.0.32
       react: 18.2.0
-      react-remove-scroll-bar: 2.3.4(@types/react@18.0.31)(react@18.2.0)
-      react-style-singleton: 2.2.1(@types/react@18.0.31)(react@18.2.0)
+      react-remove-scroll-bar: 2.3.4(@types/react@18.0.32)(react@18.2.0)
+      react-style-singleton: 2.2.1(@types/react@18.0.32)(react@18.2.0)
       tslib: 2.5.0
-      use-callback-ref: 1.3.0(@types/react@18.0.31)(react@18.2.0)
-      use-sidecar: 1.1.2(@types/react@18.0.31)(react@18.2.0)
+      use-callback-ref: 1.3.0(@types/react@18.0.32)(react@18.2.0)
+      use-sidecar: 1.1.2(@types/react@18.0.32)(react@18.2.0)
     dev: false
 
-  /react-style-singleton@2.2.1(@types/react@18.0.31)(react@18.2.0):
+  /react-style-singleton@2.2.1(@types/react@18.0.32)(react@18.2.0):
     resolution: {integrity: sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -7499,7 +7499,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.0.31
+      '@types/react': 18.0.32
       get-nonce: 1.0.1
       invariant: 2.2.4
       react: 18.2.0
@@ -8578,7 +8578,7 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /use-callback-ref@1.3.0(@types/react@18.0.31)(react@18.2.0):
+  /use-callback-ref@1.3.0(@types/react@18.0.32)(react@18.2.0):
     resolution: {integrity: sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -8588,12 +8588,12 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.0.31
+      '@types/react': 18.0.32
       react: 18.2.0
       tslib: 2.5.0
     dev: false
 
-  /use-sidecar@1.1.2(@types/react@18.0.31)(react@18.2.0):
+  /use-sidecar@1.1.2(@types/react@18.0.32)(react@18.2.0):
     resolution: {integrity: sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -8603,7 +8603,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.0.31
+      '@types/react': 18.0.32
       detect-node-es: 1.1.0
       react: 18.2.0
       tslib: 2.5.0
