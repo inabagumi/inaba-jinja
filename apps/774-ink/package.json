@@ -9,7 +9,7 @@
     "@inabagumi/prettier-config": "^2.0.0",
     "@types/eslint": "^8.37.0",
     "@types/node": "^18.15.11",
-    "@types/react": "^18.0.32",
+    "@types/react": "^18.0.33",
     "@types/web-app-manifest": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
