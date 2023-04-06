@@ -31,6 +31,7 @@ export const metadata: Metadata = {
       }
     ]
   },
+  manifest: '/manifest.webmanifest',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   robots: {
     follow: true,
@@ -54,9 +55,7 @@ type Props = {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="ja">
-      <head prefix="og: http://ogp.me/ns#">
-        <link href="/manifest.webmanifest" rel="manifest" />
-      </head>
+      <head prefix="og: http://ogp.me/ns#" />
       <body>
         <div className={styles.wrapper}>
           <SkipNavLink className={styles.skipNavLink}>

@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import mainVisual from '@/assets/main-visual.jpg'
 import styles from './Background.module.css'
 
@@ -7,11 +7,12 @@ export default function Background() {
     <div aria-hidden className={styles.container} role="none presentation">
       <Image
         alt=""
-        layout="fill"
-        objectFit="cover"
+        className={styles.image}
+        fill
         placeholder="blur"
         priority
         quality={70}
+        sizes="100vw"
         src={mainVisual}
       />
       <div className={styles.overlay} />

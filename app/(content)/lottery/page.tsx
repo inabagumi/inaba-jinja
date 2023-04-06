@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import kujiImage from '@/assets/kuji.png'
 import { title as siteName, twitterAccount } from '@/lib/constants'
 import { getAnyFortuneID } from '@/lib/contentful'
@@ -41,6 +41,7 @@ export default async function Page() {
         <div className={styles.lotteryBox}>
           <Image
             alt="くじ引き中..."
+            className={styles.lotteryImage}
             height={kujiImage.height / 2}
             priority
             quality={80}

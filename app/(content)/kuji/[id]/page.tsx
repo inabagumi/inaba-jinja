@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { title as siteName, twitterAccount } from '@/lib/constants'
 import {
@@ -93,6 +93,7 @@ export default async function Page({ params }: Props) {
         <Image
           alt={name}
           blurDataURL={fortune.fields.prePaper}
+          className={styles.kujiImage}
           height={imageDetails ? imageDetails.height / 2 : 540}
           placeholder="blur"
           priority
