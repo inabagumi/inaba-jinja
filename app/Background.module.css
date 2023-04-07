@@ -8,6 +8,10 @@
   z-index: -1;
 }
 
+.image {
+  object-fit: cover;
+}
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.54);
   height: 100%;

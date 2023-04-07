@@ -3,3 +3,8 @@
   display: flex;
   justify-content: center;
 }
+
+.kujiImage {
+  height: auto;
+  max-width: 100%;
+}
