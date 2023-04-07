@@ -58,7 +58,7 @@
     "prettier-plugin-md-nocjsp": "^1.5.1",
     "rehype-external-links": "^2.0.1",
     "remark-gfm": "^3.0.1",
-    "typescript": "~5.0.3"
+    "typescript": "~5.0.4"
   },
   "homepage": "https://inaba-jinja.com",
   "license": "MIT",
