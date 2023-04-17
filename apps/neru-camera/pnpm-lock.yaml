@@ -17,8 +17,8 @@ dependencies:
     specifier: ^0.18.0
     version: 0.18.0(react-dom@18.2.0)(react-is@17.0.2)(react@18.2.0)
   browser-fs-access:
-    specifier: ^0.33.0
-    version: 0.33.0
+    specifier: ^0.33.1
+    version: 0.33.1
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
@@ -2977,8 +2977,8 @@ packages:
     dependencies:
       fill-range: 7.0.1
 
-  /browser-fs-access@0.33.0:
-    resolution: {integrity: sha512-OIroFiFdNcITJnLCJUoJBRWLf6lu/e7h24Ik0khWg7Ozn+sR+asYiSeiPpXmV32OgogSNiOqCoaI1/7vrl1T+Q==}
+  /browser-fs-access@0.33.1:
+    resolution: {integrity: sha512-CQw9hPRVKqnbohAvQeUqyK2yGsbNjb19PTbDIF23g2c8XZljOBbazm+HZC4AFHp5xt3rdm6fLjwyRSu9HDy4MQ==}
     dev: false
 
   /browserslist@4.21.5:
