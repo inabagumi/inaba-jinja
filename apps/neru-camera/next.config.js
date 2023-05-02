@@ -47,8 +47,8 @@ const nextConfig = {
         source: '/workbox-:hash.js'
       },
       {
-        destination: '/manifest.json',
-        source: '/manifest.webmanifest'
+        destination: '/manifest.webmanifest',
+        source: '/manifest.json'
       }
     ]
   }
