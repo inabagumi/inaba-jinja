@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { title as siteName, twitterAccount } from '@/lib/constants'
 import {
-  type Fortune,
+  type FortuneEntry,
   getFortune,
   getFortuneIDs,
   getImageURL
@@ -13,7 +13,7 @@ import ShareLinks from '@/ui/ShareLinks'
 import SimpleTitle from '@/ui/SimpleTitle'
 import styles from './page.module.css'
 
-export function generateFortuneName(fortune: Fortune): string {
+export function generateFortuneName(fortune: FortuneEntry): string {
   return `第${fortune.fields.number}番『${fortune.fields.blessing}』`
 }
 
@@ -36,14 +36,20 @@ export type Props = {
 export async function generateMetadata({
   params
 }: Props): Promise<Metadata | null> {
-  let fortune: Fortune
+  let fortune: FortuneEntry
   try {
     fortune = await getFortune(params.id)
   } catch {
-    return null
+    notFound()
   }
 
   const name = generateFortuneName(fortune)
+  const card = fortune.fields.card
+
+  if (!card?.fields.file) {
+    notFound()
+  }
+
   const title = `因幡はねるくじ ${name}`
 
   return {
@@ -55,9 +61,9 @@ export async function generateMetadata({
       description: fortune.fields.description,
       images: [
         {
-          height: fortune.fields.card.fields.file.details.image?.height ?? 630,
-          url: getImageURL(fortune.fields.card),
-          width: fortune.fields.card.fields.file.details.image?.width ?? 1200
+          height: card.fields.file.details.image?.height ?? 630,
+          url: getImageURL(card),
+          width: card.fields.file.details.image?.width ?? 1200
         }
       ],
       siteName,
@@ -75,15 +81,21 @@ export async function generateMetadata({
 }
 
 export default async function Page({ params }: Props) {
-  let fortune: Fortune
+  let fortune: FortuneEntry
   try {
     fortune = await getFortune(params.id)
   } catch {
     notFound()
   }
 
+  const paper = fortune.fields.paper
+
+  if (!paper?.fields.file) {
+    notFound()
+  }
+
   const name = generateFortuneName(fortune)
-  const imageDetails = fortune.fields.paper.fields.file.details.image
+  const imageDetails = paper.fields.file.details.image
 
   return (
     <>
@@ -98,7 +110,7 @@ export default async function Page({ params }: Props) {
           placeholder="blur"
           priority
           quality={80}
-          src={getImageURL(fortune.fields.paper)}
+          src={getImageURL(paper)}
           width={imageDetails ? imageDetails.width / 2 : 254}
         />
       </div>
