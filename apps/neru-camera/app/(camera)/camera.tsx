@@ -7,6 +7,7 @@ import {
   AlertDialogDescription,
   AlertDialogLabel
 } from '@reach/alert-dialog'
+import { track } from '@vercel/analytics'
 import { fileSave } from 'browser-fs-access'
 import clsx from 'clsx'
 import { type Application } from 'pixi.js'
@@ -54,6 +55,9 @@ export default function Camera(): JSX.Element {
           fileName: `NeruCamera-${Date.now()}.jpg`
         })
       )
+      .then(() => {
+        track('takePhoto')
+      })
       .catch((error) => {
         console.error(error)
       })
