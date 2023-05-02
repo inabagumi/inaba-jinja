@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.1.1](https://github.com/inabagumi/neru-camera/compare/v7.1.0...v7.1.1) (2023-05-02)
+
+
+### Bug Fixes
+
+* change commit message format ([#2065](https://github.com/inabagumi/neru-camera/issues/2065)) ([0bc38d9](https://github.com/inabagumi/neru-camera/commit/0bc38d9e66c6b085110361d6b4508406e0cbc114))
+
 ## [7.1.0](https://github.com/inabagumi/neru-camera/compare/v7.0.0...v7.1.0) (2023-05-02)
 
 
