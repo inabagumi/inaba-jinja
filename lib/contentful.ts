@@ -12,7 +12,7 @@ import { cache } from 'react'
 import { fromAsync } from '@/lib/polyfills/array'
 import { redisClient } from '@/lib/redis'
 
-let client: ContentfulClientApi<undefined>
+let client: ContentfulClientApi<'WITHOUT_UNRESOLVABLE_LINKS'>
 
 export function getClient(
   accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
@@ -25,10 +25,10 @@ export function getClient(
     client = createClient({
       accessToken,
       space
-    })
+    }).withoutUnresolvableLinks
   }
 
-  return client.withoutUnresolvableLinks
+  return client
 }
 
 export type FortuneEntrySkeleton = EntrySkeletonType<
