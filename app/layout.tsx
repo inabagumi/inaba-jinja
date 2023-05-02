@@ -5,9 +5,6 @@ import { Analytics } from '@vercel/analytics/react'
 import { type Metadata } from 'next'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
-import appleTouchIcon from '@/assets/icons/apple-touch-icon.png'
-import favicon192x192 from '@/assets/icons/favicon-192x192.png'
-import favicon512x512 from '@/assets/icons/favicon-512x512.png'
 import { description, title as siteName, themeColor } from '@/lib/constants'
 import Background from './Background'
 import Menu from './Menu'
@@ -15,22 +12,6 @@ import styles from './layout.module.css'
 
 export const metadata: Metadata = {
   description,
-  icons: {
-    apple: {
-      sizes: `${appleTouchIcon.width}x${appleTouchIcon.height}`,
-      url: appleTouchIcon.src
-    },
-    icon: [
-      {
-        sizes: `${favicon192x192.width}x${favicon192x192.height}`,
-        url: favicon192x192.src
-      },
-      {
-        sizes: `${favicon512x512.width}x${favicon512x512.height}`,
-        url: favicon512x512.src
-      }
-    ]
-  },
   manifest: '/manifest.webmanifest',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   robots: {
