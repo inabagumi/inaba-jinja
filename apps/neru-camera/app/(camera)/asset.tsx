@@ -1,5 +1,6 @@
 'use client'
 
+import { type Entry } from 'contentful'
 import {
   type Dispatch,
   type ReactNode,
@@ -9,7 +10,12 @@ import {
   useContext,
   useState
 } from 'react'
-import { type OverlayEntry } from '@/lib/contentful'
+import { type OverlayEntrySkeleton } from '@/lib/contentful'
+
+export type OverlayEntry = Entry<
+  OverlayEntrySkeleton,
+  'WITHOUT_UNRESOLVABLE_LINKS'
+>
 
 type AssetValues = {
   current?: OverlayEntry

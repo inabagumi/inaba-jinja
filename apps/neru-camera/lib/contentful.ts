@@ -1,19 +1,20 @@
 import {
-  type Asset,
   type ContentfulClientApi,
-  type Entry,
+  type EntryFieldTypes,
+  type EntrySkeletonType,
   createClient as createContentfulClient
 } from 'contentful'
 
-export type OverlayFields = {
-  keyColor: string
-  media: Asset
-  name: string
-}
+export type OverlayEntrySkeleton = EntrySkeletonType<
+  {
+    keyColor: EntryFieldTypes.Text
+    media: EntryFieldTypes.AssetLink
+    name: EntryFieldTypes.Text
+  },
+  'overlay'
+>
 
-export type OverlayEntry = Entry<OverlayFields>
-
-export const createClient = (): ContentfulClientApi => {
+export const createClient = (): ContentfulClientApi<undefined> => {
   if (!process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN) throw new TypeError()
   if (!process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID) throw new TypeError()
 
