@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.1.0](https://github.com/inabagumi/neru-camera/compare/v7.0.0...v7.1.0) (2023-05-02)
+
+
+### Features
+
+* introduce analytics ([#2062](https://github.com/inabagumi/neru-camera/issues/2062)) ([32e722d](https://github.com/inabagumi/neru-camera/commit/32e722d0f2bd1c83364af2e9c68594ac937522da))
+* replace to file-based metadata ([#2060](https://github.com/inabagumi/neru-camera/issues/2060)) ([a526caf](https://github.com/inabagumi/neru-camera/commit/a526caf396c0e6fbbb1d5284603bbde990ab2162))
+
+
+### Bug Fixes
+
+* invalid manifest ([#2064](https://github.com/inabagumi/neru-camera/issues/2064)) ([6cef22e](https://github.com/inabagumi/neru-camera/commit/6cef22ed0bb358f3a86f96a07257569828b42fa1))
+
 ## 7.0.0 (2023-03-15)
 
 
