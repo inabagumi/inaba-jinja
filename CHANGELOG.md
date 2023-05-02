@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.1](https://github.com/inabagumi/inaba-jinja/compare/v3.2.0...v3.2.1) (2023-05-02)
+
+
+### Bug Fixes
+
+* fix types ([#2644](https://github.com/inabagumi/inaba-jinja/issues/2644)) ([24c8882](https://github.com/inabagumi/inaba-jinja/commit/24c88825761564215244b5714731e4597b94afe5))
+
 ## [3.2.0](https://github.com/inabagumi/inaba-jinja/compare/v3.1.0...v3.2.0) (2023-03-13)
 
 
