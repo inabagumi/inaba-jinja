@@ -3,6 +3,8 @@ import {
   type ContentfulClientApi,
   type Entry,
   type EntryCollection,
+  type EntryFieldTypes,
+  type EntrySkeletonType,
   createClient
 } from 'contentful'
 import dedent from 'dedent'
@@ -10,12 +12,12 @@ import { cache } from 'react'
 import { fromAsync } from '@/lib/polyfills/array'
 import { redisClient } from '@/lib/redis'
 
-let client: ContentfulClientApi
+let client: ContentfulClientApi<undefined>
 
 export function getClient(
   accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
   space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID
-): ContentfulClientApi {
+): ContentfulClientApi<'WITHOUT_UNRESOLVABLE_LINKS'> {
   if (!client) {
     if (!accessToken) throw new TypeError('The access token is required.')
     if (!space) throw new TypeError('The space ID is required.')
@@ -26,49 +28,56 @@ export function getClient(
     })
   }
 
-  return client
+  return client.withoutUnresolvableLinks
 }
 
-export type FortuneFields = {
-  blessing: string
-  card: Asset
-  description: string
-  number: number
-  paper: Asset
-  prePaper: string
-}
+export type FortuneEntrySkeleton = EntrySkeletonType<
+  {
+    blessing: EntryFieldTypes.Text
+    card: EntryFieldTypes.AssetLink
+    description: EntryFieldTypes.Text
+    number: EntryFieldTypes.Number
+    paper: EntryFieldTypes.AssetLink
+    prePaper: EntryFieldTypes.Text
+  },
+  'fortune'
+>
 
-export type Fortune = Entry<FortuneFields>
+export type FortuneEntry = Entry<
+  FortuneEntrySkeleton,
+  'WITHOUT_UNRESOLVABLE_LINKS'
+>
 
 export const getFortune = cache(async function getFortune(
   id?: string
-): Promise<Fortune> {
+): Promise<FortuneEntry> {
   if (!id) throw new TypeError('The fortune ID is required.')
 
-  return getClient().getEntry<FortuneFields>(id)
+  return getClient().getEntry<FortuneEntrySkeleton>(id)
 })
 
 export const getFortuneIDs = cache(
   async function* getFortuneIDs(): AsyncGenerator<string, void> {
-    const { items, limit, total } = await getClient().getEntries<undefined>({
-      content_type: 'fortune',
-      limit: 100,
-      select: 'sys.id'
-    })
+    const { items, limit, total } =
+      await getClient().getEntries<FortuneEntrySkeleton>({
+        content_type: 'fortune',
+        limit: 100,
+        select: ['sys.id']
+      })
 
     for (const entry of items) {
       yield entry.sys.id
     }
 
     if (items.length < total) {
-      const promises: Promise<EntryCollection<undefined>>[] = []
+      const promises: Promise<EntryCollection<FortuneEntrySkeleton>>[] = []
 
       for (let skip = limit; skip < total; skip += limit) {
         promises.push(
-          getClient().getEntries<undefined>({
+          getClient().getEntries<FortuneEntrySkeleton>({
             content_type: 'fortune',
             limit,
-            select: 'sys.id'
+            select: ['sys.id']
           })
         )
       }
@@ -117,7 +126,13 @@ export async function getAnyFortuneID(): Promise<string> {
   return newID
 }
 
-export function getImageURL(asset: Asset): string {
+export function getImageURL(
+  asset: Asset<'WITHOUT_UNRESOLVABLE_LINKS'>
+): string {
+  if (!asset.fields.file?.url) {
+    throw new TypeError('')
+  }
+
   const url = new URL(asset.fields.file.url, 'https://images.ctfassets.net')
 
   return url.toString()
