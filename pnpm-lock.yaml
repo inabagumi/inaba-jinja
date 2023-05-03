@@ -97,8 +97,8 @@ devDependencies:
     specifier: ^5.14.5
     version: 5.14.5
   '@types/web-app-manifest':
-    specifier: ^1.0.2
-    version: 1.0.2
+    specifier: ^1.0.3
+    version: 1.0.3
   '@types/webpack-env':
     specifier: ^1.18.0
     version: 1.18.0
@@ -2680,8 +2680,8 @@ packages:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: true
 
-  /@types/web-app-manifest@1.0.2:
-    resolution: {integrity: sha512-Dzq+rbsRHy+HLuDd4j/q8jTyW6Yte1dRihlBD0Xf5FTrnjFg8QgtzXySCahxy1VRreqASMBhn7amZIs8ZJ/T2Q==}
+  /@types/web-app-manifest@1.0.3:
+    resolution: {integrity: sha512-5hnj/fS2dsexvLXuTE2wxbacHMsUmaMCMa0Fphm7QL2yQLj1iePsnjfazeg4js2UI7nAzosUJxBIDb3i7C44jw==}
     dev: true
 
   /@types/webpack-env@1.18.0:
