@@ -20,8 +20,8 @@ dependencies:
     specifier: ^1.0.1
     version: 1.0.1
   browser-fs-access:
-    specifier: ^0.34.0
-    version: 0.34.0
+    specifier: ^0.34.1
+    version: 0.34.1
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
@@ -3000,8 +3000,8 @@ packages:
     dependencies:
       fill-range: 7.0.1
 
-  /browser-fs-access@0.34.0:
-    resolution: {integrity: sha512-F49NXUfjE9ZkDSF9Xr0PXPt89Sb9TIZDpxWEHOp0kYnT7RfciGLYcpHqXFFJ/+CiocOlT+5DOJ8Y7+XrKrzafw==}
+  /browser-fs-access@0.34.1:
+    resolution: {integrity: sha512-HPaRf2yimp8kWSuWJXc8Mi78dPbDzfduA+Gyq14H4jlMvd6XNfIRm36Y2yRLaa4x0gwcGuepj4zf14oiTlxrxQ==}
     dev: false
 
   /browserslist@4.21.5:

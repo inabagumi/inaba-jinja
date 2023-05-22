@@ -7,7 +7,7 @@
     "@reach/dialog": "^0.18.0",
     "@reach/menu-button": "^0.18.0",
     "@vercel/analytics": "^1.0.1",
-    "browser-fs-access": "^0.34.0",
+    "browser-fs-access": "^0.34.1",
     "clsx": "^1.2.1",
     "contentful": "^10.2.1",
     "next": "^13.4.3",
