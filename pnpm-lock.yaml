@@ -100,8 +100,8 @@ devDependencies:
     specifier: ^1.0.3
     version: 1.0.3
   '@types/webpack-env':
-    specifier: ^1.18.0
-    version: 1.18.0
+    specifier: ^1.18.1
+    version: 1.18.1
   '@typescript-eslint/eslint-plugin':
     specifier: ~5.59.5
     version: 5.59.5(@typescript-eslint/parser@5.59.5)(eslint@8.40.0)(typescript@5.0.4)
@@ -2684,8 +2684,8 @@ packages:
     resolution: {integrity: sha512-5hnj/fS2dsexvLXuTE2wxbacHMsUmaMCMa0Fphm7QL2yQLj1iePsnjfazeg4js2UI7nAzosUJxBIDb3i7C44jw==}
     dev: true
 
-  /@types/webpack-env@1.18.0:
-    resolution: {integrity: sha512-56/MAlX5WMsPVbOg7tAxnYvNYMMWr/QJiIp6BxVSW3JJXUVzzOn64qW8TzQyMSqSUFM2+PVI4aUHcHOzIz/1tg==}
+  /@types/webpack-env@1.18.1:
+    resolution: {integrity: sha512-D0HJET2/UY6k9L6y3f5BL+IDxZmPkYmPT4+qBrRdmRLYRuV0qNKizMgTvYxXZYn+36zjPeoDZAEYBCM6XB+gww==}
     dev: true
 
   /@types/yargs-parser@21.0.0:
