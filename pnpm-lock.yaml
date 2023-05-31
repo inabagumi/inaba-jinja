@@ -20,8 +20,8 @@ dependencies:
     specifier: ^1.2.1
     version: 1.2.1
   contentful:
-    specifier: ^10.2.2
-    version: 10.2.2
+    specifier: ^10.2.3
+    version: 10.2.3
   dedent:
     specifier: ^0.7.0
     version: 0.7.0
@@ -3727,8 +3727,8 @@ packages:
       qs: 6.11.2
     dev: false
 
-  /contentful@10.2.2:
-    resolution: {integrity: sha512-WhCuK1tuHjAsA8BgvHFVBi2D4PFxBHiOs6jjogKryfb/HiIGDqRQB00hTuQ0EuYaZp4qkL2B3k+YajMJ9TvAXg==}
+  /contentful@10.2.3:
+    resolution: {integrity: sha512-1GqJYwuQBl744ssyadZjeHrQAKBlOG3dxhcYBxfPi4iMzfGjMh+WiN0WeH0yIunKfOn5aIxEeYxZ6yexbP08zA==}
     engines: {node: '>=12'}
     dependencies:
       '@contentful/rich-text-types': 16.2.0
