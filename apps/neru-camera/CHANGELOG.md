@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.1.3](https://github.com/inabagumi/neru-camera/compare/v7.1.2...v7.1.3) (2023-06-11)
+
+
+### Bug Fixes
+
+* **devcontainer:** uninstall built-in pnpm ([#2122](https://github.com/inabagumi/neru-camera/issues/2122)) ([39268aa](https://github.com/inabagumi/neru-camera/commit/39268aa630873b9636353641e5c094c66b9a8093))
+
 ## [7.1.2](https://github.com/inabagumi/neru-camera/compare/v7.1.1...v7.1.2) (2023-05-02)
 
 
