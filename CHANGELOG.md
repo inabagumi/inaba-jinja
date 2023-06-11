@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.2](https://github.com/inabagumi/inaba-jinja/compare/v3.2.1...v3.2.2) (2023-06-11)
+
+
+### Bug Fixes
+
+* **devcontainer:** uninstall built-in pnpm ([#2692](https://github.com/inabagumi/inaba-jinja/issues/2692)) ([dd1f9b7](https://github.com/inabagumi/inaba-jinja/commit/dd1f9b7ea0e5702cbff1de3c9fab77ceb81dc470))
+
 ## [3.2.1](https://github.com/inabagumi/inaba-jinja/compare/v3.2.0...v3.2.1) (2023-05-02)
 
 
