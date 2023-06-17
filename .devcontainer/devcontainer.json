@@ -5,8 +5,7 @@
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
         "unifiedjs.vscode-mdx"
-      ],
-      "settings": {}
+      ]
     }
   },
   "forwardPorts": [3000],
@@ -15,7 +14,7 @@
     "memory": "8gb",
     "storage": "32gb"
   },
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18-buster",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bookworm",
   "name": "Inaba Jinja",
   "postCreateCommand": "sudo npm uninstall -g pnpm && sudo corepack enable && pnpm install",
   "waitFor": "postCreateCommand"
