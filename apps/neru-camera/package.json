@@ -11,7 +11,7 @@
     "clsx": "^1.2.1",
     "contentful": "^10.2.4",
     "next": "^13.4.7",
-    "next-seo": "^6.0.0",
+    "next-seo": "^6.1.0",
     "pixi-viewport": "^5.0.1",
     "pixi.js": "^7.2.4",
     "react": "^18.2.0",
