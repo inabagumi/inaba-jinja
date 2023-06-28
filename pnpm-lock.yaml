@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.18.0
     version: 0.18.0(react-dom@18.2.0)(react@18.2.0)
   '@upstash/redis':
-    specifier: ^1.21.0
-    version: 1.21.0
+    specifier: ^1.22.0
+    version: 1.22.0
   '@vercel/analytics':
     specifier: ^1.0.1
     version: 1.0.1
@@ -2892,8 +2892,8 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: true
 
-  /@upstash/redis@1.21.0:
-    resolution: {integrity: sha512-c6M+cl0LOgGK/7Gp6ooMkIZ1IDAJs8zFR+REPkoSkAq38o7CWFX5FYwYEqGZ6wJpUGBuEOr/7hTmippXGgL25A==}
+  /@upstash/redis@1.22.0:
+    resolution: {integrity: sha512-sXoJDoEqqik0HbrNE7yRWckOySEFsoBxfRdCgOqkc0w6py19ZZG50SpGkDDEUXSnBqP8VgGYXhWAiBpqxrt5oA==}
     dependencies:
       isomorphic-fetch: 3.0.0
     transitivePeerDependencies:
