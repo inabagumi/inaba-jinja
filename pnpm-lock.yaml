@@ -42,8 +42,8 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   react-focus-lock:
-    specifier: ^2.9.4
-    version: 2.9.4(@types/react@18.2.14)(react@18.2.0)
+    specifier: ^2.9.5
+    version: 2.9.5(@types/react@18.2.14)(react@18.2.0)
   react-remove-scroll:
     specifier: ^2.5.6
     version: 2.5.6(@types/react@18.2.14)(react@18.2.0)
@@ -7495,8 +7495,8 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-focus-lock@2.9.4(@types/react@18.2.14)(react@18.2.0):
-    resolution: {integrity: sha512-7pEdXyMseqm3kVjhdVH18sovparAzLg5h6WvIx7/Ck3ekjhrrDMEegHSa3swwC8wgfdd7DIdUVRGeiHT9/7Sgg==}
+  /react-focus-lock@2.9.5(@types/react@18.2.14)(react@18.2.0):
+    resolution: {integrity: sha512-h6vrdgUbsH2HeD5I7I3Cx1PPrmwGuKYICS+kB9m+32X/9xHRrAbxgvaBpG7BFBN9h3tO+C3qX1QAVESmi4CiIA==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
