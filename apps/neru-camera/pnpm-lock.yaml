@@ -30,8 +30,8 @@ dependencies:
     specifier: ^1.2.1
     version: 1.2.1
   contentful:
-    specifier: ^10.3.3
-    version: 10.3.3
+    specifier: ^10.3.4
+    version: 10.3.4
   next:
     specifier: ^13.4.9
     version: 13.4.9(@babel/core@7.22.8)(react-dom@18.2.0)(react@18.2.0)
@@ -3316,8 +3316,8 @@ packages:
       qs: 6.11.2
     dev: false
 
-  /contentful@10.3.3:
-    resolution: {integrity: sha512-BmDaol3lG6DXesOkx7wmo3RlJIOtVMIJounknR536LGW27oo+QSURReefONMfP29qGVi8mDg79XSNe8SABf2Bg==}
+  /contentful@10.3.4:
+    resolution: {integrity: sha512-i6OHoPDqDzCN3ihbnHO0yxym5EjKsIO17iUyzcPdvYsZT8pH+nyvNeD5Wcvw5mm8hdzknDM2Jq8TAsATUKseUA==}
     engines: {node: '>=12'}
     dependencies:
       '@contentful/rich-text-types': 16.2.0
