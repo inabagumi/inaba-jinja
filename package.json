@@ -14,7 +14,7 @@
     "@reach/skip-nav": "^0.18.0",
     "@upstash/redis": "^1.22.0",
     "@vercel/analytics": "^1.0.1",
-    "clsx": "^1.2.1",
+    "clsx": "^2.0.0",
     "contentful": "^10.3.4",
     "dedent": "^1.0.2",
     "edge-sitemap": "^1.1.1",
