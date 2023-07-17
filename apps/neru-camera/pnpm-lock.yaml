@@ -30,8 +30,8 @@ dependencies:
     specifier: ^2.0.0
     version: 2.0.0
   contentful:
-    specifier: ^10.3.4
-    version: 10.3.4
+    specifier: ^10.3.5
+    version: 10.3.5
   next:
     specifier: ^13.4.10
     version: 13.4.10(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
@@ -3359,8 +3359,8 @@ packages:
       qs: 6.11.2
     dev: false
 
-  /contentful@10.3.4:
-    resolution: {integrity: sha512-i6OHoPDqDzCN3ihbnHO0yxym5EjKsIO17iUyzcPdvYsZT8pH+nyvNeD5Wcvw5mm8hdzknDM2Jq8TAsATUKseUA==}
+  /contentful@10.3.5:
+    resolution: {integrity: sha512-fb9iVdUgC0VDligcedueN7XCaxNTRa9RCahzGBCTJsv6hnW8xa7RIdk0sNvZjSZWXg8tF/yxDbPtvMs6iV50fg==}
     engines: {node: '>=12'}
     dependencies:
       '@contentful/rich-text-types': 16.2.0
@@ -3368,7 +3368,7 @@ packages:
       contentful-resolve-response: 1.7.0
       contentful-sdk-core: 7.1.0
       json-stringify-safe: 5.0.1
-      type-fest: 3.13.1
+      type-fest: 4.0.0
     transitivePeerDependencies:
       - debug
     dev: false
@@ -6780,9 +6780,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /type-fest@3.13.1:
-    resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
-    engines: {node: '>=14.16'}
+  /type-fest@4.0.0:
+    resolution: {integrity: sha512-d/oYtUnPM9zar2fqqGLYPzgcY0qUlYK0evgNVti93xpzfjGkMgZHu9Lvgrkn0rqGXTgsFRxFamzjGoD9Uo+dgw==}
+    engines: {node: '>=16'}
     dev: false
 
   /typed-array-buffer@1.0.0:
