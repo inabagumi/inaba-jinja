@@ -30,8 +30,8 @@ dependencies:
     specifier: ^2.0.0
     version: 2.0.0
   contentful:
-    specifier: ^10.3.5
-    version: 10.3.5
+    specifier: ^10.3.6
+    version: 10.3.6
   next:
     specifier: ^13.4.10
     version: 13.4.10(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
@@ -3346,25 +3346,24 @@ packages:
       fast-copy: 2.1.7
     dev: false
 
-  /contentful-sdk-core@7.1.0:
-    resolution: {integrity: sha512-RzTPnRsbCdVAhyka3wa9sDsAu9YsxoerNgaMqd63Ljb7qpG2zkdHcP7NTfyIbuHDJNJdAQdifyafxfEEwP+q/w==}
+  /contentful-sdk-core@8.1.0:
+    resolution: {integrity: sha512-ZXTtrkrx4OlRcVY0WLihrskF+BSuHe7QZuWA8DNEeTlHmkPXAVch9Og5TJDoyGeqNrArR3Ovd7yfaG+1QYo+ag==}
     engines: {node: '>=12'}
     dependencies:
       fast-copy: 2.1.7
       lodash.isplainobject: 4.0.6
       lodash.isstring: 4.0.1
       p-throttle: 4.1.1
-      qs: 6.11.2
     dev: false
 
-  /contentful@10.3.5:
-    resolution: {integrity: sha512-fb9iVdUgC0VDligcedueN7XCaxNTRa9RCahzGBCTJsv6hnW8xa7RIdk0sNvZjSZWXg8tF/yxDbPtvMs6iV50fg==}
+  /contentful@10.3.6:
+    resolution: {integrity: sha512-1t719y3JdT4bhpCRGYHinGGouQJv1qwuu+OsunGjNzbzUoOWbXzWAcia6XLBv4N8zEt70+Gc0tk+8ke2gPMGLw==}
     engines: {node: '>=12'}
     dependencies:
       '@contentful/rich-text-types': 16.2.0
       axios: 0.26.1
       contentful-resolve-response: 1.7.0
-      contentful-sdk-core: 7.1.0
+      contentful-sdk-core: 8.1.0
       json-stringify-safe: 5.0.1
       type-fest: 4.0.0
     transitivePeerDependencies:
