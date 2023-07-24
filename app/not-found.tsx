@@ -1,6 +1,6 @@
 import { type Metadata } from 'next'
 import ContentLayout from '@/app/(content)/layout'
-import { title as siteName, themeColor } from '@/lib/constants'
+import { title as siteName } from '@/lib/constants'
 import SimpleTitle from '@/ui/SimpleTitle'
 
 const title = 'ページが見つかりません'
