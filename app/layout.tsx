@@ -1,13 +1,13 @@
 import '@reach/skip-nav/styles.css'
-import '@/styles/globals.css'
+import './globals.css'
 import { SkipNavLink } from '@reach/skip-nav'
 import { Analytics } from '@vercel/analytics/react'
 import { type Metadata } from 'next'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
 import { description, title as siteName, themeColor } from '@/lib/constants'
-import Background from './Background'
-import Menu from './Menu'
+import Background from './_components/background'
+import Menu from './_components/menu'
 import styles from './layout.module.css'
 
 export const metadata: Metadata = {

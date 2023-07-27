@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import mainVisual from '@/assets/main-visual.jpg'
-import styles from './Background.module.css'
+import styles from './background.module.css'
+import mainVisual from './main-visual.jpg'
 
 export default function Background() {
   return (

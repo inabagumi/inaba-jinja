@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import styles from './IconButton.module.css'
+import styles from './icon-button.module.css'
 
 type Props = Omit<JSX.IntrinsicElements['button'], 'ref'>
 

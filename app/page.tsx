@@ -1,8 +1,8 @@
 import { SkipNavContent } from '@reach/skip-nav'
 import { type Metadata } from 'next'
 import Link from 'next/link'
-import Logo from '@/assets/vertical-logo.svg'
 import { description, title, twitterAccount } from '@/lib/constants'
+import Logo from './_components/logo.svg'
 import styles from './page.module.css'
 
 export const runtime = 'edge'

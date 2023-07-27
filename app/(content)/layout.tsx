@@ -1,7 +1,7 @@
 import { SkipNavContent } from '@reach/skip-nav'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
-import Logo from '@/assets/logo.svg'
+import Logo from '@/components/logo.svg'
 import { title } from '@/lib/constants'
 import styles from './layout.module.css'
 

@@ -1,13 +1,10 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
-import kujiImage from '@/assets/kuji.png'
+import { Suspense } from 'react'
 import { title as siteName, twitterAccount } from '@/lib/constants'
-import { getAnyFortuneID } from '@/lib/contentful'
-import Refresh from '@/ui/Refresh'
+import Lottery, { LotteryBox } from './_components/lottery'
 import styles from './page.module.css'
 
-const DELAY_SECONDS = 2
-
+// export const runtime = 'edge'
 export const revalidate = 0
 
 const title = 'おみくじを引いています...'
@@ -31,27 +28,12 @@ export const metadata: Metadata = {
   }
 }
 
-export default async function Page() {
-  const id = await getAnyFortuneID()
-  const path = `/kuji/${id}`
-
+export default function Page() {
   return (
-    <>
-      <div className={styles.content}>
-        <div className={styles.lotteryBox}>
-          <Image
-            alt="くじ引き中..."
-            className={styles.lotteryImage}
-            height={kujiImage.height / 2}
-            priority
-            quality={80}
-            src={kujiImage}
-            width={kujiImage.width / 2}
-          />
-        </div>
-      </div>
-
-      <Refresh delay={DELAY_SECONDS} path={path} />
-    </>
+    <div className={styles.content}>
+      <Suspense fallback={<LotteryBox />}>
+        <Lottery />
+      </Suspense>
+    </div>
   )
 }

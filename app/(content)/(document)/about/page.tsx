@@ -1,11 +1,10 @@
 import { type Metadata } from 'next'
+import SimpleTitle from '@/components/simple-title'
 import { title as siteName, twitterAccount } from '@/lib/constants'
-import SimpleTitle from '@/ui/SimpleTitle'
-import About from './About.mdx'
+import About from './about.mdx'
 
 const title = '因幡神社とは'
 
-// export const runtime = 'edge'
 export const dynamic = 'force-static'
 
 export const metadata: Metadata = {
