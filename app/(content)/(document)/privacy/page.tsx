@@ -1,11 +1,10 @@
 import { type Metadata } from 'next'
+import SimpleTitle from '@/components/simple-title'
 import { title as siteName, twitterAccount } from '@/lib/constants'
-import SimpleTitle from '@/ui/SimpleTitle'
-import Privacy from './Privacy.mdx'
+import Privacy from './privacy.mdx'
 
 const title = 'プライバシーポリシー'
 
-// export const runtime = 'edge'
 export const dynamic = 'force-static'
 
 export const metadata: Metadata = {

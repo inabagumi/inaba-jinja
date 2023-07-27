@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react'
-import styles from './SimpleTitle.module.css'
+import styles from './simple-title.module.css'
 
 type Props = {
   children: ReactNode

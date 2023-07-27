@@ -1,5 +1,5 @@
 import { twitterAccount } from '@/lib/constants'
-import styles from './ShareLinks.module.css'
+import styles from './share-links.module.css'
 
 const DEFAULT_HASHTAGS = ['ねるくじ']
 

@@ -1,0 +1,22 @@
+@keyframes shake {
+  from {
+    transform: translateY(0) rotate(180deg);
+  }
+
+  to {
+    transform: translateY(20px) rotate(170deg);
+  }
+}
+
+.lotteryBox {
+  animation: shake 0.3s infinite alternate linear;
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  transform: translateY(0) rotate(180deg);
+}
+
+.lotteryImage {
+  height: auto;
+  max-width: 100%;
+}

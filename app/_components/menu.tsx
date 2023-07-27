@@ -5,9 +5,9 @@ import Link from 'next/link'
 import { useCallback, useState } from 'react'
 import FocusLock from 'react-focus-lock'
 import { RemoveScroll } from 'react-remove-scroll'
-import Logo from '@/assets/logo.svg'
-import IconButton from '@/ui/IconButton'
-import styles from './Menu.module.css'
+import IconButton from './icon-button'
+import Logo from './logo.svg'
+import styles from './menu.module.css'
 
 export default function Menu() {
   const [menuShown, setMenuShown] = useState(false)
