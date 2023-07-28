@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { useCallback, useState } from 'react'
 import FocusLock from 'react-focus-lock'
 import { RemoveScroll } from 'react-remove-scroll'
+import Logo from '@/components/logo.svg'
 import IconButton from './icon-button'
-import Logo from './logo.svg'
 import styles from './menu.module.css'
 
 export default function Menu() {
