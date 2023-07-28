@@ -1,4 +1,4 @@
-import { NextPage, PageConfig } from 'next'
+import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import { card } from '@/assets'
 
