@@ -6,22 +6,13 @@
 
 ## デプロイ
 
-- [**Node.js**](https://nodejs.org/ja/) v16.9+
-
-```console
-$ git clone https://github.com/inabagumi/inaba-jinja.git
-$ cd inaba-jinja
-$ corepack enable
-$ pnpm install
-$ pnpm build
-$ pnpm start
-```
+[Vercel](https://vercel.com/home)にデプロイすることを前提として開発されています。そのためVercel以外の環境へデプロイを行った際の動作については保証できません。
 
 ## ライセンス
 
 [MIT](LICENSE)
 
-ただし[`assets`](assets)ディレクトリー以下にある画像ファイルなどのソースコード以外のファイルについてはそれぞれの著作者が権利を有しています。
+ただしメインビジュアルやくじ箱のイラストといった画像ファイルなどのソースコード以外のファイルについてはそれぞれの著作者が権利を有しています。
 
 ## 免責事項
 
