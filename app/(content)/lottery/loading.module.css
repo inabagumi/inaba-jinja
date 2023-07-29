@@ -1,3 +1,11 @@
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+}
+
 @keyframes shake {
   from {
     transform: translateY(0) rotate(180deg);
