@@ -1,3 +1,26 @@
+import { title as siteName, twitterAccount } from '@/lib/constants'
+
+export const dynamic = 'force-static'
+
+export const metadata = {
+  alternates: {
+    canonical: '/privacy'
+  },
+  openGraph: {
+    siteName,
+    title: 'プライバシーポリシー',
+    type: 'article',
+    url: '/privacy'
+  },
+  title: 'プライバシーポリシー',
+  twitter: {
+    site: `@${twitterAccount}`,
+    title: `プライバシーポリシー - ${siteName}`
+  }
+}
+
+# プライバシーポリシー
+
 当ウェブサービスでは[Googleアナリティクス](https://developers.google.com/analytics/?hl=ja)を利用してトラフィックデータを収集しています。
 収集されたトラフィックデータは匿名化され、あなたの個人が特定されることはありません。
 Googleアナリティクスの詳細は[Googleアナリティクス利用規約](https://marketingplatform.google.com/about/analytics/terms/jp/)を参照してください。

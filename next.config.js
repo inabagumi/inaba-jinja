@@ -28,9 +28,6 @@ const withPWA = nextPWA({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    dirs: ['__mocks__', 'app', 'lib', 'ui']
-  },
   experimental: {
     appDir: true,
     mdxRs: true
@@ -83,6 +80,7 @@ const nextConfig = {
       }
     ]
   },
+  pageExtensions: ['tsx', 'mdx', 'ts'],
   reactStrictMode: true,
   async redirects() {
     return [

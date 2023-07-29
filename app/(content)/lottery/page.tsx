@@ -1,13 +1,18 @@
 import { type Metadata } from 'next'
-import { Suspense } from 'react'
+import { redirect } from 'next/navigation'
 import { title as siteName, twitterAccount } from '@/lib/constants'
-import Lottery, { LotteryBox } from './_components/lottery'
-import styles from './page.module.css'
+import { getAnyFortuneID } from '@/lib/contentful'
 
 // export const runtime = 'edge'
 export const revalidate = 0
 
 const title = 'おみくじを引いています...'
+
+function delay(seconds = 1): Promise<void> {
+  return new Promise((resolve) => {
+    setTimeout(resolve, seconds * 1_000)
+  })
+}
 
 export const metadata: Metadata = {
   alternates: {
@@ -28,12 +33,8 @@ export const metadata: Metadata = {
   }
 }
 
-export default function Page() {
-  return (
-    <div className={styles.content}>
-      <Suspense fallback={<LotteryBox />}>
-        <Lottery />
-      </Suspense>
-    </div>
-  )
+export default async function Page(): Promise<null> {
+  const [fortuneID] = await Promise.all([getAnyFortuneID(), delay(2)])
+
+  redirect(`/kuji/${fortuneID}`)
 }
