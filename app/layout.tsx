@@ -31,9 +31,10 @@ export const metadata: Metadata = {
 
 type Props = {
   children: ReactNode
+  header: ReactNode
 }
 
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({ children, header }: Props) {
   return (
     <html lang="ja">
       <head prefix="og: http://ogp.me/ns#" />
@@ -45,7 +46,10 @@ export default function RootLayout({ children }: Props) {
 
           <Menu />
 
-          {children}
+          <div>
+            {header}
+            {children}
+          </div>
 
           <footer className={styles.footer}>
             <nav>

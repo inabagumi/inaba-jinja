@@ -52,7 +52,7 @@ export default function ShareLinks({
             role="button"
             target="_blank"
           >
-            Twitterに共有する
+            Xに共有する
           </a>
         </li>
       </ul>

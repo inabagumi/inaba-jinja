@@ -1,7 +1,6 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
-import SimpleTitle from '@/components/simple-title'
 import { title as siteName, twitterAccount } from '@/lib/constants'
 import {
   type FortuneEntry,
@@ -13,7 +12,7 @@ import { fromAsync } from '@/lib/polyfills/array'
 import ShareLinks from './_components/share-links'
 import styles from './page.module.css'
 
-function generateFortuneName(fortune: FortuneEntry): string {
+export function generateFortuneName(fortune: FortuneEntry): string {
   return `第${fortune.fields.number}番『${fortune.fields.blessing}』`
 }
 
@@ -100,8 +99,6 @@ export default async function Page({ params }: Props) {
 
   return (
     <>
-      <SimpleTitle>{name}</SimpleTitle>
-
       <div className={styles.content}>
         <Image
           alt={name}
