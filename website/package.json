@@ -4,7 +4,7 @@
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/plugin-ideal-image": "^2.4.1",
     "@docusaurus/preset-classic": "^2.4.1",
-    "@formspree/react": "^2.4.4",
+    "@formspree/react": "^2.5.0",
     "@hookform/error-message": "^2.0.1",
     "clsx": "^2.0.0",
     "lodash": "^4.17.21",
