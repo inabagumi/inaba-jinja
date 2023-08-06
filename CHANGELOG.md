@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/inabagumi/inaba-jinja/compare/v3.2.2...v3.3.0) (2023-08-06)
+
+
+### Features
+
+* add title to not found page ([#2773](https://github.com/inabagumi/inaba-jinja/issues/2773)) ([e089d6d](https://github.com/inabagumi/inaba-jinja/commit/e089d6daf1f4b2e3bf465720ecfaef6571c9f0f0))
+* refine mdx ([#2788](https://github.com/inabagumi/inaba-jinja/issues/2788)) ([911f137](https://github.com/inabagumi/inaba-jinja/commit/911f13766ec7b63d61728e80336c8d243f6e2db6))
+
+
+### Bug Fixes
+
+* fix header ([#2804](https://github.com/inabagumi/inaba-jinja/issues/2804)) ([2c8aa45](https://github.com/inabagumi/inaba-jinja/commit/2c8aa450298706fb3217a9a6a1ab738f535e07df))
+* **menu:** fix logo ([#2785](https://github.com/inabagumi/inaba-jinja/issues/2785)) ([91515b8](https://github.com/inabagumi/inaba-jinja/commit/91515b8c96f9e8cc426499a428bb31b924e92c20))
+
 ## [3.2.2](https://github.com/inabagumi/inaba-jinja/compare/v3.2.1...v3.2.2) (2023-06-11)
 
 
