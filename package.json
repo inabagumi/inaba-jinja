@@ -37,7 +37,7 @@
     "@testing-library/react": "^14.0.0",
     "@types/dedent": "^0.7.0",
     "@types/eslint": "^8.44.2",
-    "@types/gtag.js": "^0.0.12",
+    "@types/gtag.js": "^0.0.13",
     "@types/jest": "^29.5.3",
     "@types/mdx": "^2.0.6",
     "@types/node": "^18.17.4",
