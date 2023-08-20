@@ -229,7 +229,7 @@
   resolved "https://registry.yarnpkg.com/@types/web-app-manifest/-/web-app-manifest-1.0.4.tgz#e0c35b353af71c0a3bf32ad45e13d9ea8887b0e3"
   integrity sha512-5XOGWiUTPSfznShOfMhi2Mc9rdRdvMADyGwMiuVJdoIO5POYmiTtpj6KIGKqvNWxXCVhTeLvMINM7H1uF6sdoQ==
 
-"@typescript-eslint/eslint-plugin@^6.3.0":
+"@typescript-eslint/eslint-plugin@^6.4.0":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.4.0.tgz#53428b616f7d80fe879f45a08f11cc0f0b62cf13"
   integrity sha512-62o2Hmc7Gs3p8SLfbXcipjWAa6qk2wZGChXG2JbBtYpwSRmti/9KHLqfbLs9uDigOexG+3PaQ9G2g3201FWLKg==
@@ -246,7 +246,7 @@
     semver "^7.5.4"
     ts-api-utils "^1.0.1"
 
-"@typescript-eslint/parser@^5.4.2 || ^6.0.0", "@typescript-eslint/parser@^6.3.0":
+"@typescript-eslint/parser@^5.4.2 || ^6.0.0", "@typescript-eslint/parser@^6.4.0":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-6.4.0.tgz#47e7c6e22ff1248e8675d95f488890484de67600"
   integrity sha512-I1Ah1irl033uxjxO9Xql7+biL3YD7w9IU8zF+xlzD/YxY6a4b7DYA08PXUUCbm2sEljwJF6ERFy2kTGAGcNilg==
