@@ -57,7 +57,7 @@ devDependencies:
     version: 17.7.0
   '@inabagumi/prettier-config':
     specifier: ^2.0.0
-    version: 2.0.0(prettier@3.0.2)
+    version: 2.0.0(prettier@3.0.3)
   '@jest/types':
     specifier: ^29.6.3
     version: 29.6.3
@@ -134,8 +134,8 @@ devDependencies:
     specifier: ^5.6.0
     version: 5.6.0(@babel/core@7.22.11)(next@13.4.19)(webpack@5.88.2)
   prettier:
-    specifier: ~3.0.2
-    version: 3.0.2
+    specifier: ~3.0.3
+    version: 3.0.3
   rehype-external-links:
     specifier: ^2.1.0
     version: 2.1.0
@@ -1675,12 +1675,12 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@inabagumi/prettier-config@2.0.0(prettier@3.0.2):
+  /@inabagumi/prettier-config@2.0.0(prettier@3.0.3):
     resolution: {integrity: sha512-b5tcbqpJv4gmJca3SQrRQ+QH/cDlMV5rS9gi9zTPXtIRGMByR4hLMuIffkknbKTOQ5UrDjvrWBbzY1mfw5geJA==}
     peerDependencies:
       prettier: '>= 2.4.0'
     dependencies:
-      prettier: 3.0.2
+      prettier: 3.0.3
     dev: true
 
   /@istanbuljs/load-nyc-config@1.1.0:
@@ -7366,8 +7366,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier@3.0.2:
-    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
+  /prettier@3.0.3:
+    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
