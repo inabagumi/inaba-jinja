@@ -18,7 +18,7 @@
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-prettier": "^5.0.0",
     "file-loader": "^6.2.0",
-    "prettier": "~3.0.2",
+    "prettier": "~3.0.3",
     "typescript": "~5.2.2"
   },
   "name": "774.ink",
