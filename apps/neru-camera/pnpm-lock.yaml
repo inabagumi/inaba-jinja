@@ -71,8 +71,8 @@ devDependencies:
     specifier: ^8.44.3
     version: 8.44.3
   '@types/node':
-    specifier: ^18.17.18
-    version: 18.17.18
+    specifier: ^18.17.19
+    version: 18.17.19
   '@types/react':
     specifier: ^18.2.22
     version: 18.2.22
@@ -1373,7 +1373,7 @@ packages:
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@types/node@18.17.18)(typescript@5.2.2)
+      ts-node: 10.9.1(@types/node@18.17.19)(typescript@5.2.2)
       typescript: 5.2.2
     transitivePeerDependencies:
       - '@swc/core'
@@ -2333,7 +2333,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 18.17.18
+      '@types/node': 18.17.19
     dev: true
 
   /@types/json-schema@7.0.13:
@@ -2352,8 +2352,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node@18.17.18:
-    resolution: {integrity: sha512-/4QOuy3ZpV7Ya1GTRz5CYSz3DgkKpyUptXuQ5PPce7uuyJAOR7r9FhkmxJfvcNUXyklbC63a+YvB3jxy7s9ngw==}
+  /@types/node@18.17.19:
+    resolution: {integrity: sha512-+pMhShR3Or5GR0/sp4Da7FnhVmTalWm81M6MkEldbwjETSaPalw138Z4KdpQaistvqQxLB7Cy4xwYdxpbSOs9Q==}
 
   /@types/node@20.4.7:
     resolution: {integrity: sha512-bUBrPjEry2QUTsnuEjzjbS7voGWCc30W0qzgMf90GPeDGFRakvrz47ju+oqDAKCXLUCe39u57/ORMl/O/04/9g==}
@@ -2380,7 +2380,7 @@ packages:
   /@types/resolve@1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.17.18
+      '@types/node': 18.17.19
     dev: true
 
   /@types/scheduler@0.16.3:
@@ -3303,7 +3303,7 @@ packages:
     dependencies:
       '@types/node': 20.4.7
       cosmiconfig: 8.3.6(typescript@5.2.2)
-      ts-node: 10.9.1(@types/node@18.17.18)(typescript@5.2.2)
+      ts-node: 10.9.1(@types/node@18.17.19)(typescript@5.2.2)
       typescript: 5.2.2
     dev: true
 
@@ -4719,7 +4719,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.17.18
+      '@types/node': 18.17.19
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -4728,7 +4728,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.17.18
+      '@types/node': 18.17.19
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
@@ -5598,7 +5598,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.30
-      ts-node: 10.9.1(@types/node@18.17.18)(typescript@5.2.2)
+      ts-node: 10.9.1(@types/node@18.17.19)(typescript@5.2.2)
       yaml: 2.3.2
     dev: false
 
@@ -6529,7 +6529,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: false
 
-  /ts-node@10.9.1(@types/node@18.17.18)(typescript@5.2.2):
+  /ts-node@10.9.1(@types/node@18.17.19)(typescript@5.2.2):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -6548,7 +6548,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 18.17.18
+      '@types/node': 18.17.19
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3
