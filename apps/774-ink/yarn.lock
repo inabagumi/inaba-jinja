@@ -224,10 +224,10 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.2.tgz#31f6eec1ed7ec23f4f05608d3a2d381df041f564"
   integrity sha512-7aqorHYgdNO4DM36stTiGO3DvKoex9TQRwsJU6vMaFGyqpBA1MNZkz+PG3gaNUPpTAOYhT1WR7M1JyA3fbS9Cw==
 
-"@types/web-app-manifest@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@types/web-app-manifest/-/web-app-manifest-1.0.4.tgz#e0c35b353af71c0a3bf32ad45e13d9ea8887b0e3"
-  integrity sha512-5XOGWiUTPSfznShOfMhi2Mc9rdRdvMADyGwMiuVJdoIO5POYmiTtpj6KIGKqvNWxXCVhTeLvMINM7H1uF6sdoQ==
+"@types/web-app-manifest@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@types/web-app-manifest/-/web-app-manifest-1.0.5.tgz#8137e721eccbccb6427ff72d21d30f843caa6a76"
+  integrity sha512-x9tJEeCyACefwUf5cdmW8Apeq8FVbmf59umw7CHauBMKTTGfx74u75UZ6XRIuHl+qX9dIEuRq84SpUOjIAgtTw==
 
 "@typescript-eslint/eslint-plugin@^6.7.2":
   version "6.7.2"
