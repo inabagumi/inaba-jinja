@@ -45,8 +45,8 @@ dependencies:
     specifier: ^2.9.5
     version: 2.9.5(@types/react@18.2.27)(react@18.2.0)
   react-remove-scroll:
-    specifier: ^2.5.6
-    version: 2.5.6(@types/react@18.2.27)(react@18.2.0)
+    specifier: ^2.5.7
+    version: 2.5.7(@types/react@18.2.27)(react@18.2.0)
 
 devDependencies:
   '@commitlint/cli':
@@ -7804,8 +7804,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /react-remove-scroll@2.5.6(@types/react@18.2.27)(react@18.2.0):
-    resolution: {integrity: sha512-bO856ad1uDYLefgArk559IzUNeQ6SWH4QnrevIUjH+GczV56giDfl3h0Idptf2oIKxQmd1p9BN25jleKodTALg==}
+  /react-remove-scroll@2.5.7(@types/react@18.2.27)(react@18.2.0):
+    resolution: {integrity: sha512-FnrTWO4L7/Bhhf3CYBNArEG/yROV0tKmTv7/3h9QCFvH6sndeFf1wPqOcbFVu5VAulS5dV1wGT3GZZ/1GawqiA==}
     engines: {node: '>=10'}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
