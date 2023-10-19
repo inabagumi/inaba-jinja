@@ -15,7 +15,7 @@
     "@upstash/redis": "^1.23.4",
     "@vercel/analytics": "^1.1.1",
     "clsx": "^2.0.0",
-    "contentful": "^10.6.3",
+    "contentful": "^10.6.4",
     "dedent": "^1.5.1",
     "edge-sitemap": "^1.1.1",
     "next": "^13.5.5",
