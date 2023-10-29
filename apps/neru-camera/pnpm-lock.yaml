@@ -36,8 +36,8 @@ dependencies:
     specifier: ^14.0.0
     version: 14.0.0(@babel/core@7.23.2)(react-dom@18.2.0)(react@18.2.0)
   next-seo:
-    specifier: ^6.3.0
-    version: 6.3.0(next@14.0.0)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^6.4.0
+    version: 6.4.0(next@14.0.0)(react-dom@18.2.0)(react@18.2.0)
   pixi-viewport:
     specifier: ^5.0.2
     version: 5.0.2
@@ -5149,8 +5149,8 @@ packages:
       - webpack
     dev: true
 
-  /next-seo@6.3.0(next@14.0.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ieaE7kDYHCPcwfmTTmA8D7EnNGnzvkG/o9QBua0Z9ZlrZUlkT42kfOsWO4TUyuZJH5juAGJ0/mDRie1r2b9tXw==}
+  /next-seo@6.4.0(next@14.0.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-XQFxkOL2hw0YE+P100HbI3EAvcludlHPxuzMgaIjKb7kPK0CvjGvLFjd9hszZFEDc5oiQkGFA8+cuWcnip7eYA==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
