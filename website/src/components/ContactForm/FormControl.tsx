@@ -1,6 +1,5 @@
 import { ErrorMessage } from '@hookform/error-message'
-import clsx from 'clsx'
-import * as React from 'react'
+import { clsx } from 'clsx'
 import { useFormContext } from 'react-hook-form'
 import TextField from '@site/src/components/TextField'
 import styles from './FormControl.module.css'

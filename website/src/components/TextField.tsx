@@ -1,5 +1,4 @@
-import clsx from 'clsx'
-import * as React from 'react'
+import { clsx } from 'clsx'
 import { forwardRef } from 'react'
 import TextareaAutosize from 'react-textarea-autosize'
 import styles from './TextField.module.css'

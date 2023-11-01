@@ -1,4 +1,3 @@
-import * as React from 'react'
 import FormControl from './FormControl'
 import { useHandleSubmit } from './hooks'
 import type { VFC } from 'react'

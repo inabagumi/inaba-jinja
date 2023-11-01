@@ -1,4 +1,6 @@
-module.exports = {
+import type { SidebarConfig } from '@docusaurus/plugin-content-docs'
+
+const sidebars: SidebarConfig = {
   docs: [
     'introduction',
     {
@@ -13,3 +15,5 @@ module.exports = {
     }
   ]
 }
+
+export default sidebars

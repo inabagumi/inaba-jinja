@@ -4,7 +4,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Image from '@theme/IdealImage'
 import Layout from '@theme/Layout'
 import chunk from 'lodash/chunk'
-import * as React from 'react'
 import products from '../data/products'
 import type { VFC } from 'react'
 
