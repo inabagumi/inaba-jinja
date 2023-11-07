@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^8.44.7
     version: 8.44.7
   '@types/gtag.js':
-    specifier: ^0.0.17
-    version: 0.0.17
+    specifier: ^0.0.18
+    version: 0.0.18
   '@types/jest':
     specifier: ^29.5.7
     version: 29.5.7
@@ -2542,8 +2542,8 @@ packages:
       '@types/node': 18.18.8
     dev: true
 
-  /@types/gtag.js@0.0.17:
-    resolution: {integrity: sha512-OsSO6Yyuygr3DeeTovOY0ppLiAVHoXg4CSanO9/vzDQCV+e8pkZNE+HR2dVxGJfUbtRe2IqzC97PYuHSNUepJw==}
+  /@types/gtag.js@0.0.18:
+    resolution: {integrity: sha512-GJxnIvuXuVhKaHfsOdzGipoOoXq72y3mdcncc9h6i6E7nlz89zBEj2wrLM7bqO5Xk9Lm2B94MwdQsSwRlaPSWw==}
     dev: true
 
   /@types/hast@3.0.2:
