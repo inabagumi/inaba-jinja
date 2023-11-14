@@ -1,15 +1,15 @@
-import { type NextRequest, NextResponse, userAgent } from 'next/server'
+import { NextResponse, userAgent } from 'next/server'
 
 export const config = {
   matcher: ['/share/:id*']
 }
 
-export function middleware(request: NextRequest): NextResponse {
+export function middleware(request: Request): Response {
   const ua = userAgent(request)
 
   if (ua.isBot) {
     return NextResponse.next()
   }
 
-  return NextResponse.redirect(new URL('/', request.url))
+  return Response.redirect(new URL('/', request.url))
 }

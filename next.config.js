@@ -29,7 +29,6 @@ const withPWA = nextPWA({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true,
     mdxRs: true
   },
   async headers() {

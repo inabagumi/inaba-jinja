@@ -1,5 +1,4 @@
 import {
-  type Asset,
   type ContentfulClientApi,
   type Entry,
   type EntryCollection,
@@ -124,16 +123,4 @@ export async function getAnyFortuneID(): Promise<string> {
   }
 
   return newID
-}
-
-export function getImageURL(
-  asset: Asset<'WITHOUT_UNRESOLVABLE_LINKS'>
-): string {
-  if (!asset.fields.file?.url) {
-    throw new TypeError('')
-  }
-
-  const url = new URL(asset.fields.file.url, 'https://images.ctfassets.net')
-
-  return url.toString()
 }
