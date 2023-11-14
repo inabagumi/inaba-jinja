@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/inabagumi/inaba-jinja/compare/v3.3.1...v3.4.0) (2023-11-14)
+
+
+### Features
+
+* **pwa:** disable pwa ([#3011](https://github.com/inabagumi/inaba-jinja/issues/3011)) ([bbf79b1](https://github.com/inabagumi/inaba-jinja/commit/bbf79b193dc013b9ef3fe07dc2a40faf31fa10ff))
+
 ## [3.3.1](https://github.com/inabagumi/inaba-jinja/compare/v3.3.0...v3.3.1) (2023-10-09)
 
 
