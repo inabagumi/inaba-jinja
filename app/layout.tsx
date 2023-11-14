@@ -2,7 +2,7 @@ import '@reach/skip-nav/styles.css'
 import './globals.css'
 import { SkipNavLink } from '@reach/skip-nav'
 import { Analytics } from '@vercel/analytics/react'
-import { type Metadata } from 'next'
+import { type Metadata, type Viewport } from 'next'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
 import { description, title as siteName, themeColor } from '@/lib/constants'
@@ -18,15 +18,16 @@ export const metadata: Metadata = {
     follow: true,
     index: true
   },
-  themeColor,
   title: {
     default: siteName,
     template: `%s - ${siteName}`
-  },
-  viewport: {
-    viewportFit: 'cover',
-    width: 'device-width'
   }
+}
+
+export const viewport: Viewport = {
+  themeColor,
+  viewportFit: 'cover',
+  width: 'device-width'
 }
 
 type Props = {

@@ -1,18 +1,13 @@
 import { type Metadata } from 'next'
+import { unstable_noStore as noStore } from 'next/cache'
 import { redirect } from 'next/navigation'
 import { title as siteName, twitterAccount } from '@/lib/constants'
 import { getAnyFortuneID } from '@/lib/contentful'
+import { delay } from '@/lib/timer'
 
 // export const runtime = 'edge'
-export const revalidate = 0
 
 const title = 'おみくじを引いています...'
-
-function delay(seconds = 1): Promise<void> {
-  return new Promise((resolve) => {
-    setTimeout(resolve, seconds * 1_000)
-  })
-}
 
 export const metadata: Metadata = {
   alternates: {
@@ -33,7 +28,9 @@ export const metadata: Metadata = {
   }
 }
 
-export default async function Page(): Promise<null> {
+export default async function Page() {
+  noStore()
+
   const [fortuneID] = await Promise.all([getAnyFortuneID(), delay(2)])
 
   redirect(`/kuji/${fortuneID}`)
