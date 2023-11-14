@@ -1,5 +1,4 @@
 import nextMDX from '@next/mdx'
-import nextPWA from 'next-pwa'
 import rehypeExternalLinks from 'rehype-external-links'
 import remarkGfm from 'remark-gfm'
 
@@ -18,14 +17,6 @@ const withMDX = nextMDX({
   }
 })
 
-const withPWA = nextPWA({
-  buildExcludes: [/app-build-manifest\.json$/, /\.(?:jpg|png)$/],
-  dest: '.next/static',
-  disable: process.env.NODE_ENV === 'development',
-  publicExcludes: ['!favicon.ico', '!robots.txt'],
-  sw: 'service-worker.js'
-})
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
@@ -41,33 +32,6 @@ const nextConfig = {
           }
         ],
         source: '/(.*)'
-      },
-      {
-        headers: [
-          {
-            key: 'cache-control',
-            value: 'max-age=0'
-          }
-        ],
-        source: '/service-worker.js'
-      },
-      {
-        headers: [
-          {
-            key: 'service-worker-allowed',
-            value: '/'
-          }
-        ],
-        source: '/service-worker.js'
-      },
-      {
-        headers: [
-          {
-            key: 'cache-control',
-            value: 'public,max-age=31536000,immutable'
-          }
-        ],
-        source: '/workbox-:hash.js'
       }
     ]
   },
@@ -95,18 +59,6 @@ const nextConfig = {
       }
     ]
   },
-  async rewrites() {
-    return [
-      {
-        destination: '/_next/static/service-worker.js',
-        source: '/service-worker.js'
-      },
-      {
-        destination: '/_next/static/workbox-:hash.js',
-        source: '/workbox-:hash.js'
-      }
-    ]
-  },
   swcMinify: true,
   webpack(config, { defaultLoaders }) {
     config.module.rules.push({
@@ -127,4 +79,4 @@ const nextConfig = {
   }
 }
 
-export default withMDX(withPWA(nextConfig))
+export default withMDX(nextConfig)
