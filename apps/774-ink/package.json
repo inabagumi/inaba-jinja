@@ -11,7 +11,7 @@
     "@types/node": "^18.18.10",
     "@types/react": "^18.2.37",
     "@types/web-app-manifest": "^1.0.7",
-    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "eslint": "^8.54.0",
     "eslint-config-next": "^14.0.3",
