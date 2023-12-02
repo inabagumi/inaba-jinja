@@ -13,7 +13,7 @@ jobs:
         uses: actions/create-github-app-token@v1
         with:
           app-id: ${{ secrets.RENOVATE_BOT_APP_ID }}
-          private-key: ${{ secrets.RENOVATE_BOT_APP_PRIVATE_KEY }}
+          private-key: ${{ secrets.RENOVATE_BOT_PRIVATE_KEY }}
       - uses: google-github-actions/release-please-action@v3
         with:
           token: ${{ steps.generate_token.outputs.token }}
