@@ -9,8 +9,13 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      - id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.RENOVATE_BOT_APP_ID }}
+          private-key: ${{ secrets.RENOVATE_BOT_PRIVATE_KEY }}
       - uses: google-github-actions/release-please-action@v3
         with:
-          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
+          token: ${{ steps.generate_token.outputs.token }}
           package-name: neru-camera
           release-type: node
