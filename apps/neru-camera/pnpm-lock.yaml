@@ -62,8 +62,8 @@ devDependencies:
     specifier: ^18.4.3
     version: 18.4.3
   '@inabagumi/prettier-config':
-    specifier: ^2.0.0
-    version: 2.0.0(prettier@3.1.0)
+    specifier: ^2.0.2
+    version: 2.0.2(prettier@3.1.0)
   '@next/eslint-plugin-next':
     specifier: ^14.0.3
     version: 14.0.3
@@ -1524,8 +1524,8 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@inabagumi/prettier-config@2.0.0(prettier@3.1.0):
-    resolution: {integrity: sha512-b5tcbqpJv4gmJca3SQrRQ+QH/cDlMV5rS9gi9zTPXtIRGMByR4hLMuIffkknbKTOQ5UrDjvrWBbzY1mfw5geJA==}
+  /@inabagumi/prettier-config@2.0.2(prettier@3.1.0):
+    resolution: {integrity: sha512-R35xTbZ0QeZ31k6S8KoSpzDSPPbFggYE6DgoVpW4cwIHF9VwAWToTfxd7vJ4J7m1rmMIJMWSvuYmPu1lvEcBNw==}
     peerDependencies:
       prettier: '>= 2.4.0'
     dependencies:
