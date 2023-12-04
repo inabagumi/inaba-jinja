@@ -21,7 +21,7 @@
     "@formspree/cli": "^0.9.6",
     "@inabagumi/prettier-config": "^2.0.2",
     "@types/lodash": "^4.14.202",
-    "@types/react": "^18.2.41",
+    "@types/react": "^18.2.42",
     "@types/react-helmet": "^6.1.9",
     "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
