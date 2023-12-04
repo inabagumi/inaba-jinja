@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.1](https://github.com/inabagumi/inaba-jinja/compare/v3.4.0...v3.4.1) (2023-12-04)
+
+
+### Bug Fixes
+
+* **codeql:** set `security-events` permission ([#3050](https://github.com/inabagumi/inaba-jinja/issues/3050)) ([a1b8e7d](https://github.com/inabagumi/inaba-jinja/commit/a1b8e7df5adbf2a8c4921ca5d55b235fabf8e862))
+* **release-please:** change secret env key prefix to `RELEASE_PLEASE_` ([#3055](https://github.com/inabagumi/inaba-jinja/issues/3055)) ([abe6868](https://github.com/inabagumi/inaba-jinja/commit/abe6868e436416da3e3cc4883d48bfcc20541c5d))
+* **release-please:** remove legacy property ([#3052](https://github.com/inabagumi/inaba-jinja/issues/3052)) ([4b9b531](https://github.com/inabagumi/inaba-jinja/commit/4b9b5317e58b48bdc2eb94eeb84e0cb9c65d8a82))
+
 ## [3.4.0](https://github.com/inabagumi/inaba-jinja/compare/v3.3.1...v3.4.0) (2023-11-14)
 
 
