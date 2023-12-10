@@ -63,7 +63,7 @@ devDependencies:
     version: 18.4.3
   '@inabagumi/prettier-config':
     specifier: ^2.0.2
-    version: 2.0.2(prettier@3.1.0)
+    version: 2.0.2(prettier@3.1.1)
   '@next/eslint-plugin-next':
     specifier: ^14.0.4
     version: 14.0.4
@@ -110,8 +110,8 @@ devDependencies:
     specifier: ^8.4.32
     version: 8.4.32
   prettier:
-    specifier: ~3.1.0
-    version: 3.1.0
+    specifier: ~3.1.1
+    version: 3.1.1
   typescript:
     specifier: ~5.3.3
     version: 5.3.3
@@ -1524,12 +1524,12 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@inabagumi/prettier-config@2.0.2(prettier@3.1.0):
+  /@inabagumi/prettier-config@2.0.2(prettier@3.1.1):
     resolution: {integrity: sha512-R35xTbZ0QeZ31k6S8KoSpzDSPPbFggYE6DgoVpW4cwIHF9VwAWToTfxd7vJ4J7m1rmMIJMWSvuYmPu1lvEcBNw==}
     peerDependencies:
       prettier: '>= 2.4.0'
     dependencies:
-      prettier: 3.1.0
+      prettier: 3.1.1
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -5635,8 +5635,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier@3.1.0:
-    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
