@@ -17,5 +17,4 @@ jobs:
           private-key: ${{ secrets.RELEASE_PLEASE_PRIVATE_KEY }}
       - uses: google-github-actions/release-please-action@v4
         with:
-          release-type: node
           token: ${{ steps.generate_token.outputs.token }}
