@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.0.0](https://github.com/inabagumi/neru-camera/compare/neru-camera-v7.1.3...neru-camera-v8.0.0) (2023-12-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace to app dir ([#1975](https://github.com/inabagumi/neru-camera/issues/1975))
+* align with CRN output of Next.js 13.2 ([#1974](https://github.com/inabagumi/neru-camera/issues/1974))
+* **deps:** replace to `@pixi/react` ([#1973](https://github.com/inabagumi/neru-camera/issues/1973))
+
+### Features
+
+* introduce analytics ([#2062](https://github.com/inabagumi/neru-camera/issues/2062)) ([32e722d](https://github.com/inabagumi/neru-camera/commit/32e722d0f2bd1c83364af2e9c68594ac937522da))
+* replace to app dir ([#1975](https://github.com/inabagumi/neru-camera/issues/1975)) ([b08ee93](https://github.com/inabagumi/neru-camera/commit/b08ee93d276e1657dde6f250155112d733608519))
+* replace to file-based metadata ([#2060](https://github.com/inabagumi/neru-camera/issues/2060)) ([a526caf](https://github.com/inabagumi/neru-camera/commit/a526caf396c0e6fbbb1d5284603bbde990ab2162))
+
+
+### Bug Fixes
+
+* align with CRN output of Next.js 13.2 ([#1974](https://github.com/inabagumi/neru-camera/issues/1974)) ([9a4fa0d](https://github.com/inabagumi/neru-camera/commit/9a4fa0d8557ff5c8248e0b9b06ce36aeb4071b4e))
+* change commit message format ([#2065](https://github.com/inabagumi/neru-camera/issues/2065)) ([0bc38d9](https://github.com/inabagumi/neru-camera/commit/0bc38d9e66c6b085110361d6b4508406e0cbc114))
+* **codeql:** set `security-events` permission ([#2414](https://github.com/inabagumi/neru-camera/issues/2414)) ([3755913](https://github.com/inabagumi/neru-camera/commit/37559134925c4938bc5e4104dace8703d97c0fe9))
+* **devcontainer:** uninstall built-in pnpm ([#2122](https://github.com/inabagumi/neru-camera/issues/2122)) ([39268aa](https://github.com/inabagumi/neru-camera/commit/39268aa630873b9636353641e5c094c66b9a8093))
+* escape regexp ([#2067](https://github.com/inabagumi/neru-camera/issues/2067)) ([bcec1b7](https://github.com/inabagumi/neru-camera/commit/bcec1b70b312c82c9b99211600b5063584094891))
+* invalid manifest ([#2064](https://github.com/inabagumi/neru-camera/issues/2064)) ([6cef22e](https://github.com/inabagumi/neru-camera/commit/6cef22ed0bb358f3a86f96a07257569828b42fa1))
+* **release-please:** change secret env key prefix to `RELEASE_PLEASE_` ([#2418](https://github.com/inabagumi/neru-camera/issues/2418)) ([09955ba](https://github.com/inabagumi/neru-camera/commit/09955baf7be8c33a5f99f870255d5c760985ca17))
+* **release-please:** remove legacy property ([#2415](https://github.com/inabagumi/neru-camera/issues/2415)) ([3ab9e37](https://github.com/inabagumi/neru-camera/commit/3ab9e37252141437b23ac230a6b758843b0a2f7e))
+
+
+### Build System
+
+* **deps:** replace to `@pixi/react` ([#1973](https://github.com/inabagumi/neru-camera/issues/1973)) ([675c8e2](https://github.com/inabagumi/neru-camera/commit/675c8e29fa0157e954e8b93c19c54fccdb97d282))
+
 ## [7.1.3](https://github.com/inabagumi/neru-camera/compare/v7.1.2...v7.1.3) (2023-06-11)
 
 
