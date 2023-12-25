@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation'
 import { title as siteName, twitterAccount } from '@/lib/constants'
 import { type FortuneEntry, getFortune, getFortuneIDs } from '@/lib/contentful'
 import { generateFortuneName, getImageURL } from '@/lib/fortune'
-import { fromAsync } from '@/lib/polyfills/array'
 import ShareLinks from './_components/share-links'
 import styles from './page.module.css'
 
@@ -16,7 +15,7 @@ export type Params = {
 }
 
 export async function generateStaticParams(): Promise<Params[]> {
-  const ids = await fromAsync(getFortuneIDs())
+  const ids = await getFortuneIDs()
 
   return ids.map((id) => ({ id }))
 }

@@ -7,8 +7,7 @@ import {
   createClient
 } from 'contentful'
 import dedent from 'dedent'
-import { cache } from 'react'
-import { fromAsync } from '@/lib/polyfills/array'
+import { unstable_cache as cache } from 'next/cache'
 import { redisClient } from '@/lib/redis'
 
 let client: ContentfulClientApi<'WITHOUT_UNRESOLVABLE_LINKS'>
@@ -47,16 +46,19 @@ export type FortuneEntry = Entry<
   'WITHOUT_UNRESOLVABLE_LINKS'
 >
 
-export const getFortune = cache(async function getFortune(
-  id?: string
-): Promise<FortuneEntry> {
-  if (!id) throw new TypeError('The fortune ID is required.')
+export const getFortune = cache(
+  async function getFortune(id?: string): Promise<FortuneEntry> {
+    if (!id) throw new TypeError('The fortune ID is required.')
 
-  return getClient().getEntry<FortuneEntrySkeleton>(id)
-})
+    return getClient().getEntry<FortuneEntrySkeleton>(id)
+  },
+  ['fortune']
+)
 
 export const getFortuneIDs = cache(
-  async function* getFortuneIDs(): AsyncGenerator<string, void> {
+  async function getFortuneIDs(): Promise<string[]> {
+    const results: string[] = []
+
     const { items, limit, total } =
       await getClient().getEntries<FortuneEntrySkeleton>({
         content_type: 'fortune',
@@ -64,9 +66,7 @@ export const getFortuneIDs = cache(
         select: ['sys.id']
       })
 
-    for (const entry of items) {
-      yield entry.sys.id
-    }
+    results.push(...items.map((entry) => entry.sys.id))
 
     if (items.length < total) {
       const promises: Promise<EntryCollection<FortuneEntrySkeleton>>[] = []
@@ -83,12 +83,13 @@ export const getFortuneIDs = cache(
 
       const collectionList = await Promise.all(promises)
       for (const { items: collectionItems } of collectionList) {
-        for (const entry of collectionItems) {
-          yield entry.sys.id
-        }
+        results.push(...collectionItems.map((entry) => entry.sys.id))
       }
     }
-  }
+
+    return results
+  },
+  ['fortunes']
 )
 
 export async function getAnyFortuneID(): Promise<string> {
@@ -99,7 +100,7 @@ export async function getAnyFortuneID(): Promise<string> {
   }
 
   const m = redisClient.multi()
-  const idSet = await fromAsync(getFortuneIDs())
+  const idSet = await getFortuneIDs()
 
   m.eval<string[], string | null>(
     dedent`

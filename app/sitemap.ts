@@ -20,7 +20,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   ]
 
-  for await (const fortuneID of getFortuneIDs()) {
+  const fortuneIDs = await getFortuneIDs()
+
+  for (const fortuneID of fortuneIDs) {
     items.push({
       changeFrequency: 'monthly',
       priority: 0.7,
