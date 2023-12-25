@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/inabagumi/inaba-jinja/compare/v3.4.1...v3.5.0) (2023-12-25)
+
+
+### Features
+
+* **contentful:** replace to `next/cache` ([#3088](https://github.com/inabagumi/inaba-jinja/issues/3088)) ([83211a1](https://github.com/inabagumi/inaba-jinja/commit/83211a129ab5450c483c8ec035364c66f6b4b57c))
+* **root-layout:** add `@vercel/speed-insights` ([#3086](https://github.com/inabagumi/inaba-jinja/issues/3086)) ([52520bf](https://github.com/inabagumi/inaba-jinja/commit/52520bf1e28b5e18e6122e2fbb780b7ff95f004a))
+
 ## [3.4.1](https://github.com/inabagumi/inaba-jinja/compare/v3.4.0...v3.4.1) (2023-12-04)
 
 
