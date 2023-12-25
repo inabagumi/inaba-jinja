@@ -2,6 +2,7 @@ import '@reach/skip-nav/styles.css'
 import './globals.css'
 import { SkipNavLink } from '@reach/skip-nav'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { type Metadata, type Viewport } from 'next'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: Props) {
         <Background />
 
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
