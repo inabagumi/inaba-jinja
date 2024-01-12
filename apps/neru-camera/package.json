@@ -38,7 +38,7 @@
     "lint-staged": "^15.2.0",
     "next-pwa": "^5.6.0",
     "postcss": "^8.4.33",
-    "prettier": "~3.2.0",
+    "prettier": "~3.2.1",
     "typescript": "~5.3.3"
   },
   "license": "MIT",
