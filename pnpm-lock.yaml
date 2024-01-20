@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.18.0
     version: 0.18.0(react-dom@18.2.0)(react@18.2.0)
   '@upstash/redis':
-    specifier: ^1.28.1
-    version: 1.28.1
+    specifier: ^1.28.2
+    version: 1.28.2
   '@vercel/analytics':
     specifier: ^1.1.2
     version: 1.1.2
@@ -3045,8 +3045,8 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@upstash/redis@1.28.1:
-    resolution: {integrity: sha512-px7x2ZP/Tn5HZg0GbM4sf/+LMExrR8zmGAAGeOvptB/5wgTvaease7RdyoEmsb/PwL5GjlJy3xWmy4TsGk9s4w==}
+  /@upstash/redis@1.28.2:
+    resolution: {integrity: sha512-e4HmmCji6kE6UnriU92sAVGLQcRYAB4fXSPXls08cjW7zdE/wFaDfhAGi1/T4/wUN50bAy/lpHwW4bMkI2EAcw==}
     dependencies:
       crypto-js: 4.2.0
     dev: false
