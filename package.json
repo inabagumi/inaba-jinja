@@ -34,7 +34,7 @@
     "@mdx-js/loader": "^3.0.0",
     "@next/mdx": "^14.1.0",
     "@svgr/webpack": "^8.1.0",
-    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/jest-dom": "^6.2.1",
     "@testing-library/react": "^14.1.2",
     "@types/dedent": "^0.7.2",
     "@types/eslint": "^8.56.2",
