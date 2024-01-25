@@ -14,7 +14,7 @@
     "@reach/skip-nav": "^0.18.0",
     "@upstash/redis": "^1.28.2",
     "@vercel/analytics": "^1.1.2",
-    "@vercel/speed-insights": "^1.0.7",
+    "@vercel/speed-insights": "^1.0.8",
     "clsx": "^2.1.0",
     "contentful": "^10.6.19",
     "dedent": "^1.5.1",
