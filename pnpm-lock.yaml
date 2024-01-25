@@ -27,8 +27,8 @@ dependencies:
     specifier: ^2.1.0
     version: 2.1.0
   contentful:
-    specifier: ^10.6.18
-    version: 10.6.18
+    specifier: ^10.6.19
+    version: 10.6.19
   dedent:
     specifier: ^1.5.1
     version: 1.5.1
@@ -3589,8 +3589,8 @@ packages:
       qs: 6.11.2
     dev: false
 
-  /contentful@10.6.18:
-    resolution: {integrity: sha512-in23fv3MdLE4jCn7HZpfwopfZQXUJHJFvJYtWfD12U8T+xKRgaX63YDpoT7dKaJUwrdHmP7p2d8rUFsVt2zAog==}
+  /contentful@10.6.19:
+    resolution: {integrity: sha512-sERvQXozTbvECK3uEJk1lH+GuoJ6h7WFENEo/2v2mNulxX3R9yyiiXR2LjNoaqulc2217XfKxN29u3/NWdQIJw==}
     engines: {node: '>=12'}
     dependencies:
       '@contentful/rich-text-types': 16.3.0
