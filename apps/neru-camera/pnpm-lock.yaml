@@ -30,7 +30,7 @@ dependencies:
     specifier: ^2.1.0
     version: 2.1.0
   contentful:
-    specifier: ^10.6.20
+    specifier: ^10.6.21
     version: 10.6.21
   next:
     specifier: ^14.1.0
