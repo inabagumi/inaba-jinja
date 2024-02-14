@@ -45,8 +45,8 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   react-focus-lock:
-    specifier: ^2.10.0
-    version: 2.10.0(@types/react@18.2.55)(react@18.2.0)
+    specifier: ^2.10.1
+    version: 2.10.1(@types/react@18.2.55)(react@18.2.0)
   react-remove-scroll:
     specifier: ^2.5.7
     version: 2.5.7(@types/react@18.2.55)(react@18.2.0)
@@ -4624,8 +4624,8 @@ packages:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
-  /focus-lock@1.1.0:
-    resolution: {integrity: sha512-7j9OR+mxVmGcfxpCU7qKT09R32TX4jlic2/iWT5pm58SYWB1lbREpb7hEkrXxx9MzkenDBOAGatBEcMbJ143UQ==}
+  /focus-lock@1.2.0:
+    resolution: {integrity: sha512-MGUkR6hFmRNeoQxUtL9jYckpf6DZhlD4crD8FgEO9hS+yXaCg2vi2hat9fB9qUe9YsLa6eE9ykldqaqLU0kYKg==}
     engines: {node: '>=10'}
     dependencies:
       tslib: 2.6.2
@@ -7231,8 +7231,8 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-focus-lock@2.10.0(@types/react@18.2.55)(react@18.2.0):
-    resolution: {integrity: sha512-/0XsStBc7T/g9pv1Z228mnvzQGUaL5mRxoX5LCwL4UWLpWKe65U+Zif31aOIu45cVxHDDMS+RgWT9j9K3NP6IQ==}
+  /react-focus-lock@2.10.1(@types/react@18.2.55)(react@18.2.0):
+    resolution: {integrity: sha512-40zZ/Cvl3eMRoHrpcc11WmY+Md/kbjWofNLoGKvt+bti/mAeLZXkqbSIhhVlgXfdV1wD5puopcep5l4KX22Xvg==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -7242,7 +7242,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.9
       '@types/react': 18.2.55
-      focus-lock: 1.1.0
+      focus-lock: 1.2.0
       prop-types: 15.8.1
       react: 18.2.0
       react-clientside-effect: 1.2.6(react@18.2.0)
