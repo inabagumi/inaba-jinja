@@ -10,7 +10,7 @@
     "@types/eslint": "^8.56.2",
     "@types/node": "^18.19.17",
     "@types/react": "^18.2.55",
-    "@types/web-app-manifest": "^1.0.7",
+    "@types/web-app-manifest": "^1.0.8",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.56.0",
