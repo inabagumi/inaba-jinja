@@ -13,7 +13,7 @@
     "@reach/portal": "^0.18.0",
     "@reach/skip-nav": "^0.18.0",
     "@upstash/redis": "^1.28.4",
-    "@vercel/analytics": "^1.2.1",
+    "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "clsx": "^2.1.0",
     "contentful": "^10.6.21",
