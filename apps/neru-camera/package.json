@@ -25,7 +25,7 @@
     "@inabagumi/prettier-config": "^2.0.2",
     "@next/eslint-plugin-next": "^14.1.2",
     "@types/eslint": "^8.56.5",
-    "@types/node": "^18.19.21",
+    "@types/node": "^18.19.22",
     "@types/react": "^18.2.63",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
