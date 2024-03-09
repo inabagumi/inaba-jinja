@@ -14,7 +14,7 @@
     "memory": "8gb",
     "storage": "32gb"
   },
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
   "name": "Inaba Jinja",
   "postCreateCommand": "sudo npm uninstall -g pnpm && sudo corepack enable && pnpm install",
   "waitFor": "postCreateCommand"
