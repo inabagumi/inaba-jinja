@@ -1,7 +1,7 @@
 .container {
   bottom: 0;
   height: 100%;
-  height: 100dvh;
+  height: 100lvh;
   left: 0;
   overflow: hidden;
   position: fixed;
@@ -16,6 +16,7 @@
 .overlay {
   background-color: rgba(0, 0, 0, 0.54);
   height: 100%;
+  height: 100lvh;
   left: 0;
   position: absolute;
   top: 0;
