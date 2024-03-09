@@ -75,7 +75,7 @@
     "format": "prettier -w .",
     "format-check": "prettier -c .",
     "lint": "next lint",
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "next start",
     "test": "jest"
   },
