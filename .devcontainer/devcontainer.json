@@ -17,6 +17,6 @@
   },
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
   "name": "Inaba Jinja",
-  "postCreateCommand": "sudo npm uninstall -g pnpm && sudo corepack enable && pnpm install",
+  "postCreateCommand": "./.devcontainer/post-create.sh",
   "waitFor": "postCreateCommand"
 }
