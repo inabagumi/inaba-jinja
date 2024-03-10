@@ -1,9 +1,7 @@
-import { SkipNavContent } from '@reach/skip-nav'
 import { type Metadata } from 'next'
 import Link from 'next/link'
 import { description, title, twitterAccount } from '@/lib/constants'
 import Logo from './_components/logo.svg'
-import styles from './page.module.css'
 
 export const runtime = 'edge'
 export const dynamic = 'force-static'
@@ -27,18 +25,22 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className={styles.container}>
-      <header className={styles.header}>
-        <h1 className={styles.title}>
-          <Logo aria-label={title} className={styles.logo} />
+    <main className="flex flex-col items-center justify-center pb-8 pt-20 text-white md:h-full md:p-4">
+      <header className="mx-auto flex max-w-2xl flex-col items-center justify-center px-4 pb-12">
+        <h1>
+          <Logo aria-label={title} className="h-auto w-16 fill-current" />
         </h1>
 
-        <p className={styles.description}>{description}</p>
+        <p className="mt-4 font-serif text-sm leading-8 tracking-widest">
+          {description}
+        </p>
       </header>
 
-      <SkipNavContent />
-
-      <Link className={styles.lotteryButton} href="/lottery" role="button">
+      <Link
+        className="rounded-md border border-current bg-white/0 px-4 py-2 text-sm leading-6 hover:bg-white/15"
+        href="/lottery"
+        role="button"
+      >
         おみくじを引く
       </Link>
     </main>

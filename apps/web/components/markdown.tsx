@@ -1,17 +1,9 @@
-import clsx from 'clsx'
 import { type MDXComponents } from 'mdx/types'
 import NextLink from 'next/link'
-import styles from './markdown.module.css'
 
 const EXTERNAL_LINK_REL_LIST = ['noopener', 'noreferrer'] as const
 
-export const MarkdownEmphasis: NonNullable<MDXComponents['em']> = ({
-  className,
-  ...props
-}) => <em className={clsx(styles.em, className)} {...props} />
-
 export const MarkdownLink: NonNullable<MDXComponents['a']> = ({
-  className,
   href,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ref: _ref,
@@ -30,7 +22,6 @@ export const MarkdownLink: NonNullable<MDXComponents['a']> = ({
 
     return (
       <a
-        className={clsx(styles.link, className)}
         href={href}
         rel={relList.length > 0 ? relList.join(' ') : undefined}
         target={target ?? '_blank'}
@@ -39,13 +30,5 @@ export const MarkdownLink: NonNullable<MDXComponents['a']> = ({
     )
   }
 
-  return (
-    <NextLink
-      className={clsx(styles.link, className)}
-      href={href}
-      rel={rel}
-      target={target}
-      {...props}
-    />
-  )
+  return <NextLink href={href} rel={rel} target={target} {...props} />
 }

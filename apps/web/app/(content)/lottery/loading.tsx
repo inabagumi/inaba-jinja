@@ -1,14 +1,13 @@
 import Image from 'next/image'
 import kujiImage from './kuji.png'
-import styles from './loading.module.css'
 
 export default function Loading(): JSX.Element {
   return (
-    <div className={styles.content}>
-      <div className={styles.lotteryBox}>
+    <div className="mb-4 mt-8 flex flex-col items-center justify-center">
+      <div className="animate-shake mx-auto max-w-full">
         <Image
           alt="くじ引き中..."
-          className={styles.lotteryImage}
+          className="h-auto max-w-full"
           height={kujiImage.height / 2}
           priority
           quality={80}

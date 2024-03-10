@@ -3,6 +3,7 @@
     "vscode": {
       "extensions": [
         "EditorConfig.EditorConfig",
+        "bradlc.vscode-tailwindcss",
         "esbenp.prettier-vscode",
         "unifiedjs.vscode-mdx"
       ]
