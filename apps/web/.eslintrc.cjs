@@ -5,7 +5,7 @@ const eslintConfig = {
   env: {
     es2020: true
   },
-  extends: ['eslint:recommended', 'next/core-web-vitals', 'prettier'],
+  extends: ['eslint:recommended', 'next/core-web-vitals', 'turbo', 'prettier'],
   overrides: [
     {
       extends: [
