@@ -8,10 +8,7 @@
     "email": "contact@haneru.dev",
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "tailwind-merge": "^2.2.1"
-  },
+  "dependencies": {},
   "description": "This is a tailwind.config for Inaba Jinja.",
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
@@ -35,6 +32,16 @@
   "license": "MIT",
   "main": "dist/index.js",
   "name": "@inaba-jinja/components",
+  "peerDependencies": {
+    "@types/react": "^18.2.64",
+    "react": "^18.2.0",
+    "tailwind-merge": "^2.2.1"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
   "private": true,
   "repository": {
     "directory": "packages/components",
