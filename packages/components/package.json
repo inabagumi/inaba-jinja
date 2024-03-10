@@ -1,0 +1,57 @@
+{
+  "author": {
+    "email": "contact@haneru.dev",
+    "name": "Haneru Developers",
+    "url": "https://haneru.dev/"
+  },
+  "bugs": {
+    "email": "contact@haneru.dev",
+    "url": "https://github.com/inabagumi/inaba-jinja/issues"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "tailwind-merge": "^2.2.1"
+  },
+  "description": "This is a tailwind.config for Inaba Jinja.",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@tsconfig/strictest": "^2.0.3",
+    "@types/react": "^18.2.64",
+    "tsup": "^8.0.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./skeleton": {
+      "types": "./dist/skeleton/index.d.ts",
+      "import": "./dist/skeleton/index.js",
+      "default": "./dist/skeleton/index.js"
+    }
+  },
+  "homepage": "https://inaba-jinja.com",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@inaba-jinja/components",
+  "private": true,
+  "repository": {
+    "directory": "packages/components",
+    "type": "git",
+    "url": "https://github.com/inabagumi/inaba-jinja.git"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "skeleton": [
+        "./dist/skeleton/index.d.ts"
+      ]
+    }
+  },
+  "version": "1.0.0"
+}

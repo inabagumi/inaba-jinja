@@ -1,9 +1,7 @@
-import { SkipNavContent } from '@reach/skip-nav'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
 import Logo from '@/components/logo.svg'
 import { title as siteName } from '@/lib/constants'
-import styles from './layout.module.css'
 
 type Props = {
   children: ReactNode
@@ -12,17 +10,18 @@ type Props = {
 
 export default function ContentLayout({ children, title }: Props) {
   return (
-    <div>
-      <header className={styles.header}>
-        <Link className={styles.brand} href="/">
-          <Logo aria-label={siteName} className={styles.brandLogo} />
+    <div className="mx-auto w-full max-w-screen-md py-4 text-white">
+      <header className="px-2">
+        <Link href="/">
+          <Logo
+            aria-label={siteName}
+            className="block h-8 w-auto fill-current"
+          />
         </Link>
       </header>
 
-      <main className={styles.wrapper}>
-        <SkipNavContent />
-
-        <div className={styles.content}>
+      <main className="px-2 pt-4">
+        <div className="rounded-2xl bg-slate-900/70 p-4 pb-8">
           {title}
           {children}
         </div>

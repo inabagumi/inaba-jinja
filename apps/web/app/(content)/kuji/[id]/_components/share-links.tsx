@@ -1,5 +1,4 @@
 import { twitterAccount } from '@/lib/constants'
-import styles from './share-links.module.css'
 
 const DEFAULT_HASHTAGS = ['ねるくじ']
 
@@ -42,11 +41,11 @@ export default function ShareLinks({
   const tweetShereURL = generateTweetShareURL({ hashtags, text, url })
 
   return (
-    <nav className={styles.shareLinks}>
-      <ul className={styles.shareLinksList}>
+    <nav className="mt-12">
+      <ul className="flex items-center justify-center">
         <li>
           <a
-            className={styles.shareButton}
+            className="inline-block rounded-full bg-[#0f1419] px-6 py-2 text-sm font-semibold tracking-wide text-white"
             href={tweetShereURL}
             rel="noopener noreferrer"
             role="button"

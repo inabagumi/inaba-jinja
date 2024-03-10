@@ -5,7 +5,6 @@ import { title as siteName, twitterAccount } from '@/lib/constants'
 import { type FortuneEntry, getFortune, getFortuneIDs } from '@/lib/contentful'
 import { generateFortuneName, getImageURL } from '@/lib/fortune'
 import ShareLinks from './_components/share-links'
-import styles from './page.module.css'
 
 // export const runtime = 'edge'
 export const revalidate = 30
@@ -90,11 +89,11 @@ export default async function Page({ params }: Props) {
 
   return (
     <>
-      <div className={styles.content}>
+      <div className="flex items-center justify-center">
         <Image
           alt={name}
           blurDataURL={fortune.fields.prePaper}
-          className={styles.kujiImage}
+          className="h-auto max-w-full rounded-md"
           height={imageDetails ? imageDetails.height / 2 : 540}
           placeholder="blur"
           priority

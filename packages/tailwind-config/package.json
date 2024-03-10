@@ -1,0 +1,36 @@
+{
+  "author": {
+    "email": "contact@haneru.dev",
+    "name": "Haneru Developers",
+    "url": "https://haneru.dev/"
+  },
+  "bugs": {
+    "email": "contact@haneru.dev",
+    "url": "https://github.com/inabagumi/inaba-jinja/issues"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "description": "This is a tailwind.config for Inaba Jinja.",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@tsconfig/strictest": "^2.0.3",
+    "tsup": "^8.0.2"
+  },
+  "homepage": "https://inaba-jinja.com",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@inaba-jinja/tailwind-config",
+  "private": true,
+  "repository": {
+    "directory": "packages/tailwind-config",
+    "type": "git",
+    "url": "https://github.com/inabagumi/inaba-jinja.git"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "version": "1.0.0"
+}

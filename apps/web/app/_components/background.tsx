@@ -1,13 +1,12 @@
 import Image from 'next/image'
-import styles from './background.module.css'
 import mainVisual from './main-visual.jpg'
 
 export default function Background() {
   return (
-    <div aria-hidden className={styles.container} role="none presentation">
+    <div aria-hidden className="fixed inset-0 -z-10 h-full h-lvh">
       <Image
         alt=""
-        className={styles.image}
+        className="object-cover"
         fill
         placeholder="blur"
         priority
@@ -15,7 +14,7 @@ export default function Background() {
         sizes="100vw"
         src={mainVisual}
       />
-      <div className={styles.overlay} />
+      <div className="absolute inset-0 h-full bg-black/50" />
     </div>
   )
 }
