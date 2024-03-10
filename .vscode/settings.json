@@ -1,6 +1,10 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "eslint.workingDirectories": [{ "mode": "auto" }],
   "files.associations": {
     "*.css": "tailwindcss"
-  },
-  "eslint.workingDirectories": [{ "mode": "auto" }]
+  }
 }
