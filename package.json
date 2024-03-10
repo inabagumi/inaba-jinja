@@ -13,6 +13,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^19.0.3",
+    "@commitlint/types": "^19.0.3",
     "@inabagumi/prettier-config": "^2.0.2",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
