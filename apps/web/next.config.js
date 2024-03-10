@@ -19,9 +19,6 @@ const withMDX = nextMDX({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    mdxRs: true
-  },
   async headers() {
     return [
       {
@@ -59,7 +56,6 @@ const nextConfig = {
       }
     ]
   },
-  swcMinify: true,
   webpack(config, { defaultLoaders }) {
     config.module.rules.push({
       test: /\.svg$/,
