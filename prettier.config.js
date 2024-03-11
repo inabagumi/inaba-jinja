@@ -1,4 +1,4 @@
-import inabagumiPrettierConfig from '@inabagumi/prettier-config' with { type: 'json' }
+import inabagumiPrettierConfig from '@inabagumi/prettier-config'
 
 /** @type {import('prettier').Config} */
 const prettierConfig = {
