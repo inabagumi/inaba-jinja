@@ -3,10 +3,7 @@ import Link from 'next/link'
 import { description, title, twitterAccount } from '@/lib/constants'
 import Logo from './_components/logo.svg'
 
-export const runtime = 'edge'
-export const dynamic = 'force-static'
-
-export const metadata: Metadata = {
+export const metadata = {
   alternates: {
     canonical: '/'
   },
@@ -21,7 +18,7 @@ export const metadata: Metadata = {
     site: `@${twitterAccount}`,
     title
   }
-}
+} satisfies Metadata
 
 export default function Page() {
   return (
