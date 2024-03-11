@@ -1018,10 +1018,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.2.tgz#d9fae00a2d5cb40f92cfe64b47ad749fbc38f917"
   integrity sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==
 
-"@inabagumi/prettier-config@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-2.0.2.tgz#0ac9ae0713980ec2391730323b7d25fa9e1c0959"
-  integrity sha512-R35xTbZ0QeZ31k6S8KoSpzDSPPbFggYE6DgoVpW4cwIHF9VwAWToTfxd7vJ4J7m1rmMIJMWSvuYmPu1lvEcBNw==
+"@inabagumi/prettier-config@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-3.0.0.tgz#2068cd0bd7a79e887bbb5f3a6c7e22fe43a228ae"
+  integrity sha512-C6SXKNTQ5Zd7+b/cDRlXpkzTcecbq0lsWFpIe+oxo4zIf6fuyi0/CS4w8vcviZI5QEQSU/mXBha/VF0ulyzZtQ==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
