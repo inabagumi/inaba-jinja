@@ -13,6 +13,7 @@
   },
   "description": "This is a tailwind.config for Inaba Jinja.",
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "@tsconfig/node20": "^20.1.2",
     "@tsconfig/strictest": "^2.0.3",
     "tsup": "^8.0.2"

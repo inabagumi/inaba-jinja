@@ -41,7 +41,7 @@ export default function RootLayout({ children }: Props) {
 
           {children}
 
-          <footer className="hidden bg-black/80 pb-[env(safe-area-inset-bottom,0)] text-sm text-white md:block">
+          <footer className="hidden bg-black/80 pb-[env(safe-area-inset-bottom,0)] text-sm text-slate-100 md:block">
             <nav className="p-4">
               <ul className="flex items-center justify-end gap-4">
                 <li>

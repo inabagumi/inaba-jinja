@@ -5,5 +5,5 @@ type Props = {
 }
 
 export default function SimpleTitle({ children }: Props): JSX.Element {
-  return <h1 className="mb-4 text-xl font-bold leading-6">{children}</h1>
+  return <h1 className="mb-8 text-2xl font-bold leading-6">{children}</h1>
 }

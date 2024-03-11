@@ -10,7 +10,7 @@ type Props = {
 
 export default function ContentLayout({ children, title }: Props) {
   return (
-    <div className="mx-auto w-full max-w-screen-md py-4 text-white">
+    <div className="mx-auto w-full max-w-screen-md py-4 text-slate-100">
       <header className="px-2">
         <Link href="/">
           <Logo
