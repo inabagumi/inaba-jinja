@@ -8,6 +8,7 @@ import {
 } from 'contentful'
 import dedent from 'dedent'
 import { unstable_cache as cache } from 'next/cache'
+import { cache as reactCache } from 'react'
 import { redisClient } from '@/lib/redis'
 
 let client: ContentfulClientApi<'WITHOUT_UNRESOLVABLE_LINKS'>
@@ -92,7 +93,7 @@ export const getFortuneIDs = cache(
   ['fortunes']
 )
 
-export async function getAnyFortuneID(): Promise<string> {
+export const getAnyFortuneID = reactCache(async function getAnyFortuneID() {
   const id = await redisClient.spop<string>('fortunes')
 
   if (id) {
@@ -124,4 +125,4 @@ export async function getAnyFortuneID(): Promise<string> {
   }
 
   return newID
-}
+})
