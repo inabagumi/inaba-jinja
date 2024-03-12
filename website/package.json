@@ -20,7 +20,7 @@
     "@docusaurus/types": "^3.1.1",
     "@formspree/cli": "^0.9.6",
     "@inabagumi/prettier-config": "^2.0.2",
-    "@types/lodash": "^4.14.202",
+    "@types/lodash": "^4.17.0",
     "@types/react": "^18.2.65",
     "@types/react-helmet": "^6.1.11",
     "@types/react-router-dom": "^5.3.3",
