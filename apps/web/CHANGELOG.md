@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/inabagumi/inaba-jinja/compare/inaba-jinja-v3.5.1...inaba-jinja-v4.0.0) (2024-03-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **web:** disable mdxRs ([#3261](https://github.com/inabagumi/inaba-jinja/issues/3261))
+* **web:** replace to tailwind ([#3251](https://github.com/inabagumi/inaba-jinja/issues/3251))
+
+### Features
+
+* **web:** refine prose styles ([#3265](https://github.com/inabagumi/inaba-jinja/issues/3265)) ([db55112](https://github.com/inabagumi/inaba-jinja/commit/db5511241d3ed1200819b3c9e6a36bed517ab6fe))
+* **web:** replace to tailwind ([#3251](https://github.com/inabagumi/inaba-jinja/issues/3251)) ([f673e76](https://github.com/inabagumi/inaba-jinja/commit/f673e76532cfa7cf4d9ac13688ab64a00e4c05ef))
+
+
+### Bug Fixes
+
+* **web:** disable mdxRs ([#3261](https://github.com/inabagumi/inaba-jinja/issues/3261)) ([02ffcfe](https://github.com/inabagumi/inaba-jinja/commit/02ffcfe4291460e2da9ddd9a877b96e66d4bb8f6))
+* **web:** refine redirect ([#3272](https://github.com/inabagumi/inaba-jinja/issues/3272)) ([0d7c1ca](https://github.com/inabagumi/inaba-jinja/commit/0d7c1ca6dc38cfd4fc8bafc33aae9259fe6bb5bb))
+* **web:** remove runtime config ([#3266](https://github.com/inabagumi/inaba-jinja/issues/3266)) ([97f0b5d](https://github.com/inabagumi/inaba-jinja/commit/97f0b5d805aac2fabed3925bb510fec762ce164f))
+
 ## [3.5.1](https://github.com/inabagumi/inaba-jinja/compare/inaba-jinja-v3.5.0...inaba-jinja-v3.5.1) (2024-03-09)
 
 
