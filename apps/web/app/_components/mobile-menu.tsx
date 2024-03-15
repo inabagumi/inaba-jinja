@@ -9,12 +9,22 @@ import {
   DialogTrigger
 } from '@radix-ui/react-dialog'
 import Link from 'next/link'
+import { twMerge } from 'tailwind-merge'
 import Logo from '@/components/logo.svg'
 
-export default function MobileMenu() {
+type Props = {
+  className?: string
+}
+
+export default function MobileMenu({ className }: Props) {
   return (
     <Dialog>
-      <DialogTrigger className="supports-[right:env(safe-area-inset-right)]:right-[env(safe-area-inset-right, 0)] fixed right-0 top-0 m-2 w-10 space-y-1.5 p-2 text-slate-100 supports-[top:env(safe-area-inset-top)]:top-[env(safe-area-inset-top,0)] md:hidden">
+      <DialogTrigger
+        className={twMerge(
+          'm-2 w-10 space-y-1.5 p-2 text-slate-100',
+          className
+        )}
+      >
         <span
           aria-hidden
           className="block h-0.5 w-full rounded-full bg-current"

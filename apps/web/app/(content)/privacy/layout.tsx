@@ -1,5 +1,6 @@
 import { type Metadata } from 'next'
 import { type ReactNode } from 'react'
+import SimpleTitle from '@/components/simple-title'
 import { title as siteName, twitterAccount } from '@/lib/constants'
 
 export const metadata = {
@@ -25,6 +26,9 @@ type Props = {
 
 export default function PrivacyLayout({ children }: Props) {
   return (
-    <div className="prose prose-invert prose-orange max-w-none">{children}</div>
+    <div className="prose prose-invert prose-orange max-w-none">
+      <SimpleTitle>プライバシーポリシー</SimpleTitle>
+      {children}
+    </div>
   )
 }
