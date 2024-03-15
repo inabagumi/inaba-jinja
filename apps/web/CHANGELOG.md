@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.1](https://github.com/inabagumi/inaba-jinja/compare/inaba-jinja-v4.0.0...inaba-jinja-v4.0.1) (2024-03-15)
+
+
+### Bug Fixes
+
+* **web:** full height ([#3277](https://github.com/inabagumi/inaba-jinja/issues/3277)) ([c7a0492](https://github.com/inabagumi/inaba-jinja/commit/c7a0492b51e7ba3edb4f49d893b64eaa629b1c3c))
+
 ## [4.0.0](https://github.com/inabagumi/inaba-jinja/compare/inaba-jinja-v3.5.1...inaba-jinja-v4.0.0) (2024-03-12)
 
 
