@@ -20,7 +20,7 @@
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
   "devDependencies": {
-    "@commitlint/cli": "^19.1.0",
+    "@commitlint/cli": "^19.2.0",
     "@commitlint/config-conventional": "^19.1.0",
     "@inabagumi/prettier-config": "^2.0.2",
     "@next/eslint-plugin-next": "^14.1.3",
