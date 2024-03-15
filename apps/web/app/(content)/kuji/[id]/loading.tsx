@@ -1,8 +1,13 @@
 import Skeleton from '@inaba-jinja/components/skeleton'
+import SimpleTitle from '@/components/simple-title'
 
 export default function KujiLoading() {
   return (
     <>
+      <SimpleTitle>
+        <Skeleton className="h-4 w-24" />
+      </SimpleTitle>
+
       <div className="flex items-center justify-center">
         <Skeleton className="block h-[540px] w-[254px]" />
       </div>

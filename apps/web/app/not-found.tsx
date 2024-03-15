@@ -11,7 +11,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <ContentLayout title={<SimpleTitle>{title}</SimpleTitle>}>
+    <ContentLayout>
+      <SimpleTitle>{title}</SimpleTitle>
       <p>申し訳ありませんがお探しのページを見つけられませんでした。</p>
     </ContentLayout>
   )
