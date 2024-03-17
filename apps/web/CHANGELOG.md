@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.2](https://github.com/inabagumi/inaba-jinja/compare/inaba-jinja-v4.0.1...inaba-jinja-v4.0.2) (2024-03-17)
+
+
+### Bug Fixes
+
+* **web:** add `aria-label` to dialog trigger ([#3281](https://github.com/inabagumi/inaba-jinja/issues/3281)) ([0b0539f](https://github.com/inabagumi/inaba-jinja/commit/0b0539f0a2edfe1018fc29e1dbc90763e441d08e))
+
 ## [4.0.1](https://github.com/inabagumi/inaba-jinja/compare/inaba-jinja-v4.0.0...inaba-jinja-v4.0.1) (2024-03-15)
 
 
