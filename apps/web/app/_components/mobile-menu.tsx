@@ -20,6 +20,7 @@ export default function MobileMenu({ className }: Props) {
   return (
     <Dialog>
       <DialogTrigger
+        aria-label="メニューを開く"
         className={twMerge(
           'm-2 w-10 space-y-1.5 p-2 text-slate-100',
           className
