@@ -33,7 +33,7 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.1.4",
     "eslint-config-prettier": "^9.1.0",
-    "husky": "^8.0.3",
+    "husky": "^9.0.11",
     "is-ci": "^3.0.1",
     "lint-staged": "^15.2.2",
     "next-pwa": "^5.6.0",
@@ -51,7 +51,7 @@
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "lint": "next lint",
-    "prepare": "is-ci || husky install",
+    "prepare": "is-ci || husky",
     "start": "next start"
   },
   "version": "8.0.0"
