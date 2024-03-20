@@ -2,7 +2,7 @@
   "author": "Haneru Developers",
   "dependencies": {
     "@heroicons/react": "^2.1.1",
-    "@pixi/react": "^7.1.1",
+    "@pixi/react": "^7.1.2",
     "@reach/alert-dialog": "^0.18.0",
     "@reach/dialog": "^0.18.0",
     "@reach/menu-button": "^0.18.0",
