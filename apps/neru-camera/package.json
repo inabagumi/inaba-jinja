@@ -22,7 +22,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
-    "@inabagumi/prettier-config": "^2.0.2",
+    "@inabagumi/prettier-config": "^3.0.0",
     "@next/eslint-plugin-next": "^14.1.4",
     "@types/eslint": "^8.56.6",
     "@types/node": "^18.19.26",
