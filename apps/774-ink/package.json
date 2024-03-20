@@ -19,7 +19,7 @@
     "eslint-plugin-prettier": "^5.1.3",
     "file-loader": "^6.2.0",
     "prettier": "~3.2.5",
-    "typescript": "~5.4.2"
+    "typescript": "~5.4.3"
   },
   "name": "774.ink",
   "private": true,
