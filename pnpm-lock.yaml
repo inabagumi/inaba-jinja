@@ -60,8 +60,8 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0
       contentful:
-        specifier: ^10.8.4
-        version: 10.8.4
+        specifier: ^10.8.5
+        version: 10.8.5
       dedent:
         specifier: ^1.5.1
         version: 1.5.1
@@ -4350,8 +4350,8 @@ packages:
       qs: 6.12.0
     dev: false
 
-  /contentful@10.8.4:
-    resolution: {integrity: sha512-oWTG4GSp5bf6AVXMvFESEIv0R4wd0Dw0JoUHFL2Wsz984KNP35B1TMcKA2LIMW9AcE4qk36X8O9txt2WJrnCOg==}
+  /contentful@10.8.5:
+    resolution: {integrity: sha512-aol2LmjRAmuOKQPITZtNasIkRFIECnrcQf2UiXGBZ2ldUpCAjyr533553fuGst2SeHZoKleLyYqFNgHcznDBUw==}
     engines: {node: '>=18'}
     dependencies:
       '@contentful/rich-text-types': 16.3.5
