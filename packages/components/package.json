@@ -13,7 +13,7 @@
   "devDependencies": {
     "@tsconfig/node20": "^20.1.3",
     "@tsconfig/strictest": "^2.0.4",
-    "@types/react": "^18.2.70",
+    "@types/react": "^18.2.72",
     "tsup": "^8.0.2"
   },
   "exports": {
