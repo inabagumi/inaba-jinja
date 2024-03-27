@@ -12,7 +12,7 @@
   "description": "This is a tailwind.config for Inaba Jinja.",
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
-    "@tsconfig/strictest": "^2.0.4",
+    "@tsconfig/strictest": "^2.0.5",
     "@types/react": "^18.2.72",
     "tsup": "^8.0.2"
   },
