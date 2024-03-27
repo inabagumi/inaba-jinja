@@ -16,7 +16,7 @@
   "description": "This is a tailwind.config for Inaba Jinja.",
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
-    "@tsconfig/strictest": "^2.0.4",
+    "@tsconfig/strictest": "^2.0.5",
     "tsup": "^8.0.2"
   },
   "homepage": "https://inaba-jinja.com",
