@@ -39,7 +39,7 @@
     "@types/jest": "^29.5.12",
     "@types/mdx": "^2.0.13",
     "@types/node": "^20.12.7",
-    "@types/react": "^18.2.77",
+    "@types/react": "^18.2.78",
     "@types/webpack-env": "^1.18.4",
     "@typescript-eslint/eslint-plugin": "~7.6.0",
     "@typescript-eslint/parser": "~7.6.0",
