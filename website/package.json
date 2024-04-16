@@ -19,7 +19,7 @@
     "@docusaurus/tsconfig": "^3.2.1",
     "@docusaurus/types": "^3.2.1",
     "@formspree/cli": "^0.9.6",
-    "@inabagumi/prettier-config": "^2.0.2",
+    "@inabagumi/prettier-config": "^3.0.0",
     "@types/lodash": "^4.17.0",
     "@types/react": "^18.2.79",
     "@types/react-helmet": "^6.1.11",
