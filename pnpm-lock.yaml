@@ -78,8 +78,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       tailwind-merge:
-        specifier: ^2.2.2
-        version: 2.2.2
+        specifier: ^2.3.0
+        version: 2.3.0
     devDependencies:
       '@inaba-jinja/tailwind-config':
         specifier: workspace:*
@@ -173,7 +173,7 @@ importers:
         version: 18.2.0
       tailwind-merge:
         specifier: ^2.2.1
-        version: 2.2.2
+        version: 2.3.0
     devDependencies:
       '@tsconfig/node20':
         specifier: ^20.1.4
@@ -4698,8 +4698,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  tailwind-merge@2.2.2:
-    resolution: {integrity: sha512-tWANXsnmJzgw6mQ07nE3aCDkCK4QdT3ThPMCzawoYA2Pws7vSTCvz3Vrjg61jVUGfFZPJzxEP+NimbcW+EdaDw==}
+  tailwind-merge@2.3.0:
+    resolution: {integrity: sha512-vkYrLpIP+lgR0tQCG6AP7zZXCTLc1Lnv/CCRT3BqJ9CZ3ui2++GPaGb1x/ILsINIMSYqqvrpqjUFsMNLlW99EA==}
 
   tailwindcss-safe-area@0.5.1:
     resolution: {integrity: sha512-aMHJYBi1NIrJ5ldZ9bk+uGLXw8UFCrFR8fheMyJEabV/kaI+qNozRm7UfEKZRgEmS3RMdrt2RQf2w/7S0ceLrQ==}
@@ -10496,7 +10496,7 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.0.0
 
-  tailwind-merge@2.2.2:
+  tailwind-merge@2.3.0:
     dependencies:
       '@babel/runtime': 7.24.4
 

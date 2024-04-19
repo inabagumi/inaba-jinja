@@ -22,7 +22,7 @@
     "next": "^14.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^2.2.2"
+    "tailwind-merge": "^2.3.0"
   },
   "description": "The source code for the Inaba Jinja.",
   "devDependencies": {
