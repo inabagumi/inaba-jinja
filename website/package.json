@@ -1,9 +1,9 @@
 {
   "author": "Haneru Developers",
   "dependencies": {
-    "@docusaurus/core": "^3.3.0",
-    "@docusaurus/plugin-ideal-image": "^3.3.0",
-    "@docusaurus/preset-classic": "^3.3.0",
+    "@docusaurus/core": "^3.3.2",
+    "@docusaurus/plugin-ideal-image": "^3.3.2",
+    "@docusaurus/preset-classic": "^3.3.2",
     "@formspree/react": "^2.5.1",
     "@hookform/error-message": "^2.0.1",
     "clsx": "^2.1.1",
@@ -15,9 +15,9 @@
   },
   "description": "We are Haneru Developers!",
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.3.0",
-    "@docusaurus/tsconfig": "^3.3.0",
-    "@docusaurus/types": "^3.3.0",
+    "@docusaurus/module-type-aliases": "^3.3.2",
+    "@docusaurus/tsconfig": "^3.3.2",
+    "@docusaurus/types": "^3.3.2",
     "@formspree/cli": "^0.9.6",
     "@inabagumi/prettier-config": "^3.0.0",
     "@types/lodash": "^4.17.0",
