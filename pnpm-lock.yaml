@@ -60,8 +60,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       contentful:
-        specifier: ^10.9.2
-        version: 10.9.2
+        specifier: ^10.9.3
+        version: 10.9.3
       dedent:
         specifier: ^1.5.3
         version: 1.5.3
@@ -2381,8 +2381,8 @@ packages:
     resolution: {integrity: sha512-XZvX2JMJF4YiICXLrHFv59KBHaQJ6ElqAP8gSNgnCu4x+pPG7Y1bC2JMNOiyAgJuGQGVUOcNZ5PmK+tsNEayYw==}
     engines: {node: '>=12'}
 
-  contentful@10.9.2:
-    resolution: {integrity: sha512-1NuHSdy2TQbGwxg2kY/D1k4Iu3ONqdpg7n5hjd3ZUIOhmkuXs4LmFUB86YEZ6aJ6td5V8GJiY2kfloYcCqwB+w==}
+  contentful@10.9.3:
+    resolution: {integrity: sha512-+X5Om82PrzYTyJplVUZxJ3DCWE7JqVQ/e2/FUf+WOodO7UJgKZX8Z47px9Lx6Ml6mH15X7GbGRO+2uWQ7KmgJA==}
     engines: {node: '>=18'}
 
   conventional-changelog-angular@7.0.0:
@@ -7557,7 +7557,7 @@ snapshots:
       p-throttle: 4.1.1
       qs: 6.12.1
 
-  contentful@10.9.2:
+  contentful@10.9.3:
     dependencies:
       '@contentful/rich-text-types': 16.3.5
       axios: 1.6.8
