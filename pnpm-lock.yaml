@@ -124,8 +124,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1
       '@types/webpack-env':
-        specifier: ^1.18.4
-        version: 1.18.4
+        specifier: ^1.18.5
+        version: 1.18.5
       '@typescript-eslint/eslint-plugin':
         specifier: ~7.8.0
         version: 7.8.0(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -1800,8 +1800,8 @@ packages:
   '@types/unist@3.0.2':
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
 
-  '@types/webpack-env@1.18.4':
-    resolution: {integrity: sha512-I6e+9+HtWADAWeeJWDFQtdk4EVSAbj6Rtz4q8fJ7mSr1M0jzlFcs8/HZ+Xb5SHzVm1dxH7aUiI+A8kA8Gcrm0A==}
+  '@types/webpack-env@1.18.5':
+    resolution: {integrity: sha512-wz7kjjRRj8/Lty4B+Kr0LN6Ypc/3SymeCCGSbaXp2leH0ZVg/PriNiOwNj4bD4uphI7A8NXS4b6Gl373sfO5mA==}
 
   '@types/yargs-parser@21.0.3':
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
@@ -6888,7 +6888,7 @@ snapshots:
 
   '@types/unist@3.0.2': {}
 
-  '@types/webpack-env@1.18.4': {}
+  '@types/webpack-env@1.18.5': {}
 
   '@types/yargs-parser@21.0.3': {}
 
