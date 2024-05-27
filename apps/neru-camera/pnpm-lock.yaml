@@ -33,8 +33,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       contentful:
-        specifier: ^10.11.3
-        version: 10.11.3
+        specifier: ^10.11.4
+        version: 10.11.5
       next:
         specifier: ^14.2.3
         version: 14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1794,8 +1794,8 @@ packages:
     resolution: {integrity: sha512-XZvX2JMJF4YiICXLrHFv59KBHaQJ6ElqAP8gSNgnCu4x+pPG7Y1bC2JMNOiyAgJuGQGVUOcNZ5PmK+tsNEayYw==}
     engines: {node: '>=12'}
 
-  contentful@10.11.3:
-    resolution: {integrity: sha512-sBI2fCfw101JOSJvjVS2rBpP3HwGl3S2lQPhYwdKjrLepktdJs+gxEyGnMWhOJ36Di5aObIrc0PSA4jAftDB/Q==}
+  contentful@10.11.5:
+    resolution: {integrity: sha512-vQghdhIRGGEsTPJMSLmwizZBtL8wmPN9q8gUpX3IJcQWo7d8Q/+L8qHABAj1OWYCzPJsxg0Ju/x8mYHgat/xaQ==}
     engines: {node: '>=18'}
 
   conventional-changelog-angular@7.0.0:
@@ -2321,6 +2321,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-directory@4.0.1:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
@@ -3322,10 +3323,12 @@ packages:
 
   rimraf@2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup-plugin-terser@7.0.2:
@@ -5839,7 +5842,7 @@ snapshots:
       p-throttle: 4.1.1
       qs: 6.12.1
 
-  contentful@10.11.3:
+  contentful@10.11.5:
     dependencies:
       '@contentful/content-source-maps': 0.5.0
       '@contentful/rich-text-types': 16.3.5
