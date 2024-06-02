@@ -151,8 +151,8 @@ importers:
         specifier: ^8.4.38
         version: 8.4.38
       postcss-load-config:
-        specifier: ^6.0.0
-        version: 6.0.0(jiti@1.21.0)(postcss@8.4.38)(yaml@2.4.3)
+        specifier: ^6.0.1
+        version: 6.0.1(jiti@1.21.0)(postcss@8.4.38)(yaml@2.4.3)
       rehype-external-links:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4174,8 +4174,8 @@ packages:
       ts-node:
         optional: true
 
-  postcss-load-config@6.0.0:
-    resolution: {integrity: sha512-Awdbn0DxIoOD0y9ljT7T8nm57tA0EGhnBRN2o8Dn/qZj4XuFfQ9q3mDgB5f4+A8wuD6x23RUgr0RMaId4bcFvA==}
+  postcss-load-config@6.0.1:
+    resolution: {integrity: sha512-oPtTM4oerL+UXmx+93ytZVN82RrlY/wPUV8IeDxFrzIjXOLF1pN+EmKPLbubvKHT2HC20xXsCAH2Z+CKV6Oz/g==}
     engines: {node: '>= 18'}
     peerDependencies:
       jiti: '>=1.21.0'
@@ -9961,7 +9961,7 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.38
 
-  postcss-load-config@6.0.0(jiti@1.21.0)(postcss@8.4.38)(yaml@2.4.3):
+  postcss-load-config@6.0.1(jiti@1.21.0)(postcss@8.4.38)(yaml@2.4.3):
     dependencies:
       lilconfig: 3.1.1
     optionalDependencies:
