@@ -19,7 +19,7 @@ importers:
         version: 19.0.3
       '@inabagumi/prettier-config':
         specifier: ^3.0.0
-        version: 3.0.0(prettier@3.3.0)
+        version: 3.0.0(prettier@3.3.1)
       husky:
         specifier: ^9.0.11
         version: 9.0.11
@@ -27,11 +27,11 @@ importers:
         specifier: ^15.2.5
         version: 15.2.5
       prettier:
-        specifier: ^3.3.0
-        version: 3.3.0
+        specifier: ^3.3.1
+        version: 3.3.1
       prettier-plugin-tailwindcss:
         specifier: ^0.6.1
-        version: 0.6.1(prettier@3.3.0)
+        version: 0.6.1(prettier@3.3.1)
       turbo:
         specifier: ^2.0.1
         version: 2.0.1
@@ -4277,8 +4277,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.3.0:
-    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
+  prettier@3.3.1:
+    resolution: {integrity: sha512-7CAwy5dRsxs8PHXT3twixW9/OEll8MLE0VRPCJyl7CkS6VHGPSlsVaWTiASPTyGyYRyApxlaWTzwUxVNrhcwDg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -6120,9 +6120,9 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@inabagumi/prettier-config@3.0.0(prettier@3.3.0)':
+  '@inabagumi/prettier-config@3.0.0(prettier@3.3.1)':
     dependencies:
-      prettier: 3.3.0
+      prettier: 3.3.1
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -10005,11 +10005,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.6.1(prettier@3.3.0):
+  prettier-plugin-tailwindcss@0.6.1(prettier@3.3.1):
     dependencies:
-      prettier: 3.3.0
+      prettier: 3.3.1
 
-  prettier@3.3.0: {}
+  prettier@3.3.1: {}
 
   pretty-format@27.5.1:
     dependencies:
