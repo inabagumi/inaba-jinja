@@ -60,8 +60,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       contentful:
-        specifier: ^10.11.12
-        version: 10.11.12
+        specifier: ^11.0.0
+        version: 11.0.1
       dedent:
         specifier: ^1.5.3
         version: 1.5.3
@@ -936,8 +936,8 @@ packages:
     resolution: {integrity: sha512-tpyc+7i6bPG9mvaBbtKUeghfyZSDgWquIDfMgqYtTbmZ9Y9VzEm2je9EYcQ0aoz5o7NvGS+rcDec93yO08MHYA==}
     engines: {node: '>=v18'}
 
-  '@contentful/content-source-maps@0.5.0':
-    resolution: {integrity: sha512-Ui14m5QvgFWteAXsv5pmFtbm2deGUJrn1WPHoBa79SK3Z3nV47wQb3/aDZhnXushgpJlk2HmH32Fda/0XZqq1w==}
+  '@contentful/content-source-maps@0.6.0':
+    resolution: {integrity: sha512-REX3kUm4f2tkdfJArqblhKL7SMLfEG18eF3vcQA+8KdBqo+7lNS2W2CuPt2i8uvdgt1aKliGXJeJTgZjYFpCqw==}
 
   '@contentful/rich-text-types@16.5.2':
     resolution: {integrity: sha512-qD98Amp/vWxCYMtv7yprh4Ry3QHFX50sf+i3E6e/WRquz+aUW2ilqmQqW6ucb4F2dlatUxMbOOhZOFazv2XLjg==}
@@ -2140,8 +2140,8 @@ packages:
     resolution: {integrity: sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==}
     engines: {node: '>=4'}
 
-  axios@1.7.2:
-    resolution: {integrity: sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==}
+  axios@1.6.8:
+    resolution: {integrity: sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==}
 
   axobject-query@3.2.1:
     resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
@@ -2388,8 +2388,8 @@ packages:
     resolution: {integrity: sha512-jAek5yGhpk3OJC+lWeq4AZIHO3lxELNMyETDU0fYkPnRS4wHCjbNv5cSk84Rbo7NyH5CkfgzGszvc0GDSXtg0w==}
     engines: {node: '>=18'}
 
-  contentful@10.11.12:
-    resolution: {integrity: sha512-poX56Bu5wpsSlA+kuM6zKaul7BeaPa31iFqkFRCY5V9ZT7S1NeB8M+UG7+TzaVQIRC0S77AZeV67s091fj/Usg==}
+  contentful@11.0.1:
+    resolution: {integrity: sha512-RbXbhfidq5JKZXLCEUL+1Fs9aVqv+HJ7p2koh3urHrOKXT2SYJmhk7QQM+6d4GuiqB7VGlGYxX3kMOUkACkiyg==}
     engines: {node: '>=18'}
 
   conventional-changelog-angular@7.0.0:
@@ -6081,7 +6081,7 @@ snapshots:
       '@types/conventional-commits-parser': 5.0.0
       chalk: 5.3.0
 
-  '@contentful/content-source-maps@0.5.0':
+  '@contentful/content-source-maps@0.6.0':
     dependencies:
       '@vercel/stega': 0.1.2
       json-pointer: 0.6.2
@@ -7352,7 +7352,7 @@ snapshots:
 
   axe-core@4.7.0: {}
 
-  axios@1.7.2:
+  axios@1.6.8:
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
@@ -7623,11 +7623,11 @@ snapshots:
       p-throttle: 4.1.1
       qs: 6.12.1
 
-  contentful@10.11.12:
+  contentful@11.0.1:
     dependencies:
-      '@contentful/content-source-maps': 0.5.0
+      '@contentful/content-source-maps': 0.6.0
       '@contentful/rich-text-types': 16.5.2
-      axios: 1.7.2
+      axios: 1.6.8
       contentful-resolve-response: 1.8.1
       contentful-sdk-core: 8.1.3
       json-stringify-safe: 5.0.1
