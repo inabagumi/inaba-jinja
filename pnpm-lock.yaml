@@ -60,7 +60,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       contentful:
-        specifier: ^11.0.0
+        specifier: ^11.0.1
         version: 11.0.1
       dedent:
         specifier: ^1.5.3
