@@ -33,8 +33,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       contentful:
-        specifier: ^10.12.12
-        version: 10.12.12
+        specifier: ^10.12.13
+        version: 10.12.13
       next:
         specifier: ^14.2.5
         version: 14.2.5(@babel/core@7.24.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1797,8 +1797,8 @@ packages:
     resolution: {integrity: sha512-HYy4ecFA76ERxz7P0jW7hgDcL8jH+bRckv2QfAwQ4k1yPP9TvxpZwrKnlLM69JOStxVkCXP37HvbjbFnjcoWdg==}
     engines: {node: '>=18'}
 
-  contentful@10.12.12:
-    resolution: {integrity: sha512-dHS2xzc5nh1B5zzH2JdxL/DUt5W3k7sLiWC2z/4a8q2Oe9KZ8u+FITS0jt0NMkywTZi6T8Ljo/vbSxWrKEnOAA==}
+  contentful@10.12.13:
+    resolution: {integrity: sha512-AyPedQXyln3y81uUHBIP+gaQZ0r1ZBEzW5Vuh31f+XaFoonEyrxvFbozxQLFIMKxmTrmbywmXCtt1dc13PUpDQ==}
     engines: {node: '>=18'}
 
   conventional-changelog-angular@7.0.0:
@@ -5932,7 +5932,7 @@ snapshots:
       p-throttle: 4.1.1
       qs: 6.12.3
 
-  contentful@10.12.12:
+  contentful@10.12.13:
     dependencies:
       '@contentful/content-source-maps': 0.6.1
       '@contentful/rich-text-types': 16.6.1
