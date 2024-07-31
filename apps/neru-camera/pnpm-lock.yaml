@@ -33,8 +33,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       contentful:
-        specifier: ^10.12.16
-        version: 10.12.16
+        specifier: ^10.13.1
+        version: 10.13.1
       next:
         specifier: ^14.2.5
         version: 14.2.5(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1782,16 +1782,16 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  contentful-resolve-response@1.8.2:
-    resolution: {integrity: sha512-F9oLqSkprxcvUVkzp8ZfVy98nfKv8cmdBIZ0RB1HFGU5xbPDyWYNb7D0CzhSeDVcMmwmsfBbM6DuR//Dq6Bmng==}
+  contentful-resolve-response@1.9.0:
+    resolution: {integrity: sha512-LtgPx/eREpHXOX82od48zFZbFhXzYw/NfUoYK4Qf1OaKpLzmYPE4cAY4aD+rxVgnMM5JN/mQaPCsofUlJRYEUA==}
     engines: {node: '>=4.7.2'}
 
   contentful-sdk-core@8.3.1:
     resolution: {integrity: sha512-HYy4ecFA76ERxz7P0jW7hgDcL8jH+bRckv2QfAwQ4k1yPP9TvxpZwrKnlLM69JOStxVkCXP37HvbjbFnjcoWdg==}
     engines: {node: '>=18'}
 
-  contentful@10.12.16:
-    resolution: {integrity: sha512-+XlaxE+35e1uRVAlawhQJ6UJPC0aS+otjvfIGWiM7m0etQ1dLqbwKsCPc2iZnKluMm3+iuVIUNEFWSRAbEa1YA==}
+  contentful@10.13.1:
+    resolution: {integrity: sha512-GczP0vSWzZGKllzUOsUnCHTKuW92E9oR44uGrLdA7cpel75gJqSB2KpVBV1KT4oaUQn773MAU/J6tWNqCYadfw==}
     engines: {node: '>=18'}
 
   conventional-changelog-angular@7.0.0:
@@ -5908,7 +5908,7 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  contentful-resolve-response@1.8.2:
+  contentful-resolve-response@1.9.0:
     dependencies:
       fast-copy: 2.1.7
 
@@ -5920,12 +5920,12 @@ snapshots:
       p-throttle: 4.1.1
       qs: 6.12.3
 
-  contentful@10.12.16:
+  contentful@10.13.1:
     dependencies:
       '@contentful/content-source-maps': 0.6.1
       '@contentful/rich-text-types': 16.8.2
       axios: 1.6.8
-      contentful-resolve-response: 1.8.2
+      contentful-resolve-response: 1.9.0
       contentful-sdk-core: 8.3.1
       json-stringify-safe: 5.0.1
       type-fest: 4.23.0
