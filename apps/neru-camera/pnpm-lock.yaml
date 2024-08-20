@@ -33,8 +33,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       contentful:
-        specifier: ^10.14.1
-        version: 10.14.1
+        specifier: ^10.15.0
+        version: 10.15.0
       next:
         specifier: ^14.2.5
         version: 14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -775,8 +775,8 @@ packages:
     resolution: {integrity: sha512-tpyc+7i6bPG9mvaBbtKUeghfyZSDgWquIDfMgqYtTbmZ9Y9VzEm2je9EYcQ0aoz5o7NvGS+rcDec93yO08MHYA==}
     engines: {node: '>=v18'}
 
-  '@contentful/content-source-maps@0.6.1':
-    resolution: {integrity: sha512-IjsyhakG17OC5xtIa5agVRsnjjxiJf9HZjpDIV6Ix036Pd5YHJrbyyiF4KNEmLlIqe3hQ0kHGWEs9S/HfECmRQ==}
+  '@contentful/content-source-maps@0.11.0':
+    resolution: {integrity: sha512-eS/Bm1hzv5C3SyTpP08+sYVQ7fFcNUdANrLsotUWk+uC7WpponQIIY26R9QZhX7tE3r5Nq80Z+aR7uo5u31ksg==}
 
   '@contentful/rich-text-types@16.8.3':
     resolution: {integrity: sha512-vXwXDQMDbqITCWfTkU5R/q+uvXWCc1eYNvdZyjtrs0YDIYr4L7QJ2s1r4ZheIs3iVf3AFucKIHgDSpwCAm2wKA==}
@@ -1790,8 +1790,8 @@ packages:
     resolution: {integrity: sha512-HYy4ecFA76ERxz7P0jW7hgDcL8jH+bRckv2QfAwQ4k1yPP9TvxpZwrKnlLM69JOStxVkCXP37HvbjbFnjcoWdg==}
     engines: {node: '>=18'}
 
-  contentful@10.14.1:
-    resolution: {integrity: sha512-ZBmJwohQqldXW7sxBCcucKPLO6JdZK+G+aKVxA2EG2nKY13jY8DNSAk8cQS2tc7Wj9C14haQpzbzqKnErSQ8/w==}
+  contentful@10.15.0:
+    resolution: {integrity: sha512-gkkMRf2FK1SQHMs2UKOuIeCdBXQKF/fMzIRCDL038lUScyE6mvnPu8aHrAQuUZwfcd58J0cibqT+iqj+pAVyGA==}
     engines: {node: '>=18'}
 
   conventional-changelog-angular@7.0.0:
@@ -4810,7 +4810,7 @@ snapshots:
       '@types/conventional-commits-parser': 5.0.0
       chalk: 5.3.0
 
-  '@contentful/content-source-maps@0.6.1':
+  '@contentful/content-source-maps@0.11.0':
     dependencies:
       '@vercel/stega': 0.1.2
       json-pointer: 0.6.2
@@ -5915,9 +5915,9 @@ snapshots:
       p-throttle: 4.1.1
       qs: 6.13.0
 
-  contentful@10.14.1:
+  contentful@10.15.0:
     dependencies:
-      '@contentful/content-source-maps': 0.6.1
+      '@contentful/content-source-maps': 0.11.0
       '@contentful/rich-text-types': 16.8.3
       axios: 1.7.4
       contentful-resolve-response: 1.9.0
