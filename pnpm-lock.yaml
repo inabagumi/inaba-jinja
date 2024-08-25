@@ -197,8 +197,8 @@ importers:
         specifier: ^3.4.9
         version: 3.4.10
       tailwindcss-safe-area:
-        specifier: ^0.5.1
-        version: 0.5.1(tailwindcss@3.4.10)
+        specifier: ^0.6.0
+        version: 0.6.0(tailwindcss@3.4.10)
     devDependencies:
       '@tsconfig/node20':
         specifier: ^20.1.4
@@ -4752,8 +4752,8 @@ packages:
   tailwind-merge@2.5.2:
     resolution: {integrity: sha512-kjEBm+pvD+6eAwzJL2Bi+02/9LFLal1Gs61+QB7HvTfQQ0aXwC5LGT8PEt1gS0CWKktKe6ysPTAy3cBC5MeiIg==}
 
-  tailwindcss-safe-area@0.5.1:
-    resolution: {integrity: sha512-aMHJYBi1NIrJ5ldZ9bk+uGLXw8UFCrFR8fheMyJEabV/kaI+qNozRm7UfEKZRgEmS3RMdrt2RQf2w/7S0ceLrQ==}
+  tailwindcss-safe-area@0.6.0:
+    resolution: {integrity: sha512-5PM3CKquzmaa6mow64zWJ0438/yGSqdPfjaXtwNDb31LezNWqFoGPSbvrW12T8iB4EBjeWot+qAA9nbUqqf3sw==}
     engines: {node: '>=16'}
     peerDependencies:
       tailwindcss: ^2.0.0 || >=3.0.0
@@ -10654,7 +10654,7 @@ snapshots:
 
   tailwind-merge@2.5.2: {}
 
-  tailwindcss-safe-area@0.5.1(tailwindcss@3.4.10):
+  tailwindcss-safe-area@0.6.0(tailwindcss@3.4.10):
     dependencies:
       tailwindcss: 3.4.10
 
