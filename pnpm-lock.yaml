@@ -60,8 +60,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       contentful:
-        specifier: ^11.0.1
-        version: 11.0.2
+        specifier: ^11.0.3
+        version: 11.0.3
       dedent:
         specifier: ^1.5.3
         version: 1.5.3
@@ -2353,8 +2353,8 @@ packages:
     resolution: {integrity: sha512-L2LNWRXb1/5RLpLemCoP2Lzz6211xyE63GXh2nVXekvM4Dnswo+9N2D6JmWTne9zq89Izo88vOGAzzIAxb4Ukw==}
     engines: {node: '>=18'}
 
-  contentful@11.0.2:
-    resolution: {integrity: sha512-kqOr227fO/J06vtGC0S3Y2FzQ7+aNk5zDFBIdDvr+fIGML4eISxHJy+7ulYzXRgRdJBjbFfF7yItz0rD8z0FYg==}
+  contentful@11.0.3:
+    resolution: {integrity: sha512-Pn0vPPujVFkSs/FZ7BGr63e42dO9yUcvhxZMZrqD4kXHcC5n/xOFF11wWPgH5n3ZDCOBmEuiwUYLFcgcJODP7Q==}
     engines: {node: '>=18'}
 
   conventional-changelog-angular@7.0.0:
@@ -7577,7 +7577,7 @@ snapshots:
       p-throttle: 4.1.1
       qs: 6.13.0
 
-  contentful@11.0.2:
+  contentful@11.0.3:
     dependencies:
       '@contentful/content-source-maps': 0.11.3
       '@contentful/rich-text-types': 16.8.5
