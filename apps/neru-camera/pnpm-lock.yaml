@@ -59,7 +59,7 @@ importers:
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.5.0
-        version: 19.5.0(@types/node@18.19.51)(typescript@5.6.2)
+        version: 19.5.0(@types/node@18.19.52)(typescript@5.6.2)
       '@commitlint/config-conventional':
         specifier: ^19.5.0
         version: 19.5.0
@@ -73,8 +73,8 @@ importers:
         specifier: ^9.6.1
         version: 9.6.1
       '@types/node':
-        specifier: ^18.19.51
-        version: 18.19.51
+        specifier: ^18.19.52
+        version: 18.19.52
       '@types/react':
         specifier: ^18.3.9
         version: 18.3.9
@@ -1294,8 +1294,8 @@ packages:
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
-  '@types/node@18.19.51':
-    resolution: {integrity: sha512-IIMkWEIVQDlBpi6pPeGqTqOx7KbzGC3EgIyH8NrxplXOwWw0uVl9vthJUMFrxD7kcEfcRp7jIkgpB28M6JnfWA==}
+  '@types/node@18.19.52':
+    resolution: {integrity: sha512-v4lreZWS6Qnixl81Ec6xxXocEbnxRSuBiJATIuWv6woKO1x/tKAR8mx4XIVQ0HneDoxbwNJzeZ5SjHF9SYGM+Q==}
 
   '@types/prop-types@15.7.13':
     resolution: {integrity: sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==}
@@ -4678,11 +4678,11 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
 
-  '@commitlint/cli@19.5.0(@types/node@18.19.51)(typescript@5.6.2)':
+  '@commitlint/cli@19.5.0(@types/node@18.19.52)(typescript@5.6.2)':
     dependencies:
       '@commitlint/format': 19.5.0
       '@commitlint/lint': 19.5.0
-      '@commitlint/load': 19.5.0(@types/node@18.19.51)(typescript@5.6.2)
+      '@commitlint/load': 19.5.0(@types/node@18.19.52)(typescript@5.6.2)
       '@commitlint/read': 19.5.0
       '@commitlint/types': 19.5.0
       tinyexec: 0.3.0
@@ -4729,7 +4729,7 @@ snapshots:
       '@commitlint/rules': 19.5.0
       '@commitlint/types': 19.5.0
 
-  '@commitlint/load@19.5.0(@types/node@18.19.51)(typescript@5.6.2)':
+  '@commitlint/load@19.5.0(@types/node@18.19.52)(typescript@5.6.2)':
     dependencies:
       '@commitlint/config-validator': 19.5.0
       '@commitlint/execute-rule': 19.5.0
@@ -4737,7 +4737,7 @@ snapshots:
       '@commitlint/types': 19.5.0
       chalk: 5.3.0
       cosmiconfig: 9.0.0(typescript@5.6.2)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.19.51)(cosmiconfig@9.0.0(typescript@5.6.2))(typescript@5.6.2)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.19.52)(cosmiconfig@9.0.0(typescript@5.6.2))(typescript@5.6.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -5277,7 +5277,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
-      '@types/node': 18.19.51
+      '@types/node': 18.19.52
 
   '@types/css-font-loading-module@0.0.12': {}
 
@@ -5295,7 +5295,7 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 18.19.51
+      '@types/node': 18.19.52
 
   '@types/json-schema@7.0.15': {}
 
@@ -5303,7 +5303,7 @@ snapshots:
 
   '@types/minimatch@5.1.2': {}
 
-  '@types/node@18.19.51':
+  '@types/node@18.19.52':
     dependencies:
       undici-types: 5.26.5
 
@@ -5316,7 +5316,7 @@ snapshots:
 
   '@types/resolve@1.17.1':
     dependencies:
-      '@types/node': 18.19.51
+      '@types/node': 18.19.52
 
   '@types/trusted-types@2.0.7': {}
 
@@ -5883,9 +5883,9 @@ snapshots:
     dependencies:
       browserslist: 4.23.3
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.51)(cosmiconfig@9.0.0(typescript@5.6.2))(typescript@5.6.2):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.52)(cosmiconfig@9.0.0(typescript@5.6.2))(typescript@5.6.2):
     dependencies:
-      '@types/node': 18.19.51
+      '@types/node': 18.19.52
       cosmiconfig: 9.0.0(typescript@5.6.2)
       jiti: 1.21.6
       typescript: 5.6.2
@@ -6848,13 +6848,13 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 18.19.51
+      '@types/node': 18.19.52
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 18.19.51
+      '@types/node': 18.19.52
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
