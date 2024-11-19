@@ -42,8 +42,8 @@ importers:
         specifier: ^6.6.0
         version: 6.6.0(next@14.2.18(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       pixi-viewport:
-        specifier: ^6.0.0
-        version: 6.0.0(pixi.js@7.4.2)
+        specifier: ^6.0.1
+        version: 6.0.1(pixi.js@7.4.2)
       pixi.js:
         specifier: ^7.4.2
         version: 7.4.2
@@ -2988,8 +2988,8 @@ packages:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
 
-  pixi-viewport@6.0.0:
-    resolution: {integrity: sha512-wS/2CCpn8Zm9ZR3WHMQD4EmMMwF1Do5W6o5XYkC783DVpK4/u3AWdyr8mqKfZJNUqISt6t7Cqu4BsGumHXPLxw==}
+  pixi-viewport@6.0.1:
+    resolution: {integrity: sha512-oQTHZLVC7P2PEbEYHwqy1WTNvXJjicUDucbNmq3RkNQowhssak2rOOVJB1/+cIuE7FxwYADf41ExX5ntua5yVg==}
     peerDependencies:
       pixi.js: '>=8'
 
@@ -7015,7 +7015,7 @@ snapshots:
 
   pirates@4.0.6: {}
 
-  pixi-viewport@6.0.0(pixi.js@7.4.2):
+  pixi-viewport@6.0.1(pixi.js@7.4.2):
     dependencies:
       pixi.js: 7.4.2
 
