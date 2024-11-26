@@ -60,8 +60,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       contentful:
-        specifier: ^11.2.4
-        version: 11.2.4
+        specifier: ^11.2.5
+        version: 11.2.5
       dedent:
         specifier: ^1.5.3
         version: 1.5.3
@@ -2288,8 +2288,8 @@ packages:
     resolution: {integrity: sha512-Ao/5Y74ERPn6kjzb/8okYPuQJnikMtR+dnv0plLw8IvPomwXonLq3qom0rLSyo5KuvQkBMa9AApy1izunxW4mw==}
     engines: {node: '>=18'}
 
-  contentful@11.2.4:
-    resolution: {integrity: sha512-HC0C7bEAfVpREFQC1nVdQ8c0wHGM1smy3l7m3ck1A0DIwp5mNHrcBkUqOSXBljoodttTnATcQ0g7D2sprhaZ9g==}
+  contentful@11.2.5:
+    resolution: {integrity: sha512-XuEXwETF5g/rdvnLnDKMLXDb7ikIia+3YwaOmDj9S67TI8mT4zWunxc5Gg/HRX/ixHtyTobiz1ZWpEFqt80SWQ==}
     engines: {node: '>=18'}
 
   conventional-changelog-angular@7.0.0:
@@ -7283,7 +7283,7 @@ snapshots:
     optionalDependencies:
       '@rollup/rollup-linux-x64-gnu': 4.27.4
 
-  contentful@11.2.4:
+  contentful@11.2.5:
     dependencies:
       '@contentful/content-source-maps': 0.11.6
       '@contentful/rich-text-types': 16.8.5
