@@ -12,7 +12,7 @@
     "contentful": "^11.2.5",
     "next": "^14.2.18",
     "next-seo": "^6.6.0",
-    "pixi-viewport": "^6.0.1",
+    "pixi-viewport": "^6.0.3",
     "pixi.js": "^7.4.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
