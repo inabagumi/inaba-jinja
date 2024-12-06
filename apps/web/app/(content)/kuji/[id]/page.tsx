@@ -1,4 +1,3 @@
-import { type Metadata } from 'next'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import SimpleTitle from '@/components/simple-title'
@@ -6,30 +5,28 @@ import { title as siteName, twitterAccount } from '@/lib/constants'
 import { type FortuneEntry, getFortune, getFortuneIDs } from '@/lib/contentful'
 import { generateFortuneName, getImageURL } from '@/lib/fortune'
 import ShareLinks from './_components/share-links'
+import type { Metadata } from 'next'
 
 // export const runtime = 'edge'
 export const revalidate = 30
 
-export type Params = {
-  id: string
-}
-
-export async function generateStaticParams(): Promise<Params[]> {
+export async function generateStaticParams(): Promise<{ id: string }[]> {
   const ids = await getFortuneIDs()
 
   return ids.map((id) => ({ id }))
 }
 
-export type Props = {
-  params: Params
-}
-
 export async function generateMetadata({
   params
-}: Props): Promise<Metadata | null> {
+}: {
+  params: Promise<{
+    id: string
+  }>
+}): Promise<Metadata | null> {
+  const { id } = await params
   let fortune: FortuneEntry
   try {
-    fortune = await getFortune(params.id)
+    fortune = await getFortune(id)
   } catch {
     notFound()
   }
@@ -71,10 +68,17 @@ export async function generateMetadata({
   }
 }
 
-export default async function Page({ params }: Props) {
+export default async function Page({
+  params
+}: {
+  params: Promise<{
+    id: string
+  }>
+}) {
+  const { id } = await params
   let fortune: FortuneEntry
   try {
-    fortune = await getFortune(params.id)
+    fortune = await getFortune(id)
   } catch {
     notFound()
   }
