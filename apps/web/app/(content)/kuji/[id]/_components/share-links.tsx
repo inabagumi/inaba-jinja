@@ -27,17 +27,15 @@ function generateTweetShareURL({
   return tweetShareURL.toString()
 }
 
-type Props = {
-  hashtags?: string[]
-  text?: string
-  url: string
-}
-
 export default function ShareLinks({
   hashtags,
   text,
   url
-}: Props): JSX.Element {
+}: {
+  hashtags?: string[]
+  text?: string
+  url: string
+}) {
   const tweetShereURL = generateTweetShareURL({ hashtags, text, url })
 
   return (
