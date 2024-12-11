@@ -1,6 +1,9 @@
 {
   "packages": {
-    "apps/web": {}
+    "apps/774-ink": {},
+    "apps/hanerubeat": {},
+    "apps/inaba-jinja": {},
+    "apps/neru-camera": {}
   },
   "release-type": "node"
 }

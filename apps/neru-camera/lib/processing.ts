@@ -24,7 +24,12 @@ export default function processing(
         quality
       )
     } catch (error) {
-      reject(error)
+      const err =
+        error instanceof Error
+          ? error
+          : new Error('An Unexpected Error has occurred.')
+
+      reject(err)
     }
   })
 }

@@ -33,7 +33,7 @@ const Home: VFC = () => {
       </header>
       <main>
         {products && products.length && (
-          <section className="container margin-top--lg">
+          <section className="margin-top--lg container">
             {chunk(products, 3).map((row, i) => (
               <div className="row" key={`row-${i}`}>
                 {row.map((product) => (

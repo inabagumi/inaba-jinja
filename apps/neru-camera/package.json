@@ -43,15 +43,11 @@
   },
   "license": "MIT",
   "name": "neru-camera",
-  "packageManager": "pnpm@9.15.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier --write .",
-    "format-check": "prettier --check .",
     "lint": "next lint",
-    "prepare": "is-ci || husky",
     "start": "next start"
   },
   "version": "8.0.0"

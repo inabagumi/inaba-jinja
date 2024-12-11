@@ -10,7 +10,7 @@ export default function HeaderMenu(): JSX.Element {
 
   return (
     <Menu>
-      <MenuButton className="focus:bg-opacity-25 focus:bg-white m-2 focus:outline-none p-2 rounded-full">
+      <MenuButton className="m-2 rounded-full p-2 focus:bg-white focus:bg-opacity-25 focus:outline-none">
         <EllipsisVerticalIcon className="h-5 w-5" />
       </MenuButton>
       <MenuList className="p-0">

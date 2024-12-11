@@ -47,7 +47,8 @@
 
 .multiline {
   height: calc(
-    (var(--inb-textfield-border-width) * 2) + (var(--inb-textfield-padding) * 2) +
+    (var(--inb-textfield-border-width) * 2) +
+      (var(--inb-textfield-padding) * 2) +
       (1rem * var(--inb-textfield-line-height) * 10)
   );
   resize: none;

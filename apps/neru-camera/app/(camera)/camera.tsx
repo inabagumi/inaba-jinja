@@ -78,7 +78,7 @@ export default function Camera(): JSX.Element {
   }, [])
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex h-full flex-col">
       <div className="flex flex-grow items-center justify-center overflow-hidden">
         {texture ? (
           <Stage
@@ -98,7 +98,7 @@ export default function Camera(): JSX.Element {
           </Stage>
         ) : (
           <svg
-            className="animate-spin h-10 text-yellow-400 w-10"
+            className="h-10 w-10 animate-spin text-yellow-400"
             fill="none"
             viewBox="0 0 24 24"
           >
@@ -115,7 +115,7 @@ export default function Camera(): JSX.Element {
         )}
       </div>
 
-      <div className="flex justify-around pb-6 pt-2 px-4">
+      <div className="flex justify-around px-4 pb-6 pt-2">
         <button
           className={clsx(
             'bg-gray-50',

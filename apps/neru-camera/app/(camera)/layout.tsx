@@ -27,11 +27,11 @@ export default async function CameraLayout({
 
   return (
     <AssetProvider assets={assets}>
-      <header className="fixed flex justify-end text-white top-0 w-full z-10">
+      <header className="fixed top-0 z-10 flex w-full justify-end text-white">
         <HeaderMenu />
       </header>
 
-      <main className="bg-black fixed inset-0 z-0">{children}</main>
+      <main className="fixed inset-0 z-0 bg-black">{children}</main>
     </AssetProvider>
   )
 }

@@ -32,8 +32,6 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier -w './**/*.{json,yml}'",
-    "format-check": "prettier -c './**/*.{json,yml}'",
     "lint": "next lint ."
   },
   "version": "2.0.0"

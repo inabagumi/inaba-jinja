@@ -21,15 +21,13 @@
     "prettier": "~3.4.2",
     "typescript": "~5.7.2"
   },
-  "name": "774.ink",
+  "name": "774-ink",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "format": "prettier -w './**/*.{json,yml}'",
-    "format-check": "prettier -c './**/*.{json,yml}'",
     "lint": "next lint -d .",
     "start": "next start"
   },
-  "version": "0.1.0"
+  "version": "1.0.0"
 }

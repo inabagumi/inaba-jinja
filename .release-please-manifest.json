@@ -1,3 +1,6 @@
 {
-  "apps/web": "4.0.2"
+  "apps/774-ink": "1.0.0",
+  "apps/hanerubeat": "2.0.0",
+  "apps/inaba-jinja": "4.0.2",
+  "apps/neru-camera": "8.0.0"
 }
