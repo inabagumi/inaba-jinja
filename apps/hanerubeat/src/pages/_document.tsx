@@ -1,7 +1,7 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
-  render(): JSX.Element {
+  render() {
     const title = process.env.NEXT_PUBLIC_TITLE || ''
     const themeColor = '#fff59d'
 
