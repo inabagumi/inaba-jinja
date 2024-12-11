@@ -1,0 +1,29 @@
+{
+  "redirects": [
+    {
+      "destination": "/docs",
+      "source": "/about/"
+    },
+    {
+      "destination": "/docs/hanerubeat",
+      "source": "/docs/heartbeat"
+    },
+    {
+      "destination": "/docs/shinju-date",
+      "source": "/docs/animare-search"
+    },
+    {
+      "destination": "/docs/21g",
+      "source": "/docs/graph"
+    },
+    {
+      "destination": "/",
+      "source": "/(products|docs)/(npm-packages|eslint-config|prettier-config|renovate-config)(.html)?"
+    },
+    {
+      "destination": "/docs/:name",
+      "source": "/products/:name.html"
+    }
+  ],
+  "version": 2
+}

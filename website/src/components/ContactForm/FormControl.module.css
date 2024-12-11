@@ -1,0 +1,7 @@
+.notice {
+  font-size: 0.9rem;
+}
+
+.notice:empty::before {
+  content: '\00a0';
+}

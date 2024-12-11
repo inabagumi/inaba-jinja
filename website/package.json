@@ -1,0 +1,51 @@
+{
+  "author": "Haneru Developers",
+  "dependencies": {
+    "@docusaurus/core": "^3.6.3",
+    "@docusaurus/plugin-ideal-image": "^3.6.3",
+    "@docusaurus/preset-classic": "^3.6.3",
+    "@formspree/react": "^2.5.1",
+    "@hookform/error-message": "^2.0.1",
+    "clsx": "^2.1.1",
+    "lodash": "^4.17.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.54.0",
+    "react-textarea-autosize": "^8.5.6"
+  },
+  "description": "We are Haneru Developers!",
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.6.3",
+    "@docusaurus/tsconfig": "^3.6.3",
+    "@docusaurus/types": "^3.6.3",
+    "@formspree/cli": "^0.9.6",
+    "@inabagumi/prettier-config": "^3.0.0",
+    "@types/lodash": "^4.17.13",
+    "@types/react": "^18.3.15",
+    "@types/react-helmet": "^6.1.11",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "~3.3.3",
+    "typescript": "~5.7.2"
+  },
+  "license": "MIT",
+  "name": "@inabagumi/website",
+  "private": true,
+  "scripts": {
+    "build": "docusaurus build",
+    "deploy": "docusaurus deploy",
+    "dev": "docusaurus start",
+    "format": "prettier -w .",
+    "format-check": "prettier -c .",
+    "lint": "eslint .",
+    "swizzle": "docusaurus swizzle"
+  },
+  "version": "2.0.0"
+}
