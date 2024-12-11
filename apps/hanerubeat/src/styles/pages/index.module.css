@@ -1,0 +1,41 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.controls {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  color: #eee;
+  display: block;
+  font-size: 64px;
+  margin: 0;
+  padding: 0;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button[disabled] {
+  color: #aaa;
+}
+
+.button__icon {
+  height: auto;
+  width: 1em;
+}

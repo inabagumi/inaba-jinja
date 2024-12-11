@@ -1,0 +1,38 @@
+{
+  "author": "Haneru Developers",
+  "dependencies": {
+    "next": "^15.1.0",
+    "next-seo": "^6.6.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0"
+  },
+  "description": "Feel the life of Neru-chan!",
+  "devDependencies": {
+    "@inabagumi/prettier-config": "^3.0.0",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "file-loader": "^6.2.0",
+    "next-pwa": "^5.6.0",
+    "prettier": "~3.4.2",
+    "typescript": "~5.7.2",
+    "url-loader": "^4.1.1"
+  },
+  "homepage": "https://hanerubeat.app/",
+  "name": "@inabagumi/hanerubeat",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "lint": "next lint ."
+  },
+  "version": "2.0.0"
+}

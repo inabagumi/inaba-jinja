@@ -1,0 +1,19 @@
+import Image from '@theme/IdealImage'
+
+# Haneru Beat!
+
+<Image alt="Haneru Beat!" img={require('../src/data/showcase/hanerubeat.jpg')} />
+
+- [hanerubeat.app](https://hanerubeat.app/)
+- [リポジトリ (inabagumi/hanerubeat)](https://github.com/inabagumi/hanerubeat)
+
+## 使用技術
+
+- [Node.js](https://nodejs.org/ja/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://ja.reactjs.org/)
+- [Create React App](https://create-react-app.dev/)
+
+## 公開日
+
+[2019 年 3 月 4 日](https://twitter.com/ykzts/status/1102276038569033729)

@@ -1,0 +1,23 @@
+:root {
+  --ifm-color-primary: #f57f17;
+  --ifm-color-primary-dark: #e7720a;
+  --ifm-color-primary-darker: #da6b09;
+  --ifm-color-primary-darkest: #b45808;
+  --ifm-color-primary-light: #f68d31;
+  --ifm-color-primary-lighter: #f7943e;
+  --ifm-color-primary-lightest: #f8aa64;
+
+  --inb-textfield-background-color: var(--ifm-background-surface-color);
+  --inb-textfield-border-color: var(--ifm-color-content);
+  --inb-textfield-border-radius: var(--ifm-button-border-radius);
+  --inb-textfield-border-width: var(--ifm-global-border-width);
+  --inb-textfield-color: var(--ifm-font-color-base);
+  --inb-textfield-font-size: var(--ifm-font-size-base);
+  --inb-textfield-invalid-background-color: var(
+    --ifm-color-danger-contrast-background
+  );
+  --inb-textfield-invalid-border-color: var(--ifm-color-danger-darkest);
+  --inb-textfield-line-height: var(--ifm-pre-line-height);
+  --inb-textfield-padding: var(--ifm-button-padding-vertical);
+  --inb-textfield-placeholder-color: var(--ifm-color-gray-500);
+}
