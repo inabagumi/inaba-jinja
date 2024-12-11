@@ -20,6 +20,6 @@ export const metadata: Metadata = {
 
 const Camera = dynamic(() => import('./camera'), { ssr: false })
 
-export default function CameraPage(): JSX.Element {
+export default function CameraPage() {
   return <Camera />
 }

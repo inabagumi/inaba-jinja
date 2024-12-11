@@ -5,16 +5,14 @@ import Image from '@theme/IdealImage'
 import Layout from '@theme/Layout'
 import chunk from 'lodash/chunk'
 import products from '../data/products'
-import type { VFC } from 'react'
 
-const Home: VFC = () => {
+export default function Home() {
   const { siteConfig } = useDocusaurusContext()
   const { withBaseUrl } = useBaseUrlUtils()
 
   return (
     <Layout
       description="Haneru Developers はバーチャル YouTuber の因幡はねるさんをテーマとしたアプリやサービスの開発を主として行うコミュニティです。"
-      permalink="/"
       title={siteConfig.tagline}
     >
       <header className="hero hero--dark">
@@ -78,5 +76,3 @@ const Home: VFC = () => {
     </Layout>
   )
 }
-
-export default Home

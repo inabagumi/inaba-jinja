@@ -5,7 +5,7 @@ import { EllipsisVerticalIcon } from '@heroicons/react/24/solid'
 import { Menu, MenuButton, MenuItem, MenuList } from '@reach/menu-button'
 import { useAsset } from './asset'
 
-export default function HeaderMenu(): JSX.Element {
+export default function HeaderMenu() {
   const { assets, setAssetID } = useAsset()
 
   return (

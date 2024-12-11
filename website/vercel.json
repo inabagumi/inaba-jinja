@@ -13,12 +13,8 @@
       "source": "/docs/animare-search"
     },
     {
-      "destination": "/docs/21g",
-      "source": "/docs/graph"
-    },
-    {
       "destination": "/",
-      "source": "/(products|docs)/(npm-packages|eslint-config|prettier-config|renovate-config)(.html)?"
+      "source": "/(products|docs)/(21g|npm-packages|eslint-config|prettier-config|renovate-config)(.html)?"
     },
     {
       "destination": "/docs/:name",

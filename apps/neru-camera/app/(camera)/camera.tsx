@@ -11,7 +11,7 @@ import { track } from '@vercel/analytics'
 import { fileSave } from 'browser-fs-access'
 import clsx from 'clsx'
 import { type Application } from 'pixi.js'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import processing from '@/lib/processing'
 import { useAsset } from './asset'
 import styles from './camera.module.css'
@@ -27,13 +27,12 @@ const mediaStreamConstraints: MediaStreamConstraints = {
   }
 }
 
-export default function Camera(): JSX.Element {
+export default function Camera() {
   const { currentAsset: asset } = useAsset()
   const [pixiView, setPixiView] = useState<HTMLCanvasElement>()
   const [cameraStream, setCameraStream] = useState<MediaStream>()
   const [isShooting, setIsShooting] = useState(false)
   const [hasError, setHasError] = useState(false)
-  const cancelRef = useRef<HTMLDivElement>(null)
   const texture = useVideoTexture({ srcObject: cameraStream })
 
   const handleMount = useCallback(
@@ -144,7 +143,7 @@ export default function Camera(): JSX.Element {
       </div>
 
       {hasError && (
-        <AlertDialog leastDestructiveRef={cancelRef}>
+        <AlertDialog>
           <AlertDialogLabel>エラー</AlertDialogLabel>
 
           <AlertDialogDescription>

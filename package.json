@@ -9,7 +9,7 @@
     "url": "https://github.com/inabagumi/inaba-jinja/issues"
   },
   "dependencies": {},
-  "description": "This is a monorepo for Inaba Jinja.",
+  "description": "Mini apps by Haneru Developers.",
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
@@ -24,7 +24,7 @@
   "homepage": "https://inaba-jinja.com",
   "license": "MIT",
   "main": "n/a",
-  "name": "@inaba-jinja/monorepo",
+  "name": "@inabagumi/mini-apps",
   "packageManager": "pnpm@9.15.0",
   "private": true,
   "repository": {

@@ -8,11 +8,11 @@ import { ChromaKeyFilter } from './filters'
 import { useVideoTexture } from './hooks'
 import Viewport from './viewport'
 
-type Props = {
+export default function Overlay({
+  asset
+}: Readonly<{
   asset: OverlayEntry
-}
-
-export default function Overlay({ asset }: Props): JSX.Element {
+}>) {
   const app = useApp()
   const texture = useVideoTexture({
     src: asset.fields.media?.fields.file?.url

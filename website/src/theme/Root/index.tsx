@@ -1,16 +1,14 @@
 import { FormspreeProvider } from '@formspree/react'
-import type { ReactNode, VFC } from 'react'
+import type { ReactNode } from 'react'
 
-type Props = {
+export default function Root({
+  children
+}: Readonly<{
   children: ReactNode
-}
-
-const Root: VFC<Props> = ({ children }) => {
+}>) {
   return (
     <FormspreeProvider project="1774341564403809704">
       {children}
     </FormspreeProvider>
   )
 }
-
-export default Root
