@@ -1,0 +1,22 @@
+@keyframes beat {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.heart {
+  animation: beat 0.8s ease-in-out infinite;
+  color: #fff59d;
+  display: block;
+  fill: currentColor;
+  height: auto;
+  width: 100%;
+}
