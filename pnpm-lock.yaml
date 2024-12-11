@@ -497,7 +497,7 @@ importers:
         version: 0.9.6
       '@inabagumi/prettier-config':
         specifier: ^3.0.0
-        version: 3.0.0(prettier@3.3.3)
+        version: 3.0.0(prettier@3.4.2)
       '@types/lodash':
         specifier: ^4.17.13
         version: 4.17.13
@@ -535,8 +535,8 @@ importers:
         specifier: ^4.6.2
         version: 4.6.2(eslint@8.57.1)
       prettier:
-        specifier: ~3.3.3
-        version: 3.3.3
+        specifier: ~3.4.2
+        version: 3.4.2
       typescript:
         specifier: ~5.7.2
         version: 5.7.2
@@ -8102,11 +8102,6 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.3.3:
-    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
-    engines: {node: '>=14'}
-    hasBin: true
-
   prettier@3.4.2:
     resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
     engines: {node: '>=14'}
@@ -12338,10 +12333,6 @@ snapshots:
 
   '@img/sharp-win32-x64@0.33.5':
     optional: true
-
-  '@inabagumi/prettier-config@3.0.0(prettier@3.3.3)':
-    dependencies:
-      prettier: 3.3.3
 
   '@inabagumi/prettier-config@3.0.0(prettier@3.4.2)':
     dependencies:
@@ -19440,8 +19431,6 @@ snapshots:
   prettier-plugin-tailwindcss@0.6.9(prettier@3.4.2):
     dependencies:
       prettier: 3.4.2
-
-  prettier@3.3.3: {}
 
   prettier@3.4.2: {}
 
