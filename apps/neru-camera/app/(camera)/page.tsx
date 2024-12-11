@@ -1,6 +1,6 @@
-import { type Metadata } from 'next'
-import dynamic from 'next/dynamic'
+import type { Metadata } from 'next'
 import { description, title } from '@/lib/constants'
+import WrappedCamera from './wrapped-camera'
 
 export const metadata: Metadata = {
   alternates: {
@@ -18,8 +18,6 @@ export const metadata: Metadata = {
   }
 }
 
-const Camera = dynamic(() => import('./camera'), { ssr: false })
-
 export default function CameraPage() {
-  return <Camera />
+  return <WrappedCamera />
 }
