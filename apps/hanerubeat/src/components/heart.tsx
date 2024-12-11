@@ -11,13 +11,7 @@ export default function Heart({ ref }: ComponentProps<'audio'>) {
     <>
       <MdFavorite className={styles.heart} />
 
-      <audio
-        crossOrigin="anonymous"
-        loop
-        preload="none"
-        // @ts-expect-error `@types/react`のバージョン齟齬。全部v19.xにそろえられれば解決するはず。
-        ref={ref}
-      >
+      <audio crossOrigin="anonymous" loop preload="none" ref={ref}>
         <source src={oggPath} type="audio/ogg" />
         <source src={mp3Path} type="audio/mp3" />
         <track default kind="captions" src={captionPath} srcLang="ja" />

@@ -1,8 +1,7 @@
 import FormControl from './FormControl'
 import { useHandleSubmit } from './hooks'
-import type { VFC } from 'react'
 
-const ContactForm: VFC = () => {
+export default function ContactForm() {
   const [formState, handleSubmit] = useHandleSubmit('contact-form')
 
   return (
@@ -71,5 +70,3 @@ const ContactForm: VFC = () => {
     </form>
   )
 }
-
-export default ContactForm

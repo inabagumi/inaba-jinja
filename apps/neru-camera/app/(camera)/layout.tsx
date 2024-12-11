@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import { type OverlayEntrySkeleton, createClient } from '@/lib/contentful'
 import { AssetProvider, type OverlayEntry } from './asset'
 import HeaderMenu from './menu'
@@ -16,13 +16,11 @@ async function getAssets(): Promise<OverlayEntry[]> {
   return items
 }
 
-type Props = {
-  children: ReactNode
-}
-
 export default async function CameraLayout({
   children
-}: Props): Promise<JSX.Element> {
+}: Readonly<{
+  children: ReactNode
+}>) {
   const assets = await getAssets()
 
   return (

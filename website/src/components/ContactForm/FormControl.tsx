@@ -1,23 +1,13 @@
 import { ErrorMessage } from '@hookform/error-message'
 import { clsx } from 'clsx'
 import { useFormContext } from 'react-hook-form'
+import TextareaAutosize from 'react-textarea-autosize'
 import TextField from '@site/src/components/TextField'
 import styles from './FormControl.module.css'
 import type { FormData } from './types'
-import type { VFC } from 'react'
 import type { RegisterOptions } from 'react-hook-form'
 
-type Props = {
-  disabled?: boolean
-  label: string
-  multiline?: boolean
-  name: keyof FormData
-  placeholder?: string
-  registerOptions?: RegisterOptions
-  type?: string
-}
-
-const FormControl: VFC<Props> = ({
+export default function FormControl<Name extends keyof FormData>({
   disabled = false,
   label,
   multiline = false,
@@ -25,7 +15,15 @@ const FormControl: VFC<Props> = ({
   placeholder,
   registerOptions,
   type = 'text'
-}) => {
+}: Readonly<{
+  disabled?: boolean
+  label: string
+  multiline?: boolean
+  name: Name
+  placeholder?: string
+  registerOptions?: RegisterOptions<FormData, Name>
+  type?: string
+}>) {
   const {
     formState: { errors },
     register
@@ -46,18 +44,29 @@ const FormControl: VFC<Props> = ({
       </dt>
 
       <dd className="margin--none">
-        <TextField
-          aria-describedby={isInvalid ? `${name}-error` : undefined}
-          aria-invalid={isInvalid || undefined}
-          aria-required={isRequired}
-          block
-          disabled={disabled}
-          id={name}
-          multiline={multiline}
-          placeholder={placeholder}
-          type={type}
-          {...register(name, registerOptions)}
-        />
+        {multiline ? (
+          <TextareaAutosize
+            aria-describedby={isInvalid ? `${name}-error` : undefined}
+            aria-invalid={isInvalid || undefined}
+            aria-required={isRequired}
+            className={styles.textarea}
+            minRows={10}
+            placeholder={placeholder}
+            {...register(name, registerOptions)}
+          />
+        ) : (
+          <TextField
+            aria-describedby={isInvalid ? `${name}-error` : undefined}
+            aria-invalid={isInvalid || undefined}
+            aria-required={isRequired}
+            block
+            disabled={disabled}
+            id={name}
+            placeholder={placeholder}
+            type={type}
+            {...register(name, registerOptions)}
+          />
+        )}
 
         <p
           className={clsx(
@@ -80,5 +89,3 @@ const FormControl: VFC<Props> = ({
     </div>
   )
 }
-
-export default FormControl

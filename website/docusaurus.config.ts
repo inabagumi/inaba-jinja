@@ -17,8 +17,9 @@ const config: Config = {
   plugins: ['@docusaurus/plugin-ideal-image'],
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
+        debug: true,
         docs: {
           sidebarPath: './sidebars.ts'
         },
@@ -63,10 +64,6 @@ const config: Config = {
             {
               label: 'SHINJU DATE',
               to: 'docs/shinju-date'
-            },
-            {
-              label: '21g',
-              to: 'docs/21g'
             }
           ],
           title: 'プロダクト'

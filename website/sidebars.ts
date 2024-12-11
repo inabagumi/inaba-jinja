@@ -1,6 +1,6 @@
-import type { SidebarConfig } from '@docusaurus/plugin-content-docs'
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs'
 
-const sidebars: SidebarConfig = {
+const sidebars: SidebarsConfig = {
   docs: [
     'introduction',
     {
@@ -9,7 +9,7 @@ const sidebars: SidebarConfig = {
       type: 'category'
     },
     {
-      items: ['shinju-date', '21g'],
+      items: ['shinju-date'],
       label: 'プロダクト',
       type: 'category'
     }

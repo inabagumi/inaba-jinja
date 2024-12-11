@@ -1,55 +1,21 @@
 import { clsx } from 'clsx'
-import { forwardRef } from 'react'
-import TextareaAutosize from 'react-textarea-autosize'
 import styles from './TextField.module.css'
-import type { HTMLAttributes, Ref } from 'react'
+import type { ComponentProps } from 'react'
 
-type Props = {
-  block?: boolean
-  disabled?: boolean
-  multiline?: boolean
-  type?: string
-} & Omit<
-  HTMLAttributes<HTMLInputElement | HTMLTextAreaElement>,
-  'height' | 'style'
->
-
-const TextField = forwardRef<HTMLInputElement | HTMLTextAreaElement, Props>(
-  function TextField(
+export default function TextField({
+  block = false,
+  className: additionalClassName,
+  ref,
+  type = 'text',
+  ...props
+}: Readonly<{ block?: boolean } & ComponentProps<'input'>>) {
+  const className = clsx(
+    styles.root,
     {
-      block = false,
-      className: additionalClassName,
-      multiline = false,
-      type = 'text',
-      ...props
+      [styles.block]: block
     },
-    ref
-  ) {
-    const className = clsx(
-      styles.root,
-      {
-        [styles.multiline]: multiline,
-        [styles.block]: block
-      },
-      additionalClassName
-    )
+    additionalClassName
+  )
 
-    return multiline ? (
-      <TextareaAutosize
-        className={className}
-        minRows={10}
-        ref={ref as Ref<HTMLTextAreaElement>}
-        {...props}
-      />
-    ) : (
-      <input
-        className={className}
-        ref={ref as Ref<HTMLInputElement>}
-        type={type}
-        {...props}
-      />
-    )
-  }
-)
-
-export default TextField
+  return <input className={className} ref={ref} type={type} {...props} />
+}
