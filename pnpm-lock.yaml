@@ -463,7 +463,7 @@ importers:
         version: 2.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@hookform/error-message':
         specifier: ^2.0.1
-        version: 2.0.1(react-dom@19.0.0(react@19.0.0))(react-hook-form@7.54.0(react@19.0.0))(react@19.0.0)
+        version: 2.0.1(react-dom@19.0.0(react@19.0.0))(react-hook-form@7.54.1(react@19.0.0))(react@19.0.0)
       '@slorber/react-ideal-image':
         specifier: ^0.0.12
         version: 0.0.12(prop-types@15.8.1)(react-waypoint@10.3.0(react@19.0.0))(react@19.0.0)
@@ -480,8 +480,8 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       react-hook-form:
-        specifier: ^7.54.0
-        version: 7.54.0(react@19.0.0)
+        specifier: ^7.54.1
+        version: 7.54.1(react@19.0.0)
       react-textarea-autosize:
         specifier: ^8.5.6
         version: 8.5.6(@types/react@19.0.1)(react@19.0.0)
@@ -8099,8 +8099,8 @@ packages:
     peerDependencies:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
 
-  react-hook-form@7.54.0:
-    resolution: {integrity: sha512-PS05+UQy/IdSbJNojBypxAo9wllhHgGmyr8/dyGQcPoiMf3e7Dfb9PWYVRco55bLbxH9S+1yDDJeTdlYCSxO3A==}
+  react-hook-form@7.54.1:
+    resolution: {integrity: sha512-PUNzFwQeQ5oHiiTUO7GO/EJXGEtuun2Y1A59rLnZBBj+vNEOWt/3ERTiG1/zt7dVeJEM+4vDX/7XQ/qanuvPMg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -12032,11 +12032,11 @@ snapshots:
     dependencies:
       react: 19.0.0
 
-  '@hookform/error-message@2.0.1(react-dom@19.0.0(react@19.0.0))(react-hook-form@7.54.0(react@19.0.0))(react@19.0.0)':
+  '@hookform/error-message@2.0.1(react-dom@19.0.0(react@19.0.0))(react-hook-form@7.54.1(react@19.0.0))(react@19.0.0)':
     dependencies:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
-      react-hook-form: 7.54.0(react@19.0.0)
+      react-hook-form: 7.54.1(react@19.0.0)
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
@@ -19122,7 +19122,7 @@ snapshots:
       react-fast-compare: 3.2.2
       shallowequal: 1.1.0
 
-  react-hook-form@7.54.0(react@19.0.0):
+  react-hook-form@7.54.1(react@19.0.0):
     dependencies:
       react: 19.0.0
 
