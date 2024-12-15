@@ -1,5 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>inabagumi/renovate-config"],
+  "packageRules": [
+    {
+      "dependencyDashboardApproval": true,
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@pixi/**", "eslint", "pixi.js"],
+      "matchUpdateTypes": ["major"]
+    }
+  ],
   "reviewers": ["ykzts"]
 }
