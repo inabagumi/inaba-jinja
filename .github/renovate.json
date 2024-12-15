@@ -5,7 +5,7 @@
     {
       "dependencyDashboardApproval": true,
       "matchManagers": ["npm"],
-      "matchPackageNames": ["@pixi/**", "pixi.js"],
+      "matchPackageNames": ["@pixi/**", "eslint", "pixi.js"],
       "matchUpdateTypes": ["major"]
     }
   ],
