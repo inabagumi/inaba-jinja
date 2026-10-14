@@ -14,8 +14,8 @@
     "next-seo": "6.8.0",
     "pixi-viewport": "6.0.3",
     "pixi.js": "7.4.3",
-    "react": "19.3.0",
-    "react-dom": "19.3.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "tailwindcss": "3.4.19"
   },
   "description": "Neru Camera is an app to take a photos with Neru-chan!",
