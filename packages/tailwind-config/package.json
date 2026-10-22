@@ -17,7 +17,7 @@
   "devDependencies": {
     "@tsconfig/node20": "20.1.9",
     "@tsconfig/strictest": "2.0.8",
-    "tsup": "8.5.1"
+    "tsup": "9.0.0"
   },
   "homepage": "https://haneru.dev",
   "license": "MIT",
