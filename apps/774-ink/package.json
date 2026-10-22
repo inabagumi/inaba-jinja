@@ -10,7 +10,7 @@
     "@types/react": "19.3.0",
     "@types/web-app-manifest": "1.0.9",
     "file-loader": "6.2.0",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "name": "774-ink",
   "private": true,
