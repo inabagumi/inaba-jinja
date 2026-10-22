@@ -168,8 +168,8 @@ importers:
         specifier: 16.3.3
         version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@types/dedent':
-        specifier: 0.7.2
-        version: 0.7.2
+        specifier: 1.7.2
+        version: 1.7.2
       '@types/gtag.js':
         specifier: 0.0.20
         version: 0.0.20
@@ -3623,8 +3623,9 @@ packages:
   '@types/debug@4.1.13':
     resolution: {integrity: sha512-KSVgmQmzMwPlmtljOomayoR89W4FynCAi3E8PPs7vmDVPe84hT+vGPKkJfThkmXs0x0jAaa9U8uW8bbfyS2fWw==}
 
-  '@types/dedent@0.7.2':
-    resolution: {integrity: sha512-kRiitIeUg1mPV9yH4VUJ/1uk2XjyANfeL8/7rH1tsjvHeO9PJLBHJIYsFWmAvmGj5u8rj+1TZx7PZzW2qLw3Lw==}
+  '@types/dedent@1.7.2':
+    resolution: {integrity: sha512-iSPTrLlAygLy7ivCyumME9eHkXb/yFZh4BN8nnOQrhixed8aUGgwNESEwe+zTg9wwBS1AMoOrk17YSy5kIN0hw==}
+    deprecated: This is a stub types definition. dedent provides its own type definitions, so you do not need this installed.
 
   '@types/earcut@2.1.4':
     resolution: {integrity: sha512-qp3m9PPz4gULB9MhjGID7wpo3gJ4bTGXm7ltNDsmOvsPduTeHp8wSW9YckBj3mljeOh4F0m2z/0JKAALRKbmLQ==}
@@ -13947,7 +13948,11 @@ snapshots:
     dependencies:
       '@types/ms': 2.1.0
 
-  '@types/dedent@0.7.2': {}
+  '@types/dedent@1.7.2':
+    dependencies:
+      dedent: 1.7.2
+    transitivePeerDependencies:
+      - babel-plugin-macros
 
   '@types/earcut@2.1.4': {}
 
