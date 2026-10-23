@@ -23,7 +23,7 @@
   "license": "MIT",
   "main": "n/a",
   "name": "@inabagumi/mini-apps",
-  "packageManager": "pnpm@10.34.8",
+  "packageManager": "pnpm@11.28.8",
   "private": true,
   "repository": {
     "type": "git",
